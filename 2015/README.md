@@ -23,8 +23,11 @@ SFC 2015年度 秋学期 水曜日３時限 [λ１８](http://www.gakuji.keio.ac
 ## プロジェクト例
 ターミナルで以下のコマンドを実行し、プロジェクト例を取得する:  
 
+    bash
     wget https://github.com/haruosuz/introBI/raw/master/2015/examples.tar.gz
     tar xvzf examples.tar.gz
+    cd examples/
+    cp -r hoge1 my_project
 
 - 雛形 `hoge1, hoge2, hoge3, testR1, testR2`
 - メタボローム MMMDB: Mouse Multiple Tissue Metabolome Database `mmmdb`
