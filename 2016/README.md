@@ -23,6 +23,7 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
  - [プロジェクト例](https://github.com/haruosuz/introBI/tree/master/2015#プロジェクト例)
 - 2016-12-07 第10回 休講
 - 2016-12-14 第11回 休講
+- 2016-12-19 6限(18:10-19:40)・ν棟IIJハウス（通称コテージ）[「Pitagora-Galaxy」山中 遼太 氏（日本オラクル）](http://wiki.pitagora-galaxy.org/)
 - 2016-12-21 第12回 プロジェクト　補講
 - 2016-01-11 第13回 プロジェクト　補講
 - 2016-01-18 第14回 最終発表
