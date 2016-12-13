@@ -31,7 +31,7 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 ----------
 ## 特別講演
 日時：2016年12月19日(月) 6限(18:10-19:40)  
-場所：ν(ニュー)棟 IIJハウス（通称「コテージ」）  
+場所：ニュー(ν)棟 IIJハウス（SFCコテージ－TTCKラボ棟会議室の遠隔）
 講師：山中 遼太 氏（日本オラクル）  
 仮題：「[Pitagora-Galaxy](http://wiki.pitagora-galaxy.org/)」  
 
