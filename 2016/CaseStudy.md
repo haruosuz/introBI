@@ -49,8 +49,15 @@
 
     ls -l *.txt
 
+
+`ls -lh`でファイルサイズを確認する:  
+
+    # ls -lh reports human-readable file sizes
+    ls -lh *.txt
+
 `wc -l`で行数を表示する:  
 
+    # wc -l outputs the number of lines
     wc -l *.txt
 
 ファイルの数をカウントする:  
@@ -59,11 +66,15 @@
 
 `head`で先頭部分を表示する:  
 
+    # Inspecting Data with Head and Tail
     head -n 3 *.txt
 
 `grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。  
 "Bacillus"にマッチする行を抽出し、カウントする:  
 
+    # use grep to extract lines of a file that match a pattern
+    # add the option -c to grep to count how many lines match a pattern
+    # add the option -i to grep to be case insensitive
     grep -c "Bacillus" *.txt
     grep -ci "Bacillus" *.txt
 
@@ -89,10 +100,12 @@
 Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データの列を要約する。  
 `overview.txt`ファイルの2列目（Kingdom）をカウントする:  
 
+    # Using grep, cut, sort, uniq to summarize columns of data
     grep -v "^#" overview.txt | cut -f2 | sort | uniq -c
 
 ファイルで真核生物（"Eukaryota"）にマッチする行を抽出し、3,4列目（Group, SubGroup）をカウントする:  
 
+    # count multiple columns, e.g. Group,SubGroup (columns 3,4)
     grep "Eukaryota" overview.txt | cut -f3,4 | sort | uniq -c 
 
 記号`>`（上書き）や`>>`（追記）で標準出力をファイルにリダイレクトする。  
