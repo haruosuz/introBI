@@ -37,10 +37,6 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 	tar xvzf 2016-12-19_projects_2015.tgz
 	cd 2016-12-19_projects_2015/
 
-	cd TSURUMAKI_MEGUMI/my-project/
-	less README.md
-	(time bash scripts/run.sh &) >& log.txt
-	# real	0m4.273s
 
 ----------
 
