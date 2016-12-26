@@ -41,7 +41,7 @@ Last Update: 2016-09-11
 - 2015-06-04 [食品安全情報blog | データ共有の遅さが再現性の努力を妨げる](http://d.hatena.ne.jp/uneyama/20150604#p12)
  - 2015-06-03 [Sluggish data sharing hampers reproducibility effort : Nature News & Comment](http://www.nature.com/news/sluggish-data-sharing-hampers-reproducibility-effort-1.17694)
 - 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか | クマムシ博士・堀川大樹](http://www.huffingtonpost.jp/daiki-horikawa/post_5982_b_4165458.html)
-- 2013-11 [医学生物学論文の70%以上が、再現できない!](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
+- 2013-11 [医学生物学論文の70%以上が、再現できない!](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
 - [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353)
  - [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
 - 2013-10 ["Ten simple rules for reproducible computational research." PLoS Comput Biol. PMID: 24204232](https://www.ncbi.nlm.nih.gov/pubmed/24204232)
