@@ -11,12 +11,12 @@ Last Update: 2016-09-11
 - [2015 Fall](https://github.com/haruosuz/introBI/tree/master/2015)
 
 ----------
-教科書：["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/tree/master/bds)
+["**Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/tree/master/bds)
 
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ----------
-## Reproducible Bioinformatics
+## Reproducible Research
 再現可能な研究
 
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
