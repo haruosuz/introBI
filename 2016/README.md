@@ -24,8 +24,8 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2016-12-07 第10回 休講
 - 2016-12-14 第11回 休講
 - 2016-12-21 第12回 プロジェクト 補講
-- 2016-01-11 第13回 プロジェクト 補講
-- 2016-01-18 第14回 [最終発表](#最終発表)
+- 2017-01-11 第13回 プロジェクト 補講
+- 2017-01-18 第14回 [最終発表](#最終発表)
 
 ----------
 
@@ -36,7 +36,6 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 	wget https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2016-12-19_projects_2015.tgz
 	tar xvzf 2016-12-19_projects_2015.tgz
 	cd 2016-12-19_projects_2015/
-
 
 ----------
 
@@ -65,6 +64,10 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 ----------
 
 ## 再現可能な研究
+- Sep 29, 2016 [What is Reproducibility? The R* brouhaha (and how Research Objects can help)](http://www.slideshare.net/carolegoble/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help)
+
+![](http://image.slidesharecdn.com/tpdl-reproscience2016-goble-160929190036/95/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help-9-638.jpg?cb=1475175804)
+
 - 2016年05月31日 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
 - 2016年01月05日 [生物医科学論文の大半に不備、信頼性に疑問符](http://www.afpbb.com/articles/-/3072132?pid=17149815)
  - 2016 Jan 4 [Iqbal SA et al. PLoS Biol. 'Reproducible Research Practices and Transparency across the Biomedical Literature.'](http://www.ncbi.nlm.nih.gov/pubmed/26726926)
