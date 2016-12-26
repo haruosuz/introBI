@@ -63,27 +63,6 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 
 ----------
 
-## 再現可能な研究
-- Sep 29, 2016 [What is Reproducibility? The R* brouhaha (and how Research Objects can help)](http://www.slideshare.net/carolegoble/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help)
-
-![](http://image.slidesharecdn.com/tpdl-reproscience2016-goble-160929190036/95/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help-9-638.jpg?cb=1475175804)
-
-- 2016年05月31日 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
-- 2016年01月05日 [生物医科学論文の大半に不備、信頼性に疑問符](http://www.afpbb.com/articles/-/3072132?pid=17149815)
- - 2016 Jan 4 [Iqbal SA et al. PLoS Biol. 'Reproducible Research Practices and Transparency across the Biomedical Literature.'](http://www.ncbi.nlm.nih.gov/pubmed/26726926)
-- 2015 Dec 8 [Markowetz F. Genome Biol. 'Five selfish reasons to work reproducibly.'](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
-- [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523) Masahiro Kasahara, Assist. Prof. Published on Dec 16, 2015
-- 21 Oct 2015 Simon Hodson on Twitter: "Hey: problem of research reproducibility in bioinformatics #eres2015 https://t.co/CpTyri6KyU"
-
-![https://twitter.com/likejie/status/613404685840592898](https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg)
-
-- 27-AUG-2015 [ジャーナルで発表された論文100本の再現を目的とした研究](http://www.eurekalert.org/pub_releases_ml/2015-08/aaft-_1082415.php)
-
-- [医学生物学論文の70%以上が、再現できない! doi:10.1038/ndigest.2013.131128](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11)
- - 2013 Aug 1 [Wadman M. Nature. 'NIH mulls rules for validating key results.'](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
-
-----------
-
 ## イントロダクション
 
 ### [What is a bioinformatician](http://blog.fejes.ca/?p=2418)
