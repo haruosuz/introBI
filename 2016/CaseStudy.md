@@ -45,6 +45,9 @@
     curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
     curl -o "#1.txt" "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/{overview,eukaryotes,plasmids,prokaryotes,viruses}.txt"
 
+![https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/](https://files.fosswire.com/2007/08/fwunixrefshot.png)
+![http://www.slideshare.net/NoFernndezPozo/unix-command-sheet2014](http://image.slidesharecdn.com/unixcommandsheet2014-141230141447-conversion-gate02/95/unix-commandline-cheat-sheet-bti2014-1-638.jpg)
+
 ### Inspecting Data
 
 `ls -l`でファイルの詳細情報を表示する:  
