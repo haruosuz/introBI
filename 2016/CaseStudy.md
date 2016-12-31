@@ -118,11 +118,11 @@ Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データ�
 
     cat output.txt
 
-以下の通り、2種（`Takifugu flavidus`と`Takifugu rubripes`）のゲノムが登録され、`Kingdom`は*Eukaryota*に、`Group`は*Animals*に、`SubGroup`は*Fishes*に[分類](https://ja.wikipedia.org/wiki/生物の分類#.E7.8F.BE.E5.9C.A8.E3.81.AE.E7.94.9F.E7.89.A9.E5.88.86.E9.A1.9E)され、ゲノムのサイズ `Size (Mb)`は378.032～391.485の範囲を示した。 
+以下の通り、2種（`Takifugu flavidus`と`Takifugu rubripes`）のゲノムが登録され、`Kingdom`は*Eukaryota*に、`Group`は*Animals*に、`SubGroup`は*Fishes*に[分類](https://ja.wikipedia.org/wiki/生物の分類#.E7.8F.BE.E5.9C.A8.E3.81.AE.E7.94.9F.E7.89.A9.E5.88.86.E9.A1.9E)され、ゲノムのサイズ `Size (Mb)`は378.032と391.485であった。 
 
-	#Organism/Name	Kingdom	Group	SubGroup	Size (Mb)	Chrs	Organelles	Plasmids	BioProjects
-	Takifugu flavidus	Eukaryota	Animals	Fishes	378.032	-	-	-	1
-	Takifugu rubripes	Eukaryota	Animals	Fishes	391.485	22	1	-	1
+        #Organism/Name	Kingdom	Group	SubGroup	Size (Mb)	Chrs	Organelles	Plasmids	BioProjects
+        Takifugu flavidus	Eukaryota	Animals	Fishes	378.032	-	-	-	1
+        Takifugu rubripes	Eukaryota	Animals	Fishes	391.485	22	1	-	1
 
 ![http://g86.dbcls.jp/~togoriv/genome_bento/](http://g86.dbcls.jp/~togoriv/wp-content/uploads/2013/06/genome_bento.png)
 
@@ -133,11 +133,11 @@ Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データ�
 
 `less README`でファイルを開いて、`/`を押して、文字列`eukaryotes`を入力（終了するには、*q*を押す）。
 
-	eukaryotes.txt:
-	---------------
-	#Organism/Name Organism name at the species level 
-	Size (Mb)      Total length of DNA submitted for the project 
-	GC%            Percent of nitrogenous bases (guanine or cytosine)
+        eukaryotes.txt:
+        ---------------
+        #Organism/Name Organism name at the species level 
+        Size (Mb)      Total length of DNA submitted for the project 
+        GC%            Percent of nitrogenous bases (guanine or cytosine)
 
 [ゾウリムシ属 "Paramecium"](https://ja.wikipedia.org/wiki/ゾウリムシ) の生物名`#Organism/Name`を確認する:  
 
@@ -150,11 +150,11 @@ Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データ�
 
 以下の通り、4種のゲノムが登録され、ゲノムのサイズは30.48～76.96 Mb、GC含量は24.4～28.6 %の範囲を示した。 
 
-	#Organism/Name	Size (Mb)	GC%
-	Paramecium tetraurelia	72.0945	28.2
-	Paramecium caudatum	30.4809	28.6
-	Paramecium sexaurelia	68.0166	24.4
-	Paramecium biaurelia	76.9631	26.3
+        #Organism/Name	Size (Mb)	GC%
+        Paramecium tetraurelia	72.0945	28.2
+        Paramecium caudatum	30.4809	28.6
+        Paramecium sexaurelia	68.0166	24.4
+        Paramecium biaurelia	76.9631	26.3
 
 ![http://wired.jp/2013/11/17/nikon-small-world-2013/](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfEP97zWN0zdQAo0Hyh3SVCYh8FEaXaIYAI3uarprMlZKmfWSQ5g)
 
@@ -163,13 +163,13 @@ Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データ�
 
 `less README`でファイルを開いて、`/`を押して、文字列`prokaryotes`を入力（終了するには、*q*を押す）。
 
-	prokaryotes.txt:
-	----------------
-	Size (Mb)              Total length of DNA submitted for the project
-	GC%                    Percent of nitrogenous bases (guanine or cytosine)
-	Genes                  Number of Genes annotated in the assembly
-	Proteins               Number of Proteins annotated in the assembly  
-	Status                 Highest level of assembly: 
+        prokaryotes.txt:
+        ----------------
+        Size (Mb)              Total length of DNA submitted for the project
+        GC%                    Percent of nitrogenous bases (guanine or cytosine)
+        Genes                  Number of Genes annotated in the assembly
+        Proteins               Number of Proteins annotated in the assembly  
+        Status                 Highest level of assembly: 
 
 [大腸菌](https://ja.wikipedia.org/wiki/大腸菌) "Escherichia coli" の[ゲノムアセンブリ](https://www.yodosha.co.jp/jikkenigaku/keyword/2789.html)の状況`Status`を確認する:  
 
