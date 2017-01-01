@@ -81,8 +81,6 @@
     grep -c "Bacillus" *.txt
     grep -ci "Bacillus" *.txt
 
-- Acidithiobacillus ferrooxidans [電気で生きる微生物を初めて特定 | 理化学研究所](http://www.riken.jp/pr/press/2015/20150925_1/)
-
 #### overview
 全生物のゲノム・リスト（*overview.txt*）を用いる。
 
