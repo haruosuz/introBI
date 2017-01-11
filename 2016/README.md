@@ -33,7 +33,7 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
 
 	bash
-	wget https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2016-12-19_projects_2015.tgz
+	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2016-12-19_projects_2015.tgz
 	tar xvzf 2016-12-19_projects_2015.tgz
 	cd 2016-12-19_projects_2015/
 
