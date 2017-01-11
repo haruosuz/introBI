@@ -42,8 +42,8 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 ## 最終発表
 日時：2017年1月18日(水) 3限(13:00～14:30)  
 場所：λ18  
-発表時間：最大5分  
-スライドは1枚。[スライドのサンプル](https://dl.dropboxusercontent.com/u/33495171/introBI/slides.pdf)  
+発表時間：1人あたり最低1分、最大5分  
+スライドは最低1枚。[スライドのサンプル](https://dl.dropboxusercontent.com/u/33495171/introBI/slides.pdf)  
 
 ## レポート
 提出期限：2017年1月18日(水) 23:59  
