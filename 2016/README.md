@@ -33,9 +33,9 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
 
 	bash
-	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2016-12-19_projects_2015.tgz
-	tar xvzf 2016-12-19_projects_2015.tgz
-	cd 2016-12-19_projects_2015/
+	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2015_projects_slide.tgz
+	tar xvzf 2015_projects_slide.tgz
+	cd 2015_projects_slide/
 
 ----------
 
@@ -46,7 +46,7 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 スライドは最低1枚。[スライドのサンプル](https://dl.dropboxusercontent.com/u/33495171/introBI/slides.pdf)  
 
 ## レポート
-提出期限：2017年1月18日(水) 23:59  
+提出期限：2017年1月25日(水) 23:59  
 提出先：SFC-SFSの課題にレポートのファイルを含むプロジェクト・ディレクトリを登録する。  
 レポートはA4で5枚以内。
 
