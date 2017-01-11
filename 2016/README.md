@@ -40,9 +40,9 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 ----------
 
 ## 最終発表
-日時：2017年1月18日(水) 2限,3限(11:10～12:40,13:00～14:30)の希望時間  
+日時：2017年1月18日(水) 3限(13:00～14:30)  
 場所：λ18  
-発表時間：最大5分（質疑応答を含む）  
+発表時間：最大5分  
 
 ## レポート
 提出期限：2017年1月18日(水) 23:59  
@@ -68,6 +68,8 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 ### [What is a bioinformatician](http://blog.fejes.ca/?p=2418)
 
 ![http://www.slideshare.net/ChristianFrech/how-to-be-a-bioinformatician](http://image.slidesharecdn.com/how-to-be-a-bioinformatician-public-140426130503-phpapp02/95/how-to-be-a-bioinformatician-2-638.jpg)
+
+- [誰もが“バイオインフォマティシャン”の時代 | Vol. 12 No. 1 | Nature ダイジェスト](http://www.natureasia.com/ja-jp/ndigest/v12/n1/誰もが%26ldquo%3Bバイオインフォマティシャン%26rdquo%3Bの時代/59368)
 
 ### バイオインフォマティクスの研究対象
 - [オーミクス](https://ja.wikipedia.org/wiki/オーミクス)：ゲノミクス、トランスクリプトミクス、 プロテオミクス、メタボロミクス
