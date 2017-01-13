@@ -20,15 +20,15 @@ Last Update: 2016-09-11
 再現可能な研究
 
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- 2016年12月21日 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
-- [「再現性の危機」はあるか？&minus;調査結果&minus; | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048)
- - [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
+- [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
  - [Reality check on reproducibility : Nature News & Comment](http://www.nature.com/news/reality-check-on-reproducibility-1.19961)
-- 2016-01-05 MINAKA Nobuhiro on Twitter: ["AFPBB News「生物医科学論文の大半に不備、信頼性に疑問符」](https://twitter.com/leeswijzer/status/684521352867524612)
-- 2015-12-08 [Markowetz F. "Five selfish reasons to work reproducibly." Genome Biol. PMID: 26646147 ](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
+- 2016-01-05 MINAKA Nobuhiro on Twitter: [AFPBB News「生物医科学論文の大半に不備、信頼性に疑問符」](https://twitter.com/leeswijzer/status/684521352867524612)
 - 2015-12-16 笠原 雅弘 [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523)
-- 21 Oct 2015 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
+- 2015-12-08 [Markowetz F. "Five selfish reasons to work reproducibly." Genome Biol. PMID: 26646147 ](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
+- 2015-10-21 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
 
 ![](https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg)
 
@@ -41,9 +41,8 @@ Last Update: 2016-09-11
 - 2015-06-04 [食品安全情報blog | データ共有の遅さが再現性の努力を妨げる](http://d.hatena.ne.jp/uneyama/20150604#p12)
  - 2015-06-03 [Sluggish data sharing hampers reproducibility effort : Nature News & Comment](http://www.nature.com/news/sluggish-data-sharing-hampers-reproducibility-effort-1.17694)
 - 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか | クマムシ博士・堀川大樹](http://www.huffingtonpost.jp/daiki-horikawa/post_5982_b_4165458.html)
-- 2013-11 [医学生物学論文の70%以上が、再現できない!](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
-- [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353)
- - [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
+- 2013-11 [Nature Digest](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | 医学生物学論文の70%以上が、再現できない! [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
+- [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353) | [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
 - 2013-10 ["Ten simple rules for reproducible computational research." PLoS Comput Biol. PMID: 24204232](https://www.ncbi.nlm.nih.gov/pubmed/24204232)
 - Sep 29, 2016 Carole Goble [What is Reproducibility? The R* brouhaha (and how Research Objects can help)](http://www.slideshare.net/carolegoble/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help)
 
