@@ -1,7 +1,7 @@
 ----------
 
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2016-09-11  
+Last Update: 2017-09-11  
 
 ----------
 
@@ -20,7 +20,7 @@ Last Update: 2016-09-11
 再現可能な研究
 
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
-- 2016年12月21日 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
+- 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
 - [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
