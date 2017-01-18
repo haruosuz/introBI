@@ -26,7 +26,7 @@ SFC 2016年度 秋学期 水曜日3時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2016-12-21 第12回 プロジェクト 補講
 - 2017-01-11 第13回 プロジェクト
 - 2017-01-13 [補講](https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2017-01-13/README.md.html)
-- 2017-01-17 補講
+- 2017-01-17 [補講](https://dl.dropboxusercontent.com/u/33495171/introBI_2016/2017-01-13/README.md)
 - 2017-01-18 第14回 [最終発表](#最終発表)
 - 2017-01-25 [レポート](#レポート)提出期限
 
