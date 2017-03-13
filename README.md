@@ -52,4 +52,6 @@ Last Update: 2017-09-11
 
 ![http://www.slideshare.net/carolegoble/results-may-vary-collaborations-workshop-oxford-2014](http://image.slidesharecdn.com/goble-cw2014-140802134150-phpapp01/95/results-may-vary-collaborations-workshop-oxford-2014-8-638.jpg)
 
+- [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
+
 ----------
