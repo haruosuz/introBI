@@ -16,6 +16,15 @@ Last Update: 2017-09-11
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ----------
+## How to be a bioinformatician
+
+![http://www.slideshare.net/ChristianFrech/how-to-be-a-bioinformatician](http://image.slidesharecdn.com/how-to-be-a-bioinformatician-public-140426130503-phpapp02/95/how-to-be-a-bioinformatician-2-638.jpg)
+
+- [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.safaribooksonline.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html) "NEVER EVER TRUST YOUR TOOLS (OR DATA)"
+- [So you want to be a computational biologist? ](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2740.html) "Create tests, small datasets for which the answer is known, and check that the software or pipeline can reproduce that answer."
+- [The five habits of bad bioinformaticians](http://www.opiniomics.org/the-five-habits-of-bad-bioinformaticians/) "Not writing tests"
+
+----------
 ## Reproducible Research
 再現可能な研究
 
