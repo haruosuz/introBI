@@ -29,6 +29,8 @@ Last Update: 2017-09-11
 再現可能な研究
 
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- 2017-07-05 [科学研究の再現性について](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
+- 2017-06-20 [Experimenting with reproducibility in bioinformatics](http://biorxiv.org/content/early/2017/06/20/143503)
 - 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
