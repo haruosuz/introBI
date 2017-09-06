@@ -29,6 +29,9 @@ Last Update: 2017-09-11
 再現可能な研究
 
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- 4 Sep 2017 PeerJ - the journal on Twitter: [On the reproducibility of science: unique identification of research resources in the biomedical literature](https://twitter.com/thePeerJ/status/904911469904580608) Published September 5, 2013
+- 2017年8月28日 [「再現性の危機」― 検証プロジェクトで浮き彫りに | Editage Insights](http://www.editage.jp/insights/the-reproducibility-projects-first-findings-highlight-reproducibility-crisis)
+ - Jan. 18, 2017 [Rigorous replication effort succeeds for just two of five cancer papers | Science | AAAS](http://www.sciencemag.org/news/2017/01/rigorous-replication-effort-succeeds-just-two-five-cancer-papers)
 - Published on Jul 13, 2017 [統計解析の再現可能性を高める取り組み](https://twitter.com/akabuchiyk/status/885504675666997249)
 - Published: 12 July 2017 [Investigating reproducibility and tracking provenance – A genomic workflow case study | BMC Bioinformatics | Full Text](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1747-0)
 - 2017-07-05 [科学研究の再現性について](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
