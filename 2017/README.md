@@ -87,9 +87,9 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 
 [Living in a microbial world](http://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html)
 
-- 都市環境の生物群集 [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
+- 都市環境の生物群集 [MetaSUB](https://github.com/haruosuz/metasub)
 - [「微生物から新しいデザインがはじまる」デイヴィッド・ベンジャミン✕ジェシカ・グリーン✕林千晶：Redesigning Tokyo 対話4「Biology」 « WIRED.jp](http://wired.jp/special/2016/biology/)
-【動画】[スマートシティを司る“２番目の脳”](https://youtu.be/EQiO9kzpeBw?list=PLQl-BPZhcsy9EN-0jO8QildbCxtyIsR0C) [（ youtube/Innovative City Forum – Japanese）　-archiclue.](http://archiclue.com/?p=16436)
+【動画】[スマートシティを司る“２番目の脳”](https://youtu.be/EQiO9kzpeBw?list=PLQl-BPZhcsy9EN-0jO8QildbCxtyIsR0C) | [（ youtube/Innovative City Forum – Japanese）](http://archiclue.com/?p=16436)
 
 ----------
 
