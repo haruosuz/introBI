@@ -87,13 +87,9 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 
 [Living in a microbial world](http://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html)
 
+- 都市環境の生物群集 [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
 - [「微生物から新しいデザインがはじまる」デイヴィッド・ベンジャミン✕ジェシカ・グリーン✕林千晶：Redesigning Tokyo 対話4「Biology」 « WIRED.jp](http://wired.jp/special/2016/biology/)
- - BiomeView / ホコリから生まれた空間デザイン
- - Bee Debris Project / 蜂の巣箱のなかのビッグデータ
- - Pathomap Project / NY地下鉄の細菌マップ
-- 【動画】[スマートシティを司る“２番目の脳”](https://youtu.be/EQiO9kzpeBw?list=PLQl-BPZhcsy9EN-0jO8QildbCxtyIsR0C)｜[Second Brain for the Smart City](https://youtu.be/uSjGeACndIA?list=PLHMUAsAGfigcKRu2Quna-C-VhzJbl5hY2)
-- [「スマートシティを司る“２番目の脳” 」先端技術セッション2の動画　/ケヴィン・スラヴィン、クリストファー・メイソン、ジェシカ・グリーン、伊藤穰一/　 Innovative City Forum 2015 /　動画（ youtube/Innovative City Forum – Japanese）　-archiclue.](http://archiclue.com/?p=16436)
-- 都市環境生物群集 [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
+【動画】[スマートシティを司る“２番目の脳”](https://youtu.be/EQiO9kzpeBw?list=PLQl-BPZhcsy9EN-0jO8QildbCxtyIsR0C) [（ youtube/Innovative City Forum – Japanese）　-archiclue.](http://archiclue.com/?p=16436)
 
 ----------
 
