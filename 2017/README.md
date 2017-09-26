@@ -1,6 +1,7 @@
 SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
 
-# [基礎バイオインフォマティクス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_40596&ks=B6167)
+# 基礎バイオインフォマティクス
+[シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_40596&ks=B6167)
 - 科目概要：大規模で複雑な生物学的データの解析にはバイオインフォマティクスの技術が不可欠である。この科目では、コンピュータ実習を通して、大規模データから頑強で再現可能な知見を得るためのデータスキルを習得する。
 - 前提知識：生物学の基礎知識（例えば、DNA、RNA、タンパク質、遺伝子、セントラルドグマ）
 - 成績評価：提出課題と最終発表とレポート
@@ -9,7 +10,7 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ## 講義日程と資料
-- [2017-09-26 第01回 イントロダクション](https://github.com/haruosuz/books/tree/master/bds)
+- [2017-09-26 第01回 イントロダクション](https://github.com/haruosuz/books/blob/master/bds/README.md#bioinformatics-data-skills-reproducible-and-robust-research-with-open-source-tools)
 - [2017-10-03 第02回 バイオインフォマティクスのプロジェクト管理](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
 - [2017-10-10 第03回 Unixシェル
 - [2017-10-17 第04回 バイオインフォマティクス・データ
@@ -94,14 +95,16 @@ iMac Retina 5k 27inch
 
 	mv bds-files-master/ bds-files/
 
+`ls -l`コマンドでディレクトリの詳細情報を表示する:
+
+	ls -l bds-files/
+
 ### [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム解読プロジェクト一覧
 [Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 のテキスト形式ファイルをダウンロードする:  
 
 	wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
-
-	cat overview.txt
 
 ----------
 
