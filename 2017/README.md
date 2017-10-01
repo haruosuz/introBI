@@ -10,16 +10,17 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ## 講義日程と資料
-- [2017-09-26 第01回 イントロダクション](https://github.com/haruosuz/books/blob/master/bds/README.md#bioinformatics-data-skills-reproducible-and-robust-research-with-open-source-tools)
-- [2017-10-03 第02回 バイオインフォマティクスのプロジェクト管理](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
-- [2017-10-10 第03回 Unixシェル
-- [2017-10-17 第04回 バイオインフォマティクス・データ
-- [2017-10-24 第05回 Unixデータツール
-- [2017-10-31 第06回 シェルスクリプト
-- [2017-11-07 第07回 中間発表
-- 2017-11-14 第08回 R言語入門
+- 2017-09-26 第01回 [イントロダクション](##イントロダクション)
+- 2017-10-03 第02回 [バイオインフォマティクス・データスキル](https://dl.dropboxusercontent.com/s/jaa7r42xtoa99ii/README.md.html)
+
+- 2017-10-10 第03回 [バイオインフォマティクスのプロジェクト管理](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
+- 2017-10-17 第04回 Unixシェル
+- 2017-10-24 第05回 バイオインフォマティクス・データ
+- 2017-10-31 第06回 Unixデータツール
+- 2017-11-07 第07回 シェルスクリプト
+- 2017-11-14 第08回 中間発表
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 第09回 プロジェクト
+- 2017-11-28 第09回 R言語入門
 - 2017-12-05 第10回 プロジェクト
 - 2017-12-12 第11回 プロジェクト
 - 2017-12-19 第12回 プロジェクト
