@@ -1,15 +1,145 @@
-[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/blob/master/2016/README.md)
+[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
 
 ----------
 
 # [Case Study: Reproducibly Downloading Data](https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data)
 ケーススタディ
 
+- [2017-10-05](#2017-10-05)
 - [NCBI Genome List](#ncbi-genome-list)
 - [NCBI assembly summary](#ncbi-assembly-summary)
 - [Silva rRNA database](#silva-rrna-database)
 - [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md#grcm38-mouse-reference-genome)
+
+----------
+
+## 2017-10-05
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム解読プロジェクト一覧
+[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
+
+### Website
+[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下[NCBI FTP Site](ftp://ftp.ncbi.nlm.nih.gov/)を開き、[genomes](ftp://ftp.ncbi.nlm.nih.gov/genomes/)/[GENOME_REPORTS](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/)に移動する。
+例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
+
+	overview.txt file:
+	------------------
+	Organism/Name  Organism name at the species level according 
+	Kingdom        Taxonomic division: Archaea, Bacteria, Eukaryota, or Viruses 
+	Group          Commonly used organism groups 
+	SubGroup       NCBI Taxonomy level below group:
+	Size (Mb)      Estimated genome size 
+
+### Working with Data in R
+
+R言語を用いて、データの入出力と編集、統計解析、図表の作成を行なう。
+
+[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
+
+![](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/windows.gif)
+
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
+Rを終了:  
+
+    quit()
+
+[ヘルプ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/07.html)
+
+    help(quit)
+    ?quit
+
+作業環境、年月日を確認:  
+
+    # Collect Information About the Current R Session
+    sessionInfo()
+
+    # Get Current Date and Time
+    Sys.Date()
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    getwd()
+
+[Ｒ言語のデータの入出力と編集](https://www1.doshisha.ac.jp/~mjin/R/02.html)
+
+    # Loading Data into R
+    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt"
+    d <- read.delim(file = filename, stringsAsFactors=FALSE, na.strings="-", check.names=FALSE)
+
+[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認と変更:  
+
+    # Exploring and Transforming Dataframes
+    dim(d)
+    head(d, n = 1)
+    colnames(d)
+    colnames(d)[1] <- "Organism"
+
+[table 関数を使ったクロス集計](http://nshi.jp/contents/r/crosstab/)  
+ゲノム解読の状況`Status`を確認する:  
+
+    table(d$Status)
+    table(d$Status, d$Group)
+
+[文字列の処理](http://stat.biopapyrus.net/r/string.html)  
+[ゲノムアセンブリ](https://www.yodosha.co.jp/jikkenigaku/keyword/2789.html)の状況`Status`が完全ゲノム（"Complete Genome"）のデータを`grep`関数で抽出する:  
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    i <- grep(pattern="Complete", x=d$Status, ignore.case=TRUE)
+    length(i)
+    d <- d[i,]
+
+`Group`が[菌類](https://ja.wikipedia.org/wiki/菌類) "Fungi" に属するデータを抽出する:  
+
+    i <- grep(pattern="Fungi", x=d$Group); length(i); d <- d[i,]
+
+データのエクスポート。  
+`write.table`関数でタブ区切りファイルとして出力する:  
+`write.csv`関数でカンマ区切りファイルとして出力する:  
+
+    # Exporting Data
+    write.table(d, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    write.csv(d, file="table.csv", quote=TRUE)
+
+`summary()`関数でデータフレームの列を要約する。  
+ゲノムの Size (Mb), GC%, Genes, Proteins の要約統計量（最小値、中央値、最大値など）を求める:  
+
+    summary(d[, c("Size (Mb)", "GC%", "Genes", "Proteins")])
+
+[グラフィックス | Rで各種グラフの描き方,折れ線,散布図,ヒストグラム,棒グラフ,円グラフ,ボックスプロット](http://stat.biopapyrus.net/graph/)
+
+    # Exploring Data Visually
+    x <- "Size (Mb)" # サイズ
+    y <- "GC%"       # GC含量
+
+    # Scatter plot
+    plot(d[,x], d[,y], xlab = x, ylab = y) # 散布図
+
+    # Correlation
+    cor(d[,x], d[,y], method="pearson") # ピアソンの積率相関係数
+    cor(d[,x], d[,y], method="spearman") # スピアマンの順位相関係数
+    cor.test(d[,x], d[,y], method="spearman")
+
+    # Histograms
+    par(mfrow=c(2,2)) # 画面を 2 × 2 に分割
+    hist(d[,"Size (Mb)"]) # ヒストグラム
+    hist(d[,"GC%"], xlab="G+C content (%)", xlim=c(0,100), ylab="Number", main="", col="red")
+
+    par(mfcol=c(2,1), cex=0.9, mai=c(1.2, 1.5, 0.1, 0.1)) # mai=c(下, 左, 上, 右) 余白
+    grp <- "SubGroup"
+    # Bar Plots
+    barplot(table(d[,grp]), horiz = TRUE, las = 1) # 棒グラフ
+    # Box Plots
+    boxplot(d[,x] ~ d[,grp], horizontal = TRUE, las = 1, sub = x) # 箱ひげ図
+
+    # Wilcoxon rank sum test (Mann-Whitney test)
+    wilcox.test(d[,x] ~ d[,grp])
+
+## References
+- [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
+- [Rの初歩](https://oku.edu.mie-u.ac.jp/~okumura/stat/first.html)
 
 ----------
 
