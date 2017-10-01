@@ -120,7 +120,7 @@ Rを終了:
     # Correlation
     cor(d[,x], d[,y], method="pearson") # ピアソンの積率相関係数
     cor(d[,x], d[,y], method="spearman") # スピアマンの順位相関係数
-    cor.test(d[,x], d[,y], method="spearman")
+    cor.test(d[,x], d[,y], method="spearman") # 無相関検定
 
     # Histograms
     par(mfrow=c(2,2)) # 画面を 2 × 2 に分割
@@ -140,6 +140,9 @@ Rを終了:
 ## References
 - [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
 - [Rの初歩](https://oku.edu.mie-u.ac.jp/~okumura/stat/first.html)
+- [R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
+  - [65. 二標本検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/65.html) ウィルコクソンの順位和検定・マン・ホイットニーの U 検定
+  - [67. 相関係数と無相関検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html)
 
 ----------
 
