@@ -19,18 +19,8 @@
 [Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 
 ### Website
-[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下[NCBI FTP Site](ftp://ftp.ncbi.nlm.nih.gov/)を開き、[genomes](ftp://ftp.ncbi.nlm.nih.gov/genomes/)/[GENOME_REPORTS](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/)に移動する。
-例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
-
-	overview.txt file:
-	------------------
-	Organism/Name  Organism name at the species level according 
-	Kingdom        Taxonomic division: Archaea, Bacteria, Eukaryota, or Viruses 
-	Group          Commonly used organism groups 
-	SubGroup       NCBI Taxonomy level below group:
-	Size (Mb)      Estimated genome size 
+[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下 NCBI FTP Site ftp://ftp.ncbi.nlm.nih.gov/ を開き、[genomes](ftp://ftp.ncbi.nlm.nih.gov/genomes/)/[GENOME_REPORTS](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/)に移動する。
+例えば、*README* ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README をクリックして開く。
 
 ### Working with Data in R
 
