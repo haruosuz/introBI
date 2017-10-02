@@ -56,6 +56,7 @@ Rを終了:
 
     # Loading Data into R
     filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt"
+    #filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt"
     d <- read.delim(file = filename, stringsAsFactors=FALSE, na.strings="-", check.names=FALSE)
 
 [データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認と変更:  
