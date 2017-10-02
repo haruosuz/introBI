@@ -19,8 +19,7 @@
 [Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 
 ### Website
-[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下 NCBI FTP Site を開き、genomes/GENOME_REPORTS ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/ に移動する。
-例えば、*README* <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README> をクリックして開く。
+[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下 NCBI FTP Site を開き、genomes/GENOME_REPORTS <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> に移動する。例えば、*README*をクリックして開く。
 
 ### Working with Data in R
 
