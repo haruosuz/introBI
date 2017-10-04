@@ -137,18 +137,24 @@ Rを終了:
     Sys.Date()
 
 ## References
+### NCBI Genome List
+- [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](http://www.ncbi.nlm.nih.gov/pubmed/25510495)
+  - The complete list of prokaryotic genomes is available in Entrez Genome browser http://www.ncbi.nlm.nih.gov/genome/browse/
+  - The text version of the table can be downloaded from the FTP site ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+
+### R
 - [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
 - [Rの初歩](https://oku.edu.mie-u.ac.jp/~okumura/stat/first.html)
 - [R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
   - [65. 二標本検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/65.html) ウィルコクソンの順位和検定・マン・ホイットニーの U 検定
   - [67. 相関係数と無相関検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html)
+
+----------
+
 - [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
 - ["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/blob/master/bds/README.md)
   - [Chapter 8. A Rapid Introduction to the R Language](https://github.com/haruosuz/BDS#chapter-8-a-rapid-introduction-to-the-r-language)
 - [Case Study: Reproducibly Downloading Data](https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data)
-
-----------
-
 
 
 ----------
