@@ -10,7 +10,6 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ## 講義日程と資料
-- [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
 - 2017-09-26 第01回 [イントロダクション](##イントロダクション)
 - 2017-10-03 第02回 [バイオインフォマティクスのプロジェクト管理](https://dl.dropboxusercontent.com/s/qn4vug88ybprtfm/README.md.html)
 - 2017-10-10 第03回 Unixシェル
