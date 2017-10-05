@@ -1,4 +1,5 @@
-[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
+[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI)
+[2017](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
 
 ----------
 
