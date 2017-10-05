@@ -151,13 +151,16 @@ Rを終了:
   - [65. 二標本検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/65.html) ウィルコクソンの順位和検定・マン・ホイットニーの U 検定
   - [67. 相関係数と無相関検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html)
 
-----------
+### SFC
+- [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI)
+  - [2017](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
+- [生命動態のデータサイエンス](https://github.com/haruosuz/ds4gd)
+  - [2017 fall](https://github.com/haruosuz/DS4GD/tree/master/2017giga)
 
-- [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/blob/master/2017/README.md)
+### BDS
 - ["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/blob/master/bds/README.md)
   - [Chapter 8. A Rapid Introduction to the R Language](https://github.com/haruosuz/BDS#chapter-8-a-rapid-introduction-to-the-r-language)
 - [Case Study: Reproducibly Downloading Data](https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data)
-
 
 ----------
 
