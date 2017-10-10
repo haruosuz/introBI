@@ -106,7 +106,6 @@ iMac Retina 5k 27inch
 	wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
 
 ----------
-
 ## 課題内容
 
 ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
@@ -118,3 +117,86 @@ overview.txt:   Comprehensive report of organisms that have
                may be complete, in progress or planned.
 
 ----------
+### Markdown
+
+ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
+
+	wget https://dl.dropboxusercontent.com/u/33495171/introBI/markdown/markdown.md
+
+または
+
+	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI/markdown/markdown.md
+
+----------
+### テキストエディタ
+[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
+でファイルを開く:  
+
+	atom markdown.md
+
+[Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
+
+![](http://webkaru.net/dev/wp-content/uploads/2015/08/mac-atom-install-04.png)
+
+----------
+## projects_2015
+2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
+
+	bash
+	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/projects_2015.tar.gz
+	tar xvzf projects_2015.tar.gz
+	cd projects_2015/
+
+----------
+## 課題No.3 「Unixシェル」 
+　(〆切 : 10/16 23:59
+
+Unixシェル
+
+[UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+を見て、活用例や疑問点を報告する。
+
+(回答例)
+[動画レッスン一覧]と[補足情報一覧]を確認し、以下の動画レッスンを見た。
+ #05 ディレクトリ間を移動してみよう (02:56)
+ #06 ディレクトリを操作してみよう (02:59)
+ #07 ファイルを操作してみよう (02:53)
+ #08 bashの便利機能を使ってみよう (02:23)
+ #09 コマンドの履歴を活用しよう (02:21)
+ #10 コマンドについて詳しく調べよう (01:54)
+ #20 wc､head､tail､grepを使ってみよう (01:53)
+ #21 リダイレクション､パイプを使おう (02:25)
+ #22 ワイルドカードを使ってみよう (01:25)
+
+以下の通り、UNIXコマンド`cd, mkdir, ls, cat, grep, wc`やリダイレクション､パイプ、ワイルドカード`*`をデータの検査に活用した。
+
+	# ターミナルで、bashを起動し、ディレクトリを移動する:
+	bash
+	cd ~/projects/
+
+	# date +%Fコマンドを用いて日付ディレクトリを作成する:
+	mkdir $(date +%F)
+	cd $(date +%F)
+
+	# `wget`コマンドでoverview.txtファイルをダウンロード
+	wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
+
+	# 記号>と2>を用いて、標準出力（standard output）と標準エラー出力（standard error）を別のファイルにリダイレクトする:
+	ls -l overview.txt eukaryotes.txt prokaryotes.txt > stdout.txt 2> stderr.txt
+	# 存在するファイル（overview.txt）は標準出力に、存在しないファイル（eukaryotes.txt prokaryotes.txt）は標準エラー出力に送られる。
+	# ワイルドカードのアスタリスク（*）を用いてファイルを表示する:  
+	cat std*.txt
+
+	# パイプとgrepを用いて、overview.txtファイルの列名（#で始まる行）を抽出する:
+	cat overview.txt | grep "#"
+	grep "#" overview.txt
+
+	# ls -lrtで更新日時の逆順にソートする
+	ls -lrt
+
+----------
+
+
+
+
+
