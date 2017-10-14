@@ -27,7 +27,16 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-12-19 第12回 プロジェクト
 - 2017-12-26 第13回 プロジェクト
 - 2018-01-16 第14回 最終発表
-- 2017-01-23 [レポート](#レポート)提出期限
+- 2017-01-23 レポート提出期限
+
+----------
+## projects_2015
+2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
+
+	bash
+	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/projects_2015.tar.gz
+	tar xvzf projects_2015.tar.gz
+	cd projects_2015/
 
 ----------
 
@@ -100,25 +109,6 @@ iMac Retina 5k 27inch
 
 	ls -l bds-files/
 
-### [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム解読プロジェクト一覧
-[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
-のテキスト形式ファイルをダウンロードする:  
-
-	wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
-
-----------
-## 課題内容
-
-ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
-
-
-https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md#overview
-overview.txt:   Comprehensive report of organisms that have 
-               one or many genome sequencing projects that 
-               may be complete, in progress or planned.
-
-----------
 ### Markdown
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
@@ -129,7 +119,6 @@ overview.txt:   Comprehensive report of organisms that have
 
 	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI/markdown/markdown.md
 
-----------
 ### テキストエディタ
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
 でファイルを開く:  
@@ -139,15 +128,6 @@ overview.txt:   Comprehensive report of organisms that have
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
 ![](http://webkaru.net/dev/wp-content/uploads/2015/08/mac-atom-install-04.png)
-
-----------
-## projects_2015
-2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
-
-	bash
-	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/projects_2015.tar.gz
-	tar xvzf projects_2015.tar.gz
-	cd projects_2015/
 
 ----------
 ## 課題No.3 「Unixシェル」 
