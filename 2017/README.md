@@ -113,11 +113,11 @@ iMac Retina 5k 27inch
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
 
-	wget https://dl.dropboxusercontent.com/u/33495171/introBI/markdown/markdown.md
+	wget https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
 
 または
 
-	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI/markdown/markdown.md
+	curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
 
 ### テキストエディタ
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
