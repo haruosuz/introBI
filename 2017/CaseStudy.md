@@ -262,7 +262,8 @@ Rを終了:
 [Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 
 ### Website
-[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下[NCBI FTP Site](ftp://ftp.ncbi.nlm.nih.gov/)を開き、[genomes](ftp://ftp.ncbi.nlm.nih.gov/genomes/)/[GENOME_REPORTS](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/)に移動する。
+[National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov)右下のリンク"NCBI FTP Site"をクリックして開く。
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> に移動する。  
 例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 ### Download
