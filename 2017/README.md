@@ -15,8 +15,8 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-10-10 第03回 [Unixシェル](https://dl.dropboxusercontent.com/s/9s90lzt9wni8q4m/README.md.html)
 - 2017-10-17 第04回 [バイオインフォマティクス・データ](https://dl.dropboxusercontent.com/s/kjwbbzyz2qeczlh/README.md.html)
 - 2017-10-24 第05回 [Unixデータツール](https://dl.dropboxusercontent.com/s/ceyt1ngdyqcpw44/README.md.html)
-- 2017-10-31 第06回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
-- 2017-11-07 第07回 シェルスクリプト
+- 2017-10-31 第06回 [シェルスクリプト](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
+- 2017-11-07 第07回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
 - 2017-11-14 第08回 中間発表
 - 2017-11-21 (前半科目試験日)
 - 2017-11-28 第09回 TBA
@@ -35,6 +35,24 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/projects_2015.tar.gz
 	tar xvzf projects_2015.tar.gz
 	cd projects_2015/
+
+----------
+## プロジェクト例
+ターミナルで以下のコマンドを実行し、プロジェクト例を取得する:  
+
+    bash
+    wget https://github.com/haruosuz/introBI/raw/master/2015/examples.tar.gz
+    tar xvzf examples.tar.gz
+    cd examples/
+    cp -r hoge1 my_project
+
+- 雛形 `hoge1, hoge2, hoge3, testR1, testR2`
+- メタボローム MMMDB: Mouse Multiple Tissue Metabolome Database `mmmdb`
+- ゲノムリスト NCBI Genome List `ncbiGenomeList`
+- ゲノム配列 Bacteria:Mycoplasma_genitalium_G37 `mgen`
+- ゲノム配列 mitochondrion,plasmid,plastid,viral `ncbi_ftp`
+- 病原遺伝子配列 Virulence Factors Database (VFDB) `vfdb`
+- タンパク質配列 UniProtKB/Swiss-Prot `uniprot_sprot`
 
 ----------
 
