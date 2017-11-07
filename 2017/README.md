@@ -16,7 +16,10 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-10-17 第04回 [バイオインフォマティクス・データ](https://dl.dropboxusercontent.com/s/kjwbbzyz2qeczlh/README.md.html)
 - 2017-10-24 第05回 [Unixデータツール](https://dl.dropboxusercontent.com/s/ceyt1ngdyqcpw44/README.md.html)
 - 2017-10-31 第06回 [シェルスクリプト](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
-- 2017-11-07 第07回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
+- 2017-11-07 第07回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
+  - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
+  - [projects_2015](##projects_2015)
+  - [project directory examples](##project directory examples)
 - 2017-11-14 第08回 中間発表
 - 2017-11-21 (前半科目試験日)
 - 2017-11-28 第09回 TBA
@@ -32,12 +35,12 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
 
 	bash
-	curl -O https://dl.dropboxusercontent.com/u/33495171/introBI_2016/projects_2015.tar.gz
+	wget https://dl.dropboxusercontent.com/s/0r8c9jxz4pkjooh/projects_2015.tar.gz
 	tar xvzf projects_2015.tar.gz
 	cd projects_2015/
 
 ----------
-## プロジェクト例
+## project directory examples
 ターミナルで以下のコマンドを実行し、プロジェクト例を取得する:  
 
     bash
