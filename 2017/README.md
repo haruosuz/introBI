@@ -16,12 +16,12 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-10-17 第04回 [バイオインフォマティクス・データ](https://dl.dropboxusercontent.com/s/kjwbbzyz2qeczlh/README.md.html)
 - 2017-10-24 第05回 [Unixデータツール](https://dl.dropboxusercontent.com/s/ceyt1ngdyqcpw44/README.md.html)
 - 2017-10-31 第06回 [シェルスクリプト](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
-- 2017-11-07 第07回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md) | [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
+- 2017-11-07 第07回 [シェルスクリプト](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
   - [projects_2015](#projects_2015)
   - [project directory examples](#project-directory-examples)
-- 2017-11-14 第08回 中間発表
+- 2017-11-14 第08回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md) | [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 第09回 TBA
+- 2017-11-28 第09回 中間発表
 - 2017-12-05 第10回 TBA
 - 2017-12-12 第11回 TBA
 - 2017-12-19 第12回 TBA
