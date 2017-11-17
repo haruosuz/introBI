@@ -414,7 +414,9 @@ By 2017-09-08, there were 9939 sequenced plasmids in the NCBI database. Among th
 
     grep "Bacteria" plasmids.txt | cut -f1 | sort | uniq -c | sort -nr | head -n 12
 
-![https://www.eurekalert.org/pub_releases/2011-04/uog-ars041111.php](https://www.eurekalert.org/multimedia/pub/web/31335_web.jpg)
+![https://www.eurekalert.org/pub_releases/2011-04/uog-ars041111.php](https://www.eurekalert.org/multimedia/pub/web/31335_web.jpg) 
+
+- 2016年5月28日 [あらゆる抗生物質が効かない「スーパー耐性菌」、アメリカで初の感染が見つかる｜ニューズウィーク日本版](http://www.newsweekjapan.jp/stories/world/2016/05/post-5195.php)
 
 #### viruses
 ウイルスのリスト（*viruses.txt*）を用いて、ウイルスのグループ`Group`と自然宿主`Host`を調べる。
