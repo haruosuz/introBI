@@ -416,7 +416,7 @@ By 2017-09-08, there were 9939 sequenced plasmids in the NCBI database. Among th
 
 ![https://www.eurekalert.org/pub_releases/2011-04/uog-ars041111.php](https://www.eurekalert.org/multimedia/pub/web/31335_web.jpg) 
 
-- 2016年5月28日 [あらゆる抗生物質が効かない「スーパー耐性菌」、アメリカで初の感染が見つかる｜ニューズウィーク日本版](http://www.newsweekjapan.jp/stories/world/2016/05/post-5195.php)
+- 2016年5月28日 [あらゆる抗生物質が効かない「スーパー耐性菌」、アメリカで初の感染が見つかる｜ニューズウィーク日本版](http://www.newsweekjapan.jp/stories/world/2016/05/post-5195.php) プラスミド上のコリスチン耐性遺伝子であるｍｃｒ─１を有する大腸菌。
 
 #### viruses
 ウイルスのリスト（*viruses.txt*）を用いて、ウイルスのグループ`Group`と自然宿主`Host`を調べる。
