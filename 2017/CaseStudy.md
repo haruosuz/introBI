@@ -414,6 +414,8 @@ By 2017-09-08, there were 9939 sequenced plasmids in the NCBI database. Among th
 
     grep "Bacteria" plasmids.txt | cut -f1 | sort | uniq -c | sort -nr | head -n 12
 
+![https://www.eurekalert.org/pub_releases/2011-04/uog-ars041111.php](https://www.eurekalert.org/multimedia/pub/web/31335_web.jpg)
+
 #### viruses
 ウイルスのリスト（*viruses.txt*）を用いて、ウイルスのグループ`Group`と自然宿主`Host`を調べる。
 
