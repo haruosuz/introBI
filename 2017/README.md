@@ -33,7 +33,7 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 ## 中間発表
 スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
 
-[スライドのサンプル](https://dl.dropboxusercontent.com/s/baev8npxzfq2wlv/slides.pdf)  
+[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
 ## projects_2015
