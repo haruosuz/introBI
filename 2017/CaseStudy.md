@@ -6,6 +6,7 @@
 # Case Study
 ケーススタディ
 
+- [2017-11-28](#2017-11-28)
 - [ASSIGNMENT](#assignment)
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
@@ -17,6 +18,32 @@
 **課題内容**
 
 ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
+
+----------
+2017-11-28
+
+プロジェクト・ディレクトリ最新版の圧縮ファイル（my_project.zip）を提出する。
+
+- 解析を完全に再現するために必要な情報をプロジェクト・ノート（README.md）に記録する。
+- スクリプト（scripts/run.sh）の実行コマンドをREADME.mdに記録する。
+- データ（data/input.txt）を取得した日をREADME.mdに記録する。
+- 解析結果（analysis/output.txt）の説明をREADME.mdに記録する。
+
+プロジェクト・ディレクトリ（my_project/）構造の例:  
+
+    my_project/README.md
+    my_project/scripts/run.sh
+    my_project/data/2017-11-11/input.txt
+    my_project/data/2017-11-28/input.txt
+    my_project/analysis/2017-11-11/output.txt
+    my_project/analysis/2017-11-28/output.txt
+
+ディレクトリやファイルの名前（my_project/やoutput.txt）は適宜変更する。
+
+data/内のデータ・ファイルは提出しなくてもよい。
+data/内のファイルを除外して圧縮するzipコマンドの例: 
+
+    zip -r my_project.zip my_project/ -x my_project/data/*
 
 ----------
 
