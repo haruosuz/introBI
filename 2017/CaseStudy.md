@@ -6,10 +6,17 @@
 # Case Study
 ケーススタディ
 
+- [ASSIGNMENT](#assignment)
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [2017-10-05](#2017-10-05)
 - [NCBI Genome List](#ncbi-genome-list)
+
+----------
+## ASSIGNMENT
+**課題内容**
+
+ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
 
 ----------
 
