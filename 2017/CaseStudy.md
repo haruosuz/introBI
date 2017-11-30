@@ -35,10 +35,8 @@
     my_project/scripts/run.sh
     my_project/data/2017-11-11/input.txt
     my_project/data/2017-11-28/input.txt
-    my_project/analysis/2017-11-11/output.txt
-    my_project/analysis/2017-11-28/output.txt
-
-ディレクトリやファイルの名前（my_project/やoutput.txt）は適宜変更する。
+    my_project/analysis/output.2017-11-11.txt
+    my_project/analysis/output.2017-11-28.txt
 
 data/内のデータ・ファイルは提出しなくてもよい。
 data/内のファイルを除外して圧縮するzipコマンドの例: 
