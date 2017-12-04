@@ -1,4 +1,4 @@
-SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
+SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
 
 # 基礎バイオインフォマティクス
 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_40596&ks=B6167)
@@ -10,6 +10,7 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ## 講義日程と資料
+- [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
 - 2017-09-26 第01回 [イントロダクション](##イントロダクション)
 - 2017-10-03 第02回 [バイオインフォマティクスのプロジェクト管理](https://dl.dropboxusercontent.com/s/qn4vug88ybprtfm/README.md.html)
 - 2017-10-10 第03回 [Unixシェル](https://dl.dropboxusercontent.com/s/9s90lzt9wni8q4m/README.md.html)
@@ -19,21 +20,15 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-11-07 第07回 [シェルスクリプト](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
   - [projects_2015](#projects_2015)
   - [project directory examples](#project-directory-examples)
-- 2017-11-14 第08回 [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md) | [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
+- 2017-11-14 第08回 ケーススタディ [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
 - 2017-11-21 (前半科目試験日)
 - 2017-11-28 第09回 [中間発表](#中間発表)
-- 2017-12-05 第10回 TBA
-- 2017-12-12 第11回 TBA
-- 2017-12-19 第12回 TBA
+- 2017-12-05 第10回 ゲストスピーカー
+- 2017-12-12 第11回 ゲストスピーカー
+- 2017-12-19 第12回 ゲストスピーカー
 - 2017-12-26 第13回 TBA
 - 2018-01-16 第14回 [最終発表](#最終発表)
 - 2018-01-23 [レポート](#レポート)提出期限
-
-----------
-## 中間発表
-スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
-
-[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
 ## 最終発表
@@ -56,6 +51,12 @@ SFC 2017年度 秋学期 水曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 解析結果の再現性を自分の実行環境で確認した。
 - 解析結果の再現性を他人の実行環境で確認した。
 - その他、再現可能な研究 Reproducible Research に必要なプロジェクト管理をした。
+
+----------
+## 中間発表
+スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
+
+[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
 ## projects_2015
