@@ -17,15 +17,6 @@ Last Update: 2017-10-05
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
 
 ----------
-## How to be a bioinformatician
-
-![http://www.slideshare.net/ChristianFrech/how-to-be-a-bioinformatician](http://image.slidesharecdn.com/how-to-be-a-bioinformatician-public-140426130503-phpapp02/95/how-to-be-a-bioinformatician-2-638.jpg)
-
-- [1. How to Learn Bioinformatics - Bioinformatics Data Skills [Book]](https://www.safaribooksonline.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
-- [So you want to be a computational biologist?](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2740.html)
-- [The five habits of bad bioinformaticians](http://www.opiniomics.org/the-five-habits-of-bad-bioinformaticians/)
-
-----------
 ## Reproducible Research
 再現可能な研究
 
@@ -71,5 +62,14 @@ Last Update: 2017-10-05
 ![http://www.slideshare.net/carolegoble/results-may-vary-collaborations-workshop-oxford-2014](http://image.slidesharecdn.com/goble-cw2014-140802134150-phpapp01/95/results-may-vary-collaborations-workshop-oxford-2014-8-638.jpg)
 
 - [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
+
+----------
+## How to be a bioinformatician
+
+![http://www.slideshare.net/ChristianFrech/how-to-be-a-bioinformatician](http://image.slidesharecdn.com/how-to-be-a-bioinformatician-public-140426130503-phpapp02/95/how-to-be-a-bioinformatician-2-638.jpg)
+
+- [1. How to Learn Bioinformatics - Bioinformatics Data Skills [Book]](https://www.safaribooksonline.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+- [So you want to be a computational biologist?](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2740.html)
+- [The five habits of bad bioinformaticians](http://www.opiniomics.org/the-five-habits-of-bad-bioinformaticians/)
 
 ----------
