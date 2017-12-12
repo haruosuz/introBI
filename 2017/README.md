@@ -23,8 +23,8 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-11-14 第08回 ケーススタディ [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
 - 2017-11-21 (前半科目試験日)
 - 2017-11-28 第09回 [中間発表](#中間発表)
-- 2017-12-05 第10回 [Bioinformatics, Unix data tools](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/12052017_soh.html)
-- 2017-12-12 第11回 TBA
+- 2017-12-05 第10回 [1. Bioinformatics, Unix data tools](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/12052017_soh.html)
+- 2017-12-12 第11回 [2. Data analysis with R](https://gist.github.com/soh-i/4ab1d1c825be00774887f25c7aaa9fac)
 - 2017-12-19 第12回 TBA
 - 2017-12-26 第13回 TBA
 - 2018-01-16 第14回 [最終発表](#最終発表)
