@@ -25,7 +25,7 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-11-28 第09回 [中間発表](#中間発表)
 - 2017-12-05 第10回 [1. Bioinformatics, Unix data tools](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/12052017_soh.html)
 - 2017-12-12 第11回 [2. Data analysis with R](https://gist.github.com/soh-i/4ab1d1c825be00774887f25c7aaa9fac)
-- 2017-12-19 第12回 TBA
+- 2017-12-19 第12回 [3. Data visualization with R](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/Data_visualization_with_R/data_vis_ggplot2.html)
 - 2017-12-26 第13回 TBA
 - 2018-01-16 第14回 [最終発表](#最終発表)
 - 2018-01-23 [レポート](#レポート)提出期限
@@ -52,7 +52,7 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - C：最終発表を行い、レポートを提出し、プロジェクト・ディレクトリを提出している。
 
 ### 評価基準
-- 解析結果の考察
+- 解析結果の再現性の考察。
 - 解析結果の再現に必要な全ての情報を含むプロジェクト・ディレクトリを作成した。
 - 解析結果の再現性を自分の実行環境で確認した。
 - 解析結果の再現性を他人の実行環境で確認した。
