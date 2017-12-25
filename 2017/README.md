@@ -56,7 +56,7 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 
 ### 評価基準
 - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/introBI#reproducible-research) に必要なプロジェクト管理をした。
-- 再現可能な研究に必要な全ての情報（スクリプト、README.mdファイルなど）を含むプロジェクト・ディレクトリを作成した。
+- 再現可能な研究に必要な全ての情報を含むプロジェクト・ディレクトリを作成した。
 - 再現性を自分の実行環境で確認した。
 - 再現性を他人の実行環境で確認した。
 
