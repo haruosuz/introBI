@@ -26,7 +26,8 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2017-12-05 第10回 [1. Bioinformatics, Unix data tools](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/12052017_soh.html)
 - 2017-12-12 第11回 [2. Data analysis with R](https://gist.github.com/soh-i/4ab1d1c825be00774887f25c7aaa9fac)
 - 2017-12-19 第12回 [3. Data visualization with R](http://web.sfc.keio.ac.jp/~si914/bio_lec_2017/Data_visualization_with_R/data_vis_ggplot2.html)
-- 2017-12-26 第13回 [Bioinformatics Data Skills](http://apprize.info/data/bioinformatics/index.html)
+- 2017-12-26 第13回 [まとめ](https://dl.dropboxusercontent.com/s/dcob37resjm2jdv/README.md)
+  - [Bioinformatics Data Skills](http://apprize.info/data/bioinformatics/index.html)
   - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/introBI#reproducible-research)
   - ケーススタディ [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#working-with-data-in-r-1)
 - 2018-01-09 月曜代替日
