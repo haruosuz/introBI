@@ -40,9 +40,9 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 データベース上のファイル変更により再現不可能な場合には、その状況をREADME.mdやレポートに記載すればよい。
 例えば、2018-01-22現在、以下のファイルが存在しない。
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
-plasmids.txt
-prokaryotes.txt
-viruses.txt
+    plasmids.txt
+    prokaryotes.txt
+    viruses.txt
 
 ----------
 ## [NCBI](https://www.ncbi.nlm.nih.gov)
