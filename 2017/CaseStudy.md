@@ -20,7 +20,7 @@
  課題No.13 「レポートの提出」
 　(〆切 : 01/23 23:59
 
-レポート（my_report.pdf）を含む含むプロジェクト・ディレクトリ最新版の圧縮ファイル（my_project.zip）を提出する。ファイルのサイズに注意する（10MBを上限とする）。
+レポート（my_report.pdf）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（my_project.zip）を提出する。ファイルのサイズに注意する（10MBを上限とする）。
 
 プロジェクト・ディレクトリ（my_project/）構造の例:  
 
@@ -38,6 +38,7 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
     zip -r my_project.zip my_project/ -x my_project/data/*
 
 データベース上のファイル変更により再現不可能な場合には、その状況をプロジェクトのドキュメント（README.md）やレポートに記載すればよい。
+
 例えば、2018-01-22現在、以下のファイルが入手できない。
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
@@ -64,6 +65,8 @@ http://blog.livedoor.jp/dr7/archives/52199873.html
 20 JANUARY 2018
 https://www.nature.com/articles/d41586-018-01016-2
 Science in limbo as US government shuts down
+
+![](https://pbs.twimg.com/media/DUHp3LWVQAALKpL.jpg:small)
 
 ----------
 ## 2017-11-28
