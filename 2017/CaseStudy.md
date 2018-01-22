@@ -66,8 +66,6 @@ http://blog.livedoor.jp/dr7/archives/52199873.html
 https://www.nature.com/articles/d41586-018-01016-2
 Science in limbo as US government shuts down
 
-![](https://pbs.twimg.com/media/DUHp3LWVQAALKpL.jpg:small)
-
 ----------
 ## 2017-11-28
 
