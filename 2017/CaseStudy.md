@@ -6,6 +6,8 @@
 # Case Study
 ケーススタディ
 
+- [2018-01-23](#2018-01-23)
+- [NCBI](#ncbi)
 - [2017-11-28](#2017-11-28)
 - [ASSIGNMENT](#assignment)
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
@@ -14,10 +16,45 @@
 - [NCBI Genome List](#ncbi-genome-list)
 
 ----------
-## ASSIGNMENT
-**課題内容**
+## 2018-01-23
+ 課題No.13 「レポートの提出」
+　(〆切 : 01/23 23:59
 
-ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
+レポート（my_report.pdf）を含む含むプロジェクト・ディレクトリ最新版の圧縮ファイル（my_project.zip）を提出する。ファイルのサイズに注意する（10MBを上限とする）。
+
+プロジェクト・ディレクトリ（my_project/）構造の例:  
+
+    my_project/README.md
+    my_project/scripts/run.sh
+    my_project/data/
+    my_project/analysis/output.txt
+    my_project/my_slide.pdf
+    my_project/my_report.pdf
+
+ディレクトリやファイルの名前（my_project/やrun.sh）は適宜変更する。
+
+data/内のファイルを除外して圧縮するzipコマンドの例: 
+
+    zip -r my_project.zip my_project/ -x my_project/data/*
+
+以下のファイルが空（Size: 0 B）になっているが、このことが原因で再現できない状況をREADME.mdとレポートに書いて報告すればよい。
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
+plasmids.txt
+prokaryotes.txt
+viruses.txt
+
+----------
+## [NCBI](https://www.ncbi.nlm.nih.gov)
+
+![](https://pbs.twimg.com/media/DUGX3KaWAAEkVLS.jpg:small)
+
+2018年01月22日
+http://www.gon-tech.net/article/456359275.html
+アメリカ予算失効とpubmed
+
+20 JANUARY 2018
+https://www.nature.com/articles/d41586-018-01016-2
+Science in limbo as US government shuts down
 
 ----------
 ## 2017-11-28
@@ -42,6 +79,12 @@ data/内のデータ・ファイルは提出しなくてもよい。
 data/内のファイルを除外して圧縮するzipコマンドの例: 
 
     zip -r my_project.zip my_project/ -x my_project/data/*
+
+----------
+## ASSIGNMENT
+**課題内容**
+
+ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
 
 ----------
 
