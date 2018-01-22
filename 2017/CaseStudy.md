@@ -26,7 +26,7 @@
 
     my_project/README.md
     my_project/scripts/run.sh
-    my_project/data/
+    my_project/data/input.txt
     my_project/analysis/output.txt
     my_project/my_slide.pdf
     my_project/my_report.pdf
@@ -38,8 +38,10 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
     zip -r my_project.zip my_project/ -x my_project/data/*
 
 データベース上のファイル変更により再現不可能な場合には、その状況をREADME.mdやレポートに記載すればよい。
-例えば、2018-01-22現在、以下のファイルが存在しない。
+例えば、2018-01-22現在、以下のファイルが入手できない。
+
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
+
     plasmids.txt
     prokaryotes.txt
     viruses.txt
