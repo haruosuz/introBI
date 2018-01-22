@@ -37,7 +37,8 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 
     zip -r my_project.zip my_project/ -x my_project/data/*
 
-以下のファイルが空（Size: 0 B）になっているが、このことが原因で再現できない状況をREADME.mdとレポートに書いて報告すればよい。
+データベース上のファイル変更により再現不可能な場合には、その状況をREADME.mdやレポートに記載すればよい。
+例えば、2018-01-22現在、以下のファイルが存在しない。
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
 plasmids.txt
 prokaryotes.txt
