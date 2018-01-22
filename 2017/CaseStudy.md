@@ -37,7 +37,7 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 
     zip -r my_project.zip my_project/ -x my_project/data/*
 
-データベース上のファイル変更により再現不可能な場合には、その状況をREADME.mdやレポートに記載すればよい。
+データベース上のファイル変更により再現不可能な場合には、その状況をプロジェクトのドキュメント（README.md）やレポートに記載すればよい。
 例えば、2018-01-22現在、以下のファイルが入手できない。
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
@@ -46,14 +46,24 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
     prokaryotes.txt
     viruses.txt
 
+米政府機関
+予算失効で４年ぶり閉鎖
+
+
 ----------
 ## [NCBI](https://www.ncbi.nlm.nih.gov)
 
 ![](https://pbs.twimg.com/media/DUGX3KaWAAEkVLS.jpg:small)
 
+[米政府機関 閉鎖 予算失効](https://twitter.com/search?q=米政府機関%20予算失効)
+
 2018年01月22日
 http://www.gon-tech.net/article/456359275.html
 アメリカ予算失効とpubmed
+
+2018年01月21日23:16
+http://blog.livedoor.jp/dr7/archives/52199873.html
+米国政府閉鎖 Pubmedにも影響が… 
 
 20 JANUARY 2018
 https://www.nature.com/articles/d41586-018-01016-2
