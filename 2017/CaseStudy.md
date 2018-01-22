@@ -66,6 +66,16 @@ http://blog.livedoor.jp/dr7/archives/52199873.html
 https://www.nature.com/articles/d41586-018-01016-2
 Science in limbo as US government shuts down
 
+https://twitter.com/DDBJ_topics/status/955271944256933888
+DDBJ_info on Twitter: "遺伝研スパコン停止に伴い、1月26日(金)より順次DDBJサービスが停止いたします。停止期間はサービスによって異なります。DDBJ HPにてご確認ください。皆様には大変ご迷惑をおかけいたしますが、ご理解とご協力をお願いいたします。https://t.co/yBryd63Zsb #DDBJ"
+
+- [INSDC - DDBJ/EBI/NCBI国際塩基配列データベース](http://www.ddbj.nig.ac.jp/insdc/insdc-j.html)  
+  - 米国 [National Centre for Biotechnology Information (NCBI)](http://www.ncbi.nlm.nih.gov)  
+  - 欧州 [European Bioinformatics Institute (EBI)](http://www.ebi.ac.uk)  
+  - 日本 [DNA Data Bank of Japan (DDBJ)](http://www.ddbj.nig.ac.jp/index-j.html)  
+
+![http://www.ddbj.nig.ac.jp/insdc/insdc-j.html](http://www.ddbj.nig.ac.jp/wp-content/uploads/insdc_shoukai550_20130515.gif)  
+
 ----------
 ## 2017-11-28
 
