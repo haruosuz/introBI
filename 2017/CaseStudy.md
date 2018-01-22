@@ -46,16 +46,12 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
     prokaryotes.txt
     viruses.txt
 
-米政府機関
-予算失効で４年ぶり閉鎖
-
-
 ----------
+[米政府機関 一部閉鎖 予算失効](https://twitter.com/search?q=米政府機関%20予算失効)
+
 ## [NCBI](https://www.ncbi.nlm.nih.gov)
 
 ![](https://pbs.twimg.com/media/DUGX3KaWAAEkVLS.jpg:small)
-
-[米政府機関 一部閉鎖 予算失効](https://twitter.com/search?q=米政府機関%20予算失効)
 
 2018年01月22日
 http://www.gon-tech.net/article/456359275.html
