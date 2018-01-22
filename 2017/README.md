@@ -32,24 +32,6 @@ SFC 2017年度 秋学期 火曜日2時限 [λ18](http://classroom.sfc.keio.ac.jp
 - 2018-01-23 [レポート](#レポート)提出期限
 
 ----------
-## NIH
-
-![](https://pbs.twimg.com/media/DUGX3KaWAAEkVLS.jpg:small)
-
-https://www.ncbi.nlm.nih.gov
-Because of a lapse in government funding, the information on this website may not be up to date, transactions submitted via the website may not be processed, and the agency may not be able to respond to inquiries until appropriations are enacted.
-The NIH Clinical Center (the research hospital of NIH) is open. For more details about its operating status, please visit cc.nih.gov.
-Updates regarding government operating status and resumption of normal operations can be found at USA.gov.
-
-2018年01月22日
-http://www.gon-tech.net/article/456359275.html
-アメリカ予算失効とpubmed: 脳と心の間でー旧Medical Research Life Hack
-
-NEWS  20 JANUARY 2018
-https://www.nature.com/articles/d41586-018-01016-2
-Science in limbo as US government shuts down
-
-----------
 ## 最終発表
 スライド最低1枚を用いて、1人あたり最低1分（最大5分）でプロジェクトの内容を報告する。
 2つ以上（自分と他人）の実行環境で、最低3回（別の年月日に）解析を実行し、結果の再現性を報告する。
@@ -73,7 +55,6 @@ Science in limbo as US government shuts down
 ----------
 ## 中間発表
 スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
-
 [スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
