@@ -18,6 +18,8 @@ Last Update: 2018-03-17
 ## Reproducible Research
 再現可能な研究
 
+[Reproducibility](https://github.com/haruosuz/introBI/tree/master/reproducibility)
+
 ----------
 ## How to be a bioinformatician
 
