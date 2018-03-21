@@ -15,6 +15,21 @@ Last Update: 2018-03-17
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
+https://twitter.com/PatSchloss/status/976090623676682240
+Pat Schoss on Twitter: "I've been developing a tutorial series for those microbiome researchers interested in improving the reproducibility of their analyses. The introductory video is up on YouTube and new videos will be dropping every Tuesday and Thursday. https://t.co/ywezPTuaYA"
+9:38 AM - 20 Mar 2018
+http://www.riffomonas.org/reproducible_research/
+
+MARCH 18, 2018
+http://microbiology.github.io/blog/com-bio-tech/
+1. Docker
+2. Julia
+3. Reproducible Documents
+
+2018年3月17日土曜日
+http://on-sociology.blogspot.jp/2018/03/blog-post_17.html
+計量分析を用いた論文も社会的な構築物なのか？：経済学と政治学の再現性ポリシーの違い
+
 https://twitter.com/arcatdmz/status/974500312013680640
 arc@dmz on Twitter: "HCI分野の研究者が研究再現性問題とどう向き合うべきか、ヒューマンインタフェース学会誌に寄稿しました。再現性の話が縦糸とすると、横糸でHCI分野概論になったと思います。この機会に昔の話もまとめました。 / “メタ科学 | jun…” https://t.co/Blre1F9qBp"
 12:19 AM - 16 Mar 2018
