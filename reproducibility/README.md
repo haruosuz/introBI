@@ -8,12 +8,17 @@ Last Update: 2018-03-17
 ## Table of Contents
 - [Updates](#updates)
   - [2018](#2018)
+  - [2017](#2017)
+  - [2016](#2016)
+  - [2015](#2015)
 - [References](#references)
 
 ----------
 ## Updates
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
+
+### 2018
 
 https://twitter.com/PatSchloss/status/976090623676682240
 Pat Schoss on Twitter: "I've been developing a tutorial series for those microbiome researchers interested in improving the reproducibility of their analyses. The introductory video is up on YouTube and new videos will be dropping every Tuesday and Thursday. https://t.co/ywezPTuaYA"
@@ -55,15 +60,10 @@ https://twitter.com/yuji_ikegaya/status/973450246154940417
 
 http://www.pnas.org/content/early/2018/03/08/1711786114
 
-----------
-## References
-
-- https://en.wikipedia.org/wiki/Reproducibility
-- https://ja.wikipedia.org/wiki/再現性
-- https://ja.wikipedia.org/wiki/科学的方法#再現性
-- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
-- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
 - 2018-02-05 ["科学的根拠"って信用できると思った？｜東原兄弟の、筋トレで鍛える人生力](https://ameblo.jp/toharas-musclelifestyle/entry-12350045279.html)
+
+### 2017
+
 - 2017-12-10 [2017年度版 RStudioを使ったReproducible Research、補足ポエム - まだ厨二病](http://uribo.hatenablog.com/entry/2017/12/10/145149)
 - 2017-12-01 [データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの - Qiita](https://qiita.com/inutano/items/ee95c67323dbd5eb041e)
 - 4 Sep 2017 PeerJ - the journal on Twitter: [On the reproducibility of science: unique identification of research resources in the biomedical literature](https://twitter.com/thePeerJ/status/904911469904580608) Published September 5, 2013
@@ -75,12 +75,23 @@ http://www.pnas.org/content/early/2018/03/08/1711786114
 - 2017-06-20 [Experimenting with reproducibility in bioinformatics](http://biorxiv.org/content/early/2017/06/20/143503)
 - 2017-01-20 [危機に直面する科学研究の「再現性」 - 粥川準二｜WEBRONZA - 朝日新聞社の言論サイト](http://webronza.asahi.com/science/articles/2017010800002.html)
 - 2017-01-10 [「再現可能な科学」のためのマニフェスト | おすすめのコンテンツ | Nature Human Behaviour | Nature Research](http://www.natureasia.com/ja-jp/nathumbehav/abstracts/82836)
+
+### 2016
+
+2016, Vol. 59, No. 1
+http://team1mile.com/sjpr59-1/
+『心理学評論』
+特集「心理学の再現可能性：我々はどこから来たのか　我々は何者か　我々はどこへ行くのか」
+
 - 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
 - [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
  - [Reality check on reproducibility : Nature News & Comment](http://www.nature.com/news/reality-check-on-reproducibility-1.19961)
 - 2016-01-05 MINAKA Nobuhiro on Twitter: [AFPBB News「生物医科学論文の大半に不備、信頼性に疑問符」](https://twitter.com/leeswijzer/status/684521352867524612)
+
+### 2015
+
 - 2015-12-16 笠原 雅弘 [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523)
 - 2015-12-08 [Markowetz F. "Five selfish reasons to work reproducibly." Genome Biol. PMID: 26646147 ](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
 - 2015-10-21 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
@@ -95,6 +106,9 @@ http://www.pnas.org/content/early/2018/03/08/1711786114
 - 2015-06-09 [Irreproducible biology research costs put at $28 billion per year : Nature News & Comment](http://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711)
 - 2015-06-04 [食品安全情報blog | データ共有の遅さが再現性の努力を妨げる](http://d.hatena.ne.jp/uneyama/20150604#p12)
  - 2015-06-03 [Sluggish data sharing hampers reproducibility effort : Nature News & Comment](http://www.nature.com/news/sluggish-data-sharing-hampers-reproducibility-effort-1.17694)
+
+### 2013
+
 - 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか | クマムシ博士・堀川大樹](http://www.huffingtonpost.jp/daiki-horikawa/post_5982_b_4165458.html)
 - 2013-11 [Nature Digest](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | 医学生物学論文の70%以上が、再現できない! [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
 - [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353) | [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
@@ -109,3 +123,11 @@ http://www.pnas.org/content/early/2018/03/08/1711786114
 
 - [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
 
+----------
+## References
+
+- https://en.wikipedia.org/wiki/Reproducibility
+- https://ja.wikipedia.org/wiki/再現性
+- https://ja.wikipedia.org/wiki/科学的方法#再現性
+- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
+- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
