@@ -18,6 +18,25 @@ Last Update: 2018-03-17
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
+http://chitosepress.com/2016/08/16/2114/
+『心理学評論』特集：心理学の再現可能性
+
+http://chitosepress.com/2015/11/09/404/
+心理学研究は信頼できるか？――再現可能性をめぐって(3)
+・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
+
+2017-07-27
+http://d.hatena.ne.jp/tomsekiguchi/20170727/1501136241
+HARKing, p-hacking, asterisk-seekingを助長している学術界 - 講義のページにようこそ
+
+http://team1mile.com/sjpr59-1/wp-content/uploads/2016/07/ikeda_hiraishi.pdf
+Japanese Psychological Review
+2016, Vol. 59, No. 1, 3–14
+心理学における再現可能性危機:問題の構造と解決策 1)
+
+そこで,この状況を打開する方法 として,データを得た後に,それに適合する仮を 構築すること,すなわち HARKing が登場する
+(Hypothesizing After the Results are Known;Bones, 2012;Kerr, 1998;OʼBoyle, Banks, & Gonzalez- Mule, 2014)。HARKing の弊害は様々に論じられて いるが,おそらく最大の問題点は,それが第一種 の過誤を増大させてしまう点にあると思われる。
+
 ### 2018
 
 https://twitter.com/PatSchloss/status/976090623676682240
@@ -34,6 +53,8 @@ http://microbiology.github.io/blog/com-bio-tech/
 2018年3月17日土曜日
 http://on-sociology.blogspot.jp/2018/03/blog-post_17.html
 計量分析を用いた論文も社会的な構築物なのか？：経済学と政治学の再現性ポリシーの違い
+
+![](https://2.bp.blogspot.com/-fdzAVQMP7sQ/Wq0fMeYk8OI/AAAAAAAACMk/QOBlAa3M46wFOPfaebg4kUHPrcsHCOcHgCLcBGAs/s640/Framework.png)
 
 https://twitter.com/arcatdmz/status/974500312013680640
 arc@dmz on Twitter: "HCI分野の研究者が研究再現性問題とどう向き合うべきか、ヒューマンインタフェース学会誌に寄稿しました。再現性の話が縦糸とすると、横糸でHCI分野概論になったと思います。この機会に昔の話もまとめました。 / “メタ科学 | jun…” https://t.co/Blre1F9qBp"
@@ -65,16 +86,22 @@ http://www.pnas.org/content/early/2018/03/08/1711786114
 ### 2017
 
 - 2017-12-10 [2017年度版 RStudioを使ったReproducible Research、補足ポエム - まだ厨二病](http://uribo.hatenablog.com/entry/2017/12/10/145149)
-- 2017-12-01 [データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの - Qiita](https://qiita.com/inutano/items/ee95c67323dbd5eb041e)
+
+- 2017-12-01 [データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの](http://trattoriainutano.tumblr.com/post/168391519927/データ解析が再現するということあるいは-common-workflow-language)
+
+![](https://qiita-image-store.s3.amazonaws.com/0/400/3dab48e3-b6a9-eae0-87c6-c32969b86b86.png)
+
 - 4 Sep 2017 PeerJ - the journal on Twitter: [On the reproducibility of science: unique identification of research resources in the biomedical literature](https://twitter.com/thePeerJ/status/904911469904580608) Published September 5, 2013
 - 2017年8月28日 [「再現性の危機」― 検証プロジェクトで浮き彫りに | Editage Insights](http://www.editage.jp/insights/the-reproducibility-projects-first-findings-highlight-reproducibility-crisis)
  - Jan. 18, 2017 [Rigorous replication effort succeeds for just two of five cancer papers | Science | AAAS](http://www.sciencemag.org/news/2017/01/rigorous-replication-effort-succeeds-just-two-five-cancer-papers)
 - Jul 13, 2017 [統計解析の再現可能性を高める取り組み](https://twitter.com/akabuchiyk/status/885504675666997249)
 - 12 July 2017 [Investigating reproducibility and tracking provenance – A genomic workflow case study | BMC Bioinformatics | Full Text](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1747-0)
-- 2017-07-05 [科学研究の再現性について](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
+- 2017-07-05 [科学研究の再現性について | junkato.jp](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
 - 2017-06-20 [Experimenting with reproducibility in bioinformatics](http://biorxiv.org/content/early/2017/06/20/143503)
 - 2017-01-20 [危機に直面する科学研究の「再現性」 - 粥川準二｜WEBRONZA - 朝日新聞社の言論サイト](http://webronza.asahi.com/science/articles/2017010800002.html)
 - 2017-01-10 [「再現可能な科学」のためのマニフェスト | おすすめのコンテンツ | Nature Human Behaviour | Nature Research](http://www.natureasia.com/ja-jp/nathumbehav/abstracts/82836)
+
+![](http://www.natureasia.com/figures/95066.jpg)
 
 ### 2016
 
@@ -97,6 +124,12 @@ http://team1mile.com/sjpr59-1/
 - 2015-10-21 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
 
 ![](https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg)
+
+2015年9月4日
+https://togetter.com/li/869445
+統計解析の目的：知見の一般化？それとも、傾向の確認？その場合の再現性って何？ - Togetter
+
+母集団から標本がランダムサンプリングされているなら，ある標本で統計的に有意になった結果は母集団の傾向を正しく反映している確率が高いから，同じ母集団からランダムサンプリングされた別の標本においても同じ傾向が見出される（つまり再現性がある）ことが期待される。
 
 - 13 Jul 2015 Pinky Langat on Twitter: ["Simple rules for #reproducibility in #bioinformatics (Sandve et al. 2013) highlighted at #smbe15](https://twitter.com/PinkyCLangat/status/620503279647227904)
 
