@@ -50,7 +50,7 @@ http://microbiology.github.io/blog/com-bio-tech/
 2. Julia
 3. Reproducible Documents
 
-2018年3月17日土曜日
+2018年3月17日
 http://on-sociology.blogspot.jp/2018/03/blog-post_17.html
 計量分析を用いた論文も社会的な構築物なのか？：経済学と政治学の再現性ポリシーの違い
 
@@ -66,12 +66,17 @@ https://twitter.com/ufsoc/status/974482463975067649
 Fumiya Uchikoshi on Twitter: "How to make replication the norm https://t.co/FMzmY3ECpS 経済学の主要誌はほぼ再現性ポリシーを採用しているはずだが、この報告では9誌に掲載された203の経験的な研究論文のうち、24％がデータやコードを全く提出していなかったという。完全に再現できたのは15％。… https://t.co/jW9YpUj9nl"
 11:08 PM - 15 Mar 2018
 
+![](https://pbs.twimg.com/media/DYYOaZxVQAA-qCZ.jpg)
+
+21 FEBRUARY 2018
 https://www.nature.com/articles/d41586-018-02108-9
+How to make replication the norm
 
 https://twitter.com/KayokoShioda/status/974103524589096960
 Kayoko Shioda on Twitter: "近年科学雑誌がデータやコードの開示を求めるようになっているので、その有効性をしらべた論文。著者らは雑誌 #サイエンス に載っていた論文をランダムに204本抽出し、公開データ＆コードを用いて結果の再現を試みるが、26％でしか再現できなかったと。このルールはないよりましだが完璧ではない #PNAS… https://t.co/u1lxkLUZuc"
 9:57 PM - 14 Mar 2018
 
+March 13, 2018
 http://www.pnas.org/content/115/11/2584
 An empirical analysis of journal policy effectiveness for computational reproducibility | Proceedings of the National Academy of Sciences
 
@@ -115,6 +120,10 @@ http://team1mile.com/sjpr59-1/
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
 - [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
  - [Reality check on reproducibility : Nature News & Comment](http://www.nature.com/news/reality-check-on-reproducibility-1.19961)
+
+![](https://nd.natureasia.com/figure/5706/77048/phone/1)
+![](https://nd.natureasia.com/figure/5706/77048/phone/2)
+
 - 2016-01-05 MINAKA Nobuhiro on Twitter: [AFPBB News「生物医科学論文の大半に不備、信頼性に疑問符」](https://twitter.com/leeswijzer/status/684521352867524612)
 
 ### 2015
