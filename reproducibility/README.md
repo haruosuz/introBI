@@ -18,25 +18,6 @@ Last Update: 2018-03-17
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
-http://chitosepress.com/2016/08/16/2114/
-『心理学評論』特集：心理学の再現可能性
-
-http://chitosepress.com/2015/11/09/404/
-心理学研究は信頼できるか？――再現可能性をめぐって(3)
-・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
-
-2017-07-27
-http://d.hatena.ne.jp/tomsekiguchi/20170727/1501136241
-HARKing, p-hacking, asterisk-seekingを助長している学術界 - 講義のページにようこそ
-
-http://team1mile.com/sjpr59-1/wp-content/uploads/2016/07/ikeda_hiraishi.pdf
-Japanese Psychological Review
-2016, Vol. 59, No. 1, 3–14
-心理学における再現可能性危機:問題の構造と解決策 1)
-
-そこで,この状況を打開する方法 として,データを得た後に,それに適合する仮を 構築すること,すなわち HARKing が登場する
-(Hypothesizing After the Results are Known;Bones, 2012;Kerr, 1998;OʼBoyle, Banks, & Gonzalez- Mule, 2014)。HARKing の弊害は様々に論じられて いるが,おそらく最大の問題点は,それが第一種 の過誤を増大させてしまう点にあると思われる。
-
 ### 2018
 
 https://twitter.com/PatSchloss/status/976090623676682240
@@ -72,19 +53,24 @@ Fumiya Uchikoshi on Twitter: "How to make replication the norm https://t.co/FMzm
 https://www.nature.com/articles/d41586-018-02108-9
 How to make replication the norm
 
+
+March 13, 2018
+http://www.pnas.org/content/115/11/2584
+An empirical analysis of journal policy effectiveness for computational reproducibility
+
 https://twitter.com/KayokoShioda/status/974103524589096960
 Kayoko Shioda on Twitter: "近年科学雑誌がデータやコードの開示を求めるようになっているので、その有効性をしらべた論文。著者らは雑誌 #サイエンス に載っていた論文をランダムに204本抽出し、公開データ＆コードを用いて結果の再現を試みるが、26％でしか再現できなかったと。このルールはないよりましだが完璧ではない #PNAS… https://t.co/u1lxkLUZuc"
 9:57 PM - 14 Mar 2018
 
-March 13, 2018
-http://www.pnas.org/content/115/11/2584
-An empirical analysis of journal policy effectiveness for computational reproducibility | Proceedings of the National Academy of Sciences
+https://twitter.com/uranus_2/status/973554423677927429
+マーキュリー２世 on Twitter: "Scienceに掲載された計算科学研究、オーサーにデータとコードを求めたら44%でそれらが得られて(開示するようポリシーが定められていたにもかかわらず)、結果が再現できたのは26%。An empirical analysis of journal policy effectiveness for computational reproducibility https://t.co/6wz7vWHn49"
+9:40 AM - 13 Mar 2018
 
 https://twitter.com/yuji_ikegaya/status/973450246154940417
 池谷裕二 on Twitter: "【科学のデータはときに再現性がないが それでも科学が進歩するのはなぜか】①そもそも科学者は発表されるデータが全て正しいとは信じていない（ミスもあるし不正もある）。②だから問題をあげつらうよりも、重要な発見に注視して議論しあう傾向がある。今朝の『PNAS』より→https://t.co/aZHaUJJ52g"
 2:46 AM - 13 Mar 2018
-
 http://www.pnas.org/content/early/2018/03/08/1711786114
+Scientific progress despite irreproducibility: A seeming paradox | PNAS
 
 - 2018-02-05 ["科学的根拠"って信用できると思った？｜東原兄弟の、筋トレで鍛える人生力](https://ameblo.jp/toharas-musclelifestyle/entry-12350045279.html)
 
@@ -114,6 +100,13 @@ http://www.pnas.org/content/early/2018/03/08/1711786114
 http://team1mile.com/sjpr59-1/
 『心理学評論』
 特集「心理学の再現可能性：我々はどこから来たのか　我々は何者か　我々はどこへ行くのか」
+
+http://chitosepress.com/2016/08/16/2114/
+『心理学評論』特集：心理学の再現可能性
+
+http://chitosepress.com/2015/11/09/404/
+心理学研究は信頼できるか？――再現可能性をめぐって(3)
+・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
 
 - 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
@@ -151,7 +144,7 @@ https://togetter.com/li/869445
 
 ### 2013
 
-- 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか | クマムシ博士・堀川大樹](http://www.huffingtonpost.jp/daiki-horikawa/post_5982_b_4165458.html)
+- 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか - クマムシ博士のむしブロ](http://horikawad.hatenadiary.com/entry/20131026/1382738827)
 - 2013-11 [Nature Digest](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | 医学生物学論文の70%以上が、再現できない! [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
 - [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353) | [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
 - 2013-10 ["Ten simple rules for reproducible computational research." PLoS Comput Biol. PMID: 24204232](https://www.ncbi.nlm.nih.gov/pubmed/24204232)
