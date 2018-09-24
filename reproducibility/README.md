@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-03-17
+Last Update: 2018-09
 
 ----------
 # Reproducibility
@@ -19,6 +19,25 @@ Last Update: 2018-03-17
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
 ### 2018
+
+https://twitter.com/EnagoJapan/status/1038945772085997573
+【エナゴ学術英語アカデミー更新】科学研究において「再現性」は、基本中の基本です。誰がその研究を試みても同様の結果を導くことができるーはずですが、実は、この「再現性」が科学界の信頼性を脅かすほどの問題となっています。https://www.enago.jp/academy/if-lose-confidence-in-your-research/ …　#エナゴアカデミー
+8:22 PM - 9 Sep 2018
+
+https://twitter.com/NatureJapan/status/1034347192054501377
+Nature Human Behaviour 「Nature誌やScience誌に発表された社会科学研究に再現性はあるか？」21件の実験社会科学研究を対象に、当初の研究の約5倍の標本数を用いて検出力の高い再現実験を試みた結果、再現実験の62％で当初の研究と同じ方向の効果が見られた。
+3:49 AM - 28 Aug 2018
+
+July 13, 2018
+https://peerj.com/articles/5072/
+Reproducible research and GIScience: an evaluation using AGILE conference papers [PeerJ]
+
+![https://twitter.com/thePeerJ/status/1017795797608554496](https://pbs.twimg.com/media/Dh_v4k8XcAIO6Xa.jpg)
+
+https://www.ncbi.nlm.nih.gov/pubmed/29871915
+MBio. 2018 Jun 5;9(3). pii: e00525-18. doi: 10.1128/mBio.00525-18.
+Identifying and Overcoming Threats to Reproducibility, Replicability, Robustness, and Generalizability in Microbiome Research.
+Schloss PD1.
 
 https://twitter.com/PatSchloss/status/976090623676682240
 Pat Schoss on Twitter: "I've been developing a tutorial series for those microbiome researchers interested in improving the reproducibility of their analyses. The introductory video is up on YouTube and new videos will be dropping every Tuesday and Thursday. https://t.co/ywezPTuaYA"
@@ -74,7 +93,18 @@ Scientific progress despite irreproducibility: A seeming paradox | PNAS
 
 - 2018-02-05 ["科学的根拠"って信用できると思った？｜東原兄弟の、筋トレで鍛える人生力](https://ameblo.jp/toharas-musclelifestyle/entry-12350045279.html)
 
+https://www.ncbi.nlm.nih.gov/pubmed/29092073
+J Am Med Inform Assoc. 2018 Jan 1;25(1):4-12. doi: 10.1093/jamia/ocx120.
+Reproducible Bioconductor workflows using browser-based interactive notebooks and containers.
+Almugbel R1, Hung LH1, Hu J1, Almutairy A1, Ortogero N2, Tamta Y1, Yeung KY1.
+
 ### 2017
+
+https://www.biorxiv.org/content/early/2017/12/26/239947
+Reproducible Bioinformatics Project: A community for reproducible bioinformatics analysis pipelines
+http://reproducible-bioinformatics.org
+
+![](http://reproducible-bioinformatics.org/1/images/440_0_4982595_171497.jpg)
 
 - 2017-12-10 [2017年度版 RStudioを使ったReproducible Research、補足ポエム - まだ厨二病](http://uribo.hatenablog.com/entry/2017/12/10/145149)
 
