@@ -154,8 +154,9 @@ iMac Retina 5k 27inch
 	curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
 
 ### text editor
-[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
-でファイルを開く:  
+[Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
+
+[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
 
 	atom markdown.md
 
