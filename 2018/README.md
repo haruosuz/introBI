@@ -26,39 +26,45 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://dl.dropboxusercontent.com/s/kjwbbzyz2qeczlh/README.md.html)
 - 2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://dl.dropboxusercontent.com/s/ceyt1ngdyqcpw44/README.md.html)
 - 2018-10-30 第06回 シェルスクリプト [Shell Scripting](https://dl.dropboxusercontent.com/s/3iylxew6dvztp0j/README.md.html)
-- 2018-11-06 第07回 ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md)
+- 2018-11-06 第07回 ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 第08回 [中間発表](#中間発表)
 - 2018-12-04 第09回 [Guest Speaker](#guest-speaker)
-- 2018-12-11 第10回 TBA
+- 2018-12-11 第10回 [Guest Speaker](#guest-speaker)
 - 2018-12-18 第11回 TBA
 - 2018-12-25 第12回 TBA
 - 2019-01-08 第13回 TBA
-- 2019-01-15 第14回 [最終発表](#最終発表)
-- 2019-01-22 [レポート](#レポート)提出期限
+- 2019-01-15 第14回 最終発表 [final presentation](#final-presentation)
+- 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
 
-[プロジェクト例と再現性テスト](https://dl.dropboxusercontent.com/s/dcob37resjm2jdv/README.md)
+----------
+## interim report
+**中間発表**
+
+スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
+[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
 ## Guest speaker
 **特別講演**
 
 ----------
-## 中間発表
-スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
-[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
+## final presentation
+**最終発表**
 
-----------
-## 最終発表
 スライド最低1枚を用いて、1人あたり最低1分（最大5分）でプロジェクトの内容を報告する。
 2つ以上（自分と他人）の実行環境で、最低3回（別の年月日に）解析を実行し、結果の再現性を報告する。
 
-## レポート
+----------
+## final report
+**レポート**
+
 提出期限：2019-01-22 23:59  
 提出先：SFC-SFSの課題にレポートのファイルを含むプロジェクト・ディレクトリを登録する。  
 レポートはA4で5枚以内。
 
+----------
 ## 成績
 - S：最終発表＋レポート＋提出課題（プロジェクト・ディレクトリ）の総合評価がS基準を満たしている。
 - A：最終発表＋レポート＋提出課題（プロジェクト・ディレクトリ）の総合評価がA基準を満たしている。
@@ -72,24 +78,26 @@ INTRODUCTION TO BIOINFORMATICS
 
 ----------
 
-## イントロダクション
+## Introduction
+**イントロダクション**
 
-### バイオインフォマティクス
+### [Bioinformatics](https://github.com/haruosuz/books/tree/master/bbs#11-from-data-to-knowledge-the-aim-of-bioinformatics)
 [bioinformatics | バイオインフォマティクス | 生物情報科学](https://bi.biopapyrus.jp)
 
 ![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
 
-### バイオインフォマティシャン
+### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 [誰もが“バイオインフォマティシャン”の時代](http://www.natureasia.com/ja-jp/ndigest/v12/n1/誰もが%26ldquo%3Bバイオインフォマティシャン%26rdquo%3Bの時代/59368)
 
 ![http://www.slideshare.net/ChristianFrech/how-to-be-a-bioinformatician](http://image.slidesharecdn.com/how-to-be-a-bioinformatician-public-140426130503-phpapp02/95/how-to-be-a-bioinformatician-2-638.jpg)
 
-### バイオインフォマティクスの研究対象
+### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+バイオインフォマティクスの研究対象
 - [オーミクス](https://ja.wikipedia.org/wiki/オーミクス)：ゲノミクス、トランスクリプトミクス、 プロテオミクス、メタボロミクス
 
 - [ヒトゲノム](https://ja.wikipedia.org/wiki/ヒトゲノム)
 
-![http://www.nature.com/nature/focus/humanmicrobiota/](http://www.nature.com/nature/focus/humanmicrobiota/images/main_bg.jpg)
+![https://www.nature.com/collections/scqssjswcq](https://s3-service-broker-live-deffee85-cb72-42be-ab90-7771eca18e81.s3.amazonaws.com/nature/focus/humanmicrobiota/images/main_bg.jpg)
 
 - 海・土壌・ヒトの微生物群集（[Human microbiota](https://en.wikipedia.org/wiki/Human_microbiota)）を[メタゲノム](https://ja.wikipedia.org/wiki/メタジェノミクス)解析
 
@@ -103,11 +111,12 @@ INTRODUCTION TO BIOINFORMATICS
 
 ----------
 
-## 準備
+## Step
+準備
 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
 iMac Retina 5k 27inch
 
-### Unixシェル
+### Unix
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 
 [ターミナル](http://techacademy.jp/magazine/5155)を起動する。
@@ -125,23 +134,16 @@ iMac Retina 5k 27inch
 	ls
 	date
 
-教科書[**Bioinformatics Data Skills**](https://github.com/haruosuz/books/blob/master/bds/README.md)の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)をダウンロードする:  
+教科書[**Bioinformatics Data Skills**](https://github.com/haruosuz/books/blob/master/bds/README.md)の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)を取得する:  
 
-	wget https://github.com/vsbuffalo/bds-files/archive/master.zip
-
-`unzip`コマンドで拡張子`.zip`のファイルを展開する:  
-
-	unzip master.zip
-
-`mv`コマンドでディレクトリの名前を変更する:  
-
-	mv bds-files-master/ bds-files/
+	git clone https://github.com/vsbuffalo/bds-files
 
 `ls -l`コマンドでディレクトリの詳細情報を表示する:
 
 	ls -l bds-files/
 
 ### Markdown
+[Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
 
@@ -151,7 +153,7 @@ iMac Retina 5k 27inch
 
 	curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
 
-### テキストエディタ
+### text editor
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
 でファイルを開く:  
 
