@@ -20,7 +20,7 @@ INTRODUCTION TO BIOINFORMATICS
 
 [2018年度秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/18f_calendar_171211_j.pdf)
 
-- 2018-09-25 第01回 イントロダクション [Introduction](#Introduction)
+- 2018-09-25 第01回 イントロダクション [Introduction](#introduction)
 - 2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](https://dl.dropboxusercontent.com/s/qn4vug88ybprtfm/README.md.html)
 - 2018-10-09 第03回 Unixシェル [Unix Shell](https://dl.dropboxusercontent.com/s/9s90lzt9wni8q4m/README.md.html)
 - 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://dl.dropboxusercontent.com/s/kjwbbzyz2qeczlh/README.md.html)
@@ -94,20 +94,8 @@ INTRODUCTION TO BIOINFORMATICS
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 バイオインフォマティクスの研究対象
 - [オーミクス](https://ja.wikipedia.org/wiki/オーミクス)：ゲノミクス、トランスクリプトミクス、 プロテオミクス、メタボロミクス
-
 - [ヒトゲノム](https://ja.wikipedia.org/wiki/ヒトゲノム)
-
-![https://www.nature.com/collections/scqssjswcq](https://s3-service-broker-live-deffee85-cb72-42be-ab90-7771eca18e81.s3.amazonaws.com/nature/focus/humanmicrobiota/images/main_bg.jpg)
-
-- 海・土壌・ヒトの微生物群集（[Human microbiota](https://en.wikipedia.org/wiki/Human_microbiota)）を[メタゲノム](https://ja.wikipedia.org/wiki/メタジェノミクス)解析
-
-![https://twitter.com/NatureBiotech/status/864838380353449984](https://pbs.twimg.com/media/DACCRIFWAAAtijL.jpg)
-
-[Living in a microbial world](http://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html)
-
-- [MetaSUB](https://github.com/haruosuz/metasub)：都市環境の生物群集 
-- [「微生物から新しいデザインがはじまる」 « WIRED.jp](http://wired.jp/special/2016/biology/)
-【動画】[スマートシティを司る“２番目の脳”](https://youtu.be/EQiO9kzpeBw?list=PLQl-BPZhcsy9EN-0jO8QildbCxtyIsR0C)[（ youtube/Innovative City Forum – Japanese）](http://archiclue.com/?p=16436)
+- 環境・ヒトの微生物群集を[メタゲノム](https://ja.wikipedia.org/wiki/メタジェノミクス)解析
 
 ----------
 
