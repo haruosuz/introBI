@@ -8,6 +8,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
+- [assignment 1](#assignment-1) 課題No.1 「bds-files」
+- [assignment 2](#assignment-2) 課題No.2 「プロジェクト・ディレクトリの提出」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -90,6 +92,46 @@ BioProjects    Number of genome sequencing projects
 
 ```
 
+----------
+## assignment 1
+**課題No.1 「bds-files」**
+
+教科書の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)を取得し、`ls -l`コマンドでディレクトリの詳細情報を表示する。
+【回答例】
+```
+$ls -l bds-files/
+total 24
+-rw-r--r--   1 haruo  staff  1080 Nov 16  2015 LICENSE
+-rw-r--r--   1 haruo  staff  1007 Nov 16  2015 README.md
+drwxr-xr-x   5 haruo  staff   170 Nov 16  2015 chapter-00-preface/
+drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-01-ideology/
+drwxr-xr-x   4 haruo  staff   136 Nov 16  2015 chapter-02-bioinformatics-projects/
+drwxr-xr-x   7 haruo  staff   238 Nov 16  2015 chapter-03-remedial-unix/
+drwxr-xr-x   4 haruo  staff   136 Nov 16  2015 chapter-04-working-with-remote-machines/
+drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-05-git-for-scientists/
+drwxr-xr-x   5 haruo  staff   170 Nov 16  2015 chapter-06-bioinformatics-data/
+drwxr-xr-x  26 haruo  staff   884 Nov 16  2015 chapter-07-unix-data-tools/
+drwxr-xr-x  12 haruo  staff   408 Nov 16  2015 chapter-08-r/
+drwxr-xr-x  14 haruo  staff   476 Nov 16  2015 chapter-09-working-with-range-data/
+drwxr-xr-x   9 haruo  staff   306 Nov 16  2015 chapter-10-sequence/
+drwxr-xr-x  11 haruo  staff   374 Nov 16  2015 chapter-11-alignment/
+drwxr-xr-x   8 haruo  staff   272 Nov 16  2015 chapter-12-pipelines/
+drwxr-xr-x  18 haruo  staff   612 Nov 16  2015 chapter-13-out-of-memory/
+drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
+-rw-r--r--   1 haruo  staff   421 Nov 16  2015 errata.md
+```
+
+----------
+## assignment 2
+**課題No.2 「プロジェクト・ディレクトリの提出」**    
+
+https://github.com/haruosuz/introBI/tree/master/2018
+2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project
+で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイル(`zmays-snps.zip`)を提出する。
+
+ディレクトリを圧縮するコマンドの例:  
+
+    zip -r zmays-snps.zip zmays-snps/
 
 ----------
 
@@ -208,7 +250,8 @@ Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
 Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*, and select "Copy Link Address".
 
-### Download data
+### Downloading data
+データのダウンロード
 
 ![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
@@ -288,19 +331,21 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli K-12" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
+![](https://en.wikipedia.org/wiki/Borrelia_burgdorferi#/media/File:Borrelia_burgdorferi_(CDC-PHIL_-6631)_lores.jpg)
+
+[ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
+[Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)
+の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+
 ```
+
 NAME="Escherichia.coli.*K-12"
-#NAME="Borrelia.burgdorferi"
-#NAME="Sinorhizobium.meliloti"
+NAME="Sinorhizobium.meliloti"
+NAME="Borreliella.burgdorferi"
 cat $FILE | awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $8,$9,$10}'
-
 ftpdirpaths=(`awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' $FILE`)
+
 ```
-
-抽出されたURLを表示する:  
-
-    # All elements are extracted with:
-    echo ${ftpdirpaths[@]}
 
 抽出されたURLの数を確認する:  
 
@@ -308,7 +353,12 @@ ftpdirpaths=(`awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ &
     echo ${#ftpdirpaths[@]}
     echo ${!ftpdirpaths[@]}
 
-抽出されたURL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2> をブラウザFirefox/Chromeで開く。
+抽出されたURLを表示する:  
+
+    # All elements are extracted with:
+    echo ${ftpdirpaths[@]}
+
+抽出されたURLをブラウザFirefox/Chromeで開く。
 ```
 ファイル名と内容
 
@@ -318,7 +368,7 @@ ftpdirpaths=(`awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ &
    *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
 ```
 
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2> with your browser (Firefox or Chrome).  
+Open the URL with your browser (Firefox or Chrome).  
 ```
 File formats and content:
 
@@ -330,7 +380,7 @@ File formats and content:
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
-*README.txt*ファイル、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）、[GenBank](http://bi.biopapyrus.net/biodb/genbank.html)形式と[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式の圧縮ファイル（*.gz*）を`wget`でダウンロードする:  
+*README.txt*ファイル、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）、[GenBank](http://bi.biopapyrus.net/biodb/genbank.html)形式とGFFフォーマットの圧縮ファイル（*_genomic.gff.gz*）を`wget`でダウンロードする:  
 
     # Data files could be downloaded using the following commands:
     for URL in ${ftpdirpaths[@]}
@@ -348,9 +398,62 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     md5 *.gz
     grep "_genomic.gff.gz" md5checksums.txt
 
+`gunzip`コマンドでファイルを展開する:  
+
+    # decompress files with the command gunzip
+
+ # Escherichia.coli.*K-12
+    gunzip -c GCA_000005845.2_ASM584v2_genomic.gff.gz > GCA_000005845.2_ASM584v2_genomic.gff
+GFF=GCA_000005845.2_ASM584v2_genomic.gff
+
+ # Borreliella.burgdorferi
+    gunzip -c GCA_000008685.2_ASM868v2_genomic.gff.gz > GCA_000008685.2_ASM868v2_genomic.gff
+GFF=GCA_000008685.2_ASM868v2_genomic.gff
+
+ # Sinorhizobium.meliloti
+    gunzip -c GCA_000006965.1_ASM696v1_genomic.gff.gz > GCA_000006965.1_ASM696v1_genomic.gff
+GFF=GCA_000006965.1_ASM696v1_genomic.gff
 
 
-zless GCA_000005845.2_ASM584v2_genomic.gff.gz
+### Inspecting data
+データの検査 
+
+`ls -lh`でファイルサイズを確認する:  
+
+    # ls -lh reports human-readable file sizes
+    ls -lh
+
+[`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
+
+    # look at the top of a file with head
+    head -n 8 $GFF
+
+`grep`でヘッダ（`#`で始まる行）にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）:  
+
+    # use grep to extract lines matching the pattern "^#" (use Control-C to stop)
+    grep "^#" $GFF
+
+Pipe the standard output to the next command with the pipe character (|).
+
+[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
+
+行数をカウントする:  
+
+    # wc -l outputs the number of lines
+    grep "^#" $GFF | wc -l
+
+
+
+cat $GFF | grep -v "^#" | cut -f3 | sort | uniq -c
+
+
+cat $GFF | awk -F "\t" '$3=="region" {print $0}'
+
+
+
+
+
+
 
 ----------
 
