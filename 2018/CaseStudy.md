@@ -7,9 +7,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
-- [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「bds-files」
-- [assignment 2](#assignment-2) 課題No.2 「プロジェクト・ディレクトリの提出」
+- [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -25,6 +24,12 @@ bash
 cd
 git clone https://github.com/vsbuffalo/bds-files
 ```
+
+----------
+
+[「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
+
+![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
 
 ----------
 
@@ -45,52 +50,6 @@ Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Ski
 
 http://apprize.info/data/bioinformatics/12.html
 Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-
-
-----------
-## assignment 0
-**選抜課題**
-【課題内容】
-ゲノム解読プロジェクト一覧 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt を検索し、バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
-```
-File Name              File Content
---------------------------------------------------------------
-
-overview.txt:   Comprehensive report of organisms that have 
-               one or many genome sequencing projects that 
-               may be complete, in progress or planned.
-
-
-Column Name | Description
-
-------------------
-overview.txt file:
-------------------
-Organism/Name  Organism name at the species level according 
-Kingdom        Taxonomic division: Archaea, Bacteria, Eukaryota, or Viruses 
-Group                  Commonly used organism groups 
-                       Eukaryota: Animals, Fungi, Plants, Protists;                           
-                       Prokaryota: group corresponds to phylum; 
-                       Viruses: groups defined as the first level (not ranked)                        
-                       below the kingdom of Viruses
-
-SubGroup       NCBI Taxonomy level below group:
-                       Eukaryota: Mammals, Birds, Fishes, Flatworms, Insects, Amphibians
-                       Reptiles, Roundworms, Ascomycetes, Basidiomycetes, 
-                       Land Plants, Green Algae, Apicomplexans, Kinetoplasts; 
-                       Prokaryota: sub-groups correspond to class level; 
-                       Viruses: sub-groups correspond to families including floating genera 
-
-Size (Mb)      Estimated genome size 
-Chrs           Number of chromosomes 
-Organelles     Number of the organelles 
-Plasmids       Number of plasmids 
-BioProjects    Number of genome sequencing projects 
-
-```
 
 ----------
 ## assignment 1
@@ -123,15 +82,23 @@ drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
 
 ----------
 ## assignment 2
-**課題No.2 「プロジェクト・ディレクトリの提出」**    
+**課題No.2 「zmays-snps」**    
 
-https://github.com/haruosuz/introBI/tree/master/2018
-2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project
-で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイル(`zmays-snps.zip`)を提出する。
+https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02 
+2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project 
+で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。 
 
-ディレクトリを圧縮するコマンドの例:  
-
-    zip -r zmays-snps.zip zmays-snps/
+[回答例] 
+``` 
+$find zmays-snps 
+zmays-snps 
+zmays-snps/analysis 
+zmays-snps/README 
+zmays-snps/scripts 
+zmays-snps/data 
+zmays-snps/data/seqs 
+zmays-snps/data/README 
+```
 
 ----------
 
