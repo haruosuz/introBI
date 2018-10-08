@@ -30,8 +30,8 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 第08回 [中間発表](#中間発表)
-- 2018-12-04 第09回 [Guest Speaker](#guest-speaker)
-- 2018-12-11 第10回 [Guest Speaker](#guest-speaker)
+- 2018-12-04 第09回 TBA
+- 2018-12-11 第10回 TBA
 - 2018-12-18 第11回 TBA
 - 2018-12-25 第12回 TBA
 - 2019-01-08 第13回 TBA
