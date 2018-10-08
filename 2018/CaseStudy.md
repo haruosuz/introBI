@@ -9,6 +9,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## Table of Contents
 - [assignment 1](#assignment-1) 課題No.1 「bds-files」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
+- [assignment 3](#assignment-3) 課題No.3 「basic_unix」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -82,22 +83,70 @@ drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
 
 ----------
 ## assignment 2
-**課題No.2 「zmays-snps」**    
+**課題No.2 「zmays-snps」**
 
-https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02 
-2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project 
-で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。 
+https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02
+2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project
+で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。
 
-[回答例] 
-``` 
-$find zmays-snps 
-zmays-snps 
-zmays-snps/analysis 
-zmays-snps/README 
-zmays-snps/scripts 
-zmays-snps/data 
-zmays-snps/data/seqs 
-zmays-snps/data/README 
+[回答例]
+```
+$find zmays-snps
+zmays-snps
+zmays-snps/analysis
+zmays-snps/README
+zmays-snps/scripts
+zmays-snps/data
+zmays-snps/data/seqs
+zmays-snps/data/README
+```
+
+----------
+## assignment 3
+**課題No.3 「basic_unix」**    
+
+[UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+を見て、活用例や疑問点を報告する。
+
+[回答例]
+
+[動画レッスン一覧]と[補足情報一覧]を確認し、以下の動画レッスンを見た。
+ #05 ディレクトリ間を移動してみよう (02:56)
+ #06 ディレクトリを操作してみよう (02:59)
+ #07 ファイルを操作してみよう (02:53)
+ #08 bashの便利機能を使ってみよう (02:23)
+ #09 コマンドの履歴を活用しよう (02:21)
+ #10 コマンドについて詳しく調べよう (01:54)
+ #20 wc､head､tail､grepを使ってみよう (01:53)
+ #21 リダイレクション､パイプを使おう (02:25)
+ #22 ワイルドカードを使ってみよう (01:25)
+
+以下の通り、UNIXコマンド`cd, mkdir, ls, cat, grep, wc`やリダイレクション､パイプ、ワイルドカード`*`をデータの検査に活用した。 
+
+```
+# ターミナルで、bashを起動し、ディレクトリを移動する:
+bash
+cd ~/projects/
+
+# date +%Fコマンドを用いて日付ディレクトリを作成する:
+mkdir $(date +%F)
+cd $(date +%F)
+
+# `wget`コマンドでoverview.txtファイルをダウンロード
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
+
+# 記号>と2>を用いて、標準出力（standard output）と標準エラー出力（standard error）を別のファイルにリダイレクトする:
+ls -l overview.txt eukaryotes.txt prokaryotes.txt > stdout.txt 2> stderr.txt
+# 存在するファイル（overview.txt）は標準出力に、存在しないファイル（eukaryotes.txt prokaryotes.txt）は標準エラー出力に送られる。
+# ワイルドカードのアスタリスク（*）を用いてファイルを表示する:  
+cat std*.txt
+
+# パイプとgrepを用いて、overview.txtファイルの列名（#で始まる行）を抽出する:
+cat overview.txt | grep ”#”
+grep ”#” overview.txt
+
+# ls -lrtで更新日時の逆順にソートする
+ls -lrt
 ```
 
 ----------
