@@ -101,15 +101,16 @@ zmays-snps/data/seqs
 zmays-snps/data/README
 ```
 
+
 ----------
 ## assignment 3
-**課題No.3 「basic_unix」**    
+**課題No.3 「basic_unix」**   
 
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 を見て、活用例や疑問点を報告する。
 
 [回答例]
-
+```
 [動画レッスン一覧]と[補足情報一覧]を確認し、以下の動画レッスンを見た。
  #05 ディレクトリ間を移動してみよう (02:56)
  #06 ディレクトリを操作してみよう (02:59)
@@ -120,8 +121,9 @@ zmays-snps/data/README
  #20 wc､head､tail､grepを使ってみよう (01:53)
  #21 リダイレクション､パイプを使おう (02:25)
  #22 ワイルドカードを使ってみよう (01:25)
+```
 
-以下の通り、UNIXコマンド`cd, mkdir, ls, cat, grep, wc`やリダイレクション､パイプ、ワイルドカード`*`をデータの検査に活用した。 
+以下の通り、UNIXコマンド`cd, mkdir, ls, cat, wc, head, tail, grep`やリダイレクション､パイプ、ワイルドカード`*`をデータの検査に活用した。 
 
 ```
 # ターミナルで、bashを起動し、ディレクトリを移動する:
@@ -135,6 +137,12 @@ cd $(date +%F)
 # `wget`コマンドでoverview.txtファイルをダウンロード
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
 
+# wc､head､tail､grepを使ってみよう
+wc -l overview.txt
+head -n 2 overview.txt
+tail -n 3 overview.txt
+grep "^#" overview.txt
+
 # 記号>と2>を用いて、標準出力（standard output）と標準エラー出力（standard error）を別のファイルにリダイレクトする:
 ls -l overview.txt eukaryotes.txt prokaryotes.txt > stdout.txt 2> stderr.txt
 # 存在するファイル（overview.txt）は標準出力に、存在しないファイル（eukaryotes.txt prokaryotes.txt）は標準エラー出力に送られる。
@@ -142,8 +150,7 @@ ls -l overview.txt eukaryotes.txt prokaryotes.txt > stdout.txt 2> stderr.txt
 cat std*.txt
 
 # パイプとgrepを用いて、overview.txtファイルの列名（#で始まる行）を抽出する:
-cat overview.txt | grep ”#”
-grep ”#” overview.txt
+cat overview.txt | grep "^#"
 
 # ls -lrtで更新日時の逆順にソートする
 ls -lrt
