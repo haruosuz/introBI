@@ -3,7 +3,7 @@ Keio SFC
 2018年度 秋学期 火曜日３時限
 教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 
-# introBI
+# 2018
 INTRODUCTION TO BIOINFORMATICS 
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_40596&ks=B6167&lang=en)  
 基礎バイオインフォマティクス
@@ -48,6 +48,7 @@ INTRODUCTION TO BIOINFORMATICS
 ----------
 ## Guest speaker
 **特別講演**
+https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html
 
 ----------
 ## final presentation
@@ -229,6 +230,7 @@ iMac Retina 5k 27inch
 	ls zmays[A-B]_R1.fastq
 
 - [#12 ワイルドカードについて | UNIXコマンド入門 (一般ユーザー編) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_unix/5412)
+- [#22 ワイルドカードを使ってみよう | UNIXコマンド入門 [一般ユーザー編] - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2/41622)
 
 ## Markdown for Project Notebooks
 プレーンテキスト形式で書かれたプロジェクト・ノートは、コマンドラインやネットワーク経由で読込・検索・編集できる。
@@ -317,6 +319,7 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 正規表現はクオーテーションで囲む（`">"`）。`grep > tb1.fasta`とした場合、シェルは`>`をリダイレクト演算子と解釈し、ファイルを上書きしてしまう！
 
 - [#14 grepを使ってみよう | UNIXコマンド入門 (一般ユーザー編) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_unix/5414)
+- [#20 wc､head､tail､grepを使ってみよう | UNIXコマンド入門 [一般ユーザー編] - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2/41620)
 
 ### Combining Pipes and Redirection
 
