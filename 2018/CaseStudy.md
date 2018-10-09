@@ -61,7 +61,7 @@ Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Pra
 **課題No.1 「bds-files」**
 
 教科書の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)を取得し、`ls -l`コマンドでディレクトリの詳細情報を表示する。
-【回答例】
+[回答例]
 ```
 $ls -l bds-files/
 total 24
@@ -89,7 +89,7 @@ drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
 ## assignment 2
 **課題No.2 「zmays-snps」**
 
-- 2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02)
+2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02)
 で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。
 
 [回答例]
@@ -108,10 +108,8 @@ zmays-snps/data/README
 ## assignment 3
 **課題No.3 「Unix Shell」**
 
-- 2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
-で実行したコマンドをMarkdownノート`README.md`に記録し提出する。
-
-[Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
+2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
+で実行したコマンドを[Markdown](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)ノート`README.md`に記録し提出する。
 
 ----------
 ## assignment 4
