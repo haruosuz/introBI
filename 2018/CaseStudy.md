@@ -109,7 +109,7 @@ zmays-snps/data/README
 **課題No.3 「Unix Shell」**
 
 2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
-で実行したコマンドを[Markdown](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)ノート`README.md`等に記録し提出する。
+で実行したコマンドをMarkdownノート`README.md`等に記録し提出する。
 
 ----------
 
