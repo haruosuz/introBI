@@ -101,10 +101,25 @@ zmays-snps/data/seqs
 zmays-snps/data/README
 ```
 
-
 ----------
 ## assignment 3
-**課題No.3 「basic_unix」**   
+**課題No.3 「Unix Shell」**
+
+https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09
+2018-10-09 第03回 Unixシェル Unix Shell
+で実行したコマンドをMarkdownノート`README.md`に記録し提出する。
+
+----------
+## assignment 4
+**課題No.4 「Bioinformatics Data」**
+
+2018-10-16 第04回 バイオインフォマティクス・データ Bioinformatics Data
+2018-10-23 第05回 Unixデータツール Unix Data Tools
+2018-10-30 第06回 シェルスクリプト Shell Scripting
+
+----------
+## assignment 5
+**課題No.5 「basic_unix」**
 
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 を見て、活用例や疑問点を報告する。
