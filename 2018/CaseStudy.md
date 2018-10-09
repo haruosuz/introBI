@@ -9,7 +9,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## Table of Contents
 - [assignment 1](#assignment-1) 課題No.1 「bds-files」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
-- [assignment 3](#assignment-3) 課題No.3 「basic_unix」
+- [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -25,6 +25,10 @@ bash
 cd
 git clone https://github.com/vsbuffalo/bds-files
 ```
+
+- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
+- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 ----------
 
@@ -85,8 +89,7 @@ drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
 ## assignment 2
 **課題No.2 「zmays-snps」**
 
-https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02
-2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project
+- 2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02)
 で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。
 
 [回答例]
@@ -105,9 +108,10 @@ zmays-snps/data/README
 ## assignment 3
 **課題No.3 「Unix Shell」**
 
-https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09
-2018-10-09 第03回 Unixシェル Unix Shell
+- 2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
 で実行したコマンドをMarkdownノート`README.md`に記録し提出する。
+
+[Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
 
 ----------
 ## assignment 4
