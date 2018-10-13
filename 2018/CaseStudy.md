@@ -1,4 +1,4 @@
-**[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI)**
+**[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018)**
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
@@ -10,6 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 1](#assignment-1) 課題No.1 「bds-files」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
 - [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
+- [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -18,13 +19,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
-```
-# change shell to bash
-bash
-
-cd
-git clone https://github.com/vsbuffalo/bds-files
-```
+    # change shell to bash
+    bash
 
 - [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 - [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
@@ -109,34 +105,36 @@ zmays-snps/data/README
 **課題No.3 「Unix Shell」**
 
 2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
-で実行したコマンドをMarkdownノート`README.md`等に記録し提出する。
+で実行したコマンドをプレーンテキスト形式のMarkdownノート`README.md`等に記録し提出する。
 
 ----------
+## assignment 4
+**課題No.4 「Bioinformatics Data」**
 
+2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
+で実行したコマンドを記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
 ## GRCh37/hg19 human chromosome 22
-ヒト22番染色体
+**ヒト22番染色体**
 
 ### Website
-
-![https://galter.northwestern.edu/guides-and-tutorials/genome-browsers-the-ucsc-genome-browser](https://galter.northwestern.edu/system/attachments/attachments/000/005/397/original/UCSCHome.png)
+**ウェブサイト**
 
 [UCSC Genome Browser Home](http://genome.ucsc.edu)の[Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html)を開く。
-"Feb. 2009 (hg19, GRCh37)"の[Data set by chromosome](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/) を開く。
+"Feb. 2009 (GRCh37/hg19)"の[Data set by chromosome](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)を開く。
 
-	Name                        Last modified      Size  Description  
-	chr22.fa.gz                 20-Mar-2009 09:02   11M  
-	md5sum.txt                  20-Mar-2009 09:49  4.9K  
+      Name                        Last modified      Size  Description
+      chr22.fa.gz                 20-Mar-2009 09:02   11M
+      md5sum.txt                  20-Mar-2009 09:49  4.9K
 
 ### Download
+**ダウンロード**
 
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+ディレクトリを作成し移動する:  
 
-    bash
-
-プロジェクト・ディレクトリを作成し移動する:  
-
-    mkdir -p ~/projects/hg19/data
-    cd ~/projects/hg19/data/
+    mkdir -p ~/projects/data/hg19
+    cd ~/projects/data/hg19/
 
 22番染色体の圧縮ファイル（[chr22.fa.gz](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz)）を`wget`でダウンロードする:  
 
@@ -146,60 +144,80 @@ MD5チェックサムを計算する:
 
     md5 chr22.fa.gz
 
-MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt)）を`wget`でダウンロードして確認:  
+MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt)）を`wget`でダウンロードして確認する:  
 
     wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
 
     grep "chr22.fa.gz" md5sum.txt
 
 ### References
-- [Genome Reference Consortium](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/) 
 - [NGS Surfer's Wiki | GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=GRCh37とHg19の違い%28含むミトコンドリア%29)
 - [ショートリードの憂鬱 - 次世代シーケンサー: GRCh37とHg19](http://shortreadbrothers.blogspot.jp/2011/11/grch37hg19.html)
 
 ----------
-
 ## GRCm38 mouse reference genome
-マウス参照ゲノム
+**マウス参照ゲノム**
 
 ### Website
+**ウェブサイト**
 
-![https://galter.northwestern.edu/guides-and-tutorials/genome-browsers-the-ensembl-genome-browser](https://galter.northwestern.edu/system/attachments/attachments/000/005/310/original/EnsemblHome.png)
+[Ensembl](http://www.ensembl.org)の
+[Mouse](http://www.ensembl.org/Mus_musculus/Info/Index)の
+"Download FASTA files for genes, cDNAs, ncRNA, proteins" <ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/>
+をブラウザ（Firefox または Chrome）で開く。 
+ファイル（*CHECKSUMS*, *Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz*）を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
-[Ensembl](http://www.ensembl.org)の[Mouse](http://www.ensembl.org/Mus_musculus/Info/Index)の[Download DNA sequence (FASTA)](ftp://ftp.ensembl.org/pub/release-82/fasta/mus_musculus/dna/)を開く。
-
-	名前 	サイズ 	最終更新日時  
-	CHECKSUMS	11 KB 	9/16/15 	0:18:00
-	Mus_musculus.GRCm38.dna_rm.toplevel.fa.gz	497342 KB 	9/15/15 	14:18:00
-	README	5 KB 	9/15/15 	14:17:00
+```
+名前 	サイズ 	最終更新日時
+CHECKSUMS	4.4 kB	9/13/18, 12:32:00 AM
+Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz	5.3 kB	9/4/18, 8:40:00 AM
+Mus_musculus.GRCm38.dna_rm.toplevel.fa.gz	505 MB	9/4/18, 8:43:00 AM
+README	5.0 kB	9/4/18, 8:40:00 AM
+```
 
 ### Download
+**ダウンロード**
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+ディレクトリを作成し移動する:  
 
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+    mkdir -p ~/projects/data/GRCm38
+    cd ~/projects/data/GRCm38/
 
-    bash
+[Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)
+GRCm38 (Ensembl release 94) 
+マウス参照ゲノムのMT配列とCHECKSUMSファイルを`wget`でダウンロードする:  
 
-プロジェクト・ディレクトリを作成し移動する:  
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/CHECKSUMS
 
-    mkdir -p ~/projects/GRCm38/data
-    cd ~/projects/GRCm38/data/
+`zgrep`コマンドを用いて正規表現`^>`で圧縮ファイルのFASTAヘッダを確認する:  
 
-[Genome Reference Consortium](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/)
-GRCm38 (Ensembl release 82) 
-マウス参照ゲノムの全DNA配列（toplevel）と[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)（CHECKSUMS）を`wget`でダウンロードする:  
+    zgrep "^>" Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
 
-    wget --background ftp://ftp.ensembl.org/pub/release-82/fasta/mus_musculus/dna/{README,CHECKSUMS,Mus_musculus.GRCm38.dna_rm.toplevel.fa.gz}
+`sum`コマンドで[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)を計算し、EnsemblのCHECKSUMSファイルの値と比較する:  
 
-`sum`コマンドでチェックサムを計算し、公表されている値（44729 801342）と一致するか確認する:  
+    sum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+    grep "Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz" CHECKSUMS
 
-    sum Mus_musculus.GRCm38.dna.toplevel.fa.gz
+SHA-1サムを計算する:  
 
-    grep "Mus_musculus.GRCm38.dna.toplevel.fa.gz" CHECKSUMS
+    shasum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
 
-### References
-- [Genome Reference Consortium](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/)  
+Markdownノート（README.md）の例:  
+
+```
+## Genome Data
+
+Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was downloaded on Sat Oct 13 23:11:53 JST 2018, using:
+
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+
+## SHA-1 Sums
+
+ - `Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz`: b75f036ca9554688789b00f64328964c295aedec
+```
+
+### References 
 - [Case Study: Reproducibly Downloading Data](https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data)
 
 ----------
@@ -432,7 +450,6 @@ cat $GFF | awk -F "\t" '$3=="region" {print $0}'
 
 
 
-
 ----------
 
 
@@ -449,12 +466,6 @@ http://staffblog.amelieff.jp/entry/2015/07/31/143358
 
 https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
 GTFファイルの細かな違い
-
-
-
-
-----------
-
 
 
 
