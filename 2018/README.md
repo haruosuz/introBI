@@ -444,6 +444,12 @@ Control-c で動作中のプロセスを停止
 	gzip -c word2.txt > word2.txt.gz
 	gunzip -c word2.txt.gz > word2.duplicate.txt
 
+ヒト22番染色体のデータを解凍し、ファイルサイズを確認する:  
+
+	gunzip -c chr22.fa.gz > chr22.fa
+
+	ls -lh chr22*
+
 `gzip`を用いて、`echo`の出力を、ディスクに書き込む前に、圧縮する:  
 
 	echo {A,C,G,T} | gzip > word.txt.gz
@@ -452,23 +458,17 @@ Control-c で動作中のプロセスを停止
 
 	gzip -c word2.txt >> word.txt.gz
 
-ヒト22番染色体のデータを解凍し、ファイルサイズを確認する:  
-
-	gunzip -c chr22.fa.gz > chr22.fa
-
-	ls -lh chr22*
-
 ### Working with Gzipped Compressed Files
 圧縮ファイルを直接操作できるコマンド: `zgrep, gzcat, zdiff, zless`
 
-	gzcat chr22.fa.gz | grep "^>"
+	gzcat chr22.fa.gz | grep ">"
 
-	zgrep "^>" chr22.fa.gz
+	zgrep ">" chr22.fa.gz
 
 	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
 
 ## Case Study: Reproducibly Downloading Data
-## [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md)
+## [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
 
 ----------
 # 2018-10-23
