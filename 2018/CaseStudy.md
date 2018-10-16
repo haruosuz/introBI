@@ -166,8 +166,8 @@ MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/ch
 [Ensembl](http://www.ensembl.org)の
 [Mouse](http://www.ensembl.org/Mus_musculus/Info/Index)の
 "Download FASTA files for genes, cDNAs, ncRNA, proteins" <ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/>
-をブラウザ（Firefox または Chrome）で開く。 
-ファイル（*CHECKSUMS*, *Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz*）を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+をブラウザ（Firefox または Chrome）で開く。
+例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 ```
 名前 	サイズ 	最終更新日時
