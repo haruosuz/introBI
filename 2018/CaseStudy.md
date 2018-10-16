@@ -35,26 +35,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
 
 ----------
-
-http://apprize.info/data/bioinformatics/3.html
-Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
-
-see the newest files at the bottom
-
-	ls -lrt
-
-http://apprize.info/data/bioinformatics/6.html
-Bioinformatics Data - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
-
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-	awk -F"," -v OFS="\t" {print $1,$2,$3}
-
-http://apprize.info/data/bioinformatics/12.html
-Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-----------
 ## assignment 1
 **課題No.1 「bds-files」**
 
@@ -446,10 +426,25 @@ cat $GFF | grep -v "^#" | cut -f3 | sort | uniq -c
 
 cat $GFF | awk -F "\t" '$3=="region" {print $0}'
 
+----------
 
+http://apprize.info/data/bioinformatics/3.html
+Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
 
+see the newest files at the bottom
 
+	ls -lrt
 
+http://apprize.info/data/bioinformatics/6.html
+Bioinformatics Data - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
+
+http://apprize.info/data/bioinformatics/7.html
+Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
+
+	awk -F"," -v OFS="\t" {print $1,$2,$3}
+
+http://apprize.info/data/bioinformatics/12.html
+Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
 
 ----------
 
