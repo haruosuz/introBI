@@ -17,14 +17,16 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
 
+- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
+- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
+
+![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
     # change shell to bash
     bash
-
-- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
-- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
-- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 ----------
 
@@ -112,7 +114,7 @@ zmays-snps/data/README
 **課題No.4 「Bioinformatics Data」**
 
 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
-で実行したコマンドを記録したプロジェクト・ノート`README.md`を提出する。
+の実行コマンドを記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
 ## GRCh37/hg19 human chromosome 22
@@ -171,7 +173,6 @@ MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/ch
 名前 	サイズ 	最終更新日時
 CHECKSUMS	4.4 kB	9/13/18, 12:32:00 AM
 Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz	5.3 kB	9/4/18, 8:40:00 AM
-Mus_musculus.GRCm38.dna_rm.toplevel.fa.gz	505 MB	9/4/18, 8:43:00 AM
 README	5.0 kB	9/4/18, 8:40:00 AM
 ```
 
