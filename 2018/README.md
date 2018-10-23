@@ -485,6 +485,8 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
 
 # [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/tree/master/bds#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
+Unixコマンドをパイプで繋ぐことにより、データを処理する1行プログラム（ワンライナー）を構築する。
+
 ## When to Use the Unix Pipeline Approach and How to Use It Safely
 ## Inspecting and Manipulating Text Data with Unix Tools
 
