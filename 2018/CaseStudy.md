@@ -17,6 +17,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
 ----------
+## unix
 
 - [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 - [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
@@ -29,7 +30,18 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
     # change shell to bash
     bash
 
-----------
+[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
+
+単語単位でカーソルを移動します。
+「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
+
+[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
+```
+Ctrl + a	行先頭に移動
+Ctrl + e	行末尾に移動
+option + →	１単語分右に移動
+option + ←	１単語分左に移動
+```
 
 [「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
 
