@@ -7,6 +7,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
+- [unix](#unix)
 - [assignment 1](#assignment-1) 課題No.1 「bds-files」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
 - [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
@@ -222,19 +223,20 @@ Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was 
 - [Case Study: Reproducibly Downloading Data](https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data)
 
 ----------
-
-## NCBI assembly summary
 ## NCBI ASSEMBLY_REPORTS
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている。
+
+[How can I find the sequence and annotation of my genome of interest?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
+Using the [assembly summary report files](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles)
 
 ### Website
 NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+*README_assembly_summary.txt*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*, and select "Copy Link Address".
+Right click the link *README_assembly_summary.txt*, and select "Copy Link Address".
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 ```
@@ -242,6 +244,7 @@ The assembly_summary files report metadata for the genome assemblies on the NCBI
 assembly_summary_genbank.txt            - current GenBank genome assemblies
 assembly_summary_refseq.txt             - current RefSeq genome assemblies
 ```
+
 - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
 - [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
 - [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
@@ -249,35 +252,34 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 ### Downloading data
 データのダウンロード
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
-
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
     # change shell to bash
     bash
 
-ディレクトリを作成し移動する:  
+[Project Directories and Directory Structures](https://github.com/haruosuz/introBI/tree/master/2018#project-directories-and-directory-structures)
+
+プロジェクトのディレクトリ（`ncbi-assembly_reports/`）を作成する:  
 
     # make directories
-    mkdir -p ~/projects/data/ncbi/assembly_reports/
+    mkdir -p ~/projects/ncbi-assembly_reports/{data,scripts,analysis}
 
     # change directories
-    cd ~/projects/data/ncbi/assembly_reports/
+    cd ~/projects/ncbi-assembly_reports/
 
-[How can I find the sequence and annotation of my genome of interest?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
+[Retrieving Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#retrieving-bioinformatics-data)
 
-Using the [assembly summary report files](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles)
+`wget`と`curl`でデータをウェブからダウンロードする:  
 
-GenBankとRefSeqのゲノム配列のメタデータを記載したファイルを`wget`でダウンロードする:  
+    curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
+    wget ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
 
-    # Download the two master assembly summary files that report assembly meta-data
-    wget --background \
-     ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt \
-     ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt
+`wget`は再帰的にデータをダウンロードできる。
+ウェブページからテキストファイルを全てダウンロードする:  
 
-または
-
-wget --background --accept "*.txt.gz,*.txt" --no-directories --recursive --no-parent ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
+    # Recursive downloading can be useful for downloading all files of a certain type from a page.
+    # wget --background --accept "*.txt,*.txt.gz" --no-directories --recursive --no-parent $URL
+    wget -b -A "*.txt,*.txt.gz" -nd -r -np ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
 
 `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）:  
 
@@ -286,108 +288,158 @@ wget --background --accept "*.txt.gz,*.txt" --no-directories --recursive --no-pa
 
 GenBankまたはRefSeqのゲノム配列のメタデータを確認する:  
 
-変数に値（ファイル名）を割り当てる:  
+[Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](https://apprize.info/data/bioinformatics/12.html)
+
+[Variables and Command Arguments](https://github.com/haruosuz/introBI/tree/master/2018#variables-and-command-arguments)
+
+変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 
     # create a variable and assign it a value
     FILE="assembly_summary_refseq.txt"
     FILE="assembly_summary_genbank.txt"
 
-ファイルのヘッダ（`#`で始まる行）を確認する:  
+変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+
+    echo $FILE
+
+[Chapter 7. Unix Data Tools](https://apprize.info/data/bioinformatics/7.html)
+
+[Inspecting Data with Head and Tail](https://github.com/haruosuz/introBI/tree/master/2018#inspecting-data-with-head-and-tail)
+
+`head`と`tail`でファイルの先頭部分と末尾部分を表示する:  
+
+    head -n 3 $FILE
+    tail -n 2 $FILE
+
+`less`でファイルを見る:  
+
+    less $FILE
+
+`less`を終了するには、*q*を押す。*h*でヘルプを表示する。
+
+`wc`で行数を表示:  
+
+    wc -l *.txt
+
+`ls -l`でファイルのサイズを確認:  
+
+    ls -lh *.txt
+
+[The All-Powerful Grep](https://github.com/haruosuz/introBI/tree/master/2018#the-all-powerful-grep)
+
+`grep`でファイルのヘッダ（`#`で始まる行）を表示する:  
 
     # use grep to extract header lines (those that begin with #)
     grep "^#" $FILE
 
 列番号を付けて出力する:
 
+    # Pipe the standard output to the next command with the pipe character (|)
     grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
 
      5	refseq_category
+
      8	organism_name
+     9	infraspecific_name
+    10	isolate
+
     11	version_status
     12	assembly_level
     20	ftp_path
 
-アセンブリの状況（assembly_level: Contig, Scaffold, Chromosome, Complete Genome）を確認する:  
+`grep -v`でマッチしない行を返す:  
 
-    # Pipe the standard output to the next command with the pipe character (|)
-    # Using grep, cut, sort, uniq to summarize columns of data
-    grep -v "^#" $FILE | cut -f12 | sort | uniq -c
+    grep -v "^#" $FILE | head -n 3
 
-[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+`grep -v`でファイルのヘッダ（`#`で始まる行）を削除し、`cut`で8,9列（organism_name, infraspecific_name）を抽出:  
+
+    grep -v "^#" $FILE | cut -f8,9 | head
+
+`grep --color`でマッチング部分を色付けする:  
+
+    grep --color "natto" $FILE
+
+`grep -c`でパターンにマッチした行数を表示:  
+
+    grep -c "kimchi" $FILE
+
+`grep -i`で大文字小文字を区別しない（ignore case）:  
+
+    grep -ic "kimchi" $FILE
+
+Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約する。  
+`sort`のオプション `-n`で数値としてソートし、`-r`で逆順（降順）にソートする。  
+`uniq`のオプション `-c`で重複行の数も表示。  
+アセンブリの状況（`assembly_level: Chromosome, Complete Genome, Contig, Scaffold`）を確認する:  
+
+    # Using grep, cut, sort, uniq to summarize columns of tabular data:
 
     # refseq_category (column 5) is "na", "reference genome" or "representative genome"
     grep -v "^#" $FILE | cut -f5 | sort | uniq -c
 
-    awk -F "\t" '$5 ~ /reference genome/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
-    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
-    wget -i ftpfilepaths
+    # assembly_level (column 12) is "Chromosome", "Complete Genome", "Contig", or "Scaffold"
+    grep -v "^#" $FILE | cut -f12 | sort | uniq -c
+
+    # If we wanted these counts in order from most frequent to least, we could pipe these results to sort -rn:
+    grep -v "^#" $FILE | cut -f12 | sort | uniq -c | sort -rn
+
+    # Because sort and uniq are line-based, we can create lines from multiple columns to count combinations
+    grep -v "^#" $FILE | cut -f5,12 | sort | uniq -c
+
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
 Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
-[大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
-[Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+参照ゲノム（"reference genome"）のコンプリートゲノム("Complete Genome")配列データの最新版("latest")のFTPサイトのURLを抽出する:  
 
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli K-12" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+To download all RefSeq reference bacterial genomes,
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have "reference genome" refseq_category (column 5), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12):
 
-![](https://en.wikipedia.org/wiki/Borrelia_burgdorferi#/media/File:Borrelia_burgdorferi_(CDC-PHIL_-6631)_lores.jpg)
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8,$9}' | sort
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
-[ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
-[Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
-
-```
-
-NAME="Escherichia.coli.*K-12"
-NAME="Sinorhizobium.meliloti"
-NAME="Borreliella.burgdorferi"
-cat $FILE | awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $8,$9,$10}'
-ftpdirpaths=(`awk -F "\t" '$5 ~ /reference|representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' $FILE`)
-
-```
-
-抽出されたURLの数を確認する:  
-
-    # access how many elements are in the array (and each element’s index) with the following:
-    echo ${#ftpdirpaths[@]}
-    echo ${!ftpdirpaths[@]}
-
-抽出されたURLを表示する:  
-
-    # All elements are extracted with:
-    echo ${ftpdirpaths[@]}
-
-抽出されたURLをブラウザFirefox/Chromeで開く。
-```
-ファイル名と内容
-
-   *_genomic.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
-   *_genomic.gbff.gz: GenBank flat file format - GenBank形式ファイル
-   *_genomic.gff.gz file: 遺伝子アノテーション
-   *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
-```
-
+抽出されたFTPサイトのURLをブラウザFirefox/Chromeで開く。  
 Open the URL with your browser (Firefox or Chrome).  
-```
-File formats and content:
 
-   *_genomic.fna.gz file: FASTA format of the genomic sequence(s)
-   *_genomic.gbff.gz file: GenBank flat file format of the genomic sequence(s)
-   *_genomic.gff.gz file: Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
-   *_protein.faa.gz file: FASTA format of the accessioned protein products
-```
+    cat ftpdirpaths
 
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+```
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
-*README.txt*ファイル、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）、[GenBank](http://bi.biopapyrus.net/biodb/genbank.html)形式とGFFフォーマットの圧縮ファイル（*_genomic.gff.gz*）を`wget`でダウンロードする:  
+ファイル名と内容
+   *_genomic.gff.gz file: 遺伝子アノテーション
 
-    # Data files could be downloaded using the following commands:
-    for URL in ${ftpdirpaths[@]}
-    do
-      #wget $URL/{README.txt,md5checksums.txt,*_genomic.gbff.gz,*_genomic.fna.gz,*_protein.faa.gz}
-      wget $URL/{README.txt,md5checksums.txt,*_genomic.gff.gz}
-    done
+File formats and content:
+   *_genomic.gff.gz file: Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
+```
+
+参照ゲノム（"reference genome"）のうち、
+[ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
+[Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)、
+[大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
+[Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)、
+植物と共生する根粒菌[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)
+[Sinorhizobium meliloti](https://en.wikipedia.org/wiki/Sinorhizobium_meliloti)
+のコンプリートゲノム("Complete Genome")配列データの最新版("latest")のFTPサイトのURLを抽出する:  
+
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Borreliella burgdorferi", "Escherichia coli K-12", "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | grep "Escherichia.coli.*K-12\|Borreliella burgdorferi\|Sinorhizobium meliloti"
+    NAME="Escherichia.coli.*K-12|Borreliella burgdorferi|Sinorhizobium meliloti"
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
+
+GFFフォーマットの圧縮ファイル（*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードする:  
+
+    # Append the filename of interest, in this case "*_genomic.gff.gz" to the FTP directory names:  
+    cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
+
+    # NCBI provides a MD5 checksum file in this directory called "md5checksums.txt":  
+    cat ftpdirpaths | awk 'BEGIN {FS=OFS="/"} {print $0,"md5checksums.txt"}' ftpdirpaths >> ftpfilepaths
+
+    # Use the "ftpfilepaths" file as input to `wget` to download:  
+    wget -i ftpfilepaths
 
     # see the newest files
     ls -lrt
@@ -396,23 +448,48 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
     # compare MD5 checksum values with those in *md5checksums.txt*
     md5 *.gz
-    grep "_genomic.gff.gz" md5checksums.txt
+    grep "_genomic.gff.gz" md5checksums.txt*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 `gunzip`コマンドでファイルを展開する:  
 
     # decompress files with the command gunzip
 
- # Escherichia.coli.*K-12
-    gunzip -c GCA_000005845.2_ASM584v2_genomic.gff.gz > GCA_000005845.2_ASM584v2_genomic.gff
-GFF=GCA_000005845.2_ASM584v2_genomic.gff
 
- # Borreliella.burgdorferi
-    gunzip -c GCA_000008685.2_ASM868v2_genomic.gff.gz > GCA_000008685.2_ASM868v2_genomic.gff
-GFF=GCA_000008685.2_ASM868v2_genomic.gff
+Processing Files with Bash Using for Loops and Globbing
 
- # Sinorhizobium.meliloti
-    gunzip -c GCA_000006965.1_ASM696v1_genomic.gff.gz > GCA_000006965.1_ASM696v1_genomic.gff
-GFF=GCA_000006965.1_ASM696v1_genomic.gff
+Unixプログラム`basename`は、ファイル名からパスや拡張子を削除する:
+
+	basename seqs/zmaysA_R1.fastq
+
+	basename seqs/zmaysA_R1.fastq .fastq
+	basename -s .fastq seqs/zmaysA_R1.fastq
+
+```
+GFFGZ=GCA_000005845.2_ASM584v2_genomic.gff.gz # Escherichia.coli.*K-12
+GFFGZ=GCA_000008685.2_ASM868v2_genomic.gff.gz # Borreliella.burgdorferi
+GFFGZ=GCA_000006965.1_ASM696v1_genomic.gff.gz # Sinorhizobium.meliloti
+GFF=$(basename $GFFGZ .gz)
+echo $GFF
+gunzip -c $FILE > $GFF
+ls -lh *.gff*
+```
+
+
+
+[Working with Gzipped Compressed Files](https://github.com/haruosuz/introBI/tree/master/2018#working-with-gzipped-compressed-files)
 
 
 ### Inspecting data
@@ -451,6 +528,8 @@ cat $GFF | awk -F "\t" '$3=="region" {print $0}'
 
 ----------
 
+
+
 http://apprize.info/data/bioinformatics/3.html
 Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
 
@@ -470,21 +549,122 @@ http://apprize.info/data/bioinformatics/12.html
 Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
 
 ----------
+## GTF
+
+
+Mus_musculus.GRCm38.74.gtf.gz
+
+# [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/tree/master/bds#chapter-7-unix-data-tools)
+第7章. Unixのデータ・ツール
+
+	bash
+	cd ~/bds-files/chapter-07-unix-data-tools/
+
+本章では、3列の[BED](http://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=BED)形式と[GTF](http://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=GTF)形式のファイルを用いる。
+
+### Inspecting Data with Head and Tail
+
+パイプで`grep`の標準出力を`head`に渡す:  
+
+	grep 'gene_id "ENSMUSG00000025907"' Mus_musculus.GRCm38.75_chr1.gtf | head -n 1
+
+### Plain-Text Data Summary Information with wc, ls, and awk
+[`wc`](https://ja.wikipedia.org/wiki/Wc_%28UNIX%29)（word count）で行数、単語数、文字数を表示:  
+
+`grep`を用いて、"#"で始まる行を除く:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | head -n 3
+
+    grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | wc -l
+
+Mus_musculus.GRCm38.75_chr1.gtfファイルのヘッダを除いてから、列（フィールド）数を`awk`で表示:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | awk -F "\t" '{print NF; exit}'
+
+### Working with Column Data with cut and Columns
+
+`grep`でメタデータ行を削除し、`cut`で1,4,5列（染色体、開始位置、終了位置）を抽出:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f1,4,5 | head -n 3
+
+### The All-Powerful Grep
+
+`grep -c`オプションで、パターンにマッチした行数を表示:  
+
+	grep -c 'gene_biotype "snRNA"' Mus_musculus.GRCm38.75_chr1.gtf
+
+`grep -o`オプションで、マッチした部分だけを抽出:  
+
+	grep -E -o 'gene_id "\w+"' Mus_musculus.GRCm38.75_chr1.gtf | head -n 5
+
+Example 7-1. ユニークな（重複のない）ソートされた遺伝子名のリストを出力
+
+	grep -E -o 'gene_id "(\w+)"' Mus_musculus.GRCm38.75_chr1.gtf | \
+	cut -f2 -d" " | \
+	sed 's/"//g' | \
+	sort | \
+	uniq > mm_gene_id.txt
+
+### Decoding Plain-Text Data: hexdump
+[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)。`man ascii`
+
+	file Mus_musculus.GRCm38.75_chr1.bed Mus_musculus.GRCm38.75_chr1.gtf
+
+
+### Sorting Plain-Text Data with Sort
+[Sort](https://ja.wikipedia.org/wiki/Sort_%28UNIX%29)で行を並べ替える。
+
+`sort`のオプション。`-k`で列の範囲（start,end）を指定してソート、`-n`で数値としてソート。
+GTFファイルは、1列目は染色体で、4列目は開始位置である。 
+
+	sort -k1,1 -k4,4n Mus_musculus.GRCm38.75_chr1_random.gtf > Mus_musculus.GRCm38.75_chr1_sorted.gtf
+
+### Finding Unique Values in Uniq
+[`uniq`](https://ja.wikipedia.org/wiki/Uniq)は、連続する重複行を削除して出力する:  
+
+Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c | sort -rn
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3,7 | sort | uniq -c
+	grep "ENSMUSG00000033793" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+
+### Text Processing with Awk
+[Awk](https://ja.wikipedia.org/wiki/AWK)  
+
+Awkは、入力データをレコード（行）に分割し、各レコードをフィールドに分割する。レコード全体は変数`$0`に格納され、フィールドは`$1, $2, $3, ...`と分割される。
+
+GTFファイル（*Mus_musculus.GRCm38.75_chr1.gtf*）をBEDファイル（3列）に変換:  
+
+	awk '!/^#/ { print $1 "\t" $4-1 "\t" $5 }' Mus_musculus.GRCm38.75_chr1.gtf | head -n 3
+
+Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
+
+	grep "Lypla1" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 3 | sort | uniq -c
+
+### Bioawk: An Awk for Biological Formats
+- [Bioawk - Fasta, Fastq, Sam, Bed, Gff Aware Awk Programming](https://www.biostars.org/p/47751/)
+
+[Bioawkのソースからダウンロード、コンパイル、インストール](https://github.com/lh3/bioawk)、またはMac OS Xのパッケージ管理システムHomebrewでインストール:
+
+	brew tap homebrew/science; brew install bioawk
+
+`bioawk -c`で入力形式を指定する。サポートされている入力形式（`bed, sam, vcf, gff, fastx`）と設定変数を見る:  
+
+	bioawk -c help
+
+全タンパク質コード遺伝子の長さ（終了位置 - 開始位置）の列を追加:  
+
+	bioawk -c gff '$3 ~ /gene/ && $2 ~ /protein_coding/ \
+	  {print $seqname,$end-$start}' Mus_musculus.GRCm38.75_chr1.gtf | head -n 4
 
 
 
-https://bi.biopapyrus.jp/rnaseq/mapping/gtf.html
-GTFファイル | 遺伝子アノテーションファイルの処理
-2017.06.11
 
-http://kazumaxneo.hatenablog.com/entry/2017/06/10/160701
-GTFとGFFフォーマット - macでインフォマティクス
 
-http://staffblog.amelieff.jp/entry/2015/07/31/143358
-フォーマットもいろいろ - アメリエフのブログ
 
-https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
-GTFファイルの細かな違い
+
+----------
 
 
 
