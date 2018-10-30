@@ -720,6 +720,27 @@ FASTQ/FASTAエントリ数をカウント:
 ## The Unix Philosophy Revisited
 
 ----------
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-07-unix-data-tools/` を使う。
+[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
+
+	bash
+
+	cd ~/bds-files/chapter-07-unix-data-tools/
+
+Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c | sort -rn
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3,7 | sort | uniq -c
+	grep "ENSMUSG00000033793" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+
+
+Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
+
+	grep "Lypla1" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 3 | sort | uniq -c
+
+----------
 # 2018-11-06
 # 第6回 シェルスクリプト
 
