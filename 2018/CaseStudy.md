@@ -13,6 +13,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
 - [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
 - [assignment 5](#assignment-5) 課題No.5 「Unix Data Tools」
+- [assignment 6](#assignment-6) 課題No.6 「Unix Data Tools (2)」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -115,6 +116,13 @@ zmays-snps/data/README
 **課題No.5 「Unix Data Tools」**
 
 2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+## assignment 6
+**課題No.6 「Unix Data Tools (2)」**
+
+2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
