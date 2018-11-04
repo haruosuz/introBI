@@ -416,123 +416,142 @@ Open the URL with your browser (Firefox or Chrome).
 ```
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
-ファイル名と内容
-   *_genomic.gff.gz file: 遺伝子アノテーション
-
 File formats and content:
    *_genomic.gff.gz file: Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
 ```
 
-参照ゲノム（"reference genome"）のうち、
-[ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
-[Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)、
-[大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
+- [炭疽菌](https://ja.wikipedia.org/wiki/炭疽菌)
+[Bacillus anthracis Ames Ancestor](https://www.genome.jp/kegg-bin/show_organism?org=bar)
+- [ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
+[Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)
+- [大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
 [Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)、
-植物と共生する根粒菌[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)
+- [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157)
+[Escherichia coli O157:H7 Sakai](https://www.genome.jp/kegg-bin/show_organism?org=ecs)
+- 植物と共生する根粒菌[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)
 [Sinorhizobium meliloti](https://en.wikipedia.org/wiki/Sinorhizobium_meliloti)
-のコンプリートゲノム("Complete Genome")配列データの最新版("latest")のFTPサイトのURLを抽出する:  
 
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Borreliella burgdorferi", "Escherichia coli K-12", "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+参照ゲノム（"reference genome"）のうち、生物名***のコンプリートゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
-    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | grep "Escherichia.coli.*K-12\|Borreliella burgdorferi\|Sinorhizobium meliloti"
-    NAME="Escherichia.coli.*K-12|Borreliella burgdorferi|Sinorhizobium meliloti"
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "***" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
+    NAME="Bacillus anthracis str. Ames|Escherichia coli O157:H7 str. Sakai"
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
-GFFフォーマットの圧縮ファイル（*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードする:  
 
-    # Append the filename of interest, in this case "*_genomic.gff.gz" to the FTP directory names:  
-    cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
+- 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
+[Chapter 6. Bioinformatics Data](https://apprize.info/data/bioinformatics/6.html)
 
-    # NCBI provides a MD5 checksum file in this directory called "md5checksums.txt":  
-    cat ftpdirpaths | awk 'BEGIN {FS=OFS="/"} {print $0,"md5checksums.txt"}' ftpdirpaths >> ftpfilepaths
-
-    # Use the "ftpfilepaths" file as input to `wget` to download:  
-    wget -i ftpfilepaths
-
-    # see the newest files
-    ls -lrt
-
-`md5`コマンドでチェックサムを計算し、公表されている値と一致するか確認する:  
-
-    # compare MD5 checksum values with those in *md5checksums.txt*
-    md5 *.gz
-    grep "_genomic.gff.gz" md5checksums.txt*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-`gunzip`コマンドでファイルを展開する:  
-
-    # decompress files with the command gunzip
-
-
-Processing Files with Bash Using for Loops and Globbing
-
-Unixプログラム`basename`は、ファイル名からパスや拡張子を削除する:
-
-	basename seqs/zmaysA_R1.fastq
-
-	basename seqs/zmaysA_R1.fastq .fastq
-	basename -s .fastq seqs/zmaysA_R1.fastq
+GFF形式ファイル（*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードし、チェックサムを確認する:  
 
 ```
-GFFGZ=GCA_000005845.2_ASM584v2_genomic.gff.gz # Escherichia.coli.*K-12
-GFFGZ=GCA_000008685.2_ASM868v2_genomic.gff.gz # Borreliella.burgdorferi
-GFFGZ=GCA_000006965.1_ASM696v1_genomic.gff.gz # Sinorhizobium.meliloti
+
+# Append the filename of interest, in this case "*_genomic.gff.gz" to the FTP directory names:  
+cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
+
+# NCBI provides a MD5 checksum file in this directory called "md5checksums.txt":  
+cat ftpdirpaths | awk 'BEGIN {FS=OFS="/"} {print $0,"md5checksums.txt"}' ftpdirpaths >> ftpfilepaths
+
+# Use the "ftpfilepaths" file as input to `wget` to download:  
+wget -i ftpfilepaths
+
+# see the newest files
+ls -lrt
+
+# compare our checksum values with those in "md5checksums.txt" using the md5 program:
+md5 *.gz
+grep "_genomic.gff.gz" md5checksums.txt*
+
+```
+
+[Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](https://apprize.info/data/bioinformatics/12.html)
+
+```
+
+# `basename`コマンドは、ファイル名からパスや拡張子を削除する
+# `gunzip`コマンドでファイルを展開する:  
+# `basename` strips paths and a suffix (e.g., extension) from filenames
+# decompress files with the command `gunzip`:
+
+GFFGZ=./GCA_000007845.1_ASM784v1_genomic.gff.gz
+GFFGZ=./GCA_000008865.2_ASM886v2_genomic.gff.gz
 GFF=$(basename $GFFGZ .gz)
 echo $GFF
-gunzip -c $FILE > $GFF
+gunzip -c $GFFGZ > $GFF
+#for file in ./*.gff.gz; do gunzip -c $file > $(basename $file .gz); done
 ls -lh *.gff*
+
 ```
 
+[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを用いる。
 
+```
 
-[Working with Gzipped Compressed Files](https://github.com/haruosuz/introBI/tree/master/2018#working-with-gzipped-compressed-files)
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):
+FILE="GCA_000007845.1_ASM784v1_genomic.gff" # Bacillus anthracis str. Ames
+FILE="GCA_000008865.2_ASM886v2_genomic.gff" # Escherichia coli O157:H7 str. Sakai
 
+# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $FILE):
+echo $FILE
+```
+
+[Chapter 7. Unix Data Tools](https://apprize.info/data/bioinformatics/7.html)
 
 ### Inspecting data
 データの検査 
 
-`ls -lh`でファイルサイズを確認する:  
+```
 
-    # ls -lh reports human-readable file sizes
-    ls -lh
+# Inspecting Data with Head and Tail
+# `head`で先頭部分を表示する:  
+# look at the top of a file with head
+head -n 8 $FILE
 
-[`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
+# look at this with less:
+less $FILE
+# if you need to quit less, press q
 
-    # look at the top of a file with head
-    head -n 8 $GFF
+# Plain-Text Data Summary Information with wc, ls, and awk
 
-`grep`でヘッダ（`#`で始まる行）にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）:  
+# `ls -lh`でファイルサイズを確認する:  
+ls -lh $FILE
 
-    # use grep to extract lines matching the pattern "^#" (use Control-C to stop)
-    grep "^#" $GFF
+# 行数をカウントする:  
+# wc -l outputs the number of lines
+wc -l $FILE
 
-Pipe the standard output to the next command with the pipe character (|).
+# `grep`でヘッダ（`#`で始まる行）にマッチする行を抽出する:  
+# use grep to extract lines matching the pattern "^#":  
+grep "^#" $FILE
 
-[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
+# パイプでプログラムの入出力をつなぐ。
+# Pipe the standard output to the next command with the pipe character (|).
 
-行数をカウントする:  
+# exclude lines that begin with "#":
+grep -v "^#" $FILE | head -n 3
+grep "^#" $FILE | wc -l
 
-    # wc -l outputs the number of lines
-    grep "^#" $GFF | wc -l
+# `grep`でメタデータ行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出:  
+# chop off the metadata rows using `grep`, and then use `cut` to extract the first, fourth, and fifth columns (chromosome, start, end):
+grep -v "^#" $FILE | cut -f1,4,5 | head -n 3
+
+# `grep -c`オプションで、パターンにマッチした行数を表示:  
+grep -c 'gene_biotype' $FILE
+
+# Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+grep -v "^#" $FILE | cut -f3 | sort | uniq -c
+grep -v "^#" $FILE | cut -f3 | sort | uniq -c | sort -rn
+grep -v "^#" $FILE | cut -f3,7 | sort | uniq -c
+grep "tRNA" $FILE | cut -f3 | sort | uniq -c
+
+# Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
+grep "ribosomal" $FILE | cut -f3 | sort | uniq -c
 
 
-
-cat $GFF | grep -v "^#" | cut -f3 | sort | uniq -c
-
-
-cat $GFF | awk -F "\t" '$3=="region" {print $0}'
+```
 
 ----------
 
