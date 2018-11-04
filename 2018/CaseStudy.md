@@ -310,90 +310,6 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
 
     echo $FILE
 
-[Chapter 7. Unix Data Tools](https://apprize.info/data/bioinformatics/7.html)
-
-[Inspecting Data with Head and Tail](https://github.com/haruosuz/introBI/tree/master/2018#inspecting-data-with-head-and-tail)
-
-`head`と`tail`でファイルの先頭部分と末尾部分を表示する:  
-
-    head -n 3 $FILE
-    tail -n 2 $FILE
-
-`less`でファイルを見る:  
-
-    less $FILE
-
-`less`を終了するには、*q*を押す。*h*でヘルプを表示する。
-
-`wc`で行数を表示:  
-
-    wc -l *.txt
-
-`ls -l`でファイルのサイズを確認:  
-
-    ls -lh *.txt
-
-[The All-Powerful Grep](https://github.com/haruosuz/introBI/tree/master/2018#the-all-powerful-grep)
-
-`grep`でファイルのヘッダ（`#`で始まる行）を表示する:  
-
-    # use grep to extract header lines (those that begin with #)
-    grep "^#" $FILE
-
-列番号を付けて出力する:
-
-    # Pipe the standard output to the next command with the pipe character (|)
-    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
-
-     5	refseq_category
-
-     8	organism_name
-     9	infraspecific_name
-    10	isolate
-
-    11	version_status
-    12	assembly_level
-    20	ftp_path
-
-`grep -v`でマッチしない行を返す:  
-
-    grep -v "^#" $FILE | head -n 3
-
-`grep -v`でファイルのヘッダ（`#`で始まる行）を削除し、`cut`で8,9列（organism_name, infraspecific_name）を抽出:  
-
-    grep -v "^#" $FILE | cut -f8,9 | head
-
-`grep --color`でマッチング部分を色付けする:  
-
-    grep --color "natto" $FILE
-
-`grep -c`でパターンにマッチした行数を表示:  
-
-    grep -c "kimchi" $FILE
-
-`grep -i`で大文字小文字を区別しない（ignore case）:  
-
-    grep -ic "kimchi" $FILE
-
-Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約する。  
-`sort`のオプション `-n`で数値としてソートし、`-r`で逆順（降順）にソートする。  
-`uniq`のオプション `-c`で重複行の数も表示。  
-アセンブリの状況（`assembly_level: Chromosome, Complete Genome, Contig, Scaffold`）を確認する:  
-
-    # Using grep, cut, sort, uniq to summarize columns of tabular data:
-
-    # refseq_category (column 5) is "na", "reference genome" or "representative genome"
-    grep -v "^#" $FILE | cut -f5 | sort | uniq -c
-
-    # assembly_level (column 12) is "Chromosome", "Complete Genome", "Contig", or "Scaffold"
-    grep -v "^#" $FILE | cut -f12 | sort | uniq -c
-
-    # If we wanted these counts in order from most frequent to least, we could pipe these results to sort -rn:
-    grep -v "^#" $FILE | cut -f12 | sort | uniq -c | sort -rn
-
-    # Because sort and uniq are line-based, we can create lines from multiple columns to count combinations
-    grep -v "^#" $FILE | cut -f5,12 | sort | uniq -c
-
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
 Also see the Downloading Genomic Data Factsheet
@@ -438,7 +354,6 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
     NAME="Bacillus anthracis str. Ames|Escherichia coli O157:H7 str. Sakai"
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
-
 
 - 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
 [Chapter 6. Bioinformatics Data](https://apprize.info/data/bioinformatics/6.html)
