@@ -28,12 +28,12 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](#2018-10-30)
   - [projects_2015](#projects_2015)
   - [project directory examples](#project-directory-examples)
-- 2018-11-06 第07回 シェルスクリプト [Shell Scripting](#2018-11-06)
-  - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
+- 2018-11-06 第07回 ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
+  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 第08回 中間発表 [interim report](#interim-report)
-- 2018-12-04 第09回 TBA
+- 2018-12-04 第09回 シェルスクリプト [Shell Scripting](#2018-11-06)
 - 2018-12-11 第10回 TBA
 - 2018-12-18 第11回 [Guest Speaker](#guest-speaker)
 - 2018-12-25 第12回 TBA
