@@ -278,7 +278,7 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 ```
 
 - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
+- [RefSeq - JI 井上 潤](http://fish-evol.com/RefSeq.html)
 - [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
 
 ### Downloading data
@@ -318,19 +318,19 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
     # Use `tail -f` to constantly monitor files (use Control-C to stop)
     tail -f wget-log
 
-GenBankまたはRefSeqのゲノム配列のメタデータを確認する:  
+GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
 
 [Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](https://apprize.info/data/bioinformatics/12.html)
 
 [Variables and Command Arguments](https://github.com/haruosuz/introBI/tree/master/2018#variables-and-command-arguments)
 
+変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+変数の値にアクセスするには、変数名の前にドル記号を付ける:   
 ```
-# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
 FILE="assembly_summary_genbank.txt"
 FILE="assembly_summary_refseq.txt"
 
-# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $FILE):  
 echo $FILE
 ```
@@ -361,8 +361,6 @@ File formats and content:
    *_genomic.gff.gz file: Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
 ```
 
-- [炭疽菌](https://ja.wikipedia.org/wiki/炭疽菌)
-[Bacillus anthracis Ames Ancestor](https://www.genome.jp/kegg-bin/show_organism?org=bar)
 - [ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
 [Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)
 - [大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
@@ -378,6 +376,8 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
     NAME="Bacillus anthracis str. Ames|Escherichia coli O157:H7 str. Sakai"
+    NAME="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ {print $8,$20}'
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
 - 2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
@@ -411,8 +411,9 @@ grep "_genomic.gff.gz" md5checksums.txt*
 # `basename` strips paths and a suffix (e.g., extension) from filenames
 # decompress files with the command `gunzip`:
 
-GFFGZ=./GCA_000007845.1_ASM784v1_genomic.gff.gz # Bacillus anthracis str. Ames
-GFFGZ=./GCA_000008865.2_ASM886v2_genomic.gff.gz # Escherichia coli O157:H7 str. Sakai
+GFFGZ=./GCF_000006965.1_ASM696v1_genomic.gff.gz # Sinorhizobium meliloti 1021
+GFFGZ=./GCF_000008685.2_ASM868v2_genomic.gff.gz # Borreliella burgdorferi B31
+GFFGZ=./GCF_000008865.2_ASM886v2_genomic.gff.gz # Escherichia coli O157:H7 str. Sakai
 GFF=$(basename $GFFGZ .gz)
 echo $GFF
 gunzip -c $GFFGZ > $GFF
