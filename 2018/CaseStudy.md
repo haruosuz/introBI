@@ -344,7 +344,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 To download all RefSeq reference bacterial genomes,
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have "reference genome" refseq_category (column 5), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12):
 
-    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8,$9}' | sort
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort | less
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
 抽出されたFTPサイトのURLをブラウザFirefox/Chromeで開く。  
@@ -373,7 +373,7 @@ File formats and content:
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "***" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
-    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
+    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort | less
     NAME="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ {print $8,$20}'
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
