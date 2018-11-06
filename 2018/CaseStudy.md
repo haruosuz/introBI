@@ -451,10 +451,10 @@ grep "^#" $GFF
 
 # パイプでプログラムの入出力をつなぐ。
 # Pipe the standard output to the next command with the pipe character (|).
+grep "^#" $GFF | wc -l
 
 # exclude lines that begin with "#":
 grep -v "^#" $GFF | head -n 3
-grep "^#" $GFF | wc -l
 
 # `grep`でメタデータ行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出:  
 # chop off the metadata rows using `grep`, and then use `cut` to extract the first, fourth, and fifth columns (chromosome, start, end):
