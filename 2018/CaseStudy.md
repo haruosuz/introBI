@@ -336,7 +336,6 @@ echo $FILE
 ```
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
-
 Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
@@ -375,7 +374,6 @@ File formats and content:
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "***" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
-    NAME="Bacillus anthracis str. Ames|Escherichia coli O157:H7 str. Sakai"
     NAME="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ {print $8,$20}'
     cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
