@@ -14,6 +14,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
 - [assignment 5](#assignment-5) 課題No.5 「Unix Data Tools」
 - [assignment 6](#assignment-6) 課題No.6 「Unix Data Tools (2)」
+- [assignment 7](#assignment-7) 課題No.7 「interim report」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -124,6 +125,29 @@ zmays-snps/data/README
 
 2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+## assignment 7
+**課題No.7 「interim report」**
+
+2018-11-27 第08回 中間発表 interim report
+のスライドをPDFファイルで提出する。
+Submit your PDF presentation slides for your oral presentation.
+
+中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（my_project.zip）を提出する。
+
+プロジェクト・ディレクトリ（my_project/）構造の例:  
+
+    my_project/README.md
+    my_project/scripts/run.sh
+    my_project/data/input.txt
+    my_project/analysis/output.txt
+    my_project/my_interim_report.pdf
+
+data/内のデータ・ファイルは提出しなくてもよい。
+data/内のファイルを除外して圧縮するzipコマンドの例:  
+
+    zip -r my_project.zip my_project/ -x my_project/data/*
 
 ----------
 ## GRCh37/hg19 human chromosome 22
@@ -300,15 +324,16 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
 
 [Variables and Command Arguments](https://github.com/haruosuz/introBI/tree/master/2018#variables-and-command-arguments)
 
-変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+```
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):  
+FILE="assembly_summary_genbank.txt"
+FILE="assembly_summary_refseq.txt"
 
-    # create a variable and assign it a value
-    FILE="assembly_summary_refseq.txt"
-    FILE="assembly_summary_genbank.txt"
-
-変数の値にアクセスするには、変数名の前にドル記号を付ける:  
-
-    echo $FILE
+# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $FILE):  
+echo $FILE
+```
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
@@ -341,7 +366,7 @@ File formats and content:
 - [ライム病の病原体であるボレリア・ブルグドルフェリ](https://ja.wikipedia.org/wiki/ライム病#病原体)
 [Borreliella burgdorferi](http://www.bacterio.net/borreliella.html)
 - [大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
-[Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)、
+[Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)
 - [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157)
 [Escherichia coli O157:H7 Sakai](https://www.genome.jp/kegg-bin/show_organism?org=ecs)
 - 植物と共生する根粒菌[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)
@@ -361,7 +386,6 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 GFF形式ファイル（*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードし、チェックサムを確認する:  
 
 ```
-
 # Append the filename of interest, in this case "*_genomic.gff.gz" to the FTP directory names:  
 cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
 
@@ -377,95 +401,77 @@ ls -lrt
 # compare our checksum values with those in "md5checksums.txt" using the md5 program:
 md5 *.gz
 grep "_genomic.gff.gz" md5checksums.txt*
-
 ```
 
 [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](https://apprize.info/data/bioinformatics/12.html)
 
 ```
-
 # `basename`コマンドは、ファイル名からパスや拡張子を削除する
 # `gunzip`コマンドでファイルを展開する:  
 # `basename` strips paths and a suffix (e.g., extension) from filenames
 # decompress files with the command `gunzip`:
 
-GFFGZ=./GCA_000007845.1_ASM784v1_genomic.gff.gz
-GFFGZ=./GCA_000008865.2_ASM886v2_genomic.gff.gz
+GFFGZ=./GCA_000007845.1_ASM784v1_genomic.gff.gz # Bacillus anthracis str. Ames
+GFFGZ=./GCA_000008865.2_ASM886v2_genomic.gff.gz # Escherichia coli O157:H7 str. Sakai
 GFF=$(basename $GFFGZ .gz)
 echo $GFF
 gunzip -c $GFFGZ > $GFF
 #for file in ./*.gff.gz; do gunzip -c $file > $(basename $file .gz); done
 ls -lh *.gff*
-
-```
-
-[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを用いる。
-
-```
-
-# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
-# create a variable and assign it a value with (do not use spaces around the equals sign!):
-FILE="GCA_000007845.1_ASM784v1_genomic.gff" # Bacillus anthracis str. Ames
-FILE="GCA_000008865.2_ASM886v2_genomic.gff" # Escherichia coli O157:H7 str. Sakai
-
-# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
-# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $FILE):
-echo $FILE
 ```
 
 [Chapter 7. Unix Data Tools](https://apprize.info/data/bioinformatics/7.html)
 
 ### Inspecting data
-データの検査 
+データの検査
+
+[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを用いる。
 
 ```
-
 # Inspecting Data with Head and Tail
 # `head`で先頭部分を表示する:  
 # look at the top of a file with head
-head -n 8 $FILE
+head -n 8 $GFF
 
 # look at this with less:
-less $FILE
+less $GFF
 # if you need to quit less, press q
 
 # Plain-Text Data Summary Information with wc, ls, and awk
 
 # `ls -lh`でファイルサイズを確認する:  
-ls -lh $FILE
+ls -lh $GFF
 
 # 行数をカウントする:  
 # wc -l outputs the number of lines
-wc -l $FILE
+wc -l $GFF
 
 # `grep`でヘッダ（`#`で始まる行）にマッチする行を抽出する:  
 # use grep to extract lines matching the pattern "^#":  
-grep "^#" $FILE
+grep "^#" $GFF
 
 # パイプでプログラムの入出力をつなぐ。
 # Pipe the standard output to the next command with the pipe character (|).
 
 # exclude lines that begin with "#":
-grep -v "^#" $FILE | head -n 3
-grep "^#" $FILE | wc -l
+grep -v "^#" $GFF | head -n 3
+grep "^#" $GFF | wc -l
 
 # `grep`でメタデータ行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出:  
 # chop off the metadata rows using `grep`, and then use `cut` to extract the first, fourth, and fifth columns (chromosome, start, end):
-grep -v "^#" $FILE | cut -f1,4,5 | head -n 3
+grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
 
 # `grep -c`オプションで、パターンにマッチした行数を表示:  
-grep -c 'gene_biotype' $FILE
+grep -c 'gene_biotype' $GFF
 
 # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
-grep -v "^#" $FILE | cut -f3 | sort | uniq -c
-grep -v "^#" $FILE | cut -f3 | sort | uniq -c | sort -rn
-grep -v "^#" $FILE | cut -f3,7 | sort | uniq -c
-grep "tRNA" $FILE | cut -f3 | sort | uniq -c
+grep -v "^#" $GFF | cut -f3 | sort | uniq -c
+grep -v "^#" $GFF | cut -f3 | sort | uniq -c | sort -rn
+grep -v "^#" $GFF | cut -f3,7 | sort | uniq -c
+grep "tRNA" $GFF | cut -f3 | sort | uniq -c
 
 # Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
-grep "ribosomal" $FILE | cut -f3 | sort | uniq -c
-
-
+grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 ```
 
 ----------
