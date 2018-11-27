@@ -33,6 +33,7 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 第08回 中間発表 [interim report](#interim-report)
+  - [GTF/GFF](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-11-27)
 - 2018-12-04 第09回 シェルスクリプト [Shell Scripting](#2018-12-04)
 - 2018-12-11 【休講】
 - 2018-12-18 第10回 [Guest Speaker](#guest-speaker)
@@ -719,27 +720,6 @@ FASTQ/FASTAエントリ数をカウント:
 [名前付きパイプ](https://ja.wikipedia.org/wiki/名前付きパイプ)とプロセス置換
 
 ## The Unix Philosophy Revisited
-
-----------
-
-[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-07-unix-data-tools/` を使う。
-[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
-
-	bash
-
-	cd ~/bds-files/chapter-07-unix-data-tools/
-
-Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
-
-	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
-	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c | sort -rn
-	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3,7 | sort | uniq -c
-	grep "ENSMUSG00000033793" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
-
-
-Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
-
-	grep "Lypla1" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 3 | sort | uniq -c
 
 ----------
 # 2018-12-04
