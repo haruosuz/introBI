@@ -502,8 +502,8 @@ grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 
 ----------
 ## 2018-11-27
-[GFF](https://github.com/haruosuz/bioinfo#gff)
-[GTF](https://github.com/haruosuz/bioinfo#gtf)
+**[GFF](https://github.com/haruosuz/bioinfo#gff)/
+[GTF](https://github.com/haruosuz/bioinfo#gtf)**
 
 [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)を用いて
 GTF形式のファイル*Mus_musculus.GRCm38.74.gtf.gz*を解析する。
