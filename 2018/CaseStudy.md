@@ -502,11 +502,10 @@ grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 
 ----------
 ## 2018-11-27
-**[GFF](https://github.com/haruosuz/bioinfo#gff)/
-[GTF](https://github.com/haruosuz/bioinfo#gtf)**
+**GFF/GTF**
 
 [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)を用いて
-GTF形式のファイル*Mus_musculus.GRCm38.74.gtf.gz*を解析する。
+[GTF](https://github.com/haruosuz/bioinfo#gtf)形式のファイル*Mus_musculus.GRCm38.74.gtf.gz*を解析する。
 
 [教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-07-unix-data-tools/` を使う。
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
