@@ -166,7 +166,7 @@ zmays-snps/data/README
 のスライドをPDFファイルで提出する。
 Submit your PDF presentation slides for your oral presentation.
 
-中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（my_project.zip）を提出する。
+中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
 
 プロジェクト・ディレクトリ（my_project/）構造の例:  
 
@@ -186,7 +186,7 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 **課題No.8 「Shell Scripting」**
 
 2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
-で作成したスクリプト（run.sh）を含むプロジェクト・ディレクトリの圧縮ファイル（my_project.zip）を提出する。
+を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
 
 ----------
 ## GRCh37/hg19 human chromosome 22
