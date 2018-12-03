@@ -761,20 +761,20 @@ Bashスクリプトを実行する方法:
 ### Variables and Command Arguments
 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 
-    DB="silva"
+    sample="zmays"
 
 変数の値にアクセスするには、変数名の前にドル記号を付ける（`$DB`）:  
 
-    echo $DB
+    echo $sample
 
 中括弧`{}`で変数名を囲む:  
 
-    echo $DB_128
-    echo ${DB}_128
+    echo $sample_snp
+    echo ${sample}_snp
 
 ダブルクォーテーション`""`で変数を囲む:  
 
-    echo "${DB}_128"
+    echo "${sample}_snp"
 
 #### Command-line arguments
 コマンドライン引数は、`$1, $2, $3, ...`に割り当てられる。変数`$0`はスクリプト名を格納する。  
