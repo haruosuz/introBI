@@ -44,6 +44,14 @@ INTRODUCTION TO BIOINFORMATICS
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
+## Guest speaker
+[**特別講演**](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)
+
+### 2018-12-18
+- 講師: 石井学 氏 [Manabu Ishii](https://bit.riken.jp/member/)
+- 演題: 「科学者のためのGit」"Git for Scientists"
+
+----------
 ## projects_2015
 2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
 
@@ -76,11 +84,6 @@ INTRODUCTION TO BIOINFORMATICS
 
 スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
 [スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
-
-----------
-## Guest speaker
-**特別講演**
-https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html
 
 ----------
 ## final presentation
