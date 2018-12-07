@@ -16,6 +16,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 6](#assignment-6) 課題No.6 「Unix Data Tools (2)」
 - [assignment 7](#assignment-7) 課題No.7 「interim report」
 - [assignment 8](#assignment-8) 課題No.8 「Shell Scripting」
+- [assignment 9](#assignment-9) 課題No.9 「Git for Scientists 事前課題」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -187,6 +188,15 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 
 2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
 を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
+
+----------
+## assignment 9
+課題No.9 「Git for Scientists 事前課題」
+
+下記ウェブサイトのいずれかを見て、事前に疑問点を報告する。
+- [生命科学研究のためのGitHubの使い方 基本編](https://togotv.dbcls.jp/20180621.html)
+- [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
+- [GitHub Learning Lab](https://lab.github.com)
 
 ----------
 ## GRCh37/hg19 human chromosome 22
