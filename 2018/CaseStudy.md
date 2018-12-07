@@ -191,7 +191,7 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 
 ----------
 ## assignment 9
-課題No.9 「Git for Scientists 事前課題」
+**課題No.9 「Git for Scientists 事前課題」**
 
 下記ウェブサイトのいずれかを見て、事前に疑問点を報告する。
 - [生命科学研究のためのGitHubの使い方 基本編](https://togotv.dbcls.jp/20180621.html)
