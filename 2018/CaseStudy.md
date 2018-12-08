@@ -198,7 +198,8 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 - [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 - [GitHub Learning Lab](https://lab.github.com)
 
-[回答例]  
+[回答例]
+
 「生命科学研究のためのGitHubの使い方 基本編」の動画を見た。疑問点は次の通りである。
 - ブランチ (branch) の説明がよくわからなかった。
 - プルリクエスト (pull request) とマージ (merge) が理解できなかった。
