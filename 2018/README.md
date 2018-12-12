@@ -50,6 +50,8 @@ INTRODUCTION TO BIOINFORMATICS
 ### 2018-12-18
 - 講師: 石井学 氏 [Manabu Ishii](https://bit.riken.jp/member/)
 - 演題: 「科学者のためのGit」"Git for Scientists"
+- [課題No.9 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-9)
+〆切日時	2018-12-17 23:59:00
 
 ----------
 ## projects_2015
