@@ -39,6 +39,7 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-12-18 第10回 [Guest Speaker](#guest-speaker)
 - 2018-12-22（土曜日）3限【補講】第11回 TBA
 - 2018-12-25 第12回 TBA
+- 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
 - 2019-01-08 第13回 TBA
 - 2019-01-15 第14回 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
