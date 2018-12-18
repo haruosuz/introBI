@@ -36,7 +36,7 @@ INTRODUCTION TO BIOINFORMATICS
   - [GTF/GFF](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-11-27)
 - 2018-12-04 第09回 シェルスクリプト [Shell Scripting](#2018-12-04)
 - 2018-12-11 【休講】
-- 2018-12-18 第10回 [Guest Speaker](#guest-speaker)
+- 2018-12-18 第10回 Git for Scientists [Guest Speaker](#guest-speaker)
 - 2018-12-22（土曜日）3限【補講】第11回 TBA
 - 2018-12-25 第12回 TBA
 - 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
@@ -48,44 +48,12 @@ INTRODUCTION TO BIOINFORMATICS
 ## Guest speaker
 **特別講演**
 
-- 講師: 石井学 氏 [Manabu Ishii](https://bit.riken.jp/member/)
+- 日時：2018年12月18日 (火) 3時限 13:00～14:30
+- 場所：SFC (λ18)
+- 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
 - 演題: [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
 - [課題No.9 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-9)
 〆切日時	2018-12-17 23:59:00
-
-----------
-## projects_2015
-2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
-
-	bash
-	wget https://dl.dropboxusercontent.com/s/0r8c9jxz4pkjooh/projects_2015.tar.gz
-	tar xvzf projects_2015.tar.gz
-	cd projects_2015/
-
-----------
-## project directory examples
-ターミナルで以下のコマンドを実行し、プロジェクト例を取得する:  
-
-    bash
-    wget https://github.com/haruosuz/introBI/raw/master/2015/examples.tar.gz
-    tar xvzf examples.tar.gz
-    cd examples/
-    cp -r hoge1 my_project
-
-- 雛形 `hoge1, hoge2, hoge3, testR1, testR2`
-- メタボローム MMMDB: Mouse Multiple Tissue Metabolome Database `mmmdb`
-- ゲノムリスト NCBI Genome List `ncbiGenomeList`
-- ゲノム配列 Bacteria:Mycoplasma_genitalium_G37 `mgen`
-- ゲノム配列 mitochondrion,plasmid,plastid,viral `ncbi_ftp`
-- 病原遺伝子配列 Virulence Factors Database (VFDB) `vfdb`
-- タンパク質配列 UniProtKB/Swiss-Prot `uniprot_sprot`
-
-----------
-## interim report
-**中間発表**
-
-スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
-[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
 
 ----------
 ## final presentation
@@ -113,6 +81,40 @@ INTRODUCTION TO BIOINFORMATICS
 - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/introBI#reproducible-research) に必要な情報を含むプロジェクト・ディレクトリを作成した。
 - 再現性を自分の実行環境で確認した。
 - 再現性を他人の実行環境で確認した。
+
+----------
+## interim report
+**中間発表**
+
+スライド1枚を用いて、1人あたり1分程度で解析データを紹介する。
+[スライドのサンプル](https://dl.dropboxusercontent.com/s/mvdi50q0eibu3fm/slides.pdf)
+
+----------
+## projects_2015
+2015年度秋学期「基礎バイオインフォマティクス」履修者のプロジェクト・ディレクトリを取得する:  
+
+	bash
+	wget https://dl.dropboxusercontent.com/s/0r8c9jxz4pkjooh/projects_2015.tar.gz
+	tar xvzf projects_2015.tar.gz
+	cd projects_2015/
+
+----------
+## project directory examples
+ターミナルで以下のコマンドを実行し、プロジェクト例を取得する:  
+
+    bash
+    wget https://github.com/haruosuz/introBI/raw/master/2015/examples.tar.gz
+    tar xvzf examples.tar.gz
+    cd examples/
+    cp -r hoge1 my_project
+
+- 雛形 `hoge1, hoge2, hoge3, testR1, testR2`
+- メタボローム MMMDB: Mouse Multiple Tissue Metabolome Database `mmmdb`
+- ゲノムリスト NCBI Genome List `ncbiGenomeList`
+- ゲノム配列 Bacteria:Mycoplasma_genitalium_G37 `mgen`
+- ゲノム配列 mitochondrion,plasmid,plastid,viral `ncbi_ftp`
+- 病原遺伝子配列 Virulence Factors Database (VFDB) `vfdb`
+- タンパク質配列 UniProtKB/Swiss-Prot `uniprot_sprot`
 
 ----------
 
