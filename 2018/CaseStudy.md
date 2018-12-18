@@ -17,6 +17,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「interim report」
 - [assignment 8](#assignment-8) 課題No.8 「Shell Scripting」
 - [assignment 9](#assignment-9) 課題No.9 「Git for Scientists 事前課題」
+- [assignment 10](#assignment-10) 課題No.10 「Git for Scientists 事前課題」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -203,6 +204,13 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 「生命科学研究のためのGitHubの使い方 基本編」の動画を見た。疑問点は次の通りである。
 1. ブランチ (branch) の説明がよくわからなかった。
 2. プルリクエスト (pull request) とマージ (merge) が理解できなかった。
+
+----------
+## assignment 10
+**課題No.10 「Git for Scientists 事前課題」**
+
+
+
 
 ----------
 ## GRCh37/hg19 human chromosome 22
