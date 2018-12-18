@@ -211,27 +211,32 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 
 [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
 
-Global な設定
-
 ```
+# 適当なディレクトリをつくり、そこへ移動する
 mkdir -p ~/projects/2018-12-18
 cd ~/projects/2018-12-18/
-git init
-git config --local user.name "Haruo Suzuki"
-git config --local user.email "haruo@dotinstall.com"
-ls -a
-cat .git/config
-
-# エディタも変更可能
-git config --global core.editor "atom --wait"
-
-# 現在の設定を確認
-git config --list
 
 # レポジトリを作る
 git init
 ls
 ls -a
+
+# Global な設定
+git config --global user.name "あなたの名前"
+git config --global user.email "あなたのメールアドレス"
+cat ~/.gitconfig
+
+# localな設定
+git config --local user.name "Haruo Suzuki"
+git config --local user.email "haruo@dotinstall.com"
+cat .git/config
+
+# エディタも変更可能
+git config --local core.editor "atom --wait"
+cat .git/config
+
+# 現在の設定を確認
+git config --list
 
 # レポジトリの現在の状態を確認する
 git status
@@ -242,6 +247,9 @@ git status
 git add sample.txt
 git commit -m "Create sample.txt for lesson"
 
+# 確認する
+git status
+git log
 
 
 ```
