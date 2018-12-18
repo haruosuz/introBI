@@ -234,8 +234,12 @@ ls
 ls -a
 
 # レポジトリの現在の状態を確認する
+git status
 touch sample.txt
 git status
+
+
+
 
 ```
 
