@@ -238,6 +238,9 @@ git status
 touch sample.txt
 git status
 
+# 新しいファイルを追加する
+git add sample.txt
+git commit -m "Create sample.txt for lesson"
 
 
 
