@@ -46,9 +46,8 @@ INTRODUCTION TO BIOINFORMATICS
 
 ----------
 ## Guest speaker
-[**特別講演**](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)
+**特別講演**
 
-### 2018-12-18
 - 講師: 石井学 氏 [Manabu Ishii](https://bit.riken.jp/member/)
 - 演題: [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
 - [課題No.9 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-9)
