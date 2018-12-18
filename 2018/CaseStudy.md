@@ -261,6 +261,11 @@ git commit --amend -m "aaaaa"
 # 変更内容を確認する
 git diff
 
+# addしないで、commitするとどうなるか？
+## git addするまえに、git commitしてみましょう
+## add していないと怒られる
+git commit -m "Write about today"
+
 
 ```
 
