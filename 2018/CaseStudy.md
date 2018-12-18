@@ -252,7 +252,7 @@ git status
 git log
 
 # ファイルを編集してどうなるか確認する
-echo "aaaaa" >> sample.txt
+echo "xxxxxxxxxx" >> sample.txt
 git status
 
 # Q.
