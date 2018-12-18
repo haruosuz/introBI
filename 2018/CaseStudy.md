@@ -255,7 +255,7 @@ git log
 echo "xxxxxxxxxx" >> sample.txt
 git status
 
-# Q.
+# コミットメッセージを修正
 git commit --amend -m "aaaaa"
 
 # 変更内容を確認する
@@ -271,7 +271,6 @@ git commit -m "Write about today"
 git status
 
 # git add を取り消す
-
 
 ```
 
