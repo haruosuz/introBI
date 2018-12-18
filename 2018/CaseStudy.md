@@ -214,9 +214,8 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 Global な設定
 
 ```
-cd projects
-mkdir 2018-12-18
-cd 2018-12-18/
+mkdir -p ~/projects/2018-12-18
+cd ~/projects/2018-12-18/
 git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
 ~/.gitconfig
