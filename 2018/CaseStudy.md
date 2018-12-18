@@ -17,6 +17,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「interim report」
 - [assignment 8](#assignment-8) 課題No.8 「Shell Scripting」
 - [assignment 9](#assignment-9) 課題No.9 「Git for Scientists 事前課題」
+- [2018-12-18](#2018-12-18)
 - [assignment 10](#assignment-10) 課題No.10 「Git for Scientists 事前課題」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
@@ -220,6 +221,15 @@ git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
 ~/.gitconfig
 ```
+
+エディタも変更可能
+
+```
+git config --global core.editor "atom --wait"
+```
+
+
+
 
 ----------
 ## assignment 10
