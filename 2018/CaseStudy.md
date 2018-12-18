@@ -219,6 +219,7 @@ cd ~/projects/2018-12-18/
 git init
 git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
+ls -a
 cat .git/config
 ```
 
