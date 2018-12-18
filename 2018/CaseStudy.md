@@ -251,6 +251,16 @@ git commit -m "Create sample.txt for lesson"
 git status
 git log
 
+# ファイルを編集してどうなるか確認する
+echo "aaaaa" >> sample.txt
+git status
+
+# Q.
+git commit --amend -m "aaaaa"
+
+# 変更内容を確認する
+git diff
+
 
 ```
 
