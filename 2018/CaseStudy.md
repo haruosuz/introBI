@@ -216,6 +216,7 @@ Global な設定
 ```
 mkdir -p ~/projects/2018-12-18
 cd ~/projects/2018-12-18/
+git init
 git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
 ~/.gitconfig
