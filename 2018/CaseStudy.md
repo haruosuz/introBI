@@ -219,13 +219,14 @@ cd ~/projects/2018-12-18/
 git init
 git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
-~/.gitconfig
+cat .git/config
 ```
 
 エディタも変更可能
 
 ```
 git config --global core.editor "atom --wait"
+cat .git/config
 ```
 
 
