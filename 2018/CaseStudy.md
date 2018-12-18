@@ -221,16 +221,23 @@ git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
 ls -a
 cat .git/config
-```
 
-エディタも変更可能
-
-```
+# エディタも変更可能
 git config --global core.editor "atom --wait"
-cat .git/config
+
+# 現在の設定を確認
+git config --list
+
+# レポジトリを作る
+git init
+ls
+ls -a
+
+# レポジトリの現在の状態を確認する
+touch sample.txt
+git status
+
 ```
-
-
 
 
 ----------
