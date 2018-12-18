@@ -266,24 +266,21 @@ git diff
 ## add していないと怒られる
 git commit -m "Write about today"
 
+# git statusで現状を確認する
+## git status で現状を確認する
+git status
+
+# git add を取り消す
+
 
 ```
-
 
 ----------
 ## assignment 10
 **課題No.10 「Git for Scientists」**
 
-
-
-```
-git add
-git status
-git diff
-git commit
-git log
-git blame
-```
+2018-12-18 第10回 Git for Scientists [Guest Speaker](https://github.com/haruosuz/introBI/tree/master/2018#guest-speaker)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
 ## GRCh37/hg19 human chromosome 22
