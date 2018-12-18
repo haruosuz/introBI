@@ -206,11 +206,35 @@ data/内のファイルを除外して圧縮するzipコマンドの例:
 2. プルリクエスト (pull request) とマージ (merge) が理解できなかった。
 
 ----------
+## 2018-12-18
+
+[Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
+
+Global な設定
+
+```
+cd projects
+mkdir 2018-12-18
+cd 2018-12-18/
+git config --local user.name "Haruo Suzuki"
+git config --local user.email "haruo@dotinstall.com"
+~/.gitconfig
+```
+
+----------
 ## assignment 10
-**課題No.10 「Git for Scientists 事前課題」**
+**課題No.10 「Git for Scientists」**
 
 
 
+```
+git add
+git status
+git diff
+git commit
+git log
+git blame
+```
 
 ----------
 ## GRCh37/hg19 human chromosome 22
