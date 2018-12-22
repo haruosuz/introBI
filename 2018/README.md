@@ -37,7 +37,7 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-12-04 第09回 シェルスクリプト [Shell Scripting](#2018-12-04)
 - 2018-12-11 【休講】
 - 2018-12-18 第10回 Git for Scientists [Guest Speaker](#guest-speaker)
-- 2018-12-22（土曜日）3限【補講】第11回 Bioinformatics Project 1
+- 2018-12-22（土曜日）3限【補講】第11回 [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-11)
 - 2018-12-25 第12回 Bioinformatics Project 2
 - 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
 - 2019-01-08 第13回 Bioinformatics Project 3
