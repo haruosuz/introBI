@@ -18,7 +18,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 8](#assignment-8) 課題No.8 「Shell Scripting」
 - [assignment 9](#assignment-9) 課題No.9 「Git for Scientists 事前課題」
 - [2018-12-18](#2018-12-18)
-- [assignment 10](#assignment-10) 課題No.10 「Git for Scientists 事前課題」
+- [assignment 10](#assignment-10) 課題No.10 「Git for Scientists」
+- [assignment 11](#assignment-11) 課題No.11 「Bioinformatics Project 1」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -171,19 +172,6 @@ Submit your PDF presentation slides for your oral presentation.
 
 中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
 
-プロジェクト・ディレクトリ（my_project/）構造の例:  
-
-    my_project/README.md
-    my_project/scripts/run.sh
-    my_project/data/input.txt
-    my_project/analysis/output.txt
-    my_project/my_interim_report.pdf
-
-data/内のデータ・ファイルは提出しなくてもよい。
-data/内のファイルを除外して圧縮するzipコマンドの例:  
-
-    zip -r my_project.zip my_project/ -x my_project/data/*
-
 ----------
 ## assignment 8
 **課題No.8 「Shell Scripting」**
@@ -280,6 +268,26 @@ git status
 
 2018-12-18 第10回 Git for Scientists [Guest Speaker](https://github.com/haruosuz/introBI/tree/master/2018#guest-speaker)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+## assignment 11
+**課題No.11 「Bioinformatics Project 1」**
+
+バイオインフォマティクス・プロジェクトの実行環境、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。ファイルのサイズに注意する（10MBを上限とする）。
+
+プロジェクト・ディレクトリ（`my_project/`）構造の例:  
+
+    my_project/README.md
+    my_project/scripts/run.sh
+    my_project/data/2018-12-22/input.txt
+    my_project/analysis/2018-12-22/output.txt
+
+ディレクトリやファイルの名前（`my_project/, output.txt`）は適宜変更する。
+
+`data/`内のデータ・ファイルは提出しなくてもよい。
+`data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
+
+    zip -r my_project.zip my_project/ -x my_project/data/*
 
 ----------
 ## GRCh37/hg19 human chromosome 22
