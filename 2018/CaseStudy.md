@@ -23,7 +23,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
-- [2018-11-27](#2018-11-27)
+- [2018-11-27](#2018-11-27) GFF/GTF
 
 ----------
 ## unix
@@ -468,12 +468,12 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
 ```
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
-FILE="assembly_summary_genbank.txt"
-FILE="assembly_summary_refseq.txt"
+assembly_summary="assembly_summary_genbank.txt"
+assembly_summary="assembly_summary_refseq.txt"
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
-# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $FILE):  
-echo $FILE
+# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
+echo $assembly_summary
 ```
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
@@ -491,9 +491,12 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have "reference genome" refseq_category (column 5), organism_name of "Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12):  
 
-    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort | less
-    NAME="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
-    cat $FILE | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
+```
+#cat $assembly_summary | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort | less
+organism_name="Escherichia coli"
+organism_name="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
+cat $assembly_summary | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
+```
 
 抽出されたFTPサイトのURLをブラウザFirefox/Chromeで開く。  
 Open the URL with your browser (Firefox or Chrome).
@@ -535,14 +538,7 @@ grep "_genomic.gff.gz" md5checksums.txt*
 ```
 # `basename` strips paths and a suffix (e.g., extension) from filenames
 # decompress files with the command `gunzip`:
-
-GFFGZ=./GCF_000006965.1_ASM696v1_genomic.gff.gz # Sinorhizobium meliloti 1021
-GFFGZ=./GCF_000008685.2_ASM868v2_genomic.gff.gz # Borreliella burgdorferi B31
-GFFGZ=./GCF_000008865.2_ASM886v2_genomic.gff.gz # Escherichia coli O157:H7 str. Sakai
-GFF=$(basename $GFFGZ .gz)
-echo $GFF
-gunzip -c $GFFGZ > $GFF
-#for file in ./*.gff.gz; do gunzip -c $file > $(basename $file .gz); done
+for file in ./*.gff.gz; do gunzip -c $file > $(basename $file .gz); done
 ls -lh *.gff*
 ```
 
@@ -554,6 +550,8 @@ ls -lh *.gff*
 ```
 cd ~/projects/ncbi-assembly_reports/
 
+GFF=GCF_000006965.1_ASM696v1_genomic.gff # Sinorhizobium meliloti 1021
+GFF=GCF_000008685.2_ASM868v2_genomic.gff # Borreliella burgdorferi B31
 GFF=GCF_000008865.2_ASM886v2_genomic.gff # Escherichia coli O157:H7 str. Sakai
 
 # `ls -lh`でファイルサイズを確認する: 
@@ -592,12 +590,14 @@ grep -v "^#" $GFF | head -n 3
 grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
 
 # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+# combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
 grep -v "^#" $GFF | cut -f3 | sort | uniq -c
 grep -v "^#" $GFF | cut -f3 | sort | uniq -c | sort -rn
 grep -v "^#" $GFF | cut -f3,7 | sort | uniq -c
-grep "tRNA" $GFF | cut -f3 | sort | uniq -c
 
 # Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
+# use Unix tools (`grep, cut, sort, and uniq -c`) to count features of a particular gene:
+grep "rRNA" $GFF | cut -f3 | sort | uniq -c
 grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 ```
 
