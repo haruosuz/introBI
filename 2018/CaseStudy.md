@@ -20,6 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-12-18](#2018-12-18)
 - [assignment 10](#assignment-10) 課題No.10 「Git for Scientists」
 - [assignment 11](#assignment-11) 課題No.11 「Bioinformatics Project 1」
+- [assignment 12](#assignment-12) 課題No.12 「Bioinformatics Project 2」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -273,17 +274,25 @@ git status
 ## assignment 11
 **課題No.11 「Bioinformatics Project 1」**
 
-バイオインフォマティクス・プロジェクトの実行環境、年月日（`2018-12-22`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。ファイルのサイズに注意する（10MBを上限とする）。
+バイオインフォマティクス・プロジェクトの実行環境、年月日（`2018-12-22`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
+
+----------
+## assignment 12
+**課題No.12 「Bioinformatics Project 2」**
+
+最低2回（別の年月日に）解析を実行し、結果の再現性を確認する。プロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
 
 プロジェクト・ディレクトリ（`my_project/`）構造の例:  
 
     my_project/README.md
     my_project/scripts/run.sh
-    my_project/data/2018-12-22/input.txt
-    my_project/analysis/2018-12-22/output.txt
+    my_project/data/2018-12-25/input.txt
+    my_project/data/2019-01-05/input.txt
+    my_project/analysis/2018-12-25/output.txt
+    my_project/analysis/2019-01-05/output.txt
 
 ディレクトリやファイルの名前（`my_project/, output.txt`）は適宜変更する。
-
+ファイルのサイズに注意する（10MBを上限とする）。
 `data/`内のデータ・ファイルは提出しなくてもよい。
 `data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
 
