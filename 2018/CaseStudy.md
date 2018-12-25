@@ -291,7 +291,7 @@ git status
     my_project/analysis/2018-12-25/output.txt
     my_project/analysis/2019-01-05/output.txt
 
-ディレクトリやファイルの名前（`my_project/, output.txt`）は適宜変更する。
+ディレクトリやファイルの名前（`my_project/`, `input.txt`, `output.txt`）は適宜変更する。
 ファイルのサイズに注意する（10MBを上限とする）。
 `data/`内のデータ・ファイルは提出しなくてもよい。
 `data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
