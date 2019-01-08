@@ -21,6 +21,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 10](#assignment-10) 課題No.10 「Git for Scientists」
 - [assignment 11](#assignment-11) 課題No.11 「Bioinformatics Project 1」
 - [assignment 12](#assignment-12) 課題No.12 「Bioinformatics Project 2」
+- [assignment 13](#assignment-13) 課題No.13 「Bioinformatics Project 3」
 - [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22)
 - [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -282,16 +283,31 @@ git status
 
 最低2回（別の年月日に）解析を実行し、結果の再現性を確認する。プロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
 
+----------
+## assignment 13
+**課題No.13 「Bioinformatics Project 3」**
+
+2つ以上（自分と他人）の環境で解析結果の再現性を確認する。
+他人の環境で再現できるように、ディレクトリの構造やスクリプトを修正する（例えば、絶対パスではなく、相対パスで指定する）。
+Markdownノート（`README.md`）に再現性テストを実行した環境、日付、結果（再現されなかった場合、不一致点やエラーメッセージ）を記録する。
+
+最終発表スライド（`my_slide.pdf`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
+
 プロジェクト・ディレクトリ（`my_project/`）構造の例:  
 
     my_project/README.md
     my_project/scripts/run.sh
+    my_project/data/2018-10-28/input.txt
     my_project/data/2018-12-25/input.txt
     my_project/data/2019-01-05/input.txt
+    my_project/analysis/2018-10-28/output.txt
     my_project/analysis/2018-12-25/output.txt
     my_project/analysis/2019-01-05/output.txt
+    my_project/my_interim_report.pdf
+    my_project/my_slide.pdf
 
 ディレクトリやファイルの名前（`my_project/`, `input.txt`, `output.txt`）は適宜変更する。
+
 ファイルのサイズに注意する（10MBを上限とする）。
 `data/`内のデータ・ファイルは提出しなくてもよい。
 `data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
