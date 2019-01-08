@@ -41,21 +41,9 @@ INTRODUCTION TO BIOINFORMATICS
 - 2018-12-25 第12回 [Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-12)
   - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
 - 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
-- 2019-01-08 第13回 Bioinformatics Project 3
+- 2019-01-08 第13回 [Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-13)
 - 2019-01-15 第14回 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
-
-----------
-## Guest speaker
-**特別講演**
-
-- 日時：2018年12月18日 (火) 3時限 13:00～14:30
-- 場所：SFC (λ18)
-- 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
-- 演題: [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
-- [CaseStudy 2018-12-18](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-12-18)
-- [課題No.9 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-9)
-〆切日時	2018-12-17 23:59:00
 
 ----------
 ## final presentation
@@ -83,6 +71,18 @@ INTRODUCTION TO BIOINFORMATICS
 - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/introBI#reproducible-research) に必要な情報を含むプロジェクト・ディレクトリを作成した。
 - 再現性を自分の実行環境で確認した。
 - 再現性を他人の実行環境で確認した。
+
+----------
+## Guest speaker
+**特別講演**
+
+- 日時：2018年12月18日 (火) 3時限 13:00～14:30
+- 場所：SFC (λ18)
+- 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
+- 演題: [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
+  - 補足資料 [CaseStudy 2018-12-18](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-12-18)
+  - [課題No.9 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-9)
+〆切日時	2018-12-17 23:59:00
 
 ----------
 ## interim report
