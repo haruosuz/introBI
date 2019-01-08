@@ -499,6 +499,9 @@ assembly_summary="assembly_summary_refseq.txt"
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
 echo $assembly_summary
+
+# 列番号を付けて出力する:
+grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
 ```
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
@@ -517,7 +520,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have "reference genome" refseq_category (column 5), organism_name of "Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12):  
 
 ```
-#cat $assembly_summary | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort | less
+#cat $assembly_summary | awk -F "\t" '$5 ~ /reference genome/ {print $8}' | sort
 organism_name="Escherichia coli"
 organism_name="Borreliella burgdorferi|Escherichia coli O157:H7 str. Sakai|Sinorhizobium meliloti"
 cat $assembly_summary | awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
