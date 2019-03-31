@@ -6,15 +6,15 @@ Last Update: 2018-09
 **再現性**
 
 ## Table of Contents
-- [Updates](#updates)
+- [updates](#updates)
   - [2018](#2018)
   - [2017](#2017)
   - [2016](#2016)
   - [2015](#2015)
-- [References](#references)
+- [references](#references)
 
 ----------
-## Updates
+## updates
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
@@ -33,6 +33,9 @@ https://peerj.com/articles/5072/
 Reproducible research and GIScience: an evaluation using AGILE conference papers [PeerJ]
 
 ![https://twitter.com/thePeerJ/status/1017795797608554496](https://pbs.twimg.com/media/Dh_v4k8XcAIO6Xa.jpg)
+
+11 June 2018
+https://www.natureindex.com/news-blog/when-it-comes-to-reproducible-science-git-is-code-for-success
 
 https://www.ncbi.nlm.nih.gov/pubmed/29871915
 MBio. 2018 Jun 5;9(3). pii: e00525-18. doi: 10.1128/mBio.00525-18.
@@ -189,10 +192,31 @@ https://togetter.com/li/869445
 - [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
 
 ----------
-## References
+## references
 
 - https://en.wikipedia.org/wiki/Reproducibility
 - https://ja.wikipedia.org/wiki/再現性
 - https://ja.wikipedia.org/wiki/科学的方法#再現性
 - [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+
+### examples
+
+https://github.com/haruosuz/books/blob/master/bds/README.md
+Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
+https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
+Reproducible Research
+So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
+
+NYC地下鉄メタゲノム(PathoMap)論文の解析コード
+http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
+Supplemental Code and Scripts
+
+解析のワークフローとQIIMEのパラメータ
+http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
+Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
+QIIME and Unix command a Options
+a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
+
+----------
+
