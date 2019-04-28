@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-09
+Last Update: 2019-04
 
 ----------
 # Reproducibility
@@ -7,16 +7,42 @@ Last Update: 2018-09
 
 ## Table of Contents
 - [updates](#updates)
-  - [2018](#2018)
-  - [2017](#2017)
-  - [2016](#2016)
-  - [2015](#2015)
+[2019](#2019)
+[2018](#2018)
+[2017](#2017)
+[2016](#2016)
+[2015](#2015)
 - [references](#references)
 
 ----------
 ## updates
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
+
+https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
+再現性
+透明性
+
+### 2019
+
+https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
+科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
+
+2019.04.25
+https://www.jsbi.org/news/topics/190425/
+日本バイオインフォマティクス学会ニュースレター 第35号
+■ 特集「データの再現性・信頼性とその向上に向けた取り組み」
+
+![](https://www.msz.co.jp/_cover/front/08788.jpg)
+
+https://www.msz.co.jp/book/detail/08788.html
+心理学の7つの大罪：みすず書房
+心理学が透明性と再現性を高め、真の科学でありつづけるためには、いま何をすべきか？
+
+https://twitter.com/yutakashino/status/1113949347270615040
+Yuta Kashino on Twitter: "心理学の7つの大罪 | クリス・チェインバーズ https://t.co/3KWWdAFr8Q repligate/replication crisis https://t.co/hax06vEIxU と呼ばれる心理学の有名な実験が再現不能であることに関する状況の整理（図の通り）と原因を追及した本の邦訳．HARK, p値ハッキング，発表バイアスなど相当根が深いです…… https://t.co/IrX28pdTZf"
+7:39 PM - 4 Apr 2019
+![](https://pbs.twimg.com/media/D3WLBxwXkAI2fTS.jpg)
 
 ### 2018
 
