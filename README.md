@@ -19,7 +19,7 @@ Last Update: 2018-09
 ## Reproducible Research
 再現可能な研究
 
-[Reproducibility](https://github.com/haruosuz/introBI/blob/master/reproducibility/README.md)
+[reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md
 
 ----------
 ## How to be a bioinformatician
