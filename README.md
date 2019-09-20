@@ -1,9 +1,9 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2019-09-20
+Last Update: 2019-09
 
 ----------
 
-# DS4BI
+# introBI
 
 INTRODUCTION TO BIOINFORMATICS / DATA SCIENCE FOR BIOINFORMATICS
 基礎バイオインフォマティクス / バイオインフォマティクスのデータサイエンス[DS2]
