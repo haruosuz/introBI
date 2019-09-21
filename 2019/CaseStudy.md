@@ -1,4 +1,4 @@
-**[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018)**
+**[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI)**
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
