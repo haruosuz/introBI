@@ -8,11 +8,11 @@ Last Update: 2019-09
 INTRODUCTION TO BIOINFORMATICS / DATA SCIENCE FOR BIOINFORMATICS
 基礎バイオインフォマティクス / バイオインフォマティクスのデータサイエンス[DS2]
 
-- [2019 Fall](https://github.com/haruosuz/introBI/tree/master/2019)
-- [2018 Fall](https://github.com/haruosuz/introBI/tree/master/2018)
-- [2017 Fall](https://github.com/haruosuz/introBI/tree/master/2017)
-- [2016 Fall](https://github.com/haruosuz/introBI/tree/master/2016)
 - [2015 Fall](https://github.com/haruosuz/introBI/tree/master/2015)
+- [2016 Fall](https://github.com/haruosuz/introBI/tree/master/2016)
+- [2017 Fall](https://github.com/haruosuz/introBI/tree/master/2017)
+- [2018 Fall](https://github.com/haruosuz/introBI/tree/master/2018)
+- [2019 Fall](https://github.com/haruosuz/introBI/tree/master/2019)
 
 ----------
 
