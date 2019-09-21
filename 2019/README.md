@@ -21,24 +21,24 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 [Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf) |
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
+- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
 - [2019-09-24](#2019-09-24) No. 1 - イントロダクション Introduction
-- [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](#chapter-2)
-- [2019-10-08](#2019-10-08) No. 3 - Unixシェル [Unix Shell](#chapter-3)
-- [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#chapter-6)
+- [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project
+- [2019-10-08](#2019-10-08) No. 3 - Unixシェル Unix Shell
+- [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ Bioinformatics Data
 - 2019-10-22 即位礼【国民の休日】*[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - [2019-10-29](#2019-10-29) No. 5 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
 - [2019-11-05](#2019-11-05) No. 6 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
-- [2019-11-12](#2019-11-12) No. 7 - Unixデータツール [Unix Data Tools (1)](#chapter-7)
+- [2019-11-12](#2019-11-12) No. 7 - Unixデータツール Unix Data Tools (1)
 - 2018-11-19 午前：前半科目追試 | 午後：三田祭準備 *[Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
-- [2019-11-26](#2019-11-26]) No. 8 - Unixデータツール [Unix Data Tools (2)](#chapter-7)
-- [2019-12-03](#2019-12-03) No. 9 - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
-  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
+- [2019-11-26](#2019-11-26]) No. 8 - Unixデータツール Unix Data Tools (2)
+- [2019-12-03](#2019-12-03) No. 9 - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
 - 2019-12-10 No. 10 - 中間発表 [interim report](#interim-report)
   - [GTF/GFF](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-11-27)
-- [2019-12-17](#2019-12-17) No. 11 - シェルスクリプト [Shell Scripting](#2018-12-04)
-- 2019-12-24 No. 12 - [Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-12)
+- [2019-12-17](#2019-12-17) No. 11 - シェルスクリプト Shell Scripting
+- 2019-12-24 No. 12 - [Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-12)
   - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
-- 2020-01-07 No. 13 - [Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#assignment-13)
+- 2020-01-07 No. 13 - [Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
 - 2020-01-14 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
@@ -101,7 +101,7 @@ Submit your final report in PDF format.
 #### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
 **[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
 
-- [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin)
+- [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
@@ -113,7 +113,7 @@ Submit your final report in PDF format.
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
-- [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu)
+- [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
 
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
 
@@ -125,6 +125,9 @@ Submit your final report in PDF format.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+細菌は染色体とプラスミドという2種類のDNAを持っています。
+細菌同士は接触するとプラスミドを交換。
+プラスミドを交換することで細菌の能力を強化。
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
