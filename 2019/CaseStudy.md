@@ -1,4 +1,4 @@
-**[基礎バイオインフォマティクス](https://github.com/haruosuz/introBI)**
+**[バイオインフォマティクスのデータサイエンス[DS2]](https://github.com/haruosuz/introBI)**
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
@@ -7,7 +7,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
-- [assignment 1](#assignment-1) 課題No.1 「bds-files」
+- [assignment 0](#assignment-0) 選抜課題
+- [assignment 1](#assignment-1) 課題No.1 「UNIXコマンド入門」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
 - [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
 - [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
@@ -30,32 +31,47 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [bds](#bds)
 
 ----------
-## assignment 1
-**課題No.1 「bds-files」**
+## assignment 0
+**選抜課題**
 
-教科書の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)を取得し、`ls -l`コマンドでディレクトリの詳細情報を表示する。
-[回答例]
+【課題内容】
+
+バイオインフォマティクス・データスキルを適用したい研究対象（真核生物、原核生物、ウイルスなど）を選び、300文字以内で述べてください。課題のタイトルと参考文献を明記してください。
+
+Please describe biological data (Prokaryotes, Eukaryotes, Viruses) you're interested in. Please also state your project title and references.
+
+----------
+## assignment 1
+**課題No.1 「UNIXコマンド入門」**
+
+以下の動画レッスンを見て、疑問点を報告する。
+- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+
+[回答例]
+
+動画レッスン番号 #05 ~ #10, #20 ~ #22 を見た。
+疑問点は次の通りである。
+- パスの相対指定と絶対指定の違いが理解できなかった。
+- リダイレクション、パイプというものがよくわからなかった。
+
+実行例は次の通りである。
 ```
-$ls -l bds-files/
-total 24
--rw-r--r--   1 haruo  staff  1080 Nov 16  2015 LICENSE
--rw-r--r--   1 haruo  staff  1007 Nov 16  2015 README.md
-drwxr-xr-x   5 haruo  staff   170 Nov 16  2015 chapter-00-preface/
-drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-01-ideology/
-drwxr-xr-x   4 haruo  staff   136 Nov 16  2015 chapter-02-bioinformatics-projects/
-drwxr-xr-x   7 haruo  staff   238 Nov 16  2015 chapter-03-remedial-unix/
-drwxr-xr-x   4 haruo  staff   136 Nov 16  2015 chapter-04-working-with-remote-machines/
-drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-05-git-for-scientists/
-drwxr-xr-x   5 haruo  staff   170 Nov 16  2015 chapter-06-bioinformatics-data/
-drwxr-xr-x  26 haruo  staff   884 Nov 16  2015 chapter-07-unix-data-tools/
-drwxr-xr-x  12 haruo  staff   408 Nov 16  2015 chapter-08-r/
-drwxr-xr-x  14 haruo  staff   476 Nov 16  2015 chapter-09-working-with-range-data/
-drwxr-xr-x   9 haruo  staff   306 Nov 16  2015 chapter-10-sequence/
-drwxr-xr-x  11 haruo  staff   374 Nov 16  2015 chapter-11-alignment/
-drwxr-xr-x   8 haruo  staff   272 Nov 16  2015 chapter-12-pipelines/
-drwxr-xr-x  18 haruo  staff   612 Nov 16  2015 chapter-13-out-of-memory/
-drwxr-xr-x   3 haruo  staff   102 Nov 16  2015 chapter-conclusion/
--rw-r--r--   1 haruo  staff   421 Nov 16  2015 errata.md
+ #05 ディレクトリ間を移動してみよう (02:56)
+
+pwd
+mkdir unix_lessons
+cd unix_lessons/
+cd ..
+pwd
+
+ #06 ディレクトリを操作してみよう (02:59)
+ #07 ファイルを操作してみよう (02:53)
+ #08 bashの便利機能を使ってみよう (02:23)
+ #09 コマンドの履歴を活用しよう (02:21)
+ #10 コマンドについて詳しく調べよう (01:54)
+ #20 wc､head､tail､grepを使ってみよう (01:53)
+ #21 リダイレクション､パイプを使おう (02:25)
+ #22 ワイルドカードを使ってみよう (01:25)
 ```
 
 ----------
