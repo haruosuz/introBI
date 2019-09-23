@@ -36,9 +36,9 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2019-12-10 No. 10 - 中間発表 [interim report](#interim-report)
   - [GTF/GFF](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#2018-11-27)
 - [2019-12-17](#2019-12-17) No. 11 - シェルスクリプト Shell Scripting
-- 2019-12-24 No. 12 - [Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-12)
+- 2019-12-24 No. 12 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-12)
   - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
-- 2020-01-07 No. 13 - [Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
+- 2020-01-07 No. 13 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
 - 2020-01-14 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
@@ -101,7 +101,7 @@ Submit your final report in PDF format.
 #### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
 **[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
 
-- [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
+- TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
@@ -113,7 +113,7 @@ Submit your final report in PDF format.
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
-- [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
+- TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
 
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
 
@@ -151,58 +151,66 @@ Apple iMac 27inch
 
 [ターミナル](http://techacademy.jp/magazine/5155)を起動する。
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+![http://techacademy.jp/magazine/5155](https://techacademy-magazine-cdn.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
-ターミナルで`bash`コマンドを入力する:  
+ターミナルで以下のコマンドを入力し、`bash`を起動する:
 
-	bash
+    bash
 
-ターミナルで以下のコマンドを実行する:  
+ディレクトリを作成する:
 
-	cd
-	pwd
-	ls
-	date
+    mkdir ~/projects
 
-教科書[**Bioinformatics Data Skills**](https://github.com/haruosuz/books/blob/master/bds/README.md)の補足資料[Supplementary Material](https://github.com/vsbuffalo/bds-files/)を取得する:  
+ディレクトリを移動する:
 
-	git clone https://github.com/vsbuffalo/bds-files
+    cd ~/projects/
 
-`ls -l`コマンドでディレクトリの詳細情報を表示する:
+カレントディレクトリを表示する:
 
-	ls -l bds-files/
+    pwd
+
+ディレクトリやファイルの情報を表示する:
+
+    ls
 
 ### Markdown
 [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
 
-	curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
+    curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
 
 ### text editor
 [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
 
-	atom markdown.md
+    atom markdown.md
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
 ![](http://webkaru.net/dev/wp-content/uploads/2015/08/mac-atom-install-04.png)
+
+### bds-files
+
+教科書[**Bioinformatics Data Skills**](https://github.com/haruosuz/books/blob/master/bds/README.md)の補足資料 [Supplementary Material](https://github.com/vsbuffalo/bds-files/) を取得する:
+
+    git clone https://github.com/vsbuffalo/bds-files
+
+ディレクトリの詳細情報を表示する:
+
+    ls bds-files/
 
 ----------
 # 2019-10-01
 **Managing a Bioinformatics Project**
 **バイオインフォマティクスのプロジェクト管理**
 
-ターミナル起動後に`bash`と入力する:  
+[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-	bash
+    bash
 
-プロジェクト・ディレクトリを作成し移動する:  
-
-	mkdir ~/projects
-	cd ~/projects/
+    cd ~/projects/
 
 # [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/tree/master/bds#chapter-2-setting-up-and-managing-a-bioinformatics-project)
 ## Project Directories and Directory Structures
@@ -294,7 +302,7 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 
 	bash
 
-	cd ~/bds-files/chapter-03-remedial-unix/
+	cd ~/projects/bds-files/chapter-03-remedial-unix/
 
 # [Chapter 3. Remedial Unix Shell](https://github.com/haruosuz/books/tree/master/bds#chapter-3-remedial-unix-shell)
 ## Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy
@@ -415,7 +423,7 @@ Control-c で動作中のプロセスを停止
 
 	bash
 
-	cd ~/bds-files/chapter-06-bioinformatics-data/
+	cd ~/projects/bds-files/chapter-06-bioinformatics-data/
 
 # [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/tree/master/bds#chapter-6-bioinformatics-data)
 ## Retrieving Bioinformatics Data
@@ -516,7 +524,7 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
 
 	bash
 
-	cd ~/bds-files/chapter-07-unix-data-tools/
+	cd ~/projects/bds-files/chapter-07-unix-data-tools/
 
 # [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/tree/master/bds#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
@@ -726,7 +734,7 @@ FASTQ/FASTAエントリ数をカウント:
 
 	bash
 
-	cd ~/bds-files/chapter-12-pipelines/
+	cd ~/projects/bds-files/chapter-12-pipelines/
 
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
