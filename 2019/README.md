@@ -97,11 +97,11 @@ Submit your final report in PDF format.
 ## Introduction
 **イントロダクション**
 
-### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
-#### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
-**[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
+["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/blob/master/bds/README.md)
 
-- TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
+[Chapter 1. How to Learn Bioinformatics](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-1-how-to-learn-bioinformatics)
+
+### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
@@ -133,13 +133,6 @@ Submit your final report in PDF format.
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
 ![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
-
-## textbook
-**教科書**
-
-["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/blob/master/bds/README.md)
-
-[Chapter 1. How to Learn Bioinformatics](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-1-how-to-learn-bioinformatics)
 
 ## Step
 準備
