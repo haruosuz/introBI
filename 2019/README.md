@@ -21,16 +21,15 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 [Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf) |
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
-
 - [2019-09-24](#2019-09-24) No. 1 - イントロダクション | Introduction
 - [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 - [2019-10-08](#2019-10-08) No. 3 - Unixシェル | Unix Shell
 - [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
-- 2019-10-22 即位礼【国民の休日】*[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
+- 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - [2019-10-29](#2019-10-29) No. 5 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
 - [2019-11-05](#2019-11-05) No. 6 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
 - 2019-11-12 No. 7 - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
-- 2018-11-19 午前：前半科目追試 | 午後：三田祭準備 *[Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
+- 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - 中間発表 [interim report](#interim-report)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | Unix Data Tools
 - 2019-12-10 No. 10 - シェルスクリプト | Shell Scripting
