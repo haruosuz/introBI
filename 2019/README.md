@@ -86,7 +86,7 @@ Submit your final report in PDF format.
 - C：最終発表を行い、レポートを提出し、プロジェクト・ディレクトリを提出している。
 
 ### 評価基準
-- 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/introBI#reproducible-research) に必要な情報を含むプロジェクト・ディレクトリを作成した。
+- 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md) に必要な情報を含むプロジェクト・ディレクトリを作成した。
 - 再現性を自分の実行環境で確認した。
 - 再現性を他人の実行環境で確認した。
 
@@ -101,36 +101,17 @@ Submit your final report in PDF format.
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
+#### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
+**[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
+
+- TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
+
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 - TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
-
-#### Antibiotic resistance
-**[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
-
-- TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
-
-- [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
-
-![https://science.sciencemag.org/content/365/6458/1082](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
-
-#### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
-**[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
-
-- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
-細菌は染色体とプラスミドという2種類のDNAを持っています。
-細菌同士は接触するとプラスミドを交換。
-プラスミドを交換することで細菌の能力を強化。
-
-#### [MetaSUB](http://metasub.org/media-2/)
-**[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
-
-![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
 
 ## Step
 準備
