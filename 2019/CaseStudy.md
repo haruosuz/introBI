@@ -78,7 +78,7 @@ pwd
 ## assignment 2
 **課題No.2 「zmays-snps」**
 
-2018-10-02 第02回 バイオインフォマティクスのプロジェクト管理 [Managing a Bioinformatics Project](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-02)
+[2019-10-01](https://github.com/haruosuz/introBI/tree/master/2019#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。
 
 [回答例]
@@ -605,7 +605,7 @@ grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 
 	bash
 
-	cd ~/bds-files/chapter-07-unix-data-tools/
+	cd ~/projects/bds-files/chapter-07-unix-data-tools/
 
 ### Inspecting Data with Head and Tail
 
