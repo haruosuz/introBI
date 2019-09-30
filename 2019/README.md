@@ -172,7 +172,7 @@ Apple iMac 27inch
 
 ----------
 # 2019-10-01
-** バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project **
+**バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project**
 
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
