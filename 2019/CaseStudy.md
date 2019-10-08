@@ -78,7 +78,7 @@ pwd
 ## assignment 2
 **課題No.2 「zmays-snps」**
 
-[2019-10-01](https://github.com/haruosuz/introBI/tree/master/2019#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
+[2019-10-01](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 で作成したプロジェクト・ディレクトリ(`zmays-snps`)の内容を表示する。
 
 [回答例]
@@ -97,7 +97,7 @@ zmays-snps/data/README
 ## assignment 3
 **課題No.3 「Unix Shell」**
 
-2018-10-09 第03回 Unixシェル [Unix Shell](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-09)
+[2019-10-08](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-08) No. 3 - Unixシェル | Unix Shell
 で実行したコマンドをプレーンテキスト形式のMarkdownノート`README.md`等に記録し提出する。
 
 ----------
