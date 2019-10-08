@@ -1,4 +1,4 @@
-**[バイオインフォマティクスのデータサイエンス[DS2]](https://github.com/haruosuz/introBI)**
+**[バイオインフォマティクスのデータサイエンス[DS2]](https://github.com/haruosuz/introBI/tree/master/2019)**
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
@@ -100,68 +100,35 @@ zmays-snps/data/README
 [2019-10-08](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-08) No. 3 - Unixシェル | Unix Shell
 で実行したコマンドをプレーンテキスト形式のMarkdownノート`README.md`等に記録し提出する。
 
-
 ----------
-
-
-
 ----------
-
-
-
 ----------
-
-
-
 ----------
-
-
-
 ----------
-
-
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
 
 ----------
 ## assignment 4
 **課題No.4 「Bioinformatics Data」**
 
-2018-10-16 第04回 バイオインフォマティクス・データ [Bioinformatics Data](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-16)
+[2019-10-15](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
 の実行コマンドを記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
+2019-10-22 即位礼【国民の休日】National Holiday
+
+----------
 ## assignment 5
-**課題No.5 「Unix Data Tools」**
-
-2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-----------
-## assignment 6
-**課題No.6 「Unix Data Tools (2)」**
-
-2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-----------
-## assignment 7
-**課題No.7 「interim report」**
-
-2018-11-27 第08回 中間発表 interim report
-のスライドをPDFファイルで提出する。
-Submit your PDF presentation slides for your oral presentation.
-
-中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-----------
-## assignment 8
-**課題No.8 「Shell Scripting」**
-
-2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
-を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-----------
-## assignment 9
-**課題No.9 「Git for Scientists 事前課題」**
+**課題No.5 「Git for Scientists 事前課題」**
 
 下記ウェブサイトのいずれかを見て、事前に疑問点を報告する。
 - [生命科学研究のためのGitHubの使い方 基本編](https://togotv.dbcls.jp/20180621.html)
@@ -173,6 +140,31 @@ Submit your PDF presentation slides for your oral presentation.
 「生命科学研究のためのGitHubの使い方 基本編」の動画を見た。疑問点は次の通りである。
 1. ブランチ (branch) の説明がよくわからなかった。
 2. プルリクエスト (pull request) とマージ (merge) が理解できなかった。
+
+----------
+## assignment 6
+**課題No.6 「Git for Scientists (1)」**
+
+2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+## assignment 7
+**課題No.7 「Git for Scientists (2)」**
+
+2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+
 
 ----------
 ## 2018-12-18
@@ -242,12 +234,49 @@ git status
 
 ```
 
+
+
+**課題No.5 「Unix Data Tools」**
+
+2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+**課題No.6 「Unix Data Tools (2)」**
+
+2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
 ----------
 ## assignment 10
-**課題No.10 「Git for Scientists」**
 
-2018-12-18 第10回 Git for Scientists [Guest Speaker](https://github.com/haruosuz/introBI/tree/master/2018#guest-speaker)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+----------
+## assignment 6
+
+----------
+## assignment 7
+**課題No.7 「interim report」**
+
+2018-11-27 第08回 中間発表 interim report
+のスライドをPDFファイルで提出する。
+Submit your PDF presentation slides for your oral presentation.
+
+中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
+
+----------
+## assignment 8
+**課題No.8 「Shell Scripting」**
+
+2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
+を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
+
+----------
+## assignment 9
+
+
+
+
+
 
 ----------
 ## assignment 11
