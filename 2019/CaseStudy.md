@@ -100,6 +100,27 @@ zmays-snps/data/README
 [2019-10-08](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-08) No. 3 - Unixシェル | Unix Shell
 で実行したコマンドをプレーンテキスト形式のMarkdownノート`README.md`等に記録し提出する。
 
+
+----------
+
+
+
+----------
+
+
+
+----------
+
+
+
+----------
+
+
+
+----------
+
+
+
 ----------
 ## assignment 4
 **課題No.4 「Bioinformatics Data」**
