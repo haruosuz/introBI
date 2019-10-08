@@ -256,7 +256,7 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 ----------
 # 2019-10-08
-** Unixシェル | Unix Shell **
+**Unixシェル | Unix Shell**
 
 Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う。
 [ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)、
@@ -382,7 +382,7 @@ Control-c で動作中のプロセスを停止
 
 ----------
 # 2019-10-15
-** バイオインフォマティクス・データ | Bioinformatics Data **
+**バイオインフォマティクス・データ | Bioinformatics Data**
 
 大規模データの取得・検証・圧縮の方法を扱う。
 
@@ -483,7 +483,7 @@ Control-c で動作中のプロセスを停止
 
 ----------
 # 2019-12-03
-** Unixデータツール | Unix Data Tools **
+**Unixデータツール | Unix Data Tools**
 
 Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join, sed`](http://crusade1096.web.fc2.com/unix.html)）を用いてテキスト処理を行なう。
 
@@ -693,7 +693,7 @@ FASTQ/FASTAエントリ数をカウント:
 
 ----------
 # 2019-12-10
-** シェルスクリプト | Shell Scripting **
+**シェルスクリプト | Shell Scripting**
 
 [シェルスクリプト](https://ja.wikipedia.org/wiki/シェルスクリプト)を用いた処理の自動化を行なう。
 
