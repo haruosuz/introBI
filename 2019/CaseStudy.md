@@ -124,9 +124,6 @@ zmays-snps/data/README
 の実行コマンドを記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
-2019-10-22 即位礼【国民の休日】National Holiday
-
-----------
 ## assignment 5
 **課題No.5 「Git for Scientists 事前課題」**
 
@@ -140,6 +137,9 @@ zmays-snps/data/README
 「生命科学研究のためのGitHubの使い方 基本編」の動画を見た。疑問点は次の通りである。
 1. ブランチ (branch) の説明がよくわからなかった。
 2. プルリクエスト (pull request) とマージ (merge) が理解できなかった。
+
+----------
+2019-10-22 即位礼【国民の休日】National Holiday
 
 ----------
 ## assignment 6
