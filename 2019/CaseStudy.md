@@ -11,6 +11,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 1](#assignment-1) 課題No.1 「UNIXコマンド入門」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
 - [assignment 3](#assignment-3) 課題No.3 「Unix Shell」
+- [uniprot_sprot](#uniprot_sprot) Swiss-Prot protein sequence database  
 - [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
 - 2019-10-22 即位礼【国民の休日】National Holiday
 - [assignment 5](#assignment-5) 課題No.5 「Git for Scientists 事前課題」
@@ -116,12 +117,105 @@ zmays-snps/data/README
 ----------
 ----------
 
+
+
+
+
+----------
+## uniprot_sprot
+[UniProt](https://en.wikipedia.org/wiki/UniProt) protein sequence database  
+[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース  
+
+<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
+*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
+Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
+
+```
+# `bash`を起動する
+# change shell to `bash`
+bash
+
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/uniprot/uniprot_sprot
+
+# ディレクトリを移動する
+# change directories
+cd ~/projects/data/uniprot/uniprot_sprot/
+
+# "uniprot_sprot.fasta.gz"ファイルを`wget`または`curl`でダウンロードする
+# download "uniprot_sprot.fasta.gz" file with `wget` or `curl`
+ wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+#curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）:  
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log
+
+# "RELEASE.metalink"ファイルをダウンロードする
+# download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
+    wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
+#curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
+
+# チェックサムで転送データの整合性を検証する
+# compare our checksum values with those in "RELEASE.metalink" using the md5 program:
+file_name="uniprot_sprot.fasta.gz"
+md5 ${file_name}
+grep -A 3 "file name=\"${file_name}\"" RELEASE.metalink | grep "${file_name}\|md5"
+
+# `gunzip`コマンドでファイルを展開する
+# decompress files with the command gunzip
+gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
+```
+
+
+
+
+
+
+### Inspecting data
+データの検査 
+
+`ls -lh`でファイルサイズを確認する:  
+
+    # ls -lh reports human-readable file sizes
+    ls -lh
+
+[`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
+
+    # look at the top of a file with head
+    head -n 3 uniprot_sprot.fasta
+
+Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers).
+
+`grep`で、[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイルのヘッダ（`>`で始まる行）にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）:  
+
+    # use grep to extract lines matching the pattern "^>" (use Control-C to stop)
+    grep "^>" uniprot_sprot.fasta
+
+Pipe the standard output to the next command with the pipe character (`|`).
+
+[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
+
+    grep "^>" uniprot_sprot.fasta | head -n 2
+
+配列の数をカウントする:  
+
+    # wc -l outputs the number of lines
+    grep "^>" uniprot_sprot.fasta | wc -l
+
+
+
+
 ----------
 ## assignment 4
 **課題No.4 「Bioinformatics Data」**
 
 [2019-10-15](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
 の実行コマンドを記録したプロジェクト・ノート`README.md`を提出する。
+
 
 ----------
 ## assignment 5
@@ -643,6 +737,29 @@ grep "rRNA" $GFF | cut -f3 | sort | uniq -c
 grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ----------
 ## 2018-11-27
 **GFF/GTF**
@@ -840,6 +957,11 @@ Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing
 for FILE in *.zip; do DIR=$(basename $FILE .zip); mkdir $DIR; unzip $FILE -d $DIR; done
 
 find my_project -name ".DS_Store" | xargs rm
+
+
+
+
+
 
 
 
