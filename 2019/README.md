@@ -181,7 +181,7 @@ Apple iMac 27inch
 
     cd ~/projects/
 
-# [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/tree/master/bds#chapter-2-setting-up-and-managing-a-bioinformatics-project)
+# [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
 ## Project Directories and Directory Structures
 プロジェクト・ディレクトリの構造  
 
@@ -273,7 +273,7 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 
 	cd ~/projects/bds-files/chapter-03-remedial-unix/
 
-# [Chapter 3. Remedial Unix Shell](https://github.com/haruosuz/books/tree/master/bds#chapter-3-remedial-unix-shell)
+# [Chapter 3. Remedial Unix Shell](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-3-remedial-unix-shell)
 ## Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy
 [UNIX哲学](https://ja.wikipedia.org/wiki/UNIX哲学)  
 
@@ -394,7 +394,7 @@ Control-c で動作中のプロセスを停止
 
 	cd ~/projects/bds-files/chapter-06-bioinformatics-data/
 
-# [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/tree/master/bds#chapter-6-bioinformatics-data)
+# [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-6-bioinformatics-data)
 ## Retrieving Bioinformatics Data
 ### Downloading Data with wget and curl
 `wget`と`curl`は、データをウェブからダウンロードするプログラム。
@@ -481,8 +481,9 @@ Control-c で動作中のプロセスを停止
 
 ## Case Study: Reproducibly Downloading Data
 - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
   - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
-  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database]()
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 
 ----------
 # 2019-12-03
@@ -497,7 +498,7 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
 
 	cd ~/projects/bds-files/chapter-07-unix-data-tools/
 
-# [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/tree/master/bds#chapter-7-unix-data-tools)
+# [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
 Unixコマンドをパイプで繋ぐことにより、データを処理する1行プログラム（ワンライナー）を構築する。
 
