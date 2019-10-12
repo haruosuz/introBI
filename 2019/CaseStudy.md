@@ -216,24 +216,26 @@ grep "^>" uniprot_sprot.fasta | grep -i "Harakiri"
 
 # use grep to count (the -c option stands for count) the number of lines matching the pattern
 grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
+
 grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 ```
 
 `grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
 
-**"Harakiri"検索結果**
+**"Harakiri"検索結果**  
+"Harakiri"にマッチするタンパク質配列3件が登録されていた。
+タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
+生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
+遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が混在。
 ```
 # Search Results for "Harakiri". There are 3 entries for in the FASTA file.
 >sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
 >sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
 >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
 ```
-"Harakiri"にマッチするタンパク質配列3件が登録されていた。
-タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
-生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
-遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が混在。
 
-**"Shugoshin"検索結果**
+**"Shugoshin"検索結果**  
+"Shugoshin"にマッチするタンパク質配列20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れが認められた。
 ```
 # Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
 >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
@@ -241,7 +243,6 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
 >sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=sgo2 PE=1 SV=1
 ```
-"Shugoshin"にマッチするタンパク質配列20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れ（用語の不統一、大文字と小文字の混在）が認められた。
 
 ----------
 ## assignment 4
