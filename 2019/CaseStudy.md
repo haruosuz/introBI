@@ -229,15 +229,6 @@ Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was 
 protein sequence database
 タンパク質配列データベース
 
-### Downloading data
-データのダウンロード
-
-<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
-*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
-Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
-
 ![http://techacademy.jp/magazine/5155](https://techacademy-magazine-cdn.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
@@ -253,7 +244,18 @@ mkdir -p ~/projects/data/uniprot/uniprot_sprot
 # ディレクトリを移動する
 # change directories
 cd ~/projects/data/uniprot/uniprot_sprot/
+```
 
+### Downloading data
+データのダウンロード
+
+<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
+*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
+Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
+
+```
 # "uniprot_sprot.fasta.gz"ファイルを`wget`または`curl`でダウンロードする
 # download "uniprot_sprot.fasta.gz" file with `wget` or `curl`
 #curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
