@@ -283,8 +283,7 @@ The entire README.md file would look like:
 ```
 ## Data
 
-UniProtKB/Swiss-Prot Release 2019_08 of 18-Sep-2019 
-was downloaded on 2019-10-15, using:
+UniProtKB/Swiss-Prot Release 2019_08 of 18-Sep-2019 was downloaded on 2019-10-15, using:
 
     wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
