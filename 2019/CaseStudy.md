@@ -175,8 +175,8 @@ gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ### Inspecting data
 データの検査 
 
+FASTA形式ファイルのヘッダ（">"で始まる行）  
 [FASTA headers](http://www.uniprot.org/help/fasta-headers)
-FASTA形式ファイルのヘッダ（">"で始まる行）
 
 ```
 # `ls -lh`でファイルサイズを確認する:  
@@ -200,15 +200,13 @@ grep "^>" uniprot_sprot.fasta | head -n 3
 grep "^>" uniprot_sprot.fasta | wc -l
 ```
 
+圧縮ファイルを直接操作する  
 Working with Gzipped Compressed Files
-圧縮ファイルを直接操作する
 ```
-gzcat uniprot_sprot.fasta.gz
-gzcat uniprot_sprot.fasta.gz | head -n 3
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 ```
 
-[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) を検索する。
+[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目)を検索する。
 ```
 # use grep to find a gene "harakiri"
 grep "^>" uniprot_sprot.fasta | grep "harakiri"
