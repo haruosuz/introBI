@@ -209,12 +209,13 @@ gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 [日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
 ```
 # use grep to find a gene "Harakiri"
-grep "^>" uniprot_sprot.fasta | grep "harakiri"
+grep "^>" uniprot_sprot.fasta | grep "Harakiri"
+
+# add the option -i to grep to be case insensitive.
+grep "^>" uniprot_sprot.fasta | grep -i "Harakiri" 
 
 # use grep to count (the -c option stands for count) the number of lines matching the pattern
 grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
-
-# add the option -i to grep to be case insensitive.
 grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 ```
 
