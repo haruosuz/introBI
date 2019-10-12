@@ -164,9 +164,8 @@ tail -f wget-log
 
 # チェックサムで転送データの整合性を検証する。MD5チェックサムを計算する
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
-file_name="uniprot_sprot.fasta.gz"
-grep -A 3 "file name=\"${file_name}\"" RELEASE.metalink
-md5 ${file_name}
+grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
+md5 uniprot_sprot.fasta.gz
 
 # `gunzip`コマンドでファイルを展開する
 # decompress files with the command gunzip
@@ -213,6 +212,7 @@ gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "mutator"
 gzcat uniprot_sprot.fasta.gz | grep "^>" | grep --color "Oxytocin"
 gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "DNA repair" | wc -l
 gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Pseudomonas putida" | wc -l
+```
 
 - [Gilbert, Stephens (2018) Nat Rev Microbiol. "Microbiology of the built environment."](https://www.ncbi.nlm.nih.gov/pubmed/30127345) | [pdf](http://built-envi.com/wp-content/uploads/gilbert-and-stephens-2018-nature-reviews-microbiology-MoBE.pdf)
 ```
