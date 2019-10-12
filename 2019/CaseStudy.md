@@ -175,8 +175,8 @@ gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ### Inspecting data
 データの検査 
 
-FASTA形式ファイルのヘッダ（">"で始まる行）  
-[FASTA headers](http://www.uniprot.org/help/fasta-headers)
+[FASTA headers](http://www.uniprot.org/help/fasta-headers)  
+FASTA形式ファイルのヘッダ（">"で始まる行）
 
 ```
 # `ls -lh`でファイルサイズを確認する:  
@@ -200,8 +200,9 @@ grep "^>" uniprot_sprot.fasta | head -n 3
 grep "^>" uniprot_sprot.fasta | wc -l
 ```
 
+Working with Gzipped Compressed Files  
 圧縮ファイルを直接操作する  
-Working with Gzipped Compressed Files
+
 ```
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 ```
