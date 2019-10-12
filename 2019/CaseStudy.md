@@ -206,31 +206,32 @@ Working with Gzipped Compressed Files
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 ```
 
-[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Shugoshin", "Harakiri" を検索する。
+[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
 ```
-# use grep to find a gene "harakiri"
-grep "^>" uniprot_sprot.fasta | grep "harakiri"
+# use grep to find a gene "Harakiri"
+grep "^>" uniprot_sprot.fasta | grep "Harakiri"
+
+# add the option -i to grep to be case insensitive.
+grep "^>" uniprot_sprot.fasta | grep -i "Harakiri"
 
 # use grep to count (the -c option stands for count) the number of lines matching the pattern
 grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
-
-# add the option -i to grep to be case insensitive.
 grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 ```
 
 `grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
 
-**"harakiri"検索結果**
+**"Harakiri"検索結果**
 ```
-# Search Results for "harakiri". There are 3 entries for in the FASTA file.
+# Search Results for "Harakiri". There are 3 entries for in the FASTA file.
 >sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
 >sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
 >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
 ```
-"harakiri"にマッチするタンパク質配列3件が登録されていた。
+"Harakiri"にマッチするタンパク質配列3件が登録されていた。
 タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
 生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
-遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が存在した。
+遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が混在。
 
 **"Shugoshin"検索結果**
 ```
