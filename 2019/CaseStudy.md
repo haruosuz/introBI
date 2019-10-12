@@ -270,10 +270,10 @@ tail -f wget-log
 #curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
     wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
 
-# チェックサムで転送データの整合性を検証する。MD5チェックサムを計算する
+# MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する:
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
-grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
 md5 uniprot_sprot.fasta.gz
+grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
 ```
 
 Markdownノート（README.md）の例:  
