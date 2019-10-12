@@ -26,6 +26,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 - [2019-10-08](#2019-10-08) No. 3 - Unixシェル | Unix Shell
 - [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
 - 2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
