@@ -234,7 +234,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 ```
 
 **"Shugoshin"検索結果**  
-"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れが認められた。
+"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)の表記が統一されていない。
 ```
 # Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
 ...
