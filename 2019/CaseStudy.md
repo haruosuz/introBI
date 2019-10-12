@@ -206,7 +206,7 @@ Working with Gzipped Compressed Files
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 ```
 
-[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
+[日本語にちなんで命名された遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
 ```
 # use grep to find a gene "Harakiri"
 grep "^>" uniprot_sprot.fasta | grep "harakiri"
@@ -221,7 +221,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 `grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
 
 **"Harakiri"検索結果**  
-"Harakiri"にマッチするタンパク質配列3件が登録されていた。
+"Harakiri"にマッチするデータ3件が登録されていた。
 タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
 生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
 遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が混在。
@@ -233,7 +233,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 ```
 
 **"Shugoshin"検索結果**  
-"Shugoshin"にマッチするタンパク質配列20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れが認められた。
+"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れが認められた。
 ```
 # Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
 ...
