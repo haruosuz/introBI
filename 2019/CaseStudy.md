@@ -126,6 +126,9 @@ zmays-snps/data/README
 [UniProt](https://en.wikipedia.org/wiki/UniProt) protein sequence database  
 [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース  
 
+### Downloading data
+データのダウンロード
+
 <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
 *uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
@@ -147,8 +150,8 @@ cd ~/projects/data/uniprot/uniprot_sprot/
 
 # "uniprot_sprot.fasta.gz"ファイルを`wget`または`curl`でダウンロードする
 # download "uniprot_sprot.fasta.gz" file with `wget` or `curl`
- wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 #curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+ wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
 # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）:  
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
@@ -156,58 +159,66 @@ tail -f wget-log
 
 # "RELEASE.metalink"ファイルをダウンロードする
 # download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
-    wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
 #curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
+    wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
 
-# チェックサムで転送データの整合性を検証する
+# チェックサムで転送データの整合性を検証する。MD5チェックサムを計算する
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
 file_name="uniprot_sprot.fasta.gz"
+grep -A 3 "file name=\"${file_name}\"" RELEASE.metalink
 md5 ${file_name}
-grep -A 3 "file name=\"${file_name}\"" RELEASE.metalink | grep "${file_name}\|md5"
 
 # `gunzip`コマンドでファイルを展開する
 # decompress files with the command gunzip
 gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ```
 
-
-
-
-
-
 ### Inspecting data
 データの検査 
 
-`ls -lh`でファイルサイズを確認する:  
+[FASTA headers](http://www.uniprot.org/help/fasta-headers)
+FASTA形式ファイルのヘッダ（">"で始まる行）
 
-    # ls -lh reports human-readable file sizes
-    ls -lh
+```
+# `ls -lh`でファイルサイズを確認する:  
+# `ls -lh` reports human-readable file sizes
+ls -lh
 
-[`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
+# `head`で先頭部分を表示する
+# look at the top of a file with `head`
+head -n 3 uniprot_sprot.fasta
 
-    # look at the top of a file with head
-    head -n 3 uniprot_sprot.fasta
+# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
+grep "^>" uniprot_sprot.fasta
 
-Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers).
+# パイプでプログラムの入出力をつなぐ
+# Pipe the standard output to the next command with the pipe character (`|`).
+grep "^>" uniprot_sprot.fasta | head -n 3
 
-`grep`で、[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイルのヘッダ（`>`で始まる行）にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）:  
+# `wc -l`で行数をカウントする
+# `wc -l` outputs the number of lines
+grep "^>" uniprot_sprot.fasta | wc -l
+```
 
-    # use grep to extract lines matching the pattern "^>" (use Control-C to stop)
-    grep "^>" uniprot_sprot.fasta
+Working with Gzipped Compressed Files
+圧縮ファイルを直接操作する
+```
+gzcat uniprot_sprot.fasta.gz | head -n 3
+gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Ideonella sakaiensis"
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Cyanobacteria"
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "telomerase"
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "mutator"
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep --color "Oxytocin"
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "DNA repair" | wc -l
+gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Pseudomonas putida" | wc -l
 
-Pipe the standard output to the next command with the pipe character (`|`).
-
-[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
-
-    grep "^>" uniprot_sprot.fasta | head -n 2
-
-配列の数をカウントする:  
-
-    # wc -l outputs the number of lines
-    grep "^>" uniprot_sprot.fasta | wc -l
-
-
-
+- [Gilbert, Stephens (2018) Nat Rev Microbiol. "Microbiology of the built environment."](https://www.ncbi.nlm.nih.gov/pubmed/30127345) | [pdf](http://built-envi.com/wp-content/uploads/gilbert-and-stephens-2018-nature-reviews-microbiology-MoBE.pdf)
+```
+Fig. 1 | bacterial diversity of the built environment.
+Fig. 2 | routes of microbial transmission.
+```
 
 ----------
 ## assignment 4
