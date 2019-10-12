@@ -236,6 +236,9 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 "Shugoshin"にマッチするタンパク質配列20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れが認められた。
 ```
 # Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
+
+*snip*
+
 >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
 >sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens OX=9606 GN=SGO2 PE=1 SV=2
 >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
