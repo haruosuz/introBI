@@ -267,8 +267,7 @@ tail -f wget-log
 
 # "RELEASE.metalink"ファイルをダウンロードする
 # download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
-#curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
-    wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
+wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
 
 # MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する:
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
@@ -299,18 +298,20 @@ gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ### Inspecting data
 データの検査 
 
-[FASTA headers](http://www.uniprot.org/help/fasta-headers)  
-FASTA形式ファイルのヘッダ（">"で始まる行）
-
 ```
-# `ls -lh`でファイルサイズを確認する:  
+# `ls -lh`でファイルサイズを確認する
 # `ls -lh` reports human-readable file sizes
 ls -lh
 
 # `head`で先頭部分を表示する
 # look at the top of a file with `head`
 head uniprot_sprot.fasta
+```
 
+[FASTA headers](http://www.uniprot.org/help/fasta-headers)  
+FASTA形式ファイルのヘッダ（">"で始まる行）
+
+```
 # `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
 # use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
 grep "^>" uniprot_sprot.fasta
