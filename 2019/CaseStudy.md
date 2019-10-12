@@ -256,12 +256,12 @@ Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with y
 Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 
 ```
-# "uniprot_sprot.fasta.gz"ファイルを`wget`または`curl`でダウンロードする
+# "uniprot_sprot.fasta.gz"ファイルをダウンロードする
 # download "uniprot_sprot.fasta.gz" file with `wget` or `curl`
 #curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
  wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
-# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）:  
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
 tail -f wget-log
 
@@ -269,7 +269,7 @@ tail -f wget-log
 # download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
 wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
 
-# MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する:
+# MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
 md5 uniprot_sprot.fasta.gz
 grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
@@ -299,7 +299,7 @@ gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 データの検査 
 
 ```
-# `ls -lh`でファイルサイズを確認する
+# ファイルサイズを確認する
 # `ls -lh` reports human-readable file sizes
 ls -lh
 
@@ -349,7 +349,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 "Harakiri"にマッチするデータ3件が登録されていた。
 タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
 生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
-遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が混在。
+遺伝子名(GN=GeneName)に大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在。
 
 **"Shugoshin"検索結果**  
 ```
@@ -360,7 +360,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
 >sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=sgo2 PE=1 SV=1
 ```
-"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)の表記が統一されていない。
+"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名("SHUGOSHIN 2", "Shugoshin 2", "Shugoshin-2")と遺伝子名("GN=SGO2", "GN=Sgo2", "GN=sgo2")の表記が統一されていない。
 
 ----------
 ## assignment 4
