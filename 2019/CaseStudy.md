@@ -206,7 +206,10 @@ Working with Gzipped Compressed Files
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
 ```
 
-[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目)を検索する。
+- [日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目)を検索する。
+  - Shugoshin(Sgo) :減数分裂のときに染色体を保護する。「染色体の守護神」から。
+  - Harakiri(Hrk) :アポトーシスを誘導する遺伝子の一つ。アポトーシス＝細胞の自殺＝腹切り、から。
+
 ```
 # use grep to find a gene "harakiri"
 grep "^>" uniprot_sprot.fasta | grep "harakiri"
@@ -234,7 +237,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 
 **"Shugoshin"検索結果**
 ```
-# Search Results for "Shugoshin". There are 19 entries for in the FASTA file.
+# Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
 >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
 >sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens OX=9606 GN=SGO2 PE=1 SV=2
 >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
