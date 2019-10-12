@@ -203,20 +203,46 @@ grep "^>" uniprot_sprot.fasta | wc -l
 Working with Gzipped Compressed Files
 圧縮ファイルを直接操作する
 ```
+gzcat uniprot_sprot.fasta.gz
 gzcat uniprot_sprot.fasta.gz | head -n 3
 gzcat uniprot_sprot.fasta.gz | grep "^>" | head -n 3
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Ideonella sakaiensis"
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Cyanobacteria"
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "telomerase"
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "mutator"
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep --color "Oxytocin"
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "DNA repair" | wc -l
-gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Pseudomonas putida" | wc -l
 ```
 
-- [Gilbert, Stephens (2018) Nat Rev Microbiol. "Microbiology of the built environment."](https://www.ncbi.nlm.nih.gov/pubmed/30127345) | [pdf](http://built-envi.com/wp-content/uploads/gilbert-and-stephens-2018-nature-reviews-microbiology-MoBE.pdf)
-  - Fig. 1 | bacterial diversity of the built environment.
-  - Fig. 2 | routes of microbial transmission.
+[日本語にちなんで命名されたタンパク質遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) を検索する。
+```
+# use grep to find a gene "harakiri"
+grep "^>" uniprot_sprot.fasta | grep "harakiri"
+
+# use grep to count (the -c option stands for count) the number of lines matching the pattern
+grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
+
+# add the option -i to grep to be case insensitive.
+grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
+```
+
+`grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
+
+**"harakiri"検索結果**
+```
+# Search Results for "harakiri". There are 3 entries for in the FASTA file.
+>sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
+>sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
+>sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
+```
+"harakiri"にマッチするタンパク質配列3件が登録されていた。
+タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
+生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
+遺伝子名(GN=GeneName)に大文字と小文字（GN=HRKとGN=Hrk）が存在した。
+
+**"Shugoshin"検索結果**
+```
+# Search Results for "Shugoshin". There are 19 entries for in the FASTA file.
+>sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
+>sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens OX=9606 GN=SGO2 PE=1 SV=2
+>sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
+>sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=sgo2 PE=1 SV=1
+```
+"Shugoshin"にマッチするタンパク質配列20件が登録されていた。 タンパク質名(SHUGOSHIN 2, Shugoshin 2, Shugoshin-2)と遺伝子名(SGO2, Sgo2, sgo2)に表記揺れ（用語の不統一、大文字と小文字の混在）が認められた。
 
 ----------
 ## assignment 4
