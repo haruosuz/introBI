@@ -215,10 +215,8 @@ gzcat uniprot_sprot.fasta.gz | grep "^>" | grep "Pseudomonas putida" | wc -l
 ```
 
 - [Gilbert, Stephens (2018) Nat Rev Microbiol. "Microbiology of the built environment."](https://www.ncbi.nlm.nih.gov/pubmed/30127345) | [pdf](http://built-envi.com/wp-content/uploads/gilbert-and-stephens-2018-nature-reviews-microbiology-MoBE.pdf)
-```
-Fig. 1 | bacterial diversity of the built environment.
-Fig. 2 | routes of microbial transmission.
-```
+  - Fig. 1 | bacterial diversity of the built environment.
+  - Fig. 2 | routes of microbial transmission.
 
 ----------
 ## assignment 4
