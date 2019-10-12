@@ -21,6 +21,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 [Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf) |
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
+- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
 - [2019-09-24](#2019-09-24) No. 1 - イントロダクション | Introduction
 - [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 - [2019-10-08](#2019-10-08) No. 3 - Unixシェル | Unix Shell
@@ -479,7 +480,9 @@ Control-c で動作中のプロセスを停止
 	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
 
 ## Case Study: Reproducibly Downloading Data
-## [ケーススタディ](https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md)
+- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+  - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database]()
 
 ----------
 # 2019-12-03
