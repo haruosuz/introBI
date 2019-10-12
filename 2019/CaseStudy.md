@@ -272,10 +272,6 @@ tail -f wget-log
 # compare our checksum values with those in "RELEASE.metalink" using the md5 program:
 grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
 md5 uniprot_sprot.fasta.gz
-
-# `gunzip`コマンドでファイルを展開する
-# decompress files with the command gunzip
-gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ```
 
 Markdownノート（README.md）の例:  
@@ -290,6 +286,12 @@ UniProtKB/Swiss-Prot Release 2019_08 of 18-Sep-2019 was downloaded on 2019-10-15
 ## MD5 checksum
 
  - MD5 (uniprot_sprot.fasta.gz) = ac449e8215a544c153ab654624d65c5f
+```
+
+`gunzip`コマンドでファイルを展開する
+```
+# decompress files with the command `gunzip`
+gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ```
 
 ### Inspecting data
