@@ -152,14 +152,18 @@ Apple iMac 27inch
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
 
-    curl -O https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/Markdown.md > README.$(date +%F).md
+
+カレントディレクトリをFinderで開く:
+
+    open .
 
 ### text editor
 [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
 
-    atom markdown.md
+    atom README.$(date +%F).md
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
