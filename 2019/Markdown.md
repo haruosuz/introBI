@@ -5,7 +5,7 @@ Last Update: 2019-10-17
 
 Atom (テキストエディタ)
 ==
-*ctrl + Shift + M* で**Markdown**リアルタイムプレビューを実行する。
+**ctrl + Shift + M**で*Markdown*リアルタイムプレビューを実行する。
 
 Markdown
 --
