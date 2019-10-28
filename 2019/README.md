@@ -152,7 +152,7 @@ Apple iMac 27inch
 
 ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
 
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/Markdown.md > README.$(date +%F).md
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
 
 カレントディレクトリをFinderで開く:
 
