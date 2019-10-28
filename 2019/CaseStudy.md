@@ -19,6 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 5](#assignment-5) 課題No.5 「Git for Scientists 事前課題」
 - [assignment 6](#assignment-6) 課題No.6 「Git for Scientists (1)」
 - [assignment 7](#assignment-7) 課題No.7 「Git for Scientists (2)」
+- [2019-10-29](#2019-10-29)
 - [assignment 8](#assignment-8) 課題No.8 「interim report」
 - [assignment 9](#assignment-9) 課題No.9 「Unix Data Tools」
 - [assignment 10](#assignment-10) 課題No.10 「Shell Scripting」
@@ -30,6 +31,19 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-11-27](#2018-11-27) GFF/GTF
 - [unix](#unix)
 - [bds](#bds)
+
+
+----------
+
+
+プロジェクトの情報をプレーンテキスト形式のREADMEファイルに記録する。
+```
+bash
+cd ~/projects/
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/Markdown.md > README.$(date +%F).md
+atom README.$(date +%F).md
+open .
+```
 
 ----------
 ## assignment 0
@@ -375,7 +389,7 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 **課題No.5 「Git for Scientists 事前課題」**
 
 下記ウェブサイトのいずれかを見て、事前に疑問点を報告する。
-- [生命科学研究のためのGitHubの使い方 基本編](https://togotv.dbcls.jp/20180621.html)
+- [生命科学研究のためのGitHubの使い方 基本編](https://doi.org/10.7875/togotv.2018.114)
 - [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 - [GitHub Learning Lab](https://lab.github.com)
 
@@ -404,19 +418,11 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 
 ----------
 ----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
 
 ----------
-## 2018-12-18
+## 2019-10-29
 
-[Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
+- https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
 
 ```
 # 適当なディレクトリをつくり、そこへ移動する
@@ -481,6 +487,22 @@ git status
 
 ```
 
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
 
 
 **課題No.5 「Unix Data Tools」**
