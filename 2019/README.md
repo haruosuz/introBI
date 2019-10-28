@@ -47,8 +47,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## Guest speaker
 **特別講演**
 
-- 日時：2019年10月29日、11月5日 (火) 3時限
-- 場所：SFC (λ21)
+- 日時: 2019年10月29日と11月5日 (火) 3時限
+- 場所: SFC (λ21)
 - 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
 - 演題: [Git for Scientists](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
 
