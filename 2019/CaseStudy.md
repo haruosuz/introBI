@@ -491,8 +491,6 @@ git commit
 # atom が開いたら、メッセージを書いて保存する。
 # "Add new line to sample.txt"
 
-今ここです。
-
 
 ```
 
