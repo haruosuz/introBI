@@ -465,6 +465,10 @@ git commit -m "Create sample.txt for lesson"
 git status
 git log
 
+
+今ここです。
+
+
 # ファイルを編集してどうなるか確認する
 echo "xxxxxxxxxx" >> sample.txt
 git status
