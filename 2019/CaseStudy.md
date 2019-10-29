@@ -425,18 +425,18 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 - https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
 
 ```
+# `bash`を起動する
+bash
+
 # 適当なディレクトリをつくり、そこへ移動する
 mkdir -p ~/projects/2019-10-29
 cd ~/projects/2019-10-29/
 
-# ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
-curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
-
 # カレントディレクトリをFinderで開く:
 open .
 
-
-
+# Markdown文書をダウンロードする:  
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
 
 # レポジトリを作る
 git init
