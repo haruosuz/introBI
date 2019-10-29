@@ -476,16 +476,14 @@ git status
 # 変更内容を確認する
 git diff
 
-
-
-今ここです。
-
-
-
 # addしないで、commitするとどうなるか？
 ## git addするまえに、git commitしてみましょう
 ## add していないと怒られる
 git commit -m "Write about today"
+
+
+今ここです。
+
 
 # git statusで現状を確認する
 ## git status で現状を確認する
