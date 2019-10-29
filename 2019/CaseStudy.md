@@ -461,7 +461,6 @@ git status
 git add sample.txt
 git commit -m "Create sample.txt for lesson"
 
-
 今ここです。
 
 
