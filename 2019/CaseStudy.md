@@ -445,6 +445,15 @@ git init
 ls
 ls -a
 
+いまここ
+
+
+
+
+
+
+
+
 # localな設定
 git config --local user.name "Haruo Suzuki"
 git config --local user.email "haruo@dotinstall.com"
