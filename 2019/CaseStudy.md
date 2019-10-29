@@ -465,6 +465,9 @@ git commit -m "Create sample.txt for lesson"
 git status
 git log
 
+# コミットメッセージを修正
+git commit --amend -m "aaaaa"
+
 
 今ここです。
 
@@ -473,8 +476,6 @@ git log
 echo "xxxxxxxxxx" >> sample.txt
 git status
 
-# コミットメッセージを修正
-git commit --amend -m "aaaaa"
 
 # 変更内容を確認する
 git diff
