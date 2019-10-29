@@ -485,9 +485,12 @@ git commit -m "Write about today"
 ## git status で現状を確認する
 git status
 
-今ここです。
-
+# 
 git add sample.txt
+git commit
+
+
+今ここです。
 
 
 # git add を取り消す
