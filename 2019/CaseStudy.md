@@ -467,7 +467,7 @@ git log
 
 # コミットメッセージを修正
 git commit --amend -m "aaaaa"
-
+git log
 
 今ここです。
 
