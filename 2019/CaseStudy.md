@@ -473,12 +473,14 @@ git log
 echo "xxxxxxxxxx" >> sample.txt
 git status
 
+# 変更内容を確認する
+git diff
+
+
+
 今ここです。
 
 
-
-# 変更内容を確認する
-git diff
 
 # addしないで、commitするとどうなるか？
 ## git addするまえに、git commitしてみましょう
