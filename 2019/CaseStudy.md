@@ -445,30 +445,14 @@ git init
 ls
 ls -a
 
-**いまここ**
 
 
-
-
-
-
-
-
-
-
-
-# localな設定
-git config --local user.name "Haruo Suzuki"
-git config --local user.email "haruo@dotinstall.com"
-cat .git/config
 
 # エディタも変更可能
 git config --local core.editor "atom --wait"
 cat .git/config
 
-# 現在の設定を確認
-git config --list
-
+今ここです。
 
 
 
