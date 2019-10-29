@@ -488,7 +488,7 @@ git status
 # 
 git add sample.txt
 git commit
-
+# atom が開いたら、メッセージ "Add new line to sample.txt" を書いて保存する。
 
 今ここです。
 
