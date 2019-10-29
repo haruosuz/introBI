@@ -449,13 +449,10 @@ ls -a
 git config --global core.editor "atom --wait"
 cat ~/.gitconfig
 
+# 現在の設定を確認
+git config --list
+
 今ここです。
-
-
-
-
-
-
 
 
 
