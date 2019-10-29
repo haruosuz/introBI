@@ -452,13 +452,14 @@ cat ~/.gitconfig
 # 現在の設定を確認
 git config --list
 
-
-今ここです。
-
 # レポジトリの現在の状態を確認する
 git status
 touch sample.txt
 git status
+
+
+今ここです。
+
 
 # 新しいファイルを追加する
 git add sample.txt
