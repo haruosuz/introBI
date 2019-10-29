@@ -482,12 +482,12 @@ git diff
 git commit -m "Write about today"
 
 
-今ここです。
-
-
 # git statusで現状を確認する
 ## git status で現状を確認する
 git status
+
+
+今ここです。
 
 # git add を取り消す
 
