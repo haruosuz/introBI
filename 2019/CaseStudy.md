@@ -447,7 +447,7 @@ ls -a
 
 # エディタも変更可能
 git config --global core.editor "atom --wait"
-cat .git/config
+cat ~/.gitconfig
 
 今ここです。
 
