@@ -428,15 +428,15 @@ open .
 # Markdown文書をダウンロードする:  
 curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
 
-# レポジトリを作る
-git init
-ls
-ls -a
+# 現在の設定を確認
+git config --list
 
 # Global な設定
 git config --global user.name "あなたの名前"
 git config --global user.email "あなたのメールアドレス"
 cat ~/.gitconfig
+git log
+git config --list
 
 # localな設定
 git config --local user.name "Haruo Suzuki"
@@ -449,6 +449,20 @@ cat .git/config
 
 # 現在の設定を確認
 git config --list
+
+
+
+
+
+
+
+
+# レポジトリを作る
+git init
+ls
+ls -a
+
+
 
 # レポジトリの現在の状態を確認する
 git status
