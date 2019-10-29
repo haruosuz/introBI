@@ -431,6 +431,11 @@ curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md 
 # 現在の設定を確認
 git config --list
 
+# レポジトリを作る
+git init
+ls
+ls -a
+
 # Global な設定
 git config --global user.name "あなたの名前"
 git config --global user.email "あなたのメールアドレス"
@@ -450,17 +455,6 @@ cat .git/config
 # 現在の設定を確認
 git config --list
 
-
-
-
-
-
-
-
-# レポジトリを作る
-git init
-ls
-ls -a
 
 
 
