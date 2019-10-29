@@ -469,12 +469,12 @@ git log
 git commit --amend -m "aaaaa"
 git log
 
-今ここです。
-
-
 # ファイルを編集してどうなるか確認する
 echo "xxxxxxxxxx" >> sample.txt
 git status
+
+今ここです。
+
 
 
 # 変更内容を確認する
