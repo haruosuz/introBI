@@ -410,16 +410,6 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
-## assignment 7
-**課題No.7 「Git for Scientists (2)」**
-
-2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-----------
-----------
-
-----------
 ## 2019-10-29
 
 - https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
@@ -495,6 +485,17 @@ git status
 # git add を取り消す
 
 ```
+
+----------
+----------
+
+
+----------
+## assignment 7
+**課題No.7 「Git for Scientists (2)」**
+
+2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 
 ----------
