@@ -457,13 +457,13 @@ git status
 touch sample.txt
 git status
 
-
-今ここです。
-
-
 # 新しいファイルを追加する
 git add sample.txt
 git commit -m "Create sample.txt for lesson"
+
+
+今ここです。
+
 
 # 確認する
 git status
