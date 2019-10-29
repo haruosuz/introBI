@@ -426,8 +426,17 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 
 ```
 # 適当なディレクトリをつくり、そこへ移動する
-mkdir -p ~/projects/2018-12-18
-cd ~/projects/2018-12-18/
+mkdir -p ~/projects/2019-10-29
+cd ~/projects/2019-10-29/
+
+# ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+
+# カレントディレクトリをFinderで開く:
+open .
+
+
+
 
 # レポジトリを作る
 git init
