@@ -17,9 +17,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「Bioinformatics Data」
 - 2019-10-22 即位礼【国民の休日】National Holiday
 - [assignment 5](#assignment-5) 課題No.5 「Git for Scientists 事前課題」
+- [2019-10-29](#2019-10-29)
 - [assignment 6](#assignment-6) 課題No.6 「Git for Scientists (1)」
 - [assignment 7](#assignment-7) 課題No.7 「Git for Scientists (2)」
-- [2019-10-29](#2019-10-29)
 - [assignment 8](#assignment-8) 課題No.8 「interim report」
 - [assignment 9](#assignment-9) 課題No.9 「Unix Data Tools」
 - [assignment 10](#assignment-10) 課題No.10 「Shell Scripting」
@@ -403,13 +403,6 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 2019-10-22 即位礼【国民の休日】National Holiday
 
 ----------
-## assignment 6
-**課題No.6 「Git for Scientists (1)」**
-
-2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-----------
 ## 2019-10-29
 
 - https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
@@ -491,9 +484,19 @@ git commit
 # atom が開いたら、メッセージを書いて保存する。
 # "Add new line to sample.txt"
 
-
 ```
 
+----------
+## assignment 6
+**課題No.6 「Git for Scientists (1)」**
+
+2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+
+----------
+----------
+----------
 ----------
 ----------
 
