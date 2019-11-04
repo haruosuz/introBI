@@ -26,11 +26,11 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 - [2019-10-08](#2019-10-08) No. 3 - Unixシェル | Unix Shell
 - [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
-  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
 - 2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
-- 2019-11-12 No. 7 - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+- [2019-11-12](#2019-11-12) No. 7 - バイオインフォマティクス・データ | Bioinformatics Data
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - 中間発表 [interim report](#interim-report)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | Unix Data Tools
@@ -52,7 +52,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
 - 演題: Git for Scientists
 - 資料:
-  - [2018](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
+  - スライド [2018-12-18](https://docs.google.com/presentation/d/1S1bnpQaSIeQa9u1VxHW9ak_XNYd17-5IRqOeQ3txqo8/edit#slide=id.p)
   - [課題No.5 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-5)
 〆切：2019-10-22 23:59:00
   - コマンド [2019-10-29](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#2019-10-29)
@@ -130,40 +130,43 @@ Apple iMac 27inch
 ### Unix
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 
-[ターミナル](http://techacademy.jp/magazine/5155)を起動する。
-
 ![http://techacademy.jp/magazine/5155](https://techacademy-magazine-cdn.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
-ターミナルで以下のコマンドを入力し、`bash`を起動する:
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
+    # change shell to bash
     bash
 
-ディレクトリを作成する:
+ディレクトリを作成する:  
 
+    # make directory
     mkdir ~/projects
 
-ディレクトリを移動する:
+ディレクトリを移動する:  
 
+    # change directory
     cd ~/projects/
 
-カレントディレクトリを表示する:
+カレントディレクトリを表示する:  
 
+    # print working directory
     pwd
 
-ディレクトリやファイルの情報を表示する:
+カレントディレクトリをFinderで開く:  
 
-    ls
+    # open current directory
+    open .
 
 ### Markdown
 [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
 
-ターミナルで以下のコマンドを実行し、Markdown文書をダウンロードする:  
+Markdown文書をダウンロードする:  
 
     curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
 
-カレントディレクトリをFinderで開く:
+ディレクトリやファイルの情報を表示する:  
 
-    open .
+    ls
 
 ### text editor
 [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
@@ -179,9 +182,9 @@ Apple iMac 27inch
 
     git clone https://github.com/vsbuffalo/bds-files
 
-ディレクトリの詳細情報を表示する:
+ディレクトリの詳細情報を表示する:  
 
-    ls bds-files/
+    ls -l bds-files/
 
 ----------
 # 2019-10-01
@@ -190,8 +193,7 @@ Apple iMac 27inch
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
     bash
-
-    cd ~/projects/
+    cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
 
 # [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
 ## Project Directories and Directory Structures
@@ -281,9 +283,8 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 [教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-03-remedial-unix/` を使う。
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-	bash
-
-	cd ~/projects/bds-files/chapter-03-remedial-unix/
+    bash
+    cd ~/projects/bds-files/chapter-03-remedial-unix/
 
 # [Chapter 3. Remedial Unix Shell](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-3-remedial-unix-shell)
 ## Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy
@@ -395,6 +396,7 @@ Control-c で動作中のプロセスを停止
 
 ----------
 # 2019-10-15
+# 2019-11-12
 **バイオインフォマティクス・データ | Bioinformatics Data**
 
 大規模データの取得・検証・圧縮の方法を扱う。
@@ -402,9 +404,14 @@ Control-c で動作中のプロセスを停止
 [教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-06-bioinformatics-data/` を使う。
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-	bash
+    bash
+    cd ~/projects/bds-files/chapter-06-bioinformatics-data/
 
-	cd ~/projects/bds-files/chapter-06-bioinformatics-data/
+    pwd
+    ls
+    open .
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+    atom README.$(date +%F).md
 
 # [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-6-bioinformatics-data)
 ## Retrieving Bioinformatics Data
@@ -506,9 +513,8 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
 [教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-07-unix-data-tools/` を使う。
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-	bash
-
-	cd ~/projects/bds-files/chapter-07-unix-data-tools/
+    bash
+    cd ~/projects/bds-files/chapter-07-unix-data-tools/
 
 # [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
@@ -716,9 +722,8 @@ FASTQ/FASTAエントリ数をカウント:
 [教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-12-pipelines/` を使う。
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-	bash
-
-	cd ~/projects/bds-files/chapter-12-pipelines/
+    bash
+    cd ~/projects/bds-files/chapter-12-pipelines/
 
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
@@ -861,4 +866,5 @@ Bashスクリプトを実行する方法:
 [Make](https://ja.wikipedia.org/wiki/Make)
 
 ----------
+
 
