@@ -29,6 +29,16 @@ Markdown
 
     $ ls
 
+コードブロックは、バッククオート3つでコードをくくる:  
+```
+bash
+mkdir -p ~/projects/$(date +%F)
+cd ~/projects/$(date +%F)/
+open .
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+atom README.$(date +%F).md
+```
+
 ----------
 
 - 参考文献
