@@ -32,19 +32,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [unix](#unix)
 - [bds](#bds)
 
-
-----------
-
-
-プロジェクトの情報をプレーンテキスト形式のREADMEファイルに記録する。
-```
-bash
-cd ~/projects/
-curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/Markdown.md > README.$(date +%F).md
-atom README.$(date +%F).md
-open .
-```
-
 ----------
 ## assignment 0
 **選抜課題**
@@ -114,23 +101,6 @@ zmays-snps/data/README
 
 [2019-10-08](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-08) No. 3 - Unixシェル | Unix Shell
 で実行したコマンドをプレーンテキスト形式のMarkdownノート`README.md`等に記録し提出する。
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
 
 ----------
 ## GRCh37/hg19 human chromosome 22
@@ -243,29 +213,38 @@ Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was 
 protein sequence database
 タンパク質配列データベース
 
-![http://techacademy.jp/magazine/5155](https://techacademy-magazine-cdn.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
-
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
-```
-# change shell to bash
-bash
+    # change shell to bash
+    bash
 
-# ディレクトリを作成する
-# make directories
-mkdir -p ~/projects/data/uniprot/uniprot_sprot
+    # ディレクトリを作成する
+    # make directories
+    mkdir -p ~/projects/data/uniprot/uniprot_sprot
 
-# ディレクトリを移動する
-# change directories
-cd ~/projects/data/uniprot/uniprot_sprot/
-```
+    # ディレクトリを移動する
+    # change directories
+    cd ~/projects/data/uniprot/uniprot_sprot/
+
+    # カレントディレクトリを表示する 
+    # print working directory
+    pwd
+
+    # カレントディレクトリをFinderで開く
+    # open current directory
+    open .
+
+    # Markdown文書をダウンロードする
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+
+    # テキストエディタ「Atom」でファイルを開く
+    atom README.$(date +%F).md
 
 ### Downloading data
 データのダウンロード
 
 <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
-*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
+*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
 Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 
@@ -383,7 +362,6 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 [2019-10-15](https://github.com/haruosuz/introBI/blob/master/2019/README.md#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
 の実行コマンドを記録したプロジェクト・ノート`README.md`を提出する。
 
-
 ----------
 ## assignment 5
 **課題No.5 「Git for Scientists 事前課題」**
@@ -492,14 +470,6 @@ git commit
 
 2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-
-----------
-----------
-----------
-----------
-----------
-
 
 ----------
 ## assignment 7
