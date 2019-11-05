@@ -52,7 +52,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
 - 演題: Git for Scientists
 - 資料:
-  - スライド [2019-10-29](https://docs.google.com/presentation/d/1NaMRvJD8o6_V8YFUeSOLEtbK99YS-cKas5VxsCZUnv0/edit#slide=id.p)
+  - スライド [2019-10-29 2019-11-05](https://docs.google.com/presentation/d/1NaMRvJD8o6_V8YFUeSOLEtbK99YS-cKas5VxsCZUnv0/edit#slide=id.p)
   - コマンド [2019-10-29](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#2019-10-29)
   - [課題No.6 「Git for Scientists (1)」](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-6)
 〆切 : 11/04 23:59
