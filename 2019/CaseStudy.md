@@ -650,7 +650,6 @@ git branch
 git log
 
 # masterへファイルを足す
-
 echo "This is new file" > newfile1.txt
 git add newfile1.txt
 git commit -m 'Add newfile1 to master'
