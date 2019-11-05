@@ -699,6 +699,14 @@ bash-5.0$ git merge newbranch1
 fatal: You have not concluded your merge (MERGE_HEAD exists).
 Please, commit your changes before you merge.
 
+リトライ
+
+git add newfile1.txt
+git commit -m 'Add newfile1 to master'
+
+bash-5.0$ git merge newbranch1
+Already up to date.
+
 # 環境
 # https://classroom.sfc.keio.ac.jp/class/l-to/l-21.html
 # Apple iMac 27inch
