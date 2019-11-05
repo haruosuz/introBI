@@ -478,6 +478,22 @@ git commit
 - https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
 
 ```
+# `bash`を起動する
+bash
+
+# 適当なディレクトリをつくり、そこへ移動する
+mkdir -p ~/projects/2019-11-05
+cd ~/projects/2019-11-05/
+
+# カレントディレクトリをFinderで開く:
+open .
+
+# Markdown文書をダウンロードする:  
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+```
+
+
+```
 # 先週の復習
 
 mkdir 2019-11-05
