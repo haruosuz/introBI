@@ -19,6 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 5](#assignment-5) 課題No.5 「Git for Scientists 事前課題」
 - [2019-10-29](#2019-10-29)
 - [assignment 6](#assignment-6) 課題No.6 「Git for Scientists (1)」
+- [2019-11-05](#2019-11-05)
 - [assignment 7](#assignment-7) 課題No.7 「Git for Scientists (2)」
 - [assignment 8](#assignment-8) 課題No.8 「interim report」
 - [assignment 9](#assignment-9) 課題No.9 「Unix Data Tools」
