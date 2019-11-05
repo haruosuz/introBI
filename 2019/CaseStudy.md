@@ -472,6 +472,220 @@ git commit
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
+## 2019-11-05
+
+- https://github.com/haruosuz/introBI/blob/master/2019/README.md#guest-speaker
+
+```
+# 先週の復習
+
+mkdir 2019-11-05
+cd 2019-11-05
+
+git init
+
+# README.txt を作る
+echo "First line" >> README.txt
+
+git add README.txt
+git commit -m 'init commit'
+
+# 転ばぬ先の杖
+# 各自の環境によるので、いつでてくるかわかりませんが、
+## git log コマンドから抜けるときは q を押す
+git log
+
+# statusを確認する
+## 以下のメッセージがでる予定
+## nothing to commit, working directory clean
+git status
+
+# README.txt を作る
+echo "Second line" >> README.txt
+
+# 内容を確認してみる
+cat README.txt
+
+## 以下のメッセージがでる予定
+## Changes not staged for commit:
+git status
+
+git add README.txt
+
+# statusを確認する
+## 以下のメッセージがでる予定
+## Changes to be committed:
+git status
+
+# コミットする
+git commit -m 'second commit'
+
+# statusを確認する
+## 以下のメッセージがでる予定
+## nothing to commit, working directory clean
+git status
+
+# ログを確認する
+git log
+
+# ここから新しい
+
+# branch
+## まずは現状確認
+## masterしかないことを確認する
+git branch
+
+# 新しいブランチを作る
+git branch newbranch1
+
+## 新しくできたことを確認する
+## master の左側に * がつく
+## 以下のようになる予定である
+### * master
+###   newbranch1
+
+git branch
+- masterとnewbranch1がある
+
+# branch を切り替える
+## Switched to branch 'newbranch1' というメッセージがでる
+git checkout newbranch1
+
+# branchを確認
+## newbranch1 の左側に * がつく
+###   master
+### * newbranch1
+
+git branch
+
+# README.txt
+## 
+echo "Third line" >> README.txt
+# コミットする
+
+git add README.txt
+git commit -m 'third commit'
+
+# ログの確認
+### init commit
+### second commit
+### third commit
+git log
+
+# masterへ移る
+git checkout master
+
+# branch を確認
+## master が選択されていることの確認
+
+git branch
+
+# ログの確認
+## 以下の２つがある
+### init commit
+### second commit
+## 以下の行がない
+### third commit
+
+git log
+
+# Third lineがないことの確認
+cat README.txt
+
+# merge
+## newbranch1 の内容を、masterにマージする。
+git merge newbranch1
+
+# ログの確認
+## new branch よりただしくマージされることの確認
+### third commit
+### second commit
+### init commit
+
+git log
+
+# 内容を確認する
+
+cat README.txt
+
+# ログをグラフ形式で見る
+## いかのようにまっすぐになっている
+### * 5536245c87a43e61c686dd97bd8acdb684bbdb7a third commit
+### * d7b2161dec665cebfb32067b71f0eb09c363efeb second commit
+### * c5932fc0c412e90b89678c72e423bc52f192b4ec init commit
+
+git log --graph --pretty=oneline
+
+# branch を newbranch1 に移る
+git checkout newbranch1
+
+# README.txt に１行追加
+echo "Forth line" >> README.txt
+
+# add して commit
+git add README.txt
+git commit -m 'Fourth commit'
+
+# ログを確認
+## Fourth commitがあることを確認
+git log
+
+# わざと、衝突状態を作りたいので、いかのような作業をしていきます
+
+# master ブランチへ移る
+
+git checkout master
+# master へ移ったことの確認
+git branch
+
+# ログを確認
+## Fourth commitがないことを確認
+git log
+
+# masterへファイルを足す
+
+echo "This is new file" > newfile1.txt
+git add newfile1.txt
+git commit -m 'Add newfile1 to master'
+
+# ログを確認する
+### Add newfile1 to master
+### third commit
+### second commit
+### init commit
+git log
+
+# ステータスも確認する
+## 以下のメッセージがでていることを確認する
+### On branch master
+### nothing to commit, working directory clean
+
+git status
+
+# merge
+## newbranch1 の内容を、masterにマージする。
+## 次のコマンドを打つと、エディタがたちあがるので保存します
+
+git merge newbranch1
+
+# ログを確認
+## 以下の２つがあることの確認
+### Fourth commit
+### Merge branch 'newbranch1'
+git log
+
+# グラフ形式で見る 
+git log --graph
+
+# １行ごとのグラフ形式でみる
+git log --graph --pretty=oneline
+
+```
+
+
+
+
+----------
 ## assignment 7
 **課題No.7 「Git for Scientists (2)」**
 
@@ -496,45 +710,41 @@ git commit
 ----------
 
 
-**課題No.5 「Unix Data Tools」**
+----------
+## assignment 8
 
-2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-**課題No.6 「Unix Data Tools (2)」**
-
-2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+----------
+## assignment 9
 
 ----------
 ## assignment 10
 
 
-----------
-## assignment 6
+**課題No.9 「Unix Data Tools」**
 
-----------
-## assignment 7
-**課題No.7 「interim report」**
+2018-10-23 第05回 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-23)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+**課題No.9 「Unix Data Tools (2)」**
+
+2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
+の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+
+**課題No.9 「Shell Scripting」**
+
+2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
+を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
+
+
+
+
+**課題No.9 「interim report」**
 
 2018-11-27 第08回 中間発表 interim report
 のスライドをPDFファイルで提出する。
 Submit your PDF presentation slides for your oral presentation.
 
 中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-----------
-## assignment 8
-**課題No.8 「Shell Scripting」**
-
-2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
-を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-----------
-## assignment 9
-
-
-
 
 
 
