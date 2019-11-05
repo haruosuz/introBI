@@ -56,6 +56,11 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [課題No.5 「Git for Scientists 事前課題」](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-5)
 〆切：2019-10-22 23:59:00
   - コマンド [2019-10-29](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#2019-10-29)
+  - [課題No.6 「Git for Scientists (1)」](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-6)
+〆切 : 11/04 23:59
+  - コマンド [2019-11-05](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#2019-11-05)
+  - [課題No.7 「Git for Scientists (2)」](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-7)
+〆切 : 11/11 23:59
 
 ----------
 ## interim report
