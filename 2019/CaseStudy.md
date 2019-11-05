@@ -637,11 +637,11 @@ git commit -m 'Fourth commit'
 ## Fourth commitがあることを確認
 git log
 
-# わざと、衝突状態を作りたいので、いかのような作業をしていきます
+# わざと、衝突状態を作りたいので、以下のような作業をしていきます
 
 # master ブランチへ移る
-
 git checkout master
+
 # master へ移ったことの確認
 git branch
 
