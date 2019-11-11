@@ -33,6 +33,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - 中間発表 [interim report](#interim-report)
+  - [2019-11-26](#2019-11-26) No. 9 - Unixデータツール | Unix Data Tools
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | Unix Data Tools
 - 2019-12-10 No. 10 - シェルスクリプト | Shell Scripting
 - [2019-12-17](#2019-12-17) No. 11 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-11)
@@ -508,6 +509,7 @@ Control-c で動作中のプロセスを停止
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 
 ----------
+# 2019-11-26
 # 2019-12-03
 **Unixデータツール | Unix Data Tools**
 
