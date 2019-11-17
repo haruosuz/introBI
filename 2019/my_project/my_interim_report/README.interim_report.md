@@ -41,7 +41,7 @@ UniProtKB/Swiss-Protタンパク質配列データベースにおける Harakiri
 >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
 ```
 
-- "harakiri"のデータは3件
+- "harakiri"にマッチするデータ3件が登録されていた。
   - タンパク質名(ProteinName)："Activator of apoptosis harakiri"
   - 由来する生物(OS=OrganismName)：ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種
   - 遺伝子名(GN=GeneName)：大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在
