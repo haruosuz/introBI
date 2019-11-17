@@ -9,6 +9,8 @@ Last Update: 2019-11-25
 
 UniProtKB/Swiss-Protタンパク質配列データベースにおける Harakiri (*Hrk*) 遺伝子の検索
 
+----------
+
 ## What is Harakiri?
 *Harakiri(Hrk) :アポトーシスを誘導する遺伝子の一つ。アポトーシス＝細胞の自殺＝腹切り、から。*
 <https://ja.wikipedia.org/wiki/Izumo_(タンパク質)#関連項目>
@@ -30,6 +32,24 @@ UniProtKB/Swiss-Protタンパク質配列データベースにおける Harakiri
 ## Results
 **解析結果**
 
+- "harakiri"のデータは3件
+  - タンパク質名(ProteinName)："Activator of apoptosis harakiri"
+  - 由来する生物(OS=OrganismName)：ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種
+  - 遺伝子名(GN=GeneName)：大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在
+
+```
+>sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
+>sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
+>sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
+
+# https://www.uniprot.org/help/fasta-headers
+>db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
+```
+
+----------
+
+## Codes
+
 ```
 cd ~/projects/data/uniprot/uniprot_sprot/
 
@@ -45,22 +65,10 @@ gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 # use `grep` to extract lines matching the pattern "harakiri"
 grep "^>" uniprot_sprot.fasta | grep "harakiri"
 
->sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
->sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
->sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
-
-# https://www.uniprot.org/help/fasta-headers
->db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
-```
-
-- "harakiri"のデータは3件
-  - タンパク質名(ProteinName)："Activator of apoptosis harakiri"
-  - 由来する生物(OS=OrganismName)：ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種
-  - 遺伝子名(GN=GeneName)：大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在
-
-```
 # https://apprize.info/data/bioinformatics/2.html
 # Using Pandoc to Render Markdown to HTML
 filename=README.interim_report.md
 pandoc --from markdown --to html ${filename} > ${filename}.html
 ```
+
+----------
