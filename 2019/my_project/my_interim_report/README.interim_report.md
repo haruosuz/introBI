@@ -32,19 +32,19 @@ UniProtKB/Swiss-Protタンパク質配列データベースにおける Harakiri
 ## Results
 **解析結果**
 
+```
+# https://www.uniprot.org/help/fasta-headers
+>db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
+
+>sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
+>sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
+>sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
+```
+
 - "harakiri"のデータは3件
   - タンパク質名(ProteinName)："Activator of apoptosis harakiri"
   - 由来する生物(OS=OrganismName)：ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種
   - 遺伝子名(GN=GeneName)：大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在
-
-```
->sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
->sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
->sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
-
-# https://www.uniprot.org/help/fasta-headers
->db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
-```
 
 ----------
 
