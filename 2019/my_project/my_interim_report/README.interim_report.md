@@ -13,7 +13,7 @@ UniProtKB/Swiss-Protタンパク質配列データベースにおける Harakiri
 *Harakiri(Hrk) :アポトーシスを誘導する遺伝子の一つ。アポトーシス＝細胞の自殺＝腹切り、から。*
 <https://ja.wikipedia.org/wiki/Izumo_(タンパク質)#関連項目>
 
-<img src="http://iina-kobe.com/1fr-4fvygkbt/wp-content/uploads/2017/09/l201209291800.jpg" width=50% alt="http://iina-kobe.com/entry62">
+<img src="http://iina-kobe.com/1fr-4fvygkbt/wp-content/uploads/2017/09/l201209291800.jpg" width=30% alt="http://iina-kobe.com/entry62">
 
 ----------
 
