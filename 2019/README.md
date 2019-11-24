@@ -25,7 +25,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - [2019-09-24](#2019-09-24) No. 1 - イントロダクション | Introduction
 - [2019-10-01](#2019-10-01) No. 2 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
 - [2019-10-08](#2019-10-08) No. 3 - Unixシェル | Unix Shell
-- [2019-10-15](#2019-10-15) No. 4 - バイオインフォマティクス・データ | Bioinformatics Data
+- 2019-10-15 No. 4 - バイオインフォマティクス・データ | [Bioinformatics Data](bioinformatics-data)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2019-10-29 No. 5 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
 - 2019-11-05 No. 6 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
@@ -69,6 +69,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 スライド1枚を用いてプロジェクト（解析データ）について説明する。
 発表時間：1人あたり最大5分（質疑応答を含む）
+
+<https://github.com/haruosuz/introBI/blob/master/2019/my_project/my_interim_report/README.md>
 
 ----------
 ## final presentation
@@ -191,8 +193,8 @@ Markdown文書をダウンロードする:
     ls -l bds-files/
 
 ----------
-# 2019-10-01
-**バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project**
+# Managing a Bioinformatics Project
+**バイオインフォマティクスのプロジェクト管理**
 
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
@@ -202,8 +204,6 @@ Markdown文書をダウンロードする:
 # [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
 ## Project Directories and Directory Structures
 プロジェクト・ディレクトリの構造  
-
-- [計算生物学のプロジェクトの管理法入門 (Noble 2009)](http://5hun.github.io/quickguide_ja/)
 
 プロジェクトの全ファイルを1つのディレクトリに格納する。
 
@@ -274,8 +274,8 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 [Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
 
 ----------
-# 2019-10-08
-**Unixシェル | Unix Shell**
+# Unix Shell
+**Unixシェル**
 
 Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う。
 [ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)、
@@ -399,9 +399,8 @@ Control-c で動作中のプロセスを停止
 	ls -l
 
 ----------
-# 2019-10-15
-# 2019-11-12
-**バイオインフォマティクス・データ | Bioinformatics Data**
+# Bioinformatics Data
+**バイオインフォマティクス・データ**
 
 大規模データの取得・検証・圧縮の方法を扱う。
 
@@ -410,12 +409,6 @@ Control-c で動作中のプロセスを停止
 
     bash
     cd ~/projects/bds-files/chapter-06-bioinformatics-data/
-
-    pwd
-    ls
-    open .
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
-    atom README.$(date +%F).md
 
 # [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-6-bioinformatics-data)
 ## Retrieving Bioinformatics Data
@@ -509,9 +502,8 @@ Control-c で動作中のプロセスを停止
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 
 ----------
-# 2019-11-26
-# 2019-12-03
-**Unixデータツール | Unix Data Tools**
+# Unix Data Tools
+**Unixデータツール**
 
 Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join, sed`](http://crusade1096.web.fc2.com/unix.html)）を用いてテキスト処理を行なう。
 
@@ -520,6 +512,12 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
 
     bash
     cd ~/projects/bds-files/chapter-07-unix-data-tools/
+
+    pwd
+    ls
+    open .
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+    atom README.$(date +%F).md
 
 # [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
