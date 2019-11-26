@@ -32,8 +32,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2019-11-12 No. 7 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
-- 2019-11-26 No. 8 - 中間発表 [interim report](#interim-report)
-  - Unixデータツール | [Unix Data Tools](#unix-data-tools)
+- 2019-11-26 No. 8 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
+  - 中間発表 [interim report](#interim-report)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
 - 2019-12-10 No. 10 - シェルスクリプト | Shell Scripting
 - [2019-12-17](#2019-12-17) No. 11 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-11)
@@ -607,6 +607,16 @@ Table 7-1. lessの操作方法
 	cat example.txt
 	grep -v bioinfo example.txt
 	grep -v -w bioinfo example.txt
+
+# 2019-12-03
+
+    bash
+    cd ~/projects/bds-files/chapter-07-unix-data-tools/
+
+    pwd
+    ls
+    open .
+    atom README.2019-11-26.md
 
 パターンにマッチした行の前（`-B`）、後（`-A`）、前後（`-C`）を出力する:  
 
