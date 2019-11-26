@@ -33,7 +33,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - 中間発表 [interim report](#interim-report)
-  - No. 9 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
+  - Unixデータツール | [Unix Data Tools](#unix-data-tools)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
 - 2019-12-10 No. 10 - シェルスクリプト | Shell Scripting
 - [2019-12-17](#2019-12-17) No. 11 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-11)
@@ -624,6 +624,10 @@ Table 7-1. lessの操作方法
 `grep -i`で、大文字小文字を区別しない（ignore case）:  
 
 	grep -ci "olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+
+`grep -o`で、マッチした部分だけを抽出:  
+
+	grep -o "Olfr.*" Mus_musculus.GRCm38.75_chr1_genes.txt | head -n 3
 
 ### Decoding Plain-Text Data: hexdump
 テキストファイルの文字コード（通常は[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)）を`file`で確認する。
