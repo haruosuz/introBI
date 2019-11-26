@@ -784,9 +784,7 @@ Submit your presentation slides as a PDF file.
 ## assignment 9
 **課題No.9 「Unix Data Tools」**
 
-2019-11-26 No. 8 Unixデータツール | [Unix Data Tools](#unix-data-tools)
-
-Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019#unix-data-tools)
+2019-11-26 No. 8 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019#unix-data-tools)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
