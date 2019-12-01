@@ -824,10 +824,14 @@ grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | wc -l
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
+```
+
+[FASTA headers](http://www.uniprot.org/help/fasta-headers) 
+```
+>db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
 
 >sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
 ```
-[FASTA headers](http://www.uniprot.org/help/fasta-headers) 
 
 UniProtKB/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース（version: Release 2019_08）に560823件のデータが登録されていた。
 このうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
