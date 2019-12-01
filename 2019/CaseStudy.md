@@ -809,7 +809,7 @@ Submit your presentation slides as a PDF file.
 **課題No.10 「Unix Data Tools (2)」**
 
 2019-12-03 No. 9 - Unixデータツール | [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019/README.md#unix-data-tools)
-を用いた解析結果をプロジェクト・ノート`README.md`に記録し提出する。
+を用いた解析結果を記録したプロジェクト・ノート`README.md`を提出する。
 
 Using Unix tools like `head, tail, wc, ls, grep, cut, sort, uniq` to summarize data:
 ```
@@ -826,10 +826,8 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 
 >sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
-
->db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
 ```
-http://www.uniprot.org/help/fasta-headers
+[FASTA headers](http://www.uniprot.org/help/fasta-headers) 
 
 UniProtKB/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース（version: Release 2019_08）に560823件のデータが登録されていた。
 このうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
