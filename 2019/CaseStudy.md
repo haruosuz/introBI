@@ -784,52 +784,60 @@ Submit your presentation slides as a PDF file.
 ## assignment 9
 **課題No.9 「Unix Data Tools」**
 
-2019-11-26 No. 8 Unixデータツール [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019#unix-data-tools)
+2019-11-26 No. 8 - Unixデータツール | [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019/README.md#unix-data-tools)
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
 
 ----------
 ## assignment 10
 
+**課題No.10 「Unix Data Tools (2)」**
 
-**課題No.9 「Unix Data Tools (2)」**
+2019-12-03 No. 9 - Unixデータツール | [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019/README.md#unix-data-tools)
+を用いた解析結果をプロジェクト・ノート`README.md`に記録し提出する。
 
-2018-10-30 第06回 Unixデータツール [Unix Data Tools (2)](https://github.com/haruosuz/introBI/tree/master/2018#2018-10-30)
-の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
+Using Unix tools like `head, tail, wc, ls, grep, cut, sort, uniq` to summarize data:
+```
+bash
+cd ~/projects/data/uniprot/uniprot_sprot/
+pwd
+ls -lh
+grep "^>" uniprot_sprot.fasta | head -n 3
+grep "^>" uniprot_sprot.fasta | tail -n 3
+grep "^>" uniprot_sprot.fasta | wc -l
+grep "^>" uniprot_sprot.fasta | grep -ic "plasmid"
+grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
+grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
+
+$grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid" | grep "Zea mays"
+>sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
+```
+
+Swiss-Protに登録されている560823件のタンパク質配列データのうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
+ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドに加え、[トウモロコシ（OS = Zea mays）のミトコンドリアの2.3 KB線状プラスミドにおける33.9 kDaの未同定タンパク質](https://www.uniprot.org/uniprot/P33544)が含まれていた。
+
+- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+
 
 **課題No.9 「Shell Scripting」**
 
 2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
 を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-
-
-
-**課題No.9 「interim report」**
-
-2018-11-27 第08回 中間発表 interim report
-のスライドをPDFファイルで提出する。
-Submit your PDF presentation slides for your oral presentation.
-
-中間発表のスライド（my_interim_report.pdf）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-
 
 ----------
 ## assignment 11
