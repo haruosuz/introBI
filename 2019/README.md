@@ -616,7 +616,6 @@ Table 7-1. lessの操作方法
     pwd
     ls
     open .
-    atom README.2019-11-26.md
 
 パターンにマッチした行の前（`-B`）、後（`-A`）、前後（`-C`）を出力する:  
 
@@ -633,11 +632,7 @@ Table 7-1. lessの操作方法
 
 `grep -i`で、大文字小文字を区別しない（ignore case）:  
 
-	grep -ci "olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
-
-`grep -o`で、マッチした部分だけを抽出:  
-
-	grep -o "Olfr.*" Mus_musculus.GRCm38.75_chr1_genes.txt | head -n 3
+    grep -ci "olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
 
 ### Decoding Plain-Text Data: hexdump
 テキストファイルの文字コード（通常は[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)）を`file`で確認する。
