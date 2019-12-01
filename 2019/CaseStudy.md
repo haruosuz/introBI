@@ -23,10 +23,10 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「Git for Scientists (2)」
 - [assignment 8](#assignment-8) 課題No.8 「interim report」
 - [assignment 9](#assignment-9) 課題No.9 「Unix Data Tools」
-- [assignment 10](#assignment-10) 課題No.10 「Shell Scripting」
-- [assignment 11](#assignment-11) 課題No.11 「Bioinformatics Project 1」
-- [assignment 12](#assignment-12) 課題No.12 「Bioinformatics Project 2」
-- [assignment 13](#assignment-13) 課題No.13 「Bioinformatics Project 3」
+- [assignment 10](#assignment-10) 課題No.10 「Unix Data Tools (2)」
+- [assignment 10](#assignment-11) 課題No.11 「Shell Scripting」
+- [assignment 12](#assignment-12) 課題No.12
+- [assignment 13](#assignment-13) 課題No.13
 - [assignment 14](#assignment-14) 課題No.14 「final report」
 - [2018-11-27](#2018-11-27) GFF/GTF
 - [unix](#unix)
@@ -804,18 +804,22 @@ ls -lh
 grep "^>" uniprot_sprot.fasta | head -n 3
 grep "^>" uniprot_sprot.fasta | tail -n 3
 grep "^>" uniprot_sprot.fasta | wc -l
-grep "^>" uniprot_sprot.fasta | grep -ic "plasmid"
 grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
+grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | wc -l
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 
 >sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
 ```
 
-Swiss-Protに登録されている560823件のタンパク質配列データのうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
-ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドに加え、
-[トウモロコシ（OS = Zea mays）に由来する ミトコンドリアの線状2.3 KBプラスミドにおける未同定33.9 kDaタンパク質（Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid）](https://www.uniprot.org/uniprot/P33544)が含まれていた。
+UniProtKB/Swiss-Protタンパク質配列データベース（version: Release 2019_08 of 18-Sep-2019）に560823件のデータの登録されていた。
+このうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
+ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドが含まれていた。
+また、「トウモロコシ（OS = Zea mays）に由来するミトコンドリアの線状2.3 KBプラスミドにおける未同定33.9 kDaタンパク質（Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid）が含まれていた。識別子は[P33544](https://www.uniprot.org/uniprot/P33544)。論文(Publications)は1989年に出版された["Molecular analysis of the linear 2.3 kb plasmid of maize mitochondria: apparent capture of tRNA genes."](https://www.uniprot.org/uniprot/P33544/publications)
 
+References:
+- [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)
+- [FASTA headers](http://www.uniprot.org/help/fasta-headers)  
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
 ----------
