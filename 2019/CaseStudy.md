@@ -833,7 +833,7 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 
 タンパク質配列データベース UniProtKB/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot) (version: Release 2019_08) に560823件のデータが登録されていた。
 このうち、"plasmid" にマッチするデータは104件であった。
-ここには、細菌（例えば、大腸菌 Escherichia coli、クラミジア Chlamydia trachomatis、黄色ブドウ球菌 Staphylococcus aureus）と真核生物（例えば、酵母 Kluyveromyces lactis、トウモロコシ Zea mays、[タマホコリカビ属 Dictyostelium](https://ja.wikipedia.org/wiki/タマホコリカビ類)）に由来する[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)が含まれていた。
+ここには、細菌（例えば、大腸菌 Escherichia coli、クラミジア Chlamydia trachomatis、黄色ブドウ球菌 Staphylococcus aureus）と真核生物（例えば、タマホコリカビ属 Dictyostelium、酵母 Kluyveromyces lactis、トウモロコシ Zea mays）に由来する[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)が含まれていた。
 
 ----------
 ## unix
