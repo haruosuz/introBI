@@ -824,12 +824,6 @@ grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | wc -l
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
-grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Dictyostelium"
-grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Kluyveromyces lactis"
-
-
-酵母 
-
 ```
 
 [FASTA headers](http://www.uniprot.org/help/fasta-headers) 
