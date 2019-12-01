@@ -806,14 +806,15 @@ grep "^>" uniprot_sprot.fasta | tail -n 3
 grep "^>" uniprot_sprot.fasta | wc -l
 grep "^>" uniprot_sprot.fasta | grep -ic "plasmid"
 grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
-grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
+grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
+grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 
-$grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid" | grep "Zea mays"
 >sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
 ```
 
 Swiss-Protに登録されている560823件のタンパク質配列データのうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
-ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドに加え、[トウモロコシ（OS = Zea mays）のミトコンドリアの2.3 KB線状プラスミドにおける33.9 kDaの未同定タンパク質](https://www.uniprot.org/uniprot/P33544)が含まれていた。
+ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドに加え、
+[トウモロコシ（OS = Zea mays）に由来する ミトコンドリアの線状2.3 KBプラスミドにおける未同定33.9 kDaタンパク質（Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid）](https://www.uniprot.org/uniprot/P33544)が含まれていた。
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
