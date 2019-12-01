@@ -824,21 +824,22 @@ grep "^>" uniprot_sprot.fasta | grep -i --color "plasmid"
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | wc -l
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | cut -d"=" -f2 | cut -d" " -f1,2 | sort | uniq -c
 grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
+grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Dictyostelium"
+grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Kluyveromyces lactis"
+
+
+酵母 
+
 ```
 
 [FASTA headers](http://www.uniprot.org/help/fasta-headers) 
 ```
 >db|UniqueIdentifier|EntryName ProteinName OS=OrganismName OX=OrganismIdentifier [GN=GeneName ]PE=ProteinExistence SV=SequenceVersion
-
->sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
 ```
 
 UniProtKB/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース（version: Release 2019_08）に560823件のデータが登録されていた。
 このうち、[プラスミド](https://ja.wikipedia.org/wiki/プラスミド) "plasmid" にマッチするデータは104件であった。
-ここには、様々な細菌（例えば、大腸菌 "Escherichia coli"、クラミジア "Chlamydia trachomatis"、黄色ブドウ球菌 "Staphylococcus aureus"）に由来するプラスミドが含まれていた。
-また、「トウモロコシ (OS=Zea mays) に由来する ミトコンドリアの線状2.3 KBプラスミドにおける未同定33.9 kDaタンパク質 (Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid) が含まれていた。この配列データの識別子 (UniqueIdentifier) は、[P33544](https://www.uniprot.org/uniprot/P33544)。
-
-- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+ここには、様々な細菌（例えば、大腸菌 Escherichia coli、クラミジア Chlamydia trachomatis、黄色ブドウ球菌 Staphylococcus aureus）、および真核生物（例えば、酵母 Kluyveromyces lactis、トウモロコシ Zea mays、[タマホコリカビ属 Dictyostelium](https://ja.wikipedia.org/wiki/タマホコリカビ類)）に由来するプラスミドが含まれていた。
 
 ----------
 ## unix
