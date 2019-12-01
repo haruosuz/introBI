@@ -589,7 +589,7 @@ Table 7-1. lessの操作方法
 	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1-8 | column -t | head -n3
 
 ### The All-Powerful Grep
-1番染色体の全タンパク質の[Ensembl](http://www.geocities.jp/ancientfishtree/Ensembl_JI.html)遺伝子識別子と遺伝子名が含まれている
+1番染色体の全タンパク質のEnsembl遺伝子識別子と遺伝子名が含まれている
 *Mus_musculus.GRCm38.75_chr1_genes.txt*ファイルで"Olfr"を含む遺伝子群を`grep`で見つける:  
 
 	grep "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
