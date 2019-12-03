@@ -24,7 +24,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 8](#assignment-8) 課題No.8 「interim report」
 - [assignment 9](#assignment-9) 課題No.9 「Unix Data Tools」
 - [assignment 10](#assignment-10) 課題No.10 「Unix Data Tools (2)」
-- [assignment 10](#assignment-11) 課題No.11 「Shell Scripting」
+- [assignment 11](#assignment-11) 課題No.11 「Shell Scripting」
 - [assignment 12](#assignment-12) 課題No.12
 - [assignment 13](#assignment-13) 課題No.13
 - [assignment 14](#assignment-14) 課題No.14 「final report」
@@ -350,86 +350,6 @@ grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
 "Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名("SHUGOSHIN 2", "Shugoshin 2", "Shugoshin-2")と遺伝子名("GN=SGO2", "GN=Sgo2", "GN=sgo2")の表記が統一されていない。
 
 ----------
-
-
-
-
-----------
-## Install
-
-[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
-をインストールする:
-```
-# 1. Install conda
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-sh Miniconda3-latest-MacOSX-x86_64.sh
-
-# 2. Set up channels
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-
-# 3. Install packages
-conda install seqkit
-conda install mafft
-conda install fasttree
-```
-
-### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-多重配列アライメントと系統樹
-
-"16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
-```
-# seqkit grep -h
-cat *_rna_from_genomic.fna > all.fna
-myfile=all.fna
-pattern="16S ribosomal RNA"
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$1 $2\n/g,s/ /~/g' > myseq.fasta
-grep "^>" myseq.fasta
-```
-
-[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-[MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://doi.org/10.7875/togotv.2018.093)
-
-[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
-```
-# mafft --help
-input=myseq.fasta
-output="${input}".aln
-mafft "${input}" > "${output}"
-```
-
-[FastTree](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#fasttree)で系統樹推定:  
-```
-alignment_file=myseq.fasta.aln
-tree_file="${alignment_file}".newick
-FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
-```
-
-
-http://www.microbesonline.org/fasttree/#Usage
-
-
-To infer a tree for a protein alignment with the JTT+CAT model, use
-
-FastTree < alignment_file > tree_file 
-or
-FastTree alignment.file > tree_file 
-
-
-
-
-[Newick](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#newick)形式のファイル
-*myseq.fasta.aln.newick* or *RAxML_bestTree.myseq.fasta.aln.newick*
-を用いて、
-[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
-
-
-
-
-
-
-
 
 
 
@@ -788,30 +708,14 @@ Submit your presentation slides as a PDF file.
 の実行コマンドと出力結果の一部を記録したプロジェクト・ノート`README.md`を提出する。
 
 ----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
-----------
 ## assignment 10
 
 **課題No.10 「Unix Data Tools (2)」**
 
 2019-12-03 No. 9 - Unixデータツール | [Unix Data Tools](https://github.com/haruosuz/introBI/tree/master/2019/README.md#unix-data-tools)
-を用いた解析結果を記録したプロジェクト・ノート`README.md`を提出する。
+を用いて、個人プロジェクトをすすめる。データ解析結果を記録したプロジェクト・ノート`README.md`を提出する。
 
-Using Unix tools like `head, tail, wc, ls, grep, cut, sort, uniq` to summarize data:
+Using Unix tools like `head, tail, wc, ls, grep, cut, sort, uniq` to analyze bioinformatics data:
 ```
 bash
 cd ~/projects/data/uniprot/uniprot_sprot/
@@ -865,6 +769,24 @@ option + ←	１単語分左に移動
 ![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
 
 
+----------
+
+
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
 ----------
 
 
@@ -1082,6 +1004,92 @@ Chapter 7. Unix Data Tools
 
 http://apprize.info/data/bioinformatics/12.html
 Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
+
+
+----------
+
+
+
+
+
+----------
+## Install
+
+[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
+をインストールする:
+```
+# 1. Install conda
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
+
+# 2. Set up channels
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+# 3. Install packages
+conda install seqkit
+conda install mafft
+conda install fasttree
+```
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+"16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
+```
+# seqkit grep -h
+cat *_rna_from_genomic.fna > all.fna
+myfile=all.fna
+pattern="16S ribosomal RNA"
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$1 $2\n/g,s/ /~/g' > myseq.fasta
+grep "^>" myseq.fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+[MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://doi.org/10.7875/togotv.2018.093)
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=myseq.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[FastTree](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#fasttree)で系統樹推定:  
+```
+alignment_file=myseq.fasta.aln
+tree_file="${alignment_file}".newick
+FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
+```
+
+
+http://www.microbesonline.org/fasttree/#Usage
+
+
+To infer a tree for a protein alignment with the JTT+CAT model, use
+
+FastTree < alignment_file > tree_file 
+or
+FastTree alignment.file > tree_file 
+
+
+
+
+[Newick](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#newick)形式のファイル
+*myseq.fasta.aln.newick* or *RAxML_bestTree.myseq.fasta.aln.newick*
+を用いて、
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+
+
+
+
+
+
+
+
 
 ----------
 
