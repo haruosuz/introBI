@@ -740,6 +740,13 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 ここには、細菌（例えば、大腸菌 Escherichia coli、クラミジア Chlamydia trachomatis、黄色ブドウ球菌 Staphylococcus aureus）と真核生物（例えば、タマホコリカビ属 Dictyostelium、酵母 Kluyveromyces lactis、トウモロコシ Zea mays）に由来する[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)が含まれていた。
 
 ----------
+## assignment 11
+**課題No.11 「Shell Scripting」**
+
+2019-12-10 No. 10 - シェルスクリプト | [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2019/README.md#shell-scripting)
+を参考にして作成したスクリプト（`run.sh`）を提出する。
+
+----------
 ## unix
 
 - [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
@@ -790,23 +797,13 @@ option + ←	１単語分左に移動
 ----------
 
 
-
-----------
-## assignment 11
-**課題No.11 「Shell Scripting」**
-
-
-
-2018-12-04 第09回 シェルスクリプト [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2018#2018-12-04)
-を参考にして作成したスクリプト（`run.sh`）を含むプロジェクト・ディレクトリの圧縮ファイル（`my_project.zip`）を提出する。
-
-
-
-バイオインフォマティクス・プロジェクトの実行環境、年月日（`2018-12-22`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
-
 ----------
 ## assignment 12
 **課題No.12 「Bioinformatics Project 2」**
+
+バイオインフォマティクス・プロジェクトの実行環境、年月日（`2018-12-22`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
+
+
 
 最低2回（別の年月日に）解析を実行し、結果の再現性を確認する。プロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
 
