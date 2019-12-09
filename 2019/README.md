@@ -36,10 +36,9 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - 中間発表 [interim report](#interim-report)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | Unix Data Tools
 - 2019-12-10 No. 10 - シェルスクリプト | [Shell Scripting](#shell-scripting)
-- 2019-12-17 No. 11 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-11)
-- 2019-12-24 No. 12 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-12)
-  - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
-- 2020-01-07 No. 13 - [TBA](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
+- 2019-12-17 No. 11 - TBA
+- 2019-12-24 No. 12 - TBA
+- 2020-01-07 No. 13 - TBA
 - 2020-01-14 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
@@ -887,9 +886,13 @@ Bashスクリプトを実行する方法:
     find . -name "*.fastq"
     find . -name "*.fastq" | xargs ls
 
-`ls *.log`で、"Argument list too long"というエラーが出たら: `find . -name "*.log" | xargs ls`
+`ls *.txt`で、"Argument list too long"というエラーが出たら: `find . -name "*.txt" | xargs ls`
+
+    printf "zmays-snps/analysis/sample-%04d.txt " {1..9999} | xargs touch
+    ls zmays-snps/analysis/*.txt
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
+
 ### xargs and Parallelization
 ## Make and Makefiles: Another Option for Pipelines
 [Make](https://ja.wikipedia.org/wiki/Make)
