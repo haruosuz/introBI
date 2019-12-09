@@ -7,6 +7,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
+- [unix](#unix)
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「UNIXコマンド入門」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
@@ -29,8 +30,38 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 13](#assignment-13) 課題No.13
 - [assignment 14](#assignment-14) 課題No.14 「final report」
 - [2018-11-27](#2018-11-27) GFF/GTF
-- [unix](#unix)
 - [bds](#bds)
+
+----------
+## unix
+
+- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
+- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
+
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
+[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
+
+単語単位でカーソルを移動します。
+「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
+
+[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
+```
+Ctrl + a	行先頭に移動
+Ctrl + e	行末尾に移動
+option + →	１単語分右に移動
+option + ←	１単語分左に移動
+```
+
+[「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
+
+![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
+
+----------
 
 ----------
 ## assignment 0
@@ -745,39 +776,6 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 
 2019-12-10 No. 10 - シェルスクリプト | [Shell Scripting](https://github.com/haruosuz/introBI/tree/master/2019/README.md#shell-scripting)
 を参考にして作成したスクリプト（`run.sh`）を提出する。
-
-----------
-## unix
-
-- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
-- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
-- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
-
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
-
-    # change shell to bash
-    bash
-
-[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
-
-単語単位でカーソルを移動します。
-「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
-
-[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
-```
-Ctrl + a	行先頭に移動
-Ctrl + e	行末尾に移動
-option + →	１単語分右に移動
-option + ←	１単語分左に移動
-```
-
-[「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
-
-![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
-
-
-----------
-
 
 
 ----------
