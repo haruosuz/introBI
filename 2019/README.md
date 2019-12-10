@@ -747,6 +747,9 @@ FASTQ/FASTAエントリ数をカウント:
     curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
     atom README.$(date +%F).md
 
+    #cp template.sh script.sh
+    cp template.sh args.sh
+
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
 ## Basic Bash Scripting
