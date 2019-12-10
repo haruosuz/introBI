@@ -511,12 +511,6 @@ Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join,
     bash
     cd ~/projects/bds-files/chapter-07-unix-data-tools/
 
-    pwd
-    ls
-    open .
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
-    atom README.$(date +%F).md
-
 # [Chapter 7. Unix Data Tools](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-7-unix-data-tools)
 ## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
 Unixコマンドをパイプで繋ぐことにより、データを処理する1行プログラム（ワンライナー）を構築する。
@@ -608,12 +602,6 @@ Table 7-1. lessの操作方法
 	grep -v -w bioinfo example.txt
 
 # 2019-12-03
-
-    bash
-    cd ~/projects/bds-files/chapter-07-unix-data-tools/
-
-    pwd
-    ls
 
 パターンにマッチした行の前（`-B`）、後（`-A`）、前後（`-C`）を出力する:  
 
@@ -753,6 +741,12 @@ FASTQ/FASTAエントリ数をカウント:
     bash
     cd ~/projects/bds-files/chapter-12-pipelines/
 
+    pwd
+    ls
+    open .
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+    atom README.$(date +%F).md
+
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
 ## Basic Bash Scripting
@@ -888,7 +882,7 @@ Bashスクリプトを実行する方法:
 
 `ls *.txt`で、"Argument list too long"というエラーが出たら: `find . -name "*.txt" | xargs ls`
 
-    printf "zmays-snps/analysis/sample-%04d.txt " {1..9999} | xargs touch
+    printf "zmays-snps/analysis/sample-%04d.txt " {1..6000} | xargs touch
     ls zmays-snps/analysis/*.txt
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
