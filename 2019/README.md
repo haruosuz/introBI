@@ -745,6 +745,9 @@ FASTQ/FASTAエントリ数をカウント:
     pwd
     ls
 
+    cp template.sh script.sh
+    atom script.sh
+
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
 ## Basic Bash Scripting
@@ -753,16 +756,11 @@ FASTQ/FASTAエントリ数をカウント:
 
 ### Writing and Running Robust Bash Scripts
 
-テキストエディタAtomでスクリプトを作成する。
-
-    cp template.sh script.sh
-    atom script.sh
-
 #### A robust Bash header
-頑強なBashスクリプトのヘッダ（[*template.sh*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-12-pipelines/template.sh) ）:  
+ロバストなBashスクリプトのヘッダ（[*template.sh*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-12-pipelines/template.sh) ）:  
 
-	#!/bin/bash
-	set -euo pipefail
+    #!/bin/bash
+    set -euo pipefail
 
 #### Running Bash scripts
 Bashスクリプトを実行する方法:  
