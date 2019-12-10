@@ -741,23 +741,22 @@ FASTQ/FASTAエントリ数をカウント:
     bash
     cd ~/projects/bds-files/chapter-12-pipelines/
 
+    open .
     pwd
     ls
-    open .
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
-    atom README.$(date +%F).md
 
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
 ## Basic Bash Scripting
 
-- [シェルスクリプト入門 (全18回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_shellscript)
+- [シェルスクリプト入門 (全17回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_shellscript_v2)
 
 ### Writing and Running Robust Bash Scripts
 
-テキストエディタ[Atom](https://atom.io)でスクリプトを作成する。
+テキストエディタAtomでスクリプトを作成する。
 
-	atom script.sh
+    cp template.sh script.sh
+    atom script.sh
 
 #### A robust Bash header
 頑強なBashスクリプトのヘッダ（[*template.sh*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-12-pipelines/template.sh) ）:  
@@ -791,9 +790,6 @@ Bashスクリプトを実行する方法:
 
 #### Command-line arguments
 
-    cp template.sh args.sh
-    atom args.sh
-
 コマンドライン引数は、`$1, $2, $3, ...`に割り当てられる。変数`$0`はスクリプト名を格納する。  
 
 	echo "script name: $0"
@@ -803,7 +799,7 @@ Bashスクリプトを実行する方法:
 
 このファイルを実行すると、割り当てられた引数（`$0, $1, $2, $3`）を出力する:  
 
-	bash args.sh arg1 arg2 arg3
+    bash script.sh arg1 arg2 arg3
 
 変数`$#`にはコマンドライン引数の個数を割り当てる（スクリプト名`$0`は引数としてカウントしない）。
 
@@ -826,17 +822,16 @@ Bashスクリプトを実行する方法:
 	test "ATG" = "ATG" ; echo "$?"
 	test "ATG" = "atg" ; echo "$?"
 
-    touch some_file.txt
-    test -f some_file.txt; echo "$?"
+    test -f files.txt; echo "$?"
 
 指定したファイルが存在し、通常のファイルであれば、処理を実行する:  
 
-    if test -f some_file.txt
+    if test -f files.txt
     then
-      ls -l some_file.txt
+      ls -l files.txt
     fi
 
-`if test -f some_file.txt`を`if [ -f some_file.txt ] `で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
+`if test -f files.txt`を`if [ -f files.txt ] `で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
 
 ### Processing Files with Bash Using for Loops and Globbing
 [for 文](http://shellscript.sunone.me/for.html)と[グロブ](http://x68000.q-e-d.net/~68user/unix/pickup?%A5%D5%A5%A1%A5%A4%A5%EB%A5%B0%A5%ED%A5%D6)
@@ -884,17 +879,14 @@ Bashスクリプトを実行する方法:
     find . -name "*.fastq"
     find . -name "*.fastq" | xargs ls
 
-`ls *.txt`で、"Argument list too long"というエラーが出たら: `find . -name "*.txt" | xargs ls`
-
-    printf "zmays-snps/analysis/sample-%04d.txt " {1..6000} | xargs touch
-    ls zmays-snps/analysis/*.txt
+`ls *.log`で、"Argument list too long"というエラーが出たら: `find . -name "*.log" | xargs ls`
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
-
 ### xargs and Parallelization
 ## Make and Makefiles: Another Option for Pipelines
 [Make](https://ja.wikipedia.org/wiki/Make)
 
 ----------
+
 
 
