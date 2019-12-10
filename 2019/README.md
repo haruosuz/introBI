@@ -747,9 +747,6 @@ FASTQ/FASTAエントリ数をカウント:
     curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
     atom README.$(date +%F).md
 
-    #cp template.sh script.sh
-    cp template.sh args.sh
-
 # [Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks](http://apprize.info/data/bioinformatics/12.html)
 
 ## Basic Bash Scripting
@@ -793,6 +790,10 @@ Bashスクリプトを実行する方法:
     echo "${sample}_snp"
 
 #### Command-line arguments
+
+    cp template.sh args.sh
+    atom args.sh
+
 コマンドライン引数は、`$1, $2, $3, ...`に割り当てられる。変数`$0`はスクリプト名を格納する。  
 
 	echo "script name: $0"
