@@ -40,8 +40,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [projects_2015](https://github.com/haruosuz/introBI/blob/master/2018/README.md#projects_2015)
   - [project directory examples](https://github.com/haruosuz/introBI/blob/master/2018/README.md#project-directory-examples)
   - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
-- 2019-12-24 No. 12 - [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
-- 2020-01-07 No. 13 - [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
+- 2019-12-24 No. 12 - [Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
+- 2020-01-07 No. 13 - [Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
 - 2020-01-14 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
