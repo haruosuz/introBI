@@ -36,9 +36,12 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - 中間発表 [interim report](#interim-report)
 - [2019-12-03](#2019-12-03) No. 9 - Unixデータツール | Unix Data Tools
 - 2019-12-10 No. 10 - シェルスクリプト | [Shell Scripting](#shell-scripting)
-- 2019-12-17 No. 11 - TBA
-- 2019-12-24 No. 12 - TBA
-- 2020-01-07 No. 13 - TBA
+- 2019-12-17 No. 11 - [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-12)
+  - [projects_2015](https://github.com/haruosuz/introBI/blob/master/2018/README.md#projects_2015)
+  - [project directory examples](https://github.com/haruosuz/introBI/blob/master/2018/README.md#project-directory-examples)
+  - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
+- 2019-12-24 No. 12 - [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
+- 2020-01-07 No. 13 - [Bioinformatics Project 1](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
 - 2020-01-14 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
