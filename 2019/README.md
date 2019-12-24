@@ -40,9 +40,9 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [projects_2015](https://github.com/haruosuz/introBI/blob/master/2018/README.md#projects_2015)
   - [project directory examples](https://github.com/haruosuz/introBI/blob/master/2018/README.md#project-directory-examples)
 - 2019-12-24 No. 12 - [Reproducible Bioinformatics Project 2](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-13)
-  - [projects_2019](#projects_2019)
   - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
   - [assembly_reports](https://github.com/haruosuz/ncbi/tree/master/assembly_reports)
+  - [projects_2019](#projects_2019)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
 - 2020-01-07 No. 13 - [Reproducible Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
 - 2020-01-14 No. 14 - 最終回
