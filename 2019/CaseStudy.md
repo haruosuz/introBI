@@ -782,42 +782,7 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 ## assignment 12
 **課題No.12 「Reproducible Bioinformatics Project 1」**
 
-バイオインフォマティクス・プロジェクトの実行環境、年月日（`2018-12-22`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
-
-プロジェクト・ディレクトリ（`my_project/`）構造の例:  
-
-    my_project/README.md
-    my_project/scripts/run.sh
-    my_project/data/input.txt
-    my_project/analysis/output.txt
-
-ディレクトリやファイルの名前（`my_project/`, `input.txt`, `output.txt`）は適宜変更する。
-
-ファイルのサイズに注意する（10MBを上限とする）。
-`data/`内のデータ・ファイルは提出しなくてもよい。
-`data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
-
-    zip -r my_project.zip my_project/ -x my_project/data/*
-
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
-
-
+バイオインフォマティクス・プロジェクトの実行環境、年月日（`2019-12-17`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`）を含むプロジェクト・ディレクトリ最新版の圧縮ファイル（`my_project.zip`）を提出する。
 
 ----------
 ## assignment 13
@@ -828,6 +793,41 @@ grep "^>" uniprot_sprot.fasta | grep -i "plasmid" | grep "Zea mays"
 2つ以上（自分と他人）の環境で解析結果の再現性を確認する。
 他人の環境で再現できるように、ディレクトリの構造やスクリプトを修正する（例えば、絶対パスではなく、相対パスで指定する）。
 Markdownノート（`README.md`）に再現性テストを実行した環境、日付、結果（再現されなかった場合、不一致点やエラーメッセージ）を記録する。
+
+プロジェクト・ディレクトリ（`my_project/`）構造の例:  
+
+    my_project/README.md
+    my_project/scripts/run.sh
+    my_project/data/input.txt
+    my_project/analysis/output.txt
+    my_project/analysis/2019-12-17/output.txt
+    my_project/analysis/2019-12-24/output.txt
+
+ディレクトリやファイルの名前（`my_project/`, `input.txt`, `output.txt`）は適宜変更する。
+
+ファイルのサイズに注意する（10MBを上限とする）。
+`data/`内のデータ・ファイルは提出しなくてもよい。
+`data/`内のファイルを除外して圧縮する`zip`コマンドの例:  
+
+    zip -r my_project.zip my_project/ -x my_project/data/*
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+
+
 
 ----------
 ## assignment 14
