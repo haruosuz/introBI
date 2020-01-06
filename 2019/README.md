@@ -45,7 +45,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [projects_2019](#projects_2019)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
 - 2020-01-07 No. 13 - [Reproducible Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
-- 2020-01-14 No. 14 - 最終回
+- 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
 
@@ -95,9 +95,8 @@ for FILE in *.zip; do DIR=$(basename $FILE .zip); mkdir $DIR; unzip $FILE -d $DI
 
 Five minutes will be allocated for each presentation.
 
-発表時間：1人あたり最大5分
-スライド最低1枚を用いて、1人あたり最低1分（最大5分）でプロジェクトの内容を報告する。
-2つ以上（自分と他人）の実行環境で、最低3回（別の年月日に）解析を実行し、結果の再現性を報告する。
+スライドを用いて、1人あたり最大5分でプロジェクトの内容を報告する。
+2つ以上（自分と他人）の環境で再現性を確認した結果を報告する。
 
 ----------
 ## final report
