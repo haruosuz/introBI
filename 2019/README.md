@@ -45,6 +45,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [projects_2019](#projects_2019)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
 - 2020-01-07 No. 13 - [Reproducible Bioinformatics Project 3](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#assignment-14)
+  - https://github.com/haruosuz/introBI/tree/master/2019/my_project
+  - [projects_2019](#projects_2019)
 - 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
@@ -53,6 +55,16 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## projects_2019
 
 2019年度秋学期「バイオインフォマティクスのデータサイエンス」履修者のプロジェクト・ディレクトリを取得する:
+
+**2020-01-07**
+```
+bash
+wget https://github.com/haruosuz/introBI/raw/master/2019/projects_2020-01-06.zip
+unzip projects_2020-01-06.zip
+cd projects_2020-01-06/
+```
+
+**2019-12-24**
 ```
 bash
 wget https://github.com/haruosuz/introBI/raw/master/2019/projects_2019.tar.gz
@@ -97,6 +109,8 @@ Five minutes will be allocated for each presentation.
 
 スライドを用いて、1人あたり最大5分でプロジェクトの内容を報告する。
 2つ以上（自分と他人）の環境で再現性を確認した結果を報告する。
+
+<https://github.com/haruosuz/introBI/tree/master/2019/my_project>
 
 ----------
 ## final report
