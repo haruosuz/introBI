@@ -120,7 +120,7 @@ Questions regarding classes can be accessed by clicking on【授業調査】(Cla
 
 微生物は、様々な環境（ヒトの体、自然環境、人工環境など）で重要な役割を果たしている一方、様々な感染症の原因として人類の健康を脅かしている存在です。本研究会では、バイオインフォマティクスとゲノム解析により、環境微生物の多様性を理解し、その医学・農学・工学分野への有効活用を目指しています。
 
-私たちは、再現可能なバイオインフォマティクス、ゲノム微生物学、および都市のマイクロバイオーム（微生物群集とその遺伝子の総体）に関する研究を進めています。このまま何の対策もとらなければ、2050年には薬剤耐性菌による感染症は全世界で年間1000万人の死亡者を出すとも予測されています。プラスミドは、薬剤耐性遺伝子を持ち、細菌間で水平移動することが可能で、薬剤耐性の拡散に寄与しています。都市の人工環境における薬剤耐性遺伝子と可動遺伝因子（プラスミドやウイルスなど）を同定し追跡するために、世界中の大量輸送システムで微生物サンプルを収集してきました (Danko et al., 2019)。また、2020年東京オリンピック開催前後に微生物サンプルを収集します (http://metasub.org/projects/)。バイオインフォマティクス・ツールを組み合わせることにより、マイクロバイオームにおけるプラスミドと薬剤耐性遺伝子を同定し、プラスミドの宿主域を予測し、微生物のライフスタイルに関する洞察を得ます (Yano et al., 2018; Merino et al., 2019)。
+私たちは、再現可能なバイオインフォマティクス、ゲノム微生物学、および都市のマイクロバイオーム（微生物群集とその遺伝子の総体）に関する研究を進めています。このまま何の対策もとらなければ、2050年には薬剤耐性菌による感染症は全世界で年間1000万人の死亡者を出すとも予測されています。プラスミドは、薬剤耐性遺伝子を持ち、細菌間で水平移動することが可能で、薬剤耐性の拡散に寄与しています。都市の人工環境における薬剤耐性遺伝子と可動遺伝因子（プラスミドやウイルスなど）を同定し追跡するために、世界中の大量輸送システムで微生物サンプルを収集してきました (Danko et al., 2019)。また、2020年東京オリンピック開催前後に微生物サンプルを収集します (https://github.com/haruosuz/metasub/blob/master/README.md) 。バイオインフォマティクス・ツールを組み合わせることにより、マイクロバイオームにおけるプラスミドと薬剤耐性遺伝子を同定し、プラスミドの宿主域を予測し、微生物のライフスタイルに関する洞察を得ます (Yano et al., 2018; Merino et al., 2019)。
 ```
 ■履修条件：
 (1) 新規履修者は、学年にかかわらずシステム生物学入門（冨田研究会B1）を履修申告してください。
@@ -131,11 +131,22 @@ Questions regarding classes can be accessed by clicking on【授業調査】(Cla
 ＜＜新規履修希望者は面接を行います。＞＞
 申込締切日：2020年1月20日（月）
 面接日：2020年1月25日（土）18:10または１月27日（月）18:10
-宛先（mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp 冨田教授・秘書難波）に「研究会申込み」という件名でメールをください。面接場所と時間、用意すべきものなど詳細をメールでお送りします。面接希望日を明記してください。
 ```
+宛先（mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp 冨田教授・秘書難波）に「研究会申込み」という件名でメールをください。面接場所と時間、用意すべきものなど詳細をメールでお送りします。面接希望日を明記してください。
+
+References:
+- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
+- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
+- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
+- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日
 
 “Advanced Biosciences” seminars (Tomita, Naito, Kuroda, Kanai, Soga, Arakawa, Suzuki and Tsujimoto) are operated along with “Systems Biology Project” for graduate students. All members, including faculty members, graduate students, and undergraduate students are involved to research projects. All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” for first semester in order to join our “Advanced Biosciences” seminars.
 Please check our website for more details. 　http://bio.sfc.keio.ac.jp/
+
+While microorganisms have important roles in various environments (e.g. human body, natural and built environments), they can cause many infectious diseases, which are threats to public health. In this research group, we use bioinformatics and genomics to understand microbial diversity and its medicinal, agricultural and industrial applications.
+
+Our research focuses on reproducible bioinformatics, genome microbiology, and urban microbiomes. It has been estimated that, by 2050, 10 million people will die every year due to antimicrobial resistance (AMR) if no action is taken. Plasmids often carry multiple AMR genes and can be horizontally transferred between bacteria, contributing to the spread of AMR. To identify and track antimicrobial resistance (AMR) genes and mobile genetic elements (e.g. plasmids and viruses) in urban built environments, we have been collecting samples in mass-transit systems around the globe (Danko et al., 2019) and will collect samples before, during, and after the 2020 Summer Olympic Games (https://github.com/haruosuz/metasub/blob/master/README.md). We are using a combination of bioinformatics tools for identifying plasmids and AMR genes in microbiomes, predicting plasmid host range, and gaining insight into microbial lifestyles (Yano et al., 2018; Merino et al., 2019). 
+
 ```
 (1) All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” (Seminar B1) for first semester.
 (2) Details for course registration will be announced in seminar.
@@ -147,15 +158,6 @@ Date of interview: January 25 (Sat) or 27 (Mon), 2020.
 ```
 Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp). Title “Application for Dr. Tomita’s seminar.”
 Details will be announced later.
-
-Two camps will be held in 2020 Spring semester.
-1. Freshmen camp (April 11-12, 2020) at TTCK. Cost: 3,000yen + Transportation  2. Summer camp (July 18-19, 2020) Cost: 10,000yen + Transportation
-
-References:
-- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
-- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
-- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
-- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日
 
 ----------
 ## projects_2019
