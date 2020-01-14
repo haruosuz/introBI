@@ -53,7 +53,6 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - 授業調査 [Class Survey](#class-survey)
   - 先端生命科学 [Advanced Biosciences](#advanced-biosciences)
 
-
 ----------
 ## final presentation
 **最終発表**
@@ -134,12 +133,6 @@ Questions regarding classes can be accessed by clicking on【授業調査】(Cla
 ```
 宛先（mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp 冨田教授・秘書難波）に「研究会申込み」という件名でメールをください。面接場所と時間、用意すべきものなど詳細をメールでお送りします。面接希望日を明記してください。
 
-References:
-- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
-- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
-- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
-- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日
-
 “Advanced Biosciences” seminars (Tomita, Naito, Kuroda, Kanai, Soga, Arakawa, Suzuki and Tsujimoto) are operated along with “Systems Biology Project” for graduate students. All members, including faculty members, graduate students, and undergraduate students are involved to research projects. All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” for first semester in order to join our “Advanced Biosciences” seminars.
 Please check our website for more details. 　http://bio.sfc.keio.ac.jp/
 
@@ -158,6 +151,12 @@ Date of interview: January 25 (Sat) or 27 (Mon), 2020.
 ```
 Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp). Title “Application for Dr. Tomita’s seminar.”
 Details will be announced later.
+
+**References:**
+- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
+- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
+- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
+- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日
 
 ----------
 ## projects_2019
