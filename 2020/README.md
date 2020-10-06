@@ -24,52 +24,20 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
-- 2020-11-17 No. 7 - シェルスクリプト | [Shell Scripting]
+- 2020-11-17 No. 7 - シェルスクリプト | [Shell Scripting](#shell-scripting)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
 - 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 | Case Study: Reproducibly Analyzing Data
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-- 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
+- 2020-12-29 レポート提出期限 Deadline for final report
   - 授業調査 Class Survey
   - 先端生命科学 Advanced Biosciences
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
-
-----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-
-教育体験
-Teaching Experience
-
-- 講師: 
-- 演題: Git for Scientists
-- 資料 TBA
-
-----------
-## final presentation
-**最終発表**
-
-Five minutes will be allocated for each presentation.
-
-スライドを用いて、1人あたり最大5分でプロジェクトの内容を報告する。
-2つ以上（自分と他人）の環境で再現性を確認した結果を報告する。
-
-<https://github.com/haruosuz/introBI/tree/master/2019/my_project>
-
-----------
-## final report
-**レポート**
-
-Submit your final report in PDF format.
-
-- 提出先：SFC-SFSの課題にレポートのファイルを含むプロジェクト・ディレクトリを登録する。  
-- レポート：A4で5枚以内。本文以降に付録(appendix)を付けることができる。ファイル容量に注意する。
-- 文章構成：[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)形式。序論、方法、結果と考察、参考文献を含める。
 
 ----------
 ## 成績
@@ -82,6 +50,17 @@ Submit your final report in PDF format.
 - 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md) に必要な情報を含むプロジェクト・ディレクトリを作成した。
 - 再現性を自分の実行環境で確認した。
 - 再現性を他人の実行環境で確認した。
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+教育体験
+Teaching Experience
+
+- 講師: 齋藤 元文
+- 演題: TBA
+- 資料: TBA
 
 ----------
 ## Introduction
