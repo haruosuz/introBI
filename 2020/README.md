@@ -1,4 +1,4 @@
-# introBI
+# 2020
 
 DATA SCIENCE FOR BIOINFORMATICS [DS2]
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_45183&ks=B3217&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=en)  
