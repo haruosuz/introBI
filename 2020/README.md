@@ -15,11 +15,6 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
-Office closed / Winter break（12/26～1/5）
-- [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
-事務室閉室・冬季休校（12/26～1/5）
-
 - 2020-10-06 No. 1 - 休講 | no class 
 - 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
@@ -37,6 +32,10 @@ Office closed / Winter break（12/26～1/5）
 - 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
   - 授業調査 Class Survey
   - 先端生命科学 Advanced Biosciences
+- [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
+Office closed / Winter break（12/26～1/5）
+- [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
+事務室閉室・冬季休校（12/26～1/5）
 
 ----------
 ## Guest speaker
