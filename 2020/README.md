@@ -1,4 +1,5 @@
 # introBI
+
 DATA SCIENCE FOR BIOINFORMATICS [DS2]
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_45183&ks=B3217&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=en)  
 バイオインフォマティクスのデータサイエンス[DS2]
@@ -6,37 +7,47 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 ## References
 **参考文献**
-- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+[Bioinformatics Data Skills](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
 ![](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2020-10-06 No. 1 - イントロダクション | [Introduction](#introduction)
-- 2020-10-13 No. 2 - バイオインフォマティクス・プロジェクトの準備と管理 | Setting Up and Managing a Bioinformatics Project
-- 2020-10-20 No. 3 - Unixシェル再入門 | [Remedial Unix Shell](#unix-shell)
-- 2020-10-27 No. 4 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
-  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#uniprot_sprot)
-- 2020-11-03 No. 5 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
-  - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - シェルスクリプト、パイプライン、並列処理 | [Shell Scripting, Writing Pipelines, and Parallelizing Tasks]
-- 2020-11-17 No. 7 - 中間発表 [interim report](#interim-report)
-- 2019-11-24 No. 8 - Git for Scientists (1) [Guest Speaker](#guest-speaker)
-- 2019-12-01 No. 9 - Git for Scientists (2) [Guest Speaker](#guest-speaker)
-- 2019-12-08 No. 10 - Git for Scientists (3) [Guest Speaker](#guest-speaker)
-教育体験
-Teaching Experience
-- 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 | Case Study: Reproducibly Analyzing Data
-- 2020-12-22 No. 12 - 最終回 final class
-  - 最終発表 [final presentation](#final-presentation)
-- 2020-01-29 レポート提出期限 Deadline for [final report](#final-report)
-  - 授業調査 Class Survey
-  - 先端生命科学 Advanced Biosciences
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
+
+- 2020-10-06 No. 1 - 休講 | no class 
+- 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
+- 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
+- 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
+- 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
+  - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
+- 2020-11-10 No. 6 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
+- 2020-11-17 No. 7 - シェルスクリプト | [Shell Scripting]
+- 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
+- 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
+- 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
+- 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 | Case Study: Reproducibly Analyzing Data
+- 2020-12-22 No. 12 - 最終回 final class
+  - 最終発表 [final presentation](#final-presentation)
+- 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
+  - 授業調査 Class Survey
+  - 先端生命科学 Advanced Biosciences
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+教育体験
+Teaching Experience
+
+- 講師: 
+- 演題: Git for Scientists
+- 資料 TBA
 
 ----------
 ## final presentation
@@ -72,82 +83,105 @@ Submit your final report in PDF format.
 - 再現性を他人の実行環境で確認した。
 
 ----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-
-- 講師: 山本 楠 氏 Daniel Evans-Yamamoto
-- 講師: 石井学 氏 Manabu Ishii [RIKEN](https://bit.riken.jp/member/)
-- 演題: Git for Scientists
-- 資料 TBA
-  - [課題No.6 「Git for Scientists (1)」](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#assignment-6)
-
-----------
-## interim report
-**中間発表**
-
-5 minutes will be allocated for each presentation, including presentation and discussion.
-
-スライド1枚を用いてプロジェクト（解析データ）について説明する。
-発表時間：1人あたり最大5分（質疑応答を含む）
-
-<https://github.com/haruosuz/introBI/blob/master/2019/my_project/my_interim_report/README.md>
-
-----------
 ## Introduction
 **イントロダクション**
 
-["**Bioinformatics Data Skills** By Vince Buffalo (O'Reilly)"](https://github.com/haruosuz/books/blob/master/bds/README.md)
-
 [Chapter 1. How to Learn Bioinformatics](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-1-how-to-learn-bioinformatics)
 
-### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
-
-#### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
-**[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
-
-- TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
-
-#### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
-**人工環境の微生物群集**
-
-- TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-
-![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
+[Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
 ## Step
 準備
-[λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
-Apple iMac 27inch
+
+### Terminal
+[ターミナル](https://techacademy.jp/magazine/5155)を起動する
+
+![](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
+### Homebrew
+[Homebrew](https://brew.sh/index_ja)のインストール
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+Password:
+を入力する
+
+wgetのインストール
+```
+# Install wget using Homebrew
+brew install wget
+```
+
+### Git
+[git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
+
+Git のインストール
+```
+git --version
+
+# Install git using Homebrew
+brew install git
+```
 
 ### Unix
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 
-![http://techacademy.jp/magazine/5155](https://techacademy-magazine-cdn.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+```
+# `bash`を起動する
+# change shell to bash
+bash
 
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+# ディレクトリを操作する
+cd
+pwd
+ls
 
-    # change shell to bash
-    bash
+# ディレクトリを作成する
+# make directories
+mkdir ~/projects
 
-ディレクトリを作成する:  
+# ディレクトリを移動する
+# change directory
+cd ~/projects/
 
-    # make directory
-    mkdir ~/projects
+# カレントディレクトリを表示する
+# print working directory
+pwd
 
-ディレクトリを移動する:  
+# ファイルやディレクトリを表示する
+# list directory contents
+ls
 
-    # change directory
-    cd ~/projects/
+# カレントディレクトリをFinderで開く
+# open current directory
+open .
+```
 
-カレントディレクトリを表示する:  
+### bds-files
+GitHub上の補足資料 Supplementary Material (https://github.com/vsbuffalo/bds-files/) を取得する:
 
-    # print working directory
-    pwd
+方法その1
+```
+#cd ~/projects/
+git clone https://github.com/vsbuffalo/bds-files
+```
 
-カレントディレクトリをFinderで開く:  
+方法その2
+```
+wget https://github.com/vsbuffalo/bds-files/archive/master.zip
+unzip master.zip 
+mv bds-files-master/ bds-files
+```
 
-    # open current directory
-    open .
+ディレクトリの詳細情報を表示する:
+```
+ls -l bds-files/
+
+cd bds-files/
+ls -l
+
+cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
+```
 
 ### Markdown
 [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
@@ -168,15 +202,6 @@ Markdown文書をダウンロードする:
     atom README.$(date +%F).md
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
-
-### bds-files
-教科書[**Bioinformatics Data Skills**](https://github.com/haruosuz/books/blob/master/bds/README.md)の補足資料 [Supplementary Material](https://github.com/vsbuffalo/bds-files/) を取得する:
-
-    git clone https://github.com/vsbuffalo/bds-files
-
-ディレクトリの詳細情報を表示する:  
-
-    ls -l bds-files/
 
 ----------
 # Managing a Bioinformatics Project
