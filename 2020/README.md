@@ -23,8 +23,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
-- 2020-11-17 No. 7 - シェルスクリプト | [Shell Scripting](#shell-scripting)
+- 2020-11-10 No. 6 - シェルスクリプト | [Shell Scripting](#shell-scripting)
+- 2020-11-17 No. 7 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
@@ -68,6 +68,8 @@ Teaching Experience
 [Chapter 1. How to Learn Bioinformatics](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-1-how-to-learn-bioinformatics)
 
 [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+
+
 
 ## Step
 準備
