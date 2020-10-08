@@ -10,9 +10,13 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
 
+![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
+
 [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
 ![](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
+
+----------
 
 ## Class Schedule & Materials
 **講義日程と資料**
