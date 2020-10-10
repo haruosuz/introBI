@@ -81,7 +81,7 @@ Teaching Experience
 
 「アプリケーション」の中にある「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。
 
-![https://prog-8.com/docs/python-env](https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/document/7/1526523928818.png)
+<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/document/7/1526523928818.png" alt="https://prog-8.com/docs/python-env" width=50%>
 
 ### Homebrew
 [Homebrew](https://brew.sh/index_ja)のインストール
