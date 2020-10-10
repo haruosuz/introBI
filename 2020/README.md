@@ -92,6 +92,7 @@ Teaching Experience
 
 ### Homebrew
 パッケージ管理システム
+
 [Homebrew](https://brew.sh/index_ja)のインストールは、ターミナルに次のコマンドを入力し、実行する:  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -109,9 +110,8 @@ brew install wget
 ```
 
 ### Git
-[git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
-
 バージョン管理システム
+
 Git のインストール
 ```
 git --version
@@ -124,7 +124,9 @@ brew install git
 #apt-get install git
 ```
 
-### Unix
+[git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
+
+### Shell
 [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
 
 ```
@@ -203,6 +205,9 @@ Markdown文書をダウンロードする:
     atom README.md
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
+
+
+
 
 
 ----------
