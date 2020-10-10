@@ -73,15 +73,13 @@ Teaching Experience
 
 [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
+[生命科学データ解析の本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
+
 ## Step
 準備
 
 ### Terminal
 [ターミナル](https://techacademy.jp/magazine/5155)を起動する
-
-「アプリケーション」の中にある「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。
-
-<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/document/7/1526523928818.png" alt="https://prog-8.com/docs/python-env" width=50%>
 
 ### Homebrew
 [Homebrew](https://brew.sh/index_ja)のインストール
