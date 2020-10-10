@@ -67,11 +67,12 @@ Teaching Experience
 ## Introduction
 **イントロダクション**
 
-[Chapter 1. How to Learn Bioinformatics](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-1-how-to-learn-bioinformatics)
+- [books](https://github.com/haruosuz/books)
+  - [バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
+  - [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds)
+  - [Building bioinformatics solutions : with Perl, R, and SQL](https://github.com/haruosuz/books/tree/master/bbs)
 
-[Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
-
-[バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
+[再現性 Reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
 
 ## Step
 準備
@@ -87,6 +88,56 @@ Teaching Experience
 「アプリケーション」フォルダ」内の「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。
 
 ![https://techacademy.jp/magazine/5155](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
+### Shell
+[UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+
+```
+# `bash`を起動する
+# change shell to bash
+bash
+
+# ディレクトリを操作する
+cd
+pwd
+ls
+
+# ディレクトリを作成する
+# make directories
+mkdir ~/projects
+
+# ディレクトリを移動する
+# change directory
+cd ~/projects/
+
+# カレントディレクトリを表示する
+# print working directory
+pwd
+
+# ファイルやディレクトリを表示する
+# list directory contents
+ls
+
+# カレントディレクトリをFinderで開く
+# open current directory
+open .
+```
+
+### Markdown
+[Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
+
+Markdown文書をダウンロードする:  
+
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.md
+
+### text editor
+[Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
+
+[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
+
+    atom README.md
+
+[Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
 ### Homebrew
 パッケージ管理システム
@@ -124,86 +175,6 @@ brew install git
 
 [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 
-### Shell
-[UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
-
-```
-# `bash`を起動する
-# change shell to bash
-bash
-
-# ディレクトリを操作する
-cd
-pwd
-ls
-
-# ディレクトリを作成する
-# make directories
-mkdir ~/projects
-
-# ディレクトリを移動する
-# change directory
-cd ~/projects/
-
-# カレントディレクトリを表示する
-# print working directory
-pwd
-
-# ファイルやディレクトリを表示する
-# list directory contents
-ls
-
-# カレントディレクトリをFinderで開く
-# open current directory
-open .
-```
-
-### bds-files
-GitHub上の補足資料 Supplementary Material (https://github.com/vsbuffalo/bds-files/) を取得する:
-
-方法その1
-```
-#cd ~/projects/
-git clone https://github.com/vsbuffalo/bds-files
-```
-
-方法その2
-```
-wget https://github.com/vsbuffalo/bds-files/archive/master.zip
-unzip master.zip 
-mv bds-files-master/ bds-files
-```
-
-ディレクトリの詳細情報を表示する:
-```
-ls -l bds-files/
-
-cd bds-files/
-ls -l
-
-cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
-```
-
-### Markdown
-[Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
-
-Markdown文書をダウンロードする:  
-
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.md
-
-ディレクトリやファイルの情報を表示する:  
-
-    ls
-
-### text editor
-[Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
-
-[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
-
-    atom README.md
-
-[Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
-
 ### my_project
 
 ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を確認する:  
@@ -216,86 +187,44 @@ find .
 open .
 ```
 
+### bds-files
+GitHub上の補足資料 Supplementary Material (https://github.com/vsbuffalo/bds-files/) を取得する:
+```
+cd ~/projects/
+
+# 1)
+git clone https://github.com/vsbuffalo/bds-files
+
+# 2)
+wget https://github.com/vsbuffalo/bds-files/archive/master.zip
+unzip master.zip 
+mv bds-files-master/ bds-files
+```
+
+ディレクトリの詳細情報を表示する:
+```
+ls -l bds-files/
+```
+
 ----------
+
 # Managing a Bioinformatics Project
 **バイオインフォマティクスのプロジェクト管理**
 
 [ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
-    bash
-    cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
+```
+bash
+cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
+```
 
-# [Chapter 2. Setting Up and Managing a Bioinformatics Project](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-2-setting-up-and-managing-a-bioinformatics-project)
-## Project Directories and Directory Structures
-プロジェクト・ディレクトリの構造  
+- [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+  - II. Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project
+    - 2. Setting Up and Managing a Bioinformatics Project
 
-プロジェクトの全ファイルを1つのディレクトリに格納する。
-
-例えば、トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリ（`zmays-snps/`）を作成する:  
-
-	mkdir zmays-snps
-	cd zmays-snps
-	mkdir data
-	mkdir data/seqs scripts analysis
-	ls -l
-
-- `data/`ディレクトリにデータを格納する。
-- `scripts/`ディレクトリにスクリプトを格納する。
-- `analysis/`ディレクトリに解析結果を格納する。
-
-絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。
-
-- [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)
-- [#05 ディレクトリを移動する (2) | UNIXコマンド入門 (一般ユーザー編) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_unix/5405)
-
-> ###### What’s in a Name?  
-> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコアかダッシュ（ A-z a-z 0-9 _ - ）を使う、拡張子を付ける。（例. *human_genes_2015-07-07.fasta*）  
-
-## Project Documentation
-プロジェクトの情報を[プレーンテキスト](https://ja.wikipedia.org/wiki/プレーンテキスト)形式の[README](https://ja.wikipedia.org/wiki/リードミー)ファイルに記録する。プレーンテキストはコマンドラインから簡単に読込・検索・編集できる。  
-
-`README`ファイルはプロジェクトの主ディレクトリに格納する。
-
-`data/README`ファイルに、`data/`ディレクトリのデータファイルの説明（いつ・どこから・どのようにダウンロードしたのか）を記載する。[`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:   
-
-	touch README data/README
-
-## Use Directories to Divide Up Your Project into Subprojects
-プロジェクトをサブプロジェクトに分割するディレクトリを作成
-
-## Organizing Data to Automate File Processing Tasks
-ファイル処理を自動化するために、データをサブディレクトリに編成し、明確で一貫性のあるファイル名を付ける。  
-
-3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
-
-	cd data
-	touch seqs/zmays{A,B,C}_R{1,2}.fastq
-	ls seqs/
-
-[ワイルドカード](http://ja.wikipedia.org/wiki/ワイルドカード_%28情報処理%29)のアスタリスク（\*）を用いて、サンプル名`zmaysB`を持つ全てのファイルを表示する:  
-
-	ls seqs/zmaysB*
-
-偶然の一致を避けるために、ワイルドカードを可能な限り限定する。例えば、`zmaysB*`の代わりに、`zmaysB*fastq`または`zmaysB_R?.fastq`を用いる（`?`は任意の1文字）。
-
-    cd seqs/
-
-文字列`[AB]`や文字の範囲`[A-B]`にマッチするワイルドカードを用いて、サンプルCを排除する:  
-
-	ls zmays[AB]_R1.fastq
-	ls zmays[A-B]_R1.fastq
-
-- [#12 ワイルドカードについて | UNIXコマンド入門 (一般ユーザー編) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_unix/5412)
-- [#22 ワイルドカードを使ってみよう | UNIXコマンド入門 [一般ユーザー編] - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2/41622)
-
-## Markdown for Project Notebooks
-プレーンテキスト形式で書かれたプロジェクト・ノートは、コマンドラインやネットワーク経由で読込・検索・編集できる。
-
-### Markdown Formatting Basics
-
-Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)の[HTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)  
-
-[Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
+- バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究 [目次](https://www.oreilly.co.jp/books/9784873118635/#toc)
+  - 第Ⅱ部　前提条件：バイオインフォマティクスプロジェクトを開始するための必須スキル
+    - 2章　バイオインフォマティクスプロジェクトの準備と管理 
 
 ----------
 
