@@ -91,14 +91,16 @@ Teaching Experience
 ![https://techacademy.jp/magazine/5155](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
 ### Homebrew
-[Homebrew](https://brew.sh/index_ja)のインストール
-
-ターミナルに次のコマンドを入力し、実行する:  
+パッケージ管理システム
+[Homebrew](https://brew.sh/index_ja)のインストールは、ターミナルに次のコマンドを入力し、実行する:  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 Password:
 を入力する
+
+### wget
+データをダウンロードするためのコマンドラインプログラム
 
 wgetのインストールは、次のコマンドを実行する:  
 ```
@@ -109,12 +111,17 @@ brew install wget
 ### Git
 [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 
+バージョン管理システム
 Git のインストール
 ```
 git --version
 
+# macOSを使っているならHomebrewを使ってGitをインストールする
 # Install git using Homebrew
 brew install git
+
+# Linuxならapt-getを使う
+#apt-get install git
 ```
 
 ### Unix
