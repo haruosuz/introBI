@@ -11,7 +11,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
 - [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
-![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
+<img src="http://akamaicovers.oreilly.com/images/0636920030157/cat.gif" alt="" width=75%>
 ![](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 
 ----------
@@ -21,8 +21,6 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 - 2020-10-06 No. 1 - 休講 | no class 
 - 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
-  - [projects_2015](https://github.com/haruosuz/introBI/blob/master/2018/README.md#projects_2015)
-  - [project directory examples](https://github.com/haruosuz/introBI/blob/master/2018/README.md#project-directory-examples)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
 - 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
@@ -206,9 +204,17 @@ Markdown文書をダウンロードする:
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
+### my_project
 
-
-
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を確認する:  
+```
+bash
+wget https://github.com/haruosuz/introBI/raw/master/2019/my_project.zip
+unzip my_project.zip
+cd my_project/
+find .
+open .
+```
 
 ----------
 # Managing a Bioinformatics Project
