@@ -8,12 +8,10 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## References
 **参考文献**
 
-[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+- [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
 ![Bioinformatics Data Skills](http://akamaicovers.oreilly.com/images/0636920030157/cat.gif)
-
-[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
-
 ![](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 
 ----------
@@ -23,6 +21,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 - 2020-10-06 No. 1 - 休講 | no class 
 - 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
+  - [projects_2015](https://github.com/haruosuz/introBI/blob/master/2018/README.md#projects_2015)
+  - [project directory examples](https://github.com/haruosuz/introBI/blob/master/2018/README.md#project-directory-examples)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
 - 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
@@ -73,15 +73,15 @@ Teaching Experience
 
 [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
-
-
 ## Step
 準備
 
 ### Terminal
 [ターミナル](https://techacademy.jp/magazine/5155)を起動する
 
-![](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+「アプリケーション」の中にある「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。
+
+![https://prog-8.com/docs/python-env](https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/document/7/1526523928818.png)
 
 ### Homebrew
 [Homebrew](https://brew.sh/index_ja)のインストール
