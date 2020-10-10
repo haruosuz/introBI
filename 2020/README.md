@@ -73,23 +73,34 @@ Teaching Experience
 
 [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
-[生命科学データ解析の本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
+[バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
 
 ## Step
 準備
 
+- [次世代シークエンサーDRY解析教本　改訂第2版](https://gakken-mesh.jp/book/detail/9784780909838.html)
+  - [目次](https://gakken-mesh.jp/files/contents/940.pdf)
+    - コマンドラインの使い方
+    - 共通基本ツールの導入方法
+
 ### Terminal
 [ターミナル](https://techacademy.jp/magazine/5155)を起動する
 
+「アプリケーション」フォルダ」内の「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。
+
+![https://techacademy.jp/magazine/5155](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
 ### Homebrew
 [Homebrew](https://brew.sh/index_ja)のインストール
+
+ターミナルに次のコマンドを入力し、実行する:  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 Password:
 を入力する
 
-wgetのインストール
+wgetのインストールは、次のコマンドを実行する:  
 ```
 # Install wget using Homebrew
 brew install wget
@@ -171,7 +182,7 @@ cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
 
 Markdown文書をダウンロードする:  
 
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.md
 
 ディレクトリやファイルの情報を表示する:  
 
@@ -182,9 +193,10 @@ Markdown文書をダウンロードする:
 
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)でファイルを開く:  
 
-    atom README.$(date +%F).md
+    atom README.md
 
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
+
 
 ----------
 # Managing a Bioinformatics Project
