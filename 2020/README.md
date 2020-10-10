@@ -103,7 +103,7 @@ Password:
 ### wget
 データをダウンロードするためのコマンドラインプログラム
 
-wgetのインストールは、次のコマンドを実行する:  
+wgetのインストールは、ターミナルで次のコマンドを実行する:  
 ```
 # Install wget using Homebrew
 brew install wget
@@ -112,7 +112,7 @@ brew install wget
 ### Git
 バージョン管理システム
 
-Git のインストール
+Git のインストール:  
 ```
 git --version
 
