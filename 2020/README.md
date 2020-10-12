@@ -67,10 +67,9 @@ Teaching Experience
 ## Introduction
 **イントロダクション**
 
-- [books](https://github.com/haruosuz/books)
-  - [バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.updates.md)
-  - [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds)
-  - [Building bioinformatics solutions : with Perl, R, and SQL](https://github.com/haruosuz/books/tree/master/bbs)
+[バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
+
+[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds)
 
 [再現性 Reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
 
