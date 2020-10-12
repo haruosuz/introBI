@@ -146,7 +146,7 @@ brew install wget
 ### Markdown
 [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
 
-Markdown文書をダウンロードする:  
+プレーンテキスト形式のファイル（Markdownノートの例）をダウンロードし、ファイル名を変更する:  
 ```
 wget https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
 mv markdown.md README.md
@@ -156,11 +156,9 @@ mv markdown.md README.md
 [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
+を <https://atom.io/> からダウンロードする。
 
-https://atom.io/
-から「Atom」ダウンロードする
-
-atomでファイルを開く:  
+atomで*README.md*ファイルを開く:  
 
     atom README.md
 
