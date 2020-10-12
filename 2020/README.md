@@ -204,18 +204,6 @@ mv bds-files-master/ bds-files
 ls -l bds-files/
 ```
 
-### my_project
-
-ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を確認する:  
-```
-bash
-wget https://github.com/haruosuz/introBI/raw/master/2019/my_project.zip
-unzip my_project.zip
-cd my_project/
-find .
-open .
-```
-
 ----------
 
 # Managing a Bioinformatics Project
