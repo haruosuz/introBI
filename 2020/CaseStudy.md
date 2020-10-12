@@ -7,11 +7,31 @@ https://sol.sfc.keio.ac.jp/
 **ケーススタディ**
 
 ## Table of Contents
-- [unix](#unix)
 - [assignment 0](#assignment-0) 選抜課題
-- [assignment 1](#assignment-1) 課題No.1 class cancelled
+- assignment 1 課題No.1 class cancelled
 - [assignment 2](#assignment-2) 課題No.2 「README.md」
+- [unix](#unix)
 - [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
+
+----------
+## assignment 0
+**選抜課題**
+
+【課題内容】
+
+バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べてください。課題のタイトルと参考文献も明記してください。
+
+Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills. Please also state your project title and references.
+
+----------
+## assignment 2
+**課題No.2 「README.md」**
+
+2020-10-13 No. 2 - イントロダクション | Introduction
+[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
+で取得したプレーンテキスト形式の*README.md*ファイルを提出する。
+
+----------
 
 ----------
 ## unix
@@ -37,29 +57,6 @@ option + ←	１単語分左に移動
 [「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
 
 ![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
-
-----------
-## assignment 0
-**選抜課題**
-
-【課題内容】
-
-バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べてください。課題のタイトルと参考文献も明記してください。
-
-Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills. Please also state your project title and references.
-
-----------
-## assignment 1
-
-class cancelled
-
-----------
-## assignment 2
-**課題No.2 「README.md」**
-
-2020-10-13 No. 2 - イントロダクション | Introduction
-[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
-で取得したプレーンテキスト形式のMarkdownノート`README.md`を提出する。
 
 ----------
 ## assignment 3
