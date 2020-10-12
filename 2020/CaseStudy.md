@@ -19,7 +19,7 @@ https://sol.sfc.keio.ac.jp/
 [Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
 で得られたプレーンテキスト形式の*README.md*ファイルを修正し提出する。
 
-バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べてください。課題のタイトルと参考文献も明記してください。
+バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
 
 Modify and submit the plain-text *README.md* file obtained in
 [Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup).
