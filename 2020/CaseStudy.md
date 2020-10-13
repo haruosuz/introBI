@@ -1,5 +1,5 @@
-**[バイオインフォマティクスのデータサイエンス[DS2]](https://github.com/haruosuz/introBI/tree/master/2020)**
-https://sol.sfc.keio.ac.jp/
+**[バイオインフォマティクスのデータサイエンス[DS2]](https://github.com/haruosuz/introBI/tree/master/2020)**  
+[SFC Online Learning System (SOL)](https://sol.sfc.keio.ac.jp/)
 
 ----------
 
@@ -17,7 +17,7 @@ https://sol.sfc.keio.ac.jp/
 **課題No.2 「README.md」**
 
 [Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
-で得られたプレーンテキスト形式の*README.md*ファイルを修正し提出する。
+で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
 
 バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
 
