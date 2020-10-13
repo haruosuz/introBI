@@ -33,7 +33,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
 - 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 | Case Study: Reproducibly Analyzing Data
 - 2020-12-22 No. 12 - 最終回 final class
-  - 最終発表 [final presentation](#final-presentation)
+  - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
@@ -173,6 +173,17 @@ mv bds-files-master/ bds-files
 ```
 ls -l bds-files/
 ```
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+教育体験
+Teaching Experience
+
+- 講師: 齋藤 元文
+- 資料: TBA
+
 
 ----------
 
