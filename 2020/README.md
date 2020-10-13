@@ -19,8 +19,9 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2020-10-06 No. 1 - 休講 | no class 
+- 2020-10-06 No. 1 - 休講 | no class
 - 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
+  - [Setup](#setup)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
 - 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
@@ -34,44 +35,16 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-12-29 レポート提出期限 Deadline for final report
-  - 授業調査 Class Survey
-  - 先端生命科学 Advanced Biosciences
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
 
 ----------
-## 成績
-- S：最終発表＋レポート＋提出課題（プロジェクト・ディレクトリ）の総合評価がS基準を満たしている。
-- A：最終発表＋レポート＋提出課題（プロジェクト・ディレクトリ）の総合評価がA基準を満たしている。
-- B：最終発表＋レポート＋提出課題（プロジェクト・ディレクトリ）の総合評価がB基準を満たしている。
-- C：最終発表を行い、レポートを提出し、プロジェクト・ディレクトリを提出している。
-
-### 評価基準
-- 再現可能な研究 [Reproducible Research](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md) に必要な情報を含むプロジェクト・ディレクトリを作成した。
-- 再現性を自分の実行環境で確認した。
-- 再現性を他人の実行環境で確認した。
-
-----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-
-教育体験
-Teaching Experience
-
-- 講師: 齋藤 元文
-- 資料: TBA
-
-----------
 ## Introduction
 **イントロダクション**
 
 [バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
-
-[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds)
-
-[再現性 Reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
 
 ## Setup
 準備
@@ -202,25 +175,4 @@ ls -l bds-files/
 ```
 
 ----------
-
-# Managing a Bioinformatics Project
-**バイオインフォマティクスのプロジェクト管理**
-
-[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
-
-```
-bash
-cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
-```
-
-- [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-  - II. Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project
-    - 2. Setting Up and Managing a Bioinformatics Project
-
-- バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究 [目次](https://www.oreilly.co.jp/books/9784873118635/#toc)
-  - 第Ⅱ部　前提条件：バイオインフォマティクスプロジェクトを開始するための必須スキル
-    - 2章　バイオインフォマティクスプロジェクトの準備と管理 
-
-----------
-
 
