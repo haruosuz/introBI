@@ -196,12 +196,16 @@ ls -l bds-files/
     cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
 
 # Chapter 2. Setting Up and Managing a Bioinformatics Project
-2章　バイオインフォマティクスプロジェクトの準備と管理
+**2章　バイオインフォマティクスプロジェクトの準備と管理**
 
 ## Project Directories and Directory Structures
-2.1　プロジェクトディレクトリとディレクトリ構造
+**2.1　プロジェクトディレクトリとディレクトリ構造**
 
 - [Noble (2009) "A Quick Guide to Organizing Computational Biology Projects"](https://doi.org/10.1371/journal.pcbi.1000424)
+
+<img alt="" src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=info:doi/10.1371/journal.pcbi.1000424.g001" width=50%>
+
+![](https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1000424.g001)
 
 プロジェクトの全ファイルを1つのディレクトリに格納する。
 
@@ -225,7 +229,7 @@ ls -l bds-files/
 > ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコアかダッシュ（ A-z a-z 0-9 _ - ）を使う、拡張子を付ける。（例. *human_genes_2015-07-07.fasta*）  
 
 ## Project Documentation
-2.2　プロジェクトドキュメント
+**2.2　プロジェクトドキュメント**
 
 プロジェクトの情報を[プレーンテキスト](https://ja.wikipedia.org/wiki/プレーンテキスト)形式の[README](https://ja.wikipedia.org/wiki/リードミー)ファイルに記録する。プレーンテキストはコマンドラインから簡単に読込・検索・編集できる。  
 
@@ -236,14 +240,13 @@ ls -l bds-files/
 	touch README data/README
 
 ## Use Directories to Divide Up Your Project into Subprojects
-2.3　ディレクトリを使用してプロジェクトをサブプロジェクトに分割する
+**2.3　ディレクトリを使用してプロジェクトをサブプロジェクトに分割する**
 
-プロジェクトをサブプロジェクトに分割するディレクトリを作成
 
 ## Organizing Data to Automate File Processing Tasks
-2.4　ファイル処理タスクを自動化できるようにデータを整理する
+**2.4　ファイル処理タスクを自動化できるようにデータを整理する**
 
-ファイル処理を自動化するために、データをサブディレクトリに編成し、明確で一貫性のあるファイル名を付ける。  
+データをサブディレクトリに編成し、明確で一貫性のあるファイル名を付ける。  
 
 3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
 
@@ -265,22 +268,23 @@ ls -l bds-files/
 	ls zmays[A-B]_R1.fastq
 
 ## Markdown for Project Notebooks
-2.5　プロジェクトノートのためのマークダウン記法
+**2.5　プロジェクトノートのためのマークダウン記法**
 
 プレーンテキスト形式で書かれたプロジェクト・ノートは、コマンドラインやネットワーク経由で読込・検索・編集できる。
 
 ### Markdown Formatting Basics
-2.6　マークダウン記法の基礎
+**2.6　マークダウン記法の基礎**
 
 Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)の[HTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)  
 
 [Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
 
 ### Using Pandoc to Render Markdown to HTML
-2.7　Pandocを使用してマークダウン形式をHTMLへ変換する
+**2.7　Pandocを使用してマークダウン形式をHTMLへ変換する**
 
 [Pandocのインストール](http://pandoc.org/installing.html)  
 
+    wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
 	pandoc --from markdown --to html notebook.md > output.html
 
 ----------
@@ -288,8 +292,7 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 
 
-
-
+<img alt="" src="" width=50%>
 
 
 
