@@ -230,6 +230,8 @@ mv bds-files-master/ bds-files
     ls -l /home/vinceb/projects/zmays-snps/data/input.txt
     ls -l ../data/input.txt
 
+親ディレクトリ(`..`)に移動する:  
+
     cd ..
     pwd
 
