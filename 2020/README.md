@@ -312,7 +312,7 @@ ls
 find .
 ```
 
-*ncbi_genome_reports/*プロジェクトに移動し、スクリプトを実行する:  
+*ncbi_genome_reports/* プロジェクトに移動し、スクリプトを実行する:  
 ```
 cd ncbi_genome_reports/
 (time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
