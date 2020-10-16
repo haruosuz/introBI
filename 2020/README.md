@@ -24,6 +24,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
   - [Setup](#setup)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
+  - [my_project](#my_project)
 - 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
@@ -186,26 +187,6 @@ mv bds-files-master/ bds-files
 
 ----------
 
-### my_project
-
-ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
-```
-bash
-wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
-unzip my_project.zip
-cd my_project/
-ls
-find .
-```
-
-*ncbi_genome_reports/*プロジェクトに移動し、スクリプトを実行する:  
-```
-cd ncbi_genome_reports/
-(time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
-```
-
-----------
-
 # Managing a Bioinformatics Project
 **バイオインフォマティクスのプロジェクト管理**
 
@@ -319,12 +300,23 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 ----------
 
+### my_project
 
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
+```
+bash
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/
+ls
+find .
+```
 
+*ncbi_genome_reports/*プロジェクトに移動し、スクリプトを実行する:  
+```
+cd ncbi_genome_reports/
+(time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
+```
 
-<img alt="" src="" width=50%>
-
-    wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
-
-
+----------
 
