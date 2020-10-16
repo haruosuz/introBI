@@ -203,7 +203,7 @@ ls -l bds-files/
 
 - [Noble (2009) "A Quick Guide to Organizing Computational Biology Projects"](https://doi.org/10.1371/journal.pcbi.1000424)
 
-<img alt="" src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=info:doi/10.1371/journal.pcbi.1000424.g001" width=30%>
+<img alt="" src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=info:doi/10.1371/journal.pcbi.1000424.g001" width=50%>
 
 プロジェクトの全ファイルを1つのディレクトリに格納する。
 
