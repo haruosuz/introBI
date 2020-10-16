@@ -180,20 +180,20 @@ unzip master.zip
 mv bds-files-master/ bds-files
 ```
 
-ディレクトリの詳細情報を表示する:
-```
-ls -l bds-files/
-```
+ディレクトリの詳細情報を表示する:  
+
+    ls -l bds-files/
 
 ----------
 
 # Managing a Bioinformatics Project
 **バイオインフォマティクスのプロジェクト管理**
 
-[ターミナル](https://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
 
     bash
-    cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
+    cd ~/projects/
 
 # Chapter 2. Setting Up and Managing a Bioinformatics Project
 **2章　バイオインフォマティクスプロジェクトの準備と管理**
@@ -219,9 +219,19 @@ ls -l bds-files/
 - `scripts/`ディレクトリにスクリプトを格納する。
 - `analysis/`ディレクトリに解析結果を格納する。
 
+[絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)
+
+    touch data/input.txt
+    cd scripts/
+    pwd
+
 絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。
 
-- [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)
+    ls -l /home/vinceb/projects/zmays-snps/data/input.txt
+    ls -l ../data/input.txt
+
+    cd ..
+    pwd
 
 > ###### What’s in a Name?  
 > ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコアかダッシュ（ A-z a-z 0-9 _ - ）を使う、拡張子を付ける。（例. *human_genes_2015-07-07.fasta*）  
@@ -233,13 +243,13 @@ ls -l bds-files/
 
 `README`ファイルはプロジェクトの主ディレクトリに格納する。
 
-`data/README`ファイルに、`data/`ディレクトリのデータファイルの説明（いつ・どこから・どのようにダウンロードしたのか）を記載する。[`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:   
+`data/README`ファイルに、`data/`ディレクトリのデータファイルの説明（いつ・どこから・どのようにダウンロードしたのか）を記載する。
+[`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:  
 
 	touch README data/README
 
 ## Use Directories to Divide Up Your Project into Subprojects
 **2.3　ディレクトリを使用してプロジェクトをサブプロジェクトに分割する**
-
 
 ## Organizing Data to Automate File Processing Tasks
 **2.4　ファイル処理タスクを自動化できるようにデータを整理する**
@@ -282,7 +292,7 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 [Pandocのインストール](http://pandoc.org/installing.html)  
 
-    wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
+    cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
 	pandoc --from markdown --to html notebook.md > output.html
 
 ----------
@@ -292,6 +302,7 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 <img alt="" src="" width=50%>
 
+    wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
 
 
 
