@@ -10,6 +10,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 - [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
 - [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+  - [目次](https://www.oreilly.co.jp/books/9784873118635/#toc)
 
 ![https://www.oreilly.co.jp/books/9784873118635/](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 <img src="https://learning.oreilly.com/library/cover/9781449367480/250w/" alt="" width=15.5%>
@@ -39,6 +40,16 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+教育体験
+Teaching Experience
+
+- 講師: 齋藤 元文
+- 資料: TBA
 
 ----------
 ## Introduction
@@ -175,15 +186,111 @@ ls -l bds-files/
 ```
 
 ----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
-教育体験
-Teaching Experience
+# Managing a Bioinformatics Project
+**バイオインフォマティクスのプロジェクト管理**
 
-- 講師: 齋藤 元文
-- 資料: TBA
+[ターミナル](https://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
 
+    bash
+    cd ~/projects/bds-files/chapter-02-bioinformatics-projects/
+
+# Chapter 2. Setting Up and Managing a Bioinformatics Project
+2章　バイオインフォマティクスプロジェクトの準備と管理
+
+## Project Directories and Directory Structures
+2.1　プロジェクトディレクトリとディレクトリ構造
+
+- [Noble (2009) "A Quick Guide to Organizing Computational Biology Projects"](https://doi.org/10.1371/journal.pcbi.1000424)
+
+プロジェクトの全ファイルを1つのディレクトリに格納する。
+
+例えば、トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリ（`zmays-snps/`）を作成する:  
+
+	mkdir zmays-snps
+	cd zmays-snps
+	mkdir data
+	mkdir data/seqs scripts analysis
+	ls -l
+
+- `data/`ディレクトリにデータを格納する。
+- `scripts/`ディレクトリにスクリプトを格納する。
+- `analysis/`ディレクトリに解析結果を格納する。
+
+絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。
+
+- [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)
+
+> ###### What’s in a Name?  
+> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコアかダッシュ（ A-z a-z 0-9 _ - ）を使う、拡張子を付ける。（例. *human_genes_2015-07-07.fasta*）  
+
+## Project Documentation
+2.2　プロジェクトドキュメント
+
+プロジェクトの情報を[プレーンテキスト](https://ja.wikipedia.org/wiki/プレーンテキスト)形式の[README](https://ja.wikipedia.org/wiki/リードミー)ファイルに記録する。プレーンテキストはコマンドラインから簡単に読込・検索・編集できる。  
+
+`README`ファイルはプロジェクトの主ディレクトリに格納する。
+
+`data/README`ファイルに、`data/`ディレクトリのデータファイルの説明（いつ・どこから・どのようにダウンロードしたのか）を記載する。[`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:   
+
+	touch README data/README
+
+## Use Directories to Divide Up Your Project into Subprojects
+2.3　ディレクトリを使用してプロジェクトをサブプロジェクトに分割する
+
+プロジェクトをサブプロジェクトに分割するディレクトリを作成
+
+## Organizing Data to Automate File Processing Tasks
+2.4　ファイル処理タスクを自動化できるようにデータを整理する
+
+ファイル処理を自動化するために、データをサブディレクトリに編成し、明確で一貫性のあるファイル名を付ける。  
+
+3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
+
+	cd data
+	touch seqs/zmays{A,B,C}_R{1,2}.fastq
+	ls seqs/
+
+[ワイルドカード](http://ja.wikipedia.org/wiki/ワイルドカード_%28情報処理%29)のアスタリスク（\*）を用いて、サンプル名`zmaysB`を持つ全てのファイルを表示する:  
+
+	ls seqs/zmaysB*
+
+偶然の一致を避けるために、ワイルドカードを可能な限り限定する。例えば、`zmaysB*`の代わりに、`zmaysB*fastq`または`zmaysB_R?.fastq`を用いる（`?`は任意の1文字）。
+
+    cd seqs/
+
+文字列`[AB]`や文字の範囲`[A-B]`にマッチするワイルドカードを用いて、サンプルCを排除する:  
+
+	ls zmays[AB]_R1.fastq
+	ls zmays[A-B]_R1.fastq
+
+## Markdown for Project Notebooks
+2.5　プロジェクトノートのためのマークダウン記法
+
+プレーンテキスト形式で書かれたプロジェクト・ノートは、コマンドラインやネットワーク経由で読込・検索・編集できる。
+
+### Markdown Formatting Basics
+2.6　マークダウン記法の基礎
+
+Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)の[HTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)  
+
+[Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
+
+### Using Pandoc to Render Markdown to HTML
+2.7　Pandocを使用してマークダウン形式をHTMLへ変換する
+
+[Pandocのインストール](http://pandoc.org/installing.html)  
+
+	pandoc --from markdown --to html notebook.md > output.html
 
 ----------
+
+
+
+
+
+
+
+
+
 
