@@ -186,6 +186,26 @@ mv bds-files-master/ bds-files
 
 ----------
 
+### my_project
+
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
+```
+bash
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/
+ls
+find .
+```
+
+*ncbi_genome_reports/*プロジェクトに移動し、スクリプトを実行する:  
+```
+cd ncbi_genome_reports/
+(time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
+```
+
+----------
+
 # Managing a Bioinformatics Project
 **バイオインフォマティクスのプロジェクト管理**
 
