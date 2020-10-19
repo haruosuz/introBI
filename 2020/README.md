@@ -237,7 +237,7 @@ mv bds-files-master/ bds-files
     pwd
 
 > ###### What’s in a Name?  
-> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコアかダッシュ（ A-z a-z 0-9 _ - ）を使う、拡張子を付ける。（例. *human_genes_2015-07-07.fasta*）  
+> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)（空白）を使わない、英数字かアンダースコア（_）かダッシュ（-）を使う、拡張子を付ける。（例. *README_2020-10-13.md*）  
 
 ## Project Documentation
 **2.2　プロジェクトドキュメント**
