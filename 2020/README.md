@@ -185,27 +185,6 @@ mv bds-files-master/ bds-files
 
     ls -l bds-files/
 
-### my_project
-
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。
-`bash`を起動し、ディレクトリを移動する:  
-
-    bash
-    cd ~/projects/
-
-ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
-```
-wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
-unzip my_project.zip
-cd my_project/
-```
-
-*ncbi_genome_reports/* プロジェクトに移動し、スクリプトを実行する:  
-```
-cd ncbi_genome_reports/
-bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
-```
-
 ----------
 
 # Managing a Bioinformatics Project
@@ -320,3 +299,27 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 	pandoc --from markdown --to html notebook.md > output.html
 
 ----------
+
+### my_project
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/
+
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
+```
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/
+```
+
+*ncbi_genome_reports/* プロジェクトに移動し、スクリプトを実行する:  
+```
+cd ncbi_genome_reports/
+bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
+```
+
+----------
+
