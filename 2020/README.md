@@ -185,20 +185,13 @@ mv bds-files-master/ bds-files
 
     ls -l bds-files/
 
-----------
-
-# Managing a Bioinformatics Project
-**バイオインフォマティクスのプロジェクト管理**
+### my_project
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。
 `bash`を起動し、ディレクトリを移動する:  
 
-```
-bash
-cd ~/projects/
-```
-
-### my_project
+    bash
+    cd ~/projects/
 
 ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
 ```
@@ -212,6 +205,17 @@ cd my_project/
 cd ncbi_genome_reports/
 bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
 ```
+
+----------
+
+# Managing a Bioinformatics Project
+**バイオインフォマティクスのプロジェクト管理**
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/
 
 # Chapter 2. Setting Up and Managing a Bioinformatics Project
 **2章　バイオインフォマティクスプロジェクトの準備と管理**
