@@ -8,23 +8,9 @@
 
 ## Table of Contents
 - assignment 1 課題No.1 class cancelled
-- [assignment 2](#assignment-2) 課題No.2 「README.md」
 - [unix](#unix)
+- [assignment 2](#assignment-2) 課題No.2 「README.md」
 - [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
-
-----------
-## assignment 2
-**課題No.2 「README.md」**
-
-[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
-で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
-
-バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
-
-Modify and submit the plain-text *README.md* file obtained in
-[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup).
-
-Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills. Please also state your project title and references.
 
 ----------
 
@@ -54,6 +40,20 @@ option + ←	１単語分左に移動
 ![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
 
 ----------
+## assignment 2
+**課題No.2 「README.md」**
+
+[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
+で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
+
+バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
+
+Modify and submit the plain-text *README.md* file obtained in
+[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup).
+
+Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills. Please also state your project title and references.
+
+----------
 ## assignment 3
 **課題No.3 「zmays-snps」**
 
@@ -80,9 +80,4 @@ zip -r zmays-snps.zip zmays-snps/
 
 ----------
 
-
-
-
 ----------
-
-
