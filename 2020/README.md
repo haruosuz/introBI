@@ -312,11 +312,11 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 ```
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
-cd my_project/
 ```
 
-*ncbi_genome_reports/* プロジェクトに移動し、スクリプトを実行する:  
+ディレクトリを移動し、スクリプトを実行する:  
 ```
+cd my_project/
 cd ncbi_genome_reports/
 bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
 ```
