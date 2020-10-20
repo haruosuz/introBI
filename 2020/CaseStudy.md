@@ -37,7 +37,7 @@ option + ←	１単語分左に移動
 ## assignment 2
 **課題No.2 「README.md」**
 
-[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)  
+[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
 で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
 
 バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
@@ -54,33 +54,13 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 No. 3 - バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project  
 で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイルを提出する。
 
-プロジェクト・ディレクトリ（`zmays-snps/`）構造の例:  
-```
-$cd ~/projects/
-$find zmays-snps
-zmays-snps
-zmays-snps/analysis
-zmays-snps/README
-zmays-snps/scripts
-zmays-snps/data
-zmays-snps/data/seqs
-zmays-snps/data/seqs/zmaysA_R1.fastq
-zmays-snps/data/seqs/zmaysA_R2.fastq
-zmays-snps/data/seqs/zmaysB_R1.fastq
-zmays-snps/data/seqs/zmaysC_R1.fastq
-zmays-snps/data/seqs/zmaysB_R2.fastq
-zmays-snps/data/seqs/zmaysC_R2.fastq
-zmays-snps/data/README
-zmays-snps/data/input.txt
-```
-
 `zmays-snps/`ディレクトリを圧縮するコマンドの例:  
 ```
 # 1)
 zip -r zmays-snps.zip zmays-snps/
 
 # 2)
-tar cvzf zmays-snps.tar.gz zmays-snps
+tar cvzf zmays-snps.tar.gz zmays-snps/
 ```
 
 圧縮ファイル `zmays-snps.zip` または `zmays-snps.tar.gz` を提出する。
