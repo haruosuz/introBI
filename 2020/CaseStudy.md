@@ -13,8 +13,6 @@
 - [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
 
 ----------
-
-----------
 ## unix
 
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
@@ -34,10 +32,6 @@ Ctrl + e	行末尾に移動
 option + →	１単語分右に移動
 option + ←	１単語分左に移動
 ```
-
-[「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
-
-![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
 
 ----------
 ## assignment 2
