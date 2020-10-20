@@ -20,20 +20,20 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2020-10-06 No. 1 - 休講 | no class
-- 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
+- 2020-10-06 No. 1 - 休講 no class
+- 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction)
   - [Setup](#setup)
-- 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 | [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
+- 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
   - [my_project](#my_project)
-- 2020-10-27 No. 4 - Unixシェル再入門 | [Unix Shell](#unix-shell)
-- 2020-11-03 No. 5 - バイオインフォマティクス・データ | [Bioinformatics Data](#bioinformatics-data)
+- 2020-10-27 No. 4 - Unixシェル再入門 [Unix Shell](#unix-shell)
+- 2020-11-03 No. 5 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - シェルスクリプト | [Shell Scripting](#shell-scripting)
-- 2020-11-17 No. 7 - Unixデータツール | [Unix Data Tools](#unix-data-tools)
+- 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
+- 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
-- 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 | Case Study: Reproducibly Analyzing Data
+- 2020-12-15 No. 11 - ケーススタディ：再現性のあるデータ解析 Case Study: Reproducibly Analyzing Data
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
