@@ -43,7 +43,7 @@ option + ←	１単語分左に移動
 ## assignment 2
 **課題No.2 「README.md」**
 
-[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
+[Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)  
 で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
 
 バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べる。課題のタイトルと参考文献も明記する。
@@ -57,7 +57,7 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 ## assignment 3
 **課題No.3 「zmays-snps」**
 
-No. 3 - バイオインフォマティクスのプロジェクト管理 | Managing a Bioinformatics Project
+No. 3 - バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project  
 で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイルを提出する。
 
 プロジェクト・ディレクトリ（`zmays-snps/`）構造の例:  
