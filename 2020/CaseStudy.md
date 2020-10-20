@@ -74,9 +74,14 @@ zmays-snps/data/README
 
 `zmays-snps/`ディレクトリを圧縮するコマンドの例:  
 ```
+# 1)
 zip -r zmays-snps.zip zmays-snps/
 
+# 2)
+tar cvzf zmays-snps.tar.gz zmays-snps
 ```
+
+圧縮ファイル `zmays-snps.zip` または `zmays-snps.tar.gz` を提出する。
 
 ----------
 
