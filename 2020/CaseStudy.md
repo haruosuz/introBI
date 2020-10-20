@@ -54,6 +54,26 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 No. 3 - バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project  
 で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイルを提出する。
 
+プロジェクト・ディレクトリ（`zmays-snps/`）構造の例:  
+```
+$cd ~/projects/
+$find zmays-snps
+zmays-snps
+zmays-snps/analysis
+zmays-snps/README
+zmays-snps/scripts
+zmays-snps/data
+zmays-snps/data/seqs
+zmays-snps/data/seqs/zmaysA_R1.fastq
+zmays-snps/data/seqs/zmaysA_R2.fastq
+zmays-snps/data/seqs/zmaysB_R1.fastq
+zmays-snps/data/seqs/zmaysC_R1.fastq
+zmays-snps/data/seqs/zmaysB_R2.fastq
+zmays-snps/data/seqs/zmaysC_R2.fastq
+zmays-snps/data/README
+zmays-snps/data/input.txt
+```
+
 `zmays-snps/`ディレクトリを圧縮するコマンドの例:  
 ```
 # 1)
