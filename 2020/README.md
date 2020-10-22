@@ -22,10 +22,10 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 
 - 2020-10-06 No. 1 - 休講 no class
 - 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction)
-  - [Setup](#setup)
+[Setup](#setup)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
-  - [my_project](#my_project)
 - 2020-10-27 No. 4 - Unixシェル再入門 [Unix Shell](#unix-shell)
+  - [my_project](#my_project)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
@@ -602,7 +602,7 @@ wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
 ```
 
-*ncbi_genome_reports/*ディレクトリに移動し、スクリプトを実行する:  
+次のディレクトリに移動し、スクリプトを実行する:  
 ```
 cd my_project/
 cd ncbi_genome_reports/
