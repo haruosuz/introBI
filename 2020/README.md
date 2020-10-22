@@ -589,10 +589,9 @@ wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
 cd my_project/ncbi_genome_reports/
 bash scripts/run_ncbi_GENOME_REPORTS.sh > log.txt 2>&1 &
-
-# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
-# Use `tail -f` to constantly monitor files (use Control-C to stop)
 tail -f wget-log
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
 ```
 
 #### 2020-10-20
