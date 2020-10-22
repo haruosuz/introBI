@@ -21,8 +21,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 **講義日程と資料**
 
 - 2020-10-06 No. 1 - 休講 no class
-- 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction)
-[Setup](#setup)
+- 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction) | [Setup](#setup)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
 - 2020-10-27 No. 4 - Unixシェル再入門 [Unix Shell](#unix-shell)
   - [my_project](#my_project)
@@ -570,7 +569,7 @@ Control-c で動作中のプロセスを停止
 ### my_project
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。
-`bash`を起動し、*~/projects/*ディレクトリに移動する:  
+`bash`を起動し、ディレクトリを移動する:  
 
     bash
     cd ~/projects/
