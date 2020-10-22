@@ -288,8 +288,6 @@ mv bds-files-master/ bds-files
 
 Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)の[HTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)  
 
-[Markdownの書き方](https://dl.dropboxusercontent.com/s/h1uqihudiw1uioy/markdown.md)
-
 ### Using Pandoc to Render Markdown to HTML
 **2.7　Pandocを使用してマークダウン形式をHTMLへ変換する**
 
@@ -300,21 +298,312 @@ Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-
 
 ----------
 
-### my_project
+# Unix Shell
+**Unixシェル**
+
+Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う。
+[ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)、
+[リダイレクト](https://ja.wikipedia.org/wiki/リダイレクト_%28CLI%29)、
+[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)、
+[プロセス](https://ja.wikipedia.org/wiki/プロセス)、
+コマンド置換を扱う。  
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-03-remedial-unix/` を使う。
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。
 `bash`を起動し、ディレクトリを移動する:  
 
     bash
+    cd ~/projects/bds-files/chapter-03-remedial-unix/
+
+# Chapter 3. Remedial Unix Shell
+**3章　Unixシェル再入門**
+
+## Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy
+**3.1　なぜバイオインフォマティクスでUnixを使うのか？：モジュール性とUnix哲学**
+
+[UNIX哲学](https://ja.wikipedia.org/wiki/UNIX哲学)  
+
+## Working with Streams and Redirection
+**3.2　ストリームとリダイレクションの操作**
+
+[ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)と[リダイレクト](https://ja.wikipedia.org/wiki/リダイレクト_%28CLI%29)
+
+### Redirecting Standard Out to a File
+**3.2.1　標準出力をファイルにリダイレクトする**
+
+タンパク質のアミノ酸配列データを記述した[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイル
+[*tb1-protein.fasta*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-03-remedial-unix/tb1-protein.fasta)と
+[*tga1-protein.fasta*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-03-remedial-unix/tga1-protein.fasta)を見る。
+
+[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)コマンドで *tb1-protein.fasta* ファイルを標準出力する:  
+
+	cat tb1-protein.fasta
+
+複数のファイルを標準出力する:  
+
+	cat tb1-protein.fasta tga1-protein.fasta
+
+記号`>`（上書き）や`>>`（追記）で標準出力をファイルにリダイレクトする:  
+
+	cat tb1-protein.fasta tga1-protein.fasta > zea-proteins.fasta
+
+`ls -lrt`で更新日時の逆順にソートする（詳細は`man ls`を参照）。
+
+### Redirecting Standard Error
+**3.2.2　標準エラーのリダイレクト**
+
+`ls -l tb1.fasta leafy1.fasta`を実行すると、存在するファイル（*tb1.fasta*）は標準出力に、存在しないファイル（*leafy1.fasta*）は標準エラー出力に送られる。  
+記号`>`と`2>`を用いて、標準出力（standard output）と標準エラー出力（standard error）を別のファイルにリダイレクトする:  
+
+    ls -l tb1.fasta leafy1.fasta > stdout.txt 2> stderr.txt
+    cat stdout.txt
+    cat stderr.txt
+
+記号`2>`は上書き、`2>>`は追記。  
+
+### Using Standard Input Redirection
+**3.2.3　標準入力リダイレクトの使用**
+
+標準入力リダイレクト演算子`<`よりも、Unixパイプ`|`を使う方が一般的
+
+## The Almighty Unix Pipe: Speed and Beauty in One
+**3.3　全能のUnixパイプ：スピードと美しさを1つに**
+
+### Pipes in Action: Creating Simple Programs with Grep and Pipes
+**3.3.1　パイプの動作：grepとパイプによる簡単なプログラムの作成**
+
+[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)と[`grep`](https://ja.wikipedia.org/wiki/Grep)を用いて、FASTAファイルに含まれるATGC以外の文字を探す:  
+
+	grep -v "^>" tb1.fasta | grep --color -i "[^ATCG]"
+
+ハイライトされたYはpYrimidine塩基[CT]を示す（[配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)）。
+
+### Combining Pipes and Redirection
+**3.3.2　パイプとリダイレクションの結合**
+
+### Even More Redirection: A tee in Your Pipe
+**3.3.3　リダイレクションについてもう少し：パイプのtee**
+
+[`tee`](https://ja.wikipedia.org/wiki/Tee_%28UNIX%29)
+
+## Managing and Interacting with Processes
+**3.4　プロセスの管理と対話**
+
+[プロセス](https://ja.wikipedia.org/wiki/プロセス)
+
+### Background Processes
+**3.4.1　バックグラウンドプロセス**
+
+コマンドの末尾にアンパサンド（`&`）を追加して、プログラムをバックグラウンドで実行する:  
+
+    $sleep 60 &
+    [1] 86374
+
+[1]は*ジョブID*、86374は*プロセスID*（PID）。  
+[`jobs`](http://codezine.jp/unixdic/w/jobs)でバックグランド・ジョブを表示する。  
+[`fg`](http://codezine.jp/unixdic/w/fg)でバックグラウンド・プロセスをフォアグラウンド（foreground）へ戻す。
+
+Control-z キーで中断させたジョブを
+[`bg`](http://codezine.jp/unixdic/w/bg)コマンドを用いてバックグラウンド（background）で再開:  
+
+    sleep 60
+    # enter control-z
+    bg
+
+### Killing Processes
+**3.4.2　プロセスの強制終了**
+
+Control-c で動作中のプロセスを停止
+
+    sleep 60
+    # enter control-c
+
+### Exit Status: How to Programmatically Tell Whether Your Command Worked
+**3.4.3　終了ステータス：プログラムで、コマンドが働いたかどうかを確認する方法**
+
+[終了ステータス](https://ja.wikipedia.org/wiki/終了ステータス)の値は、シェルの特殊変数`$?`に設定される。
+
+	echo $?
+
+## [Command Substitution](https://en.wikipedia.org/wiki/Command_substitution)
+**3.5　コマンド置換**
+
+    grep -c '^>' zea-proteins.fasta
+    echo "There are $(grep -c '^>' zea-proteins.fasta) entries in my FASTA file."
+
+`date +%F`コマンドを用いて日付ディレクトリを作成する:  
+
+    mkdir $(date +%F)
+
+このディレクトリ名は年代順にソートされる:  
+
+    mkdir 1999-07-01 2000-12-19 2011-02-03
+	ls -l
+
+----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+# Bioinformatics Data
+**バイオインフォマティクス・データ**
+
+大規模データの取得・検証・圧縮の方法を扱う。
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-06-bioinformatics-data/` を使う。
+[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/bds-files/chapter-06-bioinformatics-data/
+
+# [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-6-bioinformatics-data)
+## Retrieving Bioinformatics Data
+### Downloading Data with wget and curl
+`wget`と`curl`は、データをウェブからダウンロードするプログラム。
+
+#### wget
+[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget)を用いて、ヒト22番染色体をダウンロードする:  
+
+	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+`man wget`で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。
+
+#### Curl 
+[`curl`](https://ja.wikipedia.org/wiki/CURL)は、デフォルトでは標準出力するので、リダイレクトするか、`-O`を使う:  
+
+	curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
+
+	curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+## Rsync and Secure Copy (scp)
+
+## Data Integrity
+[データ完全性](https://ja.wikipedia.org/wiki/データ完全性)
+
+### SHA and MD5 Checksums
+[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)で転送データの整合性を検証。
+
+`md5`プログラムは、任意の文字列を渡すと、[MD5](https://ja.wikipedia.org/wiki/MD5)値を計算する:  
+
+	echo "atgc" | md5
+	echo "atg" | md5
+
+## Looking at Differences Between Data
+データの違いを見る
+
+[`diff`](https://ja.wikipedia.org/wiki/Diff)コマンドで
+[*gene-1.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-1.bed)と
+[*gene-2.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-2.bed)
+ファイルの差分を出力する:  
+
+	diff -u gene-1.bed gene-2.bed
+
+## Compressing Data and Working with Compressed Data
+データの圧縮
+
+### [gzip](https://ja.wikipedia.org/wiki/Gzip)
+
+	echo {A,C,G,T}{A,C,G,T} > word2.txt
+
+`gzip`コマンドで圧縮:  
+
+	gzip word2.txt
+
+`gunzip`コマンドで解凍:  
+
+	gunzip word2.txt.gz
+
+`-c`オプションを用いて圧縮・解凍の結果を標準出力に書き出す:  
+
+	gzip -c word2.txt > word2.txt.gz
+	gunzip -c word2.txt.gz > word2.duplicate.txt
+
+ヒト22番染色体のデータを解凍し、ファイルサイズを確認する:  
+
+	gunzip -c chr22.fa.gz > chr22.fa
+
+	ls -lh chr22*
+
+`gzip`を用いて、`echo`の出力を、ディスクに書き込む前に、圧縮する:  
+
+	echo {A,C,G,T} | gzip > word.txt.gz
+
+解凍しないで圧縮ファイルに結合する:  
+
+	gzip -c word2.txt >> word.txt.gz
+
+### Working with Gzipped Compressed Files
+圧縮ファイルを直接操作できるコマンド: `zgrep, zcat (gzcat), zdiff, zless`
+
+	gzcat chr22.fa.gz | grep "ACGTACGTACGT"
+
+	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
+
+## Case Study: Reproducibly Downloading Data
+- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
+  - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
+
+----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+### my_project
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、*~/projects/*ディレクトリに移動する:  
+
+    bash
     cd ~/projects/
 
-ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの例を取得する:  
+#### 2020-10-27
+
+2020-10-20に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
+```
+mkdir 2020-10-20
+mv my_project* 2020-10-20/
+```
+
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリを取得し、スクリプトを実行する:   
+```
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/ncbi_genome_reports/
+bash scripts/run_ncbi_GENOME_REPORTS.sh > log.txt 2>&1 &
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log
+```
+
+#### 2020-10-20
+
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリの圧縮ファイル(*my_project.zip*)を取得し展開する:  
 ```
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
 ```
 
-ディレクトリを移動し、スクリプトを実行する:  
+*ncbi_genome_reports/*ディレクトリに移動し、スクリプトを実行する:  
 ```
 cd my_project/
 cd ncbi_genome_reports/
