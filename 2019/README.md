@@ -494,17 +494,15 @@ Control-c で動作中のプロセスを停止
 	gzip -c word2.txt >> word.txt.gz
 
 ### Working with Gzipped Compressed Files
-圧縮ファイルを直接操作できるコマンド: `zgrep, gzcat, zdiff, zless`
+圧縮ファイルを直接操作できるコマンド: `zgrep, zcat (gzcat), zdiff, zless`
 
-	gzcat chr22.fa.gz | grep ">"
-
-	zgrep ">" chr22.fa.gz
+	gzcat chr22.fa.gz | grep "ACGTACGTACGT"
 
 	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
 
 ## Case Study: Reproducibly Downloading Data
 - ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
-  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
+  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
   - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 
