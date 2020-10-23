@@ -587,8 +587,8 @@ mv my_project* 2020-10-20/
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
 cd my_project/ncbi_genome_reports/
-(bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.txt
-tail -f log.txt
+(bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
 # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
 ```
