@@ -456,109 +456,7 @@ Control-c で動作中のプロセスを停止
 
 ----------
 
-----------
 
-# Bioinformatics Data
-**バイオインフォマティクス・データ**
-
-大規模データの取得・検証・圧縮の方法を扱う。
-
-[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-06-bioinformatics-data/` を使う。
-[ターミナル](http://techacademy.jp/magazine/5155)で、`bash`を起動し、ディレクトリを移動する:  
-
-    bash
-    cd ~/projects/bds-files/chapter-06-bioinformatics-data/
-
-# [Chapter 6. Bioinformatics Data](https://github.com/haruosuz/books/blob/master/bds/README.md#chapter-6-bioinformatics-data)
-## Retrieving Bioinformatics Data
-### Downloading Data with wget and curl
-`wget`と`curl`は、データをウェブからダウンロードするプログラム。
-
-#### wget
-[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget)を用いて、ヒト22番染色体をダウンロードする:  
-
-	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
-
-`man wget`で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。
-
-#### Curl 
-[`curl`](https://ja.wikipedia.org/wiki/CURL)は、デフォルトでは標準出力するので、リダイレクトするか、`-O`を使う:  
-
-	curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-
-	curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
-
-## Rsync and Secure Copy (scp)
-
-## Data Integrity
-[データ完全性](https://ja.wikipedia.org/wiki/データ完全性)
-
-### SHA and MD5 Checksums
-[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)で転送データの整合性を検証。
-
-`md5`プログラムは、任意の文字列を渡すと、[MD5](https://ja.wikipedia.org/wiki/MD5)値を計算する:  
-
-	echo "atgc" | md5
-	echo "atg" | md5
-
-## Looking at Differences Between Data
-データの違いを見る
-
-[`diff`](https://ja.wikipedia.org/wiki/Diff)コマンドで
-[*gene-1.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-1.bed)と
-[*gene-2.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-2.bed)
-ファイルの差分を出力する:  
-
-	diff -u gene-1.bed gene-2.bed
-
-## Compressing Data and Working with Compressed Data
-データの圧縮
-
-### [gzip](https://ja.wikipedia.org/wiki/Gzip)
-
-	echo {A,C,G,T}{A,C,G,T} > word2.txt
-
-`gzip`コマンドで圧縮:  
-
-	gzip word2.txt
-
-`gunzip`コマンドで解凍:  
-
-	gunzip word2.txt.gz
-
-`-c`オプションを用いて圧縮・解凍の結果を標準出力に書き出す:  
-
-	gzip -c word2.txt > word2.txt.gz
-	gunzip -c word2.txt.gz > word2.duplicate.txt
-
-ヒト22番染色体のデータを解凍し、ファイルサイズを確認する:  
-
-	gunzip -c chr22.fa.gz > chr22.fa
-
-	ls -lh chr22*
-
-`gzip`を用いて、`echo`の出力を、ディスクに書き込む前に、圧縮する:  
-
-	echo {A,C,G,T} | gzip > word.txt.gz
-
-解凍しないで圧縮ファイルに結合する:  
-
-	gzip -c word2.txt >> word.txt.gz
-
-### Working with Gzipped Compressed Files
-圧縮ファイルを直接操作できるコマンド: `zgrep, zcat (gzcat), zdiff, zless`
-
-	gzcat chr22.fa.gz | grep "ACGTACGTACGT"
-
-	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
-
-## Case Study: Reproducibly Downloading Data
-- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
-  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
-  - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
-  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
-
-----------
 
 ----------
 
@@ -584,13 +482,13 @@ Control-c で動作中のプロセスを停止
 
 日付ディレクトリを作成する:  
 ```
-mkdir 2020-10-13 2020-10-20 $(date +%F)
+mkdir 2020-10-13 2020-10-20 2020-10-27
 ```
 
 2020-10-13に取得したプレーンテキスト形式の*README.md*ファイルを日付ディレクトリに移動・コピーする:  
 ```
 mv README.md 2020-10-13/
-cp 2020-10-13/README.md $(date +%F)/README.md
+cp 2020-10-13/README.md 2020-10-27/README.md
 ```
 
 2020-10-20に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
