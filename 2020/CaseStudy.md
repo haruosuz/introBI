@@ -11,6 +11,7 @@
 - [unix](#unix)
 - [assignment 2](#assignment-2) 課題No.2 「README.md」
 - [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
+- [assignment 4](#assignment-4) 課題No.4 「2020-10-27/README.md」
 
 ----------
 ## unix
@@ -86,5 +87,15 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 圧縮ファイル `zmays-snps.zip` または `zmays-snps.tar.gz` を提出する。
 
 ----------
+## assignment 4
+**課題No.4 「2020-10-27/README.md」**
+
+プロジェクトMarkdownノート（*README.md*ファイル）の最新版を提出する。
 
 ----------
+
+
+
+
+
+
