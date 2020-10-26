@@ -381,15 +381,21 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 ### Combining Pipes and Redirection
 **3.3.2　パイプとリダイレクションの結合**
 
+`2>&1`演算子は標準エラー出力を標準出力にリダイレクトする:  
+
+    ls -l tb1.fasta leafy1.fasta > log.txt 2>&1
+
 ### Even More Redirection: A tee in Your Pipe
 **3.3.3　リダイレクションについてもう少し：パイプのtee**
 
 [`tee`](https://ja.wikipedia.org/wiki/Tee_%28UNIX%29)
 
+    grep -v "^>" tb1.fasta | tee intermediate-file.txt | grep --color -i "[^ATCG]"
+
 ## Managing and Interacting with Processes
 **3.4　プロセスの管理と対話**
 
-[プロセス](https://ja.wikipedia.org/wiki/プロセス)
+[プロセス](https://ja.wikipedia.org/wiki/プロセス)操作の基本：バックグラウンドでプロセスを実行・管理、プロセスを強制終了、プロセスの終了ステータスを確認
 
 ### Background Processes
 **3.4.1　バックグラウンドプロセス**
