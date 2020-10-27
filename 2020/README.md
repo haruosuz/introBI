@@ -13,7 +13,6 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [目次](https://www.oreilly.co.jp/books/9784873118635/#toc)
 
 ![https://www.oreilly.co.jp/books/9784873118635/](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
-<img src="https://learning.oreilly.com/library/cover/9781449367480/250w/" alt="" width=15.5%>
 
 ----------
 
