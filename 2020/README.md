@@ -431,22 +431,6 @@ Control-c で動作中のプロセスを停止
 
 	echo $?
 
-終了ステータスを判定してコマンドを実行する。  
-`&&`は、前のコマンドが成功した場合にのみ後のコマンドを実行する。  
-`||`は、前のコマンドが失敗した場合にのみ後のコマンドを実行する。  
-`&&`と`||`をテストするのに、正常終了[`true`](https://ja.wikipedia.org/wiki/True_%28UNIX%29)または異常終了[`false`](https://ja.wikipedia.org/wiki/False_%28UNIX%29)を返すUnixコマンドを用いる:
-
-	true
-	echo $?
-	false
-	echo $?
-	true && echo "first command was a success"
-	true || echo "first command was not a success"
-	false || echo "first command was not a success"
-	false && echo "first command was a success"
-
-	false; true; false; echo "none of the previous mattered"
-
 ## [Command Substitution](https://en.wikipedia.org/wiki/Command_substitution)
 **3.5　コマンド置換**
 
@@ -461,20 +445,6 @@ Control-c で動作中のプロセスを停止
 
     mkdir 1999-07-01 2000-12-19 2011-02-03
 	ls -l
-
-----------
-
-----------
-
-----------
-
-----------
-
-----------
-
-
-
-----------
 
 ----------
 
