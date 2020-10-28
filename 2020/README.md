@@ -35,6 +35,24 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
+
+----------
+## extra classes
+**補講**
+
+参加は任意です。  
+Participation is not required, but is appreciated.
+
+R言語入門  
+Introduction to the R Language  
+
+- 2020-11-14 (土)
+- 2020-11-28 (土)
+- 2020-12-05 (土)
+- 2020-12-12 (土)
+- 2020-12-19 (土)
+- 2020-12-25 (金)
+
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
