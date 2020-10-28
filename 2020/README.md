@@ -40,18 +40,18 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 ## extra classes
 **補講**
 
-参加は任意です。  
-Participation is not required, but is appreciated.
-
-R言語入門  
-Introduction to the R Language  
-
 - 2020-11-14 (土)
 - 2020-11-28 (土)
 - 2020-12-05 (土)
 - 2020-12-12 (土)
 - 2020-12-19 (土)
 - 2020-12-25 (金)
+
+R言語入門  
+Introduction to the R Language  
+
+参加は任意です。  
+Participation is not required, but is appreciated.
 
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
