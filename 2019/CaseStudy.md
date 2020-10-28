@@ -171,7 +171,8 @@ MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/ch
     grep "chr22.fa.gz" md5sum.txt
 
 ### References
-- [NGS Surfer's Wiki | GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=GRCh37とHg19の違い%28含むミトコンドリア%29)
+- [Surfer's-wiki](https://cell-innovation.nig.ac.jp/SurfWiki/index.html)
+  - [GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/SurfWiki/GRCh37_Hg19_defference.html)
 - [ショートリードの憂鬱 - 次世代シーケンサー: GRCh37とHg19](http://shortreadbrothers.blogspot.jp/2011/11/grch37hg19.html)
 
 ----------
