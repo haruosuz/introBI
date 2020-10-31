@@ -7,15 +7,12 @@
 **ケーススタディ**
 
 ## Table of Contents
-- assignment 1 課題No.1 class cancelled
 - [unix](#unix)
 - [assignment 2](#assignment-2) 課題No.2 「README.md」
 - [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
 - [assignment 4](#assignment-4) 課題No.4 「2020-10-27/README.md」
 - [NCBI Genome List](#ncbi-genome-list)
-
-
-
+- [assignment 5](#assignment-5) 課題No.5 「2020-11-03/README.md」
 
 ----------
 ## unix
@@ -195,7 +192,7 @@ cd ~/projects/ncbi/viruses/sars-cov-2/
 GTF=GCA_009858895.3_ASM985889v3_genomic.gtf
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
-# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name:  
 echo $GTF
 
 # `ls -lh`でファイルサイズを確認する:  
@@ -239,4 +236,15 @@ grep "ribosomal" $GTF | cut -f3 | sort | uniq -c
 ```
 
 ----------
+## assignment 5
+**課題No.5 「2020-11-03/README.md」**
+
+Download data files (FASTA and GTF files) for organisms you're interested in, and document how you acquired them.
+Submit the latest version of the plain-text project notebook (*README.md* file).
+
+興味ある生物のデータファイル（FASTAとGTFファイル）をダウンロードし、それらをどのように入手したかを記録する。
+プロジェクトノート（*README.md*ファイル）の最新版を提出する。
+
+----------
+
 
