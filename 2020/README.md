@@ -35,28 +35,24 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
+- [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
+Office closed / Winter break（12/26～1/5）
+- [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
+事務室閉室・冬季休校（12/26～1/5）
 
 ----------
 ## extra classes
 **補講**
 
-- 2020-11-14 (土)
 - 2020-11-28 (土)
 - 2020-12-05 (土)
 - 2020-12-12 (土)
-- 2020-12-19 (土)
-- 2020-12-25 (金)
 
 R言語入門  
 Introduction to the R Language  
 
 参加は任意です。  
 Participation is not required, but is appreciated.
-
-- [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
-Office closed / Winter break（12/26～1/5）
-- [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
-事務室閉室・冬季休校（12/26～1/5）
 
 ----------
 ## Guest speaker
@@ -343,7 +339,8 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 ## Working with Streams and Redirection
 **3.2　ストリームとリダイレクションの操作**
 
-[ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)と[リダイレクト](https://ja.wikipedia.org/wiki/リダイレクト_%28CLI%29)
+[ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)  
+[リダイレクト](https://ja.wikipedia.org/wiki/リダイレクト_%28CLI%29)
 
 ### Redirecting Standard Out to a File
 **3.2.1　標準出力をファイルにリダイレクトする**
@@ -462,6 +459,143 @@ Control-c で動作中のプロセスを停止
 
     mkdir 1999-07-01 2000-12-19 2011-02-03
 	ls -l
+
+----------
+
+# Bioinformatics Data
+**バイオインフォマティクス・データ**
+
+大規模データの取得・検証・圧縮の方法を扱う。
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-06-bioinformatics-data/` を使う。
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/bds-files/chapter-06-bioinformatics-data/
+
+カレントディレクトリを表示する:  
+
+    pwd
+
+ファイルを表示する:  
+
+    ls
+
+ファイルのサイズを確認する:  
+
+    ls -l gene-*.bed
+
+ファイルの総行数を確認する:  
+
+    wc -l gene-*.bed
+
+# Chapter 6. Bioinformatics Data
+**6章　バイオインフォマティクスのデータ**
+
+## Retrieving Bioinformatics Data
+**6.1　バイオインフォマティクスデータの取得**
+
+### Downloading Data with wget and curl
+**6.1.1　wgetとcurlを使用したデータのダウンロード**
+
+`wget`と`curl`は、データをウェブからダウンロードするプログラム。
+
+#### wget
+[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget)を用いて、ヒト22番染色体をダウンロードする:  
+
+	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+`man wget`で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。
+
+#### Curl 
+[`curl`](https://ja.wikipedia.org/wiki/CURL)は、デフォルトでは標準出力するので、リダイレクトする:  
+
+    #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
+    #curl -o chr22.fa.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+## Rsync and Secure Copy (scp)
+**rsyncとscp**
+
+## Data Integrity
+**6.2　データの整合性**
+
+[データ完全性](https://ja.wikipedia.org/wiki/データ完全性)
+
+[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)で転送データの整合性を検証。
+
+### SHA and MD5 Checksums
+**6.2.1　SHAとMD5のチェックサム**
+
+[MD5](https://ja.wikipedia.org/wiki/MD5)と[SHA-1](https://ja.wikipedia.org/wiki/SHA-1)チェックサム
+
+`md5`プログラムは、[MD5](https://ja.wikipedia.org/wiki/MD5)チェックサム値を計算する。
+
+任意の文字列を渡す:  
+
+    echo "bioinformatics" | md5
+    echo "bioinformatic" | md5
+
+ファイルを入力とする:  
+
+    md5 gene-*.bed
+
+## Looking at Differences Between Data
+**6.3　データの間の差を見る**
+
+[`diff`](https://ja.wikipedia.org/wiki/Diff)コマンドで
+[*gene-1.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-1.bed)と
+[*gene-2.bed*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-06-bioinformatics-data/gene-2.bed)
+ファイルの差分を出力する:  
+
+	diff -u gene-1.bed gene-2.bed
+
+## Compressing Data and Working with Compressed Data
+**6.4　データの圧縮と圧縮データの操作**
+
+### [gzip](https://ja.wikipedia.org/wiki/Gzip)
+**6.4.1　gzip**
+
+2つのファイルを結合し、この出力をディスクに書き込む前に、圧縮する:  
+
+    cat gene-1.bed gene-2.bed | gzip > gene-1_gene-2.bed.gz
+
+`gzip`コマンドでファイルを圧縮する:  
+
+    gzip gene-1.bed
+
+`gunzip`コマンドでファイルを解凍する:  
+
+    gunzip gene-1.bed.gz
+
+`gzip`も`gunzip`も元のファイルを置き換えるが、
+`-c`オプションを使用して、圧縮・解凍の結果を標準出力に書き出す:  
+
+    gzip -c gene-1.bed > gene-1.bed.gz
+    gunzip -c gene-1.bed.gz > duplicate_gene-1.bed
+
+ファイル *gene-2.bed* を圧縮して、既存の圧縮ファイル *gene-1.bed.gz* に追加する:  
+
+    gzip -c gene-2.bed >> gene-1.bed.gz
+
+### Working with Gzipped Compressed Files
+**6.4.2　gzipで圧縮されたファイルの操作**
+
+圧縮ファイルを直接操作できるコマンド: `zgrep, zcat (gzcat), zdiff, zless`
+
+	gzcat chr22.fa.gz | grep "ACGTACGTACGT"
+
+	zgrep --color -i -n "ACGTACGTACGT" chr22.fa.gz
+
+## Case Study: Reproducibly Downloading Data
+**6.5　ケーススタディ:再現性を確保できるデータのダウンロード方法**
+
+- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
+  - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
 
 ----------
 
