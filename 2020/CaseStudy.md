@@ -99,14 +99,17 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 ----------
 ## NCBI Genome List
 
-- [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)から目的のゲノム配列を見つける。
-  - ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/) 上部の検索ボックスに [ 生物名 Organism Name ] を入力して、「Search」ボタンを押す。
-例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。
-  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。
-  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、列**Assembly**の"GCA_009858895.3"をクリックして開く。
-  - [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_009858895.3)、"FTP directory for GenBank assembly"をクリックして開く。
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)から目的のゲノム配列を見つける。
 
-https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/
+- ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/) 上部の検索ボックスに [ 生物名 Organism Name ] を入力して、「Search」ボタンを押す。
+例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。
+- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。
+- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、列**Assembly**の"GCA_009858895.3"をクリックして開く。
+- [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_009858895.3)、"FTP directory for GenBank assembly"をクリックして開く。
+- [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/)
+リンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+Right click the link, and select "Copy Link Address".
+
 ```
 Name                                                Last modified      Size  
 
@@ -117,15 +120,11 @@ GCA_009858895.3_ASM985889v3_genomic.gtf.gz          2020-02-17 11:27  910
 md5checksums.txt                                    2020-06-02 10:34  1.0K  
 ```
 
-リンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-Right click the link, and select "Copy Link Address".
-
-- Genomes Download FAQ
+Genomes Download FAQ
 [What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
 
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
-# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-
 File formats and content:
 
    *_genomic.fna.gz file
@@ -189,8 +188,15 @@ gunzip *.gz
 [GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを処理する。
 
 ```
-FNA=GCA_009858895.3_ASM985889v3_genomic.fna
+cd ~/projects/ncbi/viruses/sars-cov-2/
+
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):  
 GTF=GCA_009858895.3_ASM985889v3_genomic.gtf
+
+# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
+echo $GTF
 
 # `ls -lh`でファイルサイズを確認する:  
 # `ls -lh` reports human-readable file sizes
@@ -202,34 +208,34 @@ wc -l *
 
 # `head`で先頭部分を表示する:  
 # look at the top of a file with head
-head -n 8 "${GTF}"
+head -n 5 $GTF
 
 # `grep`で"#"で始まる行を抽出する:  
 # use grep to extract lines matching the pattern "^#":  
-grep "^#" "${GTF}"
+grep "^#" $GTF
 
 # パイプでプログラムの入出力をつなぐ。
 # Pipe the standard output to the next command with the pipe character (|).
-grep "^#" "${GTF}" | wc -l
+grep "^#" $GTF | wc -l
 
 # `grep -c`オプションで、パターンにマッチした行数を表示する:  
-grep -c "^#" "${GTF}"
+grep -c "^#" $GTF
 
 # `grep`で"#"で始まる行を削除する:  
 # exclude lines that begin with "#":
-grep -v "^#" "${GTF}" | head -n 3
+grep -v "^#" $GTF | head -n 3
 
 # `grep`で"#"で始まる行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出する:  
 # chop off the metadata rows using `grep`, and then use `cut` to extract the first, fourth, and fifth columns (chromosome, start, end):
-grep -v "^#" "${GTF}" | cut -f1,4,5 | head -n 3
+grep -v "^#" $GTF | cut -f1,4,5 | head -n 3
 
 # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
 # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
-grep -v "^#" "${GTF}" | cut -f3 | sort | uniq -c
+grep -v "^#" $GTF | cut -f3 | sort | uniq -c
 
 # Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
 # use Unix tools (`grep, cut, sort, and uniq -c`) to count features of a particular gene:
-grep "ribosomal" "${GTF}" | cut -f3 | sort | uniq -c
+grep "ribosomal" $GTF | cut -f3 | sort | uniq -c
 ```
 
 ----------
