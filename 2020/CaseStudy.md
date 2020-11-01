@@ -107,7 +107,7 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 - [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)
 画面右側の"**FTP directory for GenBank assembly**"をクリックして開く。
 - [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
-ファイル（*_genomic.fna.gz, *_genomic.gff.gz, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+ファイル（*_genomic.fna.gz, *_genomic.gff.gz, md5checksums.txt）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 Right click the link, and select "Copy Link Address".
 
 ```
@@ -189,6 +189,7 @@ gunzip *.gz
 
 [GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを処理する。
 
+Unixコマンド例:  
 ```
 cd ~/projects/ncbi/genomes/prokaryotes/
 
@@ -240,7 +241,29 @@ grep -v "^#" $GFF | cut -f3 | sort | uniq -c
 grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
 ```
 
+出力例:  
+```
+~/projects/ncbi/genomes/prokaryotes $grep -v "^#" $GFF | cut -f3 | sort | uniq -c
+4379 CDS
+ 180 exon
+4419 gene
+  49 mobile_genetic_element
+  72 ncRNA
+   1 origin_of_replication
+ 166 pseudogene
+  22 rRNA
+   1 recombination_feature
+   1 region
+ 697 repeat_region
+  48 sequence_feature
+  86 tRNA
+```
+
+ゲノムに含まれる遺伝子（gene）の数は？
+タンパク質をコードする配列（CDS）、ribosomal RNA (rRNA)、transfer RNA (tRNA) 遺伝子の数は？
+
 References:
+- [DDBJ Feature key](https://www.ddbj.nig.ac.jp/ddbj/features.html)
 - [Sharp et al. (2005) Nucleic Acids Res "Variation in the strength of selected codon usage bias among bacteria"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)
   - [Table 1
 The 80 bacterial genome sequences analysed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
