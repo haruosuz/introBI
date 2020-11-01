@@ -500,8 +500,6 @@ Control-c で動作中のプロセスを停止
 ### Downloading Data with wget and curl
 **6.1.1　wgetとcurlを使用したデータのダウンロード**
 
-`wget`と`curl`は、データをウェブからダウンロードするプログラム。
-
 #### wget
 [`wget`](https://ja.wikipedia.org/wiki/GNU_Wget)を用いて、ヒト22番染色体をダウンロードする:  
 
@@ -592,7 +590,7 @@ Control-c で動作中のプロセスを停止
 ## Case Study: Reproducibly Downloading Data
 **6.5　ケーススタディ:再現性を確保できるデータのダウンロード方法**
 
-- ケーススタディ [Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
+- [2019 Case Study](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
   - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
   - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
   - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
