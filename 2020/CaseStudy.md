@@ -114,7 +114,6 @@ Name                                             Last modified      Size
 GCA_000005845.2_ASM584v2_genomic.fna.gz          2014-10-31 19:59  1.3M 
  
 GCA_000005845.2_ASM584v2_genomic.gff.gz          2020-03-05 13:32  437K  
-GCA_000005845.2_ASM584v2_genomic.gtf.gz          2020-03-05 13:32  453K 
 
 md5checksums.txt                                 2020-03-05 13:32  1.1K  
 ```
