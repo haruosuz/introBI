@@ -103,11 +103,11 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli)
 検索ボックス下の「Overview (1); Prokaryotes (21387); Plasmids (3517)」のうち、**Prokaryotes**をクリックすると、*Escherichia coli*に属する株(Strain)が表示される。
 - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli)
-上から1番目の生物（Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。
+上から1番目の生物（列 Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。
 - [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)
 画面右側の"**FTP directory for GenBank assembly**"をクリックして開く。
 - [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
-リンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+ファイル（*_genomic.fna.gz*, *_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 Right click the link, and select "Copy Link Address".
 
 ```
@@ -121,10 +121,9 @@ GCA_000005845.2_ASM584v2_genomic.gff.gz          2020-03-05 13:32  437K
 md5checksums.txt                                 2020-03-05 13:32  1.1K  
 ```
 
-Genomes Download FAQ
-[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+ディレクトリ内のファイルについて
+- [What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+- ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 File formats and content:
 
