@@ -25,7 +25,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-10-27 No. 4 - Unixシェル再入門 [Unix Shell](#unix-shell)
   - [my_project](#my_project)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
-  - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
+  - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
 - 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
