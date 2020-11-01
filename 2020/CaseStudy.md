@@ -131,10 +131,7 @@ File formats and content:
        FASTA format of the genomic sequence(s) in the assembly.
 
    *_genomic.gff.gz file
-       Annotation of the genomic sequence(s) in Generic Feature Format Version 3
-       (GFF3). Sequence identifiers are provided as accession.version.
-       Additional information about NCBI's GFF files is available at 
-       ftp://ftp.ncbi.nlm.nih.gov/genomes/README_GFF3.txt.
+       Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
 
    md5checksums.txt file
        file checksums are provided for all data files in the directory
