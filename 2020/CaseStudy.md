@@ -107,7 +107,7 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 - [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)
 画面右側の"**FTP directory for GenBank assembly**"をクリックして開く。
 - [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
-ファイル（*_genomic.fna.gz*, *_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+ファイル（*_genomic.fna.gz, *_genomic.gff.gz, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 Right click the link, and select "Copy Link Address".
 
 ```
