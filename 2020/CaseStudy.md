@@ -100,9 +100,12 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 
 - ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/) 上部の検索ボックスに [ 生物名 Organism Name ] を入力して、「Search」ボタンを押す。
 例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。
-- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli)、検索ボックス下の「Overview (1); Prokaryotes (21387); Plasmids (3517)」のうち、**Prokaryotes**をクリックすると、Escherichia coliに属する株(Strain)が表示される。
-- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli)、上から1番目（Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly **GCA_000005845.2** をクリックして開く。
-- [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)、"**FTP directory for GenBank assembly**"をクリックして開く。
+- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli)
+検索ボックス下の「Overview (1); Prokaryotes (21387); Plasmids (3517)」のうち、**Prokaryotes**をクリックすると、*Escherichia coli*に属する株(Strain)が表示される。
+- [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli)
+上から1番目の生物（Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。
+- [ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)
+画面右側の"**FTP directory for GenBank assembly**"をクリックして開く。
 - [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
 リンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 Right click the link, and select "Copy Link Address".
