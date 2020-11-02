@@ -208,22 +208,27 @@ ls -lh
 wc -l *
 
 # `head`で先頭部分を表示する:  
-# look at the top of a file with head
+# look at the top of a file
 head -n 5 $GFF
+
+# `tail`で末尾部分を表示する:  
+# look at the end of a file
+tail -n 2 $GFF
 
 # `grep`で"#"で始まる行を抽出する:  
 # use grep to extract lines matching the pattern "^#":  
 grep "^#" $GFF
 
 # パイプでプログラムの入出力をつなぐ。
-# Pipe the standard output to the next command with the pipe character (|).
+# Pipe the standard output to the next command with the pipe character (|):  
 grep "^#" $GFF | wc -l
 
 # `grep -c`オプションで、パターンにマッチした行数を表示する:  
+# use grep to count (the -c option stands for count) the number of lines matching the pattern:  
 grep -c "^#" $GFF
 
 # `grep`で"#"で始まる行を削除する:  
-# exclude lines that begin with "#":
+# exclude lines that begin with "#":  
 grep -v "^#" $GFF | head -n 3
 
 # `grep`で"#"で始まる行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出する:  
@@ -234,9 +239,12 @@ grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
 # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
 grep -v "^#" $GFF | cut -f3 | sort | uniq -c
 
-# Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
-# use Unix tools (`grep, cut, sort, and uniq -c`) to count features of a particular gene:
-grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
+# 特定の遺伝子の特徴をカウントする:  
+# to count features of a particular gene:
+grep -i "ribosomal" $GFF | cut -f3 | sort | uniq -c
+
+# add the option `-i` to `grep` to be case insensitive.
+# `grep`コマンドは、`-i`オプションで大文字小文字を区別しない（ignore case）。
 
 # rRNA遺伝子について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、先頭と末尾を見る:  
 awk -F"\t" '$3 ~ /rRNA/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | head -n 1
