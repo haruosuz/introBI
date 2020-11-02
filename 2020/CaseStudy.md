@@ -237,6 +237,10 @@ grep -v "^#" $GFF | cut -f3 | sort | uniq -c
 # Unixコマンド（`grep, cut, sort, uniq -c`）を用いて、特定の遺伝子の特徴をカウントする:  
 # use Unix tools (`grep, cut, sort, and uniq -c`) to count features of a particular gene:
 grep "ribosomal" $GFF | cut -f3 | sort | uniq -c
+
+# rRNA遺伝子について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、先頭と末尾を見る:  
+awk -F"\t" '$3 ~ /rRNA/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | head -n 1
+awk -F"\t" '$3 ~ /rRNA/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 1
 ```
 
 出力例:  
