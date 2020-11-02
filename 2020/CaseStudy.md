@@ -308,10 +308,7 @@ CDS, rRNA, tRNA
 - [Sharp et al. (2005) Nucleic Acids Res "Variation in the strength of selected codon usage bias among bacteria"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)
   - [Table 1
 The 80 bacterial genome sequences analysed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
-```
-Gene numbers
-rRNA	tRNA	ORF
-```
+Gene numbers: rRNA, tRNA, ORF
   - 細菌の増殖速度、rRNAオペロン数、tRNA遺伝子コピー数の相関 
 
 ----------
