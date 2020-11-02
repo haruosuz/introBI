@@ -293,7 +293,7 @@ awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 1
 問題:  
 - ゲノムに含まれる遺伝子（gene）の数は？タンパク質をコードする配列（CDS）、[ribosomal RNA (rRNA)](https://ja.wikipedia.org/wiki/リボソームRNA)、[transfer RNA (tRNA)](https://ja.wikipedia.org/wiki/転移RNA) 遺伝子の数は？
 - リボソームRNAは、原核生物では、16S、23S、5Sの順に並んだオペロン構造を持っている？16S、23S、5Sは、1:1:1で存在する？16Sと23Sの距離は1500塩基以下？
-- タンパク質をコードする配列（CDS）の長さの最大値は？
+- 遺伝子の長さは？タンパク質をコードする配列（CDS）の長さの最大値は？
 
 **References:**
 - [DDBJ Feature key の定義](https://www.ddbj.nig.ac.jp/ddbj/features.html)
