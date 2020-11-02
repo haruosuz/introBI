@@ -112,6 +112,8 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 ----------
 
 ----------
+## 2020-11-03
+----------
 ## NCBI Genome List
 
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)から目的のゲノム配列を見つける。
@@ -287,24 +289,41 @@ awk -F"\t" '$3 ~ /rRNA/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 
   86 tRNA
 ```
 
-ゲノムに含まれる遺伝子（gene）の数は？
-タンパク質をコードする配列（CDS）、ribosomal RNA (rRNA)、transfer RNA (tRNA) 遺伝子の数は？
+- ゲノムに含まれる遺伝子（gene）の数は？タンパク質をコードする配列（CDS）、[ribosomal RNA (rRNA)](https://ja.wikipedia.org/wiki/リボソームRNA)、[transfer RNA (tRNA)](https://ja.wikipedia.org/wiki/転移RNA) 遺伝子の数は？
+- タンパク質をコードする配列（CDS）の長さの最大値は？
+- リボソームRNAは、原核生物では、16S、23S、5Sの順に並んだオペロン構造を持っている？16S、23S、5Sは、1:1:1で存在する？16Sと23Sの距離は1500塩基以下？
 
-References:
-- [DDBJ Feature key](https://www.ddbj.nig.ac.jp/ddbj/features.html)
+**References:**
+- [DDBJ Feature key の定義](https://www.ddbj.nig.ac.jp/ddbj/features.html)
+CDS, rRNA, tRNA
+- [Huang et al. Nat Commun. 2020 "Ribosome engineering reveals the importance of 5S rRNA autonomy for ribosome assembly"](https://pubmed.ncbi.nlm.nih.gov/32518240/)
+  - [興味深いことに、多くの生物（真核生物を含む）は、5Sだけ別に、余分なコピーをゲノム上に持っています。](https://twitter.com/puni2azarashi/status/1270590549414707205)
+- [Brewer et al. (2020) ISME J. "Unlinked rRNA genes are widespread among bacteria and archaea."](https://www.nature.com/articles/s41396-019-0552-3)
+  - Fig. 1 [In most bacteria and archaea, rRNA genes are arranged in the order 16S-23S-5S, and are transcribed and regulated as a single unit. However, in some cases, the 16S is separated from the 23S and 5S, and is referred to as “unlinked”](https://www.nature.com/articles/s41396-019-0552-3/figures/1)
+  - rRNA pairs were classified as “unlinked” if the distance between each gene was >1500 bp, “linked” if the distance was ≤1500 bp.
+  - [通常は、rRNA遺伝子は1つのオペロン状に存在している(16S-23S-5S)。しかし、しばしば16S-23Sが離れているものもまた存在していて、これを"unlinked"と表現しています。](https://qiita.com/nkjmu/items/3572c8883d8802c3edd5)
+- [Vieira-Silva & Rocha (2010) PLoS Genet "The Systemic Imprint of Growth and Its Uses in Ecological (Meta)Genomics"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/)
+  - Figure 1 [Genomic signatures correlated to minimum generation time (d) for 214 prokaryotes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/figure/pgen-1000808-g001/)
+  - rRNAオペロン/tRNA遺伝子コピー数が多いほど、 rRNA遺伝子の複製起点からの距離が小さいほど、原核生物の最小倍加時間が小さい（増殖速度が速い）
 - [Sharp et al. (2005) Nucleic Acids Res "Variation in the strength of selected codon usage bias among bacteria"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)
   - [Table 1
 The 80 bacterial genome sequences analysed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
+  - 細菌の増殖速度、rRNAオペロン数、tRNA遺伝子コピー数の相関 
 
 ----------
 ## assignment 5
 **課題No.5 「2020-11-03/README.md」**
 
-Submit the latest version of the plain-text project notebook (*README.md* file).
+プロジェクトノート（*README.md*ファイル）の最新版を提出する。  
+興味ある生物のデータファイル（FASTAとGFFファイル）をダウンロードし、それらをどのように入手したかを記録する。
+
+Submit the latest version of the plain-text project notebook (*README.md* file).  
 Download data files (FASTA and GFF files) for organisms you're interested in, and document how you acquired them.
 
-プロジェクトノート（*README.md*ファイル）の最新版を提出する。
-興味ある生物のデータファイル（FASTAとGFFファイル）をダウンロードし、それらをどのように入手したかを記録する。
+
+
+
+
 
 ----------
 
