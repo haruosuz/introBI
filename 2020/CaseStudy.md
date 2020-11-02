@@ -149,8 +149,6 @@ File formats and content:
 
 `wget`コマンドを使用して、DNA配列データのFASTAファイル（*_genomic.fna.gz*）、遺伝子アノテーションのGFFファイル（*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
 ```
-date
- 
 # Escherichia coli str. K-12 substr. MG1655
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
