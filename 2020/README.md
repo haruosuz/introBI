@@ -505,14 +505,16 @@ Control-c で動作中のプロセスを停止
 
 	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
+オプション`--recursive`または`-r`でデータを再帰的にダウンロードできる。
+
 `man wget`で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。
 
 #### Curl 
 [`curl`](https://ja.wikipedia.org/wiki/CURL)は、デフォルトでは標準出力するので、リダイレクトする:  
 
     #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-    #curl -o chr22.fa.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
-    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+オプション`--location`または`-L`でリダイレクトを辿る。
 
 ## Rsync and Secure Copy (scp)
 **rsyncとscp**
