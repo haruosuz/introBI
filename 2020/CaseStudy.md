@@ -296,9 +296,9 @@ awk -F"\t" '$3 ~ /rRNA/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 
 **References:**
 - [DDBJ Feature key の定義](https://www.ddbj.nig.ac.jp/ddbj/features.html)
 CDS, rRNA, tRNA
-- [Huang et al. Nat Commun. 2020 "Ribosome engineering reveals the importance of 5S rRNA autonomy for ribosome assembly"](https://pubmed.ncbi.nlm.nih.gov/32518240/)
-  - [興味深いことに、多くの生物（真核生物を含む）は、5Sだけ別に、余分なコピーをゲノム上に持っています。](https://twitter.com/puni2azarashi/status/1270590549414707205)
-- [Brewer et al. (2020) ISME J. "Unlinked rRNA genes are widespread among bacteria and archaea."](https://www.nature.com/articles/s41396-019-0552-3)
+- [Huang et al. Nat Commun. 2020 Jun 9 "Ribosome engineering reveals the importance of 5S rRNA autonomy for ribosome assembly"](https://pubmed.ncbi.nlm.nih.gov/32518240/)
+  - [リボソームRNAは、基本的にゲノムから転写された後、それぞれのパーツに切り出されます。例えば大腸菌ならば、リボソームRNA前駆体が転写されたのち、5S、16S、23Sに分かれるのです。それなら5Sも16Sも23Sも1:1:1で存在するはず、となるのですが、興味深いことに、多くの生物（真核生物を含む）は、5Sだけ別に、余分なコピーをゲノム上に持っています。](https://twitter.com/puni2azarashi/status/1270590549414707205)
+- [Brewer et al. ISME J. 2020 Feb "Unlinked rRNA genes are widespread among bacteria and archaea."](https://www.nature.com/articles/s41396-019-0552-3)
   - Fig. 1 [In most bacteria and archaea, rRNA genes are arranged in the order 16S-23S-5S, and are transcribed and regulated as a single unit. However, in some cases, the 16S is separated from the 23S and 5S, and is referred to as “unlinked”](https://www.nature.com/articles/s41396-019-0552-3/figures/1)
   - rRNA pairs were classified as “unlinked” if the distance between each gene was >1500 bp, “linked” if the distance was ≤1500 bp.
   - [通常は、rRNA遺伝子は1つのオペロン状に存在している(16S-23S-5S)。しかし、しばしば16S-23Sが離れているものもまた存在していて、これを"unlinked"と表現しています。](https://qiita.com/nkjmu/items/3572c8883d8802c3edd5)
