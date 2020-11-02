@@ -288,6 +288,9 @@ awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 1
    7 product=16S ribosomal RNA
    7 product=23S ribosomal RNA
    8 product=5S ribosomal RNA
+
+~/projects/ncbi/genomes/prokaryotes $awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 1
+7076	U00096.3	Genbank	CDS	2044938	2052014	.	+	0	ID=cds-AAC75042.4;Parent=gene-b1978;Dbxref=UniProtKB/Swiss-Prot:P76347,NCBI_GP:AAC75042.4,ASAP:ABE-0006563,ECOCYC:G7064,EcoGene:EG13378;Name=AAC75042.4;gbkey=CDS;gene=yeeJ;locus_tag=b1978;orig_transcript_id=gnl|b1978|mrna.b1978;product=inverse autotransporter adhesin;protein_id=AAC75042.4;transl_table=11
 ```
 
 問題:  
