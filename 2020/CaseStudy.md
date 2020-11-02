@@ -213,7 +213,9 @@ cd ~/projects/ncbi/genomes/prokaryotes/
 
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
-GFF=GCA_000005845.2_ASM584v2_genomic.gff # Escherichia coli str. K-12 substr. MG1655
+# Escherichia coli str. K-12 substr. MG1655
+FNA=GCA_000005845.2_ASM584v2_genomic.fna
+GFF=GCA_000005845.2_ASM584v2_genomic.gff
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
@@ -235,7 +237,7 @@ head -n 5 $GFF
 # look at the end of a file
 tail -n 2 $GFF
 
-# p.54, p.153: `grep`で"#"で始まる行を抽出する:  
+# p.153 (p.54): `grep`で"#"で始まる行を抽出する:  
 # use grep to extract lines matching the pattern "^#":  
 grep "^#" $GFF
 
@@ -247,7 +249,7 @@ grep "^#" $GFF | wc -l
 # use grep to count (the -c option stands for count) the number of lines matching the pattern:  
 grep -c "^#" $GFF
 
-# p.54, p.155: `grep -v`で"#"で始まる行を削除する:  
+# p.155 (p.54): `grep -v`で"#"で始まる行を削除する:  
 # exclude lines that begin with "#":  
 grep -v "^#" $GFF | head -n 3
 
@@ -258,6 +260,9 @@ grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
 # p.166: Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約する:  
 # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
 grep -v "^#" $GFF | cut -f3 | sort | uniq -c
+
+# p.167: +鎖と-鎖(7列目)の特徴領域(3列目)をカウントする:  
+grep -v "^#" $GFF | cut -f3,7 | sort | uniq -c
 
 # p.157: `grep -o`でパターンの一致する部分だけを抽出する。
 # rRNA遺伝子（16S、23S、5S）をカウントする:  
