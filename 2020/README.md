@@ -634,7 +634,9 @@ Control-c で動作中のプロセスを停止
     #!/bin/bash
     set -euo pipefail
 
-![https://wizardzines.com/comics/bash-errors/](https://wizardzines.com/comics/bash-errors/bash-errors.png)
+https://wizardzines.com/comics/bash-errors/
+
+![](https://wizardzines.com/comics/bash-errors/bash-errors.png)
 
 #### Running Bash scripts
 
