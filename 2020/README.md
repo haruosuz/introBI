@@ -600,6 +600,195 @@ Control-c で動作中のプロセスを停止
 
 ----------
 
+# Shell Scripting
+**シェルスクリプト**
+
+[シェルスクリプト](https://ja.wikipedia.org/wiki/シェルスクリプト)を用いた処理の自動化を行なう。
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-12-pipelines/` を使う。
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/bds-files/chapter-12-pipelines/
+
+    cp template.sh script.sh
+    atom script.sh
+
+# Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
+**12章　シェルスクリプト作成、パイプラインの記述、タスクの並列化 **
+
+## Basic Bash Scripting
+**12.1　基本的なBashスクリプティング**
+
+### Writing and Running Robust Bash Scripts
+**12.1.1　ロバストなBashスクリプトの作成と実行**
+
+#### A robust Bash header
+
+ロバストなBashスクリプトのヘッダ
+
+[*template.sh*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-12-pipelines/template.sh)
+
+    #!/bin/bash
+    set -euo pipefail
+
+![https://wizardzines.com/comics/bash-errors/](https://wizardzines.com/comics/bash-errors/bash-errors.png)
+
+#### Running Bash scripts
+
+Bashスクリプトを実行する方法:  
+1. `bash`プログラムを用いる: `bash script.sh`  
+2. プログラムとしてスクリプトを呼び出す: `./script.sh`  
+[`chmod`](https://ja.wikipedia.org/wiki/Chmod)コマンドで実行権限を追加する: `chmod +x script.sh`  
+
+### Variables and Command Arguments
+**12.1.2　変数とコマンド引数**
+
+変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+
+    sample="zmays"
+
+変数の値にアクセスするには、変数名の前にドル記号を付ける（`$sample`）:  
+
+    echo $sample
+
+中括弧`{}`で変数名を囲む:  
+
+    echo $sample_snp
+    echo ${sample}_snp
+
+ダブルクォーテーション`""`で変数を囲む:  
+
+    echo "${sample}_snp"
+
+#### Command-line arguments
+
+コマンドライン引数は、`$1, $2, $3, ...`に割り当てられる。変数`$0`はスクリプト名を格納する。  
+
+	echo "script name: $0"
+	echo "1st arg: $1"
+	echo "2nd arg: $2"
+	echo "3rd arg: $3"
+
+このファイルを実行すると、割り当てられた引数（`$0, $1, $2, $3`）を出力する:  
+
+    bash script.sh arg1 arg2 arg3
+
+変数`$#`にはコマンドライン引数の個数を割り当てる（スクリプト名`$0`は引数としてカウントしない）。
+
+### Conditionals in a Bash Script: if Statements
+**12.1.3　Bashスクリプト内の条件文：if文**
+
+条件分岐
+
+`if`文は条件式が真の場合に処理を行う。  
+基本構文:  
+
+    if 条件式
+    then
+      処理
+    fi
+
+`test`コマンドは、条件式を評価し、真(0)か偽(1)かの[終了ステータス](https://ja.wikipedia.org/wiki/終了ステータス)を返す。  
+実行例（`echo "$?"`で終了ステータスを出力）:  
+
+	test "ATG" = "ATG" ; echo "$?"
+	test "ATG" = "atg" ; echo "$?"
+
+    test -f files.txt; echo "$?"
+
+指定したファイルが存在し、通常のファイルであれば、処理を実行する:  
+
+    if test -f files.txt
+    then
+      ls -l files.txt
+    fi
+
+`if test -f files.txt`を`if [ -f files.txt ] `で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
+
+- [if 文と test コマンド | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/if_and_test.html)
+
+### Processing Files with Bash Using for Loops and Globbing
+**12.1.4　forループとグロブ（パターンマッチ）を使ったBashによるファイル処理**
+
+- [for 文の使用方法 | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/for.html)
+- [用語集:ファイルグロブ: UNIX/Linuxの部屋](http://x68000.q-e-d.net/~68user/unix/pickup?%A5%D5%A5%A1%A5%A4%A5%EB%A5%B0%A5%ED%A5%D6)
+
+プロジェクト・ディレクトリ`zmays-snps/`を作成し、
+3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
+
+    mkdir -p zmays-snps/{data/seqs,scripts,analysis}
+    touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
+
+`for`文で繰り返し処理を実行する:  
+    
+    for file in zmays-snps/data/seqs/*.fastq
+    do
+      ls -l $file
+    done
+
+## Automating File-Processing with find and xargs
+**12.2　findとxargsを使ったファイル処理の自動化**
+
+### Using find and xargs
+**12.2.1　findとxargsを使う**
+
+### Finding Files with find
+**12.2.2　findでファイルを見つける**
+
+`ls`とは異なり、`find`は再帰的に検索する。  
+`find`でプロジェクト・ディレクトリの構造を見る:  
+
+	find zmays-snps
+	find zmays-snps -maxdepth 1
+
+`find`の基本構文は、`find path expression`  
+
+ファイル名で検索:  
+
+    find zmays-snps/data/seqs -name "zmaysB*fastq"
+
+    find . -name "zmays*"
+
+### find’s Expressions
+**12.2.3　findの検索式**
+
+`-type`オプションで結果を制限する（`f`はファイル、`d`ディレクトリ）:  
+
+    find . -name "zmays*" -type f
+
+### find’s -exec: Running Commands on find’s Results
+**12.2.4　findの-execオプション：findの結果に対するコマンドの実行**
+
+### xargs: A Unix Powertool
+**12.2.5　xargs：Unixパワーツール**
+
+[xargs](https://ja.wikipedia.org/wiki/Xargs)  
+
+    find . -name "*.fastq"
+    find . -name "*.fastq" | xargs ls
+
+`ls *.log`で、"Argument list too long"というエラーが出たら: `find . -name "*.log" | xargs ls`
+
+### Using xargs with Replacement Strings to Apply Commands to Files
+**12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する**
+
+### xargs and Parallelization
+**12.2.7　xargsと並列化**
+
+## Make and Makefiles: Another Option for Pipelines
+**12.3　makeとmakefile：パイプラインのための別オプション**
+
+[Make](https://ja.wikipedia.org/wiki/Make)
+
+----------
+
+** **
+
+----------
+
 ----------
 
 ----------
