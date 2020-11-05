@@ -29,6 +29,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
 - 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+  - 中間発表 [interim report](#interim-report)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
@@ -45,9 +46,9 @@ Office closed / Winter break（12/26～1/5）
 ## extra classes
 **補講**
 
-- 2020-11-28 (土)
-- 2020-12-05 (土)
-- 2020-12-12 (土)
+- 2020-11-28 (土) 3時限 13:00～14:30
+- 2020-12-05 (土) 3時限 13:00～14:30
+- 2020-12-12 (土) 3時限 13:00～14:30
 
 R言語入門  
 Introduction to the R Language  
@@ -617,7 +618,7 @@ Control-c で動作中のプロセスを停止
     atom script.sh
 
 # Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
-**12章　シェルスクリプト作成、パイプラインの記述、タスクの並列化 **
+**12章　シェルスクリプト作成、パイプラインの記述、タスクの並列化**
 
 ## Basic Bash Scripting
 **12.1　基本的なBashスクリプティング**
