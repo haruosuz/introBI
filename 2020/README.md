@@ -50,8 +50,8 @@ Office closed / Winter break（12/26～1/5）
 - 2020-12-05 (土) 3時限 13:00～14:30
 - 2020-12-12 (土) 3時限 13:00～14:30
 
-R言語入門  
-Introduction to the R Language  
+8章　R言語入門  
+8. A Rapid Introduction to the R Language
 
 参加は任意です。  
 Participation is not required, but is appreciated.
