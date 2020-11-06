@@ -23,11 +23,11 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction) | [Setup](#setup)
 - 2020-10-20 No. 3 - バイオインフォマティクス・プロジェクトの管理 [Managing a Bioinformatics Project](#managing-a-bioinformatics-project)
 - 2020-10-27 No. 4 - Unixシェル再入門 [Unix Shell](#unix-shell)
-  - [my_project](#my_project)
 - 2020-11-03 No. 5 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
   - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
+  - [my_project](#my_project)
 - 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 中間発表 [interim report](#interim-report)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
@@ -788,8 +788,6 @@ Bashスクリプトを実行する方法:
 
 ----------
 
-** **
-
 ----------
 
 ----------
@@ -807,6 +805,22 @@ Bashスクリプトを実行する方法:
 
     bash
     cd ~/projects/
+
+#### 2020-11-10
+
+2020-10-27に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
+```
+mv my_project* 2020-10-27/
+```
+
+新しいプロジェクト・ディレクトリを取得する:  
+```
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/ncbi_GenBank_assembly/
+(bash scripts/run_ncbi_GenBank_assembly.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
+```
 
 #### 2020-10-27
 
@@ -826,7 +840,7 @@ cp 2020-10-13/README.md 2020-10-27/README.md
 mv my_project* 2020-10-20/
 ```
 
-ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリを取得し、スクリプトを実行する:   
+ターミナルで次のコマンドを実行し、プロジェクト・ディレクトリを取得し、スクリプトを実行する:  
 ```
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
