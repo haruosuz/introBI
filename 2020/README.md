@@ -627,6 +627,7 @@ Control-c で動作中のプロセスを停止
 **12.1.1　ロバストなBashスクリプトの作成と実行**
 
 #### A robust Bash header
+**12.1.1.1 ロバストな Bash ヘッダー**
 
 ロバストなBashスクリプトのヘッダ
 
@@ -640,6 +641,7 @@ Control-c で動作中のプロセスを停止
 ![https://wizardzines.com/comics/bash-errors/](https://wizardzines.com/comics/bash-errors/bash-errors.png)
 
 #### Running Bash scripts
+**12.1.1.2 Bash スクリプトの実行**
 
 Bashスクリプトを実行する方法:  
 1. `bash`プログラムを用いる: `bash script.sh`  
@@ -722,15 +724,26 @@ Bashスクリプトを実行する方法:
 プロジェクト・ディレクトリ`zmays-snps/`を作成し、
 3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
 
+    cd ~/projects/
     mkdir -p zmays-snps/{data/seqs,scripts,analysis}
     touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
+    cd zmays-snps/data/
+
+`basename`は、ファイル名からパスや拡張子を削除する:
+
+	basename seqs/zmaysA_R1.fastq .fastq
 
 `for`文で繰り返し処理を実行する:  
-    
-    for file in zmays-snps/data/seqs/*.fastq
+
+    for file in seqs/*.fastq
     do
       ls -l $file
     done
+
+`for`文を1行で書く。
+ファイル名から拡張子".fastq"を取り除き、接尾辞"-stats.txt"を追加する:  
+
+    for file in seqs/*.fastq; do echo $file $(basename $file .fastq)-stats.txt; done
 
 ## Automating File-Processing with find and xargs
 **12.2　findとxargsを使ったファイル処理の自動化**
