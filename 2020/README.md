@@ -517,6 +517,9 @@ Control-c で動作中のプロセスを停止
     #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
 
 オプション`--location`または`-L`でリダイレクトを辿る。
+短縮リンクのリダイレクト先にアクセスする:  
+
+    curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
 ## Rsync and Secure Copy (scp)
 **rsyncとscp**
@@ -627,21 +630,22 @@ Control-c で動作中のプロセスを停止
 **12.1.1　ロバストなBashスクリプトの作成と実行**
 
 #### A robust Bash header
-**12.1.1.1 ロバストな Bash ヘッダー**
 
 ロバストなBashスクリプトのヘッダ
 
 [*template.sh*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-12-pipelines/template.sh)
-
-    #!/bin/bash
-    set -euo pipefail
+```
+#!/bin/bash
+set -e
+set -u
+set -o pipefail
+```
 
 - bash error handling https://twitter.com/b0rk/status/1314345978963648524
 
 ![https://wizardzines.com/comics/bash-errors/](https://wizardzines.com/comics/bash-errors/bash-errors.png)
 
 #### Running Bash scripts
-**12.1.1.2 Bash スクリプトの実行**
 
 Bashスクリプトを実行する方法:  
 1. `bash`プログラムを用いる: `bash script.sh`  
@@ -729,21 +733,12 @@ Bashスクリプトを実行する方法:
     touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
     cd zmays-snps/data/
 
-`basename`は、ファイル名からパスや拡張子を削除する:
-
-	basename seqs/zmaysA_R1.fastq .fastq
-
 `for`文で繰り返し処理を実行する:  
 
     for file in seqs/*.fastq
     do
       ls -l $file
     done
-
-`for`文を1行で書く。
-ファイル名から拡張子".fastq"を取り除き、接尾辞"-stats.txt"を追加する:  
-
-    for file in seqs/*.fastq; do echo $file $(basename $file .fastq)-stats.txt; done
 
 ## Automating File-Processing with find and xargs
 **12.2　findとxargsを使ったファイル処理の自動化**
@@ -757,23 +752,25 @@ Bashスクリプトを実行する方法:
 `ls`とは異なり、`find`は再帰的に検索する。  
 `find`でプロジェクト・ディレクトリの構造を見る:  
 
+    cd ~/projects/
 	find zmays-snps
-	find zmays-snps -maxdepth 1
+    find zmays-snps -maxdepth 1
 
 `find`の基本構文は、`find path expression`  
 
 ファイル名で検索:  
 
-    find zmays-snps/data/seqs -name "zmaysB*fastq"
-
-    find . -name "zmays*"
+    find . -name "zmaysB*fastq"
 
 ### find’s Expressions
 **12.2.3　findの検索式**
 
 `-type`オプションで結果を制限する（`f`はファイル、`d`ディレクトリ）:  
 
-    find . -name "zmays*" -type f
+    find . -type f
+
+Table 12-3. Common find expressions and operators
+find の主な検索式と演算子
 
 ### find’s -exec: Running Commands on find’s Results
 **12.2.4　findの-execオプション：findの結果に対するコマンドの実行**
@@ -785,8 +782,6 @@ Bashスクリプトを実行する方法:
 
     find . -name "*.fastq"
     find . -name "*.fastq" | xargs ls
-
-`ls *.log`で、"Argument list too long"というエラーが出たら: `find . -name "*.log" | xargs ls`
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
 **12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する**
