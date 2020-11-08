@@ -803,6 +803,281 @@ find の主な検索式と演算子
 [Make](https://ja.wikipedia.org/wiki/Make)
 
 ----------
+# Unix Data Tools
+**Unixデータツール**
+
+Unixコマンド（[`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join, sed`](http://crusade1096.web.fc2.com/unix.html)）を用いてテキスト処理を行なう。
+
+[教科書の補足資料](https://github.com/vsbuffalo/bds-files) `bds-files/chapter-07-unix-data-tools/` を使う。
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+`bash`を起動し、ディレクトリを移動する:  
+
+    bash
+    cd ~/projects/bds-files/chapter-07-unix-data-tools/
+
+# Chapter 7. Unix Data Tools
+**7章　Unixツール**
+
+## Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls
+**7.1　UnixツールとUnixワンライナーアプローチ：Programming Pearlsから学んだ教訓**
+
+Unixコマンドをパイプで繋ぐことにより、データを処理する1行プログラム（ワンライナー）を構築する。
+
+## When to Use the Unix Pipeline Approach and How to Use It Safely
+**7.2　Unixパイプラインを使うタイミングと安全な使い方**
+
+## Inspecting and Manipulating Text Data with Unix Tools
+**7.3　Unixツールによるテキストデータの検査と操作**
+
+### Inspecting Data with Head and Tail
+**7.3.1　headとtailによるデータの検査**
+
+[`head`](http://codezine.jp/unixdic/w/head)でファイルの先頭部分を表示する:  
+
+	head -n 3 Mus_musculus.GRCm38.75_chr1.bed
+
+[`tail`](http://codezine.jp/unixdic/w/tail)でファイルの末尾部分を表示する:  
+
+	tail -n 3 Mus_musculus.GRCm38.75_chr1.bed
+
+### less
+**7.3.2　lessコマンド**
+
+[less](https://ja.wikipedia.org/wiki/Less)で[*contaminated.fastq*](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-07-unix-data-tools/contaminated.fastq)ファイルを見る:  
+
+	less contaminated.fastq
+
+`less`を終了するには、*q*を押す。
+
+`less`でテキスト検索（マッチした部分をハイライト）。
+`less contaminated.fastq`でファイルを開いて、`/`を押して、`AGATCGG`を入力。
+
+Table 7-1. lessの操作方法
+
+|キー|動作|
+|:---------|:---------|
+|スペース|次ページを表示|
+|b|前ページを表示|
+|/文字列|指定した文字列をカーソル以降で検索|
+|n|次検索|
+|N|nとは逆方向に次検索|
+
+### Plain-Text Data Summary Information with wc, ls, and awk
+**7.3.3　wc、ls、awkによるプレーンテキストデータの要約情報**
+
+[`wc`](https://ja.wikipedia.org/wiki/Wc_%28UNIX%29)（word count）で行数、単語数、文字数を表示:  
+
+	wc Mus_musculus.GRCm38.75_chr1.bed
+	wc -l Mus_musculus.GRCm38.75_chr1.bed
+
+`ls -l`でファイルのサイズを確認:  
+
+	ls -l Mus_musculus.GRCm38.75_chr1.bed
+
+### Working with Column Data with cut and Columns
+
+
+
+
+
+
+7.3.4　cutによる列データの操作
+7.3.5　columnによる表形式データへの整形
+7.3.6　強力なツールgrep 
+7.3.7　プレーンテキストデータのデコード：hexdump 
+7.3.8　sortによるプレーンテキストデータの並べ替え
+7.3.9　uniqコマンドで一意の値を見つける
+7.3.10　joinコマンド
+7.3.11　AWKによるテキスト処理
+7.3.12　Bioawk：生物学的データのためのAWK 
+7.3.13　sedを用いたストリーム編集
+    7.4　高度なシェル技法
+7.4.1　サブシェル
+7.4.2　名前付きパイプとプロセス置換
+    7.5　Unix哲学再考
+
+
+
+
+** **
+
+
+
+
+
+
+
+
+
+
+
+`cut`でタブ区切りファイルの2列目を抽出:  
+
+	cut -f 2 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
+
+`cut -d`で区切り文字を指定する。[CSV](https://ja.wikipedia.org/wiki/Comma-Separated_Values)ファイル:  
+
+	head -n 3 Mus_musculus.GRCm38.75_chr1_bed.csv
+	cut -d"," -f2,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+
+### Formatting Tabular Data with column
+`column -t`でタブ区切りファイルの出力を整形:  
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1-8 | column -t | head -n3
+
+### The All-Powerful Grep
+1番染色体の全タンパク質のEnsembl遺伝子識別子と遺伝子名が含まれている
+*Mus_musculus.GRCm38.75_chr1_genes.txt*ファイルで"Olfr"を含む遺伝子群を`grep`で見つける:  
+
+	grep "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+
+`grep --color`でマッチング部分を色付けする:  
+
+	grep --color "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+
+`grep -v`でマッチしない行を返す:  
+
+	grep -v "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+
+`grep -w`で（空白で囲まれた）単語全体にマッチする:  
+
+	cat example.txt
+	grep -v bioinfo example.txt
+	grep -v -w bioinfo example.txt
+
+# 2019-12-03
+
+パターンにマッチした行の前（`-B`）、後（`-A`）、前後（`-C`）を出力する:  
+
+    cat example.bed
+    grep -B2 "chr2" example.bed
+    grep -A1 "chr2" example.bed
+    grep -C1 "chr2" example.bed
+
+`grep -c`で、パターンにマッチした行数を表示:  
+
+    grep -c "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+    grep "Olfr" Mus_musculus.GRCm38.75_chr1_genes.txt | wc -l
+
+`grep -i`で、大文字小文字を区別しない（ignore case）:  
+
+    grep -ci "olfr" Mus_musculus.GRCm38.75_chr1_genes.txt
+
+### Decoding Plain-Text Data: hexdump
+テキストファイルの文字コード（通常は[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)）を`file`で確認する。
+
+	file Mus_musculus.GRCm38.75_chr1.bed
+	file utf8.txt
+	file improper.fa
+
+### Sorting Plain-Text Data with Sort
+[Sort](https://ja.wikipedia.org/wiki/Sort_%28UNIX%29)で行を並べ替える。
+
+	cat example.bed
+	sort example.bed
+
+`sort`のオプション。`-k`で列の範囲（start,end）を指定してソート、`-n`で数値としてソート。
+1列目（染色体 chromosome）でソートし（`-k1,1`）、1列目が同じもの（例、"chr1"や"chr3"）は2列目で数値としてソートする（`-k2,2n`）:  
+
+	sort -k1,1 -k2,2n example.bed
+
+`-r`オプションで逆順（降順）にソートする:  
+
+	sort -k1,1 -k2,2n -r example.bed
+	sort -k1,1 -k2,2nr example.bed
+
+### Finding Unique Values in Uniq
+[`uniq`](https://ja.wikipedia.org/wiki/Uniq)は、連続する重複行を削除して出力する:  
+
+	cat letters.txt
+	uniq letters.txt
+	sort letters.txt | uniq
+
+`-c`オプションで、重複行の数も表示:  
+
+	sort letters.txt | uniq -c
+
+Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+
+    grep "chr" example.bed | cut -f 1 | sort | uniq -c
+
+	grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+
+### Join
+[join - 共通フィールドをもつ２つのファイルを行単位で結合](http://technique.sonots.com/?UNIX%2Fコマンド%2Fテキスト処理%2Fjoin)
+
+	cat example.bed
+	cat example_lengths.txt
+	sort -k1,1 example.bed > example_sorted.bed
+	sort -c -k1,1 example_lengths.txt # verifies is already sorted
+	# join -1 <file_1_field> -2 <file_2_field> <file_1> <file_2>
+	join -1 1 -2 1 example_sorted.bed example_lengths.txt > example_with_lengths.txt
+	cat example_with_lengths.txt
+
+### Text Processing with Awk
+[Awk](https://ja.wikipedia.org/wiki/AWK)は、入力データをレコード（行）に分割し、各レコードをフィールド（列）に分割する。レコード全体は変数`$0`に格納され、フィールドは`$1, $2, $3, ...`と分割される。
+Awkは、1つ以上の`pattern { action }`で処理を指定する。
+
+	awk '{ print $0 }' example.bed # mimic cat
+	awk '{ print $2 "\t" $3 }' example.bed # mimic cut
+
+Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。featureの長さ（終了位置 - 開始位置）が18を超える行だけを出力:  
+
+	awk '$3 - $2 > 18' example.bed
+
+- [AWK で使われる演算子](http://aoki2.si.gunma-u.ac.jp/Hanasi/Algo/letsawk/WhatIsOperator.html)
+
+論理演算子 `&&` (AND), `||` (OR), `!` (NOT) でパターンを繋ぐ。染色体1で長さ>10の行を出力:  
+
+	awk '$1 ~ /chr1/ && $3 - $2 > 10' example.bed
+
+`~`はマッチする、`!~`はマッチしない、の意。
+
+    awk '$1 !~ /chr1/' example.bed
+
+染色体2と染色体3に長さ（終了位置 - 開始位置）の列を追加する:  
+
+	awk '$1 ~ /chr2|chr3/ { print $0 "\t" $3 - $2 }' example.bed
+
+`BEGIN`は前処理、`END`は後処理。例えば、*example.bed*で平均feature長を計算する。featureの長さを合計し、レコードの総数で割る:  
+
+	awk 'BEGIN{ s = 0 }; { s += ($3-$2) }; END{ print "mean: " s/NR };' example.bed
+
+`NR`（Number of Record）は現在の行（レコード）番号
+
+### Bioawk: An Awk for Biological Formats
+
+	bioawk -c help
+
+FASTQをFASTAファイルに変換:  
+FASTQ/FASTAエントリ数をカウント:  
+逆相補鎖に変換　(reverse complement):  
+
+### Stream Editing with Sed
+`sed`の文字列置換の構文: `s/pattern/replacement/`  
+
+*chroms.txt*ファイルの染色体名を変換（"chrom1" → "chr1"）:  
+
+	head -n 3 chroms.txt # before sed
+	sed 's/chrom/chr/' chroms.txt | head -n 3
+
+## Advanced Shell Tricks
+### Subshells
+[サブシェル](http://x68000.q-e-d.net/~68user/unix/pickup?%A5%B5%A5%D6%A5%B7%A5%A7%A5%EB)でコマンドをグループ化する:  
+
+	echo "this command"; echo "that command" | sed 's/command/step/'
+	(echo "this command"; echo "that command") | sed 's/command/step/'
+
+### Named Pipes and Process Substitution
+[名前付きパイプ](https://ja.wikipedia.org/wiki/名前付きパイプ)とプロセス置換
+
+## The Unix Philosophy Revisited
+
+
+----------
+
+
 
 ----------
 
