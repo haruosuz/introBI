@@ -648,14 +648,17 @@ set -o pipefail
 #### Running Bash scripts
 
 Bashスクリプトを実行する方法:
-```
-# 1. `bash`プログラムを使う:
-bash script.sh
 
-# 2. `chmod`コマンドで実行権限を付加し、スクリプトをプログラムとして呼び出す:
+1. `bash`プログラムを使う:
+```
+bash script.sh
+```
+
+2. [`chmod`](https://ja.wikipedia.org/wiki/Chmod)コマンドで実行権限を付加し、スクリプトをプログラムとして呼び出す:
+```
 chmod +x script.sh
 ./script.sh
-``` 
+```
 
 ### Variables and Command Arguments
 **12.1.2　変数とコマンド引数**
