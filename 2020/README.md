@@ -723,15 +723,24 @@ chmod +x script.sh
 
     test -f files.txt; echo "$?"
 
-指定したファイルが存在し、通常のファイルであれば、処理を実行する:  
+表 12-1 文字列と整数の比較演算子
 
-    if test -f files.txt
+表 12-2 ファイルとディレクトリのための test 式
+
+*files.txt*が存在するならば、処理を実行する:  
+
+    if test -e files.txt
     then
       ls -l files.txt
     fi
 
-`if test -f files.txt` を
-`if [ -f files.txt ] ` で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
+`if test -e files.txt` を
+`if [ -e files.txt ] ` で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
+
+    if [ -e files.txt ] 
+    then
+      ls -l files.txt
+    fi
 
 - [if 文と test コマンド | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/if_and_test.html)
 
@@ -798,8 +807,7 @@ chmod +x script.sh
 
     find . -type f
 
-Table 12-3. Common find expressions and operators
-find の主な検索式と演算子
+表 12-3 find の主な検索式と演算子
 
 ### find’s -exec: Running Commands on find’s Results
 **12.2.4　findの-execオプション：findの結果に対するコマンドの実行**
