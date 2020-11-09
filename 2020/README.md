@@ -813,6 +813,8 @@ find の主な検索式と演算子
 ### Using xargs with Replacement Strings to Apply Commands to Files
 **12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する**
 
+    find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I{} echo --in ./data/seqs/{}.fastq --out ./analysis/{}.txt
+
 ### xargs and Parallelization
 **12.2.7　xargsと並列化**
 
