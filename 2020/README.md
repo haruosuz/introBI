@@ -483,14 +483,6 @@ Control-c で動作中のプロセスを停止
     bash
     cd ~/projects/bds-files/chapter-06-bioinformatics-data/
 
-カレントディレクトリを表示する:  
-
-    pwd
-
-ファイルを表示する:  
-
-    ls
-
 ファイルのサイズを確認する:  
 
     ls -l gene-*.bed
@@ -623,6 +615,16 @@ Control-c で動作中のプロセスを停止
     bash
     cd ~/projects/bds-files/chapter-12-pipelines/
 
+カレントディレクトリを表示する:  
+
+    pwd
+
+ファイルを表示する:  
+
+    ls
+
+ファイルをコピーし、テキストエディタ「Atom」で開く:  
+
     cp template.sh script.sh
     atom script.sh
 
@@ -656,15 +658,13 @@ set -o pipefail
 Bashスクリプトを実行する方法:
 
 1. `bash`プログラムを使う:
-```
-bash script.sh
-```
+
+        bash script.sh
 
 2. [`chmod`](https://ja.wikipedia.org/wiki/Chmod)コマンドで実行権限を付加し、スクリプトをプログラムとして呼び出す:
-```
-chmod +x script.sh
-./script.sh
-```
+
+        chmod +x script.sh
+        ./script.sh
 
 ### Variables and Command Arguments
 **12.1.2　変数とコマンド引数**
