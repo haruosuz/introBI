@@ -8,11 +8,12 @@
 
 ## Table of Contents
 - [unix](#unix)
-- [assignment 2](#assignment-2) 課題No.2 「README.md」
-- [assignment 3](#assignment-3) 課題No.3 「zmays-snps」
-- [assignment 4](#assignment-4) 課題No.4 「2020-10-27/README.md」
+- [assignment 2](#assignment-2) 課題2 「README.md」
+- [assignment 3](#assignment-3) 課題3 「zmays-snps」
+- [assignment 4](#assignment-4) 課題4 「2020-10-27/README.md」
 - [NCBI Genome List](#ncbi-genome-list)
-- [assignment 5](#assignment-5) 課題No.5 「2020-11-03/README.md」
+- [assignment 5](#assignment-5) 課題5 「2020-11-03/README.md」
+- [assignment 6](#assignment-6) 課題6 「script.sh」
 
 ----------
 ## unix
@@ -37,7 +38,7 @@ option + ←	１単語分左に移動
 
 ----------
 ## assignment 2
-**課題No.2 「README.md」**
+**課題2 「README.md」**
 
 [Setup](https://github.com/haruosuz/introBI/blob/master/2020/README.md#setup)
 で得られたプレーンテキスト形式の*README.md*ファイルを編集し提出する。
@@ -51,7 +52,7 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 
 ----------
 ## assignment 3
-**課題No.3 「zmays-snps」**
+**課題3 「zmays-snps」**
 
 No. 3 - バイオインフォマティクスのプロジェクト管理 Managing a Bioinformatics Project  
 で作成したプロジェクト・ディレクトリ(`zmays-snps/`)の圧縮ファイルを提出する。
@@ -89,27 +90,9 @@ tar cvzf zmays-snps.tar.gz zmays-snps/
 
 ----------
 ## assignment 4
-**課題No.4 「2020-10-27/README.md」**
+**課題4 「2020-10-27/README.md」**
 
 プロジェクトMarkdownノート（*README.md*ファイル）の最新版を提出する。
-
-----------
-----------
-----------
-----------
-----------
-
-----------
-----------
-----------
-----------
-----------
-
-----------
-----------
-----------
-----------
-----------
 
 ----------
 ## 2020-11-03
@@ -187,7 +170,7 @@ The entire README.md file would look like:
 ```
 ## Genome and Annotation Data
 
-Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on Sun Nov  1 19:27:48 JST 2020 using:
+Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on Tue Nov  3 19:23:25 JST 2020 using:
 
     wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
     wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
@@ -321,19 +304,39 @@ Gene numbers: rRNA, tRNA, ORF
 
 ----------
 ## assignment 5
-**課題No.5 「2020-11-03/README.md」**
+**課題5 「2020-11-03/README.md」**
 
 プロジェクトノート（*README.md*ファイル）の最新版を提出する。  
-興味ある生物のデータファイル（FASTAとGFFファイル）をダウンロードし、それらをどのように入手したかを記録する。
+興味ある生物のデータファイル（FASTAファイルとGFFファイル）をダウンロードし、それらをどのように入手したかを記録する。
 
 Submit the latest version of the plain-text project notebook (*README.md* file).  
 Download data files (FASTA and GFF files) for organisms you're interested in, and document how you acquired them.
 
+----------
+----------
+----------
+----------
+----------
 
+----------
+----------
+----------
+----------
+----------
 
+----------
+## assignment 6
+**課題6 「script.sh」**
 
+興味ある生物のデータファイル（FASTAファイルとGFFファイル）をダウンロードするシェルスクリプト（`script.sh`）を作成し、提出する。
+
+----------
 
 
 ----------
+
+
+
+
 
 
