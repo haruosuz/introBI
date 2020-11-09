@@ -809,6 +809,12 @@ find の主な検索式と演算子
 [Make](https://ja.wikipedia.org/wiki/Make)
 
 ----------
+
+[行列で縦か横か迷ったら](https://id.fnshr.info/2015/10/17/matrix/)
+<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/matrix.png" alt="" width=25%>
+<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/gyouretsu.png" alt="" width=25%>
+
+----------
 # Unix Data Tools
 **Unixデータツール**
 
@@ -840,11 +846,6 @@ Unixコマンドをパイプで繋ぐことにより、データを処理する1
 
 ## Inspecting and Manipulating Text Data with Unix Tools
 **7.3　Unixツールによるテキストデータの検査と操作**
-
-[行列で縦か横か迷ったら](https://id.fnshr.info/2015/10/17/matrix/)
-<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/matrix.png" alt="" width=25%>
-<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/gyouretsu.png" alt="" width=25%>
-
 
 ゲノムのデータとして、タブ区切り形式のBEDファイル（3列）とGTFファイルを用いる。
 
