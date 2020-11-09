@@ -771,6 +771,8 @@ chmod +x script.sh
 ### Using find and xargs
 **12.2.1　findとxargsを使う**
 
+`ls *.txt`で "Argument list too long" と言われたときの解決策: `find . -name "*.txt" | xargs ls`
+
 ### Finding Files with find
 **12.2.2　findでファイルを見つける**
 
