@@ -842,8 +842,9 @@ Unixコマンドをパイプで繋ぐことにより、データを処理する1
 **7.3　Unixツールによるテキストデータの検査と操作**
 
 [行列で縦か横か迷ったら](https://id.fnshr.info/2015/10/17/matrix/)
-![](https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/matrix.png)
-![](https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/gyouretsu.png)
+<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/matrix.png" alt="" width=25%>
+<img src="https://id.fnshr.info/wp-content/uploads/sites/2/2015/10/gyouretsu.png" alt="" width=25%>
+
 
 ゲノムのデータとして、タブ区切り形式のBEDファイル（3列）とGTFファイルを用いる。
 
