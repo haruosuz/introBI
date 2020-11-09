@@ -673,13 +673,14 @@ chmod +x script.sh
 
     sample="zmays"
 
-変数の値にアクセスするには、変数名の前にドル記号を付ける（`$sample`）:  
+変数の値にアクセスするには、変数名の前にドル記号`$`を付ける:  
 
     echo $sample
 
+    echo $sample_snp
+
 中括弧`{}`で変数名を囲む:  
 
-    echo $sample_snp
     echo ${sample}_snp
 
 ダブルクォーテーション`""`で変数を囲む:  
@@ -729,7 +730,8 @@ chmod +x script.sh
       ls -l files.txt
     fi
 
-`if test -f files.txt`を`if [ -f files.txt ] `で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
+`if test -f files.txt` を
+`if [ -f files.txt ] ` で代用できる。角括弧`[ ]`の前後に半角スペースが必要。  
 
 - [if 文と test コマンド | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/if_and_test.html)
 
@@ -754,6 +756,15 @@ chmod +x script.sh
       ls -l $file
     done
 
+`for`文を1行で書く。
+ファイル名から拡張子".fastq"を取り除き、接尾辞"-stats.txt"を追加する:  
+
+    for file in seqs/*.fastq; do echo $file $(basename $file .fastq)-stats.txt; done
+
+`basename`は、ファイル名からパスや拡張子を削除する:
+
+	basename seqs/zmaysA_R1.fastq .fastq
+
 ## Automating File-Processing with find and xargs
 **12.2　findとxargsを使ったファイル処理の自動化**
 
@@ -774,6 +785,8 @@ chmod +x script.sh
 
 ファイル名で検索:  
 
+    cd ~/projects/zmays-snps/
+	find data/seqs -name "zmaysB*fastq"
     find . -name "zmaysB*fastq"
 
 ### find’s Expressions
@@ -795,7 +808,7 @@ find の主な検索式と演算子
 [xargs](https://ja.wikipedia.org/wiki/Xargs)  
 
     find . -name "*.fastq"
-    find . -name "*.fastq" | xargs ls
+    find . -name "*.fastq" | xargs ls -l
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
 **12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する**
@@ -878,9 +891,9 @@ Table 7-1. lessの操作方法
 |:---------|:---------|
 |スペース|次ページを表示|
 |b|前ページを表示|
-|/文字列|指定した文字列をカーソル以降で検索|
-|n|次検索|
-|N|nとは逆方向に次検索|
+|/文字列|文字列をカーソル以降で検索|
+|n|順方向に次検索|
+|N|逆方向に次検索|
 
 ### Plain-Text Data Summary Information with wc, ls, and awk
 **7.3.3　wc、ls、awkによるプレーンテキストデータの要約情報**
@@ -888,7 +901,7 @@ Table 7-1. lessの操作方法
 [`wc`](https://ja.wikipedia.org/wiki/Wc_%28UNIX%29)（word count）で行数、単語数、文字数を表示する:
 
     wc example.bed
-    wc -l example.bed
+    wc -l *.bed
 
 `ls -l`でファイルのサイズを確認する:
 
@@ -1014,14 +1027,14 @@ AWKの構文: `pattern { action }`
 Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。  
 領域の長さ（終了位置 - 開始位置）が18を超える行だけを出力する:  
 
-	awk '$3 - $2 > 18' example.bed
+    awk '$3 - $2 > 18 { print $0 }' example.bed
 
 - [AWK で使われる演算子](http://aoki2.si.gunma-u.ac.jp/Hanasi/Algo/letsawk/WhatIsOperator.html)
 
 論理演算子 `&&` (AND), `||` (OR), `!` (NOT) でパターンを繋ぐ。  
 1番染色体(chr1)で領域の長さが10を超える行を出力する:  
 
-	awk '$1 ~ /chr1/ && $3 - $2 > 10' example.bed
+    awk '$1 ~ /chr1/ && $3 - $2 > 10 { print $0 }' example.bed
 
 `~`はマッチする、`!~`はマッチしない、の意。
 
