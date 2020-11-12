@@ -7,34 +7,13 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [unix](#unix)
 - [assignment 2](#assignment-2) 課題2 「README.md」
 - [assignment 3](#assignment-3) 課題3 「zmays-snps」
 - [assignment 4](#assignment-4) 課題4 「2020-10-27/README.md」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 5](#assignment-5) 課題5 「2020-11-03/README.md」
 - [assignment 6](#assignment-6) 課題6 「script.sh」
-
-----------
-## unix
-
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
-
-    # change shell to bash
-    bash
-
-[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
-
-単語単位でカーソルを移動します。
-「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
-
-[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
-```
-Ctrl + a	行先頭に移動
-Ctrl + e	行末尾に移動
-option + →	１単語分右に移動
-option + ←	１単語分左に移動
-```
+- [unix](#unix)
 
 ----------
 ## assignment 2
@@ -314,25 +293,45 @@ Submit the latest version of the plain-text project notebook (*README.md* file).
 Download data files (FASTA and GFF files) for organisms you're interested in, and document how you acquired them.
 
 ----------
-----------
-----------
-----------
-----------
-
-----------
-----------
-----------
-----------
-----------
-
-----------
 ## assignment 6
 **課題6 「script.sh」**
 
 興味ある生物のデータファイル（FASTAファイルとGFFファイル）をダウンロードするシェルスクリプト（`script.sh`）を作成し、提出する。
 
 ----------
+## unix
 
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
+[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
+
+単語単位でカーソルを移動します。
+「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
+
+[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
+```
+Ctrl + a	行先頭に移動
+Ctrl + e	行末尾に移動
+option + →	１単語分右に移動
+option + ←	１単語分左に移動
+```
+
+----------
+
+----------
+----------
+----------
+----------
+----------
+
+----------
+----------
+----------
+----------
+----------
 
 ----------
 
