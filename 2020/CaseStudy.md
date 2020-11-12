@@ -296,7 +296,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 ## assignment 6
 **課題6 「script.sh」**
 
-興味ある生物のデータファイル（FASTAファイルとGFFファイル）をダウンロードするシェルスクリプト（`script.sh`）を作成し、提出する。
+興味ある生物のデータファイル（FASTAファイルとGFFファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を作成し、提出する。
 
 ----------
 
