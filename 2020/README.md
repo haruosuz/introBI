@@ -1112,7 +1112,7 @@ mv my_project* 2020-11-10/
 ```
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
-cd my_project/ncbi_genbank_assembly/
+cd my_project/ncbi_GenBank_assembly/
 (bash scripts/run_all.sh &) >& log.$(date +%F).txt
 tail -f log.$(date +%F).txt
 ```
