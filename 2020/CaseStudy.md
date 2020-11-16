@@ -304,7 +304,11 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 ## assignment 7
 **課題7 「project_2020-11-17」**
 
-バイオインフォマティクス・プロジェクトを実行した環境・年月日（`2020-11-17`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（`README.md`ファイル）を含むプロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.tar.gz`）を提出する。
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.tar.gz`）を提出する。
+
+プロジェクトを実行した環境・年月日（`2020-11-17`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などをMarkdownノート（`README.md`ファイル）に記録する。
+
+他の環境で再現できるように、ディレクトリ構造やスクリプトを工夫する（例えば、絶対パスではなく、相対パスで指定する）。
 
 プロジェクト・ディレクトリ構造の例:  
 ```
