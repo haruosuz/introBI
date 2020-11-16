@@ -27,8 +27,8 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
-  - [my_project](#my_project)
 - 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+  - [my_project](#my_project)
   - 中間発表 [interim report](#interim-report)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
@@ -1100,6 +1100,24 @@ Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。
     bash
     cd ~/projects/
 
+#### 2020-11-17
+
+日付ディレクトリを作成し、2020-11-10に取得したプロジェクト・ディレクトリを移動する:  
+```
+mkdir -p 2020-11-10
+mv my_project* 2020-11-10/
+find 2020-1* -maxdepth 2
+```
+
+新しいプロジェクト・ディレクトリを取得し、実行する:  
+```
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/ncbi_GenBank_assembly/
+(bash scripts/run_all.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
+```
+
 #### 2020-11-10
 
 2020-10-27に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
@@ -1107,7 +1125,7 @@ Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。
 mv my_project* 2020-10-27/
 ```
 
-新しいプロジェクト・ディレクトリを取得する:  
+新しいプロジェクト・ディレクトリを取得し、実行する:  
 ```
 wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
 unzip my_project.zip
@@ -1161,4 +1179,7 @@ bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
 ```
 
 ----------
+
+
+
 
