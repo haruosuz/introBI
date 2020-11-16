@@ -13,6 +13,7 @@
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 5](#assignment-5) 課題5 「2020-11-03/README.md」
 - [assignment 6](#assignment-6) 課題6 「script.sh」
+- [assignment 7](#assignment-7) 課題7 「project_2020-11-17」
 - [unix](#unix)
 
 ----------
@@ -312,6 +313,20 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 ----------
 ----------
 ----------
+
+----------
+## assignment 7
+**課題7 「project_2020-11-17」**
+
+バイオインフォマティクス・プロジェクトを実行した環境・年月日（`2020-11-17`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）などを記録したMarkdownノート（*README.md*ファイル）を含むプロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.tar.gz`）を提出する。
+
+ファイルのサイズに注意する（10MBを上限とする）。
+`data/`ディレクトリ内のデータは提出しなくてもよい。
+`tar`コマンドで`data/`ディレクトリを除外して圧縮する例:  
+
+    tar --exclude ncbi_GenBank_assembly/data/ -zcvf ncbi_GenBank_assembly.tar.gz ncbi_GenBank_assembly/
+
+- [tarコマンドで「一部のファイルやディレクトリを除外」したい！どうすればいい？ | LFI](https://linuxfan.info/tar-exclude)
 
 ----------
 ## unix
