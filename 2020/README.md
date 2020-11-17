@@ -966,7 +966,7 @@ Table 7-1. lessの操作方法
     grep -ci "Chr2" example.bed
 
 ### Decoding Plain-Text Data: hexdump
-**7.3.7　プレーンテキストデータのデコード：hexdump **
+**7.3.7　プレーンテキストデータのデコード：hexdump**
 
 `file`コマンドでテキストファイルの文字コード（通常は[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)）を確認する。
 
