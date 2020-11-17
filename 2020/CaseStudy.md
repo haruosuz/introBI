@@ -308,7 +308,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）を組み合わせてテキストファイルを解析する。
 
-解析を実行した環境、年月日（`2020-11-17`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）をMarkdownノート（`README.md`ファイル）に記録する。
+解析を実行した環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）をMarkdownノート（`README.md`ファイル）に記録する。
 
 他の環境で再現できるように、ディレクトリ構造やスクリプトを工夫する（例えば、絶対パスではなく、相対パスで指定する）。
 
