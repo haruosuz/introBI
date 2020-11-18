@@ -202,11 +202,11 @@ wc -l *
 
 # `head`で先頭部分を表示する:  
 # look at the top of a file
-head -n 5 $GFF
+head -n 10 $GFF
 
 # `tail`で末尾部分を表示する:  
 # look at the end of a file
-tail -n 2 $GFF
+tail -n 3 $GFF
 
 # 訳書 p.53 | 3.3.1 パイプの動作:grep とパイプによる簡単なプログラムの作成
 # 原書 p.47 | Pipes in Action: Creating Simple Programs with Grep and Pipes
