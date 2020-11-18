@@ -306,7 +306,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 プロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.tar.gz`）を提出する。
 
-Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）を組み合わせてテキストファイルを解析する。
+[Unixコマンド](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
 
 解析を実行した環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）をMarkdownノート（`README.md`ファイル）に記録する。
 
