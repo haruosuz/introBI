@@ -170,9 +170,7 @@ gunzip *.gz
 ### Inspecting data
 データの検査
 
-[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式のファイルを処理する。
-
-Unixコマンドの例:  
+Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）を用いて、[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイルを解析する例:  
 ```
 cd ~/projects/ncbi/genomes/prokaryotes/
 
@@ -232,12 +230,12 @@ grep -c "^#" $GFF
 # exclude lines that begin with "#":  
 grep -v "^#" $GFF | head -n 3
 
+# 訳書 p.151 | 7.3.4 cut による列データの操作
+# 原書 p.138 | Working with Column Data with cut and Columns
+
 # `grep -v`で"#"で始まる行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出する:  
 # chop off the metadata rows using `grep`, and then use `cut` to extract the first, fourth, and fifth columns (chromosome, start, end):
 grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
-
-# 訳書 p.151 | 7.3.4 cut による列データの操作
-# 原書 p.138 | Working with Column Data with cut and Columns
 
 # 訳書 p.160 | 7.3.8 sort によるプレーンテキストデータの並べ替え
 # 原書 p.147 | Sorting Plain-Text Data with Sort
@@ -335,7 +333,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 プロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.tar.gz`）を提出する。
 
-[Unixコマンド](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
+[Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
 
 解析を実行した環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）をMarkdownノート（`README.md`ファイル）に記録する。
 
