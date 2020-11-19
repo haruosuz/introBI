@@ -1,15 +1,13 @@
 # 2020
 
-DATA SCIENCE FOR BIOINFORMATICS [DS2]
-[Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_45183&ks=B3217&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=en)  
-バイオインフォマティクスのデータサイエンス[DS2]
-[シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_45183&ks=B3217&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=ja)  
+DATA SCIENCE FOR BIOINFORMATICS [DS2]  
+バイオインフォマティクスのデータサイエンス[DS2]  
 
 ## References
 **参考文献**
 
-- [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
 - [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+  - 原書: [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
   - [目次](https://www.oreilly.co.jp/books/9784873118635/#toc)
 
 ![https://www.oreilly.co.jp/books/9784873118635/](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
