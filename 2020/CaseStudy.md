@@ -331,7 +331,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 ## assignment 7
 **課題7 「project_2020-11-17」**
 
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`ncbi_GenBank_assembly.zip` または `ncbi_GenBank_assembly.tar.gz`）を提出する。
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`*.zip`, `*.tar.gz`）を提出する。
 
 [Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
 
@@ -369,9 +369,7 @@ ncbi_GenBank_assembly/scripts/run_data_inspector.sh
 
 - [tarコマンドで「一部のファイルやディレクトリを除外」したい！どうすればいい？ | LFI](https://linuxfan.info/tar-exclude)
 
-`tar`コマンドで「.tar.gz」ファイルを展開する例:  
-
-    tar xvzf ncbi_GenBank_assembly.tar.gz
+圧縮ファイル `ncbi_GenBank_assembly.zip` または `ncbi_GenBank_assembly.tar.gz` を提出する。
 
 ----------
 ## unix
