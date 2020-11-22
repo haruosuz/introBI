@@ -143,8 +143,8 @@ wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_AS
 ```
 # compare our checksum values with those in "md5checksums.txt" using the md5 program:
 md5 *.gz
-grep "_genomic.fna.gz" *_md5checksums.txt
-grep "_genomic.gff.gz" *_md5checksums.txt
+grep "_genomic.fna.gz" *md5checksums.txt
+grep "_genomic.gff.gz" *md5checksums.txt
 ```
 
 Markdownノート（README.mdファイル）の例:  
