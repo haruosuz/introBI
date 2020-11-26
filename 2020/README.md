@@ -52,8 +52,8 @@ Office closed / Winter break（12/26～1/5）
 **補講**
 
 - 2020-11-28 (土) 3時限 13:00～14:30
-- 2020-12-05 (土) 3時限 13:00～14:30
 - 2020-12-12 (土) 3時限 13:00～14:30
+- 2020-12-19 (土) 3時限 13:00～14:30
 
 8章　R言語入門  
 8. A Rapid Introduction to the R Language
@@ -287,7 +287,7 @@ mv bds-files-master/ bds-files
 
 	ls seqs/zmaysB*
 
-偶然の一致を避けるために、ワイルドカードを可能な限り限定する。例えば、`zmaysB*`の代わりに、`zmaysB*fastq`または`zmaysB_R?.fastq`を用いる（`?`は任意の1文字）。
+偶然のマッチを避けるために、ワイルドカードを可能な限り制限的にする。例えば、`zmaysB*`の代わりに、`zmaysB*fastq`または`zmaysB_R?.fastq`を用いる（`?`は任意の1文字）。
 
     cd seqs/
 
