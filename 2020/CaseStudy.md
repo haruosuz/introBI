@@ -333,7 +333,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 プロジェクト・ディレクトリの圧縮ファイル（例えば、`*.zip`, `*.tar.gz`）を提出する。
 
-[Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
+[Unixコマンド](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
 
 Markdownノート（`README.md`ファイル）にプロジェクトの詳細を記録する。例えば、解析を実行した環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）など。
 
