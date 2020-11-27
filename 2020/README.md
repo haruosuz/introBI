@@ -64,8 +64,8 @@ Participation is not required, but is appreciated.
 他機関所属の方も参加されます。  
 People outside of Keio University SFC will also attend the lectures.
 
-事前に「R」と「R Studio」をインストールしておいてください。
-参考: [Install R and R Studio](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#r-rstudio)
+「R」と「R Studio」をインストールしてください。  
+[Install R and R Studio](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#r-rstudio)
 
 ----------
 ## Guest speaker
