@@ -61,6 +61,8 @@ Office closed / Winter break（12/26～1/5）
 参加は任意です。  
 Participation is not required, but is appreciated.
 
+他機関所属の方も参加されます。  
+People outside of Keio University SFC will also attend the lectures.
 
 事前に「R」と「R Studio」をインストールしておいてください。
 参考: [Install R and R Studio](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#r-rstudio)
