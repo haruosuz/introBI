@@ -27,12 +27,12 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting)
 - 2020-11-17 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-  - [my_project](#my_project)
   - 中間発表 [interim report](#interim-report)
 - 2020-11-24 No. 8 - [Guest Speaker](#guest-speaker)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
-- 2020-12-15 No. 11 - TBA
+- 2020-12-15 No. 11 - [CaseStudy](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md)
+  - [my_project](#my_project)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
@@ -1108,9 +1108,26 @@ Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。
     bash
     cd ~/projects/
 
+#### 2020-12-15
+
+2020-11-17に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
+```
+mkdir -p 2020-11-17
+mv my_project* 2020-11-17/
+```
+
+新しいプロジェクト・ディレクトリを取得し、実行する:  
+```
+wget https://github.com/haruosuz/introBI/raw/master/2020/my_project.zip
+unzip my_project.zip
+cd my_project/ecoli/
+(bash scripts/run.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
+```
+
 #### 2020-11-17
 
-2020-11-10に取得したプロジェクト・ディレクトリを日付ディレクトリに格納する:  
+2020-11-10に取得したプロジェクト・ディレクトリを日付ディレクトリに移動する:  
 ```
 mkdir -p 2020-11-10
 mv my_project* 2020-11-10/
