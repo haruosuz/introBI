@@ -45,10 +45,8 @@ Office closed / Winter break（12/26～1/5）
 ## final presentation
 **最終発表**
 
-Three minutes will be allocated for each presentation.
-
-1人あたり最大3分でプロジェクトの内容を報告する。
-2つ以上（自分と他人）の環境で再現性を確認した結果を報告する。
+1人あたり最大3分でプロジェクトの再現性を報告する。
+自分自身または第三者の環境で解析を再実行した結果を示す。
 
 <https://github.com/haruosuz/introBI/tree/master/2019/my_project>
 
