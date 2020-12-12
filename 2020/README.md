@@ -36,7 +36,7 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
   - [my_project 2019](https://github.com/haruosuz/introBI/tree/master/2019/my_project)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-- 2020-12-29 レポート提出期限 Deadline for final report
+- 2020-12-29 最終課題提出期限 Deadline for final assignment
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
