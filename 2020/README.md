@@ -46,7 +46,7 @@ Office closed / Winter break（12/26～1/5）
 **最終発表**
 
 1人あたり最大3分でプロジェクトの再現性を報告する。
-自分自身または第三者の環境で解析を再実行した結果を示す。
+自分自身と第三者の環境で解析を再実行した結果を示す。
 
 <https://github.com/haruosuz/introBI/tree/master/2019/my_project>
 
