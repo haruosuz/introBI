@@ -34,12 +34,23 @@ DATA SCIENCE FOR BIOINFORMATICS [DS2]
 - 2020-12-15 No. 11 - [CaseStudy](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md)
   - [my_project](#my_project)
 - 2020-12-22 No. 12 - 最終回 final class
-  - 最終発表 final presentation
+  - 最終発表 [final presentation](#final-presentation)
 - 2020-12-29 レポート提出期限 Deadline for final report
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
+
+----------
+## final presentation
+**最終発表**
+
+Three minutes will be allocated for each presentation.
+
+1人あたり最大3分でプロジェクトの内容を報告する。
+2つ以上（自分と他人）の環境で再現性を確認した結果を報告する。
+
+<https://github.com/haruosuz/introBI/tree/master/2019/my_project>
 
 ----------
 ## interim report
@@ -79,7 +90,7 @@ https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
 Teaching Experience
 
 - 講師: 齋藤 元文
-- 資料: TBA
+- 資料: 2020_秋学期_教育体験01-03_all.pdf
 
 ----------
 ## Introduction
