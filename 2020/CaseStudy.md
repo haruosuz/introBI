@@ -344,7 +344,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 Markdownノート（`README.md`ファイル）にプロジェクトの詳細を記録する。例えば、解析を実行した環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/script.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）など。
 
-他の環境で再現できるように、ディレクトリ構造やスクリプトを工夫する（例えば、絶対パスではなく、相対パスで指定する）。
+他人のUNIX環境で再現できるように、ディレクトリ構造やスクリプトを工夫する（例えば、絶対パスではなく、相対パスで指定する）。
 
 プロジェクト・ディレクトリの例（`ecoli/`）:  
 ```
@@ -382,7 +382,9 @@ ecoli/scripts/run_data_inspector.sh
 ## assignment 8
 **課題8 「project_2020-12-15」**
 
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`ecoli.zip` または `ecoli.tar.gz`）を提出する。2つ以上（自分と他人）のUNIX環境で解析を再実行する。Markdownノート（`README.md`ファイル）に解析を再実行した環境（`uname -a; sw_vers`）、年月日（`date +%F`）、プロジェクトの再現性（ファイルの差分 `diff FILE1 FILE2`）を記録する。
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`ecoli.zip` または `ecoli.tar.gz`）を提出する。
+2つ以上（自分と他人）のUNIX環境で解析を再実行する。
+Markdownノート（`README.md`ファイル）に解析を再実行した環境（`uname -a; sw_vers`）、年月日（`date +%F`）、プロジェクトの再現性（ファイルの差分 `diff FILE1 FILE2`）を記録する。
 
 ----------
 ## unix
