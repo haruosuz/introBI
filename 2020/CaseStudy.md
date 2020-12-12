@@ -14,6 +14,7 @@
 - [assignment 5](#assignment-5) 課題5 「2020-11-03/README.md」
 - [assignment 6](#assignment-6) 課題6 「script.sh」
 - [assignment 7](#assignment-7) 課題7 「project_2020-11-17」
+- [assignment 8](#assignment-8) 課題8 「project_2020-12-15」
 - [unix](#unix)
 
 ----------
@@ -195,6 +196,7 @@ GFF=GCA_000005845.2_ASM584v2_genomic.gff
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
+echo $FNA
 echo $GFF
 
 # 訳書 p.142 | 7.3.1 head と tail によるデータの検査
@@ -377,6 +379,16 @@ ecoli/scripts/run_data_inspector.sh
 圧縮ファイル `ecoli.zip` または `ecoli.tar.gz` を提出する。
 
 ----------
+## assignment 8
+**課題8 「project_2020-12-15」**
+
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`ecoli.zip` または `ecoli.tar.gz`）を提出する。
+
+2つ以上（自分と他人）のUNIX環境で解析した結果を比較する。
+
+Markdownノート（`README.md`ファイル）に再現性テストを実行した環境（`uname -a; sw_vers`）、年月日（`date +%F`）、結果（ファイルの差分 `diff FILE1 FILE2`）を記録する。
+
+----------
 ## unix
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。
@@ -400,20 +412,6 @@ option + ←	１単語分左に移動
 ```
 
 ----------
-
-
-----------
-----------
-----------
-----------
-----------
-
-----------
-----------
-----------
-----------
-----------
-
 
 ----------
 
