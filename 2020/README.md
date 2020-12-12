@@ -46,7 +46,7 @@ Office closed / Winter break（12/26～1/5）
 ## final presentation
 **最終発表**
 
-1人あたり最大3分でプロジェクトの再現性を報告する。自分自身と第三者のUNIX環境で解析を再実行した結果を示す。
+1人あたり最大3分でプロジェクトの再現性について報告する。
 
 ----------
 ## interim report
