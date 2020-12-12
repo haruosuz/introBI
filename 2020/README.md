@@ -46,7 +46,7 @@ Office closed / Winter break（12/26～1/5）
 **最終発表**
 
 1人あたり最大3分でプロジェクトの再現性を報告する。
-自分自身と第三者の環境で解析を再実行した結果を示す。
+自分自身と第三者のUNIX環境で解析を再実行した結果を示す。
 
 <https://github.com/haruosuz/introBI/tree/master/2019/my_project>
 
@@ -55,30 +55,6 @@ Office closed / Winter break（12/26～1/5）
 **中間発表**
 
 1人1分でプロジェクト（解析データ）について説明する。
-
-----------
-## extra classes
-**補講**
-
-- 2020-11-28 (土) 3時限 13:00～14:30
-- 2020-12-12 (土) 3時限 13:00～14:30
-- 2020-12-19 (土) 3時限 13:00～14:30
-
-8章　R言語入門  
-8. A Rapid Introduction to the R Language
-
-参加は任意です。  
-Participation is not required, but is appreciated.
-
-他機関所属の方も参加されます。  
-People outside of Keio University SFC will also attend the lectures.
-
-「R」と「R Studio」をインストールする。  
-[Install R and R Studio](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#r-rstudio)
-
-以下よりRスクリプトをダウンロードする。
-Download the R scripts from here:
-https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
 
 ----------
 ## Guest speaker
@@ -1212,7 +1188,29 @@ bash scripts/run_ncbi_GENOME_REPORTS.sh 2>&1 | tee log.txt
 ```
 
 ----------
+## extra classes
+**補講**
 
+- 2020-11-28 (土) 3時限 13:00～14:30 | 8.1　RとRStudio入門 | 8.2　R言語の基礎 | 8.3　Rでのデータの扱いとその可視化
+- 2020-12-12 (土) 3時限 13:00～14:30 | 8.3.3　スライシングとダイシングによるデータの探索：データフレームのサブセット化
+- 2020-12-19 (土) 3時限 13:00～14:30 | 8.3.9　さらなるRデータ構造：リスト
 
+8章　R言語入門  
+8. A Rapid Introduction to the R Language
+
+参加は任意です。  
+Participation is not required, but is appreciated.
+
+他機関所属の方も参加されます。  
+People outside of Keio University SFC will also attend the lectures.
+
+「R」と「R Studio」をインストールする。  
+[Install R and R Studio](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#r-rstudio)
+
+以下よりRスクリプトをダウンロードする。
+Download the R scripts from here:
+https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
+
+----------
 
 
