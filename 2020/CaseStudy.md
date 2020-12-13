@@ -383,8 +383,10 @@ ecoli/scripts/run_data_inspector.sh
 **課題8 「project_2020-12-15」**
 
 プロジェクト・ディレクトリの圧縮ファイル（例えば、`ecoli.zip` または `ecoli.tar.gz`）を提出する。
-2つ以上（自分と他人）のUNIX環境で解析を再実行する。
-Markdownノート（`README.md`ファイル）に解析を再実行した環境（`uname -a; sw_vers`）、年月日（`date +%F`）、プロジェクトの再現性（ファイルの差分 `diff FILE1 FILE2`）を記録する。
+
+2つ以上（自分と他人）のコンピュータ環境で解析を再実行する。
+
+Markdownノート（`README.md`ファイル）に解析を再実行したコンピュータ環境（`uname -a; sw_vers`）、年月日（`date +%F`）、プロジェクトの再現性（ファイルの差分 `diff FILE1 FILE2`）を記録する。
 
 ----------
 ## unix
