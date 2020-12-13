@@ -92,7 +92,7 @@ https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
 ## Introduction
 **イントロダクション**
 
-バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
+[バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
 - [次世代シークエンサーDRY解析教本　改訂第2版](https://gakken-mesh.jp/book/detail/9784780909838.html)
   - [目次](https://gakken-mesh.jp/files/contents/940.pdf)
     - コマンドラインの使い方
