@@ -344,7 +344,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 Markdownノート（`README.md`ファイル）にプロジェクトの詳細を記録する。例えば、解析を実行したコンピュータ環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）など。
 
-他人のコンピュータ環境で再現できるように、ディレクトリの構造やスクリプトを工夫する（例えば、絶対パスではなく、相対パスで指定する）。
+他人のコンピュータ環境で再現できるように、[ディレクトリ構造](https://github.com/haruosuz/introBI/blob/master/2020/README.md#project-directories-and-directory-structures)を整理する。絶対パスではなく、常に相対パスを使用する。
 
 ----------
 ## assignment 8
