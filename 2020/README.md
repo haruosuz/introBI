@@ -92,11 +92,17 @@ https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
 ## Introduction
 **イントロダクション**
 
-[バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
-- [次世代シークエンサーDRY解析教本　改訂第2版](https://gakken-mesh.jp/book/detail/9784780909838.html)
-  - [目次](https://gakken-mesh.jp/files/contents/940.pdf)
-    - コマンドラインの使い方
-    - 共通基本ツールの導入方法
+- [バイオインフォマティクスの本](https://github.com/haruosuz/books/blob/master/references/books.bioinfo.md)
+  - [次世代シークエンサーDRY解析教本　改訂第2版](https://gakken-mesh.jp/book/detail/9784780909838.html)
+    - [目次](https://gakken-mesh.jp/files/contents/940.pdf)
+      - コマンドラインの使い方
+      - 共通基本ツールの導入方法
+- プログラミングならドットインストール
+  - PREMIUM [UNIXコマンド入門 [一般ユーザー編] (全24回)](https://dotinstall.com/lessons/basic_unix_v2)
+  - PREMIUM [シェルスクリプト入門 (全17回)](https://dotinstall.com/lessons/basic_shellscript_v2)
+  - [Markdown記法入門 (全13回)](https://dotinstall.com/lessons/basic_markdown_v2)
+  - [Atom入門 (全15回)](https://dotinstall.com/lessons/basic_atom_v2)
+  - [git入門 (全22回)](https://dotinstall.com/lessons/basic_git)
 
 ## Setup
 準備
@@ -109,8 +115,8 @@ https://github.com/haruosuz/introBI/raw/master/2020/chapter-08-r.zip
 ![https://techacademy.jp/magazine/5155](https://magazine-cf.techacademy.jp/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
 ### Shell
-PREMIUM
-[UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
+
+UNIXコマンド入門
 
 ```
 # `bash`を起動する
@@ -144,6 +150,7 @@ open .
 ```
 
 ### Homebrew
+
 パッケージ管理システム
 
 [Homebrew](https://brew.sh/index_ja)のインストールは、ターミナルに次のコマンドを入力し、実行する:  
@@ -154,6 +161,7 @@ Password:
 を入力する
 
 ### wget
+
 データをダウンロードするためのコマンドラインプログラム
 
 wgetのインストールは、ターミナルで次のコマンドを実行する:  
@@ -163,7 +171,6 @@ brew install wget
 ```
 
 ### Markdown
-[Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
 
 プレーンテキスト形式のファイル（Markdownノートの例）をダウンロードし、ファイル名を変更する:  
 ```
@@ -172,7 +179,6 @@ mv markdown.md README.md
 ```
 
 ### Atom
-[Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
 
 [テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/)
 を <https://atom.io/> からダウンロードする。
@@ -184,7 +190,6 @@ atomで*README.md*ファイルを開く:
 [Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
 
 ### Git
-[git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 
 バージョン管理システム
 
@@ -199,8 +204,6 @@ brew install git
 # Linuxならapt-getを使う
 #apt-get install git
 ```
-
-[git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
 
 ### bds-files
 GitHub上の補足資料 Supplementary Material (https://github.com/vsbuffalo/bds-files/) を取得する:
