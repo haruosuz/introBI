@@ -36,12 +36,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ----------
 ## unix
 
-- PREMIUM [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
-- PREMIUM [シェルスクリプト入門 (全17回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_shellscript_v2)
-- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
-- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
-- [git入門 (全22回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_git)
-
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。
 
 `bash`を起動する:  
