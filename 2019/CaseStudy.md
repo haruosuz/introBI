@@ -36,11 +36,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ----------
 ## unix
 
-- [UNIXコマンド入門 [一般ユーザー編] (全24回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_unix_v2)
-- [Markdown記法入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_markdown_v2)
-- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。
 
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+`bash`を起動する:  
 
     # change shell to bash
     bash
@@ -61,8 +59,6 @@ option + ←	１単語分左に移動
 [「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
 
 ![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
-
-----------
 
 ----------
 ## assignment 0
