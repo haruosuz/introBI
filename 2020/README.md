@@ -974,12 +974,10 @@ Table 7-1. lessの操作方法
     grep -C1 "chr2" example.bed
 
 `grep -c`でパターンにマッチした行数をカウントする:  
-
-    grep -c "chr2" example.bed
-    grep "chr2" example.bed | wc -l
-
 `grep -i`で大文字小文字を区別しない（ignore case）:  
 
+    grep "chr2" example.bed | wc -l
+    grep -c  "chr2" example.bed
     grep -ci "CHR2" example.bed
 
 ### Decoding Plain-Text Data: hexdump
