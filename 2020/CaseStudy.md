@@ -343,7 +343,7 @@ Download data files (FASTA and GFF files) for organisms you're interested in, an
 
 [Unixコマンド](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)を用いてテキストファイルを解析する。
 
-Markdownノート（`README.md`ファイル）に解析を実行したコンピュータ環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）など。
+Markdownノート（`README.md`ファイル）に解析の内容を記録する。例えば、解析を実行したコンピュータ環境（`uname -a`）、年月日（`date +%F`）、スクリプト（`scripts/run.sh`）、データ（`data/input.txt`）、解析結果（`analysis/output.txt`）など。
 
 他人のコンピュータ環境で再現できるように、[整理されたディレクトリ構造を作成する](https://github.com/haruosuz/introBI/blob/master/2020/README.md#project-directories-and-directory-structures)。絶対パスではなく、常に相対パスを使用する。
 
