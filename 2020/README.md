@@ -980,7 +980,7 @@ Table 7-1. lessの操作方法
 
 `grep -i`で大文字小文字を区別しない（ignore case）:  
 
-    grep -ci "Chr2" example.bed
+    grep -ci "CHR2" example.bed
 
 ### Decoding Plain-Text Data: hexdump
 **7.3.7　プレーンテキストデータのデコード：hexdump**
