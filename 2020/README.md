@@ -485,6 +485,8 @@ Control-c で動作中のプロセスを停止
     mkdir 1999-07-01 2000-12-19 2011-02-03
 	ls -l
 
+![https://xkcd.com/1179/](https://imgs.xkcd.com/comics/iso_8601_2x.png)
+
 ----------
 
 # Bioinformatics Data
