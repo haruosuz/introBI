@@ -1,0 +1,191 @@
+
+# print Mac OS X operating system version information
+ProductName:	Mac OS X
+ProductVersion:	10.14.6
+BuildVersion:	18G87
+Darwin haruos-MacBook-Pro-US.local 18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64 x86_64 i386 MacBookPro15,2 Darwin
+
+# ls - list directory contents
+-rw-r--r-- 1 haruo staff 265M Nov 30 23:28 data/2019_10/uniprot_sprot.fasta
+
+# There are 561356 entries in the FASTA file.
+
+# Inspecting Data with Head and Tail
+>sp|Q6GZX4|001R_FRG3G Putative transcription factor 001R OS=Frog virus 3 (isolate Goorha) OX=654924 GN=FV3-001R PE=4 SV=1
+>sp|Q6GZX3|002L_FRG3G Uncharacterized protein 002L OS=Frog virus 3 (isolate Goorha) OX=654924 GN=FV3-002L PE=4 SV=1
+>sp|Q197F8|002R_IIV3 Uncharacterized protein 002R OS=Invertebrate iridescent virus 3 OX=345201 GN=IIV3-002R PE=4 SV=1
+>sp|Q88470|Z_TACVF RING finger protein Z OS=Tacaribe virus (strain Franze-Fernandez) OX=928313 GN=Z PE=1 SV=3
+>sp|A9JR22|Z_TAMVU RING finger protein Z OS=Tamiami mammarenavirus (isolate Rat/United States/W 10777/1964) OX=45223 GN=Z PE=3 SV=1
+>sp|B2ZDY1|Z_WWAVU RING finger protein Z OS=Whitewater Arroyo mammarenavirus (isolate Rat/United States/AV 9310135/1995) OX=46919 GN=Z PE=3 SV=1
+
+# Parsing FASTA headers using perl
+sp|Q6GZX4|001R_FRG3G ~~ Putative transcription factor 001R ~~ Frog virus 3 (isolate Goorha) OX=654924
+sp|Q6GZX3|002L_FRG3G ~~ Uncharacterized protein 002L ~~ Frog virus 3 (isolate Goorha) OX=654924
+sp|Q197F8|002R_IIV3 ~~ Uncharacterized protein 002R ~~ Invertebrate iridescent virus 3 OX=345201
+sp|Q197F7|003L_IIV3 ~~ Uncharacterized protein 003L ~~ Invertebrate iridescent virus 3 OX=345201
+sp|Q6GZX2|003R_FRG3G ~~ Uncharacterized protein 3R ~~ Frog virus 3 (isolate Goorha) OX=654924
+sp|Q6GZX1|004R_FRG3G ~~ Uncharacterized protein 004R ~~ Frog virus 3 (isolate Goorha) OX=654924
+sp|Q197F5|005L_IIV3 ~~ Uncharacterized protein 005L ~~ Invertebrate iridescent virus 3 OX=345201
+sp|Q6GZX0|005R_FRG3G ~~ Uncharacterized protein 005R ~~ Frog virus 3 (isolate Goorha) OX=654924
+sp|Q91G88|006L_IIV6 ~~ Putative KilA-N domain-containing protein 006L ~~ Invertebrate iridescent virus 6 OX=176652
+sp|Q6GZW9|006R_FRG3G ~~ Uncharacterized protein 006R ~~ Frog virus 3 (isolate Goorha) OX=654924
+
+# 10 most abundant OrganismName
+  20379 Homo sapiens OX=9606
+  17025 Mus musculus OX=10090
+  15911 Arabidopsis thaliana OX=3702
+   8080 Rattus norvegicus OX=10116
+   6721 Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292
+   6008 Bos taurus OX=9913
+   5140 Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812
+   4518 Escherichia coli (strain K12) OX=83333
+   4188 Bacillus subtilis (strain 168) OX=224308
+   4148 Dictyostelium discoideum OX=44689
+
+# 10 most abundant ProteinName
+   1689 Cytochrome b
+    868 50S ribosomal protein L2
+    866 DNA ligase
+    866 30S ribosomal protein S19
+    864 50S ribosomal protein L14
+    860 30S ribosomal protein S7
+    856 30S ribosomal protein S8
+    855 DNA-directed RNA polymerase subunit beta
+    843 30S ribosomal protein S15
+    842 50S ribosomal protein L24
+
+# Number of entries that match a pattern: 'plasmid'
+100
+
+# Number of species that match a pattern: 'plasmid'
+      1 Bacillus sp.
+      1 Bacillus thuringiensis
+      9 Chlamydia muridarum
+      1 Chlamydia pneumoniae
+     15 Chlamydia trachomatis
+      8 Chlamydophila psittaci
+     10 Cupriavidus necator
+      1 Deinococcus radiodurans
+      1 Dictyostelium sp.
+     17 Escherichia coli
+      7 Kluyveromyces lactis
+      1 Lactobacillus hilgardii
+      1 Lactobacillus plantarum
+      3 Lactococcus lactis
+      3 Neisseria gonorrhoeae
+      2 Pseudomonas syringae
+      1 Rhizobium tropici
+      1 Salmonella typhi
+      1 Sinorhizobium fredii
+      6 Staphylococcus aureus
+      1 Staphylococcus epidermidis
+      1 Staphylococcus lentus
+      2 Streptococcus agalactiae
+      1 Synechococcus elongatus
+      2 Thermus thermophilus
+      2 Xylella fastidiosa
+      1 Zea mays
+
+# extracting lines of a file that match a pattern: 'plasmid'
+>sp|Q59101|ALF2_CUPNH Fructose-bisphosphate aldolase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbAP PE=3 SV=2
+>sp|Q04541|CBBYP_CUPNH Protein CbbY, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbYP PE=3 SV=1
+>sp|Q04540|CBXXP_CUPNH Protein CbxX, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbxXP PE=3 SV=1
+>sp|P51038|CISY2_RHITR Citrate synthase, plasmid OS=Rhizobium tropici OX=398 GN=pcsA PE=3 SV=1
+>sp|P24716|COPR_STRAG Plasmid copy control protein CopR OS=Streptococcus agalactiae OX=1311 GN=copR PE=4 SV=1
+>sp|P07048|CPPA_NEIGO Cryptic plasmid protein A OS=Neisseria gonorrhoeae OX=485 GN=cppA PE=4 SV=1
+>sp|P07049|CPPB_NEIGO Cryptic plasmid protein B OS=Neisseria gonorrhoeae OX=485 GN=cppB PE=4 SV=1
+>sp|P07047|CPPC_NEIGO Cryptic plasmid protein C OS=Neisseria gonorrhoeae OX=485 GN=cppC PE=4 SV=1
+>sp|P62671|FLMA_ECO57 Stable plasmid inheritance protein OS=Escherichia coli O157:H7 OX=83334 GN=flmA PE=3 SV=1
+>sp|P62670|FLMA_ECOLI Stable plasmid inheritance protein OS=Escherichia coli (strain K12) OX=83333 GN=flmA PE=2 SV=1
+>sp|P50322|G3PP_CUPNH Glyceraldehyde-3-phosphate dehydrogenase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbGP PE=3 SV=1
+>sp|Q46437|GP1D_CHLMU Probable plasmid replicative DNA helicase OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A03 PE=3 SV=1
+>sp|Q46259|GP1D_CHLPS Probable plasmid replicative DNA helicase OS=Chlamydophila psittaci OX=83554 PE=3 SV=1
+>sp|B0BCM3|GP1D_CHLT2 Probable plasmid replicative DNA helicase OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-03 PE=3 SV=1
+>sp|P0CE16|GP1D_CHLTH Probable plasmid replicative DNA helicase OS=Chlamydia trachomatis OX=813 PE=3 SV=1
+>sp|Q46438|GP2D_CHLMU Virulence plasmid protein pGP2-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A03.1 PE=4 SV=1
+>sp|Q46260|GP2D_CHLPS Virulence plasmid protein pGP2-D OS=Chlamydophila psittaci OX=83554 PE=4 SV=1
+>sp|B0BCM2|GP2D_CHLT2 Virulence plasmid protein pGP2-D OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-04 PE=4 SV=1
+>sp|P0CE17|GP2D_CHLTH Virulence plasmid protein pGP2-D OS=Chlamydia trachomatis OX=813 PE=4 SV=1
+>sp|Q46439|GP3D_CHLMU Virulence plasmid protein pGP3-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A04 PE=4 SV=2
+>sp|Q46261|GP3D_CHLPS Virulence plasmid protein pGP3-D OS=Chlamydophila psittaci OX=83554 PE=4 SV=1
+>sp|B0BCM1|GP3D_CHLT2 Virulence plasmid protein pGP3-D OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-05 PE=1 SV=1
+>sp|P0CE18|GP3D_CHLTH Virulence plasmid protein pGP3-D OS=Chlamydia trachomatis OX=813 PE=1 SV=1
+>sp|Q46440|GP4D_CHLMU Virulence plasmid protein pGP4-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A05 PE=4 SV=1
+>sp|Q46262|GP4D_CHLPS Virulence plasmid protein pGP4-D OS=Chlamydophila psittaci OX=83554 PE=4 SV=1
+>sp|B0BCM0|GP4D_CHLT2 Virulence plasmid protein pGP4-D OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-06 PE=4 SV=1
+>sp|P0CE23|GP4D_CHLTH Virulence plasmid protein pGP4-D OS=Chlamydia trachomatis OX=813 PE=4 SV=1
+>sp|Q46441|GP5D_CHLMU Virulence plasmid ParA family protein pGP5-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A06 PE=3 SV=2
+>sp|Q46263|GP5D_CHLPS Virulence plasmid ParA family protein pGP5-D OS=Chlamydophila psittaci OX=83554 PE=3 SV=1
+>sp|P10559|GP5D_CHLTH Virulence plasmid ParA family protein pGP5-D OS=Chlamydia trachomatis OX=813 PE=3 SV=2
+>sp|Q46442|GP6D_CHLMU Virulence plasmid protein pGP6-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A07 PE=3 SV=1
+>sp|Q46264|GP6D_CHLPS Virulence plasmid protein pGP6-D OS=Chlamydophila psittaci OX=83554 PE=3 SV=2
+>sp|P10560|GP6D_CHLTH Virulence plasmid protein pGP6-D OS=Chlamydia trachomatis OX=813 PE=3 SV=1
+>sp|Q9PJF7|GP6R_CHLMU Virulence plasmid protein pGP6-D-related protein OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_0872 PE=3 SV=1
+>sp|Q9Z7A2|GP6R_CHLPN Virulence plasmid protein pGP6-D-related protein OS=Chlamydia pneumoniae OX=83558 GN=CPn_0804 PE=3 SV=1
+>sp|O84587|GP6R_CHLTR Virulence plasmid protein pGP6-D-related protein OS=Chlamydia trachomatis (strain D/UW-3/Cx) OX=272561 GN=CT_583 PE=3 SV=1
+>sp|Q46435|GP7D_CHLMU Virulence plasmid integrase pGP7-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A01 PE=3 SV=1
+>sp|Q46257|GP7D_CHLPS Virulence plasmid integrase pGP7-D OS=Chlamydophila psittaci OX=83554 PE=3 SV=1
+>sp|B0BCM5|GP7D_CHLT2 Virulence plasmid integrase pGP7-D OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-01 PE=3 SV=2
+>sp|P0CE19|GP7D_CHLTH Virulence plasmid integrase pGP7-D OS=Chlamydia trachomatis OX=813 PE=3 SV=1
+>sp|Q46436|GP8D_CHLMU Virulence plasmid integrase pGP8-D OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=TC_A02 PE=3 SV=1
+>sp|Q46258|GP8D_CHLPS Virulence plasmid integrase pGP8-D OS=Chlamydophila psittaci OX=83554 PE=3 SV=1
+>sp|B0BCM4|GP8D_CHLT2 Virulence plasmid integrase pGP8-D OS=Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B) OX=471472 GN=pL2-02 PE=3 SV=1
+>sp|P0CE20|GP8D_CHLTH Virulence plasmid integrase pGP8-D OS=Chlamydia trachomatis OX=813 PE=3 SV=1
+>sp|P40853|GPHP_CUPNH Phosphoglycolate phosphatase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbZP PE=1 SV=2
+>sp|P08715|HLYAP_ECOLX Hemolysin, plasmid OS=Escherichia coli OX=562 GN=hlyA PE=1 SV=1
+>sp|P06739|HLYDP_ECOLX Hemolysin secretion protein D, plasmid OS=Escherichia coli OX=562 GN=hlyD PE=1 SV=1
+>sp|Q9L5H8|HNSP_SALTI DNA-binding protein H-NS, plasmid OS=Salmonella typhi OX=90370 GN=hns PE=1 SV=1
+>sp|P0CF46|INSC7_ECOLI Transposase InsC for insertion element IS2 on F plasmid OS=Escherichia coli (strain K12) OX=83333 GN=insC7 PE=3 SV=1
+>sp|P0CF59|INSD7_ECOLI Transposase InsD for insertion element IS2 on F plasmid OS=Escherichia coli (strain K12) OX=83333 GN=insD7 PE=4 SV=1
+>sp|P19924|KPPR1_CUPNH Phosphoribulokinase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cfxP PE=1 SV=3
+>sp|P23496|LACXP_LACLL Protein LacX, plasmid OS=Lactococcus lactis subsp. lactis OX=1360 GN=lacX PE=2 SV=1
+>sp|P07620|PARA_ECOLX Plasmid partition protein A OS=Escherichia coli OX=562 GN=parA PE=1 SV=1
+>sp|Q746H1|PARA_THET2 Probable plasmid-partitioning protein ParA OS=Thermus thermophilus (strain HB27 / ATCC BAA-163 / DSM 7039) OX=262724 GN=parA PE=3 SV=1
+>sp|Q9PHE9|PARB2_XYLFA Probable plasmid-partitioning protein ParB OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=XF_a0059 PE=3 SV=1
+>sp|Q9RZV8|PARB3_DEIRA Probable plasmid-partitioning protein ParB OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422) OX=243230 GN=DR_B0002 PE=3 SV=1
+>sp|P07621|PARB_ECOLX Plasmid Partition par B protein OS=Escherichia coli OX=562 GN=parB PE=3 SV=1
+>sp|Q746H2|PARB_THET2 Probable plasmid-partitioning protein ParB OS=Thermus thermophilus (strain HB27 / ATCC BAA-163 / DSM 7039) OX=262724 GN=parB PE=3 SV=1
+>sp|P11904|PARM_ECOLX Plasmid segregation protein ParM OS=Escherichia coli OX=562 GN=parM PE=1 SV=1
+>sp|P54124|PEPF1_LACLC Oligoendopeptidase F, plasmid OS=Lactococcus lactis subsp. cremoris OX=1359 GN=pepF1 PE=1 SV=1
+>sp|P50320|PGKP_CUPNH Phosphoglycerate kinase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbKP PE=3 SV=1
+>sp|P03857|PRE1_STAAU Plasmid recombination enzyme type 1 OS=Staphylococcus aureus OX=1280 GN=pre PE=3 SV=2
+>sp|P0A0C5|PRE2_STAAM Plasmid recombination enzyme type 2 OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 GN=pre PE=3 SV=1
+>sp|P0A0C6|PRE2_STAAN Plasmid recombination enzyme type 2 OS=Staphylococcus aureus (strain N315) OX=158879 GN=pre PE=3 SV=1
+>sp|P0A0C7|PRE2_STAAU Plasmid recombination enzyme type 2 OS=Staphylococcus aureus OX=1280 GN=pre PE=3 SV=1
+>sp|Q5HJZ6|PRE3_STAAC Plasmid recombination enzyme type 3 OS=Staphylococcus aureus (strain COL) OX=93062 GN=pre PE=3 SV=1
+>sp|P03864|PRE3_STAAU Plasmid recombination enzyme type 3 OS=Staphylococcus aureus OX=1280 GN=pre PE=3 SV=2
+>sp|Q8CUG0|PRE3_STAES Plasmid recombination enzyme type 3 OS=Staphylococcus epidermidis (strain ATCC 12228) OX=176280 GN=SE_p102 PE=3 SV=1
+>sp|Q5DU99|PRE3_STALE Plasmid recombination enzyme type 3 OS=Staphylococcus lentus OX=42858 GN=pre PE=3 SV=1
+>sp|P10025|PREA_BACTU Plasmid recombination enzyme OS=Bacillus thuringiensis OX=1428 PE=3 SV=1
+>sp|P35856|PREA_LACHI Plasmid recombination enzyme OS=Lactobacillus hilgardii OX=1588 GN=preA PE=3 SV=1
+>sp|P20046|PREA_LACPN Plasmid recombination enzyme OS=Lactobacillus plantarum OX=1590 GN=preA PE=3 SV=1
+>sp|P13015|PRE_BACSP Plasmid recombination enzyme OS=Bacillus sp. OX=1409 GN=pre PE=3 SV=1
+>sp|P13925|PRE_STRAG Plasmid recombination enzyme OS=Streptococcus agalactiae OX=1311 GN=pre PE=1 SV=1
+>sp|P42721|RBL1P_CUPNH Ribulose bisphosphate carboxylase large chain, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbL2 PE=2 SV=3
+>sp|Q59102|RBSP_CUPNH Ribulose bisphosphate carboxylase small chain, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbxSP PE=3 SV=2
+>sp|Q59486|RECA_LACLL Protein RecA, plasmid OS=Lactococcus lactis subsp. lactis OX=1360 GN=recAL PE=3 SV=1
+>sp|Q59967|SRPH_SYNE7 Serine acetyltransferase, plasmid OS=Synechococcus elongatus (strain PCC 7942) OX=1140 GN=srpH PE=3 SV=1
+>sp|P28043|SSB2_ECOLX Plasmid-derived single-stranded DNA-binding protein OS=Escherichia coli OX=562 GN=ssb PE=3 SV=2
+>sp|P28044|SSB7_ECOLX Plasmid-derived single-stranded DNA-binding protein OS=Escherichia coli OX=562 GN=ssb PE=1 SV=2
+>sp|P18310|SSBF_ECOLI Plasmid-derived single-stranded DNA-binding protein OS=Escherichia coli (strain K12) OX=83333 GN=ssbF PE=3 SV=3
+>sp|P18022|SSBP_ECOLX Plasmid-derived single-stranded DNA-binding protein OS=Escherichia coli OX=562 GN=ssb PE=3 SV=3
+>sp|P28045|SSBR_ECOLX Plasmid-derived single-stranded DNA-binding protein OS=Escherichia coli OX=562 GN=ssb PE=3 SV=2
+>sp|Q52562|STBB_PSESM Plasmid stability protein StbB OS=Pseudomonas syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 GN=stbB PE=3 SV=2
+>sp|Q52561|STBC_PSESM Plasmid stability protein StbC OS=Pseudomonas syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 GN=stbC PE=4 SV=2
+>sp|P21726|TKTP_CUPNH Transketolase, plasmid OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) OX=381666 GN=cbbTP PE=3 SV=2
+>sp|Q9PHK2|TOP1P_XYLFA DNA topoisomerase I, plasmid OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=XF_a0003 PE=3 SV=1
+>sp|Q03450|TRAF4_ECOLX Plasmid transfer protein TraF OS=Escherichia coli OX=562 GN=traF PE=3 SV=1
+>sp|Q05119|TRAF5_ECOLX Plasmid transfer protein TraF OS=Escherichia coli OX=562 GN=traF PE=3 SV=1
+>sp|P07676|TRFA_ECOLX Plasmid replication initiator protein TrfA OS=Escherichia coli OX=562 GN=trfA PE=1 SV=1
+>sp|P55510|Y4JJ_SINFN Putative plasmid stability protein y4jJ OS=Sinorhizobium fredii (strain NBRC 101917 / NGR234) OX=394 GN=NGR_a03050 PE=4 SV=1
+>sp|P05467|YKP1_KLULA Uncharacterized killer plasmid pGKl-2 protein 1 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P05469|YKP3_KLULA Uncharacterized killer plasmid pGKl-2 protein 3 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P05470|YKP4_KLULA Uncharacterized killer plasmid pGKL-2 helicase OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=3 SV=1
+>sp|P05471|YKP5_KLULA Uncharacterized killer plasmid pGKl-2 protein 5 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P05473|YKP7_KLULA Uncharacterized killer plasmid pGKl-2 protein 7 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P05474|YKP8_KLULA Uncharacterized killer plasmid pGKl-2 protein 8 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P05475|YKP9_KLULA Uncharacterized killer plasmid pGKl-2 protein 9 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 PE=4 SV=1
+>sp|P33544|YM23_MAIZE Uncharacterized 33.9 kDa protein in mitochondrial linear 2.3 KB plasmid OS=Zea mays OX=4577 PE=4 SV=1
+>sp|P10511|YPG1_DICSP Uncharacterized plasmid pDG1 103 kDa protein OS=Dictyostelium sp. (strain GA11) OX=5785 PE=4 SV=1
+
+[Wed Jan  1 20:10:20 JST 2020] scripts/run_Inspecting_Data.sh has been successfully completed.

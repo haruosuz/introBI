@@ -1,0 +1,26 @@
+9c9
+< -rw-r--r-- 1 haruo staff 265M Nov 30 23:28 data/2019_10/uniprot_sprot.fasta
+---
+> -rw-r--r-- 1 haruo staff 265M Dec 28 01:30 data/2019_11/uniprot_sprot.fasta
+11c11
+< # There are 561356 entries in the FASTA file.
+---
+> # There are 561568 entries in the FASTA file.
+34,37c34,37
+<   20379 Homo sapiens OX=9606
+<   17025 Mus musculus OX=10090
+<   15911 Arabidopsis thaliana OX=3702
+<    8080 Rattus norvegicus OX=10116
+---
+>   20367 Homo sapiens OX=9606
+>   17027 Mus musculus OX=10090
+>   15922 Arabidopsis thaliana OX=3702
+>    8085 Rattus norvegicus OX=10116
+43c43
+<    4148 Dictyostelium discoideum OX=44689
+---
+>    4149 Dictyostelium discoideum OX=44689
+191c191
+< [Wed Jan  1 20:10:20 JST 2020] scripts/run_Inspecting_Data.sh has been successfully completed.
+---
+> [Wed Jan  1 20:10:41 JST 2020] scripts/run_Inspecting_Data.sh has been successfully completed.
