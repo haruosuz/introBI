@@ -34,7 +34,7 @@
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-5)
 - 2022-11-08 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-6)
-- 2022-11-15 No. 7 - [my_project](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+- 2022-11-15 No. 7 - プロジェクト例 [my_project](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project) examples
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/18～11/24）
 - 2022-11-29 No. 8 - 中間発表 [Interim report](#interim-report)
