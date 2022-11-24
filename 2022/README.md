@@ -1203,8 +1203,17 @@ CSVファイルの2,3列目を抽出する:
 
 	cut -d, -f2,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
 
+p.139
+訳書152頁
 ### Formatting Tabular Data with column
 ### 7.3.5　columnによる表形式データへの整形
+
+`column -t` produces readable columns.  
+`column -t` は、読みやすい列を生成する。  
+
+    head -n 3 Mus_musculus.GRCm38.75_chr1_random.gtf | cut -f 1-8 | column -t
+
+    head -n 3 Mus_musculus.GRCm38.75_chr1_bed.csv | column -t -s","
 
 p.140
 訳書153頁
