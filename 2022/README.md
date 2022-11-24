@@ -1385,6 +1385,9 @@ Convert the chromosome name from "chrom1" to "chr1" in the *chroms.txt* file:
 	head -n 3 chroms.txt # before sed
 	sed 's/chrom/chr/' chroms.txt | head -n 3
 
+
+p.169
+訳書182頁
 ## Advanced Shell Tricks
 ## 7.4　高度なシェル技法
 
