@@ -1363,9 +1363,6 @@ p.161
 > ###### Setting Field, Output Field, and Record Separators  
     awk -F"," -v OFS="\t" '{print $1,$2,$3}' Mus_musculus.GRCm38.75_chr1_bed.csv
 
-Table 7-3. Useful built-in Awk functions  
-表 7-3 AWK の組み込み関数  
-
 p.163
 訳書176頁
 ### Bioawk: An Awk for Biological Formats
