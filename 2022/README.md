@@ -1120,15 +1120,26 @@ Here, we'll work with plain-text data formats (tab-delimited file formats) such 
 ### Inspecting Data with Head and Tail
 ### 7.3.1　headとtailによるデータの検査
 
-Look at the top of a file with [`head`](https://en.wikipedia.org/wiki/Head_%28Unix%29):  
-[`head`](https://ja.wikipedia.org/wiki/Head)コマンドでファイルの先頭部分を表示する:  
+[`head`](https://en.wikipedia.org/wiki/Head_%28Unix%29) looks at the top of a file:  
+[`head`](https://ja.wikipedia.org/wiki/Head)でファイルの先頭部分を表示する:  
 
     head -n 3 example.bed
 
-Look at the end of a file with [`tail`](https://en.wikipedia.org/wiki/Tail_%28Unix%29):  
-[`tail`](https://ja.wikipedia.org/wiki/Tail)コマンドでファイルの末尾部分を表示する:  
+[`tail`](https://en.wikipedia.org/wiki/Tail_%28Unix%29) looks at the end of a file:  
+[`tail`](https://ja.wikipedia.org/wiki/Tail)でファイルの末尾部分を表示する:  
 
     tail -n 3 example.bed
+
+`tail` can remove the header of a file:  
+`tail`でファイルのヘッダを削除する:  
+
+	seq 3 > nums.txt
+	tail -n +2 nums.txt
+
+See both the beginning and end of a file:  
+ファイルの先頭と末尾の両方を表示する:  
+
+    (head -n 1; tail -n 1) < nums.txt
 
 p.131
 訳書144頁
@@ -1394,8 +1405,21 @@ p.169
 ### Subshells
 ### 7.4.1　サブシェル
 
+*group* sequential commands together (such that their output is a single stream).  
+連続実行するコマンドをグループ化する（出力が単一のストリームになるように）。  
+
+Combining two sequential commands' standard output into a single stream with a subshell.  
+[サブシェル](http://x68000.q-e-d.net/~68user/unix/pickup?%A5%B5%A5%D6%A5%B7%A5%A7%A5%EB)で2つの連続したコマンドの標準出力を1つのストリームにまとめる。  
+
+	echo "this command"; echo "that command" | sed 's/command/step/'
+	(echo "this command"; echo "that command") | sed 's/command/step/'
+
 ### Named Pipes and Process Substitution
 ### 7.4.2　名前付きパイプとプロセス置換
+
+	cat <(echo "hello, process substitution")
+
+    diff <(tail example.bed) <(tail -n +2 test.bed)
 
 ## The Unix Philosophy Revisited
 ## 7.5　Unix哲学再考
