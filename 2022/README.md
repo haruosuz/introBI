@@ -1167,8 +1167,8 @@ p.134
 
 	ls -l Mus_musculus.GRCm38.75_chr1.bed
 
-Use [awk](https://en.wikipedia.org/wiki/AWK) to return how many fields (columns) a file contains:  
-[awk](https://ja.wikipedia.org/wiki/AWK)を用いてファイルに含まれるフィールド（列）数を返す:  
+Use [`awk`](https://en.wikipedia.org/wiki/AWK) to return how many fields (columns) a file contains:  
+[`awk`](https://ja.wikipedia.org/wiki/AWK)を用いてファイルに含まれるフィールド（列）数を返す:  
 
     awk -F "\t" '{print NF; exit}' example.bed
 
@@ -1358,6 +1358,12 @@ Add a column with the length of this feature (end position - start position) for
 2番染色体(`chr2`)と3番染色体(`chr3`)についてのみ、特徴領域の長さ(`$3 - $2`)の列を追加する:  
 
 	awk '$1 ~ /chr2|chr3/ { print $0 "\t" $3 - $2 }' example.bed
+
+p.161
+訳書174頁
+
+> ###### Setting Field, Output Field, and Record Separators  
+    awk -F"," -v OFS="\t" '{print $1,$2,$3}' Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
 
 ### Bioawk: An Awk for Biological Formats
 ### 7.3.12　Bioawk：生物学的データのためのAWK
