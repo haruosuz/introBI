@@ -1405,7 +1405,6 @@ Convert the chromosome name from "chrom1" to "chr1" in the *chroms.txt* file:
 	head -n 3 chroms.txt # before sed
 	sed 's/chrom/chr/' chroms.txt | head -n 3
 
-
 p.169
 訳書182頁
 ## Advanced Shell Tricks
@@ -1413,9 +1412,6 @@ p.169
 
 ### Subshells
 ### 7.4.1　サブシェル
-
-*group* sequential commands together (such that their output is a single stream).  
-連続実行するコマンドをグループ化する（出力が単一のストリームになるように）。  
 
 Combining two sequential commands' standard output into a single stream with a subshell.  
 [サブシェル](http://x68000.q-e-d.net/~68user/unix/pickup?%A5%B5%A5%D6%A5%B7%A5%A7%A5%EB)で2つの連続したコマンドの標準出力を1つのストリームにまとめる。  
