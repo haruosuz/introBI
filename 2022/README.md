@@ -1227,13 +1227,13 @@ Use [`grep`](https://en.wikipedia.org/wiki/Grep) to find lines matching the patt
 
     grep "chr2" example.bed
 
-Use `grep --color` to color the matching part of the pattern:  
-`grep --color`でパターンにマッチする部分を色付けする:  
+`grep --color` colors the matching part of the pattern:  
+`grep --color` でパターンにマッチする部分を色付けする:  
 
     grep --color "chr2" example.bed
 
 `grep -v` returns lines that *do not* match the pattern:  
-`grep -v`でパターンにマッチしない行だけを返す:  
+`grep -v` でパターンにマッチしない行だけを返す:  
 
     grep -v "chr2" example.bed
 
@@ -1245,13 +1245,13 @@ Print *n* lines of context before (`-B`), context after (`-A`), and context befo
     grep -C1 "chr2" example.bed
 
 `grep -c` counts how many lines match the pattern:  
-`grep -c`でパターンにマッチする行数をカウントする:  
+`grep -c` でパターンにマッチする行数をカウントする:  
 
     grep "chr2" example.bed | wc -l
     grep -c "chr2" example.bed
 
 `grep -i` ignores case.  
-`grep -i`で大文字小文字を区別しない。  
+`grep -i` で大文字小文字を区別しない。  
 
     grep -i "CHR2" example.bed
 
