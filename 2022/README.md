@@ -1212,7 +1212,6 @@ Use `grep --color` to color the matching part of the pattern:
 
     grep --color "chr2" example.bed
 
-
 `grep -v` returns lines that *do not* match the pattern:  
 `grep -v`でパターンにマッチしない行だけを返す:  
 
@@ -1364,6 +1363,12 @@ p.161
 
 > ###### Setting Field, Output Field, and Record Separators  
     awk -F"," -v OFS="\t" '{print $1,$2,$3}' Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+
+Table 7-3. Useful built-in Awk functions  
+表 7-3 AWK の組み込み関数  
+
+p.163
+訳書176頁
 
 ### Bioawk: An Awk for Biological Formats
 ### 7.3.12　Bioawk：生物学的データのためのAWK
