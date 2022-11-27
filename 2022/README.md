@@ -1065,8 +1065,6 @@ We'll use core Unix tools (`head, tail, less, wc, ls, awk, cut, grep, sort, uniq
 - [Bioinformatics Workbook](https://bioinformaticsworkbook.org/)
   - [Introduction to Unix](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html)
   - [Unix CheatSheet](https://bioinformaticsworkbook.org/Appendix/Unix/UnixCheatSheet.html)
-- 2022-08-26 [#oneliner from:tangming2005](https://twitter.com/search?q=%23oneliner%20from%3Atangming2005&src=typed_query&f=top)
-- 2021-11-13 Bioinformatics one-liners https://twitter.com/StevenXGe/status/1459209095991500804
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
@@ -1095,6 +1093,9 @@ By connecting Unix data tools together with pipes (`|`), we can construct "one-l
 Unixコマンドをパイプ（`|`）で繋ぐことにより、データを[パース](https://e-words.jp/w/パース.html)・操作・要約する1行プログラム（ワンライナー）を構築する。  
 
     cat README.md | tr -cs A-Za-z '\n' | tr A-Z a-z | sort | uniq -c | sort -rn | sed 10q
+
+- 2022-08-26 [#oneliner from:tangming2005](https://twitter.com/search?q=%23oneliner%20from%3Atangming2005&src=typed_query&f=top)
+- 2021-11-13 https://twitter.com/StevenXGe/status/1459209095991500804
 
 p.127
 訳書139頁
