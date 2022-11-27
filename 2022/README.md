@@ -1051,6 +1051,11 @@ find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" echo ./script
 [make (UNIX)](https://ja.wikipedia.org/wiki/Make_%28UNIX%29)  
 
 ----------
+
+[ひと目でわかる行列（Row ・ Column）の方向の覚え方](https://lambdalisue.hatenablog.com/entry/2013/07/18/134507)
+![](http://cdn-ak.f.st-hatena.com/images/fotolife/l/lambdalisue/20130718/20130718131854.png)
+
+----------
 # Unix Data Tools
 # Unixデータツール
 
@@ -1107,18 +1112,14 @@ p.128
 ## Inspecting and Manipulating Text Data with Unix Tools
 ## 7.3　Unixツールによるテキストデータの検査と操作
 
-> ###### Tabular Plain-Text Data Formats
-> each row (aka 'record') is kept on its own line, and each column (aka 'field') is separated by some delimiter.  
-> 表形式のプレーンテキストデータ形式は、各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。
+Tabular plain-text data formats: each row (aka 'record') is kept on its own line, and each column (aka 'field') is separated by some delimiter. e.g., [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) and [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) files.  
+表形式のプレーンテキストデータ形式：各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。[タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)や[カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)ファイルなど。  
 
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
 ここでは、単純なゲノムデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ（タブ区切り形式ファイル）を扱う。  
 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 - [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
-
-[ひと目でわかる行列（Row ・ Column）の方向の覚え方](https://lambdalisue.hatenablog.com/entry/2013/07/18/134507)
-![](http://cdn-ak.f.st-hatena.com/images/fotolife/l/lambdalisue/20130718/20130718131854.png)
 
 ### Inspecting Data with Head and Tail
 ### 7.3.1　headとtailによるデータの検査
