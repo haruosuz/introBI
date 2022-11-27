@@ -57,9 +57,9 @@
 ## Interim report
 **中間発表**
 
-One minute will be allocated for each presentation. Please report your projects (data).
+Presentation time is 1 minute. Report your project (analysis data).
 
-1人1分でプロジェクト（解析データ）について説明する。
+発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
 ## Final presentation
@@ -1237,6 +1237,16 @@ Use [`grep`](https://en.wikipedia.org/wiki/Grep) to find lines matching the patt
 
     grep -v "chr2" example.bed
 
+Partially matching may bite us.  
+部分マッチが悪さをする例。  
+
+    grep "bio" example.txt
+
+`grep -w` matches entire words (surrounded by whitespace).  
+`grep -w` は単語全体（空白に囲まれた部分）にマッチする。
+
+    grep -w "bio" example.txt
+
 Print *n* lines of context before (`-B`), context after (`-A`), and context before and after (`-C`) the matching line:  
 パターンにマッチする行の前（`-B`）、後（`-A`）、前後（`-C`）の文脈*n*行を出力する:  
 
@@ -1254,6 +1264,11 @@ Print *n* lines of context before (`-B`), context after (`-A`), and context befo
 `grep -i` で大文字小文字を区別しない。  
 
     grep -i "CHR2" example.bed
+
+`grep -f file` reads one or more newline separated patterns from file.  
+`grep -f file` でファイルから改行区切りのパターンを1つ以上読み込む。  
+
+    grep -f example.txt README.md
 
 p.145
 訳書158頁
