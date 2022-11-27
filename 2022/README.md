@@ -1406,7 +1406,7 @@ p.163
 
 <http://github.com/lh3/bioawk>  
 You can download, compile, and install Bioawk from source  
-Bioawkのソースをダウンロードし、コンパイル、インストールできる  
+Bioawkのソースをダウンロード、コンパイル、インストールできる  
 
 or you can install with :  
 あるいは、パッケージ管理システムでインストールできる:
