@@ -1404,6 +1404,25 @@ p.163
 ### Bioawk: An Awk for Biological Formats
 ### 7.3.12　Bioawk：生物学的データのためのAWK
 
+- http:// github.com/lh3/bioawk
+You can download, compile, and install Bioawk from source  
+Bioawkのソースをダウンロードし、コンパイル、インストールできる  
+
+or you can install with :  
+あるいは、パッケージ管理システムでインストールできる:
+
+	brew tap brewsci/bio; brew install bioawk
+
+Look at Bioawk's supported input formats and what variables these formats set:  
+Bioawkがサポートする入力形式と、これらが設定する変数を見る:  
+
+	bioawk -c help
+
+As an example, read in *Mus_musculus.GRCm38.75_chr1.gtf* and append a column with the length of the feature (end position - start position) for all protein coding genes:  
+例として *Mus_musculus.GRCm38.75_chr1.gtf* を読み込み、全てのタンパク質コード遺伝子の特徴領域の長さ（終了位置 - 開始位置）を列に追加する:  
+
+    bioawk -c gff '$3 ~ /gene/ && $2 ~ /protein_coding/ {print $seqname, $end - $start}' Mus_musculus.GRCm38.75_chr1.gtf | head -n 3
+
 p.165
 訳書178頁
 ### Stream Editing with Sed
