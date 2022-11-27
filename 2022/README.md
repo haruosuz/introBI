@@ -1051,11 +1051,6 @@ find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" echo ./script
 [make (UNIX)](https://ja.wikipedia.org/wiki/Make_%28UNIX%29)  
 
 ----------
-
-[ひと目でわかる行列（Row ・ Column）の方向の覚え方](https://lambdalisue.hatenablog.com/entry/2013/07/18/134507)
-![](http://cdn-ak.f.st-hatena.com/images/fotolife/l/lambdalisue/20130718/20130718131854.png)
-
-----------
 # Unix Data Tools
 # Unixデータツール
 
@@ -1102,9 +1097,9 @@ p.127
 ## When to Use the Unix Pipeline Approach and How to Use It Safely
 ## 7.2　Unixパイプラインを使うタイミングと安全な使い方
 
-A quick rough picture of our data built from modular Unix tools.
+A quick rough picture of our data built from modular Unix tools.  
+Unixパイプラインからデータの大まかな概観を手早く得る。  
 Storing Unix pipelines in scripts to ensure they're reproducible.  
-Unixパイプラインからデータの大まかな概観を手早く得る。
 再現性を確保するために、Unixパイプラインをシェルスクリプトに記録する。  
 
 p.128
@@ -1112,11 +1107,18 @@ p.128
 ## Inspecting and Manipulating Text Data with Unix Tools
 ## 7.3　Unixツールによるテキストデータの検査と操作
 
+> ###### Tabular Plain-Text Data Formats
+> each row (aka 'record') is kept on its own line, and each column (aka 'field') is separated by some delimiter.  
+> 表形式のプレーンテキストデータ形式は、各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。
+
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
 ここでは、単純なゲノムデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ（タブ区切り形式ファイル）を扱う。  
 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 - [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
+
+[ひと目でわかる行列（Row ・ Column）の方向の覚え方](https://lambdalisue.hatenablog.com/entry/2013/07/18/134507)
+![](http://cdn-ak.f.st-hatena.com/images/fotolife/l/lambdalisue/20130718/20130718131854.png)
 
 ### Inspecting Data with Head and Tail
 ### 7.3.1　headとtailによるデータの検査
@@ -1364,7 +1366,7 @@ p.157
 ### Text Processing with Awk
 ### 7.3.11　AWKによるテキスト処理
 
-[AWK](https://en.wikipedia.org/wiki/AWK) processes input data a *record* (line) at a time, and each record is composed of *fields* (columns). Awk assigns the entire record to the variable `$0`, and individual field's value is assigned to the numbered variables `$1, $2, $3`, etc.  
+[AWK](https://en.wikipedia.org/wiki/AWK) processes input data a *record* (row) at a time, and each record is composed of *fields* (columns). Awk assigns the entire record to the variable `$0`, and individual field's value is assigned to the numbered variables `$1, $2, $3`, etc.  
 [AWK](https://ja.wikipedia.org/wiki/AWK)は、入力データを1*レコード*（行）ずつ処理し、各レコードは*フィールド*（列）で構成される。レコード全体は変数`$0`に格納され、各フィールドの値は`$1, $2, $3`などに格納される。  
 
 `awk pattern { action }`
