@@ -1404,7 +1404,7 @@ p.163
 ### Bioawk: An Awk for Biological Formats
 ### 7.3.12　Bioawk：生物学的データのためのAWK
 
-- http:// github.com/lh3/bioawk
+- <http://github.com/lh3/bioawk>
 You can download, compile, and install Bioawk from source  
 Bioawkのソースをダウンロードし、コンパイル、インストールできる  
 
