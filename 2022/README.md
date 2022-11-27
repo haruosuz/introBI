@@ -1408,8 +1408,8 @@ p.163
 You can download, compile, and install Bioawk from source  
 Bioawkのソースをダウンロード、コンパイル、インストールできる  
 
-or you can install with :  
-あるいは、パッケージ管理システムでインストールできる:
+or you can install with Homebrew package manager:  
+あるいは、Homebrewパッケージマネージャでインストールできる:
 
 	brew tap brewsci/bio; brew install bioawk
 
