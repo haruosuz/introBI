@@ -1168,6 +1168,13 @@ Open *contaminated.fastq* in less, and then press `/` and enter `AGATCGG`.
 
 Table 7-1. Commonly used less commands  
 Table 7-1. よく使われるlessコマンド  
+|Shortcut キー|Action 動作|
+|:---------|:---------|
+|space bar スペース|Next page 次ページを表示|
+|b|Previous page 前ページを表示|
+|/<pattern>|Search down (forward) for string <pattern> 文字列をカーソル以降で検索|
+|n|Repeat last search downward (forward) 順方向に次検索|
+|N|Repeat last search upward (backward) 逆方向に次検索|
 
 p.134
 訳書147頁
