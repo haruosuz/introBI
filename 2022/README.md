@@ -1112,7 +1112,7 @@ p.128
 ## Inspecting and Manipulating Text Data with Unix Tools
 ## 7.3　Unixツールによるテキストデータの検査と操作
 
-> Tabular Plain-Text Data Formats | 表形式のプレーンテキストデータ形式  
+> **Tabular Plain-Text Data Formats | 表形式のプレーンテキストデータ形式**  
 each row (aka *record*) is kept on its own line, and each column (aka *field*) is separated by some delimiter.  
 各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。  
 [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) | [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)  
