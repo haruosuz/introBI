@@ -1237,8 +1237,8 @@ p.140
 
     cat example.bed
 
-Use [`grep`](https://en.wikipedia.org/wiki/Grep) to find lines matching the pattern "chr2" in the file *example.bed*:  
-[`grep`](https://ja.wikipedia.org/wiki/Grep)コマンドを用いて、*example.bed*ファイルでパターン"chr2"に一致する行を見つける:  
+[`grep`](https://en.wikipedia.org/wiki/Grep) to find lines matching the pattern in the file:  
+[`grep`](https://ja.wikipedia.org/wiki/Grep) コマンドを用いて、ファイルにあるパターンに一致する行を見つける:  
 
     grep "chr2" example.bed
 
@@ -1274,6 +1274,11 @@ Print *n* lines of context before (`-B`), context after (`-A`), and context befo
 
     grep "chr2" example.bed | wc -l
     grep -c "chr2" example.bed
+
+`grep -o` extracts only the matching part of the pattern:  
+`grep -o` でパターンにマッチする部分だけを抽出する:  
+
+    grep -o "chr2" example.bed
 
 `grep -i` ignores case.  
 `grep -i` で大文字小文字を区別しない。  
