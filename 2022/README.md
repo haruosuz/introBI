@@ -1168,7 +1168,7 @@ Open *contaminated.fastq* in less, and then press `/` and enter `AGATCGG`.
 
 Table 7-1. Commonly used less commands  
 Table 7-1. よく使われるlessコマンド  
-|Shortcut キー|Action 動作|
+|Shortcut  |Action    |
 |:---------|:---------|
 |space bar |Next page 次ページに移動|
 |b         |Previous page 前ページに移動|
