@@ -1119,7 +1119,7 @@ p.128
 > [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) | [カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)  
 
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
-ここでは、単純なゲノムデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ（タブ区切り形式ファイル）を扱う。  
+ここでは、ゲノムの特徴領域を示すBED（3列）やGTFファイルなどのプレーンテキストデータ形式（タブ区切り形式ファイル）を扱う。  
 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 - [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
