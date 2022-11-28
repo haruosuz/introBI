@@ -1112,11 +1112,11 @@ p.128
 ## Inspecting and Manipulating Text Data with Unix Tools
 ## 7.3　Unixツールによるテキストデータの検査と操作
 
-> ###### Tabular Plain-Text Data Formats  
-each row (aka *record*) is kept on its own line, and each column (aka *field*) is separated by some delimiter.  
-各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。  
-[tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) | [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)  
-[comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) | [カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)  
+> ###### Tabular Plain-Text Data Formats
+> each row (aka *record*) is kept on its own line, and each column (aka *field*) is separated by some delimiter.  
+> 各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。  
+> [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) | [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)  
+> [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) | [カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)  
 
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
 ここでは、単純なゲノムデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ（タブ区切り形式ファイル）を扱う。  
