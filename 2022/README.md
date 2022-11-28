@@ -1114,7 +1114,7 @@ p.128
 
 > ###### Tabular Plain-Text Data Formats
 > each row (aka *record*) is kept on its own line, and each column (aka *field*) is separated by some delimiter.  
-> 各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。  
+> 各行（「レコード」とも呼ぶ）は独立した行に保持される。各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。  
 > [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) | [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)  
 > [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) | [カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)  
 
@@ -1185,8 +1185,8 @@ p.134
 
 	ls -l Mus_musculus.GRCm38.75_chr1.bed
 
-[`awk`](https://en.wikipedia.org/wiki/AWK) one-liner to return how many fields (columns) a file contains:  
-[`awk`](https://ja.wikipedia.org/wiki/AWK)を用いてファイルに含まれるフィールド（列）数を返す:  
+[`awk`](https://en.wikipedia.org/wiki/AWK) to return how many fields (columns) a file contains:  
+[`awk`](https://ja.wikipedia.org/wiki/AWK) を用いてファイルに含まれるフィールド（列）数を返す:  
 
     awk -F "\t" '{print NF; exit}' example.bed
     # built-in variable NF (Number of Fields)
