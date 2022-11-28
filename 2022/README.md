@@ -1185,10 +1185,11 @@ p.134
 
 	ls -l Mus_musculus.GRCm38.75_chr1.bed
 
-Use [`awk`](https://en.wikipedia.org/wiki/AWK) to return how many fields (columns) a file contains:  
+[`awk`](https://en.wikipedia.org/wiki/AWK) one-liner to return how many fields (columns) a file contains:  
 [`awk`](https://ja.wikipedia.org/wiki/AWK)を用いてファイルに含まれるフィールド（列）数を返す:  
 
     awk -F "\t" '{print NF; exit}' example.bed
+    # built-in variable NF (Number of Fields)
 
 p.138
 訳書151頁
