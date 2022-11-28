@@ -1172,7 +1172,7 @@ Table 7-1. よく使われるlessコマンド
 |:---------|:---------|
 |space bar スペース|Next page 次ページを表示|
 |b|Previous page 前ページを表示|
-|/<pattern>|Search down (forward) for string <pattern> 文字列をカーソル以降で検索|
+|/`pattern`|Search down (forward) for string `pattern` 文字列をカーソル以降で検索|
 |n|Repeat last search downward (forward) 順方向に次検索|
 |N|Repeat last search upward (backward) 逆方向に次検索|
 
