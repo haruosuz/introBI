@@ -1112,7 +1112,8 @@ p.128
 ## Inspecting and Manipulating Text Data with Unix Tools
 ## 7.3　Unixツールによるテキストデータの検査と操作
 
-Tabular plain-text data formats: each row (aka 'record') is kept on its own line, and each column (aka 'field') is separated by some delimiter. e.g., [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) and [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) files.  
+> Tabular plain-text data formats
+each row (aka 'record') is kept on its own line, and each column (aka 'field') is separated by some delimiter. e.g., [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) and [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) files.  
 表形式のプレーンテキストデータ形式：各行（「レコード」とも呼ぶ）は独立し、各列（「フィールド」とも呼ぶ）は何らかの区切り文字で区切られる。[タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)や[カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)ファイルなど。  
 
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
