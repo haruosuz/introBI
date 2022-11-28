@@ -1170,11 +1170,11 @@ Table 7-1. Commonly used less commands
 Table 7-1. よく使われるlessコマンド  
 |Shortcut キー|Action 動作|
 |:---------|:---------|
-|space bar スペース|Next page 次ページを表示|
-|b|Previous page 前ページを表示|
+|space bar |Next page 次ページに移動|
+|b         |Previous page 前ページに移動|
 |/`pattern`|Search down (forward) for string `pattern` 文字列をカーソル以降で検索|
-|n|Repeat previous search downward (forward) 順方向に次検索|
-|N|Repeat previous search upward (backward) 逆方向に次検索|
+|n         |Repeat previous search downward (forward) 順方向に次検索|
+|N         |Repeat previous search upward (backward) 逆方向に次検索|
 
 p.134
 訳書147頁
