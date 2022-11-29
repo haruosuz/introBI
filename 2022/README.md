@@ -1295,6 +1295,9 @@ p.145
 ### Decoding Plain-Text Data: hexdump
 ### 7.3.7　プレーンテキストデータのデコード：hexdump
 
+In bioinformatics, the plain-text data we work with is often encoded in [*ASCII*](https://en.wikipedia.org/wiki/ASCII).  
+バイオインフォマティクスで扱うプレーンテキストのデータは通常、[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)コードでエンコードされている。  
+
 [`file`](https://en.wikipedia.org/wiki/File_%28command%29) 
 and
 [`hexdump`](https://en.wikipedia.org/wiki/Hex_dump)
@@ -1303,9 +1306,6 @@ commands are useful in situations where something isn't behaving correctly and y
 と 
 [`hexdump`](https://ja.wikipedia.org/wiki/16進ダンプ)
 コマンドは、何かが正しく動作しておらず、ファイルのエンコーディングに原因があると思われる状況で役立つ。  
-
-In bioinformatics, the plain-text data we work with is often encoded in [*ASCII*](https://en.wikipedia.org/wiki/ASCII).  
-バイオインフォマティクスで扱うプレーンテキストのデータは通常、[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)コードでエンコードされている。  
 
 `file` to look at a file's encoding:  
 `file` コマンドでファイルの文字コードを確認する:  
