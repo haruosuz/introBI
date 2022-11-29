@@ -1305,7 +1305,7 @@ commands are useful in situations where something isn't behaving correctly and y
 [`file`](https://ja.wikipedia.org/wiki/File_%28UNIX%29)
 と 
 [`hexdump`](https://ja.wikipedia.org/wiki/16進ダンプ)
-コマンドは、何かが正しく動作しておらず、ファイルのエンコーディングに原因があると思われる状況で役立つ。  
+コマンドは、何かが正しく動作しておらず、ファイルの文字コードに原因があると思われる状況で役立つ。  
 
 `file` to look at a file's encoding:  
 `file` コマンドでファイルの文字コードを確認する:  
