@@ -37,9 +37,11 @@
 - 2022-11-15 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/18～11/24）
-- 2022-11-29 No. 8 - 中間発表 [Interim report](#interim-report)
+- 2022-11-29 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+  - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-8)
 - 2022-12-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+  - [Working with Column Data with cut and Columns](#working-with-column-data-with-cut-and-columns)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-9)
 - 2022-12-13 No. 10 - TBA
 - 2022-12-20 No. 11 - TBA
