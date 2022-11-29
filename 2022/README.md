@@ -1314,8 +1314,8 @@ commands are useful in situations where something isn't behaving correctly and y
 	file utf8.txt
 	file improper.fa
 
-`hexdump` can identify which letters are not ASCII characters.  
-`hexdump` コマンドで、どの文字がASCII文字でないかを特定することができる。  
+`hexdump` to identify which letters are not ASCII characters.  
+`hexdump` コマンドで、どの文字がASCII文字でないかを特定する。  
 
     hexdump -c utf8.txt
 	hexdump -c improper.fa
