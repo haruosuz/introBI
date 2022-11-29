@@ -1119,7 +1119,7 @@ p.128
 > [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) | [カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)  
 
 Here, we'll work with plain-text data formats (tab-delimited file formats) such as BED (three-column) and GTF files as simple genomic feature formats.  
-ここでは、ゲノムの特徴領域を示す形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ形式（タブ区切り形式ファイル）を扱う。  
+ここでは、簡単なゲノムのデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ形式（タブ区切り形式ファイル）を扱う。これらのファイル形式は、遺伝子などのフィーチャー（特徴領域）の位置をタブ区切り形式で格納する。  
 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 - [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
@@ -1409,6 +1409,7 @@ p.157
 
 Awk supports arithmetic with the standard operators `+, -, *, /, %, ^`.  
 Awkは算術演算子（`+, -, *, /, %, ^`）をサポートしている。  
+
 Output lines where the length of the feature (end position - start position) was greater than 18:  
 特徴領域の長さ（終了位置 - 開始位置）が18より大きい行だけを出力する:  
 
@@ -1419,7 +1420,8 @@ Table 7-2. Awk comparison and logical operations
 
 Chain patterns using logical operators `&&` (AND), `||` (OR), and `!` (NOT).  
 論理演算子 `&&` (AND), `||` (OR), `!` (NOT) でパターンを繋ぐ。  
-Output lines on chromosome 1 with a length greater than 10:  
+
+Output lines on chromosome 1 (`chr1`) with a length (`$3 - $2`) greater than 10:  
 1番染色体(`chr1`)で特徴領域の長さ (`$3 - $2`) が10より大きい行を出力する:  
 
     awk '$1 ~ /chr1/ && $3 - $2 > 10 { print $0 }' example.bed
