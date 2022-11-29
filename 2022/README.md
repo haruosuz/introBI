@@ -1295,14 +1295,30 @@ p.145
 ### Decoding Plain-Text Data: hexdump
 ### 7.3.7　プレーンテキストデータのデコード：hexdump
 
+[`file`](https://en.wikipedia.org/wiki/File_%28command%29) 
+and
+[`hexdump`](https://en.wikipedia.org/wiki/Hex_dump)
+commands are useful in situations where something isn't behaving correctly and you suspect a file's encoding may be the cause.  
+[`file`](https://ja.wikipedia.org/wiki/File_%28UNIX%29)
+と 
+[`hexdump`](https://ja.wikipedia.org/wiki/16進ダンプ)
+コマンドは、何かが正しく動作しておらず、ファイルのエンコーディングに原因があると思われる状況で役立つ。  
+
 In bioinformatics, the plain-text data we work with is often encoded in [*ASCII*](https://en.wikipedia.org/wiki/ASCII).  
 バイオインフォマティクスで扱うプレーンテキストのデータは通常、[*ASCII*](https://ja.wikipedia.org/wiki/ASCII)コードでエンコードされている。  
 
-Use [`file`](https://en.wikipedia.org/wiki/File_%28command%29) to look at a file's encoding:  
-[`file`](https://ja.wikipedia.org/wiki/File_%28UNIX%29)コマンドでファイルの文字コードを確認する:  
+`file` to look at a file's encoding:  
+`file` コマンドでファイルの文字コードを確認する:  
 
     file example.bed
 	file utf8.txt
+	file improper.fa
+
+`hexdump` can identify which letters are not ASCII characters.  
+`hexdump` コマンドで、どの文字がASCII文字でないかを特定することができる。  
+
+    hexdump -c utf8.txt
+	hexdump -c improper.fa
 
 - [文字コードと改行コード](https://shellscript.sunone.me/character_code.html)
 
