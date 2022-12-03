@@ -689,7 +689,7 @@ p.116
 ## Looking at Differences Between Data
 ## 6.3　データの間の差を見る
 
-compute the diff between two files gene-1.bed and gene-2.bed using [`diff`](https://en.wikipedia.org/wiki/Diff):  
+[`diff`](https://en.wikipedia.org/wiki/Diff) to compute the diff between two files *gene-1.bed* and *gene-2.bed*:  
 [`diff`](https://ja.wikipedia.org/wiki/Diff)コマンドで2つのファイル*gene-1.bed*と*gene-2.bed*の差分を計算する:  
 
     diff gene-1.bed gene-2.bed
@@ -1208,17 +1208,15 @@ p.138
 Extract specific columns from plain-text tabular data formats like [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) and [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) files.  
 [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)ファイルや[カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)ファイルなどプレーンテキスト表形式データから特定の列を抽出する。  
 
-Extract the 2nd column of a tab-delimited file with [`cut`](https://en.wikipedia.org/wiki/Cut_%28Unix%29):  
-[`cut`](https://ja.wikipedia.org/wiki/Cut)コマンドでタブ区切りファイルの2列目を抽出する:  
+[`cut`](https://en.wikipedia.org/wiki/Cut_%28Unix%29) extracts ranges (`-f 2-3`) or sets (`-f 2,3`) of columns of a tab-delimited file:  
+[`cut`](https://ja.wikipedia.org/wiki/Cut)コマンドでタブ区切りファイルの列の範囲 (`-f 2-3`) やセット (`-f 2,3`) を抽出する:  
 
-	cut -f 2 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
+    cut -f 2,3 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
 
-`cut -d` specify the column delimiter character.
-Extract sets of columns (`-f 2,3`) of a CSV file:  
-`cut -d`で区切り文字を指定する。
-CSVファイルの2,3列目を抽出する:  
+`cut -d` to specify the column delimiter character. Extract sets of columns of a CSV file:  
+`cut -d` で区切り文字を指定する。CSVファイルの列を抽出する:  
 
-	cut -d, -f2,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+    cut -d "," -f 2,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
 
 p.139
 訳書152頁
