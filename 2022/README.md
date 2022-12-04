@@ -274,7 +274,7 @@ p.23
 When referring to other files (e.g. data) in your project hierarchy, always use *relative paths* (e.g., `../data/input.txt`) rather than absolute paths (e.g., `/home/vinceb/projects/zmays-snps/data/input.txt`).  
 プロジェクト階層内の他のファイル（データなど）を参照する場合、絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。  
 
-Create some empty files using `touch`:  
+`touch` is used to create some empty files:  
 [`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:  
 ```
 touch data/input.txt analysis/output.txt
@@ -491,8 +491,8 @@ p.45
 ### Pipes in Action: Creating Simple Programs with Grep and Pipes
 ### 3.3.1　パイプの動作：grepとパイプによる簡単なプログラムの作成
 
-Find any character that’s not A, T, G, or C using [pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) and [`grep`](https://en.wikipedia.org/wiki/Grep).  
-[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)と[`grep`](https://ja.wikipedia.org/wiki/Grep)を用いて、ATGC以外の文字を探す。  
+[`grep`](https://en.wikipedia.org/wiki/Grep) and [pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) are used to find any character that's not A, T, G, or C.
+[`grep`](https://ja.wikipedia.org/wiki/Grep) と[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)を用いて、ATGC以外の文字を探す。  
 
 	grep -v "^>" tb1.fasta | grep --color -i "[^ATGC]"
 
@@ -501,7 +501,7 @@ p.48
 ### Combining Pipes and Redirection
 ### 3.3.2　パイプとリダイレクションの結合
 
-The `2>&1` operator redirects standard error to the standard output stream:  
+`2>&1` operator redirects standard error to the standard output stream:  
 `2>&1`演算子は標準エラー出力を標準出力にリダイレクトする:  
 
     ls -l tb1.fasta leafy1.fasta > log.txt 2>&1
@@ -525,7 +525,7 @@ the basics of manipulating processes: running and managing processes in the back
 ### Background Processes
 ### 3.4.1　バックグラウンドプロセス
 
-run a program in the background by appending an ampersand (`&`) to the end of our command:  
+Run a program in the background by appending an ampersand (`&`) to the end of our command:  
 コマンドの末尾にアンパサンド（`&`）を追加して、プログラムをバックグラウンドで実行する:  
 
     $sleep 60 &
@@ -616,28 +616,27 @@ Retrieving data, Ensuring data integrity, Compression
 
 #### 6.1.1.1 wget
 
-Download a file (e.g. human chromosome 22) using [`wget`](https://en.wikipedia.org/wiki/Wget):  
-[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget) を用いて、ファイル（ヒト22番染色体）をダウンロードする:  
+[`wget`](https://en.wikipedia.org/wiki/Wget) is used to download a file (e.g. human chromosome 22):  
+[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget) を用いて、ファイル（例：ヒト22番染色体）をダウンロードする:  
 
 	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
 `wget` can download data *recursively* with the recursive option (`--recursive` or `-r`).  
-オプション`--recursive`または`-r`でデータを再帰的にダウンロードできる。  
+`wget` の再帰オプション `--recursive` または `-r` でデータを再帰的にダウンロードできる。  
 
 `man wget` for a list of options.  
-`man wget`で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。  
+`man wget` で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。  
 
 #### 6.1.1.2 curl
 
 [`curl`](https://en.wikipedia.org/wiki/CURL) by default writes the file to standard output.  
 [`curl`](https://ja.wikipedia.org/wiki/CURL) は、デフォルトでは標準出力する。
 
-    #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-    curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
+    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
-`curl` can follow page redirects if the `-L/--location` option is enabled.  
-オプション`--location`または`-L`でリダイレクトを辿る。
-短縮リンクのリダイレクト先にアクセスする:  
+`curl -L` can follow page redirects. Download the ultimate page the link (a shortened link) redirects to:  
+`curl -L` でページのリダイレクトを辿る。短縮リンクがリダイレクトされた最終ページをダウンロードする:  
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
