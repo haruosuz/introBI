@@ -491,7 +491,7 @@ p.45
 ### Pipes in Action: Creating Simple Programs with Grep and Pipes
 ### 3.3.1　パイプの動作：grepとパイプによる簡単なプログラムの作成
 
-[`grep`](https://en.wikipedia.org/wiki/Grep) and [pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) are used to find any character that's not A, T, G, or C.
+[`grep`](https://en.wikipedia.org/wiki/Grep) and [pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) are used to find any character that's not A, T, G, or C.  
 [`grep`](https://ja.wikipedia.org/wiki/Grep) と[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)を用いて、ATGC以外の文字を探す。  
 
 	grep -v "^>" tb1.fasta | grep --color -i "[^ATGC]"
