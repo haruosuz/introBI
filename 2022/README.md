@@ -40,8 +40,7 @@
 - 2022-11-29 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-8)
-- 2022-12-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-  - [Working with Column Data with cut and Columns](#working-with-column-data-with-cut-and-columns)
+- 2022-12-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [Working with Column Data with cut and Columns](#working-with-column-data-with-cut-and-columns)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-9)
 - 2022-12-13 No. 10 - TBA
 - 2022-12-20 No. 11 - TBA
@@ -492,7 +491,7 @@ p.45
 ### 3.3.1　パイプの動作：grepとパイプによる簡単なプログラムの作成
 
 [`grep`](https://en.wikipedia.org/wiki/Grep) and [pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) are used to find any character that's not A, T, G, or C.  
-[`grep`](https://ja.wikipedia.org/wiki/Grep) と[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)を用いて、ATGC以外の文字を探す。  
+[`grep`](https://ja.wikipedia.org/wiki/Grep) と[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)を用いて、A, T, G, C以外の文字を探す。  
 
 	grep -v "^>" tb1.fasta | grep --color -i "[^ATGC]"
 
@@ -573,8 +572,8 @@ p.54
     grep -c '^>' zea-proteins.fasta
     echo "There are $(grep -c '^>' zea-proteins.fasta) entries in my FASTA file."
 
-create dated directories using the command `date +%F`:  
-`date +%F`コマンドを用いて日付ディレクトリを作成する:  
+`date +%F` is used to create dated directories:  
+`date +%F` コマンドを用いて、日付ディレクトリを作成する:  
 
     mkdir $(date +%F)
 
@@ -1207,15 +1206,15 @@ p.138
 Extract specific columns from plain-text tabular data formats like [tab-separated values (TSV)](https://en.wikipedia.org/wiki/Tab-separated_values) and [comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) files.  
 [タブ区切り（TSV）](https://ja.wikipedia.org/wiki/Tab-Separated_Values)ファイルや[カンマ区切り（CSV）](https://ja.wikipedia.org/wiki/Comma-Separated_Values)ファイルなどプレーンテキスト表形式データから特定の列を抽出する。  
 
-[`cut`](https://en.wikipedia.org/wiki/Cut_%28Unix%29) extracts ranges (`-f 2-3`) or sets (`-f 2,3`) of columns of a tab-delimited file:  
-[`cut`](https://ja.wikipedia.org/wiki/Cut)コマンドでタブ区切りファイルの列の範囲 (`-f 2-3`) やセット (`-f 2,3`) を抽出する:  
+[`cut`](https://en.wikipedia.org/wiki/Cut_%28Unix%29) to extract sets (`-f 1,3`) or ranges (`-f 1-3`) of columns/fields of a tab-delimited file:  
+[`cut`](https://ja.wikipedia.org/wiki/Cut)コマンドを用いて、タブ区切りファイルのフィールド/列のセット (`-f 1,3`) や範囲 (`-f 1-3`) を抽出する:  
 
-    cut -f 2,3 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
+    cut -f 1,3 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
 
-`cut -d` to specify the column delimiter character. Extract sets of columns of a CSV file:  
+`cut -d` to specify the column delimiter character. Extract columns of a CSV file:  
 `cut -d` で区切り文字を指定する。CSVファイルの列を抽出する:  
 
-    cut -d "," -f 2,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+    cut -d "," -f 1,3 Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
 
 p.139
 訳書152頁
