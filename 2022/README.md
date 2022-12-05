@@ -1153,7 +1153,7 @@ p.131
 ### less
 ### 7.3.2　lessコマンド
 
-Look at a file called *contaminated.fastq* with [`less`](https://en.wikipedia.org/wiki/Less_%28Unix%29):  
+[`less`](https://en.wikipedia.org/wiki/Less_%28Unix%29) is used to look at a file called *contaminated.fastq*:  
 [`less`](https://ja.wikipedia.org/wiki/Less)コマンドで *contaminated.fastq* ファイルを見る:  
 
 	less contaminated.fastq
@@ -1235,7 +1235,7 @@ p.140
 
     cat example.bed
 
-[`grep`](https://en.wikipedia.org/wiki/Grep) to find lines matching the pattern in the file:  
+[`grep`](https://en.wikipedia.org/wiki/Grep) is used to find lines matching the pattern in the file:  
 [`grep`](https://ja.wikipedia.org/wiki/Grep) コマンドを用いて、ファイルにあるパターンに一致する行を見つける:  
 
     grep "chr2" example.bed
