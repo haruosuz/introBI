@@ -42,7 +42,7 @@
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-8)
 - 2022-12-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [Working with Column Data with cut and Columns](#working-with-column-data-with-cut-and-columns)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-9)
-- 2022-12-13 No. 10 - TBA
+- 2022-12-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [Text Processing with Awk](#text-processing-with-awk)
 - 2022-12-20 No. 11 - TBA
 - 2022-12-27 No. 12 - TBA
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-12)
