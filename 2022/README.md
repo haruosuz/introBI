@@ -44,7 +44,8 @@
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-9)
 - 2022-12-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [Text Processing with Awk](#text-processing-with-awk)
 - 2022-12-20 No. 11 - TBA
-- 2022-12-27 No. 12 - TBA
+  - R言語 [R Language](#r-language)
+- 2022-12-27 No. 12 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-12)
 - 事務室閉室 Office closed (12/28～1/5)
 - 2023-01-17 No. 13 - TBA
