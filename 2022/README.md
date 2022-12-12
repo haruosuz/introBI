@@ -1037,7 +1037,7 @@ https://ja.wikipedia.org/wiki/Xargs
 ```
 find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" ls -l ./data/seqs/"{}".fastq
 
-find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" echo ./scripts/run.sh --in ./data/"{}".fastq --out ./analysis/"{}".txt
+find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" echo ./script.sh --in "{}".fastq --out ../results/"{}".txt
 ```
 
 ### xargs and Parallelization
@@ -1196,8 +1196,8 @@ p.134
 [`awk`](https://en.wikipedia.org/wiki/AWK) one-liner to return how many fields (columns) a file contains:  
 [`awk`](https://ja.wikipedia.org/wiki/AWK) を用いてファイルに含まれるフィールド（列）数を返す:  
 
-    awk -F "\t" '{print NF; exit}' example.bed
     # built-in variable NF (Number of Fields)
+    awk -F "\t" '{print NF; exit}' example.bed
 
 p.138
 訳書151頁
@@ -1421,7 +1421,7 @@ Chain patterns using logical operators `&&` (AND), `||` (OR), and `!` (NOT).
 論理演算子 `&&` (AND), `||` (OR), `!` (NOT) でパターンを繋ぐ。  
 
 Output lines on chromosome 1 (`chr1`) with a length (`$3 - $2`) greater than 10:  
-1番染色体(`chr1`)で特徴領域の長さ (`$3 - $2`) が10より大きい行を出力する:  
+1番染色体(`chr1`)で特徴領域の長さ(`$3 - $2`)が10より大きい行を出力する:  
 
     awk '$1 ~ /chr1/ && $3 - $2 > 10 { print $0 }' example.bed
 
@@ -1429,6 +1429,12 @@ Add a column with the length of this feature (end position - start position) for
 2番染色体(`chr2`)と3番染色体(`chr3`)についてのみ、特徴領域の長さ(`$3 - $2`)の列を追加する:  
 
 	awk '$1 ~ /chr2|chr3/ { print $0 "\t" $3 - $2 }' example.bed
+
+Using two special patterns `BEGIN` and `END`, calculate the mean feature length in *example.bed*. Take the sum feature lengths, and then divide by the total number of records:  
+2つの特殊パターン`BEGIN`と`END`を用いて、*example.bed*の特徴領域長の平均を計算する。特徴領域の長さを合計し、レコードの総数で割る:  
+
+    # NR (Number of Record)
+    awk 'BEGIN{ sum = 0 }; { sum += ($3-$2) }; END{ print "mean: " sum/NR };' example.bed
 
 p.161
 訳書174頁
