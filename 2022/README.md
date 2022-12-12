@@ -1434,7 +1434,7 @@ Using two special patterns `BEGIN` and `END`, calculate the mean feature length 
 2つの特殊パターン`BEGIN`と`END`を用いて、*example.bed*の特徴領域長の平均を計算する。特徴領域の長さを合計し、レコードの総数で割る:  
 
     # NR (Number of Record)
-    awk 'BEGIN{ sum = 0 }; { sum += ($3-$2) }; END{ print "mean: " sum/NR };' example.bed
+    awk 'BEGIN{ sum=0 }; { sum += ($3-$2) }; END{ print sum/NR };' example.bed
 
 p.161
 訳書174頁
