@@ -177,7 +177,7 @@ tar -xzvf archive.tar.gz
 **課題7 「my_project/examples/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Document details about your project in the *README.md* file and/or [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
 *README.md*ファイルや[ログファイル](https://e-words.jp/w/ログファイル.html)にプロジェクトの詳細情報を記録する。  
@@ -204,7 +204,7 @@ date +%F
 **課題8 「my_project/interim-report/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ```
 mkdir -p my_project/{data,scripts,analysis}
@@ -219,7 +219,7 @@ zip --exclude 'my_project/data/*' -r my_project.zip my_project/
 **課題9 「my_project/unix-data-tools/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using
@@ -230,7 +230,7 @@ Using
 **課題12 「my_project_diff_date/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different dates (e.g., `2022-12-27`, `2023-01-10`).  
 2つ以上の異なる日付（例えば、`2022-12-27`, `2023-01-10`）でデータ解析を実行する。  
@@ -249,7 +249,7 @@ diff analysis/2022-12-27/output.txt analysis/2023-01-10/output.txt
 **課題13 「my_project_diff_envr/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different computer environments.  
 2つ以上の異なるコンピューター環境でデータ解析を実行する。  
