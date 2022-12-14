@@ -176,7 +176,7 @@ tar -xzvf archive.tar.gz
 ## assignment 7
 **課題7 「my_project/examples/」**
 
-Submit a compressed file of your project directory (excluding the data file `data/*`).  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
 
 Document details about your project in the *README.md* file and/or [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
@@ -203,14 +203,22 @@ date +%F
 ## assignment 8
 **課題8 「my_project/interim-report/」**
 
-Submit a compressed file of your project directory (excluding the data file `data/*`).  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
+
+```
+mkdir -p my_project/{data,scripts,analysis}
+touch my_project/data/input.txt
+ls -l my_project/data/input.txt > my_project/analysis/output.txt
+find my_project
+zip --exclude 'my_project/data/*' -r my_project.zip my_project/
+```
 
 ----------
 ## assignment 9
 **課題9 「my_project/unix-data-tools/」**
 
-Submit a compressed file of your project directory (excluding the data file `data/*`).  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
@@ -221,7 +229,7 @@ Using
 ## assignment 12
 **課題12 「my_project_diff_date/」**
 
-Submit a compressed file of your project directory (excluding the data file `data/*`).  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different dates (e.g., `2022-12-27`, `2023-01-10`).  
@@ -240,7 +248,7 @@ diff analysis/2022-12-27/output.txt analysis/2023-01-10/output.txt
 ## assignment 13
 **課題13 「my_project_diff_envr/」**
 
-Submit a compressed file of your project directory (excluding the data file `data/*`).  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの（データファイル `data/*` を除く）圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different computer environments.  
