@@ -1521,7 +1521,7 @@ https://github.com/vsbuffalo/bds-files/tree/master/chapter-08-r
 
 Rスクリプトのダウンロード
 ```
-# Get R scripts
+# Downloading R scripts
 wget https://github.com/haruosuz/introBI/raw/master/2022/my_bds_chapter-08-r.zip
 unzip my_bds_chapter-08-r.zip
 cd my_bds_chapter-08-r/
