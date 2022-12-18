@@ -1519,15 +1519,21 @@ cd ./bds-files/chapter-08-r/
 ```
 https://github.com/vsbuffalo/bds-files/tree/master/chapter-08-r
 
+Rスクリプトのダウンロード
 ```
 # Get R scripts
 wget https://github.com/haruosuz/introBI/raw/master/2022/my_bds_chapter-08-r.zip
 unzip my_bds_chapter-08-r.zip
 cd my_bds_chapter-08-r/
+```
 
+Rの起動
+```
 # Running R
 R
 ```
+
+![https://codeunplug.com/install-r-in-windows-and-ubuntu/](https://codeunplug.com/wp-content/uploads/2018/12/r_ubuntu_console.png)
 
 p.175
 訳書189頁
@@ -1572,8 +1578,4 @@ Rscript --vanilla args.R arg1 arg2 arg3
 ```
 
 ----------
-
-
-
-
 
