@@ -1533,8 +1533,6 @@ Rの起動
 R
 ```
 
-![https://codeunplug.com/install-r-in-windows-and-ubuntu/](https://codeunplug.com/wp-content/uploads/2018/12/r_ubuntu_console.png)
-
 p.175
 訳書189頁
 # Chapter 8. A Rapid Introduction to the R Language
