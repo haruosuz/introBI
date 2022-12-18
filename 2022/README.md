@@ -1519,6 +1519,8 @@ Combining two sequential commands' standard output into a single stream with a s
 bash
 cd ~/projects/
 cd ./bds-files/chapter-08-r/
+
+# Get R scripts
 wget https://github.com/haruosuz/introBI/raw/master/2022/my_bds_chapter-08-r.zip
 unzip my_bds_chapter-08-r.zip
 cd my_bds_chapter-08-r/
