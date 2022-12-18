@@ -1510,8 +1510,26 @@ Combining two sequential commands' standard output into a single stream with a s
 # R Language
 # R言語
 
-2020 補講 [extra classes](https://github.com/haruosuz/introBI/blob/master/2020/README.md#extra-classes)
+- https://github.com/haruosuz/DS4GD/tree/master/2022giga
+- https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r
 
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
+```
+# Open a terminal window
+bash
+cd ~/projects/
+cd ./bds-files/chapter-08-r/
+wget https://github.com/haruosuz/introBI/raw/master/2022/my_bds_chapter-08-r.zip
+unzip my_bds_chapter-08-r.zip
+cd my_bds_chapter-08-r/
+
+# Running R
+R
+
+# To quit R, type:
+> q()
+Save workspace image? [y/n/c]: n
+```
 https://github.com/vsbuffalo/bds-files/tree/master/chapter-08-r
 
 p.175
@@ -1524,9 +1542,6 @@ p.253
 ## Developing Workflows with R Scripts
 ## 8.4　Rスクリプトによるワークフロー開発
 
-### Control Flow: if, for, and while
-### 8.4.1　制御フロー：if、for、while
-
 p.254
 訳書273頁
 ### Working with R Scripts
@@ -1534,25 +1549,23 @@ p.254
 
 > ###### Reproducibility with Knitr and Rmarkdown
 
+p.255
+訳書274頁
+
+Run a R script from R:  
+RからRスクリプトを実行する:  
 ```
-source("my_analysis.R")
+> source("my_analysis.R")
+```
 
-system(command="Rscript --vanilla my_analysis.R")
-
-system(command="Rscript --vanilla args.R arg1 arg2 arg3")
+Run a R script in batch mode from the command line:  
+コマンドラインからバッチモードでスクリプトを実行する:  
+```
+Rscript --vanilla my_analysis.R
 ```
 
 > ###### Reproducibility and sessionInfo()
 
-p.257
-訳書276頁
-### Workflows for Loading and Combining Multiple Files
-### 8.4.3　複数ファイルの読み込みと結合のためのワークフロー
-
-p.260
-訳書279頁
-### Exporting Data
-### 8.4.4　データのエクスポート
-
 ----------
+
 
