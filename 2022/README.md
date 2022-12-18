@@ -1510,9 +1510,6 @@ Combining two sequential commands' standard output into a single stream with a s
 # R Language
 # R言語
 
-- https://github.com/haruosuz/DS4GD/tree/master/2022giga
-- https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r
-
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
@@ -1527,10 +1524,6 @@ cd my_bds_chapter-08-r/
 
 # Running R
 R
-
-# To quit R, type:
-> q()
-Save workspace image? [y/n/c]: n
 ```
 https://github.com/vsbuffalo/bds-files/tree/master/chapter-08-r
 
