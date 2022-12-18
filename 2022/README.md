@@ -1564,8 +1564,19 @@ Run a R script in batch mode from the command line:
 Rscript --vanilla my_analysis.R
 ```
 
+p.256
+訳書275頁
 > ###### Reproducibility and sessionInfo()
 
+R script to show command-line arguments:  
+コマンドライン引数を表示するRスクリプト:  
+```
+Rscript --vanilla args.R arg1 arg2 arg3
+```
+
 ----------
+
+
+
 
 
