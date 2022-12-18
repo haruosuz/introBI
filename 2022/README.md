@@ -1574,5 +1574,16 @@ R script to show command-line arguments:
 Rscript --vanilla args.R arg1 arg2 arg3
 ```
 
+p.257
+訳書276頁
+### Workflows for Loading and Combining Multiple Files
+### 8.4.3　複数ファイルの読み込みと結合のためのワークフロー
+
+p.260
+訳書279頁
+### Exporting Data
+### 8.4.4　データのエクスポート
+
 ----------
+
 
