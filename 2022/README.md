@@ -632,6 +632,18 @@ Retrieving data, Ensuring data integrity, Compression
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
+[Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
+
+p.57
+訳書63頁
+## Connecting to Remote Machines with SSH
+## 4.1  SSHでリモートマシンに接続する
+
+[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
+[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
+
+    ssh user@host
+
 p.113
 訳書123頁
 ### Rsync and Secure Copy (scp)
@@ -649,16 +661,6 @@ basic syntax: `rsync source destination`
 [`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。
 
     scp zmays-snps/data/README.md user@host:/path/to/directory
-
-p.57
-訳書63頁
-## Connecting to Remote Machines with SSH
-## 4.1  SSHでリモートマシンに接続する
-
-[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
-[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
-
-    ssh user@host
 
 p.114
 訳書124頁
