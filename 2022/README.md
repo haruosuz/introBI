@@ -655,8 +655,8 @@ p.113
     # basic syntax: rsync source destination
     rsync -avz -e ssh zmays-snps/data/ user@host:/path/to/directory
 
-[`scp`](https://en.wikipedia.org/wiki/Secure_copy_protocol) is used to copy a single file over SSH.
-[`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。
+[`scp`](https://en.wikipedia.org/wiki/Secure_copy_protocol) is used to copy a single file over SSH.  
+[`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。  
 
     scp zmays-snps/data/README.md user@host:/path/to/directory
 
