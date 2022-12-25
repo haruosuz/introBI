@@ -6,11 +6,14 @@
 ## References
 **参考文献**
 
-- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
-  - 原書: [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-
 ![https://www.oreilly.co.jp/books/9784873118635/](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 ![https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/](https://learning.oreilly.com/library/cover/9781449367480/140w/)
+
+- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+  - 原書: [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+    - [Preface](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/preface01.html)
+    - [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+    - [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
 
 ----------
 
@@ -203,16 +206,6 @@ mv bds-files-master/ bds-files
 # list directory contents in long format:  
 ls -l bds-files/
 ```
-
-----------
-
-# [Bioinformatics Data Skills [Book]](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-
-# [Preface](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/preface01.html)
-
-# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
-
-# [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
 
 ----------
 
@@ -639,8 +632,33 @@ Retrieving data, Ensuring data integrity, Compression
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
+p.113
+訳書123頁
 ### Rsync and Secure Copy (scp)
 ### 6.1.2　rsyncとscp
+
+[`rsync`](https://en.wikipedia.org/wiki/Rsync) is a tool for synchronizing entire directories across a network.  
+[`rsync`](https://ja.wikipedia.org/wiki/Rsync) は、ネットワーク間で、ディレクトリ全体を同期するためのツールである。  
+
+basic syntax: `rsync source destination`
+
+    # basic syntax: rsync source destination
+    rsync -avz -e ssh zmays-snps/data/ user@host:/path/to/directory
+
+[`scp`](https://en.wikipedia.org/wiki/Secure_copy_protocol) is used to copy a single file over SSH.
+[`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。
+
+    scp zmays-snps/data/README.md user@host:/path/to/directory
+
+p.57
+訳書63頁
+## Connecting to Remote Machines with SSH
+## 4.1  SSHでリモートマシンに接続する
+
+[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
+[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
+
+    ssh user@host
 
 p.114
 訳書124頁
