@@ -652,8 +652,6 @@ p.113
 [`rsync`](https://en.wikipedia.org/wiki/Rsync) is a tool for synchronizing entire directories across a network.  
 [`rsync`](https://ja.wikipedia.org/wiki/Rsync) は、ネットワーク間で、ディレクトリ全体を同期するためのツールである。  
 
-basic syntax: `rsync source destination`
-
     # basic syntax: rsync source destination
     rsync -avz -e ssh zmays-snps/data/ user@host:/path/to/directory
 
