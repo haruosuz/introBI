@@ -632,7 +632,7 @@ Retrieving data, Ensuring data integrity, Compression
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
-[Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
+# [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
 
 p.57
 訳書63頁
