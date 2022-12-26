@@ -218,19 +218,17 @@ zip --exclude 'my_project/data/*' -r my_project.zip my_project/
 ## assignment 9
 **課題9 「my_project/unix-data-tools/」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using
-[Unix Data Tools](https://github.com/haruosuz/introBI/blob/master/2022/README.md#unix-data-tools)
+[Unix Data Tools](https://github.com/haruosuz/introBI/blob/master/2022/README.md#unix-data-tools)  
+Unixコマンドを用いてデータを検査する。  
+
+Submit a compressed file of your project directory.  
+プロジェクトディレクトリの圧縮ファイルを提出する。  
 
 ----------
 ## assignment 12
 **課題12 「my_project_diff_date/」**
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different dates (e.g., `2022-12-27`, `2023-01-10`).  
 2つ以上の異なる日付（例えば、`2022-12-27`, `2023-01-10`）でデータ解析を実行する。  
@@ -244,12 +242,12 @@ diff data/2022-12-27/input.txt data/2023-01-10/input.txt
 diff analysis/2022-12-27/output.txt analysis/2023-01-10/output.txt
 ```
 
+Submit a compressed file of your project directory.  
+プロジェクトディレクトリの圧縮ファイルを提出する。  
+
 ----------
 ## assignment 13
 **課題13 「my_project_diff_envr/」**
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Run the data analysis on two or more different computer environments.  
 2つ以上の異なるコンピューター環境でデータ解析を実行する。  
@@ -257,12 +255,18 @@ Run the data analysis on two or more different computer environments.
 Document the reproducibility of the results (e.g., differences between files `diff FILE1 FILE2`).  
 結果の再現性を記録する（例えば、ファイルの差分 `diff FILE1 FILE2` など）。  
 
+Submit a compressed file of your project directory.  
+プロジェクトディレクトリの圧縮ファイルを提出する。  
+
 ----------
 ## assignment 14
 **課題14 「my_project_final/」**
 
-Update your project directory based on questions and comments at the final presentation, and submit the compressed file (excluding data files).  
-最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新し、（データファイルを除く）圧縮ファイルを提出する。 
+Update your project directory based on questions and comments at the final presentation.  
+最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
+
+Submit a compressed file of your project directory.  
+プロジェクトディレクトリの圧縮ファイルを提出する。  
 
 ----------
 
