@@ -1624,6 +1624,8 @@ p.339
 ## The FASTA Format
 ## 10.1　FASTA形式
 
+	head -10 egfr_flank.fasta
+
 p.341
 訳書363頁
 ## The FASTQ Format
@@ -1632,6 +1634,7 @@ p.341
 p.342
 訳書364頁
 > ###### The Ins and Outs of Counting FASTA/FASTQ Entries
+> `grep -c "^>" egfr_flank.fasta`
 > A robust way to count sequences is with `bioawk`:  
 > 配列を確実に数えるために `bioawk` を使う:  
 ```
