@@ -1638,8 +1638,9 @@ p.342
 > 
 > A robust way to count sequences is with `bioawk`:  
 > 配列を確実に数えるために `bioawk` を使う:  
->     bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
-> 
+> ```
+> 	bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
+> ```
 
 ## Nucleotide Codes
 ## 10.3　ヌクレオチドのコード
