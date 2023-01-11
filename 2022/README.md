@@ -9,11 +9,11 @@
 ![https://www.oreilly.co.jp/books/9784873118635/](https://www.oreilly.co.jp/books/images/picture978-4-87311-863-5.gif)
 ![https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/](https://learning.oreilly.com/library/cover/9781449367480/140w/)
 
-- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
-  - 原書: [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-    - [Preface](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/preface01.html)
-    - [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
-    - [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
+- 訳書 [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+- 原書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+  - [Preface](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/preface01.html)
+  - [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+  - [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
 
 ----------
 
@@ -50,6 +50,7 @@
 - 2022-12-27 No. 12 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-12)
 - 事務室閉室 Office closed (12/28～1/5)
+- 2023-01-10 福沢先生誕生記念日 Anniversary of Yukichi Fukuzawa's Birthday
 - 2023-01-17 No. 13 - TBA
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-13)
 - 2023-01-24 No. 14 No. 14 - 最終回 final class
@@ -1601,6 +1602,46 @@ p.260
 訳書279頁
 ### Exporting Data
 ### 8.4.4　データのエクスポート
+
+----------
+# Sequence Data
+# 配列データ
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
+```
+# Open a terminal window
+bash
+cd ~/projects/
+cd ./bds-files/chapter-10-sequence
+```
+https://github.com/vsbuffalo/bds-files/tree/master/chapter-10-sequence
+
+p.339
+訳書361頁
+# Chapter 10. Working with Sequence Data
+# 10章　配列データの操作 
+
+## The FASTA Format
+## 10.1　FASTA形式
+
+p.341
+訳書363頁
+## The FASTQ Format
+## 10.2　FASTQ形式
+
+p.342
+訳書364頁
+> ###### The Ins and Outs of Counting FASTA/FASTQ Entries
+A robust way to count sequences is with `bioawk`:  
+配列を数えるには bioawkを使う:  
+
+	bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
+
+## Nucleotide Codes
+## 10.3　ヌクレオチドのコード
+
+- [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)  
+- [配列の記載に用いる略号](https://www.ddbj.nig.ac.jp/ddbj/code.html)  
 
 ----------
 
