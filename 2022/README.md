@@ -1635,11 +1635,12 @@ p.342
 訳書364頁
 > ###### The Ins and Outs of Counting FASTA/FASTQ Entries
 > `grep -c "^>" egfr_flank.fasta`
+> 
 > A robust way to count sequences is with `bioawk`:  
 > 配列を確実に数えるために `bioawk` を使う:  
-```
-bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
-```
+> ```
+> bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
+> ```
 
 ## Nucleotide Codes
 ## 10.3　ヌクレオチドのコード
