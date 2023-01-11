@@ -1632,8 +1632,8 @@ p.341
 p.342
 訳書364頁
 > ###### The Ins and Outs of Counting FASTA/FASTQ Entries
-A robust way to count sequences is with `bioawk`:  
-配列を数えるには bioawkを使う:  
+> A robust way to count sequences is with `bioawk`:  
+> 配列を数えるには bioawkを使う:  
 
 	bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
 
