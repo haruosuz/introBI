@@ -1626,7 +1626,10 @@ p.339
 ## The FASTA Format
 ## 10.1　FASTA形式
 
-	head -10 egfr_flank.fasta
+[FASTA format](https://en.wikipedia.org/wiki/FASTA_format)  
+[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式  
+
+    head -n 10 egfr_flank.fasta
 
 p.341
 訳書363頁
