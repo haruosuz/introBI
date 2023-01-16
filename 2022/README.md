@@ -175,7 +175,9 @@ atomで*README.md*ファイルを開く:
 atom README.md
 ```
 
-[Markdown文書のプレビュー（Control + Shift + M）](http://dotinstall.com/lessons/basic_atom/30511)
+[Markdown文書のプレビュー（Control+Shift+m）](http://dotinstall.com/lessons/basic_atom/30511)  
+Show the rendered HTML markdown to the right of the current editor using `ctrl-shift-m`.  
+![](https://cloud.githubusercontent.com/assets/378023/10013086/24cad23e-6149-11e5-90e6-663009210218.png)
 
 ### [Git](https://git-scm.com/)
 version control system
