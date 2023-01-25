@@ -51,7 +51,8 @@
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-12)
 - 事務室閉室 Office closed (12/28～1/5)
 - 2023-01-10 福沢先生誕生記念日 Anniversary of Yukichi Fukuzawa's Birthday
-- 2023-01-17 No. 13 - TBA
+- 2023-01-17 No. 13 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+  - 配列データ [Sequence Data](#sequence-data)
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-13)
 - 2023-01-24 No. 14 No. 14 - 最終回 final class
   - 最終発表 [Final presentation](#final-presentation)
@@ -300,7 +301,11 @@ p.24
 ## Project Documentation
 ## 2.2　プロジェクトドキュメント
 
-All of the project information is best stored in [plain-text](https://en.wikipedia.org/wiki/Plain_text) [README](https://en.wikipedia.org/wiki/README) files. Plain text can easily be read/searched/edited directly from the command line.
+*Document your methods and workflows*  
+Copy and paste command lines used to generate data or results.
+Document default values used in software as later versions may have different defaults.
+
+All of the project information is best stored in [plain-text](https://en.wikipedia.org/wiki/Plain_text) [README](https://en.wikipedia.org/wiki/README) files. Plain text can easily be read, searched, and edited directly from the command line.
 Keep README files in each of your project's main directories.
 For example, a `data/README.md` file would contain metadata about your data files in the `data/` directory.  
 プロジェクトの情報を[プレーンテキスト](https://ja.wikipedia.org/wiki/プレーンテキスト)形式の[README](https://ja.wikipedia.org/wiki/リードミー)ファイルに記録する。プレーンテキストはコマンドラインから簡単に読込・検索・編集できる。
@@ -1098,7 +1103,7 @@ https://github.com/vsbuffalo/bds-files/tree/master/chapter-07-unix-data-tools
 
 p.125
 訳書137頁
-# Chapter 7. Unix Data Tools
+# [Chapter 7. Unix Data Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch07.html)
 # 7章　Unixツール
 
 We'll see how to combine the Unix shell with command-line data tools to explore and manipulate data quickly.  
@@ -1555,7 +1560,7 @@ R
 
 p.175
 訳書189頁
-# Chapter 8. A Rapid Introduction to the R Language
+# [Chapter 8. A Rapid Introduction to the R Language](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch08.html)
 # 第8章. R言語入門
 
 p.253
@@ -1620,7 +1625,7 @@ https://github.com/vsbuffalo/bds-files/tree/master/chapter-10-sequence
 
 p.339
 訳書361頁
-# Chapter 10. Working with Sequence Data
+# [Chapter 10. Working with Sequence Data](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch10.html)
 # 10章　配列データの操作 
 
 ## The FASTA Format
@@ -1654,5 +1659,15 @@ p.342
 - [配列の記載に用いる略号](https://www.ddbj.nig.ac.jp/ddbj/code.html)  
 
 ----------
+
+# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+# 1章　バイオインフォマティクスの学習方法
+
+訳書17頁
+### Use Existing Libraries Whenever Possible
+### 1.7.6　可能であれば既存のライブラリを使用する
+
+----------
+
 
 
