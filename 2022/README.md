@@ -1685,7 +1685,7 @@ samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa
 # This creates an index file with the extension *.fai*.
 ```
  
-To extract the subsequence for a specific region, use `samtools faidx <in.fa> <region>`, where `<in.fa>` is the FASTA file (just indexed) and `<region>` is in the format `chromosome:start-end`.  
+To extract the subsequence for a specific region, use `samtools faidx <in.fa> <region>`, where `<in.fa>` is the FASTA file (indexed) and `<region>` is in the format `chromosome:start-end`.  
 特定の領域のサブ配列を抽出するには `samtools faidx <in.fa> <region>` を実行する。ここで、`<in.fa>`は（インデックスを作成した）FASTAファイル、`<region>`は`chromosome:start-end`の形式。  
 
     samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa 8:123407082-123410744 | head -n 3
