@@ -1681,7 +1681,7 @@ index the FASTA file using `samtools faidx`:
 ```
 samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa
 ```
-This command will create an index file with the extension *.fai*.
+This creates an index file with the extension *.fai*.
 
 To extract the subsequence for a specific region, use `samtools faidx <in.fa> <region>`, where `<in.fa>` is the FASTA file (just indexed) and `<region>` is in the format `chromosome:start-end`.
 
