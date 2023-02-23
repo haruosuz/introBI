@@ -1659,6 +1659,35 @@ p.342
 - [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)  
 - [配列の記載に用いる略号](https://www.ddbj.nig.ac.jp/ddbj/code.html)  
 
+p.352
+訳書375頁
+## Indexed FASTA Files
+## 10.7　索引付きFASTAファイル
+
+Indexing a FASTA file for quick/efficient extraction of subsequences in specified regions of the file.  
+FASTAファイルのサブ配列（指定された領域）を迅速・効率的に抽出するために、FASTAファイルにインデックスを付ける。  
+
+unzip the FASTA file with `gunzip`:  
+```
+gunzip -c Mus_musculus.GRCm38.75.dna.chromosome.8.fa.gz > Mus_musculus.GRCm38.75.dna.chromosome.8.fa
+```
+
+https://formulae.brew.sh/formula/samtools
+```
+brew install samtools
+```
+
+index the FASTA file using `samtools faidx`:  
+```
+samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa
+```
+This command will create an index file with the extension *.fai*.
+
+To extract the subsequence for a specific region, use `samtools faidx <in.fa> <region>`, where `<in.fa>` is the FASTA file (just indexed) and `<region>` is in the format `chromosome:start-end`.
+
+    samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa 8:123407082-123410744 | head -n 3
+    samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa 8:123407082-123410744 8:123518835-123536649 | grep -A 2 ">"
+
 ----------
 
 # [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
@@ -1669,6 +1698,9 @@ p.342
 ### 1.7.6　可能であれば既存のライブラリを使用する
 
 ----------
+
+https://www.oreilly.co.jp/books/9784873118635/
+
 
 
 
