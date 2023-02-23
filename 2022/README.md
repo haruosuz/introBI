@@ -1701,9 +1701,3 @@ To extract the subsequence for a specific region, use `samtools faidx <in.fa> <r
 ### 1.7.6　可能であれば既存のライブラリを使用する
 
 ----------
-
-https://www.oreilly.co.jp/books/9784873118635/
-
-
-
-
