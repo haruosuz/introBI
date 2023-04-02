@@ -1,7 +1,7 @@
-# 2022
+# 2023-04-11
 
-2022年秋学期
-[バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS](https://sol.sfc.keio.ac.jp/courses/7141)
+2023 Spring
+[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2](GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/7984)
 
 ## References
 **参考文献**
@@ -22,42 +22,38 @@
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/faculty/calendars/class_calendar.html) | 
 [Class Calendar](https://www.sfc.keio.ac.jp/en/faculty/calendars/class_calendar.html)
-  - [春学期・秋学期授業カレンダー（2022.9.6更新）](https://www.sfc.keio.ac.jp/doc/2022_classcalendars_jp.pdf) | 
-[Calendars for Spring and Fall Semesters（Update September 6, 2022）](https://www.sfc.keio.ac.jp/en/docs/2022_classcalendars_en.pdf)
+  - [2023年度 SFC授業カレンダー（2022.12.27更新）](https://www.sfc.keio.ac.jp/doc/2023_classcalendars_jp.pdf) | 
+[SFC Calendars for 2023（Update December 27, 2022）](https://www.sfc.keio.ac.jp/en/docs/2023_classcalendars_en.pdf)
 - 
-- 2022-10-04 No. 1 - イントロダクション [Introduction](#introduction)
-  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-1)
-- 2022-10-11 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
-  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-2)
-- 2022-10-18 No. 3 - Unixシェル [Unix Shell](#unix-shell)
-  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-3)
-- 2022-10-25 No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
-  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-4)
-- 2022-11-01 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
-  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-5)
-- 2022-11-08 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
-  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-6)
-- 2022-11-15 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
-  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-7)
-- 三田祭期間 Mita Festival（11/18～11/24）
-- 2022-11-29 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2023-04-11 No. 1 - イントロダクション [Introduction](#introduction)
+  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-1)
+- 2023-04-18 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
+  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-2)
+- 2023-04-25 No. 3 - Unixシェル [Unix Shell](#unix-shell)
+  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-3)
+- 2023-05-02 No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
+  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-4)
+- 2023-05-09 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
+  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-5)
+- 2023-05-16 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
+- 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
+- 2023-05-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 中間発表 [Interim report](#interim-report)
-  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-8)
-- 2022-12-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [cut](#working-with-column-data-with-cut-and-columns)
-  - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-9)
-- 2022-12-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [awk](#text-processing-with-awk)
-- 2022-12-20 No. 11 - R言語 [R Language](#r-language)
-- 2022-12-27 No. 12 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
-  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-12)
-- 事務室閉室 Office closed (12/28～1/5)
-- 2023-01-10 福沢先生誕生記念日 Anniversary of Yukichi Fukuzawa's Birthday
-- 2023-01-17 No. 13 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
-  - 配列データ [Sequence Data](#sequence-data)
-  - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-13)
-- 2023-01-24 No. 14 No. 14 - 最終回 final class
+  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
+- 2023-06-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [cut](#working-with-column-data-with-cut-and-columns)
+  - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
+- 2023-06-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [awk](#text-processing-with-awk)
+- 2023-06-20 No. 11 - R言語 [R Language](#r-language)
+- 2023-06-27 No. 12 - 配列データ [Sequence Data](#sequence-data)
+  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
+- 2023-07-04 No. 13 - TBA
+  - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-13)
+- 2023-07-11 No. 14 No. 14 - 最終回 final class
   - 最終発表 [Final presentation](#final-presentation)
-  - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2022/CaseStudy.md#assignment-14)
-- 試験 Exam (1/26～2/2)
+  - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-14)
+- 試験 Exam (7/24～7/29)
 
 ----------
 ## Interim report
@@ -261,8 +257,8 @@ p.23
 訳書27頁
 
 > ###### What's in a Name?  
-> Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2022-10-11.md`).  
-> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使わない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2022-10-11.md`）  
+> Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2023-04-11.md`).  
+> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使わない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2023-04-11.md`）  
 
 **[Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths)**  
 **[絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)**  
