@@ -1,7 +1,7 @@
 # 2023-04-11
 
 2023 Spring
-[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2](GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/7984)
+[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/7984)
 
 ## References
 **参考文献**
