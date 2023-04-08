@@ -25,15 +25,13 @@
 ## assignment 0
 **選抜課題**
 
-バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を述べてください。課題のタイトルと参考文献も明記してください。
+バイオインフォマティクス・データスキルを適用したい研究分野（機械学習、画像処理、比較ゲノムなど）を教えてください。
 
-Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills. Please also state your project title and references.
+Briefly describe disciplines/fields (e.g. machine learning, image processing, comparative genomics, etc.) in which you would like to apply bioinformatics data skills.
 
 ----------
 ## assignment 1
 **課題1 「README.md」**
-
-https://github.com/haruosuz/introBI/blob/master/2022/README.md#markdown
 
 プレーンテキスト形式のMarkdownファイル*README.md*を編集し提出する。例えば、著者名や更新日を修正する。
 
@@ -47,31 +45,25 @@ Last Update: 2019-10-17
 should be changed to:
 ```
 Masaru Tomita  
-Last Update: 2022-10-03  
+Last Update: 2023-04-08  
 ```
 
 ----------
 ## assignment 2
 **課題2 「zmays-snps」**
 
-[Managing Bioinformatics Projects](https://github.com/haruosuz/introBI/blob/master/2022/README.md#managing-bioinformatics-projects)
-
 Compress the project directory (`zmays-snps/`):  
 プロジェクト・ディレクトリ (`zmays-snps/`) を圧縮する:  
 ```
 zip -r zmays-snps.zip zmays-snps/
-# or
-tar cvzf zmays-snps.tar.gz zmays-snps/
 ```
 
-Submit the compressed file (`zmays-snps.zip` or `zmays-snps.tar.gz`).  
-圧縮ファイル（`zmays-snps.zip` または `zmays-snps.tar.gz`）を提出する。  
+Submit the compressed file (`zmays-snps.zip`).  
+圧縮ファイル（`zmays-snps.zip`）を提出する。  
 
 ----------
 ## assignment 3
 **課題3 「unix_shell/README.md」**
-
-[Unix Shell](https://github.com/haruosuz/introBI/blob/master/2022/README.md#unix-shell)
 
 プロジェクト・ノート（Markdownファイル*README.md*）の最新版を提出する。
 
@@ -80,8 +72,6 @@ Submit the latest version of the project notebook (Markdown file *README.md*).
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
-
-[Bioinformatics Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#bioinformatics-data)
 
 プロジェクトノート（*README.md*ファイル）の最新版を提出する。
 興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードし、それらをどのように入手したかを記録する。
@@ -93,8 +83,6 @@ Download data files (e.g., FASTA and/or GFF files) you're interested in, and doc
 ## assignment 5
 **課題5 「script.sh」**
 
-[Shell Scripting](https://github.com/haruosuz/introBI/blob/master/2022/README.md#shell-scripting)
-
 興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
 
 Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
@@ -103,8 +91,8 @@ Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and
 ## assignment 6
 **課題6 「my_project/」**
 
-Submit the compressed file (e.g. `ecoli.zip` or `ecoli.tar.gz`) of your project directory (e.g. `ecoli/`).  
-プロジェクト・ディレクトリ（例えば、`ecoli/`）の圧縮ファイル（例えば、`ecoli.zip` または `ecoli.tar.gz`）を提出する。  
+Submit the compressed file (e.g. `ecoli.zip`) of your project directory (e.g. `ecoli/`).  
+プロジェクト・ディレクトリ（例えば、`ecoli/`）の圧縮ファイル（例えば、`ecoli.zip`）を提出する。  
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
@@ -121,12 +109,10 @@ Compress the project directory (`ecoli/`) (exclude files in the `data/` director
 （`data/`ディレクトリ内のファイルを除外して）プロジェクト・ディレクトリ (`ecoli/`) を圧縮する:  
 ```
 zip --exclude 'ecoli/data/*' -r ecoli.zip ecoli/
-# or
-tar --exclude ecoli/data/ -czvf ecoli.tar.gz ecoli/
 ```
 
-Use `man` (e.g. `man zip` and `man tar`) to display the on-line manual pages. press *q* to quit.  
-`man コマンド名`（例えば、`man zip`や`man tar`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
+Use `man` (e.g. `man zip`) to display the on-line manual pages. press *q* to quit.  
+`man コマンド名`（例えば、`man zip`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
 ```
 $man zip
 
@@ -139,28 +125,6 @@ $man zip
        -x files
        --exclude files
               Explicitly exclude the specified files
-```
-
-```
-$man tar
-
-     tar -- manipulate tape archives
-
-     -c      Create a new archive containing the specified items.
-
-     -x      Extract to disk from the archive.
-
-     -z, --gunzip, --gzip
-             (c mode only) Compress the resulting archive with gzip(1).
-
-     -v, --verbose
-
-     -f file, --file file
-             Read the archive from or write the archive to the specified file.
-
-     --exclude pattern
-             Do not process files or directories that match the specified pattern. 
-
 ```
 
 - [How to Compress and Extract Files Using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
@@ -269,8 +233,5 @@ Submit a compressed file of your project directory.
 プロジェクトディレクトリの圧縮ファイルを提出する。  
 
 ----------
-
-
-
 
 
