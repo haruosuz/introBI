@@ -36,9 +36,11 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ----------
 ## unix
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。
+- [Learning the shell - Lesson 2: Navigation](https://linuxcommand.org/lc3_lts0020.php)
+- 2018 [Introduction to UNIX Commands](https://esslab.jp/~ess/teaching/2018/intro_c_program/unix_command_eng.pdf)
+- 2014 [How To Use cd, pwd, and ls to Explore the File System on a Linux Server | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cd-pwd-and-ls-to-explore-the-file-system-on-a-linux-server)
 
-`bash`を起動する:  
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動する:  
 
     # change shell to bash
     bash
