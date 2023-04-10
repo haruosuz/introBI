@@ -88,12 +88,9 @@ Choose Applications → Utilities (or press Shift + Command + U). Double-click t
 
 ![https://techatlast.com/restore-deleted-files-mac-os-mac-terminal/](https://techatlast.com/wp-content/uploads/2015/05/TechAtLast-TTX-MacdTrace01.png)
 
-### Shell
-UNIXコマンド入門
-
-- [Learning the shell - Lesson 2: Navigation](https://linuxcommand.org/lc3_lts0020.php)
-- 2018 [Introduction to UNIX Commands](https://esslab.jp/~ess/teaching/2018/intro_c_program/unix_command_eng.pdf)
-- 2014 [How To Use cd, pwd, and ls to Explore the File System on a Linux Server | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cd-pwd-and-ls-to-explore-the-file-system-on-a-linux-server)
+### [Unix](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#unix)
+Introduction to UNIX Commands  
+UNIXコマンド入門  
 
 ```
 # `bash`を起動する
@@ -149,15 +146,17 @@ brew install wget
 ```
 
 ### Markdown
-
-プレーンテキスト形式のMarkdownファイルをダウンロードし、ファイル名を変更する:  
+[Markdown](https://ja.wikipedia.org/wiki/Markdown)は、文書を記述するための軽量なマークアップ言語。  
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language used to create formatted text using plain text editors.  
 ```
-# Download the plain-text Markdown file using:
+# プレーンテキスト形式のMarkdownファイルをダウンロードする:  
+# Download the plain-text Markdown file using:  
    wget https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
 # or
 curl -O https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
 
-# Rename the file:
+# ファイル名を変更する:  
+# Rename the file:  
 mv markdown.md README.md
 ```
 
