@@ -138,11 +138,12 @@ Package Manager for macOS (or Linux)
 Password:
 を入力する
 
-### wget
-データをダウンロードするためのコマンドラインプログラム
+### [wget](https://formulae.brew.sh/formula/wget)
 
-`wget`のインストール:  
+A commandline tool for retrieving files.  
+データをダウンロードするためのコマンドラインプログラム  
 ```
+# `wget`のインストール:  
 # Install `wget` using Homebrew:  
 brew install wget
 ```
@@ -177,8 +178,8 @@ Show the rendered HTML markdown to the right of the current editor using `ctrl-s
 ![https://github.com/atom/markdown-preview](https://cloud.githubusercontent.com/assets/378023/10013086/24cad23e-6149-11e5-90e6-663009210218.png)
 
 ### [Git](https://git-scm.com/)
-version control system
 
+version control system  
 バージョン管理システム
 [Git](https://ja.wikipedia.org/wiki/Git)のインストール:  
 ```
