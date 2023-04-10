@@ -17,24 +17,6 @@
 
 ----------
 
-# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
-# 1章　バイオインフォマティクスの学習方法
-
-p.16
-訳書19頁
-## Recommendations for Reproducible Research
-## 1.8　再現可能な研究に向けての推奨事項
-### Release Your Code and Data
-### 1.8.1　コードとデータを公開する
-### Document Everything
-### 1.8.2　すべてをドキュメント化する
-### Make Figures and Statistics the Results of Scripts
-### 1.8.3　図と統計をスクリプトの出力結果にする
-### Use Code as Documentation
-### 1.8.4　コードをドキュメントとして使用する
-
-----------
-
 ## Class Schedule & Materials
 **講義日程と資料**
 
@@ -224,6 +206,24 @@ mv bds-files-master/ bds-files
 # list directory contents in long format:  
 ls -l bds-files/
 ```
+
+----------
+
+# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+# 1章　バイオインフォマティクスの学習方法
+
+p.16
+訳書19頁
+## Recommendations for Reproducible Research
+## 1.8　再現可能な研究に向けての推奨事項
+### Release Your Code and Data
+### 1.8.1　コードとデータを公開する
+### Document Everything
+### 1.8.2　すべてをドキュメント化する
+### Make Figures and Statistics the Results of Scripts
+### 1.8.3　図と統計をスクリプトの出力結果にする
+### Use Code as Documentation
+### 1.8.4　コードをドキュメントとして使用する
 
 ----------
 
