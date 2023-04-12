@@ -163,8 +163,11 @@ Password:
 A commandline tool for retrieving files.  
 データをダウンロードするためのコマンドラインプログラム  
 
-https://formulae.brew.sh/formula/wget
-Install command: `brew install wget`
+https://formulae.brew.sh/formula/wget  
+Install command:  
+```
+brew install wget
+```
 
 ### Markdown 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language used to create formatted text using plain text editors.  
@@ -206,8 +209,10 @@ Show the rendered HTML markdown to the right of the current editor using `ctrl-s
 ![https://github.com/atom/markdown-preview](https://cloud.githubusercontent.com/assets/378023/10013086/24cad23e-6149-11e5-90e6-663009210218.png)
 
 ### Git
-https://formulae.brew.sh/formula/git version control system  
+https://git-scm.com/ version control system  
 https://ja.wikipedia.org/wiki/Git バージョン管理システム  
+
+https://formulae.brew.sh/formula/git  
 Install command:  
 ```
 brew install git
