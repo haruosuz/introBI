@@ -137,36 +137,41 @@ pwd
 # ファイルやディレクトリを表示する
 # list directory contents
 ls
+
+# ディレクトリの詳細情報を表示する:   
+# list directory contents in long format:  
+ls -l
 ```
 
-### [Homebrew](https://brew.sh/)
-Package Manager for macOS (or Linux)
-
-パッケージ管理システム
-[Homebrew](https://brew.sh/index_ja)のインストール:  
+### Homebrew
+https://brew.sh/ Package Manager for macOS (or Linux)  
+https://brew.sh/index_ja パッケージ管理システム  
 ```
-# Install Homebrew:  
+# インストール  
+# Install Homebrew  
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Paste that in a macOS Terminal or Linux shell prompt.
 # これをmacOSのターミナルまたはLinuxのシェルプロンプトに貼り付けて下さい。
-```
+
+==> Checking for `sudo` access (which may request your password)...
 Password:
-を入力する
+```
 
-### [wget](https://formulae.brew.sh/formula/wget)
-
+### [wget](#retrieving-bioinformatics-data)
 A commandline tool for retrieving files.  
 データをダウンロードするためのコマンドラインプログラム  
+
+https://formulae.brew.sh/formula/wget
 ```
-# `wget`のインストール:  
-# Install `wget` using Homebrew:  
+# Install command:
+
 brew install wget
 ```
 
 ### Markdown
-[Markdown](https://ja.wikipedia.org/wiki/Markdown)は、文書を記述するための軽量なマークアップ言語。  
+[Markdown](https://ja.wikipedia.org/wiki/Markdown) は、文書を記述するための軽量なマークアップ言語。  
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language used to create formatted text using plain text editors.  
 ```
 # プレーンテキスト形式のMarkdownファイルをダウンロードする:  
@@ -196,13 +201,11 @@ atom README.md
 Show the rendered HTML markdown to the right of the current editor using `ctrl-shift-m`.  
 ![https://github.com/atom/markdown-preview](https://cloud.githubusercontent.com/assets/378023/10013086/24cad23e-6149-11e5-90e6-663009210218.png)
 
-### [Git](https://git-scm.com/)
-
-version control system  
-バージョン管理システム
-[Git](https://ja.wikipedia.org/wiki/Git)のインストール:  
+### Git
+https://formulae.brew.sh/formula/git version control system  
+https://ja.wikipedia.org/wiki/Git バージョン管理システム  
 ```
-# Install `git` using Homebrew:  
+# Install command: 
 
 brew install git
 ```
@@ -221,10 +224,6 @@ git clone https://github.com/vsbuffalo/bds-files
 wget https://github.com/vsbuffalo/bds-files/archive/master.zip
 unzip master.zip 
 mv bds-files-master/ bds-files
-
-# ディレクトリの詳細情報を表示する:   
-# list directory contents in long format:  
-ls -l bds-files/
 ```
 
 ----------
