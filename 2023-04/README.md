@@ -146,15 +146,15 @@ ls -l
 ### Homebrew
 https://brew.sh/ Package Manager for macOS (or Linux)  
 https://brew.sh/index_ja パッケージ管理システム  
+
+Install Homebrew  
+インストール  
 ```
-# インストール  
-# Install Homebrew  
-
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Paste that in a macOS Terminal or Linux shell prompt.
-# これをmacOSのターミナルまたはLinuxのシェルプロンプトに貼り付けて下さい。
-
+```
+Paste that in a macOS Terminal or Linux shell prompt.  
+これをmacOSのターミナルまたはLinuxのシェルプロンプトに貼り付けて下さい。  
+```
 ==> Checking for `sudo` access (which may request your password)...
 Password:
 ```
@@ -164,36 +164,43 @@ A commandline tool for retrieving files.
 データをダウンロードするためのコマンドラインプログラム  
 
 https://formulae.brew.sh/formula/wget
+Install command:  
 ```
-# Install command:
-
 brew install wget
 ```
 
-### Markdown
-[Markdown](https://ja.wikipedia.org/wiki/Markdown) は、文書を記述するための軽量なマークアップ言語。  
+### Markdown 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language used to create formatted text using plain text editors.  
-```
-# プレーンテキスト形式のMarkdownファイルをダウンロードする:  
-# Download the plain-text Markdown file using:  
-   wget https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
-# or
-curl -O https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
+[Markdown](https://ja.wikipedia.org/wiki/Markdown) は、文書を記述するための軽量なマークアップ言語。 
 
-# ファイル名を変更する:  
-# Rename the file:  
+Download the plain-text Markdown file:  
+プレーンテキスト形式のMarkdownファイルをダウンロードする:  
+```
+   wget https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
+```
+or
+```
+curl -O https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
+```
+
+Rename the file:  
+ファイル名を変更する:  
+```
 mv markdown.md README.md
 ```
 
-### Atom
-Download a text editor [Atom](https://atom.io/).
+### text editor
+テキストエディタ
 
-[テキストエディタ「Atom」](http://webkaru.net/dev/cat/atom/) を <https://atom.io/> からダウンロードする。
+https://github.blog/2022-06-08-sunsetting-atom/
+download a previous Atom version.
+https://github.com/atom/atom/releases/tag/v1.60.0
 
-atomで*README.md*ファイルを開く:  
+[try opening Atom and clicking on the `Atom` tab to navigate to the `Install Shell Commands` prompt.](https://gist.github.com/damwhit/90d0e9e27a964bd176a167c78e676e8e)
+
+open the file with `atom`:  
+atomでファイルを開く:  
 ```
-# open the file with `atom`:
-
 atom README.md
 ```
 
@@ -204,9 +211,8 @@ Show the rendered HTML markdown to the right of the current editor using `ctrl-s
 ### Git
 https://formulae.brew.sh/formula/git version control system  
 https://ja.wikipedia.org/wiki/Git バージョン管理システム  
+Install command:  
 ```
-# Install command: 
-
 brew install git
 ```
 
