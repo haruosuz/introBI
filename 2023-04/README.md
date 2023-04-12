@@ -164,10 +164,7 @@ A commandline tool for retrieving files.
 データをダウンロードするためのコマンドラインプログラム  
 
 https://formulae.brew.sh/formula/wget
-Install command:  
-```
-brew install wget
-```
+Install command: `brew install wget`
 
 ### Markdown 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language used to create formatted text using plain text editors.  
@@ -217,16 +214,21 @@ brew install git
 ```
 
 ### bds-files
+教科書の補足資料 Supplementary Material for the textbook "Bioinformatics Data Skills" https://github.com/vsbuffalo/bds-files
 
-教科書の補足資料 Supplementary Material for the textbook "Bioinformatics Data Skills" (https://github.com/vsbuffalo/bds-files) を取得する:
+Change directory:  
+ディレクトリを移動する:  
 ```
-# ディレクトリを移動する
-# change directory
 cd ~/projects/
+```
 
-# Download the supplementary material from the GitHub repository using:
+Download the supplementary material from the GitHub repository using:  
+GitHubのリポジトリから補足資料をダウンロードする:  
+```
 git clone https://github.com/vsbuffalo/bds-files
-# or
+```
+or
+```
 wget https://github.com/vsbuffalo/bds-files/archive/master.zip
 unzip master.zip 
 mv bds-files-master/ bds-files
