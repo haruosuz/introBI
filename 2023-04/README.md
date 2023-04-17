@@ -244,7 +244,7 @@ p.16
 # Managing Bioinformatics Projects
 # バイオインフォマティクスのプロジェクト管理
 
-We discuss how to organize bioinformatics project directories and document your work using Markdown files. Proper organization is essential for automating tasks across large numbers of files.
+We discuss how to organize bioinformatics project directories and document your work using Markdown files. Proper organization is essential for automating tasks across large numbers of files.  
 ここでは、バイオインフォマティクスプロジェクトのディレクトリ管理と、Markdownファイルを使用して作業を文書化する方法を説明する。適切なディレクトリ構造は、多数のファイルにまたがる作業を自動化するために不可欠である。
 
 [ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
