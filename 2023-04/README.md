@@ -296,8 +296,8 @@ p.23
 [Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths) | 
 [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)  
 
-When referring to other files (e.g. data) in your project hierarchy, always use *relative paths* (e.g., `../data/input.txt`) rather than absolute paths (e.g., `/home/vinceb/projects/zmays-snps/data/input.txt`).  
-プロジェクト階層内の他のファイル（データなど）を参照する場合、絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。  
+When referring to other files (e.g. data) in your project hierarchy, always use *relative paths* rather than absolute paths.  
+プロジェクト階層内の他のファイル（データなど）を参照する場合、絶対パスではなく、相対パスで指定する。  
 
 `touch` is used to create some empty files:  
 [`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:  
@@ -329,11 +329,6 @@ p.24
 
 ## Project Documentation
 ## 2.2　プロジェクトドキュメント
-
-*Document your methods and workflows*: 
- Copy and paste command lines used for analysis. Record the default values of software, as they may change in later versions.  
-*方法やワークフローを記録する*: 
- 解析に使用したコマンドラインをコピペする。ソフトウェアのデフォルト値を記録する（後にバージョンアップした際にデフォルト値が変わる可能性があるため）。  
 
 All of the project information is best stored in [plain-text](https://en.wikipedia.org/wiki/Plain_text) [README](https://en.wikipedia.org/wiki/README) files. Plain text can easily be read, searched, and edited directly from the command line.
 Keep README files in each of your project's main directories.
