@@ -293,12 +293,6 @@ p.23
 > Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2023-04-11.md`).  
 > ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使わない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2023-04-11.md`）  
 
-**[Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths)**  
-**[絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)**  
-
-When referring to other files (e.g. data) in your project hierarchy, always use *relative paths* (e.g., `../data/input.txt`) rather than absolute paths (e.g., `/home/vinceb/projects/zmays-snps/data/input.txt`).  
-プロジェクト階層内の他のファイル（データなど）を参照する場合、絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。  
-
 `touch` is used to create some empty files:  
 [`touch`](https://ja.wikipedia.org/wiki/Touch_%28UNIX%29)コマンドでサイズが0の空ファイルを作成する:  
 ```
@@ -323,6 +317,12 @@ ls -l ../data/input.txt
 cd ..
 pwd
 ```
+
+When referring to other files (e.g. data) in your project hierarchy, always use *relative paths* (e.g., `../data/input.txt`) rather than absolute paths (e.g., `/home/vinceb/projects/zmays-snps/data/input.txt`).  
+プロジェクト階層内の他のファイル（データなど）を参照する場合、絶対パス（例 `/home/vinceb/projects/zmays-snps/data/input.txt`）ではなく、相対パス（例 `../data/input.txt`）で指定する。  
+
+- [Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths)  
+- [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)  
 
 p.24
 訳書28頁
