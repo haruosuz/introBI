@@ -269,16 +269,14 @@ p.21
 
 <img alt="" width=50% src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=info:doi/10.1371/journal.pcbi.1000424.g001">
 
-Store all files for your project in a single directory.  
+Store all project files in a single directory.  
 プロジェクトの全ファイルを1つのディレクトリに格納する。  
 
 Create a project directory (`zmays-snps/`) for [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) calling in maize (*Zea mays*):  
 トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリ (`zmays-snps/`) を作成する:  
 
-	mkdir zmays-snps
-	cd zmays-snps
-	mkdir data
-	mkdir data/seqs scripts analysis
+    mkdir -p zmays-snps/{data/seqs,scripts,analysis}
+    cd zmays-snps/
 	ls -l
 
 `data/` directory contains all data.  
@@ -310,7 +308,7 @@ cd data/
 pwd
 ```
 
-Change the working directory to the parent directory:  
+Change the current working directory to its parent directory (`..`):  
 親ディレクトリ(`..`)に移動する:  
 ```
 cd ../analysis/
