@@ -595,6 +595,9 @@ p.54
 ## [Command Substitution](https://en.wikipedia.org/wiki/Command_substitution)
 ## 3.5　コマンド置換
 
+execute a command, use its output as a string in another command.  
+コマンドを実行し、その出力を別のコマンドで文字列として使用する。  
+
     grep -c '^>' zea-proteins.fasta
     echo "There are $(grep -c '^>' zea-proteins.fasta) entries in my FASTA file."
 
