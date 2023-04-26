@@ -46,7 +46,7 @@
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
 - 2023-06-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [awk](#text-processing-with-awk)
 - 2023-06-20 No. 11 - R言語 [R Language](#r-language)
-- 2023-06-27 No. 12 - 配列データ [Sequence Data](#sequence-data)
+- 2023-06-27 No. 12 - TBA
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
 - 2023-07-04 No. 13 - TBA
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-13)
@@ -247,7 +247,6 @@ p.16
 We discuss how to organize bioinformatics project directories and document your work using Markdown files. Proper organization is essential for automating tasks across large numbers of files.  
 ここでは、バイオインフォマティクスプロジェクトのディレクトリ管理と、Markdownファイルを使用して作業を文書化する方法を説明する。適切なディレクトリ構造は、多数のファイルにまたがる作業を自動化するために不可欠である。
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -421,7 +420,6 @@ Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う
 [プロセス](https://ja.wikipedia.org/wiki/プロセス)、
 コマンド置換を扱う。  
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -619,7 +617,6 @@ directories in this format sort chronologically:
 # Bioinformatics Data
 # バイオインフォマティクス・データ
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -660,41 +657,13 @@ Retrieving data, Ensuring data integrity, Compression
 [`curl`](https://en.wikipedia.org/wiki/CURL) by default writes the file to standard output.  
 [`curl`](https://ja.wikipedia.org/wiki/CURL) は、デフォルトでは標準出力する。
 
-    curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
+    curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
 `curl -L` can follow page redirects. Download the ultimate page the link (a shortened link) redirects to:  
 `curl -L` でページのリダイレクトを辿る。短縮リンクがリダイレクトされた最終ページをダウンロードする:  
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
-
-# [Chapter 4. Working with Remote Machines](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch04.html)
-
-p.57
-訳書63頁
-## Connecting to Remote Machines with SSH
-## 4.1  SSHでリモートマシンに接続する
-
-[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
-[secure shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell)  
-
-    ssh user@host
-
-p.113
-訳書123頁
-### Rsync and Secure Copy (scp)
-### 6.1.2　rsyncとscp
-
-[`rsync`](https://en.wikipedia.org/wiki/Rsync) is a tool for synchronizing entire directories across a network.  
-[`rsync`](https://ja.wikipedia.org/wiki/Rsync) は、ネットワーク間で、ディレクトリ全体を同期するためのツールである。  
-
-    # basic syntax: rsync source destination
-    rsync -avz -e ssh zmays-snps/data/ user@host:/path/to/directory
-
-[`scp`](https://en.wikipedia.org/wiki/Secure_copy_protocol) is used to copy a single file over SSH.  
-[`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。  
-
-    scp zmays-snps/data/README.md user@host:/path/to/directory
 
 p.114
 訳書124頁
@@ -812,7 +781,6 @@ p.120
 We'll see how to write rerunnable Bash [shell scripts](https://en.wikipedia.org/wiki/Shell_script), and automate file-processing tasks with `find` and `xargs`.  
 再実行可能なBash[シェルスクリプト](https://ja.wikipedia.org/wiki/シェルスクリプト)を作成し、`find`と`xargs`を使ってファイル処理タスクを自動化する方法を学ぶ。  
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -1120,7 +1088,6 @@ We'll use core Unix tools (`head, tail, less, wc, ls, awk, cut, grep, sort, uniq
   - [Introduction to Unix](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html)
   - [Unix CheatSheet](https://bioinformaticsworkbook.org/Appendix/Unix/UnixCheatSheet.html)
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -1499,25 +1466,6 @@ p.163
 ### Bioawk: An Awk for Biological Formats
 ### 7.3.12　Bioawk：生物学的データのためのAWK
 
-<http://github.com/lh3/bioawk>  
-You can download, compile, and install Bioawk from source  
-Bioawkをソースからダウンロード、コンパイル、インストールできる  
-
-or you can install with Homebrew package manager:  
-あるいは、Homebrewパッケージマネージャでインストールできる:  
-
-	brew tap brewsci/bio; brew install bioawk
-
-Look at Bioawk's supported input formats and what variables these formats set:  
-Bioawkがサポートする入力形式と、これらが設定する変数を見る:  
-
-	bioawk -c help
-
-As an example, read in *Mus_musculus.GRCm38.75_chr1.gtf* and append a column with the length of the feature (end position - start position) for all protein coding genes:  
-例として *Mus_musculus.GRCm38.75_chr1.gtf* を読み込み、全てのタンパク質コード遺伝子の特徴領域の長さ（終了位置 - 開始位置）を列に追加する:  
-
-    bioawk -c gff '$3 ~ /gene/ && $2 ~ /protein_coding/ {print $seqname, $end - $start}' Mus_musculus.GRCm38.75_chr1.gtf | head -n 3
-
 p.165
 訳書178頁
 ### Stream Editing with Sed
@@ -1563,7 +1511,6 @@ Combining two sequential commands' standard output into a single stream with a s
 # R Language
 # R言語
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
 ```
 # Open a terminal window
 bash
@@ -1639,85 +1586,4 @@ p.260
 ### 8.4.4　データのエクスポート
 
 ----------
-# Sequence Data
-# 配列データ
-
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを移動する:  
-```
-# Open a terminal window
-bash
-cd ~/projects/
-cd ./bds-files/chapter-10-sequence
-```
-https://github.com/vsbuffalo/bds-files/tree/master/chapter-10-sequence
-
-p.339
-訳書361頁
-# [Chapter 10. Working with Sequence Data](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch10.html)
-# 10章　配列データの操作 
-
-## The FASTA Format
-## 10.1　FASTA形式
-
-[FASTA format](https://en.wikipedia.org/wiki/FASTA_format)  
-[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式  
-
-    head -n 10 egfr_flank.fasta
-
-p.341
-訳書363頁
-## The FASTQ Format
-## 10.2　FASTQ形式
-
-p.342
-訳書364頁
-> ###### The Ins and Outs of Counting FASTA/FASTQ Entries
->     grep -c "^>" egfr_flank.fasta
-> 
-> A robust way to count sequences is with `bioawk`:  
-> 配列を確実に数えるために `bioawk` を使う:  
-> ```
-> bioawk -cfastx 'END{print NR}' untreated1_chr4.fq
-> ```
-
-## Nucleotide Codes
-## 10.3　ヌクレオチドのコード
-
-- [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)  
-- [配列の記載に用いる略号](https://www.ddbj.nig.ac.jp/ddbj/code.html)  
-
-p.352
-訳書375頁
-## Indexed FASTA Files
-## 10.7　索引付きFASTAファイル
-
-*Indexing* a FASTA file for quick/efficient extraction of subsequences in specified regions of the file.  
-FASTAファイルのサブ配列（指定された領域）を迅速・効率的に抽出するために、FASTAファイルに索引（インデックス）を付ける。  
-
-Unzip the FASTA file:  
-FASTAファイルを解凍する:  
-```
-gunzip -c Mus_musculus.GRCm38.75.dna.chromosome.8.fa.gz > Mus_musculus.GRCm38.75.dna.chromosome.8.fa
-```
-
-https://formulae.brew.sh/formula/samtools
-```
-brew install samtools
-```
-
-Index the FASTA file:  
-FASTAファイルに索引を付ける:  
-```
-samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa
-# This creates an index file with the extension *.fai*.
-```
- 
-To extract the subsequence for a specific region, use `samtools faidx <in.fa> <region>`, where `<in.fa>` is the FASTA file (indexed) and `<region>` is in the format `chromosome:start-end`.  
-特定の領域のサブ配列を抽出するには `samtools faidx <in.fa> <region>` を実行する。ここで、`<in.fa>`は（索引を付けた）FASTAファイル、`<region>`は`chromosome:start-end`の形式。  
-
-    samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa 8:123407082-123410744 | head -n 3
-    samtools faidx Mus_musculus.GRCm38.75.dna.chromosome.8.fa 8:123407082-123410744 8:123518835-123536649 | grep -A 2 ">"
-
-----------
-
 
