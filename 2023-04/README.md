@@ -42,10 +42,10 @@
 - 2023-05-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [cut](#working-with-column-data-with-cut-and-columns)
+- 2023-06-06 No. 9 - TBA
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
-- 2023-06-13 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [awk](#text-processing-with-awk)
-- 2023-06-20 No. 11 - R言語 [R Language](#r-language)
+- 2023-06-13 No. 10 - TBA
+- 2023-06-20 No. 11 - TBA
 - 2023-06-27 No. 12 - TBA
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
 - 2023-07-04 No. 13 - TBA
@@ -552,17 +552,17 @@ Run a program in the background by appending an ampersand (`&`) to the end of ou
 コマンドの末尾にアンパサンド（`&`）を追加して、プログラムをバックグラウンドで実行する:  
 
     $sleep 60 &
-    [1] 86374
+    [1] 19166
 
 The number like `[1]` is *job IDs*.  
-The number like `86374` is the *process ID* (PID).  
-check what processes we have running in the background with `jobs`.  
-return a specific background job to the foreground, using `fg`.  
-`[1]`は*ジョブID*、`86374`は*プロセスID*（PID）。  
+The number like `19166` is the *process ID* (PID).  
+Check what processes we have running in the background with `jobs`.  
+Return a specific background job to the foreground, using `fg`.  
+`[1]`は*ジョブID*、`19166`は*プロセスID*（PID）。  
 [`jobs`](http://codezine.jp/unixdic/w/jobs)でバックグランド・ジョブを表示する。  
 [`fg`](http://codezine.jp/unixdic/w/fg)でバックグラウンド・プロセスをフォアグラウンド（foreground）へ戻す。  
 
-suspend the process by the key combination Control-z, and then use the `bg` command to run it in the background:  
+Suspend the process by the key combination Control-z, and then use the `bg` command to run it in the background:  
 Control-z キーで中断させたジョブを
 [`bg`](http://codezine.jp/unixdic/w/bg)コマンドを用いてバックグラウンド（background）で再開:  
 
