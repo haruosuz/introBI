@@ -617,6 +617,9 @@ directories in this format sort chronologically:
 # Bioinformatics Data
 # バイオインフォマティクス・データ
 
+Retrieving data, Ensuring data integrity, Compression  
+データの取得、データ整合性の確保、圧縮  
+
 ```
 # Open a terminal window
 bash
@@ -629,9 +632,6 @@ p.109
 訳書119頁
 # [Chapter 6. Bioinformatics Data](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch06.html)
 # 6章　バイオインフォマティクスのデータ
-
-Retrieving data, Ensuring data integrity, Compression  
-データの取得、データ整合性の確保、圧縮  
 
 ## Retrieving Bioinformatics Data
 ## 6.1　バイオインフォマティクスデータの取得
