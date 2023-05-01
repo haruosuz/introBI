@@ -136,14 +136,11 @@ File formats and content:
 # Open a terminal window
 bash
 
-# create a variable and assign it a value
-TODAY=$(date +%F)
-
 # make directory
-mkdir -p "${TODAY}"
+mkdir -p $(date +%F)
 
 # change directory
-cd "${TODAY}"
+cd $(date +%F)
 ```
 
 `wget`コマンドを使用して、ゲノム塩基配列のFASTA形式ファイル（*\*_genomic.fna.gz*）、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
@@ -152,7 +149,6 @@ cd "${TODAY}"
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/md5checksums.txt
-#wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/md5checksums.txt -O GCA_000005845.2_ASM584v2_md5checksums.txt
 ```
 
 チェックサムを確認する:  
@@ -195,8 +191,8 @@ Using core Unix tools (`head, tail, wc, ls, awk, cut, grep, sort, uniq`) to anal
 Unixコマンド（`head, tail, wc, ls, awk, cut, grep, sort, uniq`）を用いて、ゲノムのアノテーション（*\*_genomic.gff*ファイル）を解析する。  
 
 ```
-# 訳書 p.147 | 7.3.3 wc、ls、awk によるプレーンテキストデータの要約情報
-# 原書 p.134 | Plain-Text Data Summary Information with wc, ls, and awk
+# p.134 | Plain-Text Data Summary Information with wc, ls, and awk
+# 訳書147頁 | 7.3.3　wc、ls、awkによるプレーンテキストデータの要約情報
 
 # `ls -lh`でファイルのサイズを確認する:  
 # `ls -lh` reports human-readable file sizes
@@ -206,8 +202,8 @@ ls -lh
 # `wc -l` outputs the number of lines
 wc -l *
 
-# 訳書 p.425 | 12.1.2 変数とコマンド引数
-# 原書 p.398 | Variables and Command Arguments
+# p.398 | Variables and Command Arguments
+# 訳書425頁 | 12.1.2　変数とコマンド引数
 
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
@@ -216,86 +212,87 @@ GFF=GCA_000005845.2_ASM584v2_genomic.gff
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
-echo $FNA
-echo $GFF
+echo "${FNA}"
+echo "${GFF}"
 
-# 訳書 p.142 | 7.3.1 head と tail によるデータの検査
-# 原書 p.129 | Inspecting Data with Head and Tail
+# p.129 | Inspecting Data with Head and Tail
+# 訳書142頁 | 7.3.1 head と tail によるデータの検査
 
 # `head`で先頭部分を表示する:  
 # look at the top of a file
-head -n 10 $GFF
+head -n 10 "${GFF}"
 
 # `tail`で末尾部分を表示する:  
 # look at the end of a file
-tail -n 3 $GFF
+tail -n 3 "${GFF}"
 
-# 訳書 p.53 | 3.3.1 パイプの動作:grep とパイプによる簡単なプログラムの作成
-# 原書 p.47 | Pipes in Action: Creating Simple Programs with Grep and Pipes
+# p.47 | Pipes in Action: Creating Simple Programs with Grep and Pipes
+# 訳書53頁 | 3.3.1　パイプの動作：grepとパイプによる簡単なプログラムの作成
 
-# 訳書 p.153 | 7.3.6 強力なツール grep
-# 原書 p.140 | The All-Powerful Grep
+# p.140 | The All-Powerful Grep
+# 訳書153頁 | 7.3.6　強力なツールgrep
 
 # `grep`でパターンにマッチした行を抽出する:  
 # use grep to extract lines matching the pattern:  
 ## FASTA header lines begin with the ">" character.
-grep "^>" $FNA
+grep "^>" "${FNA}"
 ## GFF header lines begin with the "#" character.
-grep "^#" $GFF
+grep "^#" "${GFF}"
 
 # パイプでプログラムの入出力をつなぐ。
 # Pipe the standard output to the next command with the pipe character (|):  
-grep "^>" $FNA | wc -l
-grep "^#" $GFF | wc -l
+grep "^>" "${FNA}" | wc -l
+grep "^#" "${GFF}" | wc -l
 
 # `grep -c`オプションで、パターンにマッチした行数を表示する:  
 # use grep to count (the -c option stands for count) the number of lines matching the pattern:  
-grep -c "^>" $FNA
-grep -c "^#" $GFF
+grep -c "^>" "${FNA}"
+grep -c "^#" "${GFF}"
 
 # `grep -v`で"#"で始まる行を削除する:  
 # exclude lines that begin with "#":  
-grep -v "^#" $GFF | head -n 3
+grep -v "^#" "${GFF}" | head -n 3
 
-# 訳書 p.151 | 7.3.4 cut による列データの操作
-# 原書 p.138 | Working with Column Data with cut and Columns
+# p.138 | Working with Column Data with cut and Columns
+# 訳書151頁 | 7.3.4 cut による列データの操作
 
 # `grep -v`で"#"で始まる行を削除し、`cut`で1,4,5列（配列の名前、開始位置、終了位置）を抽出する:  
 # chop off the metadata rows using `grep`, and then use `cut` to extract
 # the first, fourth, and fifth columns (chromosome, start, end):
-grep -v "^#" $GFF | cut -f1,4,5 | head -n 3
+grep -v "^#" "${GFF}" | cut -f1,4,5 | head -n 3
 
-# 訳書 p.160 | 7.3.8 sort によるプレーンテキストデータの並べ替え
-# 原書 p.147 | Sorting Plain-Text Data with Sort
+# p.147 | Sorting Plain-Text Data with Sort
+# 訳書160頁 | 7.3.8　sortによるプレーンテキストデータの並べ替え
 
-# 訳書 p.165 | 7.3.9 uniq コマンドで一意の値を見つける
-# 原書 p.152 | Finding Unique Values in Uniq
+# p.152 | Finding Unique Values in Uniq
+# 訳書165頁 | 7.3.9　uniqコマンドで一意の値を見つける
 
 # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約する:  
 # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
-grep -v "^#" $GFF | cut -f3 | sort | uniq -c
+grep -v "^#" "${GFF}" | cut -f3 | sort | uniq -c
 
 # +鎖と-鎖(7列目)の特徴領域(3列目)をカウントする:  
 # create lines from multiple columns to count combinations, like
 # how many of each feature (column 3) are on each strand (column 7):
-grep -v "^#" $GFF | cut -f3,7 | sort | uniq -c
+grep -v "^#" "${GFF}" | cut -f3,7 | sort | uniq -c
 
-# 訳書 p.170 | 7.3.11 AWK によるテキスト処理
-# 原書 p.157 | Text Processing with Awk
+# p.157 | Text Processing with Awk
+# 訳書170頁 | 7.3.11　AWKによるテキスト処理
 
-# 訳書 p.157: `grep -o`でパターンの一致する部分だけを抽出する。
-# 原書 p.144: `grep -o` extract only the matching part of the pattern. 
+# `grep -o`でパターンの一致する部分だけを抽出する。  
+# `grep -o` extract only the matching part of the pattern.  
+
 # Count rRNA genes (16S, 23S, 5S):  
-awk -F"\t" '$3 ~ /rRNA/ { print $0 }' $GFF | grep -E -o 'product=.+' | sort | uniq -c
+awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort | uniq -c
 
-# 訳書 p.173: タンパク質コード配列（CDS）について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、末尾を見る:  
-# 原書 p.160: add a column with the feature length (end position - start position) for only "CDS"
-awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' $GFF | sort -k1,1n | tail -n 1
+# タンパク質コード配列（CDS）について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、末尾を見る:  
+# add a column with the feature length (end position - start position) for only "CDS"
+awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' "${GFF}" | sort -k1,1n | tail -n 1
 ```
 
 出力例:  
 ```
-$grep -v "^#" $GFF | cut -f3 | sort | uniq -c
+$grep -v "^#" "${GFF}" | cut -f3 | sort | uniq -c
 4379 CDS
  180 exon
 4419 gene
@@ -310,7 +307,7 @@ $grep -v "^#" $GFF | cut -f3 | sort | uniq -c
   48 sequence_feature
   86 tRNA
 
-$awk -F"\t" '$3 ~ /rRNA/ { print $0 }' $GFF | grep -E -o 'product=.+' | sort | uniq -c
+$awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort | uniq -c
    7 product=16S ribosomal RNA
    7 product=23S ribosomal RNA
    8 product=5S ribosomal RNA
