@@ -78,13 +78,6 @@ Submit the latest version of the project notebook (Markdown file *README.md*).
 Submit the latest version of the plain-text project notebook (*README.md* file).
 Download data files (e.g., FASTA and/or GFF files) you're interested in, and document how you acquired them.
 
-----------
-## assignment 5
-**課題5 「script.sh」**
-
-興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
-Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
-
 Markdownファイル*README.md*の例:  
 The entire *README.md* file would look like:  
 ```
@@ -99,6 +92,13 @@ Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) dat
 - MD5 (GCA_000005845.2_ASM584v2_genomic.fna.gz) = 7e69874199f23fd21b060dc0b2b72321
 - MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
 ```
+
+----------
+## assignment 5
+**課題5 「script.sh」**
+
+興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
+Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
 
 ----------
 ## assignment 6
