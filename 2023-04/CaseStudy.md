@@ -6,7 +6,6 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [unix](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#unix)
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題1 「README.md」
 - [assignment 2](#assignment-2) 課題2 「zmays-snps」
@@ -84,8 +83,22 @@ Download data files (e.g., FASTA and/or GFF files) you're interested in, and doc
 **課題5 「script.sh」**
 
 興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
-
 Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
+
+Markdownファイル*README.md*の例:  
+The entire *README.md* file would look like:  
+```
+## Genome and Annotation Data
+
+Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on 2023-05-02 using:
+
+    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
+    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
+
+## MD5 checksum
+- MD5 (GCA_000005845.2_ASM584v2_genomic.fna.gz) = 7e69874199f23fd21b060dc0b2b72321
+- MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
+```
 
 ----------
 ## assignment 6
