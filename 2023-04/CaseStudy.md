@@ -72,26 +72,9 @@ Submit the latest version of the project notebook (Markdown file *README.md*).
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
-プロジェクトノート（*README.md*ファイル）の最新版を提出する。
-興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードし、それらをどのように入手したかを記録する。
+プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
 
-Submit the latest version of the plain-text project notebook (*README.md* file).
-Download data files (e.g., FASTA and/or GFF files) you're interested in, and document how you acquired them.
-
-Markdownファイル*README.md*の例:  
-The entire *README.md* file would look like:  
-```
-## Genome and Annotation Data
-
-Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on 2023-05-02 using:
-
-    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
-    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
-
-## MD5 checksum
-- MD5 (GCA_000005845.2_ASM584v2_genomic.fna.gz) = 7e69874199f23fd21b060dc0b2b72321
-- MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
-```
+Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data.  
 
 ----------
 ## assignment 5
