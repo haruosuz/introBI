@@ -658,8 +658,8 @@ p.109
 [`curl`](https://en.wikipedia.org/wiki/CURL) by default writes the file to standard output.  
 [`curl`](https://ja.wikipedia.org/wiki/CURL) は、デフォルトでは標準出力する。
 
-    #curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-    curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
+    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
 `curl -L` can follow page redirects. Download the ultimate page the link (a shortened link) redirects to:  
 `curl -L` でページのリダイレクトを辿る。短縮リンクがリダイレクトされた最終ページをダウンロードする:  
@@ -711,7 +711,7 @@ p.116
 ## Looking at Differences Between Data
 ## 6.3　データの間の差を見る
 
-[`diff`](https://en.wikipedia.org/wiki/Diff) to compute the diff between two files *gene-1.bed* and *gene-2.bed*:  
+[`diff`](https://en.wikipedia.org/wiki/Diff) is used to compute the difference between two files *gene-1.bed* and *gene-2.bed*:  
 [`diff`](https://ja.wikipedia.org/wiki/Diff)コマンドで2つのファイル*gene-1.bed*と*gene-2.bed*の差分を計算する:  
 
     diff gene-1.bed gene-2.bed
@@ -739,7 +739,7 @@ decompress files with the command `gunzip`:
 
     gunzip gene-1.bed.gz
 
-Both `gzip` and `gunzip` can output their results to standard out using the `-c` option:  
+Both `gzip` and `gunzip` replace the original uncompressed/compressed version, but can output their results to standard out using the `-c` option:  
 `gzip`も`gunzip`も元のファイルを置き換えるが、
 `-c`オプションを使用して、圧縮・解凍の結果を標準出力に書き出す:  
 
