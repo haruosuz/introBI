@@ -394,8 +394,10 @@ Project notebooks in simple plain-text can be read/searched/edited from the comm
 ### Markdown Formatting Basics
 ## 2.6　マークダウン記法の基礎
 
-Figure 2-1. [HTML Rendering](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md) of the [Markdown notebook](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)  
-Figure 2-1. [Markdownノート](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md)の[HTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)  
+https://daringfireball.net/projects/markdown/syntax
+
+[Figure 2-1. HTML Rendering of the Markdown notebook
+MarkdownノートのHTML表示](https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md)
 
 p.35
 訳書41頁
