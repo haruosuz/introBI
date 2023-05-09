@@ -943,6 +943,7 @@ p.405
 ### Processing Files with Bash Using for Loops and Globbing
 ### 12.1.4　forループとグロブ（パターンマッチ）を使ったBashによるファイル処理
 
+- [BIS180L Lecture3b For Loops - University of California, Davis](https://video.ucdavis.edu/media/BIS180L+Lecture3b+For+Loops/0_c206k3g2/158861492)
 - [for 文の使用方法 | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/for.html)
 
 Let's create a project directory (`zmays-snps/`) and create empty data files with sample name (`zmaysA, zmaysB, zmaysC`) and read pair (`R1` and `R2`):  
