@@ -35,16 +35,16 @@
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-4)
 - 2023-05-09 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-5)
-- 2023-05-16 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find xargs](#automating-file-processing-with-find-and-xargs)
+- 2023-05-16 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
-- 2023-05-23 No. 7 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+- 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+- 2023-05-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2023-06-06 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
-- 2023-06-13 No. 10 - TBA
+- 2023-06-13 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-06-20 No. 11 - TBA
 - 2023-06-27 No. 12 - TBA
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
@@ -62,6 +62,19 @@
 Presentation time is 1 minute. Report your project (analysis data).
 
 発表時間は1分。プロジェクト（解析データ）を報告する。
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+People outside of Keio University SFC will also attend the lectures.  
+他機関所属の方も参加されます。  
+
+
+### 2023-06-06
+### 2023-06-13
+- Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
+キリル クリュコフ博士（国立遺伝学研究所）
 
 ----------
 ## Final presentation
