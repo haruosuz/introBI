@@ -101,13 +101,13 @@ ecoli/data/md5checksums.txt
 ecoli/analysis/output.txt
 ```
 
-Compress the project directory (`ecoli/`) (exclude files in the `data/` directory):  
-（`data/`ディレクトリ内のファイルを除外して）プロジェクト・ディレクトリ (`ecoli/`) を圧縮する:  
+Compress the project directory (`ecoli/`) while excluding files in the `data/` directory:  
+`data/`ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`ecoli/`) を圧縮する:  
 ```
 zip --exclude 'ecoli/data/*' -r ecoli.zip ecoli/
 ```
 
-Use `man` (e.g. `man zip`) to display the on-line manual pages. press *q* to quit.  
+Use the `man` command (e.g. `man zip`) to access the online manual pages. Press *q* to quit.  
 `man コマンド名`（例えば、`man zip`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
 ```
 $man zip
@@ -123,24 +123,11 @@ $man zip
               Explicitly exclude the specified files
 ```
 
-- [How to Compress and Extract Files Using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
-```
-# Compress an Entire Directory or a Single File
-tar -czvf archive.tar.gz stuff
+Document the details of your project in the *README.md* file.  
+*README.md*ファイルにプロジェクトの詳細情報を記録する。  
 
-# Extract an Archive
-tar -xzvf archive.tar.gz
-```
-
-----------
-## assignment 7
-**課題7 「my_project/examples/」**
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
-Document details about your project in the *README.md* file and/or [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
-*README.md*ファイルや[ログファイル](https://e-words.jp/w/ログファイル.html)にプロジェクトの詳細情報を記録する。  
+Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
+標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
 
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
 [`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
@@ -158,6 +145,13 @@ sw_vers
 date
 date +%F
 ```
+
+----------
+## assignment 7
+**課題7 「my_project/examples/」**
+
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 8
