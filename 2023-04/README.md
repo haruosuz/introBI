@@ -75,6 +75,7 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2023-06-13
 - Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
 キリル クリュコフ博士（国立遺伝学研究所）
+- https://kirill-kryukov.com/kirr/
 
 ----------
 ## Final presentation
