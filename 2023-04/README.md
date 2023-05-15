@@ -55,12 +55,6 @@
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-14)
 - 試験 Exam (7/24～7/29)
 
-
- - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
- - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
-
-
-
 ----------
 ## Interim report
 **中間発表**
