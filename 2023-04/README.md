@@ -35,14 +35,14 @@
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-4)
 - 2023-05-09 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-5)
-- 2023-05-16 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+- 2023-05-16 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find xargs](#automating-file-processing-with-find-and-xargs)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
-- 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+- 2023-05-23 No. 7 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2023-05-30 No. 8 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - TBA
+- 2023-06-06 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
 - 2023-06-13 No. 10 - TBA
 - 2023-06-20 No. 11 - TBA
@@ -54,6 +54,12 @@
   - 最終発表 [Final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-14)
 - 試験 Exam (7/24～7/29)
+
+
+ - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+ - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+
+
 
 ----------
 ## Interim report
@@ -954,16 +960,16 @@ Let's create a project directory (`zmays-snps/`) and create empty data files wit
     touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
     cd zmays-snps/data/
 
-loop through each file using a `for` loop:  
-`for`文で繰り返し処理を実行する:  
+`for` loop to repeat the same task for each file:  
+`for`文で各ファイルに同じ処理を繰り返す:  
 
     for file in seqs/*.fastq
     do
       ls -l $file
     done
 
-Use `for` loop in one line.
-Strip .fastq from each file, and add suffix "-stats.txt":  
+`for` loop in one line.
+Strip extension ".fastq" from each file, and add suffix "-stats.txt":  
 `for`文を1行で書く。
 ファイル名から拡張子".fastq"を取り除き、接尾辞"-stats.txt"を追加する:  
 
