@@ -90,6 +90,29 @@ Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and
 Submit the compressed file (e.g. `ecoli.zip`) of your project directory (e.g. `ecoli/`).  
 プロジェクト・ディレクトリ（例えば、`ecoli/`）の圧縮ファイル（例えば、`ecoli.zip`）を提出する。  
 
+Document the details of your project in the *README.md* file.  
+*README.md*ファイルにプロジェクトの詳細情報を記録する。  
+
+[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
+[`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
+```
+# Print operating system name
+uname -a
+
+# print Mac OS X operating system version information
+sw_vers
+
+# display date and time
+date
+date +%F
+```
+
+Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
+標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
+```
+bash scripts/run.sh 2>&1 | tee log.$(date +%F).txt
+```
+
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
@@ -121,29 +144,6 @@ $man zip
        -x files
        --exclude files
               Explicitly exclude the specified files
-```
-
-Document the details of your project in the *README.md* file.  
-*README.md*ファイルにプロジェクトの詳細情報を記録する。  
-
-Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
-標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
-
-[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
-[`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
-
-```
-bash scripts/run.sh 2>&1 | tee log.$(date +%F).txt
-
-# Print operating system name
-uname -a
-
-# print Mac OS X operating system version information
-sw_vers
-
-# display date and time
-date
-date +%F
 ```
 
 ----------
