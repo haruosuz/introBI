@@ -51,13 +51,11 @@ option + ←	１単語分左に移動
 ----------
 ## mice8992
 
-http://metagenome.cs.umn.edu/mice8992/repo/doc/index.html
-Discovering Patterns in the Microbiome
+[Discovering Patterns in the Microbiome](http://metagenome.cs.umn.edu/mice8992/repo/doc/index.html)
 
 The Github repo for this code is https://github.com/danknights/mice8992-2016
 
-https://www.youtube.com/watch?v=u2IQQUMeWy8&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc&index=6
-Microbiome Discovery 4.5: (Optional) UNIX Command Line
+[Microbiome Discovery 4.5: (Optional) UNIX Command Line - YouTube](https://www.youtube.com/watch?v=u2IQQUMeWy8&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc&index=6)
 11:10
 
 Code in the video (and its modification):
