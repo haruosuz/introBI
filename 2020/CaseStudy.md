@@ -7,7 +7,7 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [unix](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#unix)
+- [unix](#unix)
 - [assignment 2](#assignment-2) 課題2 「README.md」
 - [assignment 3](#assignment-3) 課題3 「zmays-snps」
 - [assignment 4](#assignment-4) 課題4 「2020-10-27/README.md」
@@ -17,6 +17,96 @@
 - [assignment 7](#assignment-7) 課題7 「project_2020-11-17」
 - [assignment 8](#assignment-8) 課題8 「project_2020-12-15」
 - [assignment 9](#assignment-9) 課題9 「project_final」
+
+----------
+## unix
+
+- [Learning the shell - Lesson 2: Navigation](https://linuxcommand.org/lc3_lts0020.php)
+- 2018 [Introduction to UNIX Commands](https://esslab.jp/~ess/teaching/2018/intro_c_program/unix_command_eng.pdf)
+- 2014 [How To Use cd, pwd, and ls to Explore the File System on a Linux Server | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cd-pwd-and-ls-to-explore-the-file-system-on-a-linux-server)
+
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
+[ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
+
+単語単位でカーソルを移動します。
+「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
+
+[MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
+```
+Ctrl + a	行先頭に移動
+Ctrl + e	行末尾に移動
+option + →	１単語分右に移動
+option + ←	１単語分左に移動
+```
+
+[「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
+
+![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
+
+----------
+## mice8992
+
+http://metagenome.cs.umn.edu/mice8992/repo/doc/index.html
+Discovering Patterns in the Microbiome
+
+The Github repo for this code is https://github.com/danknights/mice8992-2016
+
+https://www.youtube.com/watch?v=u2IQQUMeWy8&list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc&index=6
+Microbiome Discovery 4.5: (Optional) UNIX Command Line
+11:10
+
+Code in the video (and its modification):
+```
+# 1:35
+cd ~
+ls
+mkdir mice8992
+cd mice8992
+# 2:30
+git clone https://github.com/danknights/mice8992-2016.git repo
+cd repo
+clear
+ls
+# 4:20
+cd data/
+ls
+cd globalgut/
+ls
+# The files in the directory are different from the video.
+unzip seqs.fna.zip
+head seqs.fna
+head -n 2 seqs.fna
+head map.txt
+# 6:10
+head map.txt | cut -f1-3
+# 7:00
+cd ..
+cd ..
+ls
+git pull
+git status
+# 7:45
+ls
+emacs tmp.txt
+# hello world
+# to save the file, C-x C-s
+# to exit from emacs, C-x C-c
+mv tmp.txt ..
+mv ../tmp.txt .
+rm tmp.txt 
+# 8:55
+cd data/globalgut/
+clear
+wc seqs.fna
+wc -l seqs.fna
+grep ">" seqs.fna
+grep ">" seqs.fna | wc -l
+grep -c ">" seqs.fna
+```
 
 ----------
 ## assignment 2
@@ -177,7 +267,7 @@ Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) dat
 - MD5 (GCA_000005845.2_ASM584v2_genomic.fna.gz) = 7e69874199f23fd21b060dc0b2b72321
 - MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
 ```
- 
+
 `gunzip`コマンドでファイルを展開する:  
 ```
 # Decompress files with the command `gunzip`:
