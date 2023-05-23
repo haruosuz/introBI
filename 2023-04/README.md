@@ -39,7 +39,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
 - 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find xargs](#automating-file-processing-with-find-and-xargs)
+- 2023-05-30 No. 8 - TBA
   - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
 - 2023-06-06 No. 9 - [Guest Speaker](#guest-speaker)
@@ -71,11 +71,13 @@ People outside of Keio University SFC will also attend the lectures.
 他機関所属の方も参加されます。  
 
 
+- Speaker: [Dr. Kirill Kryukov (National Institute of Genetics) キリル クリュコフ博士（国立遺伝学研究所）](https://kirill-kryukov.com/kirr/)
+
 ### 2023-06-06
+- Title: "Organizing a data analysis project"
+
 ### 2023-06-13
-- Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
-キリル クリュコフ博士（国立遺伝学研究所）
-- https://kirill-kryukov.com/kirr/
+- Title: "Designing reproducible computational experiments"
 
 ----------
 ## Final presentation
