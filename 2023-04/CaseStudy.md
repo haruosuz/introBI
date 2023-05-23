@@ -153,6 +153,13 @@ $man zip
 Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
+Remember to update your *README.md* file (date, etc.).
+```
+# display date and time
+date
+date +%F
+```
+
 ----------
 ## assignment 8
 **課題8 「my_project/interim-report/」**
