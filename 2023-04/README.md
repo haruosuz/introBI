@@ -39,8 +39,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
 - 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - TBA
-  - 中間発表 [Interim report](#interim-report)
+- 2023-05-30 No. 8 - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
 - 2023-06-06 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
@@ -56,7 +55,7 @@
 - 試験 Exam (7/24～7/29)
 
 ----------
-## Interim report
+## midterm presentation
 **中間発表**
 
 Presentation time is 1 minute. Report your project (analysis data).
@@ -306,7 +305,7 @@ p.23
 
 > ###### What's in a Name?  
 > Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2023-04-11.md`).  
-> ファイル（ディレクトリ）名には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使わない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2023-04-11.md`）  
+> ファイルやディレクトリの名前には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使用しない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2023-04-11.md`）  
 
 [Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths) | 
 [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)  
