@@ -168,8 +168,7 @@ Submit a compressed file of your project directory.
 プロジェクトディレクトリの圧縮ファイルを提出する。  
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
-Using
-[Unix Data Tools](https://github.com/haruosuz/introBI/blob/master/2022/README.md#unix-data-tools)  
+Using Unix Data Tools  
 Unixコマンドを用いてデータを検査する。  
 
 ----------
