@@ -169,7 +169,7 @@ Submit a compressed file of your project directory.
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using Unix Data Tools  
-Unixコマンドを用いてデータを検査する。  
+Unixデータツールを用いてデータを検査する。  
 
 ----------
 ## assignment 9
