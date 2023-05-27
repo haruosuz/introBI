@@ -175,8 +175,8 @@ Unixデータツールを用いてデータを検査する。
 ## assignment 9
 **課題9 「guest-speaker/README.md」**
 
-Please provide your comments related to the class (questions, feedback, anything) in the *README.md* file and submit it.  
-*README.md*ファイルに、授業に関するコメント（質問、感想、その他何でも）を記載して提出する。  
+Please provide your comments, questions, or anything related to today's special lecture in the *README.md* file and submit it.  
+本日の特別講演に関するコメント、質問、その他何でも、*README.md* ファイルに記載して提出する。  
 
 ----------
 ## assignment 12
