@@ -14,8 +14,8 @@
 - [assignment 5](#assignment-5) 課題5 「script.sh」
 - [assignment 6](#assignment-6) 課題6 「my_project/」
 - [assignment 7](#assignment-7) 課題7 「my_project/examples/」
-- [assignment 8](#assignment-8) 課題8 「my_project/interim-report/」
-- [assignment 9](#assignment-9) 課題9 「my_project/unix-data-tools/」
+- [assignment 8](#assignment-8) 課題8 「my_project/unix-data-tools/」
+- [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
 - [assignment 12](#assignment-12) 課題12 「my_project_diff_date/」
 - [assignment 13](#assignment-13) 課題13 「my_project_diff_envr/」
 - [assignment 14](#assignment-14) 課題14 「my_project_final/」
@@ -162,30 +162,22 @@ date +%F
 
 ----------
 ## assignment 8
-**課題8 「my_project/interim-report/」**
+**課題8 「my_project/unix-data-tools/」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
-```
-mkdir -p my_project/{data,scripts,analysis}
-touch my_project/data/input.txt
-ls -l my_project/data/input.txt > my_project/analysis/output.txt
-find my_project
-zip --exclude 'my_project/data/*' -r my_project.zip my_project/
-```
-
-----------
-## assignment 9
-**課題9 「my_project/unix-data-tools/」**
+Submit a compressed file of your project directory.  
+プロジェクトディレクトリの圧縮ファイルを提出する。  
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using
 [Unix Data Tools](https://github.com/haruosuz/introBI/blob/master/2022/README.md#unix-data-tools)  
 Unixコマンドを用いてデータを検査する。  
 
-Submit a compressed file of your project directory.  
-プロジェクトディレクトリの圧縮ファイルを提出する。  
+----------
+## assignment 9
+**課題9 「guest-speaker/README.md」**
+
+Please provide your comments related to the class (questions, feedback, anything) in the *README.md* file and submit it.
+*README.md*ファイルに、授業に関するコメント（質問、感想、その他何でも）を記載して提出する。  
 
 ----------
 ## assignment 12
