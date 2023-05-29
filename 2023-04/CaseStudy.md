@@ -14,7 +14,7 @@
 - [assignment 5](#assignment-5) 課題5 「script.sh」
 - [assignment 6](#assignment-6) 課題6 「my_project/」
 - [assignment 7](#assignment-7) 課題7 「my_project/examples/」
-- [assignment 8](#assignment-8) 課題8 「my_project/unix-data-tools/」
+- [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
 - [assignment 12](#assignment-12) 課題12 「my_project_diff_date/」
 - [assignment 13](#assignment-13) 課題13 「my_project_diff_envr/」
@@ -162,7 +162,7 @@ date +%F
 
 ----------
 ## assignment 8
-**課題8 「my_project/unix-data-tools/」**
+**課題8 「my_project/inspecting-data/」**
 
 Submit a compressed file of your project directory.  
 プロジェクトディレクトリの圧縮ファイルを提出する。  
