@@ -39,7 +39,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-6)
 - 2023-05-23 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2023-05-30 No. 8 - NCBI Genome List [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
   - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-8)
 - 2023-06-06 No. 9 - [Guest Speaker](#guest-speaker)
