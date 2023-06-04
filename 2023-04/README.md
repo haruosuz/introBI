@@ -903,6 +903,9 @@ Bash assigns the number of command-line arguments to the variable `$#` (this doe
 
 p.401
 訳書427頁
+
+> ###### Reproducibility and Environmental Variables  
+
 ### Conditionals in a Bash Script: if Statements
 ### 12.1.3　Bashスクリプト内の条件文：if文
 
