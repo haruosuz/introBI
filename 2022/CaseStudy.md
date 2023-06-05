@@ -125,52 +125,7 @@ zip --exclude 'ecoli/data/*' -r ecoli.zip ecoli/
 tar --exclude ecoli/data/ -czvf ecoli.tar.gz ecoli/
 ```
 
-Use `man` (e.g. `man zip` and `man tar`) to display the on-line manual pages. press *q* to quit.  
-`man コマンド名`（例えば、`man zip`や`man tar`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
-```
-$man zip
-
-       zip - package and compress (archive) files
-
-       -r
-       --recurse-paths
-              Travel the directory structure recursively
-
-       -x files
-       --exclude files
-              Explicitly exclude the specified files
-```
-
-```
-$man tar
-
-     tar -- manipulate tape archives
-
-     -c      Create a new archive containing the specified items.
-
-     -x      Extract to disk from the archive.
-
-     -z, --gunzip, --gzip
-             (c mode only) Compress the resulting archive with gzip(1).
-
-     -v, --verbose
-
-     -f file, --file file
-             Read the archive from or write the archive to the specified file.
-
-     --exclude pattern
-             Do not process files or directories that match the specified pattern. 
-
-```
-
-- [How to Compress and Extract Files Using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
-```
-# Compress an Entire Directory or a Single File
-tar -czvf archive.tar.gz stuff
-
-# Extract an Archive
-tar -xzvf archive.tar.gz
-```
+https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#compress
 
 ----------
 ## assignment 7
