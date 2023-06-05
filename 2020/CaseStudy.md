@@ -50,6 +50,7 @@
 
 [13 Linux Terminal Shortcuts Every Power Linux User Must Know](https://linuxhandbook.com/linux-shortcuts/)
 
+|||
 |:---------|:---------|
 |Ctrl + A|move the cursor to the beginning of the line|
 |Ctrl + E|move the cursor to the end of the line|
