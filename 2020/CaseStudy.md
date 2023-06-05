@@ -48,10 +48,29 @@ option + ←	１単語分左に移動
 
 [「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
 
-![](http://image.itmedia.co.jp/ait/articles/1605/18/nyumon_09-01.png)
+[10 Examples of chmod command in UNIX Linux](https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html)
+
+![https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html](https://1.bp.blogspot.com/-RzUG1frbLvw/XbVnX6AYBpI/AAAAAAAAbbM/h7HpiDW-F8Emd2C0-dULpC9RzP4n8Dh1ACLcBGAsYHQ/s400/fig_permissions_chmod%2Bcommand.jpg)
 
 ----------
 ## compress
+
+Let's create a project directory (`zmays-snps/`) and create empty data files with sample name (`zmaysA, zmaysB, zmaysC`) and read pair (`R1` and `R2`):  
+プロジェクト・ディレクトリ`zmays-snps/`を作成し、3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
+```
+cd ~/projects/
+mkdir -p zmays-snps/{data/seqs,scripts,analysis}
+touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
+cd zmays-snps/data/
+```
+
+Compress the project directory (`zmays-snps/`):  
+プロジェクト・ディレクトリ (`zmays-snps/`) を圧縮する:  
+```
+zip -r zmays-snps.zip zmays-snps/
+# or
+tar -czvf zmays-snps.tar.gz zmays-snps/
+```
 
 Use `man` (e.g. `man zip` and `man tar`) to display the on-line manual pages. press *q* to quit.  
 `man コマンド名`（例えば、`man zip`や`man tar`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
