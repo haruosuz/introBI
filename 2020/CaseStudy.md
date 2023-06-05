@@ -39,12 +39,27 @@
 「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
 
 [MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
-```
-Ctrl + a	行先頭に移動
-Ctrl + e	行末尾に移動
-option + →	１単語分右に移動
-option + ←	１単語分左に移動
-```
+
+カーソル移動
+	
+|入力|効果|
+|:---------|:---------|
+|||
+| Ctrl + a	|	行先頭に移動 |
+| Ctrl + e	|	行末尾に移動 |
+| option + →	|	１単語分右に移動 |
+| option + ←	|	１単語分左に移動 |
+|||
+
+[13 Linux Terminal Shortcuts Every Power Linux User Must Know](https://linuxhandbook.com/linux-shortcuts/)
+
+|入力|効果|
+|:---------|:---------|
+|||
+|Ctrl + A|move the cursor to the beginning of the line|
+|Ctrl + E|move the cursor to the end of the line|
+|||
+
 
 [「ls -l」コマンドの表示からファイルの属性を理解しよう (1/4)：“応用力”をつけるためのLinux再入門（9） - ＠IT](http://www.atmarkit.co.jp/ait/articles/1605/18/news015.html)
 
