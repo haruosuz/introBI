@@ -33,11 +33,12 @@
     # change shell to bash
     bash
 
+2017年11月22日
 [ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
+ショートカット編
+コマンド編
 
-単語単位でカーソルを移動します。
-「happy terminal life」と打った後に「option + →」、「option + ←」を押しています。
-
+2017年03月26日
 [MacのTerminalでのショートカットキー](https://qiita.com/orangeboy/items/a51730ec2d157bf064d6)
 
 カーソル移動
@@ -48,6 +49,7 @@
 | option + →	|	１単語分右に移動 |
 | option + ←	|	１単語分左に移動 |
 
+Jun 1, 2023
 [13 Linux Terminal Shortcuts Every Power Linux User Must Know](https://linuxhandbook.com/linux-shortcuts/)
 
 |||
