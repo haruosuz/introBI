@@ -75,6 +75,8 @@ People outside of Keio University SFC will also attend the lectures.
 
 ### 2023-06-06
 - Title: "Organizing a data analysis project"
+- Slides: https://kirill-kryukov.com/study/temp/Keio/Part-1-slides.pdf
+- Commands: https://kirill-kryukov.com/study/temp/Keio/script-1.txt
 
 ### 2023-06-13
 - Title: "Designing reproducible computational experiments"
@@ -967,11 +969,12 @@ p.405
 
 Let's create a project directory (`zmays-snps/`) and create empty data files with sample name (`zmaysA, zmaysB, zmaysC`) and read pair (`R1` and `R2`):  
 プロジェクト・ディレクトリ`zmays-snps/`を作成し、3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
-
-    cd ~/projects/
-    mkdir -p zmays-snps/{data/seqs,scripts,analysis}
-    touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
-    cd zmays-snps/data/
+```
+cd ~/projects/
+mkdir -p zmays-snps/{data/seqs,scripts,analysis}
+touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
+cd zmays-snps/data/
+```
 
 `for` loop to repeat the same task for each file:  
 `for`文で各ファイルに同じ処理を繰り返す:  
