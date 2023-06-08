@@ -1171,6 +1171,8 @@ Here, we'll work with plain-text data formats (tab-delimited file formats) such 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 - [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
 
+p.129
+訳書142頁
 ### Inspecting Data with Head and Tail
 ### 7.3.1　headとtailによるデータの検査
 
@@ -1189,11 +1191,6 @@ Here, we'll work with plain-text data formats (tab-delimited file formats) such 
 
 	seq 3 > nums.txt
 	tail -n +2 nums.txt
-
-See both the beginning and end of a file:  
-ファイルの先頭と末尾の両方を表示する:  
-
-    (head -n 1; tail -n 1) < nums.txt
 
 p.131
 訳書144頁
@@ -1268,13 +1265,6 @@ p.139
 ### Formatting Tabular Data with column
 ### 7.3.5　columnによる表形式データへの整形
 
-`column -t` produces readable columns.  
-`column -t` は、読みやすい列を生成する。  
-
-    head -n 3 Mus_musculus.GRCm38.75_chr1_random.gtf | cut -f 1-8 | column -t
-
-    head -n 3 Mus_musculus.GRCm38.75_chr1_bed.csv | column -t -s","
-
 p.140
 訳書153頁
 ### The All-Powerful Grep
@@ -1297,16 +1287,6 @@ p.140
 
     grep -v "chr2" example.bed
 
-Partially matching may bite us.  
-部分マッチが悪さをする例。  
-
-    grep "bio" example.txt
-
-`grep -w` matches entire words (surrounded by whitespace).  
-`grep -w` は単語全体（空白に囲まれた部分）にマッチする。
-
-    grep -w "bio" example.txt
-
 Print *n* lines of context before (`-B`), context after (`-A`), and context before and after (`-C`) the matching line:  
 パターンにマッチする行の前（`-B`）、後（`-A`）、前後（`-C`）の文脈*n*行を出力する:  
 
@@ -1319,11 +1299,6 @@ Print *n* lines of context before (`-B`), context after (`-A`), and context befo
 
     grep "chr2" example.bed | wc -l
     grep -c "chr2" example.bed
-
-`grep -o` extracts only the matching part of the pattern:  
-`grep -o` でパターンにマッチする部分だけを抽出する:  
-
-    grep -o "chr2" example.bed
 
 `grep -i` ignores case.  
 `grep -i` で大文字小文字を区別しない。  
