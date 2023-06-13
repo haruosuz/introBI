@@ -80,6 +80,12 @@ People outside of Keio University SFC will also attend the lectures.
 
 ### 2023-06-13
 - Title: "Designing reproducible computational experiments"
+- Scripts:
+  - https://kirill-kryukov.com/study/temp/Keio/script-2-setup.sh
+  - https://kirill-kryukov.com/study/temp/Keio/scripts/1-download-data.sh
+  - https://kirill-kryukov.com/study/temp/Keio/scripts/2-preprocess.sh
+  - https://kirill-kryukov.com/study/temp/Keio/scripts/3-analyze.sh
+  - https://kirill-kryukov.com/study/temp/Keio/scripts/4-summarize.sh
 
 ----------
 ## Final presentation
