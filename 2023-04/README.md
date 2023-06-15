@@ -1117,10 +1117,6 @@ find . -name "*.fastq" | xargs basename -s ".fastq" | xargs -I"{}" echo ./script
 We'll use core Unix tools (`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join, sed`) to manipulate and explore plain-text data formats.  
 主要なUnixコマンド（`head, tail, less, wc, ls, awk, cut, grep, sort, uniq, join, sed`）を用いてプレーンテキスト形式データを操作・探索する。  
 
-- [Bioinformatics Workbook](https://bioinformaticsworkbook.org/)
-  - [Introduction to Unix](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html)
-  - [Unix CheatSheet](https://bioinformaticsworkbook.org/Appendix/Unix/UnixCheatSheet.html)
-
 ```
 # Open a terminal window
 bash
