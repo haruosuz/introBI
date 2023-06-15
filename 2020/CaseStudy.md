@@ -24,7 +24,10 @@
 ----------
 ## unix
 
-- [Learning the shell - Lesson 2: Navigation](https://linuxcommand.org/lc3_lts0020.php)
+- 2023 [Bioinformatics Workbook](https://bioinformaticsworkbook.org/)
+  - [Introduction to Unix](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html)
+  - [Unix CheatSheet](https://bioinformaticsworkbook.org/Appendix/Unix/UnixCheatSheet.html)
+- 2000-2023 [Learning the shell - Lesson 2: Navigation](https://linuxcommand.org/lc3_lts0020.php)
 - 2018 [Introduction to UNIX Commands](https://esslab.jp/~ess/teaching/2018/intro_c_program/unix_command_eng.pdf)
 - 2014 [How To Use cd, pwd, and ls to Explore the File System on a Linux Server | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cd-pwd-and-ls-to-explore-the-file-system-on-a-linux-server)
 
