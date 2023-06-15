@@ -45,7 +45,8 @@
 - 2023-06-06 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-9)
 - 2023-06-13 No. 10 - [Guest Speaker](#guest-speaker)
-- 2023-06-20 No. 11 - TBA
+- 2023-06-20 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+  - 課題11 [assignment 11](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-11)
 - 2023-06-27 No. 12 - TBA
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
 - 2023-07-04 No. 13 - TBA
