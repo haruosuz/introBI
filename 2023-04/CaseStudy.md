@@ -16,6 +16,7 @@
 - [assignment 7](#assignment-7) 課題7 「my_project/examples/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
+- [assignment 11](#assignment-11) 課題11 「unix-data-tools/README.md」
 - [assignment 12](#assignment-12) 課題12 「my_project_diff_date/」
 - [assignment 13](#assignment-13) 課題13 「my_project_diff_envr/」
 - [assignment 14](#assignment-14) 課題14 「my_project_final/」
@@ -64,24 +65,23 @@ Submit the compressed file (`zmays-snps.zip`).
 ## assignment 3
 **課題3 「unix_shell/README.md」**
 
-プロジェクト・ノート（Markdownファイル*README.md*）の最新版を提出する。
-
-Submit the latest version of the project notebook (Markdown file *README.md*).
+Submit the latest version of the project notebook (Markdown file *README.md*).  
+プロジェクト・ノート（Markdownファイル*README.md*）の最新版を提出する。  
 
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
-プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
 
 Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data.  
+プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
 
 ----------
 ## assignment 5
 **課題5 「script.sh」**
-
-興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
+ 
 Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
+興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
 
 ----------
 ## assignment 6
@@ -164,8 +164,8 @@ date +%F
 ## assignment 8
 **課題8 「my_project/inspecting-data/」**
 
-Submit a compressed file of your project directory.  
-プロジェクトディレクトリの圧縮ファイルを提出する。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using Unix Data Tools  
@@ -177,6 +177,16 @@ Unixデータツールを用いてデータを検査する。
 
 Please provide your comments, questions, or anything related to today's special lecture in the *README.md* file and submit it.  
 本日の特別講演に関するコメント、質問、その他何でも、*README.md* ファイルに記載して提出する。  
+
+----------
+## assignment 11
+**課題11 「unix-data-tools/README.md」**
+
+Submit the latest version of the plain-text project notebook (*README.md* file).  
+プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。  
+
+Personal note on Unix data tools is OK.  
+Unixデータツールに関する個人的なメモでOKです。  
 
 ----------
 ## assignment 12
