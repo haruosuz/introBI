@@ -16,10 +16,10 @@
 - [assignment 7](#assignment-7) 課題7 「my_project/examples/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
-- [assignment 11](#assignment-11) 課題11 「unix-data-tools/README.md」
-- [assignment 12](#assignment-12) 課題12 「my_project_diff_date/」
-- [assignment 13](#assignment-13) 課題13 「my_project_diff_envr/」
-- [assignment 14](#assignment-14) 課題14 「my_project_final/」
+- [assignment 11](#assignment-11) 課題11 「my_project/unix-data-tools/」
+- [assignment 12](#assignment-12) 課題12 「my_project/diff_date/」
+- [assignment 13](#assignment-13) 課題13 「my_project/diff_envr/」
+- [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
 ----------
 ## assignment 0
@@ -164,12 +164,12 @@ date +%F
 ## assignment 8
 **課題8 「my_project/inspecting-data/」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
+
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 9
@@ -180,36 +180,45 @@ Please provide your comments, questions, or anything related to today's special 
 
 ----------
 ## assignment 11
-**課題11 「unix-data-tools/README.md」**
+**課題11 「my_project/unix-data-tools/」**
 
-Submit the latest version of the plain-text project notebook (*README.md* file).  
-プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。  
+Inspecting data Using Unix Data Tools  
+Unixデータツールを用いてデータを検査する。  
 
-Personal note on Unix data tools is OK.  
-Unixデータツールに関する個人的なメモでOKです。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 12
-**課題12 「my_project_diff_date/」**
+**課題12 「my_project/diff_date/」**
 
 Run the data analysis on two or more different dates (e.g., `2022-12-27`, `2023-01-10`).  
 2つ以上の異なる日付（例えば、`2022-12-27`, `2023-01-10`）でデータ解析を実行する。  
-`date +%F`
+```
+date
+date +%F
+
+cd ~/projects/
+mkdir -p my_test/{data/$(date +%F),analysis/$(date +%F)}
+cd my_test/
+touch ./data/$(date +%F)/input.txt
+ls -l ./data/$(date +%F)/input.txt > analysis/$(date +%F)/output.txt
+find . -type f | xargs head
+```
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
 ```
-diff log.2022-12-27.txt log.2023-01-10.txt
 diff data/2022-12-27/input.txt data/2023-01-10/input.txt
 diff analysis/2022-12-27/output.txt analysis/2023-01-10/output.txt
 ```
 
-Submit a compressed file of your project directory.  
-プロジェクトディレクトリの圧縮ファイルを提出する。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 13
-**課題13 「my_project_diff_envr/」**
+**課題13 「my_project/diff_envr/」**
 
 Run the data analysis on two or more different computer environments.  
 2つ以上の異なるコンピューター環境でデータ解析を実行する。  
@@ -217,19 +226,18 @@ Run the data analysis on two or more different computer environments.
 Document the reproducibility of the results (e.g., differences between files `diff FILE1 FILE2`).  
 結果の再現性を記録する（例えば、ファイルの差分 `diff FILE1 FILE2` など）。  
 
-Submit a compressed file of your project directory.  
-プロジェクトディレクトリの圧縮ファイルを提出する。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 14
-**課題14 「my_project_final/」**
+**課題14 「my_project/final/」**
 
 Update your project directory based on questions and comments at the final presentation.  
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
-Submit a compressed file of your project directory.  
-プロジェクトディレクトリの圧縮ファイルを提出する。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
-
 
