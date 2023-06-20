@@ -192,25 +192,24 @@ Submit a compressed file of your project directory (excluding data files `data/*
 ## assignment 12
 **課題12 「my_project/diff_date/」**
 
-Run the data analysis on two or more different dates (e.g., `2022-12-27`, `2023-01-10`).  
-2つ以上の異なる日付（例えば、`2022-12-27`, `2023-01-10`）でデータ解析を実行する。  
+Run the data analysis on two or more different dates.  
+2つ以上の異なる日付でデータ解析を実行する。  
 ```
 date
 date +%F
 
 cd ~/projects/
-mkdir -p my_test/{data/$(date +%F),analysis/$(date +%F)}
-cd my_test/
-touch ./data/$(date +%F)/input.txt
-ls -l ./data/$(date +%F)/input.txt > analysis/$(date +%F)/output.txt
-find . -type f | xargs head
+mkdir -p my_example/{data/$(date +%F),analysis/$(date +%F)}
+cd my_example/
+touch data/$(date +%F)/input.txt
+ls -l data/$(date +%F)/input.txt > analysis/$(date +%F)/output.txt
 ```
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
 ```
-diff data/2022-12-27/input.txt data/2023-01-10/input.txt
-diff analysis/2022-12-27/output.txt analysis/2023-01-10/output.txt
+diff data/2023-06-18/input.txt data/2023-06-20/input.txt
+diff analysis/2023-06-18/output.txt analysis/2023-06-20/output.txt
 ```
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
