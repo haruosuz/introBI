@@ -52,7 +52,7 @@
 - 2023-07-04 No. 13 - TBA
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-13)
 - 2023-07-11 No. 14 No. 14 - 最終回 final class
-  - 最終発表 [Final presentation](#final-presentation)
+  - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-14)
 - 試験 Exam (7/24～7/29)
 
@@ -89,7 +89,7 @@ People outside of Keio University SFC will also attend the lectures.
   - https://kirill-kryukov.com/study/temp/Keio/scripts/4-summarize.sh
 
 ----------
-## Final presentation
+## final presentation
 **最終発表**
 
 Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
