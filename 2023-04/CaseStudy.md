@@ -195,21 +195,21 @@ Submit a compressed file of your project directory (excluding data files `data/*
 Run the data analysis on two or more different dates.  
 2つ以上の異なる日付でデータ解析を実行する。  
 ```
-date
-date +%F
-
-cd ~/projects/
-mkdir -p my_example/{data/$(date +%F),analysis/$(date +%F)}
+#cd ~/projects/
+#mkdir my_example/
 cd my_example/
-touch data/$(date +%F)/input.txt
-ls -l data/$(date +%F)/input.txt > analysis/$(date +%F)/output.txt
+TODAY=$(date +%F)
+echo ${TODAY}
+mkdir -p {analysis/${TODAY},data/${TODAY}}
+touch data/${TODAY}/input.txt
+ls data/${TODAY}/input.txt > analysis/${TODAY}/output.txt
+ls -l data/${TODAY}/input.txt >> analysis/${TODAY}/output.txt
 ```
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
 ```
-diff data/2023-06-18/input.txt data/2023-06-20/input.txt
-diff analysis/2023-06-18/output.txt analysis/2023-06-20/output.txt
+diff analysis/2023-06-18/output.txt analysis/2023-06-26/output.txt
 ```
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
