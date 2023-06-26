@@ -197,9 +197,6 @@ Run the data analysis on two or more different dates.
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
-```
-analysis/2023-06-26/output.txt analysis/2023-06-27/output.txt
-```
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
