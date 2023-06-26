@@ -1454,12 +1454,6 @@ Add a column with the length of this feature (end position - start position) for
 
 	awk '$1 ~ /chr2|chr3/ { print $0 "\t" $3 - $2 }' example.bed
 
-Using two special patterns `BEGIN` and `END`, calculate the mean feature length in *example.bed*. Take the sum feature lengths, and then divide by the total number of records:  
-2つの特殊パターン`BEGIN`と`END`を用いて、*example.bed*の特徴領域長の平均を計算する。特徴領域の長さを合計し、レコードの総数で割る:  
-
-    # NR (Number of Record)
-    awk 'BEGIN{ sum=0 }; { sum += ($3-$2) }; END{ print sum/NR };' example.bed
-
 p.161
 訳書174頁
 > ###### Setting Field, Output Field, and Record Separators  
