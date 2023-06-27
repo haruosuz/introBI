@@ -168,9 +168,6 @@ date +%F
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 9
 **課題9 「guest-speaker/README.md」**
@@ -185,9 +182,6 @@ Please provide your comments, questions, or anything related to today's special 
 Inspecting data Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 12
 **課題12 「my_project/diff_date/」**
@@ -197,6 +191,9 @@ Run the data analysis on two or more different dates.
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
+```
+diff analysis/2023-06-26/output.txt analysis/2023-06-27/output.txt
+```
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
@@ -208,12 +205,6 @@ Submit a compressed file of your project directory (excluding data files `data/*
 Run the data analysis on two or more different computer environments.  
 2つ以上の異なるコンピューター環境でデータ解析を実行する。  
 
-Document the reproducibility of the results (e.g., differences between files `diff FILE1 FILE2`).  
-結果の再現性を記録する（例えば、ファイルの差分 `diff FILE1 FILE2` など）。  
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 14
 **課題14 「my_project/final/」**
@@ -221,8 +212,6 @@ Submit a compressed file of your project directory (excluding data files `data/*
 Update your project directory based on questions and comments at the final presentation.  
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 
