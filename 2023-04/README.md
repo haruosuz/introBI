@@ -54,7 +54,6 @@
 - 2023-07-11 No. 14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-14)
-- 試験 Exam (7/24～7/29)
 
 ----------
 ## midterm presentation
@@ -293,21 +292,26 @@ p.21
 
 <img alt="" width=50% src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=info:doi/10.1371/journal.pcbi.1000424.g001">
 
-Store all project files in a single directory.  
-プロジェクトの全ファイルを1つのディレクトリに格納する。  
+Store all project files in a single directory with a clear name.  
+プロジェクトの全ファイルを、明確な名前の1つのディレクトリに格納する。  
 
-Create a project directory (`zmays-snps/`) for [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) calling in maize (*Zea mays*):  
-トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリ (`zmays-snps/`) を作成する:  
+Select a short and appropriate project name, and create necessary basic directories.  
+短く適切なプロジェクト名を選択し、基本的なディレクトリをいくつか作成する。  
+
+For instance, creating a project directory for [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) calling in maize (*Zea mays*):  
+例えば、トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリを作成する:  
 
     mkdir -p zmays-snps/{data/seqs,scripts,analysis}
     cd zmays-snps/
 	ls -l
 
 `data/` directory contains all data.  
-`scripts/` directory contains scripts.  
-`analysis/` directory contains output of analysis results.  
 `data/`ディレクトリにデータを格納する。  
+
+`scripts/` directory contains scripts.  
 `scripts/`ディレクトリにスクリプトを格納する。  
+
+`analysis/` directory contains output of analysis results.  
 `analysis/`ディレクトリに解析結果を格納する。  
 
 p.23
