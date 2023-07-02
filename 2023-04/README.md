@@ -924,8 +924,7 @@ p.401
 
 - [if 文と test コマンド | UNIX & Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/if_and_test.html)
 
-The basic syntax is:   
-基本構文:  
+Basic syntax 基本構文:  
 ```
 if [commands]
 then
@@ -1057,8 +1056,8 @@ Use `find` to see a project directory's structure:
 	find zmays-snps
     find zmays-snps -maxdepth 1
 
-The basic syntax for `find` is `find path expression`.  
-`find`の基本構文は「`find パス 検索式`」。
+Basic syntax: `find path expression`  
+基本構文: `find パス 検索式`  
 
 Example 12-1. Find through filename matching  
 例 12-1 ファイル名で検索  
