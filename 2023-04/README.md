@@ -49,7 +49,7 @@
   - 課題11 [assignment 11](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-11)
 - 2023-06-27 No. 12 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-12)
-- 2023-07-04 No. 13 - TBA
+- 2023-07-04 No. 13 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-04/CaseStudy.md#assignment-13)
 - 2023-07-11 No. 14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
@@ -1040,13 +1040,20 @@ p.412
 ### Finding Files with find
 ### 12.2.2　findでファイルを見つける
 
-Unlike `ls`, `find` will recursively search for matching files.  
+Unlike `ls`, `find` searches for matching files recursively.  
 `ls`とは異なり、`find`は再帰的に一致するファイルを検索する。  
 
-Using `find` to see a project directory's structure:  
+Let's create a project directory (`zmays-snps/`) and create empty data files with sample name (`zmaysA, zmaysB, zmaysC`) and read pair (`R1` and `R2`):  
+プロジェクト・ディレクトリ`zmays-snps/`を作成し、3つのサンプル（`zmaysA, zmaysB, zmaysC`）毎にペア（`R1, R2`）の空データファイルを作成する:  
+```
+cd ~/projects/
+mkdir -p zmays-snps/{data/seqs,scripts,analysis}
+touch zmays-snps/data/seqs/zmays{A,B,C}_R{1,2}.fastq
+```
+
+Use `find` to see a project directory's structure:  
 `find`でプロジェクト・ディレクトリの構造を見る:  
 
-    cd ~/projects/
 	find zmays-snps
     find zmays-snps -maxdepth 1
 
