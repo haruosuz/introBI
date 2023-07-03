@@ -189,6 +189,13 @@ Unixデータツールを用いてデータを検査する。
 Run the data analysis on two or more different dates.  
 2つ以上の異なる日付でデータ解析を実行する。  
 
+----------
+## assignment 13
+**課題13 「my_project/diff_envr/」**
+
+Run the data analysis on two or more different computer environments.  
+2つ以上の異なるコンピューター環境でデータ解析を実行する。  
+
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
 ```
@@ -199,19 +206,10 @@ Submit a compressed file of your project directory (excluding data files `data/*
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
-## assignment 13
-**課題13 「my_project/diff_envr/」**
-
-Run the data analysis on two or more different computer environments.  
-2つ以上の異なるコンピューター環境でデータ解析を実行する。  
-
-----------
 ## assignment 14
 **課題14 「my_project/final/」**
 
 Update your project directory based on questions and comments at the final presentation.  
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
-
 ----------
-
