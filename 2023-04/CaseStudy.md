@@ -93,20 +93,6 @@ Submit the compressed file (e.g. `ecoli.zip`) of your project directory (e.g. `e
 Document the details of your project in the *README.md* file.  
 *README.md*ファイルにプロジェクトの詳細情報を記録する。  
 
-[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
-[`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
-```
-# Print operating system name
-uname -a
-
-# print Mac OS X operating system version information
-sw_vers
-
-# display date and time
-date
-date +%F
-```
-
 Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
 標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
 ```
@@ -154,11 +140,6 @@ Submit a compressed file of your project directory (excluding data files `data/*
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 Remember to update your *README.md* file (date, etc.).
-```
-# display date and time
-date
-date +%F
-```
 
 ----------
 ## assignment 8
@@ -189,12 +170,28 @@ Unixデータツールを用いてデータを検査する。
 Run the data analysis on two or more different dates.  
 2つ以上の異なる日付でデータ解析を実行する。  
 
+```
+# display date and time
+date
+date +%F
+```
+
 ----------
 ## assignment 13
 **課題13 「my_project/diff_envr/」**
 
 Run the data analysis on two or more different computer environments.  
 2つ以上の異なるコンピューター環境でデータ解析を実行する。  
+
+[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
+[`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
+```
+# Print operating system name
+uname -a
+
+# print Mac OS X operating system version information
+sw_vers
+```
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
