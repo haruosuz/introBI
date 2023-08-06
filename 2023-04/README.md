@@ -1354,6 +1354,12 @@ commands are useful in situations where something isn't behaving correctly and y
 	hexdump -c improper.fa
 
 - [文字コードと改行コード](https://shellscript.sunone.me/character_code.html)
+- 
+- [Remove non-printable ASCII characters from a file with this Unix command](https://alvinalexander.com/blog/post/linux-unix/how-remove-non-printable-ascii-characters-file-unix/)
+- [Remove non-ASCII characters from CSV](https://stackoverflow.com/questions/3337936/remove-non-ascii-characters-from-csv)
+```
+perl -i.bak -pe 's/[^[:ascii:]]//g' <your file>
+```
 
 p.147
 訳書160頁
