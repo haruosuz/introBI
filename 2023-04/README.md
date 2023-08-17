@@ -1473,7 +1473,7 @@ Add a column with the length of this feature (end position - start position) for
 p.161
 訳書174頁
 > ###### Setting Field, Output Field, and Record Separators  
-    awk -F"," -v OFS="\t" '{print $1,$2,$3}' Mus_musculus.GRCm38.75_chr1_bed.csv
+    awk -F"," -v OFS="\t" '{print $1,$2,$3}' Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
 
 p.163
 訳書176頁
