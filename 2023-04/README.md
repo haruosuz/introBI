@@ -1516,7 +1516,7 @@ Combining two sequential commands' standard output into a single stream with a s
 
 	cat <(echo "hello, process substitution")
 
-    diff <(tail example.bed) <(tail -n +2 test.bed)
+    diff <(tail example.bed) <(tail test.bed)
 
 ## The Unix Philosophy Revisited
 ## 7.5　Unix哲学再考
