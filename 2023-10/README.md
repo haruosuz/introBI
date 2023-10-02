@@ -183,10 +183,26 @@ cp notebook.md README.md
 [emacs](https://www.sfc.itc.keio.ac.jp/en/computer_misc_unix_emacs.html) It is a very popular multifunction text editor on UNIX.  
 [emacs](https://www.sfc.itc.keio.ac.jp/ja/computer_misc_unix_emacs.html) UNIXでは非常にメジャーな多機能テキストエディタです。  
 
-https://formulae.brew.sh/formula/emacs
+https://formulae.brew.sh/formula/emacs  
 Install command:  
 ```
 brew install emacs
+```
+
+使い方  
+How to use  
+```
+# 起動
+# run
+emacs README.md
+
+# 終了
+# close
+# [Ctrl] + [x] + [c]
+
+# 保存
+# save
+# [Ctrl] + [x] + [s]
 ```
 
 ### Git
