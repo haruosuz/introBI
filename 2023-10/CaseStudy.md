@@ -47,8 +47,7 @@ personal whole genome sequence data of Dr. Masaru Tomita.
 
 ## References:
 - https://www.ddbj.nig.ac.jp/news/ja/2012-07-31.html
-- https://www.ddbj.nig.ac.jp/news/en/2012-07-31-e.html
-- https://ddbj.nig.ac.jp/resource/bioproject/PRJDB2759
+- https://www.ncbi.nlm.nih.gov/bioproject/PRJDB2759/
 ```
 
 https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md
@@ -214,3 +213,6 @@ Update your project directory based on questions and comments at the final prese
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
 ----------
+
+
+
