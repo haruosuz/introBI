@@ -33,20 +33,24 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 ## assignment 1
 **課題1 「README.md」**
 
-プレーンテキスト形式のMarkdownファイル*README.md*を編集し提出する。例えば、著者名や更新日を修正する。
-
-Edit and submit the plain-text Markdown file *README.md*.
-
-For examples,
+Edit and submit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
+プレーンテキスト形式のMarkdownファイル *README.md* を編集し、提出する。例えば、著者名や更新日を追加し、プロジェクトのタイトルや概要を編集する。  
 ```
 Haruo Suzuki  
-Last Update: 2019-10-17  
+Last Update: 2023-10-03  
+
+# Genome sequence data of Dr. Masaru Tomita
+Project started 2023-10-03.  
+
+This is a reproducible bioinformatics project using the personal whole genome sequence data of Dr. Masaru Tomita.
+
+## References:
+- https://www.ddbj.nig.ac.jp/news/ja/2012-07-31.html
+- https://www.ddbj.nig.ac.jp/news/en/2012-07-31-e.html
+- https://ddbj.nig.ac.jp/resource/bioproject/PRJDB2759
 ```
-should be changed to:
-```
-Masaru Tomita  
-Last Update: 2023-04-08  
-```
+
+https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md
 
 ----------
 ## assignment 2
@@ -71,7 +75,6 @@ Submit the latest version of the project notebook (Markdown file *README.md*).
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
-
 
 Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data.  
 プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
