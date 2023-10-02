@@ -42,7 +42,8 @@ Last Update: 2023-10-03
 # Genome sequence data of Dr. Masaru Tomita
 Project started 2023-10-03.  
 
-This is a reproducible bioinformatics project using the personal whole genome sequence data of Dr. Masaru Tomita.
+This is a reproducible bioinformatics project using the 
+personal whole genome sequence data of Dr. Masaru Tomita.
 
 ## References:
 - https://www.ddbj.nig.ac.jp/news/ja/2012-07-31.html
