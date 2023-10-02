@@ -1,7 +1,7 @@
 # 2023-10
 
-2023 Spring
-[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/7984)
+2023 Fall
+[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/9301)
 
 ## References
 **参考文献**
@@ -39,18 +39,14 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-6)
 - 2023-11-14 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-7)
-- 
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 
 - 2023-12-05 No. 8 - [Guest Speaker](#guest-speaker)
 - 2023-12-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
-- 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
-- 
-- 湘南藤沢キャンパス一斉休業（12/28～1/5）
-- 
-- 2024-01-09 No. 12
-- 2024-01-16 No. 13
+- 2023-12-26 No. 11 - TBD
+- 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
+- 2024-01-09 No. 12 - TBD
+- 2024-01-16 No. 13 - TBD
 - 2024-01-23 No. 14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-14)
@@ -168,37 +164,30 @@ brew install wget
 Download the plain-text Markdown file:  
 プレーンテキスト形式のMarkdownファイルをダウンロードする:  
 ```
-   wget https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
+   wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
 ```
 or
 ```
-curl -O https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md
+curl -O https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
 ```
 
-Rename the file:  
-ファイル名を変更する:  
+Copy the file:  
+ファイルをコピーする:  
 ```
-mv markdown.md README.md
+cp notebook.md README.md
 ```
 
 ### text editor
 テキストエディタ
 
-https://github.blog/2022-06-08-sunsetting-atom/
-download a previous Atom version.
-https://github.com/atom/atom/releases/tag/v1.60.0
+[emacs](https://www.sfc.itc.keio.ac.jp/en/computer_misc_unix_emacs.html) It is a very popular multifunction text editor on UNIX.  
+[emacs](https://www.sfc.itc.keio.ac.jp/ja/computer_misc_unix_emacs.html) UNIXでは非常にメジャーな多機能テキストエディタです。  
 
-[try opening Atom and clicking on the `Atom` tab to navigate to the `Install Shell Commands` prompt.](https://gist.github.com/damwhit/90d0e9e27a964bd176a167c78e676e8e)
-
-open the file with `atom`:  
-atomでファイルを開く:  
+https://formulae.brew.sh/formula/emacs
+Install command:  
 ```
-atom README.md
+brew install emacs
 ```
-
-[Markdown文書のプレビュー（Control+Shift+m）](http://dotinstall.com/lessons/basic_atom/30511)  
-Show the rendered HTML markdown to the right of the current editor using `ctrl-shift-m`.  
-![https://github.com/atom/markdown-preview](https://cloud.githubusercontent.com/assets/378023/10013086/24cad23e-6149-11e5-90e6-663009210218.png)
 
 ### Git
 https://git-scm.com/ version control system  
