@@ -133,7 +133,7 @@ ls -l
 
 ### Homebrew
 https://brew.sh/ Package Manager for macOS (or Linux)  
-https://brew.sh/index_ja パッケージ管理システム  
+https://brew.sh/ja/ パッケージ管理システム  
 
 Install Homebrew  
 インストール  
