@@ -33,8 +33,11 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 ## assignment 1
 **課題1 「README.md」**
 
-Edit and submit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
-プレーンテキスト形式のMarkdownファイル *README.md* を編集し、提出する。例えば、著者名や更新日を追加し、プロジェクトのタイトルや概要を編集する。  
+[*README.md* ファイルを課題としてSOLに提出する。  
+Submit the *README.md* file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
+
+Edit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
+プレーンテキスト形式のMarkdownファイル *README.md* を編集する。例えば、著者名や日付を追加し、プロジェクトのタイトルや概要を編集する。  
 ```
 Haruo Suzuki  
 Last Update: 2023-10-03  
