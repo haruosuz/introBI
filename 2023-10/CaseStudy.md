@@ -33,9 +33,6 @@ Briefly describe disciplines/fields (e.g. machine learning, image processing, co
 ## assignment 1
 **課題1 「README.md」**
 
-[*README.md* ファイルを課題としてSOLに提出する。  
-Submit the *README.md* file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
 Edit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
 プレーンテキスト形式のMarkdownファイル *README.md* を編集する。例えば、著者名や日付を追加し、プロジェクトのタイトルや概要を編集する。  
 ```
@@ -67,6 +64,9 @@ zip -r zmays-snps.zip zmays-snps/
 
 Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
+
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 3
