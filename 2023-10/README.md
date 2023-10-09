@@ -292,8 +292,10 @@ Select a short and appropriate project name, and create necessary basic director
 For instance, creating a project directory for [SNP](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) calling in maize (*Zea mays*):  
 例えば、トウモロコシ（学名*Zea mays*）の[SNP](https://ja.wikipedia.org/wiki/一塩基多型)検出プロジェクトのディレクトリを作成する:  
 
-    mkdir -p zmays-snps/{data/seqs,scripts,analysis}
-    cd zmays-snps/
+	mkdir zmays-snps
+	cd zmays-snps
+	mkdir data
+	mkdir data/seqs scripts analysis
 	ls -l
 
 `data/` directory contains all data.  
