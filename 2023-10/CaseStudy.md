@@ -65,22 +65,23 @@ zip -r zmays-snps.zip zmays-snps/
 Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 3
 **課題3 「unix_shell/README.md」**
 
-Submit the latest version of the project notebook (Markdown file *README.md*).  
-プロジェクト・ノート（Markdownファイル*README.md*）の最新版を提出する。  
+Submit the latest version of the plain-text project notebook (Markdown file *README.md* file). For example, copy and paste some command lines used today.  
+プロジェクト・ノート（Markdownファイル*README.md*ファイル）の最新版を提出する。例えば、本日使用したコマンドラインいくつかをコピーして貼り付ける。  
+
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
-Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data.  
-プロジェクト・ノート（*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
+Submit the latest version of the plain-text project notebook (Markdown file *README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data.  
+プロジェクト・ノート（Markdownファイル*README.md*ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データをいつ・どのようにダウンロードしたかを記録する。  
 
 ----------
 ## assignment 5
