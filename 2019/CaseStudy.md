@@ -106,13 +106,13 @@ zmays-snps/data/README
 ## GRCh37/hg19 human chromosome 22
 **ヒト22番染色体**
 
-### Website
-**ウェブサイト**
+### Retrieving URLs from the Database Website
+**データベースのウェブサイトからURLを取得する**  
 
 - In [UCSC Genome Browser Home](http://genome.ucsc.edu), open [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html).  
-[UCSC Genome Browser Home](http://genome.ucsc.edu)で [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html)を開く。
+[UCSC Genome Browser Home](http://genome.ucsc.edu)で [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html) を開く。
 - Click on **Human genomes**, and open the [Sequence data by chromosome](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/) section below "Feb. 2009 (GRCh37/hg19)".  
-*Human genomes* をクリックし、"Feb. 2009 (GRCh37/hg19)"の[Sequence data by chromosome](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)を開く。
+**Human genomes** をクリックし、"Feb. 2009 (GRCh37/hg19)"の[Sequence data by chromosome](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)を開く。
 
       Name                        Last modified      Size  Description
 
@@ -123,29 +123,34 @@ zmays-snps/data/README
 - Right click on the link to the files, and select "Copy Link Address".  
 ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
-### Download
-**ダウンロード**
+### Downloading data
+データのダウンロード
 
+[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、ディレクトリを作成し移動する:  
 ```
-# Create a directory and change directory:  
-# ディレクトリを作成し移動する:  
+# Open a terminal window
+bash
+
+# make directory
 mkdir -p ~/projects/data/hg19
+
+# change directory
 cd ~/projects/data/hg19/
 
-# Download the compressed file chr22.fa.gz for chromosome 22 using `wget`:  
-# 22番染色体の圧縮ファイル chr22.fa.gz を `wget` でダウンロードする:  
+# Download the compressed file chr22.fa.gz using `wget`:  
+# 圧縮ファイル chr22.fa.gz を `wget` を使用してダウンロードする:  
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
 # Calculate the MD5 checksum:  
-# MD5チェックサムを計算する:  
+# MD5 チェックサムを計算する:  
 md5 chr22.fa.gz
 
 # Download the md5sum.txt file using `wget`:  
-# md5sum.txt ファイルを `wget` を使用してダウンロードする:  
+# `wget` を使用して md5sum.txt ファイルをダウンロードする:  
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
 
-# Search for "chr22.fa.gz" in md5sum.txt:
-# md5sum.txt ファイル内で "chr22.fa.gz" を検索する:  
+# Search for "chr22.fa.gz" in md5sum.txt:  
+# md5sum.txt ファイル内で "chr22.fa.gz" を検索する:   
 grep "chr22.fa.gz" md5sum.txt
 ```
 
