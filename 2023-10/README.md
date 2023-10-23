@@ -40,10 +40,10 @@
 - 2023-11-14 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 2023-12-05 No. 8 - [Guest Speaker](#guest-speaker)
+- 2023-12-05 No. 8 - TBD
 - 2023-12-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
-- 2023-12-26 No. 11 - TBD
+- 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - TBD
 - 2024-01-16 No. 13 - TBD
