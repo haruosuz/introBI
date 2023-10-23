@@ -7,7 +7,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
-- [unix](#unix)
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「UNIXコマンド入門」
 - [assignment 2](#assignment-2) 課題No.2 「zmays-snps」
@@ -110,39 +109,49 @@ zmays-snps/data/README
 ### Website
 **ウェブサイト**
 
-[UCSC Genome Browser Home](http://genome.ucsc.edu)の[Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html)を開く。
-"Feb. 2009 (GRCh37/hg19)"の[Data set by chromosome](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)を開く。
+- In [UCSC Genome Browser Home](http://genome.ucsc.edu), open [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html).  
+[UCSC Genome Browser Home](http://genome.ucsc.edu)で [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html)を開く。
+- Click on **Human genomes**, and open the [Sequence data by chromosome](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/) section below "Feb. 2009 (GRCh37/hg19)".  
+*Human genomes* をクリックし、"Feb. 2009 (GRCh37/hg19)"の[Sequence data by chromosome](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)を開く。
 
       Name                        Last modified      Size  Description
-      chr22.fa.gz                 20-Mar-2009 09:02   11M
-      md5sum.txt                  20-Mar-2009 09:49  4.9K
+
+      chr22.fa.gz                 2009-03-20 09:02   11M  
+
+      md5sum.txt                  2009-03-20 09:49  4.9K  
+
+- Right click on the link to the files, and select "Copy Link Address".  
+ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
 ### Download
 **ダウンロード**
 
-ディレクトリを作成し移動する:  
+```
+# Create a directory and change directory:  
+# ディレクトリを作成し移動する:  
+mkdir -p ~/projects/data/hg19
+cd ~/projects/data/hg19/
 
-    mkdir -p ~/projects/data/hg19
-    cd ~/projects/data/hg19/
+# Download the compressed file chr22.fa.gz for chromosome 22 using `wget`:  
+# 22番染色体の圧縮ファイル chr22.fa.gz を `wget` でダウンロードする:  
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
-22番染色体の圧縮ファイル（[chr22.fa.gz](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz)）を`wget`でダウンロードする:  
+# Calculate the MD5 checksum:  
+# MD5チェックサムを計算する:  
+md5 chr22.fa.gz
 
-    wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+# Download the md5sum.txt file using `wget`:  
+# md5sum.txt ファイルを `wget` を使用してダウンロードする:  
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
 
-MD5チェックサムを計算する:  
-
-    md5 chr22.fa.gz
-
-MD5ファイル（[md5sum.txt](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt)）を`wget`でダウンロードして確認する:  
-
-    wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
-
-    grep "chr22.fa.gz" md5sum.txt
+# Search for "chr22.fa.gz" in md5sum.txt:
+# md5sum.txt ファイル内で "chr22.fa.gz" を検索する:  
+grep "chr22.fa.gz" md5sum.txt
+```
 
 ### References
-- [Surfer's-wiki](https://cell-innovation.nig.ac.jp/SurfWiki/index.html)
-  - [GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/SurfWiki/GRCh37_Hg19_defference.html)
-- [ショートリードの憂鬱 - 次世代シーケンサー: GRCh37とHg19](http://shortreadbrothers.blogspot.jp/2011/11/grch37hg19.html)
+- Surfer's-wiki [GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/SurfWiki/GRCh37_Hg19_defference.html)
+- 2011年11月28日 [ショートリードの憂鬱 - 次世代シーケンサー: GRCh37とHg19](http://shortreadbrothers.blogspot.com/2011/11/grch37hg19.html)
 
 ----------
 ## GRCm38 mouse reference genome
