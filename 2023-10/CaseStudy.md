@@ -77,8 +77,8 @@ Submit the latest version of the plain-text project notebook (Markdown file *REA
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
-Submit the latest version of the plain-text project notebook (Markdown file *README.md* file). For example, copy and paste some command lines used today.  
-プロジェクト・ノート（Markdownファイル*README.md*ファイル）の最新版を提出する。例えば、本日使用したコマンドラインいくつかをコピーして貼り付ける。  
+Submit the *README.md* file updated today.  
+本日更新した*README.md*ファイルを提出する。  
 
 [課題のファイルをSOLに提出する。  
 Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
