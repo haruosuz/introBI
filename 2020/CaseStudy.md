@@ -268,9 +268,8 @@ NCBIのウェブサイトからゲノム配列データを取得する。
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli), when you click on the Assembly "**GCA_000005845.2**" (for the Organism Name "Escherichia coli str. K-12 substr. MG1655"), it will bring you to the record for this organism in the NCBI Assembly database.  
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli)
 上から1番目の生物（列 Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2), click on "**FTP directory for GenBank assembly**" at the right of the webpage.  
-[ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)
-画面右側の"**FTP directory for GenBank assembly**"をクリックして開く。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2), click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000005845.2".  
+[ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)、**Submitted GenBank assembly** "GCA_000005845.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。
   - [On this page](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/), 
 right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
 [ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
