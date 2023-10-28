@@ -35,18 +35,20 @@
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-4)
 - 2023-10-31 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-5)
-- 2023-11-07 No. 6 - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+- 2023-11-07 No. 6 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-6)
-- 2023-11-14 No. 7 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+- 2023-11-14 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 2023-12-05 No. 8 - TBD
+- 2023-12-05 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
 - 2023-12-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - TBD
+  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-12)
 - 2024-01-16 No. 13 - TBD
+  - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-13)
 - 2024-01-23 No. 14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-14)
