@@ -15,8 +15,6 @@
 - [assignment 6](#assignment-6) 課題6 「my_project/」
 - [assignment 7](#assignment-7) 課題7 「my_project/examples/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
-- [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
-- [assignment 11](#assignment-11) 課題11 「my_project/unix-data-tools/」
 - [assignment 12](#assignment-12) 課題12 「my_project/diff_date/」
 - [assignment 13](#assignment-13) 課題13 「my_project/diff_envr/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
@@ -94,8 +92,8 @@ Submit a shell script (*script.sh* file) created today.
 ## assignment 6
 **課題6 「my_project/」**
 
-Submit the compressed file (e.g. `ecoli.zip`) of your project directory (e.g. `ecoli/`).  
-プロジェクト・ディレクトリ（例えば、`ecoli/`）の圧縮ファイル（例えば、`ecoli.zip`）を提出する。  
+Submit the compressed file (e.g. `my_project.zip`) of your project directory (e.g. `my_project/`).  
+プロジェクト・ディレクトリ（例えば、`my_project/`）の圧縮ファイル（例えば、`my_project.zip`）を提出する。  
 
 Document the details of your project in the *README.md* file.  
 *README.md*ファイルにプロジェクトの詳細情報を記録する。  
@@ -103,24 +101,22 @@ Document the details of your project in the *README.md* file.
 Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
 標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
 ```
-bash scripts/run.sh 2>&1 | tee log.$(date +%F).txt
+bash scripts/run.sh > log.$(date +%F).txt 2>&1
 ```
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
-ecoli/README.md
-ecoli/scripts/run.sh
-ecoli/data/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/md5checksums.txt
-ecoli/analysis/output.txt
+my_project/README.md
+my_project/scripts/run.sh
+my_project/data/input.txt
+my_project/analysis/output.txt
 ```
 
-Compress the project directory (`ecoli/`) while excluding files in the `data/` directory:  
-`data/`ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`ecoli/`) を圧縮する:  
+Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
+`data/`ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
 ```
-zip --exclude 'ecoli/data/*' -r ecoli.zip ecoli/
+zip --exclude 'my_project/data/*' -r my_project.zip my_project/
 ```
 
 Use the `man` command (e.g. `man zip`) to access the online manual pages. Press *q* to quit.  
@@ -156,19 +152,6 @@ Remember to update your *README.md* file (date, etc.).
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-----------
-## assignment 9
-**課題9 「guest-speaker/README.md」**
-
-Please provide your comments, questions, or anything related to today's special lecture in the *README.md* file and submit it.  
-本日の特別講演に関するコメント、質問、その他何でも、*README.md* ファイルに記載して提出する。  
-
-----------
-## assignment 11
-**課題11 「my_project/unix-data-tools/」**
-
-Inspecting data Using Unix Data Tools  
-Unixデータツールを用いてデータを検査する。  
 
 ----------
 ## assignment 12
