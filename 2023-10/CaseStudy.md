@@ -92,8 +92,8 @@ Submit a shell script (*script.sh* file) created today.
 ## assignment 6
 **課題6 「my_project/」**
 
-Submit the compressed file (e.g. `my_project.zip`) of your project directory (e.g. `my_project/`).  
-プロジェクト・ディレクトリ（例えば、`my_project/`）の圧縮ファイル（例えば、`my_project.zip`）を提出する。  
+Submit the compressed file of your project directory (e.g. `my_project.zip`).  
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`my_project.zip`）を提出する。  
 
 Document the details of your project in the *README.md* file.  
 *README.md*ファイルにプロジェクトの詳細情報を記録する。  
@@ -101,14 +101,14 @@ Document the details of your project in the *README.md* file.
 Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
 標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
 ```
-bash scripts/run.sh > log.$(date +%F).txt 2>&1
+bash scripts/script.sh > log.txt 2>&1
 ```
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
 my_project/README.md
-my_project/scripts/run.sh
+my_project/scripts/script.sh
 my_project/data/input.txt
 my_project/analysis/output.txt
 ```
@@ -151,7 +151,6 @@ Remember to update your *README.md* file (date, etc.).
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
-
 
 ----------
 ## assignment 12
