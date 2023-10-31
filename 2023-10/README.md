@@ -816,13 +816,14 @@ cd ./bds-files/chapter-12-pipelines/
 ```
 https://github.com/vsbuffalo/bds-files/tree/master/chapter-12-pipelines
 
-ファイルをコピーし、テキストエディタ「Atom」で開く:  
+ファイルをコピーし、テキストエディタで開く:  
 ```
 # Copy the file
 cp template.sh script.sh
 
-# Open the file with the text editor Atom
-atom script.sh
+# Open the file with the text editor
+emacs script.sh
+#emacs -nw script.sh
 ```
 
 p.395
