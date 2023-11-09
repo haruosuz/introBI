@@ -1,7 +1,7 @@
 # 2023-10
 
 2023 Fall
-[バイオインフォマティクスのデータサイエンス DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI)](https://sol.sfc.keio.ac.jp/courses/9301)
+[バイオインフォマティクスのデータサイエンス [DS2]](https://sol.sfc.keio.ac.jp/courses/9301)
 
 ## References
 **参考文献**
