@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「bioinformatics_data/README.md」
 - [assignment 5](#assignment-5) 課題5 「script.sh」
 - [assignment 6](#assignment-6) 課題6 「my_project/」
-- [assignment 7](#assignment-7) 課題7 「my_project/examples/」
+- [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 12](#assignment-12) 課題12 「my_project/diff_date/」
 - [assignment 13](#assignment-13) 課題13 「my_project/diff_envr/」
@@ -137,12 +137,13 @@ $man zip
 
 ----------
 ## assignment 7
-**課題7 「my_project/examples/」**
+**課題7 「my_project/unix-data-tools/」**
+
+Inspecting data Using Unix Data Tools  
+Unixデータツールを用いてデータを検査する。  
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
-Remember to update your *README.md* file (date, etc.).
 
 ----------
 ## assignment 8
