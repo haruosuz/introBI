@@ -437,7 +437,7 @@ https://pandoc.org/installing.html
 # Unix Shell
 # Unixシェル
 
-We use the shell in bioinformatics: streams, redirection, pipes, working with running programs, and command substitution.  
+We use the shell in bioinformatics: streams, redirection, pipes, working with running programs, and [command substitution](https://en.wikipedia.org/wiki/Command_substitution).  
 Unixの[シェル](http://www.cc.kyoto-su.ac.jp/~hirai/text/shell.html)を使う。
 [ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)、
 [リダイレクト](https://ja.wikipedia.org/wiki/リダイレクト_%28CLI%29)、
@@ -615,7 +615,7 @@ An [exit status](https://en.wikipedia.org/wiki/Exit_status) of 0 indicates the p
 
 p.54
 訳書60頁
-## [Command Substitution](https://en.wikipedia.org/wiki/Command_substitution)
+## Command Substitution
 ## 3.5　コマンド置換
 
 execute a command, use its output as a string in another command.  
