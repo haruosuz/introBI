@@ -40,7 +40,7 @@
 - 2023-11-14 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 2023-12-05 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
+- 2023-12-05 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
 - 2023-12-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
