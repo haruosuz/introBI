@@ -41,6 +41,7 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
 - 2023-12-05 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
+  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-8)
 - 2023-12-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
@@ -52,14 +53,6 @@
 - 2024-01-23 No. 14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-14)
-
-----------
-## midterm presentation
-**中間発表**
-
-Presentation time is 1 minute. Report your project (analysis data).
-
-発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
 ## Guest speaker
