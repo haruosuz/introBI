@@ -142,9 +142,6 @@ $man zip
 Inspecting data Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 8
 **課題8 「my_project/inspecting-data/」**
@@ -152,6 +149,9 @@ Submit a compressed file of your project directory (excluding data files `data/*
 [Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
+
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 12
