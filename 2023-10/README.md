@@ -46,11 +46,13 @@
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
+  - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
+  - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
 - 2024-01-09 No. 12 - TBD
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-12)
 - 2024-01-16 No. 13 - TBD
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-13)
-- 2024-01-23 No. 14 No. 14 - 最終回 final class
+- 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-14)
 
@@ -294,13 +296,13 @@ For instance, creating a project directory for [SNP](https://en.wikipedia.org/wi
 	ls -l
 
 `data/` directory contains all data.  
-`data/`ディレクトリにデータを格納する。  
+`data/` ディレクトリにデータを格納する。  
 
 `scripts/` directory contains scripts.  
-`scripts/`ディレクトリにスクリプトを格納する。  
+`scripts/` ディレクトリにスクリプトを格納する。  
 
 `analysis/` directory contains output of analysis results.  
-`analysis/`ディレクトリに解析結果を格納する。  
+`analysis/` ディレクトリに解析結果を格納する。  
 
 p.23
 訳書27頁
