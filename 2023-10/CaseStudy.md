@@ -69,14 +69,14 @@ Submit the compressed file (`zmays-snps.zip`).
 **課題3 「unix_shell/README.md」**
 
 Submit the latest version of the plain-text project notebook (Markdown file *README.md* file). For example, copy and paste some command lines used today.  
-プロジェクト・ノート（Markdownファイル*README.md*ファイル）の最新版を提出する。例えば、本日使用したコマンドラインいくつかをコピーして貼り付ける。  
+プロジェクト・ノート（Markdownファイル *README.md* ファイル）の最新版を提出する。例えば、本日使用したコマンドラインいくつかをコピーして貼り付ける。  
 
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
 Submit the *README.md* file updated today.  
-本日更新した*README.md*ファイルを提出する。  
+本日更新した *README.md* ファイルを提出する。  
 
 [課題のファイルをSOLに提出する。  
 Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
@@ -96,7 +96,7 @@ Submit the compressed file of your project directory (e.g. `my_project.zip`).
 プロジェクト・ディレクトリの圧縮ファイル（例えば、`my_project.zip`）を提出する。  
 
 Document the details of your project in the *README.md* file.  
-*README.md*ファイルにプロジェクトの詳細情報を記録する。  
+*README.md* ファイルにプロジェクトの詳細情報を記録する。  
 
 Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
 標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
@@ -114,7 +114,7 @@ my_project/analysis/output.txt
 ```
 
 Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
-`data/`ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
+`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
 ```
 zip --exclude 'my_project/data/*' -r my_project.zip my_project/
 ```
@@ -150,9 +150,6 @@ Unixデータツールを用いてデータを検査する。
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 12
 **課題12 「my_project/diff_date/」**
@@ -165,6 +162,15 @@ Run the data analysis on two or more different dates.
 date
 date +%F
 ```
+
+Document the reproducibility of the results (e.g., differences between files).  
+結果の再現性を記録する（例えば、ファイルの差分）。  
+```
+diff analysis/2023-12-26/output.txt analysis/2024-01-09/output.txt
+```
+
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
 
 ----------
 ## assignment 13
@@ -183,15 +189,6 @@ uname -a
 sw_vers
 ```
 
-Document the reproducibility of the results (e.g., differences between files).  
-結果の再現性を記録する（例えば、ファイルの差分）。  
-```
-diff analysis/2023-06-26/output.txt analysis/2023-06-27/output.txt
-```
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
 ----------
 ## assignment 14
 **課題14 「my_project/final/」**
@@ -200,6 +197,5 @@ Update your project directory based on questions and comments at the final prese
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
 ----------
-
 
 
