@@ -15,7 +15,7 @@
 - [assignment 6](#assignment-6) 課題6 「my_project/」
 - [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
-- [assignment 12](#assignment-12) 課題12 「my_project/diff_date/」
+- [assignment 12](#assignment-12) 課題12 「my_project/diff_envr/」
 - [assignment 13](#assignment-13) 課題13 「my_project/diff_envr/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
@@ -152,35 +152,49 @@ Unixデータツールを用いてデータを検査する。
 
 ----------
 ## assignment 12
-**課題12 「my_project/diff_date/」**
+**課題12 「my_project/diff_envr/」**
 
-Run the data analysis on two or more different dates.  
-2つ以上の異なる日付でデータ解析を実行する。  
+Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
+Slack上で、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
 
+Execute the project directory submitted before yours and provide comments (results, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、質問など）を記載する。  
+
+Based on the comments received for your project, make modifications to your project directory for further improvement.  
+あなたのプロジェクトに対するコメントを参考にし、プロジェクトディレクトリを修正する。  
+
+Example of project directory structure:  
+プロジェクト・ディレクトリ構造の例:  
 ```
-# display date and time
-date
-date +%F
+ecoli/README.md
+ecoli/analysis/2023-11-07/output.txt
+ecoli/analysis/2023-12-05/output.txt
+ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2023-11-07/md5checksums.txt
+ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2023-12-05/md5checksums.txt
+ecoli/log.2023-11-07.txt
+ecoli/log.2023-12-05.txt
+ecoli/scripts
+ecoli/scripts/run.sh
 ```
 
 Document the reproducibility of the results (e.g., differences between files).  
 結果の再現性を記録する（例えば、ファイルの差分）。  
 ```
-diff analysis/2023-12-26/output.txt analysis/2024-01-09/output.txt
+diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
 ```
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
-
-----------
-## assignment 13
-**課題13 「my_project/diff_envr/」**
-
-Run the data analysis on two or more different computer environments.  
-2つ以上の異なるコンピューター環境でデータ解析を実行する。  
+[`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
+```
+# display date and time
+date +%F
+```
 
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
-[`uname`](https://ja.wikipedia.org/wiki/Uname)は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
+[`uname`](https://ja.wikipedia.org/wiki/Uname) は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
 ```
 # Print operating system name
 uname -a
@@ -188,6 +202,11 @@ uname -a
 # print Mac OS X operating system version information
 sw_vers
 ```
+
+----------
+## assignment 13
+**課題13 「my_project/diff_envr/」**
+
 
 ----------
 ## assignment 14
