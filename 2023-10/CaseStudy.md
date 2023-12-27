@@ -16,7 +16,7 @@
 - [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 12](#assignment-12) 課題12 「my_project/diff_envr/」
-- [assignment 13](#assignment-13) 課題13 「my_project/diff_envr/」
+- [assignment 13](#assignment-13) 課題13 「my_project/revised/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
 ----------
@@ -157,10 +157,10 @@ Unixデータツールを用いてデータを検査する。
 Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
 Slack上で、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
 
-Execute the project directory submitted before yours and provide comments (results, questions, etc.) in the thread.  
-あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、質問など）を記載する。  
+Execute the project directory submitted before yours and provide comments (reproducibility test results, execution environment and date/time, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（再現性テストの結果、実行環境・日時、質問など）を記載する。  
 
-Based on the comments received for your project, make modifications to your project directory for further improvement.  
+Based on the comments received for your project, make modifications to your project directory.  
 あなたのプロジェクトに対するコメントを参考にし、プロジェクトディレクトリを修正する。  
 
 Example of project directory structure:  
@@ -205,8 +205,10 @@ sw_vers
 
 ----------
 ## assignment 13
-**課題13 「my_project/diff_envr/」**
+**課題13 「my_project/revised/」**
 
+Submit a compressed file of the revised project directory (excluding data files `data/*`) on Slack.  
+Slack上で、修正されたプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出してください。  
 
 ----------
 ## assignment 14
