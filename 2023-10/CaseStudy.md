@@ -78,9 +78,6 @@ Submit the latest version of the plain-text project notebook (Markdown file *REA
 Submit the *README.md* file updated today.  
 本日更新した *README.md* ファイルを提出する。  
 
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
 ----------
 ## assignment 5
 **課題5 「script.sh」**
@@ -150,6 +147,9 @@ Unixデータツールを用いてデータを検査する。
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
+
 ----------
 ## assignment 12
 **課題12 「my_project/diff_envr/」**
@@ -181,8 +181,8 @@ ecoli/scripts
 ecoli/scripts/run.sh
 ```
 
-Document the reproducibility of the results (e.g., differences between files).  
-結果の再現性を記録する（例えば、ファイルの差分）。  
+Check the reproducibility of the results (e.g., differences between files).  
+結果の再現性を確認する（例えば、ファイルの差分）。  
 ```
 diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
 ```
