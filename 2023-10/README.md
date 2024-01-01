@@ -46,11 +46,9 @@
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - [Guest Speaker](#guest-speaker)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
-  - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
-  - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
-- 2024-01-09 No. 12 - TBD
+- 2024-01-09 No. 12 - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-12)
-- 2024-01-16 No. 13 - TBD
+- 2024-01-16 No. 13 - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-13)
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
@@ -79,6 +77,22 @@ Report the reproducibility of your projects.
 ----------
 ## Introduction
 **イントロダクション**
+
+# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
+# 1章　バイオインフォマティクスの学習方法
+
+p.16
+訳書19頁
+## Recommendations for Reproducible Research
+## 1.8　再現可能な研究に向けての推奨事項
+### Release Your Code and Data
+### 1.8.1　コードとデータを公開する
+### Document Everything
+### 1.8.2　すべてをドキュメント化する
+### Make Figures and Statistics the Results of Scripts
+### 1.8.3　図と統計をスクリプトの出力結果にする
+### Use Code as Documentation
+### 1.8.4　コードをドキュメントとして使用する
 
 ----------
 
@@ -232,24 +246,6 @@ wget https://github.com/vsbuffalo/bds-files/archive/master.zip
 unzip master.zip 
 mv bds-files-master/ bds-files
 ```
-
-----------
-
-# [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
-# 1章　バイオインフォマティクスの学習方法
-
-p.16
-訳書19頁
-## Recommendations for Reproducible Research
-## 1.8　再現可能な研究に向けての推奨事項
-### Release Your Code and Data
-### 1.8.1　コードとデータを公開する
-### Document Everything
-### 1.8.2　すべてをドキュメント化する
-### Make Figures and Statistics the Results of Scripts
-### 1.8.3　図と統計をスクリプトの出力結果にする
-### Use Code as Documentation
-### 1.8.4　コードをドキュメントとして使用する
 
 ----------
 
