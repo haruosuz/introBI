@@ -157,11 +157,11 @@ Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)
 Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
 Slack上で、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
 
-Execute the project directory submitted before yours and provide comments (reproducibility test results, execution environment and date/time, questions, etc.) in the thread.  
-あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（再現性テストの結果、実行環境・日時、質問など）を記載する。  
+Run the project submitted before you and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
 
-Based on the comments received for your project, make modifications to your project directory.  
-あなたのプロジェクトに対するコメントを参考にし、プロジェクトディレクトリを修正する。  
+Modify your project directory (scripts, *README.md* files) based on comments on your project.  
+あなたのプロジェクトへのコメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
@@ -187,12 +187,6 @@ Check the reproducibility of the results (e.g., differences between files).
 diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
 ```
 
-[`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
-```
-# display date and time
-date +%F
-```
-
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
 [`uname`](https://ja.wikipedia.org/wiki/Uname) は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
 ```
@@ -201,6 +195,12 @@ uname -a
 
 # print Mac OS X operating system version information
 sw_vers
+```
+
+[`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
+```
+# display date and time
+date +%F
 ```
 
 ----------
