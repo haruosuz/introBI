@@ -192,9 +192,6 @@ diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
 ```
 # Print operating system name
 uname -a
-
-# print Mac OS X operating system version information
-sw_vers
 ```
 
 [`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
