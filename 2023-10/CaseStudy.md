@@ -147,21 +147,21 @@ Unixデータツールを用いてデータを検査する。
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
 ----------
 ## assignment 12
 **課題12 「my_project/diff_envr/」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
-Slack上で、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
-Run the project submitted before you and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
-あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
+Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
+Slackに、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
+
+Run the project submitted by others and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
+他の人が提出したプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
-あなたのプロジェクトへのコメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
+コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
