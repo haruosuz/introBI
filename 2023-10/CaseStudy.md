@@ -15,7 +15,7 @@
 - [assignment 6](#assignment-6) 課題6 「my_project/」
 - [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
-- [assignment 12](#assignment-12) 課題12 「my_project/diff_envr/」
+- [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
 - [assignment 13](#assignment-13) 課題13 「my_project/revised/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
@@ -147,12 +147,12 @@ Unixデータツールを用いてデータを検査する。
 Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
 
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
+
 ----------
 ## assignment 12
-**課題12 「my_project/diff_envr/」**
-
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
+**課題12 「my_project/reproducibility/」**
 
 Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
 Slackに、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
@@ -162,6 +162,12 @@ Run the project submitted by others and provide comments (reproducibility of res
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
+
+Submit a compressed file of the revised project directory (excluding data files `data/*`).
+修正されたプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
+
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
