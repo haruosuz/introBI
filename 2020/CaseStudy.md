@@ -510,16 +510,17 @@ tRNA
 - [Brewer et al. ISME J. 2020 Feb "Unlinked rRNA genes are widespread among bacteria and archaea."](https://www.nature.com/articles/s41396-019-0552-3)
   - The frequency of unlinked rRNA genes may reflect meaningful life history traits, as they tend to be associated with a mix of slow-growing free-living species and intracellular species.
   - [Fig. 1](https://www.nature.com/articles/s41396-019-0552-3/figures/1) In most bacteria and archaea, rRNA genes are arranged in the order 16S-23S-5S, and are transcribed and regulated as a single unit. However, in some cases, the 16S is separated from the 23S and 5S, and is referred to as “unlinked”
-  - rRNA pairs were classified as “unlinked” if the distance between each gene was >1500 bp, “linked” if the distance was ≤1500 bp.
+  - rRNA pairs were classified as “unlinked” if the distance between each gene was >1500 bp, “linked” if the distance was ≤1500 bp.  
+大部分の原核生物ではrRNA遺伝子は16S-23S-5Sの順序で配置され、まとめて転写されるが、一部のケースでは、16Sが23S-5Sから（>1500塩基の距離で）離れている。この “unlinked” rRNA遺伝子は、原核生物に広く見られ、その頻度は生活史（遅い増殖と細胞内共生）を反映する。
 - [Vieira-Silva & Rocha (2010) PLoS Genet "The Systemic Imprint of Growth and Its Uses in Ecological (Meta)Genomics"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/)
   - [Figure 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/figure/pgen-1000808-g001/) Genomic signatures correlated to minimum generation time (d) for 214 prokaryotes.
 Correlation between d and (A) the number of rRNA operons in the genome, (B) the relative distance from the origin of replication to rRNA genes (excluding species with no retrievable origin), 0.5 corresponds to half the replicon, (C,D) codon usage bias indices ΔENC′ [35] and S [46].  
 rRNAオペロン数が多いほど、rRNA遺伝子の複製起点からの距離が小さいほど、コドン使用バイアスが強いほど、原核生物の最小倍加時間が小さい。  
 - [Sharp et al. (2005) Nucleic Acids Res "Variation in the strength of selected codon usage bias among bacteria"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)   
-  - [Table 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
-The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
   - species exposed to selection for rapid growth have more rRNA operons, more tRNA genes and more strongly selected codon usage bias.  
 rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用バイアスが強いほど、細菌の増殖速度が速い。 
+  - [Table 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
+The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
 
 ----------
 ## assignment 5
