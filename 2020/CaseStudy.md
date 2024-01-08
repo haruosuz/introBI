@@ -459,6 +459,10 @@ grep -v "^#" "${GFF}" | cut -f3,7 | sort | uniq -c
 # Count rRNA genes (16S, 23S, 5S):  
 awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort | uniq -c
 
+# rRNA遺伝子の開始位置と終了位置を抽出する。  
+# Extract start positions and end positions of rRNA genes (16S, 23S, 5S).  
+awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | cut -f4,5,9 | cut -d"=" -f1,8
+
 # タンパク質コード配列（CDS）について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、末尾を見る:  
 # add a column with the feature length (end position - start position) for only "CDS"
 awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' "${GFF}" | sort -k1,1n | tail -n 1
@@ -504,10 +508,11 @@ rRNA
 tRNA
 - [Huang et al. Nat Commun. 2020 Jun 9 "Ribosome engineering reveals the importance of 5S rRNA autonomy for ribosome assembly"](https://pubmed.ncbi.nlm.nih.gov/32518240/)
 - [Brewer et al. ISME J. 2020 Feb "Unlinked rRNA genes are widespread among bacteria and archaea."](https://www.nature.com/articles/s41396-019-0552-3)
-  - Fig. 1 [In most bacteria and archaea, rRNA genes are arranged in the order 16S-23S-5S, and are transcribed and regulated as a single unit. However, in some cases, the 16S is separated from the 23S and 5S, and is referred to as “unlinked”](https://www.nature.com/articles/s41396-019-0552-3/figures/1)
+  - The frequency of unlinked rRNA genes may reflect meaningful life history traits, as they tend to be associated with a mix of slow-growing free-living species and intracellular species.
+  - [Fig. 1](https://www.nature.com/articles/s41396-019-0552-3/figures/1) In most bacteria and archaea, rRNA genes are arranged in the order 16S-23S-5S, and are transcribed and regulated as a single unit. However, in some cases, the 16S is separated from the 23S and 5S, and is referred to as “unlinked”
   - rRNA pairs were classified as “unlinked” if the distance between each gene was >1500 bp, “linked” if the distance was ≤1500 bp.
 - [Vieira-Silva & Rocha (2010) PLoS Genet "The Systemic Imprint of Growth and Its Uses in Ecological (Meta)Genomics"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/)
-  - Figure 1 [Genomic signatures correlated to minimum generation time (d) for 214 prokaryotes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/figure/pgen-1000808-g001/)
+  - [Figure 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797632/figure/pgen-1000808-g001/) Genomic signatures correlated to minimum generation time (d) for 214 prokaryotes.
 Correlation between d and (A) the number of rRNA operons in the genome, (B) the relative distance from the origin of replication to rRNA genes (excluding species with no retrievable origin), 0.5 corresponds to half the replicon, (C,D) codon usage bias indices ΔENC′ [35] and S [46].  
 rRNAオペロン数が多いほど、rRNA遺伝子の複製起点からの距離が小さいほど、コドン使用バイアスが強いほど、原核生物の最小倍加時間が小さい。  
 - [Sharp et al. (2005) Nucleic Acids Res "Variation in the strength of selected codon usage bias among bacteria"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)  
