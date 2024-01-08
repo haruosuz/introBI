@@ -154,16 +154,16 @@ Submit a compressed file of your project directory (excluding data files `data/*
 ## assignment 12
 **課題12 「my_project/reproducibility/」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`) on Slack.  
-Slackに、あなたのプロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。
+On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
+Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
-Run the project submitted by others and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
-他の人が提出したプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
+Run the project submitted before yours and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
 
-Submit a compressed file of the revised project directory (excluding data files `data/*`).
+Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正されたプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 [課題のファイルをSOLに提出する。  
