@@ -456,11 +456,12 @@ grep -v "^#" "${GFF}" | cut -f3,7 | sort | uniq -c
 # `grep -o`でパターンの一致する部分だけを抽出する。  
 # `grep -o` extract only the matching part of the pattern.  
 
+# rRNA遺伝子（16S、23S、5S）の数をカウントする:  
 # Count rRNA genes (16S, 23S, 5S):  
 awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort | uniq -c
 
-# rRNA遺伝子の開始位置と終了位置を抽出する。  
-# Extract start positions and end positions of rRNA genes (16S, 23S, 5S).  
+# rRNA遺伝子の開始位置と終了位置を抽出する:  
+# Extract start positions and end positions of rRNA genes (16S, 23S, 5S):  
 awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | cut -f4,5,9 | cut -d"=" -f1,8
 
 # タンパク質コード配列（CDS）について、長さ（終了位置 - 開始位置）の列を追加し、数値順にソートし、末尾を見る:  
