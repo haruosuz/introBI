@@ -164,7 +164,7 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
-修正されたプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
+修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 [課題のファイルをSOLに提出する。  
 Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
@@ -210,8 +210,8 @@ date +%F
 ## assignment 13
 **課題13 「my_project/revised/」**
 
-Submit a compressed file of the revised project directory (excluding data files `data/*`) on Slack.  
-Slack上で、修正されたプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出してください。  
+Submit a compressed file of your project directory (excluding data files `data/*`).  
+プロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 ----------
 ## assignment 14
@@ -221,5 +221,3 @@ Update your project directory based on questions and comments at the final prese
 最終発表での質問・コメントに基づいて、プロジェクト・ディレクトリを更新する。  
 
 ----------
-
-
