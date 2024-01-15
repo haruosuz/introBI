@@ -58,6 +58,14 @@
   - 課題14 [assignment 14](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-14)
 
 ----------
+## final presentation
+**最終発表**
+
+Presentation time: 5 minutes will be allocated for each presentation (including Q&A). Share your screen, open the terminal, and provide an overview of the contents of your project directory (README.md, scripts, data, analysis results, reproducibility).
+
+発表時間：1人あたり最大5分（質疑応答を含む）。画面共有し、ターミナルを開き、プロジェクトディレクトリの内容（README.md、スクリプト、データ、解析結果、再現性）について説明する。
+
+----------
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
@@ -66,16 +74,6 @@ Teaching Experience
 
 - 講師: 武田知己 Tomoki Takeda
 - 資料: Slack #2023-10
-
-----------
-## final presentation
-**最終発表**
-
-Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
-Report the reproducibility of your projects.
-
-発表時間：1人あたり最大5分（質疑応答を含む）。
-プロジェクトの再現性について報告する。
 
 ----------
 ## Introduction
