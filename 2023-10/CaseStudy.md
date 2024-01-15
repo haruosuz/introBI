@@ -166,9 +166,6 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
@@ -212,6 +209,9 @@ date +%F
 
 Submit a compressed file of your project directory (excluding data files `data/*`).  
 プロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
+
+[課題のファイルをSOLに提出する。  
+Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 14
