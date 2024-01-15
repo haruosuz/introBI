@@ -51,7 +51,7 @@
   - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
 - 2024-01-09 No. 12 - 再現可能なプロジェクト Reproducible project
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-12)
-- 2024-01-16 No. 13 - 再現可能なプロジェクト修正版 Reproducible project revised
+- 2024-01-16 No. 13 - 再現可能なプロジェクト2 Reproducible project 2
   - 課題13 [assignment 13](https://github.com/haruosuz/introBI/blob/master/2023-10/CaseStudy.md#assignment-13)
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
