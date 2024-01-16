@@ -16,7 +16,6 @@
 - [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
 - [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
 - [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
-- [assignment 13](#assignment-13) 課題13 「my_project/revised/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
 ----------
@@ -202,16 +201,6 @@ uname -a
 # display date and time
 date +%F
 ```
-
-----------
-## assignment 13
-**課題13 「my_project/revised/」**
-
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
-
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 14
