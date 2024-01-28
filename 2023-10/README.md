@@ -368,7 +368,7 @@ p.26
 > シェル展開
 >  
 > `cd ~` to go to your home directory - your shell expands the tilde character (`~`) to the full path of your home directory (e.g., `/Users/vinceb/`).  
-> `cd ~` と入力してホームディレクトリに移動する。シェルがチルダ（`~`）をホームディレクトリのフルパスに展開する（例: `/Users/vinceb/`）。  
+> `cd ~` でホームディレクトリに移動する。シェルがチルダ（`~`）をホームディレクトリのフルパスに展開する（例: `/Users/vinceb/`）。  
 >  
 > [Brace expansion](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29#Brace_expansion)  
 > [ブレース展開](https://ja.wikipedia.org/wiki/Bash#ブレース展開)  
