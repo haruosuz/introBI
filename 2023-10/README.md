@@ -87,12 +87,16 @@ p.16
 訳書19頁
 ## Recommendations for Reproducible Research
 ## 1.8　再現可能な研究に向けての推奨事項
+
 ### Release Your Code and Data
 ### 1.8.1　コードとデータを公開する
+
 ### Document Everything
 ### 1.8.2　すべてをドキュメント化する
+
 ### Make Figures and Statistics the Results of Scripts
 ### 1.8.3　図と統計をスクリプトの出力結果にする
+
 ### Use Code as Documentation
 ### 1.8.4　コードをドキュメントとして使用する
 
