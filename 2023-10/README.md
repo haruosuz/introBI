@@ -346,6 +346,11 @@ p.24
 ## Project Documentation
 ## 2.2　プロジェクトドキュメント
 
+*Document your methods and workflows*: 
+ Copy and paste command lines used for analysis. Record the default values of software, as they may change in later versions.  
+*方法やワークフローを記録する*: 
+ 解析に使用したコマンドラインをコピペする。ソフトウェアのデフォルト値を記録する（後にバージョンアップした際にデフォルト値が変わる可能性があるため）。  
+
 All of the project information is best stored in [plain-text](https://en.wikipedia.org/wiki/Plain_text) [README](https://en.wikipedia.org/wiki/README) files. Plain text can easily be read, searched, and edited directly from the command line.
 Keep README files in each of your project's main directories.
 For example, a `data/README.md` file would contain metadata about your data files in the `data/` directory.  
