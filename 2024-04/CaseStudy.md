@@ -90,8 +90,10 @@ https://github.com/haruosuz/introBI/blob/master/CaseStudy.md
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
 
-Submit the *README.md* file updated today.  
-本日更新した *README.md* ファイルを提出する。  
+Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data, and their checksums.  
+プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
+
+https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
 
 ----------
 ## assignment 5
