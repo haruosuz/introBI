@@ -10,6 +10,9 @@
 - [compress](#compress) zip tar
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
 - [NCBI Genome List](#ncbi-genome-list)
+- [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22) ヒト22番染色体
+- [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome) マウス参照ゲノム
+- [UniProtKB/Swiss-Prot protein sequence database](#uniprot_sprot) タンパク質配列データベース
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [](#)
 
@@ -481,6 +484,328 @@ rRNAオペロン数が多いほど、rRNA遺伝子の複製起点からの距離
 rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用バイアスが強いほど、細菌の増殖速度が速い。 
   - [Table 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
 The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
+
+----------
+## GRCh37/hg19 human chromosome 22
+**ヒト22番染色体**
+
+- 2020/09/02 | UCSC Genome Browser | TogoTV https://www.youtube.com/playlist?list=PL18C454AF92F9B012
+- 2011年11月28日 [ショートリードの憂鬱 - 次世代シーケンサー: GRCh37とHg19](http://shortreadbrothers.blogspot.com/2011/11/grch37hg19.html)
+- Surfer's-wiki [GRCh37とHg19の違い(含むミトコンドリア)](https://cell-innovation.nig.ac.jp/SurfWiki/GRCh37_Hg19_defference.html)
+
+Retrieving URLs from the UCSC Genome Browser.  
+UCSC Genome Browser からURLを取得する。 
+
+- <http://genome.ucsc.edu>  
+open [Downloads → Genome Data](https://hgdownload.soe.ucsc.edu/downloads.html).  
+[Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html) を開く。  
+- Click on **Human genomes**, and open the **Sequence data by chromosome** section below **Feb. 2009 (GRCh37/hg19)**.  
+**Human genomes** をクリックし、 **Feb. 2009 (GRCh37/hg19)** の **Sequence data by chromosome** を開く。
+- https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
+
+      Name                        Last modified      Size  Description
+
+      chr22.fa.gz                 2009-03-20 09:02   11M  
+
+      md5sum.txt                  2009-03-20 09:49  4.9K  
+
+- Right click on the link to the files, and select "Copy Link Address".  
+ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+
+### Downloading data
+**データのダウンロード**
+
+ターミナルを開く。  
+Open a terminal window.  
+```
+bash
+
+# ディレクトリを作成する:
+# make directory:
+mkdir -p ~/projects/data/ucsc
+
+# ディレクトリを移動する:
+# change directory:
+cd ~/projects/data/ucsc/
+
+# 圧縮ファイル chr22.fa.gz を `wget` を使用してダウンロードする:  
+# Download the compressed file chr22.fa.gz using `wget`:  
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+
+# `wget` を使用して md5sum.txt ファイルをダウンロードする:  
+# Download the md5sum.txt file using `wget`:  
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
+
+# MD5 チェックサムを計算する:  
+# Calculate the MD5 checksum:  
+md5 chr22.fa.gz
+
+# md5sum.txt ファイル内で "chr22.fa.gz" を検索する:   
+# Search for "chr22.fa.gz" in md5sum.txt:  
+grep "chr22.fa.gz" md5sum.txt
+```
+
+Markdownファイル *README.md* の例:  
+The Markdown file *README.md* file would look like:  
+```
+## Genome Data
+
+the Feb. 2009 assembly of the human genome (hg19,
+GRCh37 Genome Reference Consortium Human Reference 37 (GCA_000001405.1))
+was downloaded on Mon Apr 29 11:53:23 JST 2024, using:
+
+    wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/md5sum.txt
+
+## MD5 checksum
+
+    $md5 chr22.fa.gz
+    MD5 (chr22.fa.gz) = 2baab477ebcc5a0f4163608ec93e4744
+
+    $grep "chr22.fa.gz" md5sum.txt
+    2baab477ebcc5a0f4163608ec93e4744  chr22.fa.gz
+
+```
+
+----------
+## GRCm38 mouse reference genome
+**マウス参照ゲノム**
+
+### Website
+**ウェブサイト**
+
+[Ensembl](http://www.ensembl.org)の
+[Mouse](http://www.ensembl.org/Mus_musculus/Info/Index)の
+"Download FASTA files for genes, cDNAs, ncRNA, proteins" <ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/>
+をブラウザ（Firefox または Chrome）で開く。
+例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+```
+名前 	サイズ 	最終更新日時
+CHECKSUMS	4.4 kB	9/13/18, 12:32:00 AM
+Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz	5.3 kB	9/4/18, 8:40:00 AM
+README	5.0 kB	9/4/18, 8:40:00 AM
+```
+
+### Download
+**ダウンロード**
+
+ディレクトリを作成し移動する:  
+
+    mkdir -p ~/projects/data/ensembl
+    cd ~/projects/data/ensembl/
+
+[Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)
+GRCm38 (Ensembl release 94) 
+マウス参照ゲノムのMT配列とCHECKSUMSファイルを`wget`でダウンロードする:  
+
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/CHECKSUMS
+
+`zgrep`コマンドを用いて正規表現`^>`で圧縮ファイルのFASTAヘッダを確認する:  
+
+    zgrep "^>" Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+
+`sum`コマンドで[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)を計算し、EnsemblのCHECKSUMSファイルの値と比較する:  
+
+    sum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+    grep "Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz" CHECKSUMS
+
+SHA-1サムを計算する:  
+
+    shasum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+
+Markdownノート（README.md）の例:  
+The entire README.md file would look like:  
+```
+## Genome Data
+
+Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was downloaded on Sat Oct 13 23:11:53 JST 2018, using:
+
+    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+
+## SHA-1 Sums
+
+ - `Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz`: b75f036ca9554688789b00f64328964c295aedec
+```
+
+### References 
+- https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
+- 2017.06.07 | 04:20 | Ensemblの使い方 〜配列を取得する〜2017 | TogoTV https://doi.org/10.7875/togotv.2017.046
+
+
+----------
+## uniprot_sprot
+[UniProt](https://en.wikipedia.org/wiki/UniProt)/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)
+protein sequence database
+タンパク質配列データベース
+
+<<<<<<< HEAD
+
+[ターミナル](https://magazine.techacademy.jp/magazine/5155)を開く。`bash`を起動する。
+=======
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+>>>>>>> b6c5b0633a1c4a389acac2554c0120f4e006162e
+```
+# change shell to bash
+bash
+
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/uniprot/uniprot_sprot
+
+# ディレクトリを移動する
+# change directories
+cd ~/projects/data/uniprot/uniprot_sprot/
+
+# カレントディレクトリを表示する 
+# print working directory
+pwd
+
+# カレントディレクトリをFinderで開く
+# open current directory
+open .
+
+# Markdown文書をダウンロードする
+curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+
+# テキストエディタ「Atom」でファイルを開く
+atom README.$(date +%F).md
+```
+
+### Downloading data
+データのダウンロード
+
+- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/  
+ブラウザ（Firefox または Chrome）で開く。*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL with your browser (Firefox or Chrome). Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".  
+```
+# *uniprot_sprot.fasta.gz*ファイルをダウンロードする
+# download *uniprot_sprot.fasta.gz* file with `wget` or `curl`
+#curl -O https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
+ wget -b https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log
+
+# "RELEASE.metalink"ファイルをダウンロードする
+# download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
+wget https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/RELEASE.metalink
+
+# MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する
+# compare our checksum values with those in "RELEASE.metalink" using the md5 program:
+md5 uniprot_sprot.fasta.gz
+grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
+
+# `gunzip`コマンドでファイルを展開する
+# decompress files with the command `gunzip`
+gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
+```
+
+- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/reldate.txt
+```
+UniProt Knowledgebase Release 2022_04 consists of:
+UniProtKB/Swiss-Prot Release 2022_04 of 12-Oct-2022
+UniProtKB/TrEMBL Release 2022_04 of 12-Oct-2022
+```
+
+Markdownノート（README.md）の例:  
+The entire README.md file would look like:  
+```
+## Data
+
+UniProtKB/Swiss-Prot Release 2022_04 of 12-Oct-2022 was downloaded on 2022-11-08, using:
+
+    wget -b https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
+
+## MD5 checksum
+
+ - MD5 (uniprot_sprot.fasta.gz) = 0185d219cbcf0ce354a1a54877b256c0
+```
+
+### Inspecting data
+データの検査 
+
+```
+# ファイルサイズを確認する
+# `ls -lh` reports human-readable file sizes
+ls -lh
+
+# `head`で先頭部分を表示する
+# look at the top of a file with `head`
+head uniprot_sprot.fasta
+```
+
+[FASTA headers](http://www.uniprot.org/help/fasta-headers)  
+FASTA形式ファイルのヘッダ（">"で始まる行）
+
+```
+# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
+grep "^>" uniprot_sprot.fasta
+
+# パイプでプログラムの入出力をつなぐ
+# Pipe the standard output to the next command with the pipe character (`|`).
+grep "^>" uniprot_sprot.fasta | head
+
+# `wc -l`で行数をカウントする
+# `wc -l` outputs the number of lines
+grep "^>" uniprot_sprot.fasta | wc -l
+```
+
+[日本語にちなんで命名された遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
+```
+# use grep to find a gene "Harakiri"
+grep "^>" uniprot_sprot.fasta | grep "harakiri"
+
+# use grep to count (the -c option stands for count) the number of lines matching the pattern
+grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
+
+# add the option -i to grep to be case insensitive.
+grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
+```
+
+`grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
+
+**"Harakiri"検索結果**  
+```
+# Search Results for "Harakiri". There are 3 entries for in the FASTA file.
+>sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
+>sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
+>sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
+```
+"Harakiri"にマッチするデータ3件が登録されていた。
+タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
+生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
+遺伝子名(GN=GeneName)に大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在。
+
+**"Shugoshin"検索結果**  
+```
+# Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
+...
+>sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
+>sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens OX=9606 GN=SGO2 PE=1 SV=2
+>sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
+>sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=sgo2 PE=1 SV=1
+```
+"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名("SHUGOSHIN 2", "Shugoshin 2", "Shugoshin-2")と遺伝子名("GN=SGO2", "GN=Sgo2", "GN=sgo2")の表記が統一されていない。
+
+### References 
+- https://www.uniprot.org/help/metalink
+Downloaded data seems incomplete or corrupted - how can I get help with download problems? | UniProt help | UniProt
+- https://kazumaxneo.hatenablog.com/entry/2022/07/10/162327
+UniProtKBデータベースをダウンロードしてBLAST検索する。 - macでインフォマティクス
+- https://github.com/haruosuz/uniprot_sprot
+
+
+
+
+
+
+
+----------
+
 
 ----------
 
