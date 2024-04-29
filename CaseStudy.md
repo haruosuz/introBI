@@ -925,6 +925,7 @@ grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
 # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
 grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
 grep -v "^#" $assembly_summary | cut -f12 | sort | uniq -c
+```
 
 ### Downloading data
 データのダウンロード
