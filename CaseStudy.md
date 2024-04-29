@@ -631,14 +631,10 @@ zgrep "^>" Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 # Calculate checksum using `sum` and compare with values in CHECKSUMS file:
 sum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 grep "Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz" CHECKSUMS
-
-# SHA-1サムを計算する:  
-# Calculate SHA-1 checksum:  
-shasum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 ```
 
-Markdownノート（README.md）の例:  
-The entire README.md file would look like:  
+Markdownファイル *README.md* の例:  
+The Markdown file *README.md* file would look like:  
 ```
 ## Genome Data
 
@@ -655,21 +651,49 @@ Files of mouse (*Mus musculus*) reference genome version GRCm39 (Ensembl release
 
     $grep "Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz" CHECKSUMS
     17649     6 Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
-
-    $shasum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
-    cd08465c85a3569ea74eb86e4aec6024b8c372c3  Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 ```
-
-
-
-
 
 ----------
 ## uniprot_sprot
-[UniProt](https://en.wikipedia.org/wiki/UniProt)/[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)
 protein sequence database
 タンパク質配列データベース
 
+- https://en.wikipedia.org/wiki/UniProt
+- https://ja.wikipedia.org/wiki/Swiss-Prot
+- 2017.09.12 | 08:03 | UniProtを使って、タンパク質のアミノ酸配列とその機能情報を横断的・網羅的に調べる | TogoTV https://doi.org/10.7875/togotv.2017.087
+
+<https://www.uniprot.org/>  
+
+- Open **FTP Download** below **UniProt data**.  
+**UniProt data** の **FTP Download** を開く。
+- https://ftp.uniprot.org/pub/databases/uniprot/
+  - [knowledgebase/](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/)
+    - [complete/](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/)
+- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/
+
+      Name                                  Last modified      Size  Description
+
+      RELEASE.metalink                      2024-03-27 10:00  7.9K  
+
+      uniprot_sprot.fasta.gz                2024-03-27 10:00   88M  
+
+- Right click on the link to the files, and select "Copy Link Address".  
+ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/reldate.txt
+```
+UniProt Knowledgebase Release 2024_02 consists of:
+UniProtKB/Swiss-Prot Release 2024_02 of 27-Mar-2024
+UniProtKB/TrEMBL Release 2024_02 of 27-Mar-2024
+```
+- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/  
+ブラウザ（Firefox または Chrome）で開く。*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL with your browser (Firefox or Chrome). Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".  
+
+### Downloading data
+**データのダウンロード**
+
+ターミナルを開く。  
+Open a terminal window.  
 ```
 # change shell to bash
 bash
@@ -682,30 +706,8 @@ mkdir -p ~/projects/data/uniprot/uniprot_sprot
 # change directories
 cd ~/projects/data/uniprot/uniprot_sprot/
 
-# カレントディレクトリを表示する 
-# print working directory
-pwd
-
-# カレントディレクトリをFinderで開く
-# open current directory
-open .
-
-# Markdown文書をダウンロードする
-curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
-
-# テキストエディタ「Atom」でファイルを開く
-atom README.$(date +%F).md
-```
-
-### Downloading data
-データのダウンロード
-
-- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/  
-ブラウザ（Firefox または Chrome）で開く。*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Open the URL with your browser (Firefox or Chrome). Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".  
-```
 # *uniprot_sprot.fasta.gz*ファイルをダウンロードする
-# download *uniprot_sprot.fasta.gz* file with `wget` or `curl`
+# Download *uniprot_sprot.fasta.gz* file
 #curl -O https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
  wget -b https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
 
@@ -714,7 +716,7 @@ Open the URL with your browser (Firefox or Chrome). Right click the link *unipro
 tail -f wget-log
 
 # "RELEASE.metalink"ファイルをダウンロードする
-# download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
+# Download "RELEASE.metalink" file that specifies MD5 checksum https://www.uniprot.org/help/metalink
 wget https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/RELEASE.metalink
 
 # MD5チェックサムを計算し、"RELEASE.metalink"ファイルの値と比較する
@@ -727,109 +729,84 @@ grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
 gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
 ```
 
-- https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/reldate.txt
+Markdownファイル *README.md* の例:  
+The Markdown file *README.md* file would look like:  
 ```
-UniProt Knowledgebase Release 2022_04 consists of:
-UniProtKB/Swiss-Prot Release 2022_04 of 12-Oct-2022
-UniProtKB/TrEMBL Release 2022_04 of 12-Oct-2022
-```
+## Files
 
-Markdownノート（README.md）の例:  
-The entire README.md file would look like:  
-```
-## Data
-
-UniProtKB/Swiss-Prot Release 2022_04 of 12-Oct-2022 was downloaded on 2022-11-08, using:
+UniProtKB/Swiss-Prot Release 2024_02 of 27-Mar-2024 was downloaded on 2024-04-29, using:
 
     wget -b https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/uniprot_sprot.fasta.gz
+    wget https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/RELEASE.metalink
 
 ## MD5 checksum
 
- - MD5 (uniprot_sprot.fasta.gz) = 0185d219cbcf0ce354a1a54877b256c0
+$md5 uniprot_sprot.fasta.gz
+MD5 (uniprot_sprot.fasta.gz) = 0766df3e5785fc5f1cfc496aa89e86ad
+
+$grep -A 3 'file name="uniprot_sprot.fasta.gz"' RELEASE.metalink
+  <file name="uniprot_sprot.fasta.gz">
+      <size>92181645</size>
+      <verification>
+        <hash type="md5">0766df3e5785fc5f1cfc496aa89e86ad</hash>
 ```
 
 ### Inspecting data
-データの検査 
+データの検査
+
+Using core Unix tools (`head, tail, wc, ls`) to analyze the sequence data. 
+Unixコマンド（`head, tail, wc, ls`）を用いて、配列データを解析する。  
 
 ```
-# ファイルサイズを確認する
+# `ls -lh`でファイルのサイズを確認する:  
 # `ls -lh` reports human-readable file sizes
 ls -lh
 
-# `head`で先頭部分を表示する
-# look at the top of a file with `head`
-head uniprot_sprot.fasta
-```
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):  
+MYSEQ=uniprot_sprot.fasta
 
-[FASTA headers](http://www.uniprot.org/help/fasta-headers)  
-FASTA形式ファイルのヘッダ（">"で始まる行）
+# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name:  
+echo "${MYSEQ}"
 
-```
-# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# `head`で先頭部分を表示する:  
+# look at the top of a file
+head -n 2 "${MYSEQ}"
+
+# `tail`で末尾部分を表示する:  
+# look at the end of a file
+tail -n 3 "${MYSEQ}"
+
+# `grep`でパターンにマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
 # use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
-grep "^>" uniprot_sprot.fasta
+## FASTA header lines begin with the ">" character.
+grep "^>" "${MYSEQ}"
 
 # パイプでプログラムの入出力をつなぐ
 # Pipe the standard output to the next command with the pipe character (`|`).
-grep "^>" uniprot_sprot.fasta | head
+grep "^>" "${MYSEQ}" | head
 
 # `wc -l`で行数をカウントする
 # `wc -l` outputs the number of lines
-grep "^>" uniprot_sprot.fasta | wc -l
+grep "^>" "${MYSEQ}" | wc -l
+
+# `grep -c`オプションで、パターンにマッチした行数を表示する:  
+# use grep to count (the -c option stands for count) the number of lines matching the pattern:  
+grep -c "^>" "${MYSEQ}"
+
+# `grep -i`オプションで、大文字小文字を区別しない（ignore case）
+# add the option `-i` to `grep` to be case insensitive.
+grep "^>" "${MYSEQ}" | grep -i "Shugoshin" | wc -l
+
+# Parsing FASTA headers using perl
+NUM=10
+grep '^>' "${MYSEQ}" | perl -ne '$_=~/^>(\S+) (.+) OS=(.+?) (GN|PE)=/; print "$1 ~~ $2 ~~ $3\n";' | head -n "${NUM}"
+echo; echo "# ${NUM} most abundant OrganismName"
+grep '^>' "${MYSEQ}" | perl -nle '$_=~/^>(\S+) (.+) OS=(.+?) (GN|PE)=/; print "$3";' | sort | uniq -c | sort -nr | head -n "${NUM}"
+echo; echo "# ${NUM} most abundant ProteinName"
+grep '^>' "${MYSEQ}" | perl -nle '$_=~/^>(\S+) (.+) OS=(.+?) (GN|PE)=/; print "$2";' | sort | uniq -c | sort -nr | head -n "${NUM}"
 ```
-
-[日本語にちなんで命名された遺伝子](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#関連項目) "Harakiri" と "Shugoshin" を検索する。
-```
-# use grep to find a gene "Harakiri"
-grep "^>" uniprot_sprot.fasta | grep "harakiri"
-
-# use grep to count (the -c option stands for count) the number of lines matching the pattern
-grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
-
-# add the option -i to grep to be case insensitive.
-grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
-```
-
-`grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
-
-**"Harakiri"検索結果**  
-```
-# Search Results for "Harakiri". There are 3 entries for in the FASTA file.
->sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens OX=9606 GN=HRK PE=1 SV=1
->sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus OX=10090 GN=Hrk PE=3 SV=1
->sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus OX=10116 GN=Hrk PE=3 SV=1
-```
-"Harakiri"にマッチするデータ3件が登録されていた。
-タンパク質名(ProteinName)は"Activator of apoptosis harakiri"と記載。
-生物名(OS=OrganismName)より、ヒト(Homo sapiens)、ハツカネズミ(Mus musculus)、ドブネズミ(Rattus norvegicus)の3種に由来する配列であることがわかる。
-遺伝子名(GN=GeneName)に大文字と小文字（"GN=HRK"と"GN=Hrk"）が混在。
-
-**"Shugoshin"検索結果**  
-```
-# Search Results for "Shugoshin". There are 20 entries for in the FASTA file.
-...
->sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana OX=3702 GN=SGO2 PE=2 SV=1
->sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens OX=9606 GN=SGO2 PE=1 SV=2
->sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus OX=10090 GN=Sgo2 PE=1 SV=1
->sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=sgo2 PE=1 SV=1
-```
-"Shugoshin"にマッチするデータ20件が登録されていた。 タンパク質名("SHUGOSHIN 2", "Shugoshin 2", "Shugoshin-2")と遺伝子名("GN=SGO2", "GN=Sgo2", "GN=sgo2")の表記が統一されていない。
-
-### References 
-- https://www.uniprot.org/help/metalink
-Downloaded data seems incomplete or corrupted - how can I get help with download problems? | UniProt help | UniProt
-- https://kazumaxneo.hatenablog.com/entry/2022/07/10/162327
-UniProtKBデータベースをダウンロードしてBLAST検索する。 - macでインフォマティクス
-- https://github.com/haruosuz/uniprot_sprot
-
-
-
-
-
-
-
-----------
-
 
 ----------
 
