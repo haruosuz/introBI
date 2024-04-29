@@ -670,12 +670,6 @@ Files of mouse (*Mus musculus*) reference genome version GRCm39 (Ensembl release
 protein sequence database
 タンパク質配列データベース
 
-<<<<<<< HEAD
-
-[ターミナル](https://magazine.techacademy.jp/magazine/5155)を開く。`bash`を起動する。
-=======
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
->>>>>>> b6c5b0633a1c4a389acac2554c0120f4e006162e
 ```
 # change shell to bash
 bash
@@ -877,10 +871,10 @@ https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
 
 ### Downloading metadata
 
-
 ### Downloading metadata
 メタデータのダウンロード
 
+```
 # change shell to bash
 bash
 
