@@ -24,26 +24,26 @@
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | Class Calendar
   - [2024年度 SFC授業カレンダー（2023.12.11更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf
 - 2024-04-09 No. 1 - イントロダクション [Introduction](#introduction)
-  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-1)
+  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-1)
 - 2024-04-16 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
-  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-2)
+  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-2)
 - 2024-04-23 No. 3 - Unixシェル [Unix Shell](#unix-shell)
-  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-3)
+  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-3)
 - 2024-04-30 No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
-  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-4)
+  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-4)
 - 2024-05-07 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
-  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-5)
+  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-5)
 - 2024-05-14 No. 6 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
-  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-6)
+  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-6)
 - 2024-05-21 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-7)
+  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
-  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-8)
+  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-8)
 - 2024-06-04 No. 9 - [Guest Speaker](#guest-speaker)
 - 2024-06-11 No. 10 - [Guest Speaker](#guest-speaker)
 - 2024-06-18 No. 11 - TBA
 - 2024-06-25 No. 12 - 再現可能なプロジェクト Reproducible project
-  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/master/2024-04/CaseStudy.md#assignment-12)
+  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-12)
 - 2024-07-02 No. 13 - 再現可能なプロジェクト Reproducible project
 - 2024-07-09 No. 14 - 最終回 final class
   - [Questions](https://github.com/haruosuz/introBI/blob/master/CaseStudy.md#questions)
