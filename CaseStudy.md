@@ -10,8 +10,8 @@
 - [compress](#compress) zip tar
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
 - [NCBI Genome List](#ncbi-genome-list)
-- [GRCh37/hg19 human chromosome 22](#grch37hg19-human-chromosome-22) ヒト22番染色体
-- [GRCm38 mouse reference genome](#grcm38-mouse-reference-genome) マウス参照ゲノム
+- [Human chromosome 22](#human-chromosome-22) ヒト22番染色体
+- [Mouse reference genome](#mouse-reference-genome) マウス参照ゲノム
 - [UniProtKB/Swiss-Prot protein sequence database](#uniprot_sprot) タンパク質配列データベース
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [](#)
@@ -486,7 +486,7 @@ rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用�
 The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
 
 ----------
-## GRCh37/hg19 human chromosome 22
+## Human chromosome 22
 **ヒト22番染色体**
 
 - 2020/09/02 | UCSC Genome Browser | TogoTV https://www.youtube.com/playlist?list=PL18C454AF92F9B012
@@ -565,26 +565,29 @@ was downloaded on Mon Apr 29 11:53:23 JST 2024, using:
 
     $grep "chr22.fa.gz" md5sum.txt
     2baab477ebcc5a0f4163608ec93e4744  chr22.fa.gz
-
 ```
 
 ----------
-## GRCm38 mouse reference genome
+## Mouse reference genome
 **マウス参照ゲノム**
 
 - https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
 - 2017.06.07 | 04:20 | Ensemblの使い方 〜配列を取得する〜2017 | TogoTV https://doi.org/10.7875/togotv.2017.046
 
+[Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)  
+Retrieving the mitochondrial (MT) sequence of the mouse reference genome.  
+マウス参照ゲノムのミトコンドリア (MT) 配列を取得する。  
+
 Retrieving URLs from the Ensembl Genome Browser.  
 Ensembl Genome Browser からURLを取得する。 
 
-以下のページをブラウザ（Firefox または Chrome）で開く。
+Open in a browser (Firefox or Chrome) and navigate to the following pages by clicking the hyperlinks.  
+ブラウザ（Firefox または Chrome）で開き、ハイパーリンクをクリックして以下のページに移動する。  
 
-- <https://www.ensembl.org>  
 - <https://asia.ensembl.org/index.html>
-- Click "Mouse" <http://asia.ensembl.org/Mus_musculus/Info/Index>
-- Click "Download FASTA files for genes, cDNAs, ncRNA, proteins" <https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/>
-- Click "dna/" <https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/>
+  - [Mouse](http://asia.ensembl.org/Mus_musculus/Info/Index)
+    - [Download FASTA files for genes, cDNAs, ncRNA, proteins](https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/)
+      - [dna/](https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/)
 - https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/
 ```
 Index of /pub/release-111/fasta/mus_musculus/dna
@@ -600,72 +603,65 @@ README	2023-10-04 12:39	4.9K
 Right click on the link to the files, and select "Copy Link Address".  
 ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
+### Downloading data
+**データのダウンロード**
 
-
-
-
-
-### Website
-**ウェブサイト**
-
-[Ensembl](http://www.ensembl.org)の
-[Mouse](http://www.ensembl.org/Mus_musculus/Info/Index)の
-"Download FASTA files for genes, cDNAs, ncRNA, proteins" <ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/>
-をブラウザ（Firefox または Chrome）で開く。
-例えば、*README*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
+ターミナルを開く。  
+Open a terminal window.  
 ```
-名前 	サイズ 	最終更新日時
-CHECKSUMS	4.4 kB	9/13/18, 12:32:00 AM
-Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz	5.3 kB	9/4/18, 8:40:00 AM
-README	5.0 kB	9/4/18, 8:40:00 AM
+bash
+
+# ディレクトリを作成して移動する:
+# make and change directory:
+mkdir -p ~/projects/data/ensembl
+cd ~/projects/data/ensembl/
+
+# `wget` を使用して、ファイルをダウンロードする:  
+# Download the files using `wget`:  
+wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/CHECKSUMS
+wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/README
+
+# `zgrep`コマンドを用いて、パターンにマッチした行を抽出する:  
+# use `zgrep` to extract lines matching the pattern:  
+## FASTA header lines begin with the ">" character.
+zgrep "^>" Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+
+# `sum`コマンドでチェックサムを計算し、CHECKSUMSファイルの値と比較する:  
+# Calculate checksum using `sum` and compare with values in CHECKSUMS file:
+sum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+grep "Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz" CHECKSUMS
+
+# SHA-1サムを計算する:  
+# Calculate SHA-1 checksum:  
+shasum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 ```
-
-### Download
-**ダウンロード**
-
-ディレクトリを作成し移動する:  
-
-    mkdir -p ~/projects/data/ensembl
-    cd ~/projects/data/ensembl/
-
-[Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)
-GRCm38 (Ensembl release 94) 
-マウス参照ゲノムのMT配列とCHECKSUMSファイルを`wget`でダウンロードする:  
-
-    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
-    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/CHECKSUMS
-
-`zgrep`コマンドを用いて正規表現`^>`で圧縮ファイルのFASTAヘッダを確認する:  
-
-    zgrep "^>" Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
-
-`sum`コマンドで[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)を計算し、EnsemblのCHECKSUMSファイルの値と比較する:  
-
-    sum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
-    grep "Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz" CHECKSUMS
-
-SHA-1サムを計算する:  
-
-    shasum Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
 
 Markdownノート（README.md）の例:  
 The entire README.md file would look like:  
 ```
 ## Genome Data
 
-Mouse (*Mus musculus*) reference genome version GRCm38 (Ensembl release 94) was downloaded on Sat Oct 13 23:11:53 JST 2018, using:
+Files of mouse (*Mus musculus*) reference genome version GRCm39 (Ensembl release 111) was downloaded on Mon Apr 29 12:58:56 JST 2024, using:
 
-    wget ftp://ftp.ensembl.org/pub/release-94/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+    wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/CHECKSUMS
+    wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+    wget https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/README
 
-## SHA-1 Sums
+## Checksum
 
- - `Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz`: b75f036ca9554688789b00f64328964c295aedec
+    $sum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+    17649 6 Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+
+    $grep "Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz" CHECKSUMS
+    17649     6 Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+
+    $shasum Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
+    cd08465c85a3569ea74eb86e4aec6024b8c372c3  Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz
 ```
 
-### References 
-- https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
-- 2017.06.07 | 04:20 | Ensemblの使い方 〜配列を取得する〜2017 | TogoTV https://doi.org/10.7875/togotv.2017.046
+
+
 
 
 ----------
