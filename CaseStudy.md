@@ -214,14 +214,13 @@ grep -c ">" seqs.fna
 Retrieving genome sequence data via the Genome List from [NCBI](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).  
 [NCBI](https://ja.wikipedia.org/wiki/アメリカ国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)からゲノム配列データを取得する。  
 - http://www.ncbi.nlm.nih.gov/genome/browse/  
-you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just Organism name "**Escherichia coli**" in the search box and press "Search".  
+"Overview (87028); Eukaryotes (36964); Prokaryotes (707463); Viruses (75745); Plasmids (55351); Organelles (3719)"  
+You will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just Organism name "**Escherichia coli**" in the search box and press "Search".  
 ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
 - https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli  
+"Overview (1); Prokaryotes (37988); Plasmids (8990)"  
 you will see the number of hits to *Escherichia coli* in each of the NCBI databases. When you click on "**Prokaryotes**", it will show all the "Strain"s belonging to the species *Escherichia coli*.  
 検索ボックス下の各データベースのうち、"**Prokaryotes**"をクリックすると、*Escherichia coli*に属する株 (Strain) が表示される。  
-```
-Overview (1); Prokaryotes (37988); Plasmids (8990)
-```
 - https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli  
 When you click on the Assembly "**GCA_000005845.2**" (for the Organism Name "Escherichia coli str. K-12 substr. MG1655"), it will bring you to the record for this organism in the NCBI Assembly database.  
 上から1番目の生物（列 Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。  
