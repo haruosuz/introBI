@@ -84,7 +84,6 @@ Submit the compressed file (`zmays-snps.zip`).
 Submit the latest version of the plain-text project notebook (*README.md* file). For example, document today's lecture contents (keywords, URLs, some commands used, etc.).  
 プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。例えば、本日の授業の内容（キーワード、URL、使用したコマンドのいくつか等）を記述する。  
 
-https://github.com/haruosuz/introBI/blob/master/CaseStudy.md
 
 ----------
 ## assignment 4
@@ -93,7 +92,8 @@ https://github.com/haruosuz/introBI/blob/master/CaseStudy.md
 Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data, and their checksums.  
 プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
 
-https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
+- https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list
+- https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
 
 ----------
 ## assignment 5
