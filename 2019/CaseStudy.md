@@ -31,11 +31,11 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
 
-https://github.com/haruosuz/introBI/blob/main/CaseStudy.md
-
 ## GRCh37/hg19 human chromosome 22
 ## GRCm38 mouse reference genome
 ## uniprot_sprot
+
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md
 
 ----------
 ## assignment 0
