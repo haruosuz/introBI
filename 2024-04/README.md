@@ -118,7 +118,7 @@ Choose Applications → Utilities (or press Shift + Command + U). Double-click t
 
 ![https://techatlast.com/restore-deleted-files-mac-os-mac-terminal/](https://techatlast.com/wp-content/uploads/2015/05/TechAtLast-TTX-MacdTrace01.png)
 
-### [Unix](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#unix)
+### [Unix](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#unix)
 Introduction to UNIX Commands  
 UNIXコマンド入門  
 
@@ -805,12 +805,11 @@ p.120
 ## Case Study: Reproducibly Downloading Data
 ## 6.5　ケーススタディ:再現性を確保できるデータのダウンロード方法
 
-- [Case Study 2019](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md)
-  - ヒト22番染色体 [GRCh37/hg19 human chromosome 22](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grch37hg19-human-chromosome-22)
-  - マウス参照ゲノム [GRCm38 mouse reference genome](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#grcm38-mouse-reference-genome)
-  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot)
-- [Case Study 2020](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md)
-  - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+- [Case Study](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md)
+  - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list)
+  - ヒト22番染色体 [Human chromosome 22](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#human-chromosome-22)
+  - マウス参照ゲノム [Mouse reference genome](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#mouse-reference-genome)
+  - タンパク質配列データベース [UniProtKB/Swiss-Prot protein sequence database](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#uniprot_sprot)
 
 ----------
 
