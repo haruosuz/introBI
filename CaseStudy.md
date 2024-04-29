@@ -10,6 +10,7 @@
 - [compress](#compress) zip tar
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
 - [NCBI Genome List](#ncbi-genome-list)
+- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [](#)
 
 ----------
@@ -210,23 +211,25 @@ grep -c ">" seqs.fna
 ----------
 ## NCBI Genome List
 
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)から目的のゲノム配列を見つける。
-
-- Retrieving genome sequence data via the NCBI website  
-NCBIのウェブサイトからゲノム配列データを取得する。  
-  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just Organism name "**Escherichia coli**" in the search box and press "Search".  
-ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/) 上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli), you will see the number of hits to *Escherichia coli* in each of the NCBI databases: "Overview (1); Prokaryotes (33958); Plasmids (7320)". When you click on "**Prokaryotes**", it will show all the "Strain"s belonging to the species *Escherichia coli*.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli)
-検索ボックス下の「Overview (1); Prokaryotes (33958); Plasmids (7320)」のうち、"**Prokaryotes**"をクリックすると、*Escherichia coli*に属する株 (Strain) が表示される。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli), when you click on the Assembly "**GCA_000005845.2**" (for the Organism Name "Escherichia coli str. K-12 substr. MG1655"), it will bring you to the record for this organism in the NCBI Assembly database.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli)
+Retrieving genome sequence data via the Genome List from [NCBI](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).  
+[NCBI](https://ja.wikipedia.org/wiki/アメリカ国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)からゲノム配列データを取得する。  
+- http://www.ncbi.nlm.nih.gov/genome/browse/  
+you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just Organism name "**Escherichia coli**" in the search box and press "Search".  
+ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
+- https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli  
+you will see the number of hits to *Escherichia coli* in each of the NCBI databases. When you click on "**Prokaryotes**", it will show all the "Strain"s belonging to the species *Escherichia coli*.  
+検索ボックス下の各データベースのうち、"**Prokaryotes**"をクリックすると、*Escherichia coli*に属する株 (Strain) が表示される。  
+```
+Overview (1); Prokaryotes (37988); Plasmids (8990)
+```
+- https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli  
+When you click on the Assembly "**GCA_000005845.2**" (for the Organism Name "Escherichia coli str. K-12 substr. MG1655"), it will bring you to the record for this organism in the NCBI Assembly database.  
 上から1番目の生物（列 Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2), click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000005845.2".  
-[ここで](https://www.ncbi.nlm.nih.gov/assembly/GCA_000005845.2)、**Submitted GenBank assembly** "GCA_000005845.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。
-  - [On this page](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/), 
-right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
-[ここで](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/)
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/  
+Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000005845.2".  
+**Submitted GenBank assembly** "GCA_000005845.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。
+- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/  
+Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
 ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
 ```
@@ -236,12 +239,12 @@ Name                                             Last modified      Size
 GCA_000005845.2_ASM584v2_genomic.fna.gz          2014-10-31 19:59  1.3M  
 
 GCA_000005845.2_ASM584v2_genomic.gff.gz          2022-03-09 09:29  404K  
-
-md5checksums.txt                                 2022-11-19 17:28  1.1K  
+ 
+md5checksums.txt                                 2023-11-28 17:01  1.1K  
 ```
 
 ディレクトリ内のファイルについて
-- [What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+- [What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 File formats and content:
@@ -481,4 +484,294 @@ rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用�
 The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
 
 ----------
+
+
+----------
+## NCBI ASSEMBLY_REPORTS
+
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。  
+
+- [NCBI Genomes FTP](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/)
+- [Metagenomics - NCBI ftp genome download](https://www.metagenomics.wiki/tools/fastq/ncbi-ftp-genome-download)
+How to download all reference genomes of a selected species from NCBI    
+
+<https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/>
+
+URL をブラウザ（Firefox または Chrome）で開く。*README_assembly_summary.txt*をクリックする。  
+Open the URL with your browser (Firefox or Chrome). Click the link *README_assembly_summary.txt*.  
+
+```
+# https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
+
+The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
+
+assembly_summary_genbank.txt            - current GenBank genome assemblies
+
+assembly_summary_refseq.txt             - current RefSeq genome assemblies
+
+https://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt
+https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
+```
+
+- January 31, 2020. [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- 2023-08-31 [RefSeq - JI](https://fish-evol.org/RefSeq.html)
+- 2020.04.18 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
+
+
+
+
+
+### Downloading metadata
+
+
+### Downloading metadata
+メタデータのダウンロード
+
+# change shell to bash
+bash
+
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/ncbi/assembly_reports
+
+# ディレクトリを移動する
+# change directories
+cd ~/projects/data/ncbi/assembly_reports/
+
+# カレントディレクトリを表示する 
+# print working directory
+pwd
+
+# Markdown文書をダウンロードする
+#curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+
+# テキストエディタ「Atom」でファイルを開く
+#atom README.$(date +%F).md
+
+データをウェブからダウンロードする。
+
+# `wget`は再帰的にデータをダウンロードできる。ウェブページからテキストファイルを全てダウンロードする:  
+# Recursive downloading can be useful for downloading all files of a certain type from a page.
+# wget --background --output-file=logfile --accept "*.mp3" --no-directories --recursive --no-parent $URL
+wget -b -o wget-log.txt -A "*.txt,*.txt.gz" -nd -r -np ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log.txt
+
+GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
+
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):  
+assembly_summary="assembly_summary_genbank.txt"
+assembly_summary="assembly_summary_refseq.txt"
+
+# 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+# To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
+echo $assembly_summary
+
+# 列番号を付けて出力する:
+grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
+
+# Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+# combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
+grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
+grep -v "^#" $assembly_summary | cut -f12 | sort | uniq -c
+
+### Downloading data
+データのダウンロード
+
+Genomes Download FAQ
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+Also see the Downloading Genomic Data Factsheet
+ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
+
+https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#lactobacillus-salivarius
+
+参照/代表ゲノム("reference genome" or "representative genome")、コンプリートゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of your interest (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
+
+# 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+# create a variable and assign it a value with (do not use spaces around the equals sign!):  
+assembly_summary="assembly_summary_genbank.txt"
+assembly_summary="assembly_summary_refseq.txt"
+
+# 参照/代表ゲノム("reference genome" or "representative genome")
+organism_name="Lactobacillus salivarius|Lactobacillus hayakitensis"
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $20}' > ftpdirpaths
+
+# コンプリートゲノム("Complete Genome")
+organism_name="Lactobacillus salivarius"
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
+
+# コマンドの出力結果をファイルへ追記（リダイレクト`>>`）
+
+# 株名 infraspecific_name
+organism_name="Lactobacillus salivarius"
+infraspecific_name="BCRC 14759"
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $9 ~ /'"$infraspecific_name"'/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $9 ~ /'"$infraspecific_name"'/ {print $20}' >> ftpdirpaths
+
+# 外群 outgroup
+organism_name="Lactobacillus hayakitensis"
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $20}' >> ftpdirpaths
+
+    # 
+    cat ftpdirpaths
+
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルをクリックする。  
+Open the URL with your browser (Firefox or Chrome). Click the link *README.txt*.
+
+Genomes Download FAQ
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+
+```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+
+File formats and content:
+
+   *_genomic.gff.gz file
+       Annotation of the genomic sequence(s) in Generic Feature Format Version 3
+       (GFF3). Sequence identifiers are provided as accession.version.
+       Additional information about NCBI's GFF files is available at 
+       ftp://ftp.ncbi.nlm.nih.gov/genomes/README_GFF3.txt.
+
+   *_genomic.fna.gz file
+       FASTA format of the genomic sequence(s) in the assembly.
+
+   *_rna_from_genomic.fna.gz
+       FASTA format of the nucleotide sequences corresponding to all RNA 
+       features annotated on the assembly, based on the genome sequence. 
+```
+
+配列データ（*_rna_from_genomic.fna.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードし、チェックサムを確認する:  
+
+```
+# Append the filename of interest, in this case "*_rna_from_genomic.fna.gz" to the FTP directory names:  
+cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="rna_from_genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
+
+# NCBI provides a MD5 checksum file in this directory called "md5checksums.txt":  
+cat ftpdirpaths | awk 'BEGIN {FS=OFS="/"} {print $0,"md5checksums.txt"}' ftpdirpaths >> ftpfilepaths
+
+# Use the "ftpfilepaths" file as input to `wget` to download:  
+wget -i ftpfilepaths
+
+# see the newest files
+ls -lrt
+
+# compare our checksum values with those in "md5checksums.txt" using the md5 program:
+md5 *.gz
+grep "_rna_from_genomic.fna.gz" md5checksums.txt*
+```
+
+`basename`コマンドは、ファイル名からパスや拡張子を削除する。  
+`gunzip`コマンドでファイルを展開する:  
+```
+# `basename` strips paths and a suffix (e.g., extension) from filenames
+# decompress files with the command `gunzip`:
+for file in ./*.fna.gz; do gunzip -c $file > $(basename $file .gz); done
+ls -lh *.fna*
+```
+
+### Inspecting data
+データの検査
+
+```
+#cd ~/projects/data/ncbi/assembly_reports/
+
+# `ls -lh`でファイルサイズを確認する:  
+# `ls -lh` reports human-readable file sizes
+ls -lh
+
+# `head`で先頭部分を表示する
+# look at the top of a file with `head`
+head *.fna
+
+# FASTA形式ファイルのヘッダ（">"で始まる行）
+
+# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
+grep "^>" *.fna
+
+# パイプでプログラムの入出力をつなぐ
+# Pipe the standard output to the next command with the pipe character (`|`).
+grep "^>" *.fna | head
+
+# `wc -l`で行数をカウントする
+# `wc -l` outputs the number of lines
+grep "^>" *.fna | wc -l
+
+# "rRNA"にマッチする行を表示する
+# use `grep` to find "rRNA"
+grep "^>" *.fna | grep "rRNA"
+
+# use `grep` to count (the `-c` option stands for count) the number of lines matching the pattern
+grep "^>" *.fna | grep -c "rRNA"
+
+grep "^>" *.fna | grep "16S ribosomal RNA"
+
+cat *_rna_from_genomic.fna > all.fna
+```
+
+- [TogoWS RESTサービスを使い倒す 2011](https://doi.org/10.7875/togotv.2011.058)  
+  - [TogoWS: REST](http://togows.dbcls.jp/site/en/rest.html)  
+- [RefSeq](https://github.com/haruosuz/bioinfo/blob/master/README.md#refseq)
+- [DDBJ 公開形式 (Flat file)](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html)
+  - [FIELD COMMENTS](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#FIELD_COMMENTS)
+    - [DEFINITION](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#Definition)
+データの定義や遺伝子などに関する情報が簡単に記載されています。
+
+```
+# RefSeqデータのアクセッション番号を抽出する
+# Extract RefSeq accession numbers
+grep "^>" all.fna | grep "16S ribosomal RNA" | perl -pe 's/>lcl\|([^ ]+)_rrna_.+ (.+)\n/$1\n/g' | sort -u > my_accession.txt
+
+# RefSeqデータの「DEFINITION」を取得する
+# Retrieving "DEFINITION" field
+for AC in `cat my_accession.txt`; do curl http://togows.dbcls.jp/entry/nucleotide/$AC/definition; done > my_definition.txt
+
+# ファイルを行単位で連結する
+# merge lines of files
+paste my_accession.txt my_definition.txt > my_name.txt
+```
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+
+
+
+
+----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
