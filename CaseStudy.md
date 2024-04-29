@@ -496,8 +496,9 @@ The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF
 Retrieving URLs from the UCSC Genome Browser.  
 UCSC Genome Browser からURLを取得する。 
 
-- <http://genome.ucsc.edu>  
-open [Downloads → Genome Data](https://hgdownload.soe.ucsc.edu/downloads.html).  
+<http://genome.ucsc.edu>  
+
+- Open [Downloads → Genome Data](https://hgdownload.soe.ucsc.edu/downloads.html).  
 [Downloads → Genome Data](http://hgdownload.soe.ucsc.edu/downloads.html) を開く。  
 - Click on **Human genomes**, and open the **Sequence data by chromosome** section below **Feb. 2009 (GRCh37/hg19)**.  
 **Human genomes** をクリックし、 **Feb. 2009 (GRCh37/hg19)** の **Sequence data by chromosome** を開く。
@@ -570,6 +571,39 @@ was downloaded on Mon Apr 29 11:53:23 JST 2024, using:
 ----------
 ## GRCm38 mouse reference genome
 **マウス参照ゲノム**
+
+- https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
+- 2017.06.07 | 04:20 | Ensemblの使い方 〜配列を取得する〜2017 | TogoTV https://doi.org/10.7875/togotv.2017.046
+
+Retrieving URLs from the Ensembl Genome Browser.  
+Ensembl Genome Browser からURLを取得する。 
+
+以下のページをブラウザ（Firefox または Chrome）で開く。
+
+- <https://www.ensembl.org>  
+- <https://asia.ensembl.org/index.html>
+- Click "Mouse" <http://asia.ensembl.org/Mus_musculus/Info/Index>
+- Click "Download FASTA files for genes, cDNAs, ncRNA, proteins" <https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/>
+- Click "dna/" <https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/>
+- https://ftp.ensembl.org/pub/release-111/fasta/mus_musculus/dna/
+```
+Index of /pub/release-111/fasta/mus_musculus/dna
+
+Name	Last modified	Size	Description
+
+CHECKSUMS	2023-10-19 17:06	4.2K	 
+
+Mus_musculus.GRCm39.dna.chromosome.MT.fa.gz	2023-10-04 12:37	5.2K	 
+
+README	2023-10-04 12:39	4.9K	 
+```
+Right click on the link to the files, and select "Copy Link Address".  
+ファイルへのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+
+
+
+
+
 
 ### Website
 **ウェブサイト**
