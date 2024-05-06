@@ -89,17 +89,14 @@ Submit the latest version of the plain-text project notebook (*README.md* file).
 **課題4 「bioinformatics_data/README.md」**
 
 Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data, and their checksums.  
-プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えばFASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
-
-- https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list
-- https://github.com/vsbuffalo/bds-files/tree/master/chapter-06-bioinformatics-data
+プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
 
 ----------
 ## assignment 5
 **課題5 「script.sh」**
 
 Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
-興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
+興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
 
 ----------
 ## assignment 6
