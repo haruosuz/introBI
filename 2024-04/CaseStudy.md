@@ -84,7 +84,6 @@ Submit the compressed file (`zmays-snps.zip`).
 Submit the latest version of the plain-text project notebook (*README.md* file). For example, document today's lecture contents (keywords, URLs, some commands used, etc.).  
 プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。例えば、本日の授業の内容（キーワード、URL、使用したコマンドのいくつか等）を記述する。  
 
-
 ----------
 ## assignment 4
 **課題4 「bioinformatics_data/README.md」**
@@ -99,8 +98,8 @@ Submit the latest version of the plain-text project notebook (*README.md* file).
 ## assignment 5
 **課題5 「script.sh」**
 
-Submit a shell script (*script.sh* file) created today.  
-本日作成したシェルスクリプト（*script.sh*ファイル）を提出する。  
+Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
+興味あるデータファイル（FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
 
 ----------
 ## assignment 6
