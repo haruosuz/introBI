@@ -270,7 +270,7 @@ A one-stop shop for finding, browsing, and downloading genomic data
 Retrieving genome sequence data from the NCBI website.  
 NCBIのウェブサイトからゲノム配列データを取得する。  
 
-- https://www.ncbi.nlm.nih.gov/datasets/
+- https://www.ncbi.nlm.nih.gov/datasets/  
 Click on the **Genome** tab.  
 **Genome** タブをクリックする。  
 - https://www.ncbi.nlm.nih.gov/datasets/genome/  
