@@ -225,7 +225,7 @@ cd ~/projects/
 ```
 
 日付のディレクトリを作成して、そのディレクトリに移動する:  
-Create a directory named with today's date and change into it:  
+Create a dated directory and change into it:  
 ```
 TODAY=$(date +%F); mkdir "${TODAY}"; cd "${TODAY}"
 ```
