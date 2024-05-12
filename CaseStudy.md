@@ -249,7 +249,7 @@ cp -r template1 a_new_project
 Execute the `template1/` project:  
 ```
 cd template1/
-cat README.md
+#cat README.md
 bash scripts/run.sh
 ```
 
@@ -258,8 +258,7 @@ Execute the `ecoli/` project:
 ```
 cd ..
 cd ecoli/
-less README.md
-# q
+#cat README.md
 (bash scripts/run.sh &) >& log.$(date +%F).txt
 tail -f log.$(date +%F).txt
 ```
