@@ -9,8 +9,10 @@
 - [Markdown](#markdown)
 - [compress](#compress) zip tar
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
+- [my_project](#my_project)
 - [NCBI Datasets](#ncbi-datasets)
 - [NCBI Genome List](#ncbi-genome-list)
+  - [Questions](#questions)
 - [Human chromosome 22](#human-chromosome-22) ヒト22番染色体
 - [Mouse reference genome](#mouse-reference-genome) マウス参照ゲノム
 - [UniProtKB/Swiss-Prot protein sequence database](#uniprot_sprot) タンパク質配列データベース
@@ -272,16 +274,16 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 - https://www.ncbi.nlm.nih.gov/datasets/
 Click on the **Genome** tab.  
 **Genome** タブをクリックする。  
-- https://www.ncbi.nlm.nih.gov/datasets/genome/
+- https://www.ncbi.nlm.nih.gov/datasets/genome/  
 you will see a search box [ Selected taxa ], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just organism name "**Escherichia coli**" in the search box and press Enter.  
 検索ボックス [ Selected taxa ] に生物名を入力してEnterキーを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
-- https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=562
+- https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=562  
 under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM886v2") indicated by check mark.  
 **Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM886v2") をクリックする。  
-- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
 Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000008865.2".  
 **Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/
+- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/  
 Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
 ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
