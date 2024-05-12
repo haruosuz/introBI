@@ -239,7 +239,7 @@ cd my_project
 ls
 ```
 
-template1/` ディレクトリをコピー:  
+`template1/` ディレクトリをコピー:  
 Copy the `template1/` directory:  
 ```
 cp -r template1 a_new_project
