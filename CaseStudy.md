@@ -9,6 +9,7 @@
 - [Markdown](#markdown)
 - [compress](#compress) zip tar
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
+- [NCBI Datasets](#ncbi-datasets)
 - [NCBI Genome List](#ncbi-genome-list)
 - [Human chromosome 22](#human-chromosome-22) ヒト22番染色体
 - [Mouse reference genome](#mouse-reference-genome) マウス参照ゲノム
@@ -212,6 +213,107 @@ grep -c ">" seqs.fna
 ```
 
 ----------
+### my_project
+
+ターミナルウィンドウを開く。  
+Open a terminal window.  
+```
+bash
+cd ~/projects/
+```
+
+日付のディレクトリを作成して、そのディレクトリに移動する:  
+Create a directory named with today's date and change into it:  
+```
+TODAY=$(date +%F); mkdir "${TODAY}"; cd "${TODAY}"
+```
+
+プロジェクトディレクトリを取得する:  
+Retrieve a project directory:  
+```
+wget https://github.com/haruosuz/introBI/raw/main/my_project.zip
+unzip my_project.zip
+cd my_project
+ls
+```
+
+`template1/` プロジェクトを実行:  
+Execute the `template1/` project:  
+```
+cd template1/
+cat README.md
+bash scripts/run.sh
+```
+
+`ecoli/` プロジェクトを実行:  
+Execute the `ecoli/` project:  
+```
+cd ..
+cd ecoli/
+less README.md
+# q
+(bash scripts/run.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
+```
+
+独自のプロジェクトを作成:  
+Create your own project:  
+```
+cp -r template1 a_new_project
+```
+
+----------
+## NCBI Datasets
+A one-stop shop for finding, browsing, and downloading genomic data
+
+Retrieving genome sequence data from the NCBI website.  
+NCBIのウェブサイトからゲノム配列データを取得する。  
+
+- https://www.ncbi.nlm.nih.gov/datasets/
+Click on the **Genome** tab.  
+**Genome** タブをクリックする。  
+- https://www.ncbi.nlm.nih.gov/datasets/genome/
+you will see a search box [ Selected taxa ], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just organism name "**Escherichia coli**" in the search box and press Enter.  
+検索ボックス [ Selected taxa ] に生物名を入力してEnterキーを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
+- https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=562
+under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM886v2") indicated by check mark.  
+**Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM886v2") をクリックする。  
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/
+Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000008865.2".  
+**Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
+- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/
+Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
+ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+
+```
+Index of /genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2
+Name                                             Last modified      Size  
+ 
+GCA_000008865.2_ASM886v2_genomic.fna.gz          2021-08-23 16:06  1.6M  
+
+GCA_000008865.2_ASM886v2_genomic.gff.gz          2021-08-23 16:06  305K  
+ 
+md5checksums.txt                                 2024-03-31 07:25  1.1K  
+```
+
+ディレクトリ内のファイル
+[What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
+https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+```
+File formats and content:
+
+   *_genomic.fna.gz file
+       FASTA format of the genomic sequence(s) in the assembly. 
+
+   *_genomic.gff.gz file
+       Annotation of the genomic sequence(s) in Generic Feature Format Version 3
+       (GFF3). 
+
+   md5checksums.txt file
+       file checksums are provided for all data files in the directory
+```
+
+----------
 ## NCBI Genome List
 
 Retrieving genome sequence data via the Genome List from [NCBI](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).  
@@ -244,9 +346,9 @@ GCA_000005845.2_ASM584v2_genomic.gff.gz          2022-03-09 09:29  404K
 md5checksums.txt                                 2023-11-28 17:01  1.1K  
 ```
 
-ディレクトリ内のファイルについて
-- [What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+ディレクトリ内のファイル
+[What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
+https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 File formats and content:
 
@@ -483,6 +585,8 @@ rRNAオペロン数が多いほど、rRNA遺伝子の複製起点からの距離
 rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用バイアスが強いほど、細菌の増殖速度が速い。 
   - [Table 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
 The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
+
+
 
 ----------
 ## Human chromosome 22
