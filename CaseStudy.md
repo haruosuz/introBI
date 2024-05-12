@@ -239,6 +239,12 @@ cd my_project
 ls
 ```
 
+template1/` ディレクトリをコピー:  
+Copy the `template1/` directory:  
+```
+cp -r template1 a_new_project
+```
+
 `template1/` プロジェクトを実行:  
 Execute the `template1/` project:  
 ```
@@ -256,12 +262,6 @@ less README.md
 # q
 (bash scripts/run.sh &) >& log.$(date +%F).txt
 tail -f log.$(date +%F).txt
-```
-
-独自のプロジェクトを作成:  
-Create your own project:  
-```
-cp -r template1 a_new_project
 ```
 
 ----------
