@@ -119,8 +119,8 @@ Example of project directory structure:
 ```
 my_project/README.md
 my_project/scripts/script.sh
-my_project/data/input.txt
-my_project/analysis/output.txt
+my_project/data/
+my_project/analysis/
 ```
 
 Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
@@ -129,21 +129,7 @@ Compress the project directory (`my_project/`) while excluding files in the `dat
 zip --exclude 'my_project/data/*' -r my_project.zip my_project/
 ```
 
-Use the `man` command (e.g. `man zip`) to access the online manual pages. Press *q* to quit.  
-`man コマンド名`（例えば、`man zip`）でコマンドのマニュアルを参照する。終了するには、*q*キーを押す。  
-```
-$man zip
-
-       zip - package and compress (archive) files
-
-       -r
-       --recurse-paths
-              Travel the directory structure recursively
-
-       -x files
-       --exclude files
-              Explicitly exclude the specified files
-```
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 7
