@@ -33,20 +33,23 @@
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-4)
 - 2024-05-07 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-5)
-- 2024-05-14 No. 6 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/master/2021/README.md#my_project)
+- 2024-05-14 No. 6 - [Questions](https://github.com/haruosuz/introBI/blob/master/CaseStudy.md#questions)
+  - [NCBI Datasets](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-datasets)
+  - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-6)
 - 2024-05-21 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-8)
-- 2024-06-04 No. 9 - [Guest Speaker](#guest-speaker)
-- 2024-06-11 No. 10 - [Guest Speaker](#guest-speaker)
-- 2024-06-18 No. 11 - TBA
-- 2024-06-25 No. 12 - 再現可能なプロジェクト Reproducible project
+- 2024-06-04 補講/試験 Makeup Class Day/Exam
+- 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
+- 2024-06-18 No. 10 - [Guest Speaker](#guest-speaker)
+- 2024-06-25 No. 11 - TBA
+- 2024-07-02 No. 12 - 再現可能なプロジェクト Reproducible project
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-12)
-- 2024-07-02 No. 13 - 再現可能なプロジェクト Reproducible project
-- 2024-07-09 No. 14 - 最終回 final class
-  - [Questions](https://github.com/haruosuz/introBI/blob/master/CaseStudy.md#questions)
+- 2024-07-09 No. 13 - 再現可能なプロジェクト Reproducible project
+- 2024-07-16 No. 14 - 最終回 final class
+- 2024-07-18 2024-07-20 補講
 
 ----------
 ## final presentation
@@ -60,26 +63,21 @@ Slack上で、プロジェクトディレクトリの圧縮ファイルを提出
 
 ----------
 ## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+**特別講演**
 
+People outside of Keio University SFC will also attend the lectures.  
 他機関所属の方も参加されます。  
 
 
 - Speaker: [Dr. Kirill Kryukov (National Institute of Genetics) キリル クリュコフ博士（国立遺伝学研究所）](https://kirill-kryukov.com/kirr/)
 
-### 2024-06-04 
+### 2024-06-11
 - Title: "Organizing a data analysis project"
 - Slides: https://kirill-kryukov.com/study/temp/Keio/Part-1-slides.pdf
 - Commands: https://kirill-kryukov.com/study/temp/Keio/script-1.txt
 
-### 2024-06-11 
+### 2024-06-18
 - Title: "Designing reproducible computational experiments"
-- Scripts:
-  - https://kirill-kryukov.com/study/temp/Keio/script-2-setup.sh
-  - https://kirill-kryukov.com/study/temp/Keio/scripts/1-download-data.sh
-  - https://kirill-kryukov.com/study/temp/Keio/scripts/2-preprocess.sh
-  - https://kirill-kryukov.com/study/temp/Keio/scripts/3-analyze.sh
-  - https://kirill-kryukov.com/study/temp/Keio/scripts/4-summarize.sh
 
 ----------
 ## Introduction
