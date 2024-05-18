@@ -73,8 +73,6 @@ People outside of Keio University SFC will also attend the lectures.
 
 ### 2024-06-11
 - Title: "Organizing a data analysis project"
-- Slides: https://kirill-kryukov.com/study/temp/Keio/Part-1-slides.pdf
-- Commands: https://kirill-kryukov.com/study/temp/Keio/script-1.txt
 
 ### 2024-06-18
 - Title: "Designing reproducible computational experiments"
