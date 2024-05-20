@@ -13,8 +13,8 @@
 - [assignment 4](#assignment-4) 課題4 「bioinformatics_data/README.md」
 - [assignment 5](#assignment-5) 課題5 「script.sh」
 - [assignment 6](#assignment-6) 課題6 「my_project/」
-- [assignment 7](#assignment-7) 課題7 「my_project/unix-data-tools/」
-- [assignment 8](#assignment-8) 課題8 「my_project/inspecting-data/」
+- [assignment 7](#assignment-7) 課題7 「my_project/」
+- [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
 - [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
 
@@ -133,21 +133,19 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 7
-**課題7 「my_project/unix-data-tools/」**
+**課題7 「my_project/」**
 
-Inspecting data Using Unix Data Tools  
-Unixデータツールを用いてデータを検査する。  
+Submit a compressed file of the revised project directory (excluding data files `data/*`).  
+修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 ----------
-## assignment 8
-**課題8 「my_project/inspecting-data/」**
 
-[Inspecting data](https://github.com/haruosuz/introBI/blob/master/2020/CaseStudy.md#inspecting-data)
-Using Unix Data Tools  
-Unixデータツールを用いてデータを検査する。  
+----------
+## assignment 9
+**課題9 「guest-speaker/README.md」**
 
-Submit a compressed file of your project directory (excluding data files `data/*`).  
-プロジェクトディレクトリ（データファイル `data/*` を除く）の圧縮ファイルを提出する。  
+Please provide your comments, questions, or anything related to today's special lecture in the *README.md* file and submit it.  
+本日の特別講演に関するコメント、質問、その他何でも、*README.md* ファイルに記載して提出する。  
 
 ----------
 ## assignment 12
