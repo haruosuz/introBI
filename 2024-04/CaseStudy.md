@@ -138,16 +138,19 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
+Document the updates of your project in the *README.md* file.  
+*README.md* ファイルにプロジェクトの更新を記録する。  
+
 Update your script and run it.  
 スクリプトを更新し実行する。  
 ```
-# Redirect the standard output and standard error to a log file.  
-# 標準出力と標準エラーをログファイルにリダイレクトする。  
+# Redirect the standard output and standard error to a log file.
+# 標準出力と標準エラーをログファイルにリダイレクトする。
 
 (bash scripts/run.sh &) >& log.$(date +%F).txt
 
-# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
 
 tail -f log.$(date +%F).txt
 ```
@@ -157,28 +160,16 @@ Example of project directory structure:
 ```
 ecoli/README.md
 ecoli/analysis/2024-05-14/output.txt
-ecoli/analysis/2024-05-20/output.txt
+ecoli/analysis/2024-05-21/output.txt
 ecoli/data/2024-05-14/GCA_000005845.2_ASM584v2_genomic.fna
 ecoli/data/2024-05-14/GCA_000005845.2_ASM584v2_genomic.gff
 ecoli/data/2024-05-14/md5checksums.txt
-ecoli/data/2024-05-20/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2024-05-20/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2024-05-20/md5checksums.txt
-ecoli/log.2024-05-12.txt
+ecoli/data/2024-05-21/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2024-05-21/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2024-05-21/md5checksums.txt
 ecoli/log.2024-05-14.txt
-ecoli/log.2024-05-20.txt
+ecoli/log.2024-05-21.txt
 ```
-
-Document the updates of your project in the *README.md* file.  
-*README.md* ファイルにプロジェクトの更新を記録する。  
-
-Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
-`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
-```
-zip --exclude 'my_project/data/*' -r my_project.zip my_project/
-```
-
-https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 
