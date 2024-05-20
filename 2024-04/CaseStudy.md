@@ -146,12 +146,10 @@ Update your script and run it.
 ```
 # Redirect the standard output and standard error to a log file.
 # 標準出力と標準エラーをログファイルにリダイレクトする。
-
 (bash scripts/run.sh &) >& log.$(date +%F).txt
 
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
 # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
-
 tail -f log.$(date +%F).txt
 ```
 
@@ -170,6 +168,14 @@ ecoli/data/2024-05-21/md5checksums.txt
 ecoli/log.2024-05-14.txt
 ecoli/log.2024-05-21.txt
 ```
+
+Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
+`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
+```
+zip --exclude 'my_project/data/*' -r my_project.zip my_project/
+```
+
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 
