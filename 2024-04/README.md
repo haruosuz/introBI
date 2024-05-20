@@ -37,7 +37,7 @@
   - [Questions](https://github.com/haruosuz/introBI/blob/master/CaseStudy.md#questions)
   - [NCBI Datasets](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-datasets)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-6)
-- 2024-05-21 No. 7 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2024-05-21 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-8)
