@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「bioinformatics_data/README.md」
 - [assignment 5](#assignment-5) 課題5 「script.sh」
 - [assignment 6](#assignment-6) 課題6 「my_project/」
-- [assignment 7](#assignment-7) 課題7 「my_project/」
+- [assignment 7](#assignment-7) 課題7 「my_project/inspecting-data/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
 - [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
 - [assignment 14](#assignment-14) 課題14 「my_project/final/」
@@ -133,7 +133,7 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 7
-**課題7 「my_project/」**
+**課題7 「my_project/inspecting-data/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
