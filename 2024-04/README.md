@@ -39,7 +39,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-6)
 - 2024-05-21 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-7)
-- 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [uniq](#finding-unique-values-in-uniq)
+- 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-8)
 - 2024-06-04 補講/試験 Makeup Class Day/Exam
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
