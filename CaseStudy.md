@@ -286,8 +286,6 @@ under **Assembly**, you will see genome sequences; of which, click reference gen
 | NCBI RefSeq assembly |	GCF_000008865.2 |	 |
 | Submitted GenBank assembly  |GCA_000008865.2 |	 |
 
-https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#insdc
-
 [What are NCBI Assembly accession numbers?](https://support.nlm.nih.gov/knowledgebase/article/KA-03451/en-us)
 
 ### RefSeq
@@ -297,13 +295,8 @@ Click on "See more files on FTP" from the menu on the right (under **Actions**) 
 **NCBI RefSeq assembly** "GCF_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2/
 ```
-Index of /genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2
-Name                                             Last modified      Size  
-
 GCF_000008865.2_ASM886v2_genomic.fna.gz          2021-08-21 03:36  1.6M  
-
 GCF_000008865.2_ASM886v2_genomic.gff.gz          2021-08-21 03:36  342K  
-
 md5checksums.txt                                 2024-03-31 07:25  1.1K  
 ```
 
@@ -314,13 +307,8 @@ Click on "See more files on FTP" from the menu on the right (under **Actions**) 
 **Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/  
 ```
-Index of /genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2
-Name                                             Last modified      Size  
- 
 GCA_000008865.2_ASM886v2_genomic.fna.gz          2021-08-23 16:06  1.6M  
-
 GCA_000008865.2_ASM886v2_genomic.gff.gz          2021-08-23 16:06  305K  
- 
 md5checksums.txt                                 2024-03-31 07:25  1.1K  
 ```
 
