@@ -44,7 +44,7 @@
 - 2024-06-04 補講/試験 Makeup Class Day/Exam
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
 - 2024-06-18 No. 10 - [Guest Speaker](#guest-speaker)
-- 2024-06-25 No. 11 - TBA
+- 2024-06-25 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [join](#join)
 - 2024-07-02 No. 12 - 再現可能なプロジェクト Reproducible project
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-12)
 - 2024-07-09 No. 13 - 再現可能なプロジェクト Reproducible project
