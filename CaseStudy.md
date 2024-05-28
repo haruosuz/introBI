@@ -288,13 +288,7 @@ under **Assembly**, you will see genome sequences; of which, click reference gen
 
 https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#insdc
 
-https://support.nlm.nih.gov/knowledgebase/article/KA-03451/en-us
-
-What are NCBI Assembly accession numbers?
-```
-The format for GenBank (primary) assembly accessions is: [ GCA ][ _ ][nine digits][.][version number]
-The format for RefSeq (NCBI-derived) assembly accessions is: [ GCF ][ _ ][nine digits][.][version number]
-```
+[What are NCBI Assembly accession numbers?](https://support.nlm.nih.gov/knowledgebase/article/KA-03451/en-us)
 
 ### RefSeq
 
