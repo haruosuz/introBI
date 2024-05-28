@@ -280,12 +280,45 @@ you will see a search box [ Selected taxa ], and you can type "Enter one or more
 under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM886v2") indicated by check mark.  
 **Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM886v2") をクリックする。  
 - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
+
+|          |          | Actions |
+|:---------|:---------|:---------|
+| NCBI RefSeq assembly |	GCF_000008865.2 |	 |
+| Submitted GenBank assembly  |GCA_000008865.2 |	 |
+
+https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#insdc
+
+https://support.nlm.nih.gov/knowledgebase/article/KA-03451/en-us
+
+What are NCBI Assembly accession numbers?
+```
+The format for GenBank (primary) assembly accessions is: [ GCA ][ _ ][nine digits][.][version number]
+The format for RefSeq (NCBI-derived) assembly accessions is: [ GCF ][ _ ][nine digits][.][version number]
+```
+
+### RefSeq
+
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
+Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **NCBI RefSeq assembly** "GCF_000008865.2".  
+**NCBI RefSeq assembly** "GCF_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
+- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2/
+```
+Index of /genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2
+Name                                             Last modified      Size  
+
+GCF_000008865.2_ASM886v2_genomic.fna.gz          2021-08-21 03:36  1.6M  
+
+GCF_000008865.2_ASM886v2_genomic.gff.gz          2021-08-21 03:36  342K  
+
+md5checksums.txt                                 2024-03-31 07:25  1.1K  
+```
+
+### GenBank
+
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
 Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000008865.2".  
 **Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/  
-Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
-ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-
 ```
 Index of /genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2
 Name                                             Last modified      Size  
@@ -296,6 +329,9 @@ GCA_000008865.2_ASM886v2_genomic.gff.gz          2021-08-23 16:06  305K
  
 md5checksums.txt                                 2024-03-31 07:25  1.1K  
 ```
+
+Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
+ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
 ディレクトリ内のファイル
 [What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
