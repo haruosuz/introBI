@@ -41,7 +41,9 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/tree/main/2024-04/CaseStudy.md#assignment-8)
-- 2024-06-04 補講/試験 Makeup Class Day/Exam
+- 2024-06-04 休講 no class |  
+[補講/試験](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
+[Makeup Class Day/Exam](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
 - 2024-06-18 No. 10 - [Guest Speaker](#guest-speaker)
 - 2024-06-25 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [join](#join)
