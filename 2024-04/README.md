@@ -47,7 +47,7 @@
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-9)
 - 2024-06-18 No. 10 - [Guest Speaker](#guest-speaker)
-2024-06-21 (Fri) 6th period - [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) Participation is optional.
+- 2024-06-21 (Fri) 6th period - [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) Participation is optional.
 - 2024-06-25 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [join](#join)
 - 2024-07-02 No. 12 - 再現可能なプロジェクト Reproducible project
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-12)
