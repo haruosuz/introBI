@@ -86,6 +86,7 @@ People outside of Keio University SFC will also attend the lectures.
 wget https://biokirr.com/Temp/Keio/setup.sh
 chmod a+x setup.sh
 ./setup.sh
+cd  ~/practice-project
 ```
 
 ----------
