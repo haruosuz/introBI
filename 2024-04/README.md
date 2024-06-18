@@ -90,6 +90,13 @@ cd ~/practice-project/scripts/
 ./1-download-data.sh
 ```
 
+
+https://github.com/haruosuz/introBI/blob/main/2024-04/README.md#running-bash-scripts
+```
+chmod +x script.sh
+./script.sh
+```
+
 ----------
 ## Introduction
 **イントロダクション**
