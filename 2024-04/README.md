@@ -82,6 +82,11 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2024-06-18
 - Title: "Designing reproducible computational experiments"
 
+```
+wget https://biokirr.com/Temp/Keio/setup.sh
+
+```
+
 ----------
 ## Introduction
 **イントロダクション**
