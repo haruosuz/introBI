@@ -50,8 +50,8 @@
   - 課題10 [assignment 10](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-10)
 - 2024-06-21 (Fri) 6th period - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/) Participation is optional.
 - 2024-06-25 No. 11 - Examples of tabular data formats like TSV and CSV
-  - [Metagenomics and Metadesign of Subways and Urban Biomes (MetaSUB) International Consortium](https://github.com/haruosuz/metasub/blob/master/README.md#publication)
-    - [A global metagenomic map of urban microbiomes and antimicrobial resistance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238498/)
+  - [MetaSUB International Consortium](https://github.com/haruosuz/metasub/blob/master/README.md#publication)
+    - [Cell. 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238498/)
       - https://raw.githubusercontent.com/dcdanko/MetaSUB-metadata/master/complete_metadata.csv
   - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
     - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list)
