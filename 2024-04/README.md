@@ -49,7 +49,13 @@
 - 2024-06-18 No. 10 - [Guest Speaker](#guest-speaker)
   - 課題10 [assignment 10](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-10)
 - 2024-06-21 (Fri) 6th period - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/) Participation is optional.
-- 2024-06-25 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [join](#join)
+- 2024-06-25 No. 11 - Examples of tabular data formats like TSV and CSV
+  - [Metagenomics and Metadesign of Subways and Urban Biomes (MetaSUB) International Consortium](https://github.com/haruosuz/metasub/blob/master/README.md#publication)
+    - [A global metagenomic map of urban microbiomes and antimicrobial resistance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238498/)
+      - https://raw.githubusercontent.com/dcdanko/MetaSUB-metadata/master/complete_metadata.csv
+  - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+    - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list)
+      - https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
 - 2024-07-02 No. 12 - 再現可能なプロジェクト Reproducible project
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-12)
 - 2024-07-09 No. 13 - 再現可能なプロジェクト Reproducible project
@@ -92,7 +98,6 @@ cd scripts/
 ./2-preprocess.sh
 ./3-analyze.sh
 ```
-
 
 
 https://github.com/haruosuz/introBI/blob/main/2024-04/README.md#running-bash-scripts
