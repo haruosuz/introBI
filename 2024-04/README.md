@@ -60,6 +60,7 @@
   - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-12)
 - 2024-07-09 No. 13 - 再現可能なプロジェクト Reproducible project
 - 2024-07-16 No. 14 - 最終回 final class
+  - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-final)
 - 2024-07-18 2024-07-20 補講
 
