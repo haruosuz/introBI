@@ -18,7 +18,7 @@
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
 - [assignment 10](#assignment-10) 課題10 「my_project/guest-speaker/」
 - [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
-- [assignment 14](#assignment-14) 課題14 「my_project/final/」
+- [assignment final](#assignment-final) 最終課題 「my_project/final/」
 
 ----------
 ## assignment 0
@@ -255,17 +255,15 @@ date +%F
 ```
 
 ----------
-## assignment 14
-**課題14 「my_project/final/」**
+## assignment final
+**最終課題 「my_project/final/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-[課題のファイルをSOLに提出する。  
-Submit the assignment file on SOL.  ](https://sol.sfc.keio.ac.jp/)  
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-
-
 
 
