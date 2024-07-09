@@ -101,15 +101,6 @@ cd scripts/
 ./3-analyze.sh
 ```
 
-
-https://github.com/haruosuz/introBI/blob/main/2024-04/README.md#running-bash-scripts
-
-Add execute permissions using chmod and call the script as a program:
-```
-chmod +x script.sh
-./script.sh
-```
-
 ----------
 ## Introduction
 **イントロダクション**
