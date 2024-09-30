@@ -24,43 +24,36 @@
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | Class Calendar
   - [2024年度 SFC授業カレンダー（2024.8.5更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf
 - 2024-10-01 No. 1 - イントロダクション [Introduction](#introduction)
-  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-1)
+  - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-1)
 - 2024-10-08 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
-  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-2)
+  - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-2)
 - 2024-10-15 No. 3 - Unixシェル [Unix Shell](#unix-shell)
-  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-3)
+  - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-3)
 - 2024-10-22 No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
-  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-4)
+  - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-4)
 - 2024-10-29 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
-  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-5)
+  - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-5)
 - 2024-11-05 No. 6 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - [Questions](https://github.com/haruosuz/introBI/blob/master/CaseStudy.md#questions)
   - [NCBI Datasets](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-datasets)
-  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-6)
+  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
-  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-7)
+  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-7)
 - 三田祭期間（2024-11-19 ～ 2024-11-25）
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-8)
+  - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-8)
 - 2024-06-04 休講 no class |
 [補講/試験](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
 [Makeup Class Day/Exam](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
 - 2024-12-10 No. 9 - TBA
 - 2024-12-17 No. 10 - TBA
-- 2024-12-24 No. 11 - Examples of tabular data formats (CSV and TSV)
-  - [MetaSUB International Consortium](https://github.com/haruosuz/metasub/blob/master/README.md#publication)
-    - [Cell. 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238498/)
-      - [complete_metadata.csv](https://raw.githubusercontent.com/dcdanko/MetaSUB-metadata/master/complete_metadata.csv)
-  - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-    - [NCBI Genome List](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-genome-list)
-      - https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+- 2024-12-24 No. 11 - TBA
 - 湘南藤沢キャンパス一斉休業（12/28～1/4）
-- 2025-01-07 No. 12 Unixデータツール [Unix Data Tools](#unix-data-tools) | [join](#join)
-  - 課題12 [assignment 12](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-12)
+- 2025-01-07 No. 12 - 再現可能なプロジェクト Reproducible project
 - 2025-01-14 No. 13 - 再現可能なプロジェクト Reproducible project
 - 2025-01-21 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-  - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-final)
+  - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
 - 2024-07-18 2024-07-20 補講
 
 ----------
@@ -315,8 +308,8 @@ p.23
 訳書27頁
 
 > ###### What's in a Name?  
-> Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2024-04-11.md`).  
-> ファイルやディレクトリの名前には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使用しない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2024-04-11.md`）  
+> Do not use spaces (` `) in file and directory names. Use only letters, numbers (`{A..Z}{a..z}{0..9}`), underscores (`_`), and dashes (`-`) in file and directory names. Including extensions in filenames helps indicate the type of each file. (e.g., `README_2024-10-11.md`).  
+> ファイルやディレクトリの名前には、[スペース](https://ja.wikipedia.org/wiki/スペース)(` `)を使用しない。英数字(`{A..Z}{a..z}{0..9}`)かアンダースコア(`_`)かダッシュ(`-`)を使う。ファイル名に拡張子を付けることでファイルの種類を示す。（例. `README_2024-10-11.md`）  
 
 [Absolute and relative paths](https://en.wikipedia.org/wiki/Path_%28computing%29#Absolute_and_relative_paths) | 
 [絶対パスと相対パス](http://codezine.jp/unixdic/w/絶対パスと相対パス)  
