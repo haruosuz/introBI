@@ -263,6 +263,18 @@ cd ecoli/
 tail -f log.$(date +%F).txt
 ```
 
+`ncbi_genome_reports/` プロジェクトを実行:  
+Execute the `ecoli/` project:  
+```
+cd ..
+cd ncbi_genome_reports/
+#cat README.md
+(time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
+tail -f log.$(date +%F).txt
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+```
+
 ----------
 ## NCBI Datasets
 A one-stop shop for finding, browsing, and downloading genomic data
