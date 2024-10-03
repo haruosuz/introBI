@@ -71,6 +71,9 @@ Using the assembly summary report files to find the sequence and annotation of m
 - https://github.com/haruosuz/ncbi/tree/master/assembly_reports
 ```
 
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
+
 ----------
 ## assignment 2
 **課題2 「zmays-snps」**
