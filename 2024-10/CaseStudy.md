@@ -68,8 +68,10 @@ Using the assembly summary report files to find the sequence and annotation of m
 ## References:
 - https://github.com/vsbuffalo/bds-files/blob/master/chapter-02-bioinformatics-projects/notebook.md
 - https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project
-- https://github.com/haruosuz/ncbi/tree/master/assembly_reports
 ```
+
+Submit the *README.md* file.  
+*README.md* ファイル を提出する。  
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
