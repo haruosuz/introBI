@@ -81,6 +81,14 @@ People outside of Keio University SFC will also attend the lectures.
 # [Chapter 1. How to Learn Bioinformatics](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html)
 # 1章　バイオインフォマティクスの学習方法
 
+p.14
+訳書17頁
+### Use Existing Libraries Whenever Possible
+### 1.7.6 可能であれば既存のライブラリを使用する
+
+### Treat Data as Read-Only
+### 1.7.7 データを読み取り専用として扱う
+
 p.16
 訳書19頁
 ## Recommendations for Reproducible Research
