@@ -89,6 +89,8 @@ zip -r zmays-snps.zip zmays-snps/
 Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
+
 ----------
 ## assignment 3
 **課題3 「unix_shell/README.md」**
