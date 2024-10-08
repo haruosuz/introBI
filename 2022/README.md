@@ -1642,6 +1642,9 @@ p.341
 ## The FASTQ Format
 ## 10.2　FASTQ形式
 
+[FASTQ format](https://en.wikipedia.org/wiki/FASTQ_format)  
+[FASTQ](https://ja.wikipedia.org/wiki/Fastq)形式  
+
 p.342
 訳書364頁
 > ###### The Ins and Outs of Counting FASTA/FASTQ Entries
