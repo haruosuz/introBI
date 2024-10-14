@@ -9,16 +9,16 @@
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題1 「README.md」
 - [assignment 2](#assignment-2) 課題2 「zmays-snps」
-- [assignment 3](#assignment-3) 課題3 「unix_shell/README.md」
-- [assignment 4](#assignment-4) 課題4 「bioinformatics_data/README.md」
-- [assignment 5](#assignment-5) 課題5 「script.sh」
-- [assignment 6](#assignment-6) 課題6 「my_project/」
-- [assignment 7](#assignment-7) 課題7 「my_project/inspecting-data/」
-- [assignment 8](#assignment-8) 課題8 「my_project/unix-data-tools/」
+- [assignment 3](#assignment-3) 課題3 「your_project/README.md」
+- [assignment 4](#assignment-4) 課題4 「your_project/data」
+- [assignment 5](#assignment-5) 課題5 「your_project/scripts」
+- [assignment 6](#assignment-6) 課題6 「your_project/」
+- [assignment 7](#assignment-7) 課題7 「your_project/inspecting-data/」
+- [assignment 8](#assignment-8) 課題8 「your_project/unix-data-tools/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
-- [assignment 10](#assignment-10) 課題10 「my_project/guest-speaker/」
-- [assignment 12](#assignment-12) 課題12 「my_project/reproducibility/」
-- [assignment final](#assignment-final) 最終課題 「my_project/final/」
+- [assignment 10](#assignment-10) 課題10 「your_project/guest-speaker/」
+- [assignment 12](#assignment-12) 課題12 「your_project/reproducibility/」
+- [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
 ## assignment 0
@@ -73,9 +73,6 @@ Using the assembly summary report files to find the sequence and annotation of m
 Submit the *README.md* file.  
 *README.md* ファイル を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
-
 ----------
 ## assignment 2
 **課題2 「zmays-snps」**
@@ -93,31 +90,62 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 3
-**課題3 「unix_shell/README.md」**
+**課題3 「your_project/README.md」**
 
-Submit the latest version of the plain-text project notebook (*README.md* file). For example, document today's lecture contents (keywords, URLs, some commands used, etc.).  
-プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。例えば、本日の授業の内容（キーワード、URL、使用したコマンドのいくつか等）を記述する。  
+Update the *README.md* file (e.g., date).  
+*README.md* ファイル（例えば、日付）を更新する。  
+
+Example of creating a project directory (`your_project/`):  
+プロジェクト・ディレクトリ`your_project/`を作成する例:  
+```
+cd ~/projects/
+mkdir -p your_project/{data,scripts,analysis}
+cd your_project/
+mkdir $(date +%F)
+```
+
+Example of project directory structure:  
+プロジェクト・ディレクトリ構造の例:  
+```
+your_project/README.md
+your_project/analysis
+your_project/data
+your_project/scripts
+your_project/2024-10-15
+```
+
+Compress the project directory (`your_project/`):  
+プロジェクト・ディレクトリ (`your_project/`) を圧縮する:  
+```
+zip -r your_project.zip your_project/
+```
+
+Submit the compressed file of your project directory (e.g. `your_project.zip`).  
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
 
 ----------
 ## assignment 4
-**課題4 「bioinformatics_data/README.md」**
+**課題4 「your_project/data」**
 
 Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data, and their checksums.  
 プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
 
 ----------
 ## assignment 5
-**課題5 「script.sh」**
+**課題5 「your_project/scripts」**
 
 Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
 興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
 
 ----------
 ## assignment 6
-**課題6 「my_project/」**
+**課題6 「your_project/」**
 
-Submit the compressed file of your project directory (e.g. `my_project.zip`).  
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`my_project.zip`）を提出する。  
+Submit the compressed file of your project directory (e.g. `your_project.zip`).  
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
 
 Document the details of your project in the *README.md* file.  
 *README.md* ファイルにプロジェクトの詳細情報を記録する。  
@@ -131,15 +159,15 @@ bash scripts/script.sh > log.txt 2>&1
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
-my_project/README.md
-my_project/scripts/script.sh
-my_project/data/
-my_project/analysis/
+your_project/README.md
+your_project/scripts/script.sh
+your_project/data/
+your_project/analysis/
 ```
 
 ----------
 ## assignment 7
-**課題7 「my_project/inspecting-data/」**
+**課題7 「your_project/inspecting-data/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
@@ -177,7 +205,7 @@ ecoli/log.2024-05-21.txt
 
 ----------
 ## assignment 8
-**課題8 「my_project/unix-data-tools/」**
+**課題8 「your_project/unix-data-tools/」**
 
 Inspecting data Using Unix Data Tools  
 Unixデータツールを用いてデータを検査する。  
@@ -191,7 +219,7 @@ Please provide your comments, questions, or anything related to today's special 
 
 ----------
 ## assignment 10
-**課題10 「my_project/guest-speaker/」**
+**課題10 「your_project/guest-speaker/」**
 
 Update your project directory using the bioinformatics data skills you learned during the special lectures.  
 特別公演で学んだバイオインフォマティクスデータスキルを活用して、プロジェクトディレクトリを更新する。  
@@ -205,17 +233,17 @@ https://github.com/haruosuz/introBI/blob/main/2024-04/README.md#guest-speaker
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-Compress the project directory (`my_project/`) while excluding files in the `data/` directory:  
-`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`my_project/`) を圧縮する:  
+Compress the project directory (`your_project/`) while excluding files in the `data/` directory:  
+`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`your_project/`) を圧縮する:  
 ```
-zip --exclude 'my_project/data/*' -r my_project.zip my_project/
+zip --exclude 'your_project/data/*' -r your_project.zip your_project/
 ```
 
 https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 12
-**課題12 「my_project/reproducibility/」**
+**課題12 「your_project/reproducibility/」**
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
@@ -268,7 +296,7 @@ date +%F
 
 ----------
 ## assignment final
-**最終課題 「my_project/final/」**
+**最終課題 「your_project/final/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
