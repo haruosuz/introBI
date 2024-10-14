@@ -92,6 +92,9 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 ## assignment 3
 **課題3 「your_project/README.md」**
 
+Submit the compressed file of your project directory (e.g. `your_project.zip`).  
+プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
+
 Update the *README.md* file (e.g., date).  
 *README.md* ファイル（例えば、日付）を更新する。  
 
@@ -119,9 +122,6 @@ Compress the project directory (`your_project/`):
 ```
 zip -r your_project.zip your_project/
 ```
-
-Submit the compressed file of your project directory (e.g. `your_project.zip`).  
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
