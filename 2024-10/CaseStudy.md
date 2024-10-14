@@ -108,6 +108,7 @@ mkdir $(date +%F)
 pwd
 ls
 cd ..
+ls your_project/
 ```
 
 Example of project directory structure:  
