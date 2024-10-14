@@ -105,6 +105,9 @@ cd ~/projects/
 mkdir -p your_project/{data,scripts,analysis}
 cd your_project/
 mkdir $(date +%F)
+pwd
+ls
+cd ..
 ```
 
 Example of project directory structure:  
