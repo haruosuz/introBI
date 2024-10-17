@@ -264,7 +264,7 @@ tail -f log.$(date +%F).txt
 ```
 
 `ncbi_genome_reports/` プロジェクトを実行:  
-Execute the `ecoli/` project:  
+Execute the `ncbi_genome_reports/` project:  
 ```
 cd ..
 cd ncbi_genome_reports/
