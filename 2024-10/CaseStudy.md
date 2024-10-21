@@ -86,14 +86,12 @@ zip -r zmays-snps.zip zmays-snps/
 Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 
-https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
-
 ----------
 ## assignment 3
 **課題3 「your_project/README.md」**
 
-Submit the compressed file of your project directory (e.g. `your_project.zip`).  
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 Update the *README.md* file (e.g., date).  
 *README.md* ファイル（例えば、日付）を更新する。  
@@ -134,8 +132,22 @@ Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)
 ## assignment 4
 **課題4 「your_project/data」**
 
-Submit the latest version of the plain-text project notebook (*README.md* file). Download data files (e.g., FASTA and/or GFF files) you're interested in, and document when/how you downloaded the data, and their checksums.  
-プロジェクト・ノート（*README.md* ファイル）の最新版を提出する。興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードし、データのダウンロード日時と方法、チェックサム値を記録する。  
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+In the `data/` directory, Download data files (e.g., FASTA and/or GFF files).  
+`data/` ディレクトリに、データファイル（例: FASTA または GFF ファイルなど）をダウンロードする。  
+
+In the *README.md* file, document when/how you downloaded the data, and their checksums.  
+*README.md* ファイルに、データのダウンロード日時、方法、およびチェックサムを記録する。  
+
+Compress the project directory (`your_project/`) while excluding files in the `data/` directory:  
+`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`your_project/`) を圧縮する:  
+```
+zip --exclude 'your_project/data/*' -r your_project.zip your_project/
+```
+
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 5
