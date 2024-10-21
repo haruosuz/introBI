@@ -135,14 +135,14 @@ Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-In the `data/` directory, Download data files (e.g., FASTA and/or GFF files).  
+In the `data/` directory, download data files (e.g., FASTA and/or GFF files).  
 `data/` ディレクトリに、データファイル（例: FASTA または GFF ファイルなど）をダウンロードする。  
 
-In the *README.md* file, document when/how you downloaded the data, and their checksums.  
-*README.md* ファイルに、データのダウンロード日時、方法、およびチェックサムを記録する。  
+In the *README.md* file, document when and how you downloaded the data, and their checksums.  
+*README.md* ファイルに、データのダウンロード日時・方法、およびチェックサムを記録する。  
 
-Compress the project directory (`your_project/`) while excluding files in the `data/` directory:  
-`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`your_project/`) を圧縮する:  
+Compress the project directory (`your_project/`) while excluding files in the `data/` directory.  
+プロジェクトディレクトリ (`your_project/`) を圧縮する際、`data/` ディレクトリ内のファイルを除外する。  
 ```
 zip --exclude 'your_project/data/*' -r your_project.zip your_project/
 ```
