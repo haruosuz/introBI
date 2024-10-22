@@ -30,6 +30,8 @@
 - 2024-10-15 No. 3 - Unixシェル [Unix Shell](#unix-shell)
   - 課題3 [assignment 3](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-3)
 - 2024-10-22 No. 4 - バイオインフォマティクス・データ [Bioinformatics Data](#bioinformatics-data)
+  - [NCBI Datasets](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#ncbi-datasets)
+  - データのダウンロード [Downloading data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#downloading-data)
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-4)
 - 2024-10-29 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-5)
