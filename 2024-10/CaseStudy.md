@@ -125,21 +125,22 @@ Compress the project directory (`your_project/`):
 zip -r your_project.zip your_project/
 ```
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
-
 ----------
 ## assignment 4
 **課題4 「your_project/data」**
-
-Submit the compressed file of your project directory (e.g., `your_project.zip`).  
-プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 In the `data/` directory, download data files.  
 `data/` ディレクトリに、データファイルをダウンロードする。  
 
 In the *README.md* file, document when and how you downloaded the data, and their checksums.  
 *README.md* ファイルに、データのダウンロード日時・方法、およびチェックサムを記録する。  
+
+----------
+## assignment 5
+**課題5 「your_project/scripts」**
+
+Create and run a shell script (*script.sh* file) to download data files.  
+データファイルをダウンロードするシェルスクリプト（*script.sh*ファイル）を作成し実行する。  
 
 Compress the project directory (`your_project/`) while excluding files in the `data/` directory.  
 プロジェクトディレクトリ (`your_project/`) を圧縮する際、`data/` ディレクトリ内のファイルを除外する。  
@@ -149,12 +150,11 @@ zip --exclude 'your_project/data/*' -r your_project.zip your_project/
 
 https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
-----------
-## assignment 5
-**課題5 「your_project/scripts」**
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-Submit a shell script (*script.sh* file) to download data files (e.g., FASTA and/or GFF files) you're interested in.  
-興味のあるデータファイル（例えば、FASTA形式やGFF形式のファイル）をダウンロードするシェルスクリプト（*script.sh*ファイル）を提出する。  
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
 
 ----------
 ## assignment 6
