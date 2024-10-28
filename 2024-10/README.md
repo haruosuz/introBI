@@ -41,7 +41,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-7)
-- 三田祭期間（2024-11-19 ～ 2024-11-25）
+- 三田祭期間 Mita Festival（2024-11-19 ～ 2024-11-25）
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-8)
 - 2024-06-04 休講 no class |
@@ -50,7 +50,7 @@
 - 2024-12-10 No. 9 - TBA
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
-- 湘南藤沢キャンパス一斉休業（12/28～1/4）
+- 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - 再現可能なプロジェクト Reproducible project
 - 2025-01-14 No. 13 - 再現可能なプロジェクト Reproducible project
 - 2025-01-21 No. 14 - 最終回 final class
