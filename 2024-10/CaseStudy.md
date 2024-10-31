@@ -12,7 +12,7 @@
 - [assignment 3](#assignment-3) 課題3 「your_project/README.md」
 - [assignment 4](#assignment-4) 課題4 「your_project/data」
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
-- [assignment 6](#assignment-6) 課題6 「your_project/」
+- [assignment 6](#assignment-6) 課題6 「your_project/analysis」
 - [assignment 7](#assignment-7) 課題7 「your_project/inspecting-data/」
 - [assignment 8](#assignment-8) 課題8 「your_project/unix-data-tools/」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
@@ -154,32 +154,20 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 [課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/) 
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 6
-**課題6 「your_project/」**
+**課題6 「your_project/analysis」**
 
-Submit the compressed file of your project directory (e.g. `your_project.zip`).  
-プロジェクト・ディレクトリの圧縮ファイル（例えば、`your_project.zip`）を提出する。  
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-Document the details of your project in the *README.md* file.  
-*README.md* ファイルにプロジェクトの詳細情報を記録する。  
+Update the *README.md* file (e.g., date).  
+*README.md* ファイル（例えば、日付）を更新する。  
 
-Redirect the standard output and standard error to a [log file](https://en.wikipedia.org/wiki/Logging_%28software%29).  
-標準出力と標準エラーを[ログファイル](https://e-words.jp/w/ログファイル.html)にリダイレクトする。  
-```
-bash scripts/script.sh > log.txt 2>&1
-```
 
-Example of project directory structure:  
-プロジェクト・ディレクトリ構造の例:  
-```
-your_project/README.md
-your_project/scripts/script.sh
-your_project/data/
-your_project/analysis/
-```
+
 
 ----------
 ## assignment 7
