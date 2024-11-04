@@ -38,14 +38,13 @@
 - 2024-11-05 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
   - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
-- 2024-11-12 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
+- 2024-11-12 No. 7
+  - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
+  - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（2024-11-19 ～ 2024-11-25）
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 課題8 [assignment 8](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-8)
-- 2024-06-04 休講 no class |
-[補講/試験](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
-[Makeup Class Day/Exam](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
 - 2024-12-10 No. 9 - TBA
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
@@ -55,7 +54,6 @@
 - 2025-01-21 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
-- 2024-07-18 2024-07-20 補講
 
 ----------
 ## final presentation
