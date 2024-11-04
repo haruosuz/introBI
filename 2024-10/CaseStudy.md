@@ -90,9 +90,6 @@ Submit the compressed file (`zmays-snps.zip`).
 ## assignment 3
 **課題3 「your_project/README.md」**
 
-Submit the compressed file of your project directory (e.g., `your_project.zip`).  
-プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
-
 Update the *README.md* file (e.g., date).  
 *README.md* ファイル（例えば、日付）を更新する。  
 
@@ -142,6 +139,13 @@ In the *README.md* file, document when and how you downloaded the data, and thei
 Create and run a shell script (*script.sh* file) to download data files.  
 データファイルをダウンロードするシェルスクリプト（*script.sh*ファイル）を作成し実行する。  
 
+----------
+## assignment 6
+**課題6 「your_project/analysis」**
+
+Write out the analysis result (redirect standard output) to a file under the `analysis/` directory.  
+`analysis/` ディレクトリ内のファイルに解析結果を書き出す（標準出力をリダイレクトする）。  
+
 Compress the project directory (`your_project/`) while excluding files in the `data/` directory.  
 プロジェクトディレクトリ (`your_project/`) を圧縮する際、`data/` ディレクトリ内のファイルを除外する。  
 ```
@@ -155,19 +159,6 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
-----------
-## assignment 6
-**課題6 「your_project/analysis」**
-
-Submit the compressed file of your project directory (e.g., `your_project.zip`).  
-プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
-
-Update the *README.md* file (e.g., date).  
-*README.md* ファイル（例えば、日付）を更新する。  
-
-
-
 
 ----------
 ## assignment 7
