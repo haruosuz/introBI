@@ -1101,7 +1101,11 @@ https://ja.wikipedia.org/wiki/Xargs
     find . -name "*.fastq" | xargs ls
 
 > ###### Playing It Safe with find and xargs
->     find . -name "treatment 02.fq" -print0 | xargs -0 ls -l
+> Spaces in filenames are considered argument separators by `xargs`, which can cause issues. To avoid this, run `find` and `xargs` using the null byte as a separator:  
+> ファイル名にスペースが含まれていると、xargs はそれを引数の区切り文字として解釈するため、問題が発生する。これを回避するためには、nullバイトを区切り文字として使用して `find` と `xargs` を実行する:  
+```
+find . -name "treatment 02.fq" -print0 | xargs -0 ls -l
+```
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
 ### 12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する
@@ -1398,6 +1402,11 @@ Use `-r` argument to sort in reverse order:
 
 	sort -k1,1 -k2,2n -r example.bed
 	sort -k1,1 -k2,2nr example.bed
+
+The alphanumeric sorting option `-V` understands numbers inside strings:  
+英数字ソートオプション`-V`は、文字列内の数字を理解する:  
+
+	sort -k1,1V -k2,2n example2.bed
 
 p.152
 訳書165頁
