@@ -481,8 +481,10 @@ p.37
 p.40
 訳書46頁
 > ###### The Many Unix Shells
->    echo $SHELL
->    echo $0
+```
+echo $SHELL
+echo $0
+```
 
 p.41
 訳書47頁
