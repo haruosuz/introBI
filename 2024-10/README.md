@@ -481,10 +481,8 @@ p.37
 p.40
 訳書46頁
 > ###### The Many Unix Shells  
-```
-echo $SHELL
-echo $0
-```
+>     echo $SHELL
+>     echo $0
 
 p.41
 訳書47頁
@@ -1103,9 +1101,7 @@ https://ja.wikipedia.org/wiki/Xargs
 > ###### Playing It Safe with find and xargs
 > Spaces in filenames are considered argument separators by `xargs`, which can cause issues. To avoid this, run `find` and `xargs` using the null byte as a separator:  
 > ファイル名にスペースが含まれていると、xargs はそれを引数の区切り文字として解釈するため、問題が発生する。これを回避するためには、nullバイトを区切り文字として使用して `find` と `xargs` を実行する:  
-```
-find . -name "treatment 02.fq" -print0 | xargs -0 ls -l
-```
+>    find . -name "treatment 02.fq" -print0 | xargs -0 ls -l
 
 ### Using xargs with Replacement Strings to Apply Commands to Files
 ### 12.2.6　xargsに置換文字列を与え、ファイルにコマンドを適用する
