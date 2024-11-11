@@ -41,7 +41,6 @@
 - 2024-11-12 No. 7
   - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
   - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
-  - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-7)
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2024-11-30 土 Sat. 13:00-14:30 
 [補講](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
@@ -58,7 +57,6 @@ No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
 
-
 ----------
 ## final presentation
 **最終発表**
@@ -68,14 +66,6 @@ Presentation time: 5 minutes will be allocated for each presentation (including 
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（データファイル `data/*` は除外）する。  
-
-----------
-## Guest speaker
-**特別講演**
-
-People outside of Keio University SFC will also attend the lectures.  
-他機関所属の方も参加されます。  
-
 
 ----------
 ## Introduction
