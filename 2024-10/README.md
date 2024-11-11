@@ -43,7 +43,8 @@
   - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-7)
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
-- 2024-11-30 土 Sat. 13:00-14:30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2024-11-30 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2024-11-30 土 Sat. 13:00-14:30 
 [補講](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
 [Makeup Class Day](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
 - 2024-12-03 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
