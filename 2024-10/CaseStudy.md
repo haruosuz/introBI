@@ -13,10 +13,6 @@
 - [assignment 4](#assignment-4) 課題4 「your_project/data」
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
 - [assignment 6](#assignment-6) 課題6 「your_project/analysis」
-- [assignment 7](#assignment-7) 課題7 「your_project/inspecting-data/」
-- [assignment 8](#assignment-8) 課題8 「your_project/unix-data-tools/」
-- [assignment 9](#assignment-9) 課題9 「guest-speaker/README.md」
-- [assignment 10](#assignment-10) 課題10 「your_project/guest-speaker/」
 - [assignment 12](#assignment-12) 課題12 「your_project/reproducibility/」
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
@@ -161,80 +157,12 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-## assignment 7
-**課題7 「your_project/inspecting-data/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 Document the updates of your project in the *README.md* file.  
 *README.md* ファイルにプロジェクトの更新を記録する。  
-
-Update your script and run it.  
-スクリプトを更新し実行する。  
-```
-# Redirect the standard output and standard error to a log file.
-# 標準出力と標準エラーをログファイルにリダイレクトする。
-(bash scripts/run.sh &) >& log.$(date +%F).txt
-
-# Use `tail -f` to constantly monitor files (use Control-C to stop)
-# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
-tail -f log.$(date +%F).txt
-```
-
-Example of project directory structure:  
-プロジェクト・ディレクトリ構造の例:  
-```
-ecoli/README.md
-ecoli/analysis/2024-05-14/output.txt
-ecoli/analysis/2024-05-21/output.txt
-ecoli/data/2024-05-14/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2024-05-14/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2024-05-14/md5checksums.txt
-ecoli/data/2024-05-21/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2024-05-21/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2024-05-21/md5checksums.txt
-ecoli/log.2024-05-14.txt
-ecoli/log.2024-05-21.txt
-```
-
-----------
-## assignment 8
-**課題8 「your_project/unix-data-tools/」**
-
-Inspecting data Using Unix Data Tools  
-Unixデータツールを用いてデータを検査する。  
-
-----------
-## assignment 9
-**課題9 「guest-speaker/README.md」**
-
-Please provide your comments, questions, or anything related to today's special lecture in the *README.md* file and submit it.  
-本日の特別講演に関するコメント、質問、その他何でも、*README.md* ファイルに記載して提出する。  
-
-----------
-## assignment 10
-**課題10 「your_project/guest-speaker/」**
-
-Update your project directory using the bioinformatics data skills you learned during the special lectures.  
-特別公演で学んだバイオインフォマティクスデータスキルを活用して、プロジェクトディレクトリを更新する。  
-
-https://github.com/haruosuz/introBI/blob/main/2024-04/README.md#guest-speaker
-
-- Speaker: Dr. Kirill Kryukov (National Institute of Genetics)
-  - 2024-06-11: "Organizing a data analysis project"
-  - 2024-06-18: "Designing reproducible computational experiments"
-
-Submit a compressed file of the revised project directory (excluding data files `data/*`).  
-修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
-
-Compress the project directory (`your_project/`) while excluding files in the `data/` directory:  
-`data/` ディレクトリ内のファイルを除外して、プロジェクト・ディレクトリ (`your_project/`) を圧縮する:  
-```
-zip --exclude 'your_project/data/*' -r your_project.zip your_project/
-```
-
-https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ----------
 ## assignment 12
