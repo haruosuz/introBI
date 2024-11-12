@@ -38,9 +38,7 @@
 - 2024-11-05 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
   - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
-- 2024-11-12 No. 7
-  - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
-  - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
+- 2024-11-12 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2024-11-30 土 Sat. 13:00-14:30 
 [補講](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
