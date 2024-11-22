@@ -21,8 +21,6 @@
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | Class Calendar
-  - [2024年度 SFC授業カレンダー（2024.8.5更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf
 - 2024-10-01 No. 1 - イントロダクション [Introduction](#introduction)
   - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-1)
 - 2024-10-08 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
@@ -40,11 +38,9 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
+- 2024-11-26 [SFC（総・環・政メ）は通常の授業なし No regular classes at SFC (PM,EI,MG)](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-- 2024-12-07 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-土 Sat. 13:00-14:30
-[補講](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
-[Makeup Class Day](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
+- 2024-12-07 土 Sat. 13:00-14:30 | 補講 Makeup Class Day | No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2024-12-10 - 休講 no class
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
