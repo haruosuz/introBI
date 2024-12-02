@@ -1182,7 +1182,7 @@ Here, we'll work with plain-text data formats (tab-delimited file formats) such 
 ここでは、簡単なゲノムのデータ形式として、BEDファイル（3列）やGTFファイルなどのプレーンテキストデータ形式（タブ区切り形式ファイル）を扱う。これらのファイル形式は、遺伝子などのフィーチャー（特徴領域）の位置をタブ区切り形式で格納する。  
 
 - [GTF (Gene Transfer Format)](https://genome.ucsc.edu/FAQ/FAQformat.html#format4)
-- [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features-e.html)
+- [Feature key](https://www.ddbj.nig.ac.jp/ddbj/features.html)
 
 p.129
 訳書142頁
