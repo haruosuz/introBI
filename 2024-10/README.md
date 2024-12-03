@@ -40,7 +40,7 @@
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2024-11-26 [SFC（総・環・政メ）は通常の授業なし No regular classes at SFC (PM,EI,MG)](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-- 2024-12-07 土 Sat. 13:00-14:30 補講 Makeup Class Day | No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2024-12-07 土 Sat. 13:00-14:30 補講 Makeup Class Day | No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
 - 2024-12-10 - 休講 no class
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
