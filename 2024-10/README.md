@@ -42,7 +42,7 @@
 - 2024-12-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2024-12-07 土 Sat. 13:00-14:30 補講 Makeup Class Day | No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
 - 2024-12-10 - 休講 no class
-- 2024-12-17 No. 10 - TBA
+- 2024-12-17 No. 10 - 中間発表 [midterm presentation](#midterm-presentation)
 - 2024-12-24 No. 11 - TBA
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - 再現可能なプロジェクト Reproducible project
@@ -50,6 +50,14 @@
 - 2025-01-21 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
+
+----------
+## midterm presentation
+**中間発表**
+
+Presentation time is 1 minute. Report your project (analysis data).
+
+発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
 ## final presentation
