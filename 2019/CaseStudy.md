@@ -26,8 +26,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 13](#assignment-13) 課題No.13 「Reproducible Bioinformatics Project 2」
 - [assignment 14](#assignment-14) 課題No.14 「my_project/my_slide.pdf」
 - [assignment 15](#assignment-15) 課題No.15 「final report」
-- [2018-11-27](#2018-11-27) GFF/GTF
-- [bds](#bds)
 
 ----------
 
