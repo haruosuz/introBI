@@ -13,7 +13,6 @@
 - [assignment 4](#assignment-4) 課題4 「your_project/data」
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
 - [assignment 6](#assignment-6) 課題6 「your_project/analysis」
-- [assignment 12](#assignment-12) 課題12 「your_project/reproducibility/」
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
@@ -153,20 +152,17 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
+## assignment final
+**最終課題 「your_project/final/」**
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-Document the updates of your project in the *README.md* file.  
-*README.md* ファイルにプロジェクトの更新を記録する。  
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-## assignment 12
-**課題12 「your_project/reproducibility/」**
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
@@ -177,8 +173,7 @@ Run the project submitted before yours and provide comments (reproducibility of 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
 
-Submit a compressed file of the revised project directory (excluding data files `data/*`).  
-修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
+----------
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
@@ -218,15 +213,4 @@ date +%F
 ```
 
 ----------
-## assignment final
-**最終課題 「your_project/final/」**
-
-Submit a compressed file of the revised project directory (excluding data files `data/*`).  
-修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
-
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
-----------
-
 
