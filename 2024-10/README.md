@@ -46,7 +46,7 @@
 - 2024-12-24 No. 11 - 各自プロジェクトを進める Work on individual projects
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - 自分の環境でプロジェクトの再現性検証 Check project reproducibility on your environment
-- 2025-01-14 No. 13 - 他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments
+- 2025-01-14 No. 13 - [他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#2025-01-14)
 - 2025-01-21 No. 14 - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
 
