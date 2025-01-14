@@ -156,13 +156,25 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 ## 2025-01-14
 
 https://app.slack.com/client/T01BXK91YUV/C07PK39UL77
-2024-10 (Channel) - INTRODUCTION TO BIOINFORMATICS - Slack
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
 Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
 あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載してください。  
+
+[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
+[`uname`](https://ja.wikipedia.org/wiki/Uname) は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
+```
+# Print operating system name
+uname -a
+```
+
+[`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
+```
+# display date and time
+date +%F
+```
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
@@ -204,19 +216,6 @@ Check the reproducibility of the results (e.g., differences between files).
 結果の再現性を確認する（例えば、ファイルの差分）。  
 ```
 diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
-```
-
-[`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
-[`uname`](https://ja.wikipedia.org/wiki/Uname) は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
-```
-# Print operating system name
-uname -a
-```
-
-[`date`](https://ja.wikipedia.org/wiki/Date_%28UNIX%29) は、日時を表示するコマンドである。
-```
-# display date and time
-date +%F
 ```
 
 ----------
