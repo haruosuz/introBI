@@ -47,9 +47,8 @@
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - 自分の環境でプロジェクトの再現性検証 Check project reproducibility on your environment
 - 2025-01-14 No. 13 - 他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments
-- 2025-01-21 No. 14 - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
-- 2025-01-28 No. 15 - 参加は任意です。 Participation is voluntary. 都市の微生物 Urban Microbiome [MetaSUB](https://x.com/metasub) 
+- 2025-01-21 No. 14 - 最終発表 [final presentation](#final-presentation)
 
 ----------
 ## midterm presentation
