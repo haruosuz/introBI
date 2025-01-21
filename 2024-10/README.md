@@ -48,15 +48,9 @@
 - 2025-01-07 No. 12 - 自分の環境でプロジェクトの再現性検証 Check project reproducibility on your environment
 - 2025-01-14 No. 13 - [他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#2025-01-14)
 - 2025-01-21 No. 14 - 最終発表 [final presentation](#final-presentation)
-  - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
-
-----------
-## midterm presentation
-**中間発表**
-
-Presentation time is 1 minute. Report your project (analysis data).
-
-発表時間は1分。プロジェクト（解析データ）を報告する。
+  - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
+  - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
+- 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-final)
 
 ----------
 ## final presentation
@@ -67,6 +61,17 @@ Presentation time: 5 minutes will be allocated for each presentation (including 
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（データファイル `data/*` は除外）する。  
+
+Run the project submitted before yours and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
+
+----------
+## midterm presentation
+**中間発表**
+
+Presentation time is 1 minute. Report your project (analysis data).
+
+発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
 ## Introduction
