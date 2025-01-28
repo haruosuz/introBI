@@ -163,6 +163,30 @@ Slack上で、プロジェクトディレクトリの圧縮ファイルを提出
 Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
 あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載してください。  
 
+Example of project directory structure:  
+プロジェクト・ディレクトリ構造の例:  
+```
+ecoli/README.md
+ecoli/analysis/2023-11-07/output.txt
+ecoli/analysis/2023-12-05/output.txt
+ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2023-11-07/md5checksums.txt
+ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2023-12-05/md5checksums.txt
+ecoli/log.2023-11-07.txt
+ecoli/log.2023-12-05.txt
+ecoli/scripts
+ecoli/scripts/run.sh
+```
+
+Check the reproducibility of the results (e.g., differences between files).  
+結果の再現性を確認する（例えば、ファイルの差分）。  
+```
+diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
+```
+
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
 [`uname`](https://ja.wikipedia.org/wiki/Uname) は、実行しているオペレーティングシステムの名前やバージョンなどを出力する。  
 ```
@@ -188,35 +212,6 @@ Submit a compressed file of the revised project directory (excluding data files 
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
-----------
-
-
-----------
-
-Example of project directory structure:  
-プロジェクト・ディレクトリ構造の例:  
-```
-ecoli/README.md
-ecoli/analysis/2023-11-07/output.txt
-ecoli/analysis/2023-12-05/output.txt
-ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2023-11-07/md5checksums.txt
-ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2023-12-05/md5checksums.txt
-ecoli/log.2023-11-07.txt
-ecoli/log.2023-12-05.txt
-ecoli/scripts
-ecoli/scripts/run.sh
-```
-
-Check the reproducibility of the results (e.g., differences between files).  
-結果の再現性を確認する（例えば、ファイルの差分）。  
-```
-diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
-```
 
 ----------
 
