@@ -177,7 +177,6 @@ ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.gff
 ecoli/data/2023-12-05/md5checksums.txt
 ecoli/log.2023-11-07.txt
 ecoli/log.2023-12-05.txt
-ecoli/scripts
 ecoli/scripts/run.sh
 ```
 
