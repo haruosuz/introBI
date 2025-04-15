@@ -78,8 +78,13 @@ Compress the project directory (`zmays-snps/`):
 zip -r zmays-snps.zip zmays-snps/
 ```
 
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
+
 Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 3
@@ -209,8 +214,6 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 
