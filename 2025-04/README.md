@@ -40,17 +40,34 @@
   - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-6)
 - 2025-05-27 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
-- 2025-06-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-- 2025-06-10 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
-- 2025-06-17 No. 10 - 中間発表 [midterm presentation](#midterm-presentation)
-- 2025-06-20 (Fri) 6th period - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)  
-- 2025-06-24 No. 11 - 各自プロジェクトを進める Work on individual projects
+- 2025-06-03 No. 8 - 中間発表 [midterm presentation](#midterm-presentation)
+- 2025-06-10 No. 9 - [Guest Speaker](#guest-speaker)
+- 2025-06-17 No. 10 - [Guest Speaker](#guest-speaker)
+- 2025-06-24 No. 11 - [Guest Speaker](#guest-speaker)
 - 2025-07-01 No. 12 - 自分の環境でプロジェクトの再現性検証 Check project reproducibility on your environment
 - 2025-07-08 No. 13 - 他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments
 - 2025-07-15 No. 14 - 最終発表 [final presentation](#final-presentation)
   - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
   - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
 - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-final)
+
+----------
+## midterm presentation
+**中間発表**
+
+Presentation time is 1 minute. Report your project (analysis data).
+
+発表時間は1分。プロジェクト（解析データ）を報告する。
+
+----------
+## Guest speaker
+**特別講演**
+
+教育体験
+Teaching Experience
+
+- Lecturer: Miu Naruki
+- Materials: Please refer to the #sfc channel on Slack.
 
 ----------
 ## final presentation
@@ -64,14 +81,6 @@ Slack上で、プロジェクトディレクトリの圧縮ファイルを提出
 
 Run the project submitted before yours and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
 あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
-
-----------
-## midterm presentation
-**中間発表**
-
-Presentation time is 1 minute. Report your project (analysis data).
-
-発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
 ## Introduction
