@@ -2,7 +2,7 @@
 
 バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI)  
 [K-LMS](https://lms.keio.jp/courses/118787)  
-[Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2025_46034?locale=ja)  
+[Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2025_46034)  
 
 ## References
 **参考文献**
@@ -38,7 +38,7 @@
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-5)
 - 2025-05-20 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
   - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
-  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2024-10/CaseStudy.md#assignment-6)
+  - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-6)
 - 2025-05-27 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
 - 2025-06-03 No. 8 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2025-06-10 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools) | [sort](#sorting-plain-text-data-with-sort)
