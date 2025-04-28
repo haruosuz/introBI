@@ -221,7 +221,6 @@ grep -c ">" seqs.fna
 Open a terminal window.  
 ```
 bash
-cd ~/projects/
 ```
 
 日付のディレクトリを作成して、そのディレクトリに移動する:  
@@ -700,6 +699,10 @@ was downloaded on Mon Apr 29 11:53:23 JST 2024, using:
     $grep "chr22.fa.gz" md5sum.txt
     2baab477ebcc5a0f4163608ec93e4744  chr22.fa.gz
 ```
+
+2:28 AM · Oct 25, 2024
+https://x.com/brent_p/status/1849503122114347051
+brent pedersen on X: "don't use hg38.fa as-is. checkout the references 😜 here: https://t.co/UBhkn6zjDx rendered the ipynb (not mine) here: https://t.co/Zv6J1d6XAy in short, use: GRCh38_GIABv3_no_alt_analysis_set_maskedGRC_decoys_MAP2K3_KMT2C_KCNJ18.fasta.gz other updates on the best hg38 reference?" / X
 
 ----------
 ## Mouse reference genome
