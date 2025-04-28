@@ -87,9 +87,6 @@ Submit the compressed file (`zmays-snps.zip`).
 ## assignment 3
 **課題3 「your_project/README.md」**
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
@@ -137,6 +134,13 @@ In the `data/` directory, download data files.
 
 In the *README.md* file, document when and how you downloaded the data, and their checksums.  
 *README.md* ファイルに、データのダウンロード日時・方法、およびチェックサムを記録する。  
+
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+
 
 ----------
 ## assignment 5
