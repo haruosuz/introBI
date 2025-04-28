@@ -36,8 +36,7 @@
 - 2025-05-06 振替休日 Substitute holiday
 - 2025-05-13 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-5)
-- 2025-05-20 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
-  - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
+- 2025-05-20 No. 6 - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
   - 課題6 [assignment 6](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-6)
 - 2025-05-27 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
 - 2025-06-03 No. 8 - 中間発表 [midterm presentation](#midterm-presentation)
