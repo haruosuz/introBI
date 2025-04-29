@@ -709,8 +709,8 @@ p.109
     curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
     #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 
-`curl -L` can follow page redirects. Download the ultimate page the link (a shortened link) redirects to:  
-`curl -L` でページのリダイレクトを辿る。短縮リンクがリダイレクトされた最終ページをダウンロードする:  
+`curl -L` can follow page redirects. It downloads the ultimate page the link redirects to (for example, from a shortened link):  
+`curl -L` でページのリダイレクトを辿り、短縮リンクなどがリダイレクトする最終ページをダウンロードする:  
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
 
