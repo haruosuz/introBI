@@ -427,8 +427,8 @@ md5sum *.gz
 md5 *.gz
 ```
 
-Markdownファイル*README.md*の例:  
-The entire *README.md* file would look like:  
+*README.md*ファイルの例は次の通り:  
+The *README.md* file would look like:  
 ```
 ## Genome and Annotation Data
 
