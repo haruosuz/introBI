@@ -138,16 +138,21 @@ In the *README.md* file, document when and how you downloaded the data, and thei
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
-
 ----------
 ## assignment 5
 **課題5 「your_project/scripts」**
 
 Create and run a shell script (*script.sh* file) to download data files.  
 データファイルをダウンロードするシェルスクリプト（*script.sh*ファイル）を作成し実行する。  
+
+Update the *README.md* file (e.g., include example command to run the script).  
+*README.md* ファイルを更新する（例：スクリプトの実行コマンド例を記載する）。  
+
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 6
