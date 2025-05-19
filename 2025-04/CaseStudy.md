@@ -87,9 +87,6 @@ Submit the compressed file (`zmays-snps.zip`).
 ## assignment 3
 **課題3 「your_project/README.md」**
 
-Submit the compressed file of your project directory (e.g., `your_project.zip`).  
-プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
-
 The project directory name should be determined according to your own project.  
 プロジェクト・ディレクトリの名前は、自分のプロジェクトに応じて決定する。  
 
@@ -151,9 +148,6 @@ Update the *README.md* file (e.g., include example command to run the script).
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 6
 **課題6 「your_project/analysis」**
@@ -172,8 +166,14 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+
 ----------
-## 2025-01-14
+## 
+
+----------
+## 
 
 https://app.slack.com/client/T01BXK91YUV/C07PK39UL77
 
