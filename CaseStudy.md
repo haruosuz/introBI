@@ -11,7 +11,8 @@
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
 - [my_project](#my_project)
 - [NCBI Datasets](#ncbi-datasets)
-- [NCBI Genome List](#ncbi-genome-list)
+  - [Downloading data](#Downloading data)
+  - [Inspecting data](#Inspecting data)
   - [Questions](#questions)
 - [Human chromosome 22](#human-chromosome-22) ヒト22番染色体
 - [Mouse reference genome](#mouse-reference-genome) マウス参照ゲノム
@@ -306,7 +307,6 @@ Click on "See more files on FTP" from the menu on the right (under **Actions**) 
 **NCBI RefSeq assembly** "GCF_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2/
 ```
-GCF_000008865.2_ASM886v2_genomic.fna.gz          2021-08-21 03:36  1.6M  
 GCF_000008865.2_ASM886v2_genomic.gff.gz          2021-08-21 03:36  342K  
 md5checksums.txt                                 2024-03-31 07:25  1.1K  
 ```
@@ -318,75 +318,22 @@ Click on "See more files on FTP" from the menu on the right (under **Actions**) 
 **Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
 - https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/  
 ```
-GCA_000008865.2_ASM886v2_genomic.fna.gz          2021-08-23 16:06  1.6M  
 GCA_000008865.2_ASM886v2_genomic.gff.gz          2021-08-23 16:06  305K  
 md5checksums.txt                                 2024-03-31 07:25  1.1K  
 ```
 
-Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
-ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Right click on the link to the file (*\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
+ファイル（*\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
 ディレクトリ内のファイル
 [What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
 https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 File formats and content:
-
-   *_genomic.fna.gz file
-       FASTA format of the genomic sequence(s) in the assembly. 
 
    *_genomic.gff.gz file
        Annotation of the genomic sequence(s) in Generic Feature Format Version 3
        (GFF3). 
-
-   md5checksums.txt file
-       file checksums are provided for all data files in the directory
-```
-
-----------
-## NCBI Genome List
-
-Retrieving genome sequence data via the Genome List from [NCBI](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).  
-[NCBI](https://ja.wikipedia.org/wiki/アメリカ国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)からゲノム配列データを取得する。  
-- http://www.ncbi.nlm.nih.gov/genome/browse/  
-You will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just Organism name "**Escherichia coli**" in the search box and press "Search".  
-ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Escherichia%20coli  
-**| Overview (1); Prokaryotes (37988); Plasmids (8990) |**  
-you will see the number of hits to *Escherichia coli* in each of the NCBI databases. When you click on "**Prokaryotes**", it will show all the "Strain"s belonging to the species *Escherichia coli*.  
-検索ボックス下の各データベースのうち、"**Prokaryotes**"をクリックすると、*Escherichia coli*に属する株 (Strain) が表示される。  
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Escherichia%20coli  
-When you click on the Assembly "**GCA_000005845.2**" (for the Organism Name "Escherichia coli str. K-12 substr. MG1655"), it will bring you to the record for this organism in the NCBI Assembly database.  
-上から1番目の生物（列 Organism Name "Escherichia coli str. K-12 substr. MG1655"）の列 Assembly "**GCA_000005845.2**" をクリックして開く。  
-- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/  
-Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000005845.2".  
-**Submitted GenBank assembly** "GCA_000005845.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/  
-Right click on the link to the file (*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
-ファイル（*\*_genomic.fna.gz*, *\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-
-```
-Index of /genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2
-Name                                             Last modified      Size  
-
-GCA_000005845.2_ASM584v2_genomic.fna.gz          2014-10-31 19:59  1.3M  
-
-GCA_000005845.2_ASM584v2_genomic.gff.gz          2022-03-09 09:29  404K  
- 
-md5checksums.txt                                 2023-11-28 17:01  1.1K  
-```
-
-ディレクトリ内のファイル
-[What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
-https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-```
-File formats and content:
-
-   *_genomic.fna.gz file
-       FASTA format of the genomic sequence(s) in the assembly.
-
-   *_genomic.gff.gz file
-       Annotation of the genomic sequence(s) in Generic Feature Format Version 3 (GFF3).
 
    md5checksums.txt file
        file checksums are provided for all data files in the directory
@@ -407,10 +354,9 @@ mkdir -p $(date +%F)
 cd $(date +%F)
 ```
 
-`wget`コマンドを使用して、ゲノム塩基配列のFASTA形式ファイル（*\*_genomic.fna.gz*）、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
+`wget`コマンドを使用して、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
 ```
-# Using `wget` to download the files (*_genomic.fna.gz, *_genomic.gff.gz, md5checksums.txt):
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
+# Using `wget` to download the files (*_genomic.gff.gz, md5checksums.txt):
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/md5checksums.txt
 ```
@@ -418,7 +364,6 @@ wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_AS
 チェックサムを確認する:  
 ```
 # compare our checksum values with those in "md5checksums.txt" using the md5 program:
-grep "_genomic.fna.gz" *md5checksums.txt
 grep "_genomic.gff.gz" *md5checksums.txt
 
 md5sum *.gz
@@ -434,11 +379,9 @@ The *README.md* file would look like:
 
 Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on Tue Nov  3 19:23:25 JST 2020 using:
 
-    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.fna.gz
     wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
 
 ## MD5 checksum
-- MD5 (GCA_000005845.2_ASM584v2_genomic.fna.gz) = 7e69874199f23fd21b060dc0b2b72321
 - MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
 ```
 
@@ -471,12 +414,10 @@ wc -l *
 
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
-FNA=GCA_000005845.2_ASM584v2_genomic.fna
 GFF=GCA_000005845.2_ASM584v2_genomic.gff
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
-echo "${FNA}"
 echo "${GFF}"
 
 # p.129 | Inspecting Data with Head and Tail
@@ -498,19 +439,15 @@ tail -n 3 "${GFF}"
 
 # `grep`でパターンにマッチした行を抽出する:  
 # use grep to extract lines matching the pattern:  
-## FASTA header lines begin with the ">" character.
-grep "^>" "${FNA}"
 ## GFF header lines begin with the "#" character.
 grep "^#" "${GFF}"
 
 # パイプでプログラムの入出力をつなぐ。
 # Pipe the standard output to the next command with the pipe character (|):  
-grep "^>" "${FNA}" | wc -l
 grep "^#" "${GFF}" | wc -l
 
 # `grep -c`オプションで、パターンにマッチした行数を表示する:  
 # use grep to count (the -c option stands for count) the number of lines matching the pattern:  
-grep -c "^>" "${FNA}"
 grep -c "^#" "${GFF}"
 
 # `grep -v`で"#"で始まる行を削除する:  
@@ -615,8 +552,6 @@ rRNAオペロン数が多いほど、rRNA遺伝子の複製起点からの距離
 rRNAオペロン数/tRNA遺伝子コピー数が多いほど、コドン使用バイアスが強いほど、細菌の増殖速度が速い。 
   - [Table 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/table/tbl1/)
 The 80 bacterial genome sequences analysed | Gene numbers: rRNA, tRNA, ORF  
-
-
 
 ----------
 ## Human chromosome 22
