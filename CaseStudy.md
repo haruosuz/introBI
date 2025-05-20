@@ -535,6 +535,9 @@ CDS
 rRNA
 tRNA
 - [Kumar et al. Sci Rep. 2019 Jan 17 "The mitochondrial genome of the marigold thrips, N. samayunkur."](https://pmc.ncbi.nlm.nih.gov/articles/PMC6336932/figure/Fig1/)
+  - [Neohydatothrips samayunkur mitochondrion, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/MF991901)
+ ORIGIN 
+ // 
 - [Hu et al. PLoS Genet. 2021 Nov 29 "An optimal growth law for RNA composition and its partial implementation through ribosomal and tRNA gene locations in bacterial genomes"](https://pubmed.ncbi.nlm.nih.gov/34843465/)
   - As shown in Fig 3A and 3B (orange points), we found that in fast-growing species, rRNA and tRNA genes are generally located in the vicinity of oriC, ... Moreover, we found that both rRNA and tRNA genes tend to be located ever closer to oriC with increasing μmax (...
   - [Fig 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8659690/figure/pgen.1009939.g003/)
