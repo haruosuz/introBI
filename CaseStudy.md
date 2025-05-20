@@ -519,9 +519,6 @@ $awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort
    8 product=5S ribosomal RNA
 ```
 
-![https://pmc.ncbi.nlm.nih.gov/articles/PMC6336932/](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/374e/6336932/197141af25b0/41598_2018_37889_Fig1_HTML.jpg)
-The mitochondrial genome of the marigold thrips, N. samayunkur. 
-
 ### Questions
 - How many genes ([CDS](https://en.wikipedia.org/wiki/Coding_region), [rRNA](https://en.wikipedia.org/wiki/Ribosomal_RNA), [tRNA](https://en.wikipedia.org/wiki/Transfer_RNA)) are in the genome?  
 ゲノムに含まれる遺伝子（gene）の数は？タンパク質をコードする配列（[CDS](https://ja.wikipedia.org/wiki/コーディング領域)）、[ribosomal RNA (rRNA)](https://ja.wikipedia.org/wiki/リボソームRNA)、[transfer RNA (tRNA)](https://ja.wikipedia.org/wiki/転移RNA) 遺伝子の数は？
@@ -537,6 +534,7 @@ The mitochondrial genome of the marigold thrips, N. samayunkur.
 CDS
 rRNA
 tRNA
+- [Kumar et al. Sci Rep. 2019 Jan 17 "The mitochondrial genome of the marigold thrips, N. samayunkur."](https://pmc.ncbi.nlm.nih.gov/articles/PMC6336932/figure/Fig1/)
 - [Hu et al. PLoS Genet. 2021 Nov 29 "An optimal growth law for RNA composition and its partial implementation through ribosomal and tRNA gene locations in bacterial genomes"](https://pubmed.ncbi.nlm.nih.gov/34843465/)
   - As shown in Fig 3A and 3B (orange points), we found that in fast-growing species, rRNA and tRNA genes are generally located in the vicinity of oriC, ... Moreover, we found that both rRNA and tRNA genes tend to be located ever closer to oriC with increasing μmax (...
   - [Fig 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8659690/figure/pgen.1009939.g003/)
