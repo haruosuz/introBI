@@ -519,6 +519,9 @@ $awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort
    8 product=5S ribosomal RNA
 ```
 
+![https://pmc.ncbi.nlm.nih.gov/articles/PMC6336932/](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/374e/6336932/197141af25b0/41598_2018_37889_Fig1_HTML.jpg)
+The mitochondrial genome of the marigold thrips, N. samayunkur. 
+
 ### Questions
 - How many genes ([CDS](https://en.wikipedia.org/wiki/Coding_region), [rRNA](https://en.wikipedia.org/wiki/Ribosomal_RNA), [tRNA](https://en.wikipedia.org/wiki/Transfer_RNA)) are in the genome?  
 ゲノムに含まれる遺伝子（gene）の数は？タンパク質をコードする配列（[CDS](https://ja.wikipedia.org/wiki/コーディング領域)）、[ribosomal RNA (rRNA)](https://ja.wikipedia.org/wiki/リボソームRNA)、[transfer RNA (tRNA)](https://ja.wikipedia.org/wiki/転移RNA) 遺伝子の数は？
