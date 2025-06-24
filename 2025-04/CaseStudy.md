@@ -173,9 +173,7 @@ Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)
 ## 
 
 ----------
-## 
-
-https://app.slack.com/client/T01BXK91YUV/C07PK39UL77
+## 2025-07-01
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
@@ -229,6 +227,12 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
-
 ----------
+
+
+
+
+
+
+
 
