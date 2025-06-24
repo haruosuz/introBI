@@ -170,10 +170,10 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-## 
+## 2025-07-01
 
 ----------
-## 2025-07-01
+## 2025-07-08
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
