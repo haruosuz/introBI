@@ -181,39 +181,27 @@ Slack上で、プロジェクトディレクトリの圧縮ファイルを提出
 Run your project on different date(s) and write down the reproducibility of results in the thread.  
 別の日にプロジェクトを実行し、結果の再現性をスレッドに書き込んでください。  
 
-----------
-## 2025-07-08
-
-Check project reproducibility on others' environments. 
-他人の環境でプロジェクトの再現性検証  
-
-On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
-Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
-
-Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
-あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載してください。  
-
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
 ecoli/README.md
-ecoli/analysis/2023-11-07/output.txt
-ecoli/analysis/2023-12-05/output.txt
-ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2023-11-07/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2023-11-07/md5checksums.txt
-ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2023-12-05/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2023-12-05/md5checksums.txt
-ecoli/log.2023-11-07.txt
-ecoli/log.2023-12-05.txt
+ecoli/analysis/2025-06-03/output.txt
+ecoli/analysis/2025-07-08/output.txt
+ecoli/data/2025-06-03/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2025-06-03/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2025-06-03/md5checksums.txt
+ecoli/data/2025-07-08/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2025-07-08/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2025-07-08/md5checksums.txt
+ecoli/log.2025-06-03.txt
+ecoli/log.2025-07-08.txt
 ecoli/scripts/run.sh
 ```
 
 Check the reproducibility of the results (e.g., differences between files).  
 結果の再現性を確認する（例えば、ファイルの差分）。  
 ```
-diff analysis/2023-11-07/output.txt analysis/2023-12-05/output.txt
+diff analysis/2025-06-03/output.txt analysis/2025-07-08/output.txt
 ```
 
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
@@ -228,6 +216,18 @@ uname -a
 # display date and time
 date +%F
 ```
+
+----------
+## 2025-07-08
+
+Check project reproducibility on others' environments. 
+他人の環境でプロジェクトの再現性検証  
+
+On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
+Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
+
+Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
+あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載してください。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
