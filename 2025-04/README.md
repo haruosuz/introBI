@@ -45,8 +45,8 @@
 - 2025-06-17 No. 10 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-06-20 (Fri) 6th period - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2025-06-24 No. 11 - [Online] [Guest Speaker](#guest-speaker)
-- 2025-07-01 No. 12 - 自分の環境でプロジェクトの再現性検証 Check project reproducibility on your environment
-- 2025-07-08 No. 13 - [他人の環境でプロジェクトの再現性検証 Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#2025-07-08)
+- 2025-07-01 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#2025-07-01)
+- 2025-07-08 No. 13 - 他人の環境でプロジェクトの再現性検証 [Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#2025-07-08)
 - 2025-07-15 No. 14 - 最終発表 [final presentation](#final-presentation)
   - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
   - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
