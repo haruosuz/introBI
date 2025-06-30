@@ -172,8 +172,20 @@ Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)
 ----------
 ## 2025-07-01
 
+Check project reproducibility on your environment  
+自分の環境でプロジェクトの再現性検証  
+
+On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
+Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
+
+Run your project on different date(s) and write down the reproducibility of results in the thread.  
+別の日にプロジェクトを実行し、結果の再現性をスレッドに書き込んでください。  
+
 ----------
 ## 2025-07-08
+
+Check project reproducibility on others' environments. 
+他人の環境でプロジェクトの再現性検証  
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
