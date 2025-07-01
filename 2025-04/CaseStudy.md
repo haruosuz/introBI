@@ -166,9 +166,6 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## 2025-07-01
 
@@ -178,8 +175,11 @@ Check project reproducibility on your environment
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
-Run your project on different date(s) and write down the reproducibility of results in the thread.  
-別の日にプロジェクトを実行し、結果の再現性をスレッドに書き込んでください。  
+Run your project on different date(s) and submit the updated file in the thread.  
+別の日にプロジェクトを実行し、更新されたファイルをスレッドに提出する。  
+
+You do not need to submit the file in K-LMS.  
+ファイルを K-LMS にて提出する必要はない。  
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
@@ -220,14 +220,14 @@ date +%F
 ----------
 ## 2025-07-08
 
-Check project reproducibility on others' environments. 
+Check project reproducibility on others' environments  
 他人の環境でプロジェクトの再現性検証  
 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
 Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
-あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載してください。  
+あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載する。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
@@ -239,12 +239,10 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+
 ----------
-
-
-
-
-
 
 
 
