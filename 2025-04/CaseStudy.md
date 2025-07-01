@@ -185,15 +185,15 @@ Example of project directory structure:
 プロジェクト・ディレクトリ構造の例:  
 ```
 ecoli/README.md
-ecoli/analysis/2025-06-03/output.txt
+ecoli/analysis/2025-07-01/output.txt
 ecoli/analysis/2025-07-08/output.txt
-ecoli/data/2025-06-03/GCA_000005845.2_ASM584v2_genomic.fna
-ecoli/data/2025-06-03/GCA_000005845.2_ASM584v2_genomic.gff
-ecoli/data/2025-06-03/md5checksums.txt
+ecoli/data/2025-07-01/GCA_000005845.2_ASM584v2_genomic.fna
+ecoli/data/2025-07-01/GCA_000005845.2_ASM584v2_genomic.gff
+ecoli/data/2025-07-01/md5checksums.txt
 ecoli/data/2025-07-08/GCA_000005845.2_ASM584v2_genomic.fna
 ecoli/data/2025-07-08/GCA_000005845.2_ASM584v2_genomic.gff
 ecoli/data/2025-07-08/md5checksums.txt
-ecoli/log.2025-06-03.txt
+ecoli/log.2025-07-01.txt
 ecoli/log.2025-07-08.txt
 ecoli/scripts/run.sh
 ```
@@ -201,7 +201,7 @@ ecoli/scripts/run.sh
 Check the reproducibility of the results (e.g., differences between files).  
 結果の再現性を確認する（例えば、ファイルの差分）。  
 ```
-diff analysis/2025-06-03/output.txt analysis/2025-07-08/output.txt
+diff analysis/2025-07-01/output.txt analysis/2025-07-08/output.txt
 ```
 
 [`uname`](https://en.wikipedia.org/wiki/Uname) prints the name, version and other details about the current machine and the operating system running on it.  
