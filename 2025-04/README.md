@@ -49,9 +49,9 @@
 - 2025-07-08 No. 13 - 他人の環境でプロジェクトの再現性検証 [Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#2025-07-08)
 - 2025-07-15 No. 14 - [Online] 最終発表 [final presentation](#final-presentation)
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-final)
-  - Unixデータツール [Unix Data Tools](#unix-data-tools)
-  - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
-  - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
+- Unixデータツール [Unix Data Tools](#unix-data-tools)
+- R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
+- 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
 
 ----------
 ## midterm presentation
