@@ -226,8 +226,8 @@ Check project reproducibility on others' environments
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
-Run the project submitted after yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
-あなたの後に提出されたプロジェクトを実行し、そのスレッドにコメント（例：結果の再現性、実行環境・日時、質問など）を記載する。  
+Run the project submitted before yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread.  
+あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
@@ -243,6 +243,5 @@ Submit a compressed file of the revised project directory (excluding data files 
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-
 
 
