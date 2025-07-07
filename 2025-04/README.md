@@ -81,9 +81,6 @@ Presentation time: 3 minutes will be allocated for each presentation (including 
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（データファイル `data/*` は除外）する。  
 
-Run the project submitted before yours and provide comments (reproducibility of results, run environment/date, questions, etc.) in the thread.  
-あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。  
-
 ----------
 ## Introduction
 **イントロダクション**
