@@ -378,21 +378,6 @@ p.24
 *方法とワークフローを記録する*: 
  ターミナルで実際に入力したコマンドラインを完全にコピー＆ペーストする。  
 
-*Document the origin of all data in your project directory*  
-すべてのデータの出所を明記する  
-
-*Document when you downloaded data*  
-データのダウンロード日を記録する  
-
-*Record data version information*  
-データのバージョン情報を記録する  
-
-*Describe how you downloaded the data*  
-データのダウンロード方法を記録する  
-
-*Document the versions of the software that you ran*  
-使用したソフトウェアのバージョンを記録する  
-
 All of the project information is best stored in [plain-text](https://en.wikipedia.org/wiki/Plain_text) [README](https://en.wikipedia.org/wiki/README) files. Plain text can easily be read, searched, and edited directly from the command line.
 Keep README files in each of your project's main directories.
 For example, a `data/README.md` file would contain metadata about your data files in the `data/` directory.  
