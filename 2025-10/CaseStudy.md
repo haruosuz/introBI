@@ -160,7 +160,7 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 ----------
-## 2025-07-01
+## 2026-01-06
 
 Check project reproducibility on your environment  
 自分の環境でプロジェクトの再現性検証  
@@ -211,7 +211,7 @@ date +%F
 ```
 
 ----------
-## 2025-07-08
+## 2026-01-13
 
 Check project reproducibility on others' environments  
 他人の環境でプロジェクトの再現性検証  
