@@ -2,7 +2,7 @@
 
 バイオインフォマティクスのデータサイエンス[DS2]  
 [K-LMS](https://lms.keio.jp/courses/129621)  
-[Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2025_46034)  
+[Syllabus](https://gslbs.keio.jp/syllabus/detail?ttblyr=2025&entno=27404)  
 
 ## References
 **参考文献**
