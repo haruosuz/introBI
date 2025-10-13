@@ -39,8 +39,8 @@ I would like to use one of the following tabular data:
 ## assignment 1
 **課題1 「README.md」**
 
-Edit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
 プレーンテキスト形式のMarkdownファイル *README.md* を編集する。例えば、著者名や日付を追加し、プロジェクトのタイトルや概要を編集する。  
+Edit the plain-text Markdown file *README.md*. For example, add the author's name and the date, and edit the project's title and summary.  
 ```
 Haruo Suzuki  
 Last Update: 2019-01-08  
@@ -55,26 +55,26 @@ Using the assembly summary report files to find the sequence and annotation of m
 - https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project
 ```
 
-Submit the *README.md* file.  
 *README.md* ファイル を提出する。  
-
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+Submit the *README.md* file.  
 
 ----------
 ## assignment 2
 **課題2 「zmays-snps」**
 
-Compress the project directory (`zmays-snps/`):  
 プロジェクト・ディレクトリ (`zmays-snps/`) を圧縮する:  
+Compress the project directory (`zmays-snps/`):  
 ```
 zip -r zmays-snps.zip zmays-snps/
 ```
 
 https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
-Submit the compressed file (`zmays-snps.zip`).  
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
+Submit the compressed file (`zmays-snps.zip`).  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 3
