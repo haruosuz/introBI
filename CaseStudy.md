@@ -227,7 +227,7 @@ bash
 日付のディレクトリを作成して、そのディレクトリに移動する:  
 Create a dated directory and change into it:  
 ```
-TODAY=$(date +%F); mkdir "${TODAY}"; cd "${TODAY}"
+mkdir -p ~/projects/$(date +%F) && cd ~/projects/$(date +%F)
 ```
 
 プロジェクトディレクトリを取得する:  
@@ -239,37 +239,27 @@ cd my_project
 ls
 ```
 
-`template1/` ディレクトリをコピー:  
-Copy the `template1/` directory:  
+`any_template/` ディレクトリをコピー:  
+Copy the `any_template/` directory:  
 ```
-cp -r template1 a_new_project
+cp -r any_template a_new_project
 ```
 
-`template1/` プロジェクトを実行:  
-Execute the `template1/` project:  
+`a_new_project/` プロジェクトを実行:  
+Execute the `a_new_project/` project:  
 ```
-cd template1/
+cd a_new_project/
 #cat README.md
 bash scripts/run.sh
 ```
 
-`ecoli/` プロジェクトを実行:  
-Execute the `ecoli/` project:  
+`gff_ecoli/` プロジェクトを実行:  
+Execute the `gff_ecoli/` project:  
 ```
 cd ..
-cd ecoli/
+cd gff_ecoli/
 #cat README.md
 (bash scripts/run.sh &) >& log.$(date +%F).txt
-tail -f log.$(date +%F).txt
-```
-
-`ncbi_genome_reports/` プロジェクトを実行:  
-Execute the `ncbi_genome_reports/` project:  
-```
-cd ..
-cd ncbi_genome_reports/
-#cat README.md
-(time bash scripts/run_ncbi_GENOME_REPORTS.sh &) >& log.$(date +%F).txt
 tail -f log.$(date +%F).txt
 # Use `tail -f` to constantly monitor files (use Control-C to stop)
 # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
