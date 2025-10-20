@@ -92,8 +92,10 @@ Example of creating a project directory (`your_project/`):
 cd ~/projects/
 mkdir -p your_project/{data,scripts,analysis}
 cd your_project/
-mkdir $(date +%F)
 pwd
+echo 'Hello World'
+echo "$(date +%F)"
+echo -e "Author Name  \nLast Update: $(date +%F)  \n\n# Project title\nProject started $(date +%F).  \n\n" > README.md
 ls
 cd ..
 ls your_project/
@@ -102,11 +104,11 @@ ls your_project/
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
-2025-04-22
+$ls -F | cat
 README.md
-analysis
-data
-scripts
+analysis/
+data/
+scripts/
 ```
 
 Compress the project directory (`your_project/`):  
