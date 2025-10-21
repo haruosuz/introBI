@@ -104,7 +104,6 @@ ls your_project/
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
-$ls -F | cat
 README.md
 analysis/
 data/
