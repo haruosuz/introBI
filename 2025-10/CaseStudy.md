@@ -95,7 +95,7 @@ cd your_project/
 pwd
 echo 'Hello World'
 echo "$(date +%F)"
-echo -e "Author Name  \nLast Update: $(date +%F)  \n\n# Project title\nProject started $(date +%F).  \n\n" > README.md
+echo -e "Author Name  \nLast Update: $(date +%F)  " > README.md
 ls
 cd ..
 ls your_project/
