@@ -11,8 +11,8 @@
 - [mice8992](#mice8992) Discovering Patterns in the Microbiome
 - [my_project](#my_project)
 - [NCBI Datasets](#ncbi-datasets)
-  - [Downloading data](#Downloading data)
-  - [Inspecting data](#Inspecting data)
+  - [Downloading data](#Downloading-data)
+  - [Inspecting data](#Inspecting-data)
   - [Questions](#questions)
 - [Human chromosome 22](#human-chromosome-22) ヒト22番染色体
 - [Mouse reference genome](#mouse-reference-genome) マウス参照ゲノム
@@ -344,8 +344,8 @@ mkdir -p ~/projects/data/$(date +%F) && cd ~/projects/data/$(date +%F)
 `wget`コマンドを使用して、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
 ```
 # Using `wget` to download the files (*_genomic.gff.gz, md5checksums.txt):
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/md5checksums.txt
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/GCA_000008865.2_ASM886v2_genomic.gff.gz
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/md5checksums.txt
 ```
 
 チェックサムを確認する:  
@@ -364,12 +364,12 @@ The *README.md* file would look like:
 ```
 ## Genome and Annotation Data
 
-Escherichia coli str. K-12 substr. MG1655, Complete Genome (GCA_000005845.2) data were downloaded on Tue Nov  3 19:23:25 JST 2020 using:
+Escherichia coli O157:H7 str. Sakai, Complete Genome (GenBank: GCA_000008865.2) data were downloaded on 2025-10-28 using:
 
-    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
+    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/GCA_000008865.2_ASM886v2_genomic.gff.gz
 
 ## MD5 checksum
-- MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = e63aeebf410a358f02a1e5144d1367e7
+- MD5 (GCA_000008865.2_ASM886v2_genomic.gff.gz) = 447259f763817b5d58704966d72b377e
 ```
 
 `gunzip`コマンドでファイルを展開する:  
@@ -401,7 +401,7 @@ wc -l *
 
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
-GFF=GCA_000005845.2_ASM584v2_genomic.gff
+GFF=GCA_000008865.2_ASM886v2_genomic.gff
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
@@ -486,19 +486,16 @@ awk -F"\t" '$3 ~ /CDS/ { print $5 - $4 "\t" $0 }' "${GFF}" | sort -k1,1n | tail 
 出力例:  
 ```
 $grep -v "^#" "${GFF}" | cut -f3 | sort | uniq -c
-4379 CDS
- 180 exon
-4419 gene
-  49 mobile_genetic_element
-  72 ncRNA
-   1 origin_of_replication
- 166 pseudogene
+5290 CDS
+ 126 exon
+5243 gene
+ 136 pseudogene
   22 rRNA
-   1 recombination_feature
-   1 region
- 697 repeat_region
-  48 sequence_feature
-  86 tRNA
+   3 region
+  65 repeat_region
+  24 sequence_feature
+ 103 tRNA
+   1 tmRNA
 
 $awk -F"\t" '$3 ~ /rRNA/ { print $0 }' "${GFF}" | grep -E -o 'product=.+' | sort | uniq -c
    7 product=16S ribosomal RNA
