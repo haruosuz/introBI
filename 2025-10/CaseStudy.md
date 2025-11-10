@@ -12,7 +12,7 @@
 - [assignment 3](#assignment-3) 課題3 「your_project/README.md」
 - [assignment 4](#assignment-4) 課題4 「your_project/data」
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
-- [assignment 6](#assignment-6) 課題6 「your_project/analysis」
+- [assignment 7](#assignment-7) 課題7 「your_project/analysis」
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
@@ -73,9 +73,6 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 Submit the compressed file (`zmays-snps.zip`).  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 3
 **課題3 「your_project/README.md」**
@@ -115,6 +112,10 @@ Compress the project directory (`your_project/`):
 ```
 zip -r your_project.zip your_project/
 ```
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
+
+Submit the compressed file of your project directory (e.g., `your_project.zip`).  
+プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 ----------
 ## assignment 4
@@ -143,8 +144,8 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
 ----------
-## assignment 6
-**課題6 「your_project/analysis」**
+## assignment 7
+**課題7 「your_project/analysis」**
 
 Write out the analysis result (redirect standard output) to a file under the `analysis/` directory.  
 `analysis/` ディレクトリ内のファイルに解析結果を書き出す（標準出力をリダイレクトする）。  
@@ -159,6 +160,9 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## 2026-01-06
@@ -232,9 +236,6 @@ Modify your project directory (scripts, *README.md* files) based on comments on 
 
 Submit a compressed file of the revised project directory (excluding data files `data/*`).  
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
-
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 
