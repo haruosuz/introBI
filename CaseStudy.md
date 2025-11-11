@@ -227,7 +227,7 @@ bash
 日付のディレクトリを作成して、そのディレクトリに移動する:  
 Create a dated directory and change into it:  
 ```
-mkdir -p ~/projects/$(date +%F) && cd ~/projects/$(date +%F)
+mkdir $(date +%F); cd $(date +%F)
 ```
 
 プロジェクトディレクトリを取得する:  
@@ -332,13 +332,13 @@ File formats and content:
 ### Downloading data
 データのダウンロード
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開く。`bash`を起動し、日付ディレクトリを作成して移動する:  
+[ターミナル](https://techacademy.jp/magazine/5155)を開き、`bash`を起動し、日付ディレクトリを作成して移動する:  
 ```
 # Open a terminal window
 bash
 
 # Create a dated directory and change into it
-mkdir -p ~/projects/data/$(date +%F) && cd ~/projects/data/$(date +%F)
+mkdir $(date +%F); cd $(date +%F)
 ```
 
 `wget`コマンドを使用して、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
