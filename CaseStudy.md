@@ -401,7 +401,8 @@ wc -l *
 
 # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
 # create a variable and assign it a value with (do not use spaces around the equals sign!):  
-GFF=GCA_000008865.2_ASM886v2_genomic.gff
+GFF=GCA_000008865.2_ASM886v2_genomic.gff # Escherichia coli O157:H7 str. Sakai
+GFF=GCA_000005845.2_ASM584v2_genomic.gff # Escherichia coli str. K-12 substr. MG1655
 
 # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
 # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
