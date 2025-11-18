@@ -157,7 +157,8 @@ Compress the project directory (`your_project/`) while excluding files in the `d
 プロジェクトディレクトリ (`your_project/`) を圧縮する際、`data/` ディレクトリ内のファイルを除外する。  
 ```
 zip --exclude 'your_project/data/*' -r your_project.zip your_project/
-``
+```
+
 https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
