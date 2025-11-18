@@ -150,12 +150,14 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 Write out the analysis result (redirect standard output) to a file under the `analysis/` directory.  
 `analysis/` ディレクトリ内のファイルに解析結果を書き出す（標準出力をリダイレクトする）。  
 
+Update the *README.md* file.  
+*README.md* ファイルを更新する。  
+
 Compress the project directory (`your_project/`) while excluding files in the `data/` directory.  
 プロジェクトディレクトリ (`your_project/`) を圧縮する際、`data/` ディレクトリ内のファイルを除外する。  
 ```
 zip --exclude 'your_project/data/*' -r your_project.zip your_project/
-```
-
+``
 https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
