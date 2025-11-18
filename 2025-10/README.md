@@ -32,7 +32,7 @@
   - 課題4 [assignment 4](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#assignment-4)
 - 2025-11-04 No. 5 - シェルスクリプト [Shell Scripting](#shell-scripting)
   - 課題5 [assignment 5](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#assignment-5)
-- 2025-11-11 No. 6 - シェルスクリプト [Shell Scripting](#shell-scripting) | [find and xargs](#automating-file-processing-with-find-and-xargs)
+- 2025-11-11 No. 6 - シェルスクリプト Shell Scripting | [find and xargs](#automating-file-processing-with-find-and-xargs)
   - プロジェクト例 [Project Examples](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#my_project)
 - 2025-11-18 No. 7 - データの検査 [Inspecting data](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#inspecting-data)
   - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
