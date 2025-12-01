@@ -20,7 +20,7 @@
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | [Class Calendar](https://www.sfc.keio.ac.jp/en/contact/class_calendar.html)
   - [2025年度 SFC授業カレンダー（2024.11.26更新）](https://www.sfc.keio.ac.jp/doc/2025_classcalendars_jp.pdf) | [SFC Calendars for 2025（Update November 26, 2024）](https://www.sfc.keio.ac.jp/en/docs/2025_classcalendars_en.pdf)
-- 2025-10-07 No. 1 - イントロダクション [Introduction](#introduction)
+- 2025-10-07 No. 1 - [Online] イントロダクション [Introduction](#introduction)
   - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#assignment-1)
 - 2025-10-14 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
   - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#assignment-2)
@@ -39,9 +39,10 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
-- 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
-- 2025-12-16 No. 10 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-- 2025-12-23 No. 11 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+   - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2025-12-09 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2025-12-16 No. 10 - 
+- 2025-12-23 No. 11
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#2026-01-06)
 - 2026-01-13 No. 13 - 他人の環境でプロジェクトの再現性検証 [Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#2026-01-13)
