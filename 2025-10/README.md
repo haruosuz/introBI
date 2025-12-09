@@ -40,7 +40,7 @@
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
 - 2025-12-09 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
-- 2025-12-16 No. 10 - Unixデータツール Unix Data Tools | [sort](#sorting-plain-text-data-with-sort)
+- 2025-12-16 No. 10 - Unixデータツール Unix Data Tools | [join](#join)
 - 2025-12-23 No. 11 - TBD
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2025-10/CaseStudy.md#2026-01-06)
