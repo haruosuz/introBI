@@ -59,10 +59,6 @@ Presentation time is 1 minute. Report your project (analysis data).
 発表時間は1分。プロジェクト（解析データ）を報告する。
 
 ----------
-## Guest speaker
-**特別講演**
-
-----------
 ## final presentation
 **最終発表**
 
