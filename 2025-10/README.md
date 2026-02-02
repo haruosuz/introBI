@@ -493,7 +493,7 @@ p.41
 ## Working with Streams and Redirection
 ## 3.2　ストリームとリダイレクションの操作
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Stdstreams-notitle.svg/412px-Stdstreams-notitle.svg.png)
+![https://en.wikipedia.org/wiki/Standard_streams](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Stdstreams-notitle.svg/412px-Stdstreams-notitle.svg.png)
 
 [Standard streams](https://en.wikipedia.org/wiki/Standard_streams) |
 [ストリーム](https://ja.wikipedia.org/wiki/標準ストリーム)  
