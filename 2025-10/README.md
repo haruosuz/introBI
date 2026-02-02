@@ -429,7 +429,7 @@ p.31
 ## Markdown for Project Notebooks
 ## 2.5　プロジェクトノートのためのマークダウン記法
 
-Project notebooks in simple plain-text can be read/searched/edited from the command line and across network connections to servers.  
+Project notebooks in simple plain-text can be read, searched, and edited from the command line and across network connections to servers.  
 プレーンテキスト形式で書かれたプロジェクト・ノートは、コマンドラインやネットワーク経由で読込・検索・編集できる。  
 
 ### Markdown Formatting Basics
