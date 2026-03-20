@@ -20,7 +20,7 @@
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | [Class Calendar](https://www.sfc.keio.ac.jp/en/contact/class_calendar.html)
   - [2026年度 SFC授業カレンダー（2025.11.27更新）](https://www.sfc.keio.ac.jp/doc/2026_classcalendars_jp.pdf) | [SFC Calendars for 2026（Update November 27, 2025）](https://www.sfc.keio.ac.jp/en/docs/2026_classcalendars_en.pdf)
-- 2026-04-14 No. 1 - [Online] イントロダクション [Introduction](#introduction)
+- 2026-04-14 No. 1 - イントロダクション [Introduction](#introduction)
   - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-1)
 - 2026-04-21 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
   - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-2)
@@ -40,6 +40,7 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-7)
 - 2026-06-09 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
 - 2026-06-16 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - Unixデータツール Unix Data Tools | [join](#join)
 - 2026-06-30 No. 11 - 質疑応答 Q&A
 - 2026-07-07 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#2026-01-06)
@@ -189,11 +190,9 @@ brew install wget
 Download the plain-text Markdown file:  
 プレーンテキスト形式のMarkdownファイルをダウンロードする:  
 ```
-   wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
-```
-or
-```
-curl -O https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
+URL=https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
+   wget ${URL}
+curl -O ${URL}
 ```
 
 Copy the file:  
@@ -681,12 +680,14 @@ p.109
 ### Downloading Data with wget and curl
 ### 6.1.1　wgetとcurlを使用したデータのダウンロード
 
+http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
+
 #### 6.1.1.1 wget
 
-[`wget`](https://en.wikipedia.org/wiki/Wget) is used to download a file (e.g. human chromosome 22):  
-[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget) を用いて、ファイル（例：ヒト22番染色体）をダウンロードする:  
+[`wget`](https://en.wikipedia.org/wiki/Wget) is used to download a file (e.g. human mitochondrion sequence):  
+[`wget`](https://ja.wikipedia.org/wiki/GNU_Wget) を用いて、ファイル（例：ヒトのミトコンドリア配列）をダウンロードする:  
 
-	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+	wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chrM.fa.gz
 
 `wget` can download data *recursively* with the recursive option (`--recursive` or `-r`).  
 `wget` の再帰オプション `--recursive` または `-r` でデータを再帰的にダウンロードできる。  
@@ -699,8 +700,8 @@ p.109
 [`curl`](https://en.wikipedia.org/wiki/CURL) by default writes the file to standard output.  
 [`curl`](https://ja.wikipedia.org/wiki/CURL) は、デフォルトでは標準出力する。
 
-    curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz > chr22.fa.gz
-    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+    curl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chrM.fa.gz > chrM.fa.gz
+    #curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chrM.fa.gz
 
 `curl -L` can follow page redirects. It downloads the ultimate page the link redirects to (for example, from a shortened link):  
 `curl -L` でページのリダイレクトを辿り、短縮リンクなどがリダイレクトする最終ページをダウンロードする:  
