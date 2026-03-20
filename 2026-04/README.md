@@ -691,7 +691,7 @@ p.109
 `wget` の再帰オプション `--recursive` または `-r` でデータを再帰的にダウンロードできる。  
 
 `man wget` for a list of options.  
-`man wget` で[オプション一覧](http://www.atmarkit.co.jp/ait/articles/1606/20/news024.html#opt)を見る。  
+`man wget` でオプション一覧を見る。  
 
 #### 6.1.1.2 curl
 
