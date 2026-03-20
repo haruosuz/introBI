@@ -680,8 +680,6 @@ p.109
 ### Downloading Data with wget and curl
 ### 6.1.1　wgetとcurlを使用したデータのダウンロード
 
-http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
-
 #### 6.1.1.1 wget
 
 [`wget`](https://en.wikipedia.org/wiki/Wget) is used to download a file (e.g. human mitochondrion sequence):  
