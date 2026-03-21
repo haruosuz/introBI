@@ -1,6 +1,6 @@
 # 2026-04
 
-バイオインフォマティクスのデータサイエンス[DS2]  
+バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS [DS2]  
 [K-LMS]()  
 [Syllabus]()  
 
