@@ -1,8 +1,8 @@
 # 2026-04
 
 バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS [DS2]  
-[K-LMS]()  
-[Syllabus]()  
+[K-LMS](https://lms.keio.jp/courses/141952)  
+[Syllabus](https://gslbs.keio.jp/syllabus/detail?ttblyr=2026&entno=43422&lang=en)  
 
 ## References
 **参考文献**
@@ -39,9 +39,9 @@
   - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-7)
 - 2026-06-09 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
-- 2026-06-16 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
+- 2026-06-16 No. 9 - [Guest Speaker](#guest-speaker)
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
-- 2026-06-23 No. 10 - Unixデータツール Unix Data Tools | [join](#join)
+- 2026-06-23 No. 10 - [Guest Speaker](#guest-speaker)
 - 2026-06-30 No. 11 - 質疑応答 Q&A
 - 2026-07-07 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#2026-01-06)
 - 2026-07-14 No. 13 - 他人の環境でプロジェクトの再現性検証 [Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#2026-01-13)
@@ -49,6 +49,16 @@
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-final)
 - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
 - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
+
+----------
+## Guest speaker
+**特別講演**
+
+People outside of Keio University SFC will also attend the lectures.  
+他機関所属の方も参加されます。  
+
+
+- Speaker: [Dr. Kirill Kryukov (National Institute of Genetics) キリル クリュコフ博士（国立遺伝学研究所）](https://kirill-kryukov.com/kirr/)
 
 ----------
 ## midterm presentation
