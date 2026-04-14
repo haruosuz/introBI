@@ -200,9 +200,8 @@ brew install wget
 Download the plain-text Markdown file:  
 プレーンテキスト形式のMarkdownファイルをダウンロードする:  
 ```
-URL=https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
-   wget ${URL}
-curl -O ${URL}
+  #wget https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
+curl -O https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-02-bioinformatics-projects/notebook.md
 ```
 
 Copy the file:  
