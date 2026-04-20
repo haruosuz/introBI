@@ -58,9 +58,6 @@ Using the assembly summary report files to find the sequence and annotation of m
 *README.md* ファイル を提出する。  
 Submit the *README.md* file.  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 2
 **課題2 「zmays-snps」**
@@ -75,6 +72,9 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 Submit the compressed file (`zmays-snps.zip`).  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 3
