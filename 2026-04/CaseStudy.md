@@ -73,9 +73,6 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 圧縮ファイル（`zmays-snps.zip`）を提出する。  
 Submit the compressed file (`zmays-snps.zip`).  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 3
 **課題3 「your_project/README.md」**
@@ -91,23 +88,17 @@ Example of creating a project directory (`your_project/`):
 ```
 cd ~/projects/
 mkdir -p your_project/{data,scripts,analysis}
-cd your_project/
-pwd
-echo 'Hello World'
-echo "$(date +%F)"
-echo -e "Author Name  \nLast Update: $(date +%F)  " > README.md
-ls
-cd ..
-ls your_project/
+touch your_project/README.md
+find your_project
 ```
 
 Example of project directory structure:  
 プロジェクト・ディレクトリ構造の例:  
 ```
 README.md
-analysis/
 data/
 scripts/
+analysis/
 ```
 
 Compress the project directory (`your_project/`):  
@@ -119,6 +110,9 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 4
