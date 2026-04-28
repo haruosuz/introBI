@@ -518,13 +518,13 @@ combine files by printing their contents to the *standard output* stream and *re
 look at the *tb1-protein.fasta* and *tga1-protein.fasta* files in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format) for representing amino acid (protein) sequences.  
 タンパク質のアミノ酸配列データを記述した[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイル *tb1-protein.fasta* と *tga1-protein.fasta* を見る。
 
-[`cat`](https://en.wikipedia.org/wiki/Cat_%28Unix%29) prints the *tb1-protein.fasta* file to standard out:  
-[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)コマンドで *tb1-protein.fasta* ファイルを標準出力する:  
+[`cat`](https://en.wikipedia.org/wiki/Cat_%28Unix%29) prints a file's content to standard out:  
+[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)コマンドでファイルの内容を標準出力する::  
 
 	cat tb1-protein.fasta
 
-print multiple files' contents to the standard output stream:  
-複数のファイルを標準出力する:  
+Concatenate and print multiple files:  
+複数のファイルを連結して標準出力する:  
 
 	cat tb1-protein.fasta tga1-protein.fasta
 
