@@ -519,7 +519,7 @@ look at the *tb1-protein.fasta* and *tga1-protein.fasta* files in [FASTA format]
 タンパク質のアミノ酸配列データを記述した[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイル *tb1-protein.fasta* と *tga1-protein.fasta* を見る。
 
 [`cat`](https://en.wikipedia.org/wiki/Cat_%28Unix%29) prints a file's content to standard out:  
-[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)コマンドでファイルの内容を標準出力する::  
+[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)コマンドでファイルの内容を標準出力する:  
 
 	cat tb1-protein.fasta
 
