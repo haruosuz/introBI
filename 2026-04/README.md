@@ -601,6 +601,8 @@ the basics of manipulating processes: running and managing processes in the back
 Run a program in the background by appending an ampersand (`&`) to the end of our command:  
 コマンドの末尾にアンパサンド（`&`）を追加して、プログラムをバックグラウンドで実行する:  
 
+    sleep 60 &
+ 
     $sleep 60 &
     [1] 19166
 
