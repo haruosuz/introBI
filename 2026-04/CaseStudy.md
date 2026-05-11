@@ -88,7 +88,6 @@ Example of creating a project directory (`your_project/`):
 ```
 cd ~/projects/
 mkdir -p your_project/{data,scripts,analysis}
-touch your_project/README.md
 find your_project
 ```
 
@@ -111,9 +110,6 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 4
 **課題4 「your_project/data」**
@@ -126,6 +122,9 @@ In the *README.md* file, document when and how you downloaded the data, and thei
 
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
+
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## assignment 5
