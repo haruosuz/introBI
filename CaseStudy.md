@@ -281,6 +281,12 @@ you will see a search box [ Selected taxa ], and you can type "Enter one or more
 - https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=562  
 under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM886v2") indicated by check mark.  
 **Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM886v2") をクリックする。  
+
+| Assembly | Scientific name |
+|:---------|:---------|
+| ASM584v2 | Escherichia coli str. K-12 substr. MG1655 |
+| ASM886v2 | Escherichia coli O157:H7 str. Sakai |
+
 - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
 
 |          |          | Actions |
