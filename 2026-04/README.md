@@ -704,6 +704,18 @@ p.109
 `man wget` for a list of options.  
 `man wget` でオプション一覧を見る。  
 
+Table 6-1. Useful wget options  
+|Option |
+|:---------|
+| -A, --accept |
+| -R, --reject |
+| -nd, --no-directories |
+| -r, --recursive |
+| -np, --no-parent |
+| --limit-rate |
+| --user |
+| --ask-password |
+
 #### 6.1.1.2 curl
 
 [`curl`](https://en.wikipedia.org/wiki/CURL) by default writes the file to standard output.  
@@ -716,6 +728,22 @@ p.109
 `curl -L` でページのリダイレクトを辿り、短縮リンクなどがリダイレクトする最終ページをダウンロードする:  
 
     curl -L http://bit.ly/egfr_flank > egfr_flank.fa
+
+p.113
+訳書123頁
+### Rsync and Secure Copy (scp)
+### 6.1.2　rsyncとscp
+
+[`rsync`](https://en.wikipedia.org/wiki/Rsync) is a tool for synchronizing entire directories across a network.  
+[`rsync`](https://ja.wikipedia.org/wiki/Rsync) は、ネットワーク間で、ディレクトリ全体を同期するためのツールである。  
+
+    # basic syntax: rsync source destination
+    rsync -avz -e ssh zmays-snps/data/ user@host:/path/to/directory
+
+[`scp`](https://en.wikipedia.org/wiki/Secure_copy_protocol) is used to copy a single file over SSH.  
+[`scp`](https://ja.wikipedia.org/wiki/Secure_copy) コマンドを用いて、SSHを介して、1つのファイルをコピーする。  
+
+    scp zmays-snps/data/README.md user@host:/path/to/directory
 
 p.114
 訳書124頁
