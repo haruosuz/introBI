@@ -832,14 +832,11 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 ### Working with Gzipped Compressed Files
 ### 6.4.2　gzipで圧縮されたファイルの操作
 
-`zcat` (`gzcat` on macOS), `zgrep`, `zdiff`, and `zless` can handle (work directly with) compressed files.  
+`zcat` (`gzcat` on macOS), `zgrep`, `zdiff`, and `zless` work directly with compressed files.  
 `zcat` (macOS では `gzcat`), `zgrep`, `zdiff`, `zless`コマンドは圧縮ファイルを直接操作できる。  
 
 ```
-zcat chrM.fa.gz | grep "ACGTACGTACGT"
-
-# macOS
-gzcat chrM.fa.gz | grep "ACGTACGTACGT"
+zgrep --color -i -n "cATGCat" chrM.fa.gz
 ```
 
 p.120
