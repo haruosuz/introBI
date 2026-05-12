@@ -836,10 +836,10 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 `zcat` (macOS では `gzcat`), `zgrep`, `zdiff`, `zless`コマンドは圧縮ファイルを直接操作できる。  
 
 ```
-zcat chr22.fa.gz | grep "ACGTACGTACGT"
+zcat chrM.fa.gz | grep "ACGTACGTACGT"
 
 # macOS
-gzcat chr22.fa.gz | grep "ACGTACGTACGT"
+gzcat chrM.fa.gz | grep "ACGTACGTACGT"
 ```
 
 p.120
