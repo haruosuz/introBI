@@ -279,50 +279,40 @@ Click on the **Genome** tab.
 you will see a search box [ Selected taxa ], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [*Escherichia coli*](https://en.wikipedia.org/wiki/Escherichia_coli), you would type just organism name "**Escherichia coli**" in the search box and press Enter.  
 検索ボックス [ Selected taxa ] に生物名を入力してEnterキーを押す。例えば、[大腸菌](https://ja.wikipedia.org/wiki/大腸菌) の学名 "**Escherichia coli**" を検索する。  
 - https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=562  
-under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM886v2") indicated by check mark.  
-**Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM886v2") をクリックする。  
+under **Assembly**, you will see genome sequences; of which, click reference genome (e.g., "ASM584v2") indicated by check mark.  
+**Assembly** の下に、ゲノム配列データが表示される。このうち、チェックマークが付いた参照ゲノム (例えば、"ASM584v2") をクリックする。  
 
 | Assembly | Scientific name |
 |:---------|:---------|
 | ASM584v2 | Escherichia coli str. K-12 substr. MG1655 |
 | ASM886v2 | Escherichia coli O157:H7 str. Sakai |
 
-- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/
 
-|          |          | Actions |
-|:---------|:---------|:---------|
-| NCBI RefSeq assembly |	GCF_000008865.2 |	 |
-| Submitted GenBank assembly  |GCA_000008865.2 |	 |
+|                      |                       | Actions |
+|:---------------------|:----------------------|:--------|
+| NCBI RefSeq assembly | GCF_000005845.2       | See more files on FTP |
+| Submitted GenBank assembly | GCA_000005845.2 | See more files on FTP |
 
 [What are NCBI Assembly accession numbers?](https://support.nlm.nih.gov/knowledgebase/article/KA-03451/en-us)
 
-### RefSeq
-
-- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
-Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **NCBI RefSeq assembly** "GCF_000008865.2".  
-**NCBI RefSeq assembly** "GCF_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.2_ASM886v2/
-```
-GCF_000008865.2_ASM886v2_genomic.gff.gz          2021-08-21 03:36  342K  
-md5checksums.txt                                 2024-03-31 07:25  1.1K  
-```
-
 ### GenBank
 
-- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000008865.2/  
-Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000008865.2".  
-**Submitted GenBank assembly** "GCA_000008865.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/  
+- https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2/  
+Click on "See more files on FTP" from the menu on the right (under **Actions**) of the **Submitted GenBank assembly** "GCA_000005845.2".  
+**Submitted GenBank assembly** "GCA_000005845.2" の右側のメニュー（**Actions**の下）から"See more files on FTP"を選択して開く。  
+- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/  
 ```
-GCA_000008865.2_ASM886v2_genomic.gff.gz          2021-08-23 16:06  305K  
-md5checksums.txt                                 2024-03-31 07:25  1.1K  
+GCA_000005845.2_ASM584v2_genomic.gff.gz          2024-12-07 18:52  375K  
+
+md5checksums.txt                                 2026-03-10 19:17  1.1K 
 ```
 
 Right click on the link to the file (*\*_genomic.gff.gz*, *md5checksums.txt*), and select "Copy Link Address".  
 ファイル（*\*_genomic.gff.gz*, *md5checksums.txt*）へのリンクを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 
 ディレクトリ内のファイル
-[What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
+[What is the file content within each specific assembled genome directory?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/data-processing/policies-annotation/genomeftp/#what-is-the-file-content-within-each-specific-assembled-genome-directory)  
 https://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 File formats and content:
@@ -343,15 +333,20 @@ File formats and content:
 # Open a terminal window
 bash
 
+# Create a project directory (`your_project/`):  
+cd ~/projects/
+mkdir -p your_project/{data,scripts,analysis}
+
 # Create a dated directory and change into it
-mkdir $(date +%F); cd $(date +%F)
+mkdir -p data/$(date +%F)
+cd data/$(date +%F)
 ```
 
 `wget`コマンドを使用して、ゲノムアノテーションの[GFF](https://github.com/haruosuz/bioinfo/blob/master/README.md#gff)形式ファイル（*\*_genomic.gff.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）をダウンロードする:  
 ```
 # Using `wget` to download the files (*_genomic.gff.gz, md5checksums.txt):
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/GCA_000008865.2_ASM886v2_genomic.gff.gz
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/md5checksums.txt
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/md5checksums.txt
 ```
 
 チェックサムを確認する:  
@@ -368,14 +363,14 @@ md5 *.gz
 *README.md*ファイルの例は次の通り:  
 The *README.md* file would look like:  
 ```
-## Genome and Annotation Data
+## Genome Annotation Data
 
-Escherichia coli O157:H7 str. Sakai, Complete Genome (GenBank: GCA_000008865.2) data were downloaded on 2025-10-28 using:
+Escherichia coli str. K-12 substr. MG1655, GenBank assembly (GCA_000005845.2) data were downloaded on 2026-05-12 using:
 
-    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/865/GCA_000008865.2_ASM886v2/GCA_000008865.2_ASM886v2_genomic.gff.gz
+    wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/005/845/GCA_000005845.2_ASM584v2/GCA_000005845.2_ASM584v2_genomic.gff.gz
 
 ## MD5 checksum
-- MD5 (GCA_000008865.2_ASM886v2_genomic.gff.gz) = 447259f763817b5d58704966d72b377e
+- MD5 (GCA_000005845.2_ASM584v2_genomic.gff.gz) = a9636a4e6c974711f2950d31d6200f81
 ```
 
 `gunzip`コマンドでファイルを展開する:  
