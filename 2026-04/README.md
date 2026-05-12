@@ -701,20 +701,14 @@ p.109
 `wget` can download data *recursively* with the recursive option (`--recursive` or `-r`).  
 `wget` の再帰オプション `--recursive` または `-r` でデータを再帰的にダウンロードできる。  
 
+```
+wget --accept "*.gtf" --no-directories --recursive --no-parent \
+     --limit-rate=100k --user="${myname}" --password="${password}" \
+     "${URL}"
+```
+
 `man wget` for a list of options.  
 `man wget` でオプション一覧を見る。  
-
-Table 6-1. Useful wget options  
-|Option |
-|:---------|
-| -A, --accept |
-| -R, --reject |
-| -nd, --no-directories |
-| -r, --recursive |
-| -np, --no-parent |
-| --limit-rate |
-| --user |
-| --ask-password |
 
 #### 6.1.1.2 curl
 
@@ -829,6 +823,11 @@ compress the *gene-2.bed* file and append it to our compressed *gene-1.bed.gz* f
 ファイル *gene-2.bed* を圧縮して、既存の圧縮ファイル *gene-1.bed.gz* に追加する:  
 
     gzip -c gene-2.bed >> gene-1.bed.gz
+
+To archive multiple files into one, use `tar` (see `man tar`).  
+複数ファイルを1つにまとめるには `tar` を使う（詳細は `man tar` ）。  
+
+https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 
 ### Working with Gzipped Compressed Files
 ### 6.4.2　gzipで圧縮されたファイルの操作
