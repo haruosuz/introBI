@@ -836,7 +836,7 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 `zcat` (macOS では `gzcat`), `zgrep`, `zdiff`, `zless`コマンドは圧縮ファイルを直接操作できる。  
 
 ```
-zgrep --color -i -n "cATGCat" chrM.fa.gz
+zgrep --color -i -n "ATGCat" chrM.fa.gz
 ```
 
 p.120
