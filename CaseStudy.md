@@ -227,7 +227,10 @@ bash
 日付のディレクトリを作成して、そのディレクトリに移動する:  
 Create a dated directory and change into it:  
 ```
-mkdir $(date +%F); cd $(date +%F)
+cd ~/projects/
+TODAY=$(date +%F)
+mkdir "${TODAY}"
+cd "${TODAY}"
 ```
 
 プロジェクトディレクトリを取得する:  
