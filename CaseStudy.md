@@ -331,14 +331,16 @@ File formats and content:
 ### Downloading data
 データのダウンロード
 
-[ターミナル](https://techacademy.jp/magazine/5155)を開き、`bash`を起動し、日付ディレクトリを作成して移動する:  
+ターミナルを開き、`bash`を起動し、ディレクトリを作成・移動する:  
 ```
 # Open a terminal window
 bash
 
-# Create a project directory (`your_project/`):  
 cd ~/projects/
+
+# Create a project directory (`your_project/`) and change into it:  
 mkdir -p your_project/{data,scripts,analysis}
+cd your_project/
 
 # Create a dated directory and change into it
 mkdir -p data/$(date +%F)
@@ -908,27 +910,3 @@ https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
 - 2020.04.18 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
 
 ----------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
