@@ -64,8 +64,8 @@ People outside of Keio University SFC will also attend the lectures.
 ## midterm presentation
 **中間発表**
 
-Presentation Time: 1 minute. Share your screen, open the terminal, and provide an overview of the contents of your project directory (README.md, subdirectories) and the downloaded data.
-発表時間: 1分。画面共有し、ターミナルを開き、プロジェクトのディレクトリ構造（README.md とサブディレクトリ）の構成、およびダウンロードしたデータについて説明する。
+Presentation Time: 1 minute. Share your screen, open the terminal, and provide an overview of the contents of your project directory (README.md, subdirectories) and the downloaded data.  
+発表時間: 1分。画面共有し、ターミナルを開き、プロジェクトのディレクトリ構造（README.md とサブディレクトリ）の構成、およびダウンロードしたデータについて説明する。  
 
 ----------
 ## final presentation
