@@ -136,9 +136,6 @@ Update the *README.md* file (e.g., include example command to run the script).
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
-
 ----------
 ## assignment 7
 **課題7 「your_project/analysis」**
@@ -160,8 +157,11 @@ https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#compress
 Submit the compressed file of your project directory (e.g., `your_project.zip`).  
 プロジェクトディレクトリの圧縮ファイル（例: `your_project.zip`）を提出する。  
 
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+
 ----------
-## 2026-01-06
+## 2026-07-07
 
 Check project reproducibility on your environment  
 自分の環境でプロジェクトの再現性検証  
@@ -212,7 +212,7 @@ date +%F
 ```
 
 ----------
-## 2026-01-13
+## 2026-07-14
 
 Check project reproducibility on others' environments  
 他人の環境でプロジェクトの再現性検証  
@@ -234,5 +234,4 @@ Submit a compressed file of the revised project directory (excluding data files 
 修正したプロジェクトディレクトリの圧縮ファイル（`data/*` データファイルを除く）を提出する。  
 
 ----------
-
 
