@@ -40,6 +40,7 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-7)
 - 2026-06-09 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
 - 2026-06-16 No. 9 - [Online] [Guest Speaker](#guest-speaker)
+  - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-9)
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - [Online] [Guest Speaker](#guest-speaker)
 - 2026-06-30 No. 11 - 質疑応答 Q&A
