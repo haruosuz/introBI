@@ -165,8 +165,8 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
-スクリプト ファイル を提出する。
-Submit the script file.
+スクリプト ファイル を提出する。  
+Submit the script file.  
 
 https://biokirr.com/Temp/Keio-2026-06-16/script.txt
 ```
