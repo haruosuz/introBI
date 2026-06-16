@@ -162,21 +162,13 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 ## assignment 9
 **課題9 「Guest speaker 2026-06-16」**
 
-[課題のファイルを K-LMS にて提出する。  
-Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
+https://github.com/haruosuz/introBI/blob/main/2026-04/README.md#guest-speaker
 
 スクリプト ファイル を提出する。  
 Submit the script file.  
 
-https://biokirr.com/Temp/Keio-2026-06-16/script.txt
-```
-# Assignment
-# Open https://ikilog.biodic.go.jp/Rdb/booklist
-# (Use automatic translation if necessary to read the page).
-# Choose some other csv file.
-# Make a script that downloads it, counts listed species, and counts species with RefSeq genomes
-# The script must automatically download the csv file, the RefSeq genome list, and show the number of overlapping species.
-```
+[課題のファイルを K-LMS にて提出する。  
+Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
 ## 2026-07-07
