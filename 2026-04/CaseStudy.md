@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「your_project/data」
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
 - [assignment 7](#assignment-7) 課題7 「your_project/analysis」
-- [assignment 9](#assignment-9) 課題9 「Guest speaker 2026-06-16」
+- [assignment 9](#assignment-9) 課題9 「guest-speaker_2026-06-16」
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
@@ -160,7 +160,7 @@ Submit the compressed file of your project directory (e.g., `your_project.zip`).
 
 ----------
 ## assignment 9
-**課題9 「Guest speaker 2026-06-16」**
+**課題9 「guest-speaker_2026-06-16」**
 
 https://github.com/haruosuz/introBI/blob/main/2026-04/README.md#guest-speaker
 
