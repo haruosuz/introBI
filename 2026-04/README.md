@@ -54,11 +54,14 @@
 ## Guest speaker
 **特別講演**
 
-People outside of Keio University SFC will also attend the lectures.  
-他機関所属の方も参加されます。  
-
 
 - Speaker: [Dr. Kirill Kryukov (National Institute of Genetics) キリル クリュコフ博士（国立遺伝学研究所）](https://kirill-kryukov.com/kirr/)
+
+### 2026-06-16
+- Slides: https://biokirr.com/Temp/Keio-2026-06-16/Slides.pdf
+- Commands: https://biokirr.com/Temp/Keio-2026-06-16/script.txt
+
+### 2026-06-23
 
 ----------
 ## midterm presentation
