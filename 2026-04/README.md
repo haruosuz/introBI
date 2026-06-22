@@ -43,6 +43,7 @@
   - 課題9 [assignment 9](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-9)
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - [Online] [Guest Speaker](#guest-speaker)
+  - 課題10 [assignment 10](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#assignment-10)
 - 2026-06-30 No. 11 - 質疑応答 Q&A
 - 2026-07-07 No. 12 - 自分の環境でプロジェクトの再現性検証 [Check project reproducibility on your environment](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#2026-07-07)
 - 2026-07-14 No. 13 - 他人の環境でプロジェクトの再現性検証 [Check project reproducibility on others' environments](https://github.com/haruosuz/introBI/blob/main/2026-04/CaseStudy.md#2026-07-14)
