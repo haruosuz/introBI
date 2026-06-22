@@ -174,8 +174,8 @@ Submit the script file.
 
 https://github.com/haruosuz/introBI/blob/main/2026-04/README.md#guest-speaker
 
-Please submit your feedback regarding the two special lectures by Dr. Kirill Kryukov.  
-キリル・クリュコフ博士による2回の特別講義について、感想や質問などのフィードバックを提出してください。  
+Please submit your feedback (comments, questions, or any thoughts) regarding the two special lectures by Dr. Kirill Kryukov.  
+キリル・クリュコフ博士による2回の特別講義について、フィードバック（感想、質問、または気づいたことなど何でも）を提出してください。  
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
