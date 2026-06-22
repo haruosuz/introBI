@@ -14,6 +14,7 @@
 - [assignment 5](#assignment-5) 課題5 「your_project/scripts」
 - [assignment 7](#assignment-7) 課題7 「your_project/analysis」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker_2026-06-16」
+- [assignment 10](#assignment-10) 課題10 「guest-speaker_2026-06-23」
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
@@ -166,6 +167,15 @@ https://github.com/haruosuz/introBI/blob/main/2026-04/README.md#guest-speaker
 
 スクリプト ファイル を提出する。  
 Submit the script file.  
+
+----------
+## assignment 10
+**課題10 「guest-speaker_2026-06-23」**
+
+https://github.com/haruosuz/introBI/blob/main/2026-04/README.md#guest-speaker
+
+Please submit your feedback, comments, or questions regarding the two special lectures by Dr. Kirill Kryukov.  
+キリル クリュコフ博士による2回の特別講義について、感想、コメント、または質問を提出してください。  
 
 [課題のファイルを K-LMS にて提出する。  
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
