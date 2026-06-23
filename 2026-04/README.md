@@ -64,6 +64,7 @@
 - Commands: https://biokirr.com/Temp/Keio-2026-06-16/script.txt
 
 ### 2026-06-23
+- https://biokirr.com/Temp/Keio-2026-06-23/1-setup.sh
 
 ----------
 ## midterm presentation
