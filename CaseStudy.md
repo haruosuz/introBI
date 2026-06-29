@@ -885,6 +885,14 @@ https://github.com/haruosuz/bioinfo/blob/master/2019/CaseStudy.md
 [National Center for Biotechnology Information](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information)
 のゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。  
 
+- Generated June 29, 2026 [NCBI Genomes FTP](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/)
+  - [Where can I find information to help me choose between the many different assembled genomes for a species?](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/data-processing/policies-annotation/genomeftp/#where-can-i-find-information-to-help-me-choose-between-the-many-different-assembled-genomes-for-a-species)
+- January 31, 2020. [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- [Metagenomics - NCBI ftp genome download](https://www.metagenomics.wiki/tools/fastq/ncbi-ftp-genome-download)
+How to download all reference genomes of a selected species from NCBI
+- 2025-11-05 https://fish-evol.org/RefSeq.html
+- 2020.04.18 どんぐりの森と古い地図 | 3.1. 核酸 [3.1.2. RefSeq](https://bi.biopapyrus.jp/db/nucl.html#refseq)
+
 <https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/>
 
 URL をブラウザ（Firefox または Chrome）で開く。*README_assembly_summary.txt*をクリックする。  
@@ -902,12 +910,5 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 https://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt
 https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
 ```
-
-- Generated June 29, 2026 [NCBI Genomes FTP](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/policies-annotation/genomeftp/)
-- January 31, 2020. [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- [Metagenomics - NCBI ftp genome download](https://www.metagenomics.wiki/tools/fastq/ncbi-ftp-genome-download)
-How to download all reference genomes of a selected species from NCBI
-- 2025-11-05 https://fish-evol.org/RefSeq.html
-- 2020.04.18 どんぐりの森と古い地図 | 3.1. 核酸 [3.1.2. RefSeq](https://bi.biopapyrus.jp/db/nucl.html#refseq)
 
 ----------
