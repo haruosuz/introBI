@@ -909,6 +909,6 @@ https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
 - [Metagenomics - NCBI ftp genome download](https://www.metagenomics.wiki/tools/fastq/ncbi-ftp-genome-download)
 How to download all reference genomes of a selected species from NCBI
 - 2025-11-05 https://fish-evol.org/RefSeq.html
-- 2020.04.18 3.1. 核酸 | 3.1.1. DDBJ / GenBank / EMBL-Bank | [3.1.2. RefSeq](https://bi.biopapyrus.jp/db/nucl.html#refseq)
+- 2020.04.18 | 3.1. 核酸 | [3.1.2. RefSeq](https://bi.biopapyrus.jp/db/nucl.html#refseq)
 
 ----------
