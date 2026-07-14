@@ -240,8 +240,8 @@ Check project reproducibility on others' environments
 On Slack, submit a compressed file of your project directory (excluding data files `data/*`).  
 Slack上で、プロジェクトディレクトリの圧縮ファイルを提出（ただし、データファイル `data/*` は除外）する。  
 
-Run the project submitted before yours and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in the thread. Reviewing multiple projects and providing comments to multiple students is highly encouraged.  
-あなたの前に提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。さらに、複数のプロジェクトを検証し、複数の学生に対してコメントを投稿することは、強く推奨される。  
+Run the projects submitted by other students and provide comments (e.g., reproducibility of results, execution environment/date, questions, etc.) in their threads. Reviewing multiple projects and providing comments to multiple students is highly encouraged.  
+他の学生によって提出されたプロジェクトを実行し、そのスレッドにコメント（結果の再現性、実行環境・日時、質問など）を記載する。複数のプロジェクトを検証し、複数の学生に対してコメントを投稿することは強く推奨される。  
 
 Modify your project directory (scripts, *README.md* files) based on comments on your project.  
 コメントに基づいて、プロジェクト・ディレクトリ（スクリプトや *README.md* ファイル）を修正する。  
