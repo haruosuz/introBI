@@ -15,6 +15,8 @@
 - [assignment 7](#assignment-7) 課題7 「your_project/analysis」
 - [assignment 9](#assignment-9) 課題9 「guest-speaker_2026-06-16」
 - [assignment 10](#assignment-10) 課題10 「guest-speaker_2026-06-23」
+- [reproducibility-your-env](#reproducibility-your-env)
+- [reproducibility-others-envs](#reproducibility-others-envs)
 - [assignment final](#assignment-final) 最終課題 「your_project/final/」
 
 ----------
@@ -181,7 +183,7 @@ Please submit your feedback (comments, questions, or any thoughts) regarding the
 Submit the assignment file in K-LMS.  ](https://lms.keio.jp/)  
 
 ----------
-## 2026-07-07
+## reproducibility-your-env
 
 Check project reproducibility on your environment  
 自分の環境でプロジェクトの再現性検証  
@@ -232,7 +234,7 @@ date +%F
 ```
 
 ----------
-## 2026-07-14
+## reproducibility-others-envs
 
 Check project reproducibility on others' environments  
 他人の環境でプロジェクトの再現性検証  
