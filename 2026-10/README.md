@@ -113,10 +113,10 @@ p.16
 準備
 
 ### Terminal
-https://en.wikipedia.org/wiki/Terminal_emulator  
-https://ja.wikipedia.org/wiki/端末エミュレータ  
-https://en.wikipedia.org/wiki/Terminal_(macOS)  
-https://ja.wikipedia.org/wiki/ターミナル_(macOS)  
+[Terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator) |
+[端末エミュレータ](https://ja.wikipedia.org/wiki/端末エミュレータ)  
+[Terminal (macOS)](https://en.wikipedia.org/wiki/Terminal_%28macOS%29) |
+[ターミナル (macOS)](https://ja.wikipedia.org/wiki/ターミナル_%28CLI%29)  
 
 Choose Applications → Utilities (or press Shift + Command + U). Double-click the icon to launch Terminal.  
 「アプリケーション」フォルダ内の「ユーティリティ」フォルダの中に「ターミナル」があるので、ダブルクリックで開く。  
