@@ -23,21 +23,21 @@
 ## assignment 0
 **選抜課題**
 
-バイオインフォマティクス・データスキルを適用したいデータ・ファイルを教えてください。
+バイオインフォマティクス・データスキルを適用したいデータ・ファイルを教えてください。  
+Briefly describe the data file(s) in which you would like to apply bioinformatics data skills.  
 
-[回答例]
-以下のいずれかの表形式データを使用したい。
+[回答例][Example answer]
+以下のいずれかの表形式データを使用したい。  
+I would like to use one of the following tabular data:  
 
-Briefly describe the data file(s) in which you would like to apply bioinformatics data skills.
-
-[Example answer]
-I would like to use one of the following tabular data:
-
-- https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
-  - https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
-- https://github.com/theglobaljukebox
-  - https://pubmed.ncbi.nlm.nih.gov/36322519/ PLoS One. 2022 Nov 2;17(11):e0275469. The Global Jukebox: A public database of performing arts and culture
-  - https://www.keio.ac.jp/ja/press-releases/2022/11/10/28-133344/ 伝統芸能データベース「Global Jukebox」の公開－1,026民族を代表する、5,776件の音声記録がインタラクティブに利用可能－：[慶應義塾]
+- https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS
+- https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/CheckM_report_prokaryotes.txt
+- https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/prokaryote_ANI_suspect_heterotypic_synonyms.txt
+- https://nardbstatus.de/
+- https://nardbstatus.de/download.php
+- https://nardbstatus.de/download_xref_table.php
+- https://github.com/bacteria-archaea-traits/bacteria-archaea-traits
+- http://togodb.org/db/tempura
 
 ----------
 ## assignment 1
