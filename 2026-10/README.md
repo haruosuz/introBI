@@ -19,7 +19,7 @@
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | [Class Calendar](https://www.sfc.keio.ac.jp/en/contact/class_calendar.html)
   - [2026年度 SFC授業カレンダー（2026.9.10更新）](https://www.keio.ac.jp/files/bac19d34f81c2e377e21ffc9fb4e8679620adb59150334dc836e429f1208c4a6) | [SFC Calendars for 2026（Update September 10, 2026）](https://www.keio.ac.jp/files/8d4e8dd50c18496e1ce1439aa1581c95df0c536c87a33ef8c612dc38737d0421)
-- 2026-10-06 No. 1 - [Online] イントロダクション [Introduction](#introduction)
+- 2026-10-06 No. 1 - イントロダクション [Introduction](#introduction)
   - 課題1 [assignment 1](https://github.com/haruosuz/introBI/blob/main/2026-10/CaseStudy.md#assignment-1)
 - 2026-10-13 No. 2 - バイオインフォマティクス・プロジェクトの管理 [Managing Bioinformatics Projects](#managing-bioinformatics-projects)
   - 課題2 [assignment 2](https://github.com/haruosuz/introBI/blob/main/2026-10/CaseStudy.md#assignment-2)
@@ -48,11 +48,6 @@
   - 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2026-10/CaseStudy.md#assignment-final)
 - R言語 [R Language](https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language)
 - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/master/2022/README.md#sequence-data)
-
-----------
-## Guest speaker
-**特別講演**
-
 
 ----------
 ## midterm presentation
