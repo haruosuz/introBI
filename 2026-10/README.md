@@ -133,9 +133,9 @@ UNIXコマンド入門
 bash
 
 # ディレクトリを操作する
-cd	# change directory
-pwd	# print working directory
-ls	# list files and directories
+cd  # change directory
+pwd # print working directory
+ls  # list files and directories
 
 # ディレクトリを作成する
 # make directory
