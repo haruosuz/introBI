@@ -36,7 +36,7 @@
   - [Questions](https://github.com/haruosuz/introBI/blob/main/CaseStudy.md#questions)
   - 課題7 [assignment 7](https://github.com/haruosuz/introBI/blob/main/2026-10/CaseStudy.md#assignment-7)
 - 2026-11-19 ～ 2026-11-25 三田祭（準備・片付含む） Mita Festival (Prep / clean up)
-- 2026-12-01 No. 8 - [Online] 中間発表 [midterm presentation](#midterm-presentation)
+- 2026-12-01 No. 8 - TBD
 - 2026-12-08 No. 9 - Unixデータツール [Unix Data Tools](#unix-data-tools)
 - 2026-12-15 No. 10 - Unixデータツール Unix Data Tools | [join](#join)
 - 2026-12-22 No. 11 - 質疑応答 Q&A
